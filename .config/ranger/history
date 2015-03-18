@@ -1,0 +1,6 @@
+open_with atool
+open_with unzip -l
+open_with gtk-bu
+open_with mpv
+
+search dumps

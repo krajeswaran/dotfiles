@@ -1,0 +1,7 @@
+#!bin/sh
+
+syncMusic() {
+    IFS='
+    ';for file in `grep -v "^#EXT" "$1"`; do cp -a -u -v `echo ${file} | tr -d '\r'` "$2"; done
+}
+

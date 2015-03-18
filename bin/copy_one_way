@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# command line parsing fellows
+while getopts dl opt
+do
+    case "$opt" in
+      d)  DRYRUN="--dry-run" || LOCALCOPY=;;
+      l)  DRYRUN= || LOCALCOPY=on;;
+      \?)		# unknown flag
+      	  echo >&2 \
+	  "usage: $0 [-d] [-l]"
+	  exit 1;;
+    esac
+done
+shift `expr $OPTIND - 1`
+
+if [ "$LOCALCOPY" ]; then
+    # cp can only copy one way, can't delete files in dest(mirror)
+    cp -a -f -r -u --verbose "$1" "$2"
+else
+    rsync --verbose --stats --recursive --itemize-changes --verbose --progress --archive --protect-args $DRYRUN "$1" "$2" 
+fi

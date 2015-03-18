@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# command line parsing fellows
+while getopts dl opt
+do
+    case "$opt" in
+      d)  DRYRUN="--dry-run" ;;
+      \?)		# unknown flag
+      	  echo >&2 \
+	  "usage: $0 [-d] [-l]"
+	  exit 1;;
+    esac
+done
+shift `expr $OPTIND - 1`
+
+rsync --verbose --stats --recursive --itemize-changes --verbose --progress --archive --delete --protect-args $DRYRUN "$1" "$2" 
