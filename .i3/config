@@ -37,7 +37,7 @@ bindsym $mod+d exec dmenu_run -fn 'Source Code Pro Semibold-9'
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+space exec --no-startup-id i3-dmenu-desktop 
+bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'Source Code Pro Semibold-9'"
 
 # change focus
 bindsym $mod+Left focus left

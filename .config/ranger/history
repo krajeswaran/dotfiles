@@ -4,3 +4,7 @@ open_with gtk-bu
 open_with mpv
 
 search dumps
+touch 
+delete 
+search src
+search experiments

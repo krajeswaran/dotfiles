@@ -75,25 +75,27 @@ echo Optimizing pacman.......
 proceed_yesorno
 [[ $REPLY = [yY] ]] && pacman-optimize
 
-echo Purging orphaned packages........
-proceed_yesorno
-[[ $REPLY = [yY] ]] && purge-orphaned
+#echo Purging orphaned packages........
+#proceed_yesorno
+#[[ $REPLY = [yY] ]] && purge-orphaned
 
 echo Clean pacman cache........
 proceed_yesorno
-[[ $REPLY = [yY] ]] && pacc
+[[ $REPLY = [yY] ]] && pacaur -Scc
+
+# Check if exclude file exists
+if [ ! -f $exclude_file ]; then
+    echo "Excludes file is missing, so everything will be backed up. This is BAD. Continue..." 
+    proceed_yesorno
+    [[ $REPLY != [yY] ]] && exit
+fi
 
 # print possible backup file size and home dir size
 echo Calculating filesystem size........
 du -h -d 2 --exclude-from=$exclude_file /
 echo Does this look okay?
 proceed_yesorno
-
-# Check if exclude file exists
-if [ ! -f $exclude_file ]; then
-    echo "Excludes file is missing, so everything will be backed up. This is BAD. Continue..." 
-    proceed_yesorno
-fi
+[[ $REPLY != [yY] ]] && exit
 
 cd /
 

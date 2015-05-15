@@ -432,11 +432,10 @@
         nmap <F10> :SCCompileRun<cr>
         let g:SingleCompile_showquickfixiferror = 1
         let g:SingleCompile_showresultafterrun = 1
-        "call SingleCompile#SetCompilerTemplate('c', 'gcc', '-o $(FILE_TITLE)$ -std=c++0x')
     " }
     " syntastic {
-        let g:syntastic_cpp_compiler_options = ' -std=c++0x'
-        let g:syntastic_java_checkers=['']
+        let g:syntastic_cpp_compiler = 'g++'
+        let g:syntastic_cpp_compiler_options = ' -std=c++11'
     " }
     " multicursor {
     " }
