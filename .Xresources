@@ -1,10 +1,13 @@
-!
+
 ! ~/.Xresources
 !
 
-! X Settings
-Xft.dpi: 96
-
+! Xft settings ---------------------------------------------------------------
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
 
 ! URxvt Options
 URxvt.depth: 32
@@ -41,6 +44,7 @@ URxvt.url-select.underline: true
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
+URxvt*saveLines: 80000
 
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
 URxvt*scrollWithBuffer: true
