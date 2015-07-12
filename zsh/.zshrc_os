@@ -1,5 +1,5 @@
 # OS-specific bash stuff
-alias showfilesinpkg="pacman -Qtl "
+alias showfilesinpkg="pacman -Ql "
 alias showpkgfilebelongsto="pacman -Qo "
 alias showorphanedpkgs="pacman -Qtdq ;  pacman -Qqm"
 alias showexplicitlyinstalledpkgs="pacman -Qen ; pacman -Qem "
@@ -15,16 +15,14 @@ alias pacre='pacaur -R'        # Remove the specified package(s), retaining its 
 alias pacrem='pacaur -Rns'     # Remove the specified package(s), its configuration(s) and unneeded dependencies
 alias pacrep='pacaur -Si'       # Display information about a given package in the repositories
 alias pacreps='pacaur -Ss'      # Search for package(s) in the repositories
-alias pacloc='pacaur -Qi'       # Display information about a given package in the local database
-alias paclocs='pacaur -Qs'      # Search for package(s) in the local database
-alias paclo="pacaur -Qdt"       # List all packages which are orphaned
+alias pacinfoloc='pacaur -Qi'       # Display information about a given package in the local database
+alias pacsearchloc='pacaur -Qs'      # Search for package(s) in the local database
 alias pacc="pacaur -Scc"       # Clean cache - delete all not currently installed package files
-alias paclf="pacaur -Ql"        # List all files installed by a given package
 alias pacexpl="pacaur -D --asexp"   # Mark one or more installed packages as explicitly installed 
 alias pacimpl="pacaur -D --asdep"   # Mark one or more installed packages as non explicitly installed
 
 # '[r]emove [o]rphans' - recursively remove ALL orphaned packages
-alias pacro="pacman -Qtdq > /dev/null && sudo pacman -Rns \$(pacman -Qtdq | sed -e ':a;N;$!ba;s/\n/ /g')"
+#alias pacro="pacman -Qtdq > /dev/null && sudo pacman -Rns \$(pacman -Qtdq | sed -e ':a;N;$!ba;s/\n/ /g')"
 #
 # # Additional pacman alias examples
 alias pacinsd='sudo pacman -S --asdeps'            # Install given package(s) as dependencies
@@ -76,8 +74,8 @@ purge-orphaned() {
     fi
 }
 
-export JAVA_HOME=/usr/lib/jvm/java-8-jdk
-export GEMPATH=/usr/lib/ruby/gems/2.1.0/bin:/home/thesaneone/.gem/ruby/2.1.0/bin
+export JAVA_HOME=/usr/lib/jvm/default
+export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/thesaneone/.gem/ruby/2.1.0/bin
 export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH
 
 eval "$(rbenv init -)"

@@ -46,7 +46,7 @@ git://github.com/taxilian/vim-web-indent.git
 #html
 #git://github.com/amirh/HTML-AutoCloseTag.git
 #git://github.com/ChrisYip/Better-CSS-Syntax-for-Vim.git
-git://github.com/mattn/emmet-vim.git
+#git://github.com/mattn/emmet-vim.git
 
 #addl.syntaxes
 #git://github.com/tpope/vim-haml.git
@@ -62,7 +62,7 @@ git://github.com/godlygeek/tabular.git
 #themes
 #git://github.com/altercation/vim-colors-solarized.git
 #git://github.com/chriskempson/base16-vim.git
-git://github.com/w0ng/vim-hybrid.git
+#git://github.com/w0ng/vim-hybrid.git
 }
 require 'fileutils'
 require 'open-uri'

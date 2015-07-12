@@ -20,7 +20,7 @@ date=$(date "+%F")
 backupfile="$backdest/$pc-$distro-$distro_release-$date.tar.gz"
 
 # Exclude file location
-exclude_file="${HOME}/.backup-excludes.txt"
+exclude_file="${HOME}/.config/backup-excludes.cfg"
 
 #Check if run as root
 ROOT_UID="0"
@@ -75,9 +75,9 @@ echo Optimizing pacman.......
 proceed_yesorno
 [[ $REPLY = [yY] ]] && pacman-optimize
 
-#echo Purging orphaned packages........
-#proceed_yesorno
-#[[ $REPLY = [yY] ]] && purge-orphaned
+echo Purging unwanted locales........
+proceed_yesorno
+[[ $REPLY = [yY] ]] && localepurge
 
 echo Clean pacman cache........
 proceed_yesorno
