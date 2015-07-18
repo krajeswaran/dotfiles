@@ -1,0 +1,56 @@
+export PATH="/home/thesaneone/.rbenv/shims:/home/thesaneone/.rbenv/shims:/sbin:/home/thesaneone/bin:/home/thesaneone/.vim:/home/thesaneone/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+export EDITOR='vim'
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+
+# aliases
+alias vi="vim"
+alias ll="ls -larth"
+alias llm="ls -larth | less"
+alias rm='rm -I'
+alias revo="mosh thesaneone@thesanerevo"
+alias router="mosh root@192.168.1.1"
+alias box="mosh thesaneone@thesanebox"
+alias diskusage="du -h -d 1"
+alias sshfs='sshfs -C -o reconnect,workaround=all'
+# newly born hostname, child or project?
+alias namemaker="shuf -n 2 /usr/share/dict/words | tr -dc 'A-Za-z0-9'"
+alias gitclean='git clean -fxdq'
+alias gitpdiff='git diff HEAD --'
+alias pwd="pwd -P"
+alias mirror="mpv -vf screenshot tv://"
+alias gitlog="git log --graph --pretty=format:'%C(yellow)%h%Creset -%Cred%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias smesg="tail -f /var/log/{messages,kernel,dmesg,syslog}"
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias jgrep='find . -name "*.java" -o -name "*.xml" -o -name "*.properties" -type f | xargs grep -nHi '
+
+gitaddselective() {
+    git add `git status --porcelain | grep ^" M" | cut -d " " -f3 | grep $1`
+}
+
+findandreplace() {
+    find . -name "$1" -type f -print0 | xargs -0 perl -p -i -e "$2"
+}
+
+# os specific
+if [ -f ~/.zshrc_os ]; then
+    source ~/.zshrc_os
+fi
+
+# work specific
+if [ -f ~/.zshrc_work ]; then
+    source ~/.zshrc_work
+fi
+
