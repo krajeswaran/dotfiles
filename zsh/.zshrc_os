@@ -1,3 +1,10 @@
+export PATH="/home/thesaneone/.rbenv/shims:/home/thesaneone/.rbenv/shims:/sbin:/home/thesaneone/bin:/home/thesaneone/.vim:/home/thesaneone/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
 # OS-specific bash stuff
 alias showfilesinpkg="pacman -Ql "
 alias showpkgfilebelongsto="pacman -Qo "
