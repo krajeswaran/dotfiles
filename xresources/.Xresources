@@ -52,75 +52,70 @@ URxvt*scrollWithBuffer: true
 ! scroll back to the bottom on keypress
 URxvt*scrollTtyKeypress: true
 
+! --- ~/.Xresources ------------------------------------------------------------
+! ------------------------------------------------------------------------------
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! ------------------------------------------------------------------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! ------------------------------------------------------------------------------
 
-! Hybrid Terminal Colours
+! --- special colors ---
 
-! Tomorrow-Night Palette
-#define t_background #1D1F21
-#define t_current_line #282A2E
-#define t_selection #373B41
-#define t_foreground #90BD59
-!#define t_foreground #C5C8C6
-#define t_comment #707880
-#define t_red #CC6666
-#define t_orange #DE935F
-#define t_yellow #F0C674
-#define t_green #B5BD68
-#define t_aqua #8ABEB7
-#define t_blue #81A2BE
-#define t_purple #B294BB
+*background: #000000
+*foreground: #00b01d
 
-! base16-default Palette (slightly darker)
-#define b_background #151515
-#define b_current_line #202020
-#define b_selection #303030
-#define b_foreground #C5C8C6
-#define b_comment #505050
-#define b_red #AC4142
-#define b_orange #D28445
-#define b_yellow #F4BF75
-#define b_green #90A959
-#define b_aqua #75B5AA
-#define b_blue #6A9FB5
-#define b_purple #AA759F
-
-! Codeacademy Palette (dark blue background)
-#define c_background #232C31
-#define c_current_line #2D3C46
-#define c_selection #425059
-#define c_comment #6C7A80
-
-*background: t_background
-*foreground: t_foreground
+! --- standard colors ---
 
 ! black
-*color0: t_current_line
-*color8: b_selection
+*color0: #000000
+
+! bright_black
+*color8: #262626
 
 ! red
-*color1: b_red
-*color9: t_red
+*color1: #a07d88
+
+! bright_red
+*color9: #bdb1bd
 
 ! green
-*color2: b_green
-*color10: t_green
+*color2: #6ead8a
+
+! bright_green
+*color10: #a3c9be
 
 ! yellow
-*color3: t_orange
-*color11: t_yellow
+*color3: #9ead88
+
+! bright_yellow
+*color11: #bbc9bd
 
 ! blue
-*color4: b_blue
-*color12: t_blue
+*color4: #717bb9
+
+! bright_blue
+*color12: #a5b0d6
 
 ! magenta
-*color5: b_purple
-*color13: t_purple
+*color5: #a07bb7
+
+! bright_magenta
+*color13: #bdb0d5
 
 ! cyan
-*color6: b_aqua
-*color14: t_aqua
+*color6: #6eaab9
+
+! bright_cyan
+*color14: #a3c8d6
 
 ! white
-*color7: t_comment
-*color15: t_green
+*color7: #d9d9d9
+
+! bright_white
+*color15: #ffffff
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------
+

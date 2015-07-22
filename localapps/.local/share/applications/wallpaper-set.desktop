@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=wallpaper changer
-Comment=sets wallpaper at startup
-Icon=preferences-desktop-wallpaper
-Exec=/home/thesaneone/bin/wallpaper-changer.rb
-Terminal=false
-Type=Application
