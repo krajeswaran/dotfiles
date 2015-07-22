@@ -29,7 +29,7 @@
     set splitright
     set showfulltag
     set clipboard=unnamed
-    set clipboard=unnamedplus
+    "set clipboard=unnamedplus
     scriptencoding utf-8
     "imap ^V ^O"+p
     "set shellcmdflag=-ic
@@ -490,9 +490,9 @@
 
 " GUI Settings {
     " GVIM- (here instead of .gvimrc)
-    "set t_Co=256
+    set t_Co=256
     let g:base16colorspace=256
-    colorscheme base16-colors
+    colorscheme base16-tomorrow
     if has('gui_running')
         "colo my_murphy  
         set lines=30  "30 lines of text window size
