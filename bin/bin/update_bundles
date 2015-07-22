@@ -63,7 +63,7 @@ git://github.com/godlygeek/tabular.git
 
 #themes
 #git://github.com/altercation/vim-colors-solarized.git
-#git://github.com/chriskempson/base16-vim.git
+git://github.com/chriskempson/base16-vim.git
 #git://github.com/w0ng/vim-hybrid.git
 }
 require 'fileutils'

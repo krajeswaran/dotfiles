@@ -1,62 +1,21 @@
-# OS-specific bash stuff
-alias showfilesinpkg="pacman -Ql "
-alias showpkgfilebelongsto="pacman -Qo "
-alias showorphanedpkgs="pacman -Qtdq ;  pacman -Qqm"
-alias showexplicitlyinstalledpkgs="pacman -Qen ; pacman -Qem "
-alias showrecentlyinstalledpkgs="cat /var/log/pacman.log | grep install"
-alias installthefuck="pacaur -S --noconfirm "
-alias removethefuck="pacaur -Rns "
-alias showmodifedconfigfiles="pacman -Qii | awk '/^MODIFIED/ {print $2}'"
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export GRADLE_HOME=${HOME}/src/gradle-2.2.1
 
-alias pacupg='pacaur -Syu'     # Synchronize with repositories and then upgrade packages that are out of date on the local system.
-alias pacin='pacaur -S'        # Install specific package(s) from the repositories
-alias pacinstallloc='pacaur -U'       # Install specific package not from the repositories but from a file 
-alias pacrem='pacaur -Rns'     # Remove the specified package(s), its configuration(s) and unneeded dependencies
-alias pacinforemote='pacaur -Si'       # Display information about a given package in the repositories
-alias pacsearchremote='pacaur -Ss'      # Search for package(s) in the repositories
-alias pacinfoloc='pacaur -Qi'       # Display information about a given package in the local database
-alias pacsearchloc='pacaur -Qs'      # Search for package(s) in the local database
-alias pacc="pacaur -Scc"       # Clean cache - delete all not currently installed package files
-alias pacexpl="pacaur -D --asexp"   # Mark one or more installed packages as explicitly installed 
-alias pacimpl="pacaur -D --asdep"   # Mark one or more installed packages as non explicitly installed
+# proxy stuff
+proxy_on() {
+    export no_proxy='localhost,127.0.0.1,localaddress,.localdomain.com,kadmin.local, 169.254/16, kadmin.local, 169.254/16, 10/8, sm720macserv01.visa.com, sm720macserv04.visa.com, sm740macserv01.visa.com, sm930macserv01.visa.com, *.anet.ad, ap.visa.com, *.cybs.corp, *.ic3.com, *.myworkaccess.com, *.qa.intra, *.trusted.visa.com, *.visa.net, *.visadpsmain.com, *.vol*qa.visa.com, 10.*.*.*, drjc*.visa.com, laclivelink.visa.com, oce-imcsproxy.visa.com, sl73*, sw5*.visa.com, sw6*.visa.com, sw7*.visa.com, sw8*.visa.com, sw9*.visa.com, vdensslvpn.cybersource.com, vva*.lac.visaonline.com, *.internal.visadpsgiftcard.com, *.internal.visaprepaidprocessing.com, *.trusted.visadpsmain.com, *.visadpsprepaid.com, *evisadps.com, *evisadpswkst.com, *qa.ppc.com, *qa.visadpsonline-wkst.com, *smail.visa.com, *visasvp.com, 198.241.166.2*, 209.135.56.38, rol2.visa.com, vsignsoc*.visa.com, *.volcorp.com, *.volmte.com, *.vol1qa.com, *.vol1dev.com, *developer.visa.com, *cybsjira.visa.com, *siebel.cybersource.com, *risk.cybersource.com, *dw.cybersource.com, *dw-direct.cybersource.com, *support.cybersource.com, *whistler.cybersource.com, *apps.cybersource.com, *siebel-warm.cybersource.com, *devsbwww1.cybersource.com, *welcome-stage.cybersource.com, *devdeveloperfe01.cybersource.com, *stagedeveloperfe01.cybersource.com, *mams.cybersource.com, *dndevdwdb01.mang.den.ic3.com, *dnstagedwdb01.mang.den.ic3.com, *infomanager.cybersource.com, *elprodinqrun01.mang.sjl.ic3.com, *eltopchassisb3.mang.sjl.ic3.com, *eltopchassisb2.mang.sjl.ic3.com, *dnprodinqrun01.mang.den.ic3.com, *dntopchassisb3.mang.den.ic3.com, *dntopchassisb2.mang.den.ic3.com, *cybsbamboo.cybersource.com, *conint001d.cybersource.com, *dndsngnxus01.dndev.cybersource.com, *dnbldmstr01.cybersource.com, *visaca.com, *autodiscover.visa.com, *sl72ctsmp01.visa.com, LyncDiscoverInternal.visa.com, VSPLIST!!, *.secure.checkout.com'
 
-# # Additional pacman alias examples
-alias pacinsd='sudo pacman -S --asdeps'            # Install given package(s) as dependencies
-alias pacmir='pacaur -Syy'                    # Force refresh of all package lists after updating /etc/pacman.d/mirrorlist
-
-alias ejectusb="sudo udisks --detach "
-
-alias update_mirrors="sudo wget -O /etc/pacman.d/mirrorlist.backup https://www.archlinux.org/mirrorlist/all/ && sudo cp /etc/pacman.d/mirrorlist.backup /etc/pacman.d/mirrorlist && sudo reflector --verbose -l 30 -p http --sort rate --save /etc/pacman.d/mirrorlist"
-
-function proxy_on() {
-    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-    export http_proxy="http://thesanerevo:8123/"
+    export http_proxy="http://localhost:3128"
     export https_proxy=$http_proxy
     export ftp_proxy=$http_proxy
-    export rsync_proxy=$http_proxy
     export HTTP_PROXY=$http_proxy
     export HTTPS_PROXY=$http_proxy
-    export FTP_PROXY=$http_proxy
-    export RSYNC_PROXY=$http_proxy
 }
 
-function proxy_off() {
-    unset http_proxy HTTP_PROXY HTTPS_PROXY FTP_PROXY RSYNC_PROXY https_proxy ftp_proxy rsync_proxy
-    echo -e "Proxy environment variable removed."
+proxy_off() {
+    unset http_proxy HTTP_PROXY https_proxy HTTPS_PROXY ftp_proxy
 }
 
-function purge-orphaned() {
-    if [[ ! -n $(pacman -Qdt) ]]; then
-        echo "No orphans to remove."
-    else
-        #sudo pacman -Rns $(pacman -Qdtq)
-        pacrem $(pkg-list_true_orphans)
-    fi
-}
+proxy_on # proxy on by default
 
-export JAVA_HOME=/usr/lib/jvm/default
-export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/thesaneone/.gem/ruby/2.1.0/bin
-export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH
-
-eval "$(rbenv init -)"
-
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${HOME}/bin:${PATH}

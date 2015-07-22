@@ -1,3 +1,5 @@
 **/bundle/**
 **/__pycache__/**
+**.pyo
+**.pyc
 .netw*

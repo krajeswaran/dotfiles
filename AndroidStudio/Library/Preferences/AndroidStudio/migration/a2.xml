@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migrationMap>
+  <name value="a" />
+  <description value="package" />
+  <entry oldName="com.visa.android.integration.checkoutsampleapp.app" newName="com.visa.checkout.web.sampleapp" type="package" recursive="true" />
+</migrationMap>
+

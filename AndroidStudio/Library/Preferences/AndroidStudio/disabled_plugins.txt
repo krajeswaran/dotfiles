@@ -1,0 +1,7 @@
+Subversion
+IntelliJad Plus
+CVS
+com.intellij.commander
+TestNG-J
+hg4idea
+Statistic

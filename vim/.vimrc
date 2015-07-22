@@ -490,11 +490,9 @@
 
 " GUI Settings {
     " GVIM- (here instead of .gvimrc)
-    set t_Co=256
-    colorscheme desert
-    hi NonText ctermfg=0
-    "let g:base16colorspace=256
-    "colorscheme base16-colors
+    "set t_Co=256
+    let g:base16colorspace=256
+    colorscheme base16-colors
     if has('gui_running')
         "colo my_murphy  
         set lines=30  "30 lines of text window size
