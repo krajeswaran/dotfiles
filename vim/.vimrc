@@ -491,8 +491,8 @@
 " GUI Settings {
     " GVIM- (here instead of .gvimrc)
     set t_Co=256
-    colorscheme desert
-    hi NonText ctermfg=0
+    let g:hybrid_use_Xresources = 1
+    colorscheme hybrid
     "let g:base16colorspace=256
     "colorscheme base16-colors
     if has('gui_running')
