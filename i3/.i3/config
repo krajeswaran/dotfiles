@@ -79,16 +79,19 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1:gen
-bindsym $mod+2 workspace 2:work
-bindsym $mod+3 workspace 3:www
+bindsym $mod+1 workspace 1:www
+bindsym $mod+2 workspace 2:term
+bindsym $mod+3 workspace 3:work
 bindsym $mod+4 workspace 4:hue
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1:gen
-bindsym $mod+Shift+2 move container to workspace 2:work
-bindsym $mod+Shift+3 move container to workspace 3:www
+bindsym $mod+Shift+1 move container to workspace 1:www
+bindsym $mod+Shift+2 move container to workspace 2:term
+bindsym $mod+Shift+3 move container to workspace 3:work
 bindsym $mod+Shift+4 move container to workspace 4:hue
+
+assign [class="^Google$"] 1:www
+assign [class="^URxvt$"] 2:term
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -122,9 +125,10 @@ for_window [class="^.*"] border pixel 1
 focus_follows_mouse no
 workspace_auto_back_and_forth no
 
-exec clipit
 exec --no-startup-id xrdb -merge ~/.Xresources
 exec compton -CGb
+exec --no-startup-id clipit
+exec --no-startup-id redshift
 
 bar {
     position top
