@@ -1,3 +1,7 @@
+colorscheme green-mono-88
+colorscheme gray-88
+colorscheme 
+bind common <key> mark
 help
 add -l /music/
 help 

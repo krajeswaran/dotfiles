@@ -8,3 +8,9 @@ touch
 delete 
 search src
 search experiments
+move /videos/movies
+move
+move 
+help move
+cd /dumps
+cd /videos/movies
