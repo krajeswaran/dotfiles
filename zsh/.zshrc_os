@@ -37,7 +37,7 @@ alias update_mirrors="sudo wget -O /etc/pacman.d/mirrorlist.backup https://www.a
 
 function proxy_on() {
     export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-    export http_proxy="http://thesanerevo:8123/"
+    export http_proxy="http://10.0.2.2:3128/"
     export https_proxy=$http_proxy
     export ftp_proxy=$http_proxy
     export rsync_proxy=$http_proxy
@@ -63,6 +63,7 @@ function purge-orphaned() {
 
 export JAVA_HOME=/usr/lib/jvm/default
 export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/thesaneone/.gem/ruby/2.1.0/bin
+export ANDROID_HOME=/home/thesaneone/src/android-sdk
 export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 eval "$(rbenv init -)"

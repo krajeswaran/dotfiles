@@ -30,13 +30,13 @@ git://github.com/xuhdev/SingleCompile.git
 
 
 #ruby
-git://github.com/vim-ruby/vim-ruby.git
+#git://github.com/vim-ruby/vim-ruby.git
 #git://github.com/tpope/vim-rake.git
 #git://github.com/ecomba/vim-ruby-refactoring.git
 #git://github.com/astashov/vim-ruby-debugger.git
 
 #python
-git://github.com/klen/python-mode.git
+#git://github.com/klen/python-mode.git
 #git://github.com/davidhalter/jedi.git 
 #git://github.com/davidhalter/jedi-vim.git
 
