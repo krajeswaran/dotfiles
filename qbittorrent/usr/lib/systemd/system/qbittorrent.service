@@ -3,7 +3,7 @@ Description=qbittorrent-nox Daemon
 After=network.target
 
 [Service]
-User=0
+User=thesaneone
 Type=forking
 ExecStart=/usr/bin/qbittorrent-nox --daemon --webui-port=8080
 RemainAfterExit=yes

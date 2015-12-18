@@ -1,3 +1,13 @@
+set passwd=11111111
+set passwd=pass
+set passwd=
+set replaygain=track-preferred
+set show_hidden=true
+set replaygain=track
+set mixer.alsa.channel=Master
+set follow=true
+set dsp.alsa.device=default
+set aaa_mode=all
 colorscheme green-mono-88
 colorscheme gray-88
 colorscheme 
