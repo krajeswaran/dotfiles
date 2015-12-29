@@ -416,9 +416,9 @@
     " syntastic {
         let g:syntastic_cpp_compiler = 'g++'
         let g:syntastic_cpp_compiler_options = ' -std=c++11'
-        let g:syntastic_always_populate_loc_list = 1
-        let g:syntastic_auto_loc_list = 1
-        let g:syntastic_check_on_open = 1
+        let g:syntastic_always_populate_loc_list = 0
+        let g:syntastic_auto_loc_list = 0
+        let g:syntastic_check_on_open = 0
         let g:syntastic_check_on_wq = 0
     " }
 
@@ -498,7 +498,6 @@
     if has('gui_running')
         "colo my_murphy  
         set lines=30  "30 lines of text window size
-        "set guifont=Terminus\ Bold\ 12
         set guifont=Source\ Code\ Pro\ Semibold\ 8.5 
         set guioptions-=m  "remove menu bar
         set guioptions-=T  "remove toolbar
