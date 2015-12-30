@@ -1,18 +1,18 @@
 # OS-specific pm stuff
-alias showfilesinpkg="pacman -Ql "
-alias showpkgfilebelongsto="pacman -Qo "
-alias showorphanedpkgs="pacman -Qtdq ;  pacman -Qqm"
-alias showexplicitlyinstalledpkgs="pacman -Qen ; pacman -Qem "
-alias showrecentlyinstalledpkgs="cat /var/log/pacman.log | grep install"
-alias installthefuck="pacaur -S --noconfirm "
-alias removethefuck="pacaur -Rns "
-alias showmodifedconfigfiles="pacman -Qii | awk '/^MODIFIED/ {print $2}'"
+#alias showfilesinpkg="pacman -Ql "
+#alias showpkgfilebelongsto="pacman -Qo "
+#alias showorphanedpkgs="pacman -Qtdq ;  pacman -Qqm"
+#alias showexplicitlyinstalledpkgs="pacman -Qen ; pacman -Qem "
+#alias showrecentlyinstalledpkgs="cat /var/log/pacman.log | grep install"
+#alias installthefuck="pacaur -S --noconfirm "
+#alias removethefuck="pacaur -Rns "
+#alias showmodifedconfigfiles="pacman -Qii | awk '/^MODIFIED/ {print $2}'"
 
-alias ejectusb="sudo udisks --detach "
+#alias ejectusb="sudo udisks --detach "
 
 function proxy_on() {
     export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-    export http_proxy="http://thesanerevo:8123/"
+    export http_proxy="http://localhost:8123/"
     export https_proxy=$http_proxy
     export ftp_proxy=$http_proxy
     export rsync_proxy=$http_proxy

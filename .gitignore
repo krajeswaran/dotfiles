@@ -3,4 +3,6 @@
 **.pyo
 **.pyc
 .netw*
-**/id_rsa*.*
+**id_rsa**
+**known_hosts**
+**/.netrwhist
