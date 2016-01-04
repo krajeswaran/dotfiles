@@ -11,6 +11,7 @@
         <value type="int" value="28"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
+        <value type="int" value="5"/>
         <value type="int" value="4"/>
         <value type="int" value="1"/>
         <value type="int" value="7"/>
@@ -80,13 +81,14 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="22"/>
       <property name="names-visible" type="array">
-        <value type="string" value="orage"/>
+        <value type="string" value="thunar"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="google-chrome-stable"/>
         <value type="string" value="task manager"/>
+        <value type="string" value="orage"/>
+        <value type="string" value="xfce terminal"/>
         <value type="string" value="clipman"/>
         <value type="string" value="update-notifier"/>
-        <value type="string" value="xfce terminal"/>
       </property>
       <property name="items" type="array">
         <value type="string" value="14418443291.desktop"/>
@@ -150,6 +152,7 @@
         <value type="string" value="com.canonical.indicator.messages"/>
       </property>
     </property>
+    <property name="plugin-5" type="string" value="xfce4-time-out-plugin"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>

@@ -1,5 +1,5 @@
 favorites=exo-web-browser.desktop,exo-file-manager.desktop,libreoffice-writer.desktop,libreoffice-calc.desktop,pidgin.desktop,ubuntu-software-center.desktop,terminator.desktop
-recent=evince.desktop,chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default.desktop,jetbrains-studio.desktop,xfce-ui-settings.desktop,xfce-keyboard-settings.desktop,exo-terminal-emulator.desktop,gtk-theme-config.desktop,xfce4-notifyd-config.desktop,lightdm-gtk-greeter-settings.desktop,nm-connection-editor.desktop
+recent=google-chrome.desktop,terminator.desktop,jetbrains-studio.desktop,xfburn.desktop,jetbrains-idea-ce.desktop,chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default.desktop,gnome-calculator.desktop,evince.desktop,xfce-ui-settings.desktop,xfce-keyboard-settings.desktop
 button-title=Applications Menu
 button-icon=xubuntu-logo-menu
 button-single-row=true

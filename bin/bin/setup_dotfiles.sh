@@ -8,7 +8,7 @@ DOTFILES_PATH="${HOME}/dotfiles"
 # execute stow on all config stored
 for dirs in $(ls -d */)
 do 
-    stow -v3 ${dirs}
+    stow -v3 ${dirs} -t ~/ # lame, what about other targets?
 done
 
 # execute post process for os

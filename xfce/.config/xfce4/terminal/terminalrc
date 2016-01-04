@@ -32,4 +32,5 @@ TabActivityColor=#0f4999
 DropdownWidth=100
 DropdownOpacity=90
 DropdownAlwaysShowTabs=FALSE
+ScrollingOnOutput=FALSE
 

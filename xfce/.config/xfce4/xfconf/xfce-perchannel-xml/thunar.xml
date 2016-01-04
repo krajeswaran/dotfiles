@@ -17,4 +17,7 @@
     <value type="string" value="network:///"/>
   </property>
   <property name="last-menubar-visible" type="bool" value="false"/>
+  <property name="last-window-width" type="int" value="640"/>
+  <property name="last-window-height" type="int" value="480"/>
+  <property name="last-window-maximized" type="bool" value="false"/>
 </channel>
