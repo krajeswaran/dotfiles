@@ -30,10 +30,12 @@ function proxy_off() {
 export PATH=$PATH:/home/krajeswaran/bin:/home/krajeswaran/.vim
 export JAVA_HOME=/usr/lib/jvm/default
 export ANDROID_HOME=/home/krajeswaran/src/android-sdk
-export GRADLE_HOME=/home/krajeswaran/src/gradle-2.8
+export GRADLE_HOME=/home/krajeswaran/src/gradle-2.10
 export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/krajeswaran/.gem/ruby/2.1.0/bin
 export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export ANDROID_HVPROTO="ddm"
+
+alias vi="nvim"
 
 eval "$(rbenv init -)"
 

@@ -13,7 +13,6 @@
         <value type="int" value="3"/>
         <value type="int" value="5"/>
         <value type="int" value="4"/>
-        <value type="int" value="1"/>
         <value type="int" value="7"/>
         <value type="int" value="9"/>
         <value type="int" value="11"/>
@@ -85,10 +84,12 @@
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="google-chrome-stable"/>
         <value type="string" value="task manager"/>
+        <value type="string" value="gigolo"/>
         <value type="string" value="orage"/>
         <value type="string" value="xfce terminal"/>
         <value type="string" value="clipman"/>
         <value type="string" value="update-notifier"/>
+        <value type="string" value="xfce4-power-manager"/>
       </property>
       <property name="items" type="array">
         <value type="string" value="14418443291.desktop"/>
@@ -137,12 +138,13 @@
     <property name="plugin-28" type="string" value="whiskermenu"/>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
-        <property name="add-primary-clipboard" type="bool" value="true"/>
+        <property name="add-primary-clipboard" type="bool" value="false"/>
         <property name="max-texts-in-history" type="uint" value="20"/>
       </property>
       <property name="tweaks" type="empty">
         <property name="inhibit" type="bool" value="false"/>
         <property name="popup-at-pointer" type="bool" value="true"/>
+        <property name="paste-on-activate" type="uint" value="2"/>
       </property>
     </property>
     <property name="plugin-1" type="string" value="indicator">

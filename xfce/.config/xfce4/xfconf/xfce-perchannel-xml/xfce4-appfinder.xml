@@ -42,11 +42,12 @@
     <property name="window-height" type="int" value="323"/>
     <property name="window-width" type="int" value="473"/>
     <property name="pane-position" type="int" value="180"/>
-    <property name="category" type="string" value="Development"/>
+    <property name="category" type="string" value="Chrome Apps"/>
   </property>
   <property name="icon-view" type="bool" value="true"/>
   <property name="text-beside-icons" type="bool" value="true"/>
-  <property name="item-icon-size" type="uint" value="3"/>
+  <property name="item-icon-size" type="uint" value="4"/>
   <property name="enable-service" type="bool" value="false"/>
-  <property name="remember-category" type="bool" value="true"/>
+  <property name="remember-category" type="bool" value="false"/>
+  <property name="category-icon-size" type="uint" value="0"/>
 </channel>

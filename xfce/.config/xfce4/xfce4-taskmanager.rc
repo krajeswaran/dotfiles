@@ -1,7 +1,7 @@
 [Settings]
 ShowAllProcesses=TRUE
 MorePrecision=FALSE
-FullCommandLine=TRUE
+FullCommandLine=FALSE
 ShowStatusIcon=FALSE
 ShowMemoryInXBytes=FALSE
 MonitorPaintBox=TRUE
@@ -17,7 +17,7 @@ ColumnVSZ=FALSE
 ColumnRSS=TRUE
 ColumnCPU=TRUE
 ColumnPriority=FALSE
-SortColumn=7
+SortColumn=5
 SortType=1
 WindowWidth=490
 WindowHeight=465

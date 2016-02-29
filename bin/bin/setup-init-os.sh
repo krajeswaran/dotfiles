@@ -8,7 +8,7 @@ proceed_yesorno() {
     [[ $REPLY = [qQ] ]] && echo "Terminating..." && exit -1
 }
 
-PACKAGES=(
+read -d'' PACKAGES<<EOF
 git
 vim-gtk
 cscope
@@ -55,10 +55,13 @@ ruby2.2
 ipython3 
 virtualenv 
 nodejs 
+npm
+silversearcher-ag
+ack
 xfce4-time-out-plugin
-)
+EOF
 
-REMOVE=(
+read -d'' REMOVE<<EOF
 thunderbird
 apport
 vim-tiny
@@ -74,7 +77,7 @@ parole
 gmusicbrowser
 sane-utils
 simple-scan
-)
+EOF
 
 echo "---------------- Removing packages  -------------------------"
 proceed_yesorno

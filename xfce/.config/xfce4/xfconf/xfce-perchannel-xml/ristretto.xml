@@ -13,5 +13,7 @@
     <property name="toolbar" type="empty">
       <property name="show" type="bool" value="false"/>
     </property>
+    <property name="height" type="uint" value="440"/>
+    <property name="width" type="uint" value="600"/>
   </property>
 </channel>
