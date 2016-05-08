@@ -22,23 +22,31 @@ stow
 homebrew/dupes/grep
 graphicsmagick
 rename
+zsh
 python
-sshfs
 node
 tree
 git
 rsync
+cscope
+curl
 wget
-pv
+progress
 ctags
 macvim --with-cscope --with-lua --with-ruby --with-python --HEAD
 vim --with-cscope --with-lua --with-ruby --with-python
+ack
+zip
+unrar
+7z
 aria2 
-cntlm
-mitmproxy
 xz 
 openssh
 mosh
+golang
+python3
+ipython3
+pip3
 )
 
 echo "installing binaries..."
@@ -47,7 +55,9 @@ brew install ${binaries[@]}
 
 # Apps
 apps=(
+libreoffice
 dropbox
+java
 google-chrome
 qlcolorcode
 firefox
@@ -56,9 +66,9 @@ vagrant
 iterm2
 qlprettypatch
 virtualbox
-flux
 qlstephen
 mpv
+sshfs
 quicklook-json
 )
 
@@ -73,6 +83,7 @@ brew tap caskroom/versions
 
 # fonts
 fonts=(
+font-lato
 font-clear-sans
 font-source-code-pro 
 font-terminus 
@@ -83,3 +94,5 @@ font-droid-sans-mono
 # install fonts
 echo "installing fonts..."
 brew cask install ${fonts[@]}
+
+#brew linkapps --system

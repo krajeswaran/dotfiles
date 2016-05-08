@@ -25,6 +25,7 @@ alias smesg="tail -f /var/log/{messages,kernel,dmesg,syslog}"
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias jgrep='find . -name "*.java" -o -name "*.xml" -o -name "*.properties" -type f | xargs grep -nHi '
+alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.html" -o -name "*.*ss" -type f | grep -v ".node_modules" | grep -v ".meteor" | xargs grep -nHi '
 
 gitaddselective() {
     git add `git status --porcelain | grep ^" M" | cut -d " " -f3 | grep $1`

@@ -1,0 +1,38 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/src/favors" />
+        <option value="$USER_HOME$/src/mobilepaymentsandroidsdk/mcommerce" />
+        <option value="$USER_HOME$/src/LeanLauncher" />
+        <option value="$USER_HOME$/src/transdroid" />
+        <option value="$USER_HOME$/src/MinimalLauncher" />
+        <option value="$USER_HOME$/src/Launcher3" />
+        <option value="$USER_HOME$/src/mobilepaymentsandroidsdk/VisaCheckoutWebIntegration" />
+        <option value="$USER_HOME$/AndroidStudioProjects/ActionBarCompat-ShareActionProvider" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/src/favors" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/src/favors" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/src/favors">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-143.2739321" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1461744411091" />
+              <option name="buildTimestamp" value="1459794600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/src" />
+  </component>
+</application>

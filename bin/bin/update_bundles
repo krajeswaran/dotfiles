@@ -36,14 +36,14 @@ git://github.com/vim-ruby/vim-ruby.git
 #git://github.com/astashov/vim-ruby-debugger.git
 
 #python
-git://github.com/klen/python-mode.git
+#git://github.com/klen/python-mode.git
 #git://github.com/davidhalter/jedi.git 
 #git://github.com/davidhalter/jedi-vim.git
 
 #Javascript
-#git://github.com/leshill/vim-json.git
-#git://github.com/groenewege/vim-less.git
-#git://github.com/taxilian/vim-web-indent.git
+git://github.com/leshill/vim-json.git
+git://github.com/groenewege/vim-less.git
+git://github.com/taxilian/vim-web-indent.git
 
 #html
 #git://github.com/amirh/HTML-AutoCloseTag.git
@@ -63,8 +63,8 @@ git://github.com/godlygeek/tabular.git
 
 #themes
 #git://github.com/altercation/vim-colors-solarized.git
-git://github.com/chriskempson/base16-vim.git
-#git://github.com/w0ng/vim-hybrid.git
+#git://github.com/chriskempson/base16-vim.git
+git://github.com/w0ng/vim-hybrid.git
 }
 require 'fileutils'
 require 'open-uri'

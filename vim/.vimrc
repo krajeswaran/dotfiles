@@ -99,6 +99,7 @@
     "autocmd FileType c,cpp,java,php,javascript,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 
     " shiftwidth for specific files
+    autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
     autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
     autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
     autocmd FileType twiki setlocal shiftwidth=3 tabstop=3
@@ -222,9 +223,9 @@
      "set completeopt="longest,menuone,preview"
 
      """ Enable omni completion.
-     "autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-     "autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-     "autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+     autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+     autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+     autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
      "autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
      "autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
      "autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
@@ -414,12 +415,38 @@
     " }
 
     " syntastic {
+    let g:syntastic_javascript_jslint_args = "-W098"
         let g:syntastic_cpp_compiler = 'g++'
         let g:syntastic_cpp_compiler_options = ' -std=c++11'
         let g:syntastic_always_populate_loc_list = 1
         let g:syntastic_auto_loc_list = 1
-        let g:syntastic_check_on_open = 1
+        let g:syntastic_check_on_open = 0
         let g:syntastic_check_on_wq = 0
+        let g:syntastic_enable_balloons = 1
+    let g:syntastic_mode_map = {
+        \ "mode": "passive",
+        \ "active_filetypes": ["ruby", "python"],
+        \ "passive_filetypes": ["java", "javascript"] }
+        let g:syntastic_html_tidy_ignore_errors = [
+            \"trimming empty <i>",
+            \"trimming empty <span>",
+            \"<input> proprietary attribute \"autocomplete\"",
+            \"proprietary attribute \"role\"",
+            \"proprietary attribute \"hidden\"",
+            \"proprietary attribute \"ng-\""
+        \]
+    " }
+
+    " js {
+        "let g:javascript_conceal_function   = "ƒ"
+        "let g:javascript_conceal_null       = "ø"
+        "let g:javascript_conceal_this       = "@"
+        "let g:javascript_conceal_return     = "⇚"
+        "let g:javascript_conceal_undefined  = "¿"
+        "let g:javascript_conceal_NaN        = "ℕ"
+        "let g:javascript_conceal_prototype  = "¶"
+        "let g:javascript_conceal_static     = "•"
+        "let g:javascript_conceal_super      = "Ω"
     " }
 
     " airline {
@@ -448,8 +475,8 @@
           \ 'component_type': {
           \   'syntastic': 'error',
           \ },
-          \ 'separator': { 'left': '▓▒░', 'right': '░▒▓' },
-          \ 'subseparator': { 'left': '▒', 'right': '░' }
+          \ 'separator': { 'left': '⟫', 'right': '⟪' },
+          \ 'subseparator': { 'left': '❯', 'right': '❮' }
           \ }
 
         function! WizMod()
@@ -491,8 +518,8 @@
 " GUI Settings {
     " GVIM- (here instead of .gvimrc)
     set t_Co=256
-    let g:base16colorspace=256
-    colorscheme base16-tomorrow
+    let g:hybrid_use_Xresources = 1
+    colorscheme hybrid
     if has('gui_running')
         "colo my_murphy  
         set lines=30  "30 lines of text window size
@@ -501,6 +528,7 @@
         set guioptions-=m  "remove menu bar
         set guioptions-=T  "remove toolbar
         set guioptions-=r  "remove right-hand scroll bar
+        set guioptions-=L  "remove left-hand scroll bar
     endif
 " }
 

@@ -8,3 +8,5 @@ touch
 delete 
 search src
 search experiments
+open_with 
+open_with open
