@@ -1,11 +1,11 @@
 # OS-specific pm stuff
-#alias showfilesinpkg="pacman -Ql "
-#alias showpkgfilebelongsto="pacman -Qo "
+alias showfilesinpkg="dpkg -L "
+alias showpkgfilebelongsto="dpkg -S "
 #alias showorphanedpkgs="pacman -Qtdq ;  pacman -Qqm"
 #alias showexplicitlyinstalledpkgs="pacman -Qen ; pacman -Qem "
 #alias showrecentlyinstalledpkgs="cat /var/log/pacman.log | grep install"
-#alias installthefuck="pacaur -S --noconfirm "
-#alias removethefuck="pacaur -Rns "
+alias installthefuck="sudo apt-get install --force-yes -y "
+alias removethefuck="sudo apt-get remove --auto-remove --purge "
 #alias showmodifedconfigfiles="pacman -Qii | awk '/^MODIFIED/ {print $2}'"
 
 #alias ejectusb="sudo udisks --detach "
@@ -27,12 +27,13 @@ function proxy_off() {
     echo -e "Proxy environment variable removed."
 }
 
-export PATH=$PATH:/home/krajeswaran/bin:/home/krajeswaran/.vim
+export PATH=$PATH:/home/krajeswaran/bin:/home/krajeswaran/.vim:/home/krajeswaran/.local/bin
 export JAVA_HOME=/usr/lib/jvm/default
 export ANDROID_HOME=/home/krajeswaran/src/android-sdk
 export GRADLE_HOME=/home/krajeswaran/src/gradle-2.10
+export GOPATH=/home/krajeswaran/gocode
 export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/krajeswaran/.gem/ruby/2.1.0/bin
-export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$GOPATH/bin
 export ANDROID_HVPROTO="ddm"
 
 alias vi="nvim"

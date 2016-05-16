@@ -83,10 +83,14 @@
         <value type="string" value="thunar"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="google-chrome-stable"/>
+        <value type="string" value="onboard"/>
         <value type="string" value="task manager"/>
+        <value type="string" value="skype"/>
         <value type="string" value="gigolo"/>
         <value type="string" value="orage"/>
+        <value type="string" value="zeal"/>
         <value type="string" value="xfce terminal"/>
+        <value type="string" value="network"/>
         <value type="string" value="clipman"/>
         <value type="string" value="update-notifier"/>
         <value type="string" value="xfce4-power-manager"/>

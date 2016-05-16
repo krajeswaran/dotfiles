@@ -24,8 +24,7 @@ stow
 sshfs
 mosh
 rsync
-watch
-pv
+progress
 libreoffice-draw
 graphicsmagick
 zsh
@@ -34,7 +33,6 @@ vim-doc
 p7zip
 unrar
 gparted
-gnome-paint
 zip
 ia32-libs
 lib32z1
@@ -51,7 +49,6 @@ htop
 rbenv
 openjdk-8-jdk
 ruby 
-ruby2.2 
 ipython3 
 virtualenv 
 nodejs 
@@ -59,6 +56,8 @@ npm
 silversearcher-ag
 ack
 xfce4-time-out-plugin
+golang
+zeal
 EOF
 
 read -d'' REMOVE<<EOF

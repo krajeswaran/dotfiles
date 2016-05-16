@@ -31,15 +31,15 @@
     <property name="shadow_delta_y" type="int" value="-3"/>
     <property name="shadow_opacity" type="int" value="50"/>
     <property name="show_app_icon" type="bool" value="false"/>
-    <property name="show_dock_shadow" type="bool" value="true"/>
+    <property name="show_dock_shadow" type="bool" value="false"/>
     <property name="show_frame_shadow" type="bool" value="true"/>
-    <property name="show_popup_shadow" type="bool" value="false"/>
+    <property name="show_popup_shadow" type="bool" value="true"/>
     <property name="snap_to_border" type="bool" value="true"/>
     <property name="snap_to_windows" type="bool" value="false"/>
     <property name="snap_width" type="int" value="10"/>
     <property name="theme" type="string" value="Greybird"/>
     <property name="title_alignment" type="string" value="center"/>
-    <property name="title_font" type="string" value="FreeSans Semi-Bold 9"/>
+    <property name="title_font" type="string" value="Nimbus Sans L Bold 10"/>
     <property name="title_horizontal_offset" type="int" value="0"/>
     <property name="title_shadow_active" type="string" value="false"/>
     <property name="title_shadow_inactive" type="string" value="false"/>
@@ -47,7 +47,7 @@
     <property name="title_vertical_offset_inactive" type="int" value="0"/>
     <property name="urgent_blink" type="bool" value="false"/>
     <property name="use_compositing" type="bool" value="true"/>
-    <property name="workspace_count" type="int" value="33"/>
+    <property name="workspace_count" type="int" value="43"/>
     <property name="workspace_names" type="array">
       <value type="string" value="1"/>
       <value type="string" value="2"/>
@@ -82,6 +82,16 @@
       <value type="string" value="Workspace 31"/>
       <value type="string" value="Workspace 32"/>
       <value type="string" value="Workspace 33"/>
+      <value type="string" value="Workspace 34"/>
+      <value type="string" value="Workspace 35"/>
+      <value type="string" value="Workspace 36"/>
+      <value type="string" value="Workspace 37"/>
+      <value type="string" value="Workspace 38"/>
+      <value type="string" value="Workspace 39"/>
+      <value type="string" value="Workspace 40"/>
+      <value type="string" value="Workspace 41"/>
+      <value type="string" value="Workspace 42"/>
+      <value type="string" value="Workspace 43"/>
     </property>
     <property name="wrap_resistance" type="int" value="10"/>
     <property name="wrap_windows" type="bool" value="true"/>
@@ -106,7 +116,7 @@
     <property name="snap_resist" type="bool" value="false"/>
     <property name="sync_to_vblank" type="bool" value="true"/>
     <property name="tile_on_move" type="bool" value="true"/>
-    <property name="titleless_maximize" type="bool" value="false"/>
+    <property name="titleless_maximize" type="bool" value="true"/>
     <property name="toggle_workspaces" type="bool" value="false"/>
     <property name="unredirect_overlays" type="bool" value="true"/>
     <property name="wrap_cycle" type="bool" value="true"/>
