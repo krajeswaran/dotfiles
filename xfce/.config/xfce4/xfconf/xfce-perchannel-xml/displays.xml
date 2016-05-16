@@ -11,7 +11,7 @@
       <property name="Primary" type="bool" value="false"/>
       <property name="Position" type="empty">
         <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="1080"/>
+        <property name="Y" type="int" value="0"/>
       </property>
     </property>
     <property name="HDMI-1-1" type="string" value="2. Dell 22&quot;">

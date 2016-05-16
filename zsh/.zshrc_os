@@ -7,8 +7,11 @@ alias showpkgfilebelongsto="dpkg -S "
 alias installthefuck="sudo apt-get install --force-yes -y "
 alias removethefuck="sudo apt-get remove --auto-remove --purge "
 #alias showmodifedconfigfiles="pacman -Qii | awk '/^MODIFIED/ {print $2}'"
-
 #alias ejectusb="sudo udisks --detach "
+alias purgeorphanpkgs="sudo deborphan | xargs sudo apt-get  remove --purge"
+#alias purgeoldkernels="dpkg -l linux-'*' | awk '/^ii/{ print $2}' | grep -v -e `uname -r | cut -f1,2 -d"-"` | grep -e [0-9] | xargs sudo apt-get purge"
+alias showrecentlyinstalledpkgs="grep \ install\  /var/log/dpkg.log"
+#alias purgedeadcfg="sudo dpkg --purge `sudo dpkg -l | grep ^rc | tr -s ' ' | cut -d " " -f 2`"
 
 function proxy_on() {
     export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"

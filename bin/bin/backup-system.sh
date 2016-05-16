@@ -71,17 +71,17 @@ echo Bleachbit your dirty bits.......
 proceed_yesorno
 [[ $REPLY = [yY] ]] && bleachbit -c --preset
 
-echo Optimizing pacman.......
+echo Optimizing apt.......
 proceed_yesorno
-[[ $REPLY = [yY] ]] && pacman-optimize
+[[ $REPLY = [yY] ]] && apt-get autoremove --purge && apt-get autoclean
 
-echo Purging unwanted locales........
-proceed_yesorno
-[[ $REPLY = [yY] ]] && localepurge
+#echo Purging old kernels........
+#proceed_yesorno
+#[[ $REPLY = [yY] ]] && dpkg -l linux-'*' | awk '/^ii/{ print $2}' | grep -v -e $(uname -r | cut -f1,2 -d"-") | grep -e [0-9] | xargs apt-get purge
 
-echo Clean pacman cache........
+echo Purging dead config........
 proceed_yesorno
-[[ $REPLY = [yY] ]] && pacaur -Scc
+[[ $REPLY = [yY] ]] && dpkg --purge $(dpkg -l | grep ^rc | tr -s ' ' | cut -d " " -f 2)
 
 # Check if exclude file exists
 if [ ! -f $exclude_file ]; then

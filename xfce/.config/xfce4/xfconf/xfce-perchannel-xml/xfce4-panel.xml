@@ -94,6 +94,7 @@
         <value type="string" value="clipman"/>
         <value type="string" value="update-notifier"/>
         <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="drop-down terminal"/>
       </property>
       <property name="items" type="array">
         <value type="string" value="14418443291.desktop"/>
