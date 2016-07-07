@@ -1,0 +1,43 @@
+# OS-specific pm stuff
+alias showfilesinpkg="dpkg -L "
+alias showpkgfilebelongsto="dpkg -S "
+#alias showorphanedpkgs="pacman -Qtdq ;  pacman -Qqm"
+#alias showexplicitlyinstalledpkgs="pacman -Qen ; pacman -Qem "
+#alias showrecentlyinstalledpkgs="cat /var/log/pacman.log | grep install"
+alias installthefuck="sudo apt-get install --force-yes -y "
+alias removethefuck="sudo apt-get remove --auto-remove --purge "
+#alias showmodifedconfigfiles="pacman -Qii | awk '/^MODIFIED/ {print $2}'"
+#alias ejectusb="sudo udisks --detach "
+alias purgeorphanpkgs="sudo deborphan | xargs sudo apt-get  remove --purge"
+#alias purgeoldkernels="dpkg -l linux-'*' | awk '/^ii/{ print $2}' | grep -v -e `uname -r | cut -f1,2 -d"-"` | grep -e [0-9] | xargs sudo apt-get purge"
+alias showrecentlyinstalledpkgs="grep \ install\  /var/log/dpkg.log"
+#alias purgedeadcfg="sudo dpkg --purge `sudo dpkg -l | grep ^rc | tr -s ' ' | cut -d " " -f 2`"
+
+function proxy_on() {
+    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+    export http_proxy="http://localhost:8123/"
+    export https_proxy=$http_proxy
+    export ftp_proxy=$http_proxy
+    export rsync_proxy=$http_proxy
+    export HTTP_PROXY=$http_proxy
+    export HTTPS_PROXY=$http_proxy
+    export FTP_PROXY=$http_proxy
+    export RSYNC_PROXY=$http_proxy
+}
+
+function proxy_off() {
+    unset http_proxy HTTP_PROXY HTTPS_PROXY FTP_PROXY RSYNC_PROXY https_proxy ftp_proxy rsync_proxy
+    echo -e "Proxy environment variable removed."
+}
+
+export PATH=$PATH:/home/kumaresan/bin:/home/kumaresan/.vim:/home/kumaresan/.local/bin
+export JAVA_HOME=/usr/lib/jvm/default
+export ANDROID_HOME=/home/kumaresan/src/android-sdk
+export GRADLE_HOME=/home/kumaresan/src/gradle-2.10
+export GOPATH=/home/kumaresan/gocode
+export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/kumaresan/.gem/ruby/2.1.0/bin
+export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$GOPATH/bin
+export ANDROID_HVPROTO="ddm"
+
+eval "$(rbenv init -)"
+
