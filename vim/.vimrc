@@ -92,7 +92,6 @@
     set tabstop=4                   " an indentation every four columns
     set softtabstop=4               " let backspace delete indent
     "set matchpairs+=<:>                " match, to be used with %
-    set paste                       " no indent on paste
     "set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
 
     " Remove trailing whitespaces and ^M chars
