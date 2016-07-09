@@ -112,7 +112,7 @@
 
     " directories
     set viewdir=$HOME/.vimviews
-    set backupdir=$HOME/.vimbackup
+    set backupdir=$HOME/.vimbackups
     set directory=$HOME/.vimswap
 " }
 
