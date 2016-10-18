@@ -1,5 +1,4 @@
 set clipboard^=unnamed
-set clipboard^=unnamedplus
 "imap ^V ^O"+p
 "set shellcmdflag=-ic
 set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
@@ -28,4 +27,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
 set whichwrap=b,s,h,l,<,>,[,]   " backspace and cursor keys wrap to
 set scrolljump=5                " lines to scroll when cursor leaves screen
 set scrolloff=2                 " minimum lines to keep above and below cursor
+set surround 
 
+map <leader>f :action ReformatCode<CR>

@@ -13,6 +13,8 @@ git://github.com/itchyny/lightline.vim.git
 #git://github.com/bling/vim-airline.git
 git://github.com/terryma/vim-multiple-cursors.git
 #git://github.com/maxbrunsfeld/vim-yankstack.git
+git://github.com/xolox/vim-notes.git
+git://github.com/xolox/vim-misc.git
 
 #coding
 git://github.com/scrooloose/nerdcommenter.git
@@ -39,6 +41,8 @@ git://github.com/vim-ruby/vim-ruby.git
 #git://github.com/klen/python-mode.git
 #git://github.com/davidhalter/jedi.git 
 #git://github.com/davidhalter/jedi-vim.git
+https://github.com/tmhedberg/SimpylFold.git
+https://github.com/vim-scripts/indentpython.vim.git
 
 #Javascript
 git://github.com/leshill/vim-json.git

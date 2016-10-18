@@ -36,17 +36,14 @@ ctags
 macvim --with-cscope --with-lua --with-ruby --with-python --HEAD
 vim --with-cscope --with-lua --with-ruby --with-python
 ack
-zip
+p7zip
 unrar
-7z
 aria2 
 xz 
 openssh
 mosh
 golang
 python3
-ipython3
-pip3
 )
 
 echo "installing binaries..."
@@ -55,10 +52,8 @@ brew install ${binaries[@]}
 
 # Apps
 apps=(
-libreoffice
 dropbox
 java
-google-chrome
 qlcolorcode
 firefox
 qlmarkdown

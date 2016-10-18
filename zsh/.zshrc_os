@@ -1,3 +1,5 @@
+export JAVA_HOME=/Library/Java/Home
+export GRAILS_HOME=${HOME}/src/grails-2.4.3
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export GRADLE_HOME=${HOME}/src/gradle
 export GEM_PATH=${HOME}/.gem/ruby/2.0.0
@@ -21,4 +23,5 @@ export GOPATH=${HOME}/gopath
 #proxy_on # proxy on by default
 
 alias ls="ls --color"
-export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${GEM_PATH}/bin${HOME}/bin:${PATH}
+alias vim="/usr/local/bin/vim"
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${PATH}
