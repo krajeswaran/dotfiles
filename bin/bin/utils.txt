@@ -1,0 +1,33 @@
+coreutils 
+binutils 
+findutils
+stow 
+grep 
+graphicsmagick 
+rename 
+zsh 
+python 
+node 
+tree 
+git 
+rsync 
+cscope 
+curl 
+wget 
+progress 
+ctags 
+vim --with-cscope --with-lua --with-ruby --with-python
+macvim --with-cscope --with-lua --with-ruby --with-python
+ack 
+p7zip 
+unrar 
+aria2  
+xz  
+openssh 
+mosh 
+golang 
+python3 
+redis 
+postgresql 
+tmux
+mpv

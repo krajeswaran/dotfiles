@@ -1,0 +1,6 @@
+java
+firefox
+Caskroom/cask/iterm2
+virtualbox
+docker
+sshfs

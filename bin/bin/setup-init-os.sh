@@ -11,66 +11,17 @@ fi
 # Update homebrew recipes
 brew update
 
-brew tap homebrew/dupes
-brew tap gapple/services
-
-binaries=(
-coreutils
-findutils
-binutils
-stow
-homebrew/dupes/grep
-graphicsmagick
-rename
-zsh
-python
-node
-tree
-git
-rsync
-cscope
-curl
-wget
-progress
-ctags
-macvim --with-cscope --with-lua --with-ruby --with-python --HEAD
-vim --with-cscope --with-lua --with-ruby --with-python
-ack
-p7zip
-unrar
-aria2 
-xz 
-openssh
-mosh
-golang
-python3
-)
+brew tap "homebrew/dupes"
+brew tap "gapple/services"
 
 echo "installing binaries..."
-echo "installing apps..."
-brew install ${binaries[@]}
+brew install $(<${HOME}/dotfiles/bin/bin/utils.txt)
 
 # Apps
-apps=(
-dropbox
-java
-qlcolorcode
-firefox
-qlmarkdown
-vagrant
-iterm2
-qlprettypatch
-virtualbox
-qlstephen
-mpv
-sshfs
-quicklook-json
-)
-
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew cask install --appdir="/Applications" $(<${HOME}/dotfiles/bin/bin/apps.txt)
 
 brew tap caskroom/fonts
 
@@ -90,4 +41,9 @@ font-droid-sans-mono
 echo "installing fonts..."
 brew cask install ${fonts[@]}
 
-#brew linkapps --system
+brew linkapps --system
+
+
+# install zprezto
+# create vim dirs
+# install vim plugs
