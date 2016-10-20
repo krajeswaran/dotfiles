@@ -31,3 +31,4 @@ redis
 postgresql 
 tmux
 mpv
+the_silver_searcher

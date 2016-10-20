@@ -24,4 +24,4 @@ export GOPATH=${HOME}/gopath
 
 alias ls="ls --color"
 alias vim="/usr/local/bin/vim"
-export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:/usr/local/opt/go/libexec/bin:${PATH}
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:/usr/local/opt/go/libexec/bin:${GOPATH}/bin:${PATH}
