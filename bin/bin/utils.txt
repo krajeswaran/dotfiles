@@ -32,3 +32,5 @@ postgresql
 tmux
 mpv
 the_silver_searcher
+fzf
+htop

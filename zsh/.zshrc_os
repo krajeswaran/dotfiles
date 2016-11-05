@@ -1,3 +1,5 @@
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export JAVA_HOME=/Library/Java/Home
 export GRAILS_HOME=${HOME}/src/grails-2.4.3
 export ANDROID_HOME=${HOME}/Library/Android/sdk
@@ -25,3 +27,7 @@ export GOPATH=${HOME}/gopath
 alias ls="ls --color"
 alias vim="/usr/local/bin/vim"
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:/usr/local/opt/go/libexec/bin:${GOPATH}/bin:${PATH}
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+

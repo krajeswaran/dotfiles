@@ -5,7 +5,8 @@ git_bundles = %w{
 #git://github.com/thesaneone/taskpaper.vim.git
 git://github.com/tpope/vim-repeat.git
 git://github.com/tpope/vim-surround.git
-git://github.com/kien/ctrlp.vim.git
+#git://github.com/kien/ctrlp.vim.git
+git://github.com/junegunn/fzf.vim.git
 git://github.com/scrooloose/nerdtree.git
 #git://github.com/vim-scripts/DirDo.vim.git
 git://github.com/Lokaltog/vim-easymotion.git

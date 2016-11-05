@@ -2,12 +2,81 @@
 set nocompatible        " must be first line
 set background=dark     " Assume a dark background
 
-" Setup pathogen Support
-" pathogen - turning off as this affects rest of the settings like indent etc
-call pathogen#infect()
-syntax on
-filetype plugin indent on
-call pathogen#helptags()
+" Plugins
+call plug#begin('~/.vim/plugged')
+
+"general
+"Plug thesaneone/taskpaper.vim
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+"Plug kien/ctrlp.vim
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+"Plug vim-scripts/DirDo.vim
+Plug 'Lokaltog/vim-easymotion'
+Plug 'itchyny/lightline.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'mileszs/ack.vim'
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
+
+"coding
+Plug 'scrooloose/nerdcommenter'
+"Plug scrooloose/syntastic
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'xuhdev/SingleCompile'
+"Plug tpope/vim-commentary
+Plug 'Shougo/neocomplete'
+"Plug Shougo/neosnippet
+"Plug Valloric/YouCompleteMe
+"Plug majutsushi/tagbar
+"Plug xolox/vim-easytags
+
+"ruby
+"Plug vim-ruby/vim-ruby
+"Plug tpope/vim-rake
+"Plug ecomba/vim-ruby-refactoring
+"Plug astashov/vim-ruby-debugger
+
+"python
+"Plug klen/python-mode
+"Plug davidhalter/jedi 
+Plug 'davidhalter/jedi-vim'
+"https:/hub.com/tmhedberg/SimpylFold
+"https:/hub.com/vim-scripts/indentpython.vim
+
+"Go
+Plug 'fatih/vim-go'
+
+"Javascript
+"Plug leshill/vim-json
+"Plug groenewege/vim-less
+"Plug taxilian/vim-web-indent
+
+"html
+"Plug amirh/HTML-AutoCloseTag
+"Plug ChrisYip/Better-CSS-Syntax-for-Vim
+"Plug mattn/emmet-vim
+
+"addl.syntaxes
+"Plug tpope/vim-haml
+Plug 'tpope/vim-markdown'
+Plug 'pangloss/vim-javascript'
+
+"misc
+"Plug vim-scripts/Conque-Shell
+"Plug mutewinter/LustyJuggler
+"Plug fmoralesc/vim-pad
+Plug 'godlygeek/tabular'
+
+"themes
+"Plug altercation/vim-colors-solarized
+"Plug chriskempson/base16-vim
+Plug 'w0ng/vim-hybrid'
+
+call plug#end()
 
 
 " General
@@ -300,19 +369,59 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 
 
 " ctrlp
-let g:ctrlp_working_path_mode = 2
-nnoremap <Leader>o :CtrlP<CR>
-nnoremap <silent> <D-t> :CtrlP<CR>
-nnoremap <silent> <D-r> :CtrlPMRU<CR>
-let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\.git$\|\.hg$\|\.svn$',
-            \ 'file': '\.swp$\|\.so$\|\.zip$' }
-let g:updatetime=4000
-let g:ctrlp_cmd = 'CtrlPMRUFiles'
-let g:ctrlp_by_filename = 1
-let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
-let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_open_new_file = 'h'
+"let g:ctrlp_working_path_mode = 2
+"nnoremap <Leader>o :CtrlP<CR>
+"nnoremap <silent> <D-t> :CtrlP<CR>
+"nnoremap <silent> <D-r> :CtrlPMRU<CR>
+"let g:ctrlp_custom_ignore = {
+            "\ 'dir':  '\.git$\|\.hg$\|\.svn$',
+            "\ 'file': '\.swp$\|\.so$\|\.zip$' }
+"let g:updatetime=4000
+"let g:ctrlp_cmd = 'CtrlPMRUFiles'
+"let g:ctrlp_by_filename = 1
+"let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
+"let g:ctrlp_clear_cache_on_exit = 0
+"let g:ctrlp_open_new_file = 'h'
+
+
+" fzf
+"let g:fzf_nvim_statusline = 0 " disable statusline overwriting
+
+nnoremap <silent> <leader>o :Files<CR>
+nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <silent> <leader>p :History<CR>
+nnoremap <silent> <leader>/ :execute 'Ag ' . input('Ag/')<CR>
+nnoremap <silent> <leader>. :AgIn 
+
+nnoremap <silent> K :call SearchWordWithAg()<CR>
+vnoremap <silent> K :call SearchVisualSelectionWithAg()<CR>
+nnoremap <silent> <leader>gc :Commits<CR>
+nnoremap <silent> <leader>gs :GFiles?<CR>
+
+imap <C-x><C-f> <plug>(fzf-complete-file-ag)
+imap <C-x><C-l> <plug>(fzf-complete-line)
+
+function! SearchWordWithAg()
+execute 'Ag' expand('<cword>')
+endfunction
+
+function! SearchVisualSelectionWithAg() range
+let old_reg = getreg('"')
+let old_regtype = getregtype('"')
+let old_clipboard = &clipboard
+set clipboard&
+normal! ""gvy
+let selection = getreg('"')
+call setreg('"', old_reg, old_regtype)
+let &clipboard = old_clipboard
+execute 'Ag' selection
+endfunction
+
+function! SearchWithAgInDirectory(...)
+call fzf#vim#ag(join(a:000[1:], ' '), extend({'dir': a:1}, g:fzf#vim#default_layout))
+endfunction
+command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
+
 
 
 " Fugitive
@@ -495,3 +604,7 @@ endfunction
 set t_Co=256
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
