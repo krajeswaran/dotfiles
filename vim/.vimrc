@@ -2,6 +2,7 @@
 set nocompatible        " must be first line
 set background=dark     " Assume a dark background
 
+set shell=/bin/bash  " posix complaint shell for os x 
 " Plugins
 call plug#begin('~/.vim/plugged')
 
@@ -12,7 +13,6 @@ Plug 'tpope/vim-surround'
 "Plug kien/ctrlp.vim
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 "Plug vim-scripts/DirDo.vim
 Plug 'Lokaltog/vim-easymotion'
 Plug 'itchyny/lightline.vim'
@@ -22,13 +22,15 @@ Plug 'xolox/vim-notes'
 Plug 'xolox/vim-misc'
 
 "coding
-Plug 'scrooloose/nerdcommenter'
 "Plug scrooloose/syntastic
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'xuhdev/SingleCompile'
-"Plug tpope/vim-commentary
-Plug 'Shougo/neocomplete'
+Plug 'tpope/vim-commentary'
+Plug 'w0rp/ale'
+Plug 'lifepillar/vim-mucomplete'
+" Plug 'ajh17/VimCompletesMe'
+Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
+"Plug 'Shougo/neocomplete'
 "Plug Shougo/neosnippet
 "Plug Valloric/YouCompleteMe
 "Plug majutsushi/tagbar
@@ -119,7 +121,6 @@ set linebreak
 set nolist  " list disables linebreak
 set textwidth=0
 set wrapmargin=0
-set formatoptions+=l
 set backspace=indent,eol,start  " backspace for dummies
 set linespace=0                 " No extra spaces between rows
 set showmatch                   " show matching brackets/parenthesis
@@ -146,7 +147,7 @@ set expandtab                   " tabs are spaces, not tabs
 set tabstop=4                   " an indentation every four columns
 set softtabstop=4               " let backspace delete indent
 "set matchpairs+=<:>                " match, to be used with %
-"set paste                       " no indent on paste
+set pastetoggle=<F2>                       " no indent on paste
 "set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
 
 " other niceties
@@ -169,16 +170,7 @@ set directory=$HOME/.vimswap
 let mapleader = "\<Space>"
 
 " quick save
-nnoremap <Leader>w :w<CR>
-
-" quick copy paste to system
-vmap <Leader>y "+y
-vmap <Leader>d "+d
-nmap <Leader>p "+p
-nmap <Leader>P "+P
-vmap <Leader>p "+p
-vmap <Leader>P "+P
-
+nnoremap <Leader>x :wq<CR>
 
 " Making it so ; works like : for commands. Saves typing and eliminates :W style typos due to lazy holding shift.
 nnoremap ; :
@@ -256,26 +248,26 @@ map zh zH
 map <F7> :setlocal spell spelllang=en
 
 "jump error list easily 
-map <silent> <leader>n :cn<CR>zv
-map <silent> <leader>p :cp<CR>zv
+map <silent> <leader>cn :cn<CR>zv
+map <silent> <leader>cp :cp<CR>zv
 
 highlight BadWhitespace ctermbg=red guibg=darkred
 
 " py tabs
 au BufNewFile,BufRead *.py 
-            \ set tabstop=4 |
-            \ set softtabstop=4 |
-            \ set shiftwidth=4 |
-            \ set textwidth=120 |
-            \ set expandtab |
-            \ set autoindent |
-            \ set fileformat=unix |
+        \ set tabstop=4 |
+        \ set softtabstop=4 |
+        \ set shiftwidth=4 |
+        \ set textwidth=120 |
+        \ set expandtab |
+        \ set autoindent |
+        \ set fileformat=unix |
 
 " js tabs
 au BufNewFile,BufRead *.js,*.html,*.css
-            \ set tabstop=2 |
-            \ set softtabstop=2 |
-            \ set shiftwidth=2 |
+        \ set tabstop=2 |
+        \ set softtabstop=2 |
+        \ set shiftwidth=2 |
 
 " flag bad whitespace
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /\s\+$/
@@ -289,99 +281,17 @@ let g:notes_suffix = '.txt'
 let g:notes_title_sync = 'rename_file'
 let g:notes_list_bullets = ['•', '◦', '▸', '▹', '▪', '▫']
 
-" Misc
-let g:NERDShutUp=1
-let b:match_ignorecase = 1
-let g:NERDTreeMinimalUI = 1
+" netrw
+let g:netrw_banner = 0
+let g:netrw_liststyle = 1
+let g:netrw_browse_split = 2
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
 
-
-" neocomplete
-"" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
-"" Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
-"" Use smartcase.
-let g:neocomplete#enable_smart_case = 1
-"" Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
-
-"" Plugin key-mappings.
-"inoremap <expr><C-g> neocomplete#undo_completion()
-"inoremap <expr><C-l> neocomplete#complete_common_string()
-
-"" Recommended key-mappings.
-"" <CR>: close popup and save indent.
-"function! s:my_cr_function()
-"    return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-"endfunction
-"inoremap <silent> <CR><C-r>=<SID>my_cr_function()<CR>
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-" Close popup by <Space>.
-inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
-
-"" AutoComplPop like behavior.
-""let g:neocomplete#enable_auto_select = 1
-
-"" Shell like behavior(not recommended).
-""set completeopt+=longest
-""let g:neocomplete#enable_auto_select = 1
-""let g:neocomplete#disable_auto_complete = 1
-""inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
-
-"" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-" For Jedi
-autocmd FileType python setlocal omnifunc=jedi#completions
-let g:jedi#completions_enabled = 0
-let g:jedi#auto_vim_configuration = 0
-let g:jedi#smart_auto_mappings = 0
-if !exists('g:neocomplete#sources#omni#input_patterns')
-    let g:neocomplete#sources#omni#input_patterns = {}
-endif
-let g:neocomplete#sources#omni#input_patterns.python = '\%([^. \t]\.\|^\s*@\|^\s*from\s.\+import \|^\s*from \|^\s*import \)\w*'
-" alternative pattern: '\h\w*\|[^. \t]\.\w*'
-
-
-" NerdTree
-map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
-map <leader>e :NERDTreeFind<CR>
-nmap <leader>nt :NERDTreeFind<CR>
-
-let NERDTreeShowBookmarks=1
-let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
-let NERDTreeChDirMode=0
-let NERDTreeQuitOnOpen=1
-let NERDTreeShowHidden=1
-let NERDTreeKeepTreeInNewTab=1
 
 
 " JSON
 nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
-
-
-" ctrlp
-"let g:ctrlp_working_path_mode = 2
-"nnoremap <Leader>o :CtrlP<CR>
-"nnoremap <silent> <D-t> :CtrlP<CR>
-"nnoremap <silent> <D-r> :CtrlPMRU<CR>
-"let g:ctrlp_custom_ignore = {
-            "\ 'dir':  '\.git$\|\.hg$\|\.svn$',
-            "\ 'file': '\.swp$\|\.so$\|\.zip$' }
-"let g:updatetime=4000
-"let g:ctrlp_cmd = 'CtrlPMRUFiles'
-"let g:ctrlp_by_filename = 1
-"let g:ctrlp_reuse_window = 'netrw\|help\|quickfix'
-"let g:ctrlp_clear_cache_on_exit = 0
-"let g:ctrlp_open_new_file = 'h'
 
 
 " fzf
@@ -421,7 +331,7 @@ function! SearchWithAgInDirectory(...)
 call fzf#vim#ag(join(a:000[1:], ' '), extend({'dir': a:1}, g:fzf#vim#default_layout))
 endfunction
 command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
-
+let g:fzf_launcher = "~/bin/fzf_iterm %s"
 
 
 " Fugitive
@@ -431,7 +341,6 @@ nnoremap <silent> <leader>gc :Gcommit<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
 nnoremap <silent> <leader>gl :Glog<CR>
 nnoremap <silent> <leader>gp :Git push<CR>
-"}
 
 "" taskpaper
 "   let g:task_paper_archive_file = 'Dropbox/todo/archive_todo.txt'
@@ -477,18 +386,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 
-" js
-"let g:javascript_conceal_function   = "ƒ"
-"let g:javascript_conceal_null       = "ø"
-"let g:javascript_conceal_this       = "@"
-"let g:javascript_conceal_return     = "⇚"
-"let g:javascript_conceal_undefined  = "¿"
-"let g:javascript_conceal_NaN        = "ℕ"
-"let g:javascript_conceal_prototype  = "¶"
-"let g:javascript_conceal_static     = "•"
-"let g:javascript_conceal_super      = "Ω"
-
-
 " ack/ag
 if executable('ag')
     let g:ackprg = 'ag'
@@ -509,7 +406,7 @@ let g:lightline = {
             \   'fugitive': 'LightLineFugitive',
             \   'filename': 'LightLineFilename',
             \   'fileformat': 'LightLineFileformat',
-            \   'ctrlpmark': 'CtrlPMark',
+            \   'ctrlpmark': 'ALEStatusline'
             \ },
             \ }
 
@@ -525,9 +422,7 @@ function! LightLineFilename()
     let fname = expand('%:t')
     return fname == 'ControlP' && has_key(g:lightline, 'ctrlp_item') ? g:lightline.ctrlp_item :
                 \ fname == '__Tagbar__' ? g:lightline.fname :
-                \ fname =~ '__Gundo\|NERD_tree' ? '' :
                 \ &ft == 'vimfiler' ? vimfiler#get_status_string() :
-                \ &ft == 'unite' ? unite#get_status_string() :
                 \ &ft == 'vimshell' ? vimshell#get_status_string() :
                 \ ('' != LightLineReadonly() ? LightLineReadonly() . ' ' : '') .
                 \ ('' != fname ? fname : '[No Name]') .
@@ -561,43 +456,17 @@ endfunction
 function! LightLineMode()
     let fname = expand('%:t')
     return fname == '__Tagbar__' ? 'Tagbar' :
-                \ fname == 'ControlP' ? 'CtrlP' :
-                \ fname == '__Gundo__' ? 'Gundo' :
                 \ fname == '__Gundo_Preview__' ? 'Gundo Preview' :
-                \ fname =~ 'NERD_tree' ? 'NERDTree' :
                 \ &ft == 'unite' ? 'Unite' :
                 \ &ft == 'vimfiler' ? 'VimFiler' :
                 \ &ft == 'vimshell' ? 'VimShell' :
                 \ winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
 
-function! CtrlPMark()
-    if expand('%:t') =~ 'ControlP' && has_key(g:lightline, 'ctrlp_item')
-        call lightline#link('iR'[g:lightline.ctrlp_regex])
-        return lightline#concatenate([g:lightline.ctrlp_prev, g:lightline.ctrlp_item
-                    \ , g:lightline.ctrlp_next], 0)
-    else
-        return ''
-    endif
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
+function! ALEStatusline()
+    return ALEGetStatusLine()
 endfunction
-
-let g:ctrlp_status_func = {
-            \ 'main': 'CtrlPStatusFunc_1',
-            \ 'prog': 'CtrlPStatusFunc_2',
-            \ }
-
-function! CtrlPStatusFunc_1(focus, byfname, regex, prev, item, next, marked)
-    let g:lightline.ctrlp_regex = a:regex
-    let g:lightline.ctrlp_prev = a:prev
-    let g:lightline.ctrlp_item = a:item
-    let g:lightline.ctrlp_next = a:next
-    return lightline#statusline(0)
-endfunction
-
-function! CtrlPStatusFunc_2(str)
-    return lightline#statusline(0)
-endfunction
-
 
 " GUI Settings 
 " GVIM- (here instead of .gvimrc)
@@ -608,3 +477,22 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
+
+" disable arrow keys in escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" disable arrow keys in escape mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" mucomplete
+set showmode shortmess-=c
+set completeopt-=preview
+set completeopt+=longest,menu,menuone,noinsert,noselect
+let g:jedi#popup_on_dot = 1  " It may be 1 as well
+let g:mucomplete#enable_auto_at_startup = 1

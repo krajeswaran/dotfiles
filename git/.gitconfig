@@ -12,3 +12,5 @@
 [core]
     mergeoptions = --no-edit
 	editor = vim -f
+[init]
+	templatedir = ~/.git_template

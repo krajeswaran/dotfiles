@@ -15,7 +15,7 @@ cscope
 curl 
 wget 
 progress 
-ctags 
+--HEAD universal-ctags 
 vim --with-cscope --with-lua --with-ruby --with-python
 macvim --with-cscope --with-lua --with-ruby --with-python
 ack 

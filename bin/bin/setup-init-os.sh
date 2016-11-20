@@ -13,6 +13,7 @@ brew update
 
 brew tap "homebrew/dupes"
 brew tap "gapple/services"
+brew tap "universal-ctags/universal-ctags"
 
 echo "installing binaries..."
 brew install $(<${HOME}/dotfiles/bin/bin/utils.txt)
