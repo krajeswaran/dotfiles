@@ -1,9 +1,0 @@
-<application>
-  <component name="UISettings">
-    <option name="FONT_SIZE" value="11" />
-    <option name="SHOW_MEMORY_INDICATOR" value="true" />
-    <option name="SHOW_MAIN_TOOLBAR" value="true" />
-    <option name="HIDE_KNOWN_EXTENSION_IN_TABS" value="true" />
-    <option name="ACTIVATE_MRU_EDITOR_ON_CLOSE" value="true" />
-  </component>
-</application>

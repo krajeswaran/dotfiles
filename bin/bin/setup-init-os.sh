@@ -44,7 +44,5 @@ brew cask install ${fonts[@]}
 
 brew linkapps --system
 
-
-# install zprezto
 # create vim dirs
 # install vim plugs

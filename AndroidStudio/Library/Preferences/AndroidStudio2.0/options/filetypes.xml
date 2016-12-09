@@ -1,9 +1,0 @@
-<application>
-  <component name="FileTypeManager" version="16">
-    <ignoreFiles list="*.hprof;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
-    <extensionMap>
-      <mapping pattern="MODULE_LICENSE_APACHE2" type="PLAIN_TEXT" />
-      <mapping pattern="login_oauth_password_success.json" type="PLAIN_TEXT" />
-    </extensionMap>
-  </component>
-</application>
