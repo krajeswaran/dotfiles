@@ -131,7 +131,7 @@ set ignorecase                  " case insensitive search
 set smartcase                   " case sensitive when uc present
 set wildmenu                    " show list instead of just completing
 set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git,.idea  " MacOSX/Linux
 set whichwrap=b,s,h,l,<,>,[,]   " backspace and cursor keys wrap to
 set scrolljump=5                " lines to scroll when cursor leaves screen
 set scrolloff=2                 " minimum lines to keep above and below cursor
@@ -284,9 +284,10 @@ let g:notes_list_bullets = ['•', '◦', '▸', '▹', '▪', '▫']
 " netrw
 let g:netrw_banner = 0
 let g:netrw_liststyle = 1
-let g:netrw_browse_split = 2
+let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
+let g:netrw_list_hide = &wildignore
 
 
 
@@ -303,9 +304,9 @@ nnoremap <silent> <leader>p :History<CR>
 nnoremap <silent> <leader>/ :execute 'Ag ' . input('Ag/')<CR>
 nnoremap <silent> <leader>. :AgIn 
 
-nnoremap <silent> K :call SearchWordWithAg()<CR>
-vnoremap <silent> K :call SearchVisualSelectionWithAg()<CR>
-nnoremap <silent> <leader>gc :Commits<CR>
+" nnoremap <silent> K :call SearchWordWithAg()<CR>
+" vnoremap <silent> K :call SearchVisualSelectionWithAg()<CR>
+" nnoremap <silent> <leader>gc :Commits<CR>
 nnoremap <silent> <leader>gs :GFiles?<CR>
 
 imap <C-x><C-f> <plug>(fzf-complete-file-ag)
@@ -332,15 +333,6 @@ call fzf#vim#ag(join(a:000[1:], ' '), extend({'dir': a:1}, g:fzf#vim#default_lay
 endfunction
 command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
 let g:fzf_launcher = "~/bin/fzf_iterm %s"
-
-
-" Fugitive
-nnoremap <silent> <leader>gs :Gstatus<CR>
-nnoremap <silent> <leader>gd :Gdiff<CR>
-nnoremap <silent> <leader>gc :Gcommit<CR>
-nnoremap <silent> <leader>gb :Gblame<CR>
-nnoremap <silent> <leader>gl :Glog<CR>
-nnoremap <silent> <leader>gp :Git push<CR>
 
 "" taskpaper
 "   let g:task_paper_archive_file = 'Dropbox/todo/archive_todo.txt'
@@ -478,21 +470,9 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 
-" disable arrow keys in escape mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-
-" disable arrow keys in escape mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
 " mucomplete
-set showmode shortmess-=c
+set showmode shortmess+=c
 set completeopt-=preview
-set completeopt+=longest,menu,menuone,noinsert,noselect
+set completeopt+=longest,menu,menuone,noinsert
 let g:jedi#popup_on_dot = 1  " It may be 1 as well
-let g:mucomplete#enable_auto_at_startup = 1
+let g:mucomplete#enable_auto_at_startup = 0
