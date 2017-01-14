@@ -1,3 +1,7 @@
+[ -f ~/.zf.zsh ] && source ~/.fzf.zsh
+
+export JAVA_HOME=/Library/Java/Home
+export GRAILS_HOME=${HOME}/src/grails-2.4.3
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export GRADLE_HOME=${HOME}/src/gradle
 export GEM_PATH=${HOME}/.gem/ruby/2.0.0
@@ -5,8 +9,7 @@ export GOPATH=${HOME}/gopath
 
 ## proxy stuff
 #proxy_on() 
-#    export no_proxy='localhost,127.0.0.1,localaddress,.localdomain.com,kadmin.local, 169.254/16, kadmin.local, 169.254/16, 10/8, sm720macserv01.visa.com, sm720macserv04.visa.com, sm740macserv01.visa.com, sm930macserv01.visa.com, *.anet.ad, ap.visa.com, *.cybs.corp, *.ic3.com, *.myworkaccess.com, *.qa.intra, *.trusted.visa.com, *.visa.net, *.visadpsmain.com, *.vol*qa.visa.com, 10.*.*.*, drjc*.visa.com, laclivelink.visa.com, oce-imcsproxy.visa.com, sl73*, sw5*.visa.com, sw6*.visa.com, sw7*.visa.com, sw8*.visa.com, sw9*.visa.com, vdensslvpn.cybersource.com, vva*.lac.visaonline.com, *.internal.visadpsgiftcard.com, *.internal.visaprepaidprocessing.com, *.trusted.visadpsmain.com, *.visadpsprepaid.com, *evisadps.com, *evisadpswkst.com, *qa.ppc.com, *qa.visadpsonline-wkst.com, *smail.visa.com, *visasvp.com, 198.241.166.2*, 209.135.56.38, rol2.visa.com, vsignsoc*.visa.com, *.volcorp.com, *.volmte.com, *.vol1qa.com, *.vol1dev.com, *developer.visa.com, *cybsjira.visa.com, *siebel.cybersource.com, *risk.cybersource.com, *dw.cybersource.com, *dw-direct.cybersource.com, *support.cybersource.com, *whistler.cybersource.com, *apps.cybersource.com, *siebel-warm.cybersource.com, *devsbwww1.cybersource.com, *welcome-stage.cybersource.com, *devdeveloperfe01.cybersource.com, *stagedeveloperfe01.cybersource.com, *mams.cybersource.com, *dndevdwdb01.mang.den.ic3.com, *dnstagedwdb01.mang.den.ic3.com, *infomanager.cybersource.com, *elprodinqrun01.mang.sjl.ic3.com, *eltopchassisb3.mang.sjl.ic3.com, *eltopchassisb2.mang.sjl.ic3.com, *dnprodinqrun01.mang.den.ic3.com, *dntopchassisb3.mang.den.ic3.com, *dntopchassisb2.mang.den.ic3.com, *cybsbamboo.cybersource.com, *conint001d.cybersource.com, *dndsngnxus01.dndev.cybersource.com, *dnbldmstr01.cybersource.com, *visaca.com, *autodiscover.visa.com, *sl72ctsmp01.visa.com, LyncDiscoverInternal.visa.com, VSPLIST!!, *.secure.checkout.com'
-#
+#    export no_proxy='localhost'
 #    export http_proxy="http://localhost:3128"
 #    export https_proxy=$http_proxy
 #    export ftp_proxy=$http_proxy
@@ -21,4 +24,12 @@ export GOPATH=${HOME}/gopath
 #proxy_on # proxy on by default
 
 alias ls="ls --color"
-export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${GEM_PATH}/bin${HOME}/bin:${PATH}
+alias vi="vim"
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:/usr/local/opt/go/libexec/bin:${GOPATH}/bin:${PATH}
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+proj() {
+	cd $(find -L ~/src -maxdepth 1 -type d | fzf)
+}

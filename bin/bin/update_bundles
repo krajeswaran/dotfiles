@@ -3,34 +3,35 @@
 git_bundles = %w{
 #general
 #git://github.com/thesaneone/taskpaper.vim.git
-#git://github.com/tpope/vim-repeat.git
+git://github.com/tpope/vim-repeat.git
 git://github.com/tpope/vim-surround.git
-git://github.com/kien/ctrlp.vim.git
+#git://github.com/kien/ctrlp.vim.git
+git://github.com/junegunn/fzf.vim.git
 git://github.com/scrooloose/nerdtree.git
 #git://github.com/vim-scripts/DirDo.vim.git
 git://github.com/Lokaltog/vim-easymotion.git
 git://github.com/itchyny/lightline.vim.git
-#git://github.com/bling/vim-airline.git
 git://github.com/terryma/vim-multiple-cursors.git
-#git://github.com/maxbrunsfeld/vim-yankstack.git
+git://github.com/mileszs/ack.vim.git
+git://github.com/xolox/vim-notes.git
+git://github.com/xolox/vim-misc.git
 
 #coding
 git://github.com/scrooloose/nerdcommenter.git
-git://github.com/scrooloose/syntastic.git
-#git://github.com/tpope/vim-fugitive.git
+#git://github.com/scrooloose/syntastic.git
+git://github.com/tpope/vim-fugitive.git
 git://github.com/airblade/vim-gitgutter.git
 git://github.com/xuhdev/SingleCompile.git
 #git://github.com/tpope/vim-commentary.git
-#git://github.com/Shougo/neocomplete.git
+git://github.com/Shougo/neocomplete.git
 #git://github.com/Shougo/neosnippet.git
 #git://github.com/Valloric/YouCompleteMe.git
 #git://github.com/majutsushi/tagbar.git
 #git://github.com/xolox/vim-easytags.git
-#git://github.com/xolox/vim-misc.git
 
 
 #ruby
-git://github.com/vim-ruby/vim-ruby.git
+#git://github.com/vim-ruby/vim-ruby.git
 #git://github.com/tpope/vim-rake.git
 #git://github.com/ecomba/vim-ruby-refactoring.git
 #git://github.com/astashov/vim-ruby-debugger.git
@@ -38,12 +39,17 @@ git://github.com/vim-ruby/vim-ruby.git
 #python
 #git://github.com/klen/python-mode.git
 #git://github.com/davidhalter/jedi.git 
-#git://github.com/davidhalter/jedi-vim.git
+git://github.com/davidhalter/jedi-vim.git
+#https://github.com/tmhedberg/SimpylFold.git
+#https://github.com/vim-scripts/indentpython.vim.git
+
+#Go
+git://github.com/fatih/vim-go.git
 
 #Javascript
-git://github.com/leshill/vim-json.git
-git://github.com/groenewege/vim-less.git
-git://github.com/taxilian/vim-web-indent.git
+#git://github.com/leshill/vim-json.git
+#git://github.com/groenewege/vim-less.git
+#git://github.com/taxilian/vim-web-indent.git
 
 #html
 #git://github.com/amirh/HTML-AutoCloseTag.git

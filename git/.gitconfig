@@ -3,9 +3,6 @@
     email = kumaresan.rajeswaran@gmail.com
 [github.com]
     user = krajewaran
-[stash.trusted.visa.com]
-    name = Rajeswaran, Kumaresan
-    email = krajeswa@visa.com
 [color]
     ui = true
 [credential]
@@ -15,3 +12,5 @@
 [core]
     mergeoptions = --no-edit
 	editor = vim -f
+[init]
+	templatedir = ~/.git_template

@@ -5,7 +5,6 @@ export LANG=en_US.UTF-8
 export EDITOR='vim'
 
 # aliases
-alias vi="vim"
 alias ll="ls -larth"
 alias llm="ls -larth | less"
 alias rm='rm -I'
@@ -19,12 +18,13 @@ alias namemaker="shuf -n 2 /usr/share/dict/words | tr -dc 'A-Za-z0-9'"
 alias gitclean='git clean -fxdq'
 alias gitpdiff='git diff HEAD --'
 alias pwd="pwd -P"
-alias mirror="mpv -vf screenshot tv://"
 alias gitlog="git log --graph --pretty=format:'%C(yellow)%h%Creset -%Cred%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias smesg="tail -f /var/log/{messages,kernel,dmesg,syslog}"
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias jgrep='find . -name "*.java" -o -name "*.xml" -o -name "*.properties" -type f | xargs grep -nHi '
+alias pygrep='find . -name "*.py" -o -name "*.ini" -o -name "*.yaml" -o -name "*.conf" -type f | xargs grep -nHi '
+alias gogrep='find . -name "*.go" -o -name "*.ini" -o -name "*.yaml" -o -name "*.json" -type f | xargs grep -nHi '
 alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.html" -o -name "*.*ss" -type f | grep -v ".node_modules" | grep -v ".meteor" | xargs grep -nHi '
 
 gitaddselective() {
