@@ -7,3 +7,5 @@ id_rsa**
 known_hosts
 .DS_Store
 mpv/.config/mpv/watch_later/
+vim/.vim/plugged
+node_modules

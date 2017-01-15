@@ -6,7 +6,7 @@ DOTFILES_PATH="${HOME}/dotfiles"
 [[ -e ${DOTFILES_PATH}/bin/bin/setup-init-os.sh ]] && ${DOTFILES_PATH}/bin/bin/setup-init-os.sh 
 
 # execute stow on all config stored
-for dirs in $(ls -d */)
+for dirs in $(printf "%s\n" */)
 do 
     stow -v3 ${dirs} -t ~/
 done
