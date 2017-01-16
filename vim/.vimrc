@@ -304,29 +304,11 @@ nnoremap <silent> <leader>p :History<CR>
 nnoremap <silent> <leader>/ :execute 'Ag ' . input('Ag/')<CR>
 nnoremap <silent> <leader>. :AgIn 
 
-" nnoremap <silent> K :call SearchWordWithAg()<CR>
-" vnoremap <silent> K :call SearchVisualSelectionWithAg()<CR>
 " nnoremap <silent> <leader>gc :Commits<CR>
 nnoremap <silent> <leader>gs :GFiles?<CR>
 
 imap <C-x><C-f> <plug>(fzf-complete-file-ag)
 imap <C-x><C-l> <plug>(fzf-complete-line)
-
-function! SearchWordWithAg()
-execute 'Ag' expand('<cword>')
-endfunction
-
-function! SearchVisualSelectionWithAg() range
-let old_reg = getreg('"')
-let old_regtype = getregtype('"')
-let old_clipboard = &clipboard
-set clipboard&
-normal! ""gvy
-let selection = getreg('"')
-call setreg('"', old_reg, old_regtype)
-let &clipboard = old_clipboard
-execute 'Ag' selection
-endfunction
 
 function! SearchWithAgInDirectory(...)
 call fzf#vim#ag(join(a:000[1:], ' '), extend({'dir': a:1}, g:fzf#vim#default_layout))
@@ -469,6 +451,7 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
+set guifont=monaco
 
 " mucomplete
 set showmode shortmess+=c
