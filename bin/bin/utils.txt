@@ -34,3 +34,5 @@ mpv
 the_silver_searcher
 fzf
 htop
+subliminal
+wakeonlan

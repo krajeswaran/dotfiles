@@ -27,8 +27,8 @@ GIT_PROMPT_SUFFIX="%{$fg[green]%}%{$reset_color%}"
 GIT_PROMPT_AHEAD="%{$fg[red]%}↑NUM%{$reset_color%}"
 GIT_PROMPT_BEHIND="%{$fg[cyan]%}↓NUM%{$reset_color%}"
 GIT_PROMPT_MERGING="%{$fg_bold[magenta]%}↹%{$reset_color%}"
-GIT_PROMPT_UNTRACKED="%F{yellow}●%f"
-GIT_PROMPT_MODIFIED="%F{red}●%f"
+GIT_PROMPT_UNTRACKED="%F{red}●%f"
+GIT_PROMPT_MODIFIED="%F{yellow}●%f"
 GIT_PROMPT_STAGED="%F{green}●%f"
  
 # Show Git branch/tag, or name-rev if on detached head
