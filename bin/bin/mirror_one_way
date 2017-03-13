@@ -4,7 +4,8 @@
 while getopts dl opt
 do
     case "$opt" in
-      d)  DRYRUN="--dry-run" ;;
+      d)  DRYRUN="--dry-run";;
+      l)  LOCALCOPY=on;;
       \?)		# unknown flag
       	  echo >&2 \
 	  "usage: $0 [-d] [-l]"
@@ -13,4 +14,9 @@ do
 done
 shift `expr $OPTIND - 1`
 
-rsync --verbose --stats --recursive --itemize-changes --verbose --progress --archive --delete --protect-args $DRYRUN "$1" "$2" 
+if [ "$LOCALCOPY" ]; then
+    # faster rsync for localcopy
+    rsync --verbose --stats --itemize-changes --human-readable --progress --archive --delete --whole-file --inplace --protect-args $DRYRUN "$1" "$2" 
+else
+    rsync --verbose --stats --itemize-changes --progress --archive --delete --no-compression --protect-args $DRYRUN "$1" "$2" 
+fi

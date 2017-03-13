@@ -1,4 +1,4 @@
-export PATH="/home/thesaneone/.rbenv/shims:/home/thesaneone/.rbenv/shims:/sbin:/home/thesaneone/bin:/home/thesaneone/.vim:/home/thesaneone/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/home/thesaneone/.rbenv/shims:/home/thesaneone/.rbenv/shims:/sbin:/home/thesaneone/bin:/home/thesaneone/.vim:/home/thesaneone/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:${PATH}"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -64,6 +64,3 @@ function purge-orphaned() {
 export JAVA_HOME=/usr/lib/jvm/default
 export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/thesaneone/.gem/ruby/2.1.0/bin
 export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH
-
-eval "$(rbenv init -)"
-

@@ -14,3 +14,6 @@ fi
 if [[ -s "${ZDOTDIR:-$HOME}/.zshrc_common" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc_common"
 fi
+
+export LC_ALL=en_IN.utf8
+export LANG=en_IN.utf8

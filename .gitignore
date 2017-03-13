@@ -6,3 +6,9 @@
 cmus/.config/cmus/autosave
 cmus/.config/cmus/cache
 cmus/.config/cmus/search-history
+qbittorrent/.config/qBittorrent/qBittorrent-data.conf
+qbittorrent/.config/qBittorrent/qBittorrent-resume.conf
+qbittorrent/.config/qBittorrent/ses_state
+ssh/.ssh/authorized_keys
+ssh/.ssh/known_hosts
+vim/.vim/.netrwhist/

@@ -1,4 +1,0 @@
-* put your scripts here that should run pre a suspend
-* scripts will be sorted regardless of subdirectory
-* any script exiting with an exit status not 0 will cancel the suspend
-* every script will receive the interface we listen on as only argument
