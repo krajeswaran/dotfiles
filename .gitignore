@@ -3,3 +3,6 @@
 **.pyo
 **.pyc
 .netw*
+cmus/.config/cmus/autosave
+cmus/.config/cmus/cache
+cmus/.config/cmus/search-history
