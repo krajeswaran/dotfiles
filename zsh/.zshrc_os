@@ -1,66 +1,33 @@
-export PATH="/home/thesaneone/.rbenv/shims:/home/thesaneone/.rbenv/shims:/sbin:/home/thesaneone/bin:/home/thesaneone/.vim:/home/thesaneone/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:${PATH}"
+[ -f ~/.zf.zsh ] && source ~/.fzf.zsh
 
-# export MANPATH="/usr/local/man:$MANPATH"
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+## proxy stuff
+#proxy_on() 
+#    export no_proxy='localhost'
+#    export http_proxy="http://localhost:3128"
+#    export https_proxy=$http_proxy
+#    export ftp_proxy=$http_proxy
+#    export HTTP_PROXY=$http_proxy
+#    export HTTPS_PROXY=$http_proxy
+#}
+#
+#proxy_off() {
+#    unset http_proxy HTTP_PROXY https_proxy HTTPS_PROXY ftp_proxy
+#}
+#
+#proxy_on # proxy on by default
 
-# OS-specific bash stuff
-alias showfilesinpkg="pacman -Ql "
-alias showpkgfilebelongsto="pacman -Qo "
-alias showorphanedpkgs="pacman -Qtdq ;  pacman -Qqm"
-alias showexplicitlyinstalledpkgs="pacman -Qen ; pacman -Qem "
-alias showrecentlyinstalledpkgs="cat /var/log/pacman.log | grep install"
-alias installthefuck="pacaur -S --noconfirm "
-alias removethefuck="pacaur -Rns "
-alias showmodifedconfigfiles="pacman -Qii | awk '/^MODIFIED/ {print $2}'"
+alias ls="ls --color"
+alias vi="vim"
 
-alias pacupg='pacaur -Syu'     # Synchronize with repositories and then upgrade packages that are out of date on the local system.
-alias pacin='pacaur -S'        # Install specific package(s) from the repositories
-alias pacinstallloc='pacaur -U'       # Install specific package not from the repositories but from a file 
-alias pacrem='pacaur -Rns'     # Remove the specified package(s), its configuration(s) and unneeded dependencies
-alias pacinforemote='pacaur -Si'       # Display information about a given package in the repositories
-alias pacsearchremote='pacaur -Ss'      # Search for package(s) in the repositories
-alias pacinfoloc='pacaur -Qi'       # Display information about a given package in the local database
-alias pacsearchloc='pacaur -Qs'      # Search for package(s) in the local database
-alias pacc="pacaur -Scc"       # Clean cache - delete all not currently installed package files
-alias pacexpl="pacaur -D --asexp"   # Mark one or more installed packages as explicitly installed 
-alias pacimpl="pacaur -D --asdep"   # Mark one or more installed packages as non explicitly installed
-
-# # Additional pacman alias examples
-alias pacinsd='sudo pacman -S --asdeps'            # Install given package(s) as dependencies
-alias pacmir='pacaur -Syy'                    # Force refresh of all package lists after updating /etc/pacman.d/mirrorlist
-
-alias ejectusb="sudo udisks --detach "
-
-alias update_mirrors="sudo wget -O /etc/pacman.d/mirrorlist.backup https://www.archlinux.org/mirrorlist/all/ && sudo cp /etc/pacman.d/mirrorlist.backup /etc/pacman.d/mirrorlist && sudo reflector --verbose -l 30 -p http --sort rate --save /etc/pacman.d/mirrorlist"
-
-function proxy_on() {
-    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
-    export http_proxy="http://thesanerevo:8123/"
-    export https_proxy=$http_proxy
-    export ftp_proxy=$http_proxy
-    export rsync_proxy=$http_proxy
-    export HTTP_PROXY=$http_proxy
-    export HTTPS_PROXY=$http_proxy
-    export FTP_PROXY=$http_proxy
-    export RSYNC_PROXY=$http_proxy
+proj() {
+	cd $(find -L ~/src -maxdepth 1 -type d | fzf)
 }
 
-function proxy_off() {
-    unset http_proxy HTTP_PROXY HTTPS_PROXY FTP_PROXY RSYNC_PROXY https_proxy ftp_proxy rsync_proxy
-    echo -e "Proxy environment variable removed."
-}
+export LANG=C
+export LC_ALL=en_IN.UTF-8
 
-function purge-orphaned() {
-    if [[ ! -n $(pacman -Qdt) ]]; then
-        echo "No orphans to remove."
-    else
-        #sudo pacman -Rns $(pacman -Qdtq)
-        pacrem $(pkg-list_true_orphans)
-    fi
-}
-
+export GOPATH=${HOME}/gopath
 export JAVA_HOME=/usr/lib/jvm/default
 export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/thesaneone/.gem/ruby/2.1.0/bin
-export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH
+export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH:$GOPATH/bin:$HOME/bin

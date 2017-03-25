@@ -1,0 +1,57 @@
+# Purity
+# by Kevin Lanni
+# https://github.com/therealklanni/purity
+# MIT License
+
+# For my own and others sanity
+# git:
+# %b => current branch
+# %a => current action (rebase/merge)
+# prompt:
+# %F => color dict
+# %f => reset color
+# %~ => current path
+# %* => time
+# %n => username
+# %m => shortname host
+# %(?..) => prompt conditional - %(condition.true.false)
+
+
+# string length ignoring ansi escapes
+prompt_purity_string_length() {
+	echo ${#${(S%%)1//(\%([KF1]|)\{*\}|\%[Bbkf])}}
+}
+
+
+prompt_purity_setup() {
+	# prevent percentage showing up
+	# if output doesn't end with a newline
+	export PROMPT_EOL_MARK=''
+
+	prompt_opts=(cr subst percent)
+
+	zmodload zsh/datetime
+	autoload -Uz add-zsh-hook
+	autoload -Uz vcs_info
+
+	# show username@host if logged in through SSH
+	[[ "$SSH_CONNECTION" != '' ]] && prompt_purity_username='%n@%m '
+
+	ZSH_THEME_GIT_PROMPT_PREFIX=" %F{yellow}"
+	ZSH_THEME_GIT_PROMPT_SUFFIX="%b"
+	ZSH_THEME_GIT_PROMPT_DIRTY=""
+	ZSH_THEME_GIT_PROMPT_CLEAN=""
+
+	ZSH_THEME_GIT_PROMPT_ADDED="%F{green}✓%f "
+	ZSH_THEME_GIT_PROMPT_MODIFIED="%F{blue}✶%f "
+	ZSH_THEME_GIT_PROMPT_DELETED="%F{red}✗%f "
+	ZSH_THEME_GIT_PROMPT_RENAMED="%F{magenta}➜%f "
+	ZSH_THEME_GIT_PROMPT_UNMERGED="%F{yellow}═%f "
+	ZSH_THEME_GIT_PROMPT_UNTRACKED="%F{cyan}✩%f "
+
+	# prompt turns red if the previous command didn't exit with 0
+	PROMPT='%F{blue}%c$(git_prompt_string) %(?.%F{green}.%F{red})%(!.#.❯)%f '
+	RPROMPT='%F{red}%(?..⏎)%f'
+}
+
+prompt_purity_setup "$@"

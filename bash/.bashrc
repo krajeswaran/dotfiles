@@ -105,3 +105,5 @@ fi
 if [ -f ~/.bashrc_os ]; then
     source ~/.bashrc_os
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
