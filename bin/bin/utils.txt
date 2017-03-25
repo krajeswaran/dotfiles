@@ -1,6 +1,12 @@
 coreutils 
 binutils 
 findutils
+gnu-tar 
+gnu-sed 
+gawk 
+gnutls 
+gnu-indent 
+gnu-getopt
 stow 
 grep 
 graphicsmagick 

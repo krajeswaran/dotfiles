@@ -162,6 +162,9 @@ set makeprg=g++\ \\\--std=c++0x\ \\\\{$*}
 set viewdir=$HOME/.vimview
 set backupdir=$HOME/.vimbackup
 set directory=$HOME/.vimswap
+"
+" reopen last mark
+autocmd BufReadPost * silent! normal! g`"zv
 
 " Key (re)Mappings
 
@@ -328,6 +331,7 @@ let g:SingleCompile_showresultafterrun = 1
 
 
 " python
+autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 let g:jedi#use_splits_not_buffers = "right"
 autocmd BufNewFile,BufRead *.py let g:ackprg = 'ag --python'
 
@@ -451,7 +455,7 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
-set guifont=monaco
+set guifont=Menlo\ Regular:h14
 
 " mucomplete
 set showmode shortmess+=c
