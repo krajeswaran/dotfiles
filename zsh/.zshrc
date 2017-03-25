@@ -261,7 +261,7 @@ setopt multios # perform implicit tees or cats when multiple redirections are at
 # Comp stuff
 #------------------------------
 autoload -Uz compinit 
-compinit
+compinit -u -i
 zmodload -i zsh/complist
 
 # man zshcontrib
