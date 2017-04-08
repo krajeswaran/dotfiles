@@ -3,7 +3,7 @@
 #
 # <file system>	<dir>	<type>	<options>	<dump>	<pass>
 /dev/sda4 / ext4 defaults 0 1
-/dev/sda3 /data1 ext4 nofail,auto,defaults 0 1
+/dev/sda3 /pron ext4 nofail,auto,defaults 0 1
 /dev/sda2 swap swap defaults 0 0
 
 # ours
@@ -14,5 +14,4 @@ UUID=b8aea924-0636-11e7-bbe7-eb761e19bf56 /movies         ext4    nofail,auto,de
 
 /data/photos /photos            none     nofail,auto,bind     0      0
 /data/music  /music             none     nofail,auto,bind     0      0
-/data1/dumps /dumps             none     nofail,auto,bind     0      0
-#/data/music  /var/lib/mpd/music none     nofail,auto,bind 0  0
+/pron/dumps  /dumps             none     nofail,auto,bind     0      0
