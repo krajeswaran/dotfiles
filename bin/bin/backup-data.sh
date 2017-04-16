@@ -1,48 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
-SRC="$HOME"
-DEST="/media/data"
-REMOTECOPY=
-DRYRUN=
-
-echo ---------------------- syncing dumps --------------------------------
-
-copy_one_way $REMOTECOPY $DRYRUN "$SRC"/dumps "$DEST"
-
-echo ---------------------- end syncing dumps ----------------------------
-
-echo ---------------------- syncing videos --------------------------------
-
-copy_one_way $REMOTECOPY $DRYRUN "$SRC"/videos "$DEST"
-
-echo ---------------------- end syncing videos ----------------------------
-
-echo ---------------------- syncing music --------------------------------
-
-mirror_one_way $REMOTECOPY $DRYRUN "$SRC"/music "$DEST"
-
-echo ---------------------- end syncing music ----------------------------
-
-echo ---------------------- syncing photos --------------------------------
-
-copy_one_way $REMOTECOPY $DRYRUN "$SRC"/photos "$DEST"
-
-echo ---------------------- end syncing photos ----------------------------
-
-echo ---------------------- syncing vboxes --------------------------------
-
-copy_one_way $REMOTECOPY $DRYRUN "$SRC"/vbox "$DEST"
-
-echo ---------------------- end syncing vboxes ----------------------------
-
-echo ---------------------- syncing dropbox --------------------------------
-
-mirror_one_way $REMOTECOPY $DRYRUN "$SRC"/Dropbox "$DEST"
-
-echo ---------------------- end dropbox ----------------------------
-
-if [ -f /media/truecrypt1 ]; then
-    echo Sneaking little hobbitses..
-    copy_one_way $REMOTECOPY $DRYRUN "$SRC"/.xmlback/po "/media/truecrypt1"
-    echo done!
+if $(mountpoint -q /data) && $(mountpoint -q /tv) 
+then
+    echo "mounted - proceeding"
+    flock -n /tmp/lock_data_sync -c "/home/thesaneone/bin/mirror_one_way -l /data/ /tv/data1"
+else
+    echo "not mounted - fuck off"
 fi

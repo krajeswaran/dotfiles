@@ -18,5 +18,5 @@ if [ "$LOCALCOPY" ]; then
     # faster rsync for localcopy
     rsync --verbose --stats --itemize-changes --human-readable --progress --archive --delete --exclude="lost+found" --whole-file --inplace --protect-args $DRYRUN "$1" "$2" 
 else
-    rsync --verbose --stats --itemize-changes --human-progress --progress --archive --delete --exclude="lost+found" --protect-args $DRYRUN "$1" "$2" 
+    rsync --verbose --stats --itemize-changes --human-readable --progress --archive --delete --exclude="lost+found" --protect-args $DRYRUN "$1" "$2" 
 fi
