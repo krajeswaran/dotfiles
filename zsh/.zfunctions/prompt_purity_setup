@@ -30,7 +30,6 @@ prompt_purity_setup() {
 
 	prompt_opts=(cr subst percent)
 
-	zmodload zsh/datetime
 	autoload -Uz add-zsh-hook
 	autoload -Uz vcs_info
 

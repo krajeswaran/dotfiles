@@ -10,12 +10,12 @@ call plug#begin('~/.vim/plugged')
 "Plug thesaneone/taskpaper.vim
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-"Plug kien/ctrlp.vim
+Plug 'tpope/vim-sleuth'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 "Plug vim-scripts/DirDo.vim
 Plug 'Lokaltog/vim-easymotion'
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
 Plug 'xolox/vim-notes'
@@ -71,7 +71,7 @@ Plug 'pangloss/vim-javascript'
 "Plug vim-scripts/Conque-Shell
 "Plug mutewinter/LustyJuggler
 "Plug fmoralesc/vim-pad
-Plug 'godlygeek/tabular'
+"Plug 'godlygeek/tabular'
 
 "themes
 "Plug altercation/vim-colors-solarized
@@ -257,20 +257,20 @@ map <silent> <leader>cp :cp<CR>zv
 highlight BadWhitespace ctermbg=red guibg=darkred
 
 " py tabs
-au BufNewFile,BufRead *.py 
-        \ set tabstop=4 |
-        \ set softtabstop=4 |
-        \ set shiftwidth=4 |
-        \ set textwidth=120 |
-        \ set expandtab |
-        \ set autoindent |
-        \ set fileformat=unix |
+" au BufNewFile,BufRead *.py 
+"         \ set tabstop=4 |
+"         \ set softtabstop=4 |
+"         \ set shiftwidth=4 |
+"         \ set textwidth=120 |
+"         \ set expandtab |
+"         \ set autoindent |
+"         \ set fileformat=unix |
 
-" js tabs
-au BufNewFile,BufRead *.js,*.html,*.css
-        \ set tabstop=2 |
-        \ set softtabstop=2 |
-        \ set shiftwidth=2 |
+" " js tabs
+" au BufNewFile,BufRead *.js,*.html,*.css
+"         \ set tabstop=2 |
+"         \ set softtabstop=2 |
+"         \ set shiftwidth=2 |
 
 " flag bad whitespace
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /\s\+$/
@@ -284,13 +284,17 @@ let g:notes_suffix = '.txt'
 let g:notes_title_sync = 'rename_file'
 let g:notes_list_bullets = ['•', '◦', '▸', '▹', '▪', '▫']
 
+" Path
+set path+=**
+
 " netrw
-let g:netrw_banner = 0
-let g:netrw_liststyle = 1
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
+let g:netrw_banner=0        " disable annoying banner
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide = &wildignore
+let g:netrw_list_hide+=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 
 
@@ -331,7 +335,7 @@ let g:SingleCompile_showresultafterrun = 1
 
 
 " python
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+" autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
 let g:jedi#use_splits_not_buffers = "right"
 autocmd BufNewFile,BufRead *.py let g:ackprg = 'ag --python'
 
@@ -369,82 +373,40 @@ if executable('ag')
     let g:ackprg = 'ag'
 endif
 
-
-" lightline
+" Statusline (requires Powerline font, with highlight groups using Solarized theme)
 set laststatus=2
-let g:lightline = {
-            \ 'colorscheme': 'wombat',
-            \ 'separator': { 'left': '', 'right': '' },
-            \ 'subseparator': { 'left': '|', 'right': '|' },
-            \ 'active': {
-            \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ], ['ctrlpmark'] ],
-            \   'right': [ [ 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ] ]
-            \ },
-            \ 'component_function': {
-            \   'fugitive': 'LightLineFugitive',
-            \   'filename': 'LightLineFilename',
-            \   'fileformat': 'LightLineFileformat',
-            \   'ctrlpmark': 'ALEStatusline'
-            \ },
-            \ }
+set statusline=
+set statusline+=%(%{'help'!=&filetype?bufnr('%'):''}\ \|\ %)
+set statusline+=%< " Where to truncate line
+set statusline+=%f " Path to the file in the buffer, as typed or relative to current directory
+set statusline+=%{&modified?'\ +':''}
+set statusline+=%{&readonly?'\ ':''}
+set statusline+=\ %1*|
+" Name of the current branch (needs fugitive.vim)
+set statusline +=\ %{fugitive#statusline()}
+set statusline+=\ \|
+set statusline +=\ %{ALEGetStatusLine()}
+set statusline+=\ %1*|
+set statusline+=%= " Separation point between left and right aligned items.
+set statusline+=\ %1*|
+set statusline+=\ %{''!=#&filetype?&filetype:'-'}
+set statusline+=%(\ \|%{(&bomb\|\|'^$\|utf-8'!~#&fileencoding?'\ '.&fileencoding.(&bomb?'-bom':''):'')
+  \.('unix'!=#&fileformat?'\ '.&fileformat:'')}%)
+set statusline+=%(\ \|\ %{&modifiable?SleuthIndicator():''}%)
+set statusline+=\ \|
+set statusline+=\ %2v " Virtual column number.
+set statusline +=%=%-14.(%l,%c%V%)\ %P
+" set statusline+=\ %3p%% " Percentage through file in lines as in |CTRL-G|
 
-function! LightLineModified()
-    return &ft =~ 'help' ? '' : &modified ? '+' : &modifiable ? '' : '-'
-endfunction
+" Logic for customizing the User1 highlight group is the following
+" - fg = StatusLine fg (if StatusLine colors are reverse)
+" - bg = StatusLineNC bg (if StatusLineNC colors are reverse)
+hi StatusLine term=reverse cterm=reverse gui=reverse ctermfg=14 ctermbg=8 guifg=#93a1a1 guibg=#002b36
+hi StatusLineNC term=reverse cterm=reverse gui=reverse ctermfg=11 ctermbg=0 guifg=#657b83 guibg=#073642
+hi User1 ctermfg=14 ctermbg=0 guifg=#93a1a1 guibg=#073642
 
-function! LightLineReadonly()
-    return &ft !~? 'help' && &readonly ? 'RO' : ''
-endfunction
-
-function! LightLineFilename()
-    let fname = expand('%:t')
-    return fname == 'ControlP' && has_key(g:lightline, 'ctrlp_item') ? g:lightline.ctrlp_item :
-                \ fname == '__Tagbar__' ? g:lightline.fname :
-                \ &ft == 'vimfiler' ? vimfiler#get_status_string() :
-                \ &ft == 'vimshell' ? vimshell#get_status_string() :
-                \ ('' != LightLineReadonly() ? LightLineReadonly() . ' ' : '') .
-                \ ('' != fname ? fname : '[No Name]') .
-                \ ('' != LightLineModified() ? ' ' . LightLineModified() : '')
-endfunction
-
-function! LightLineFugitive()
-    try
-        if expand('%:t') !~? 'Tagbar\|Gundo\|NERD' && &ft !~? 'vimfiler' && exists('*fugitive#head')
-            let mark = ''  " edit here for cool mark
-            let branch = fugitive#head()
-            return branch !=# '' ? mark.branch : ''
-        endif
-    catch
-    endtry
-    return ''
-endfunction
-
-function! LightLineFileformat()
-    return winwidth(0) > 70 ? &fileformat : ''
-endfunction
-
-function! LightLineFiletype()
-    return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
-endfunction
-
-function! LightLineFileencoding()
-    return winwidth(0) > 70 ? (&fenc !=# '' ? &fenc : &enc) : ''
-endfunction
-
-function! LightLineMode()
-    let fname = expand('%:t')
-    return fname == '__Tagbar__' ? 'Tagbar' :
-                \ fname == '__Gundo_Preview__' ? 'Gundo Preview' :
-                \ &ft == 'unite' ? 'Unite' :
-                \ &ft == 'vimfiler' ? 'VimFiler' :
-                \ &ft == 'vimshell' ? 'VimShell' :
-                \ winwidth(0) > 60 ? lightline#mode() : ''
-endfunction
-
-let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
-function! ALEStatusline()
-    return ALEGetStatusLine()
-endfunction
+" ALE
+let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥']
 
 " GUI Settings 
 " GVIM- (here instead of .gvimrc)

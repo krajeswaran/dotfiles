@@ -26536,11 +26536,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>383 237 796 473 0 0 1440 900 </string>
+	<string>383 329 770 381 0 0 1440 900 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 316 592 584 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 471 1436 429 0 0 1440 900 </string>
+	<string>0 0 1440 900 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>477 86 585 452 0 0 1440 900 </string>
 	<key>NeverWarnAboutShortLivedSessions_4013B845-C16D-4B7F-8FFC-7FEF7E5D934F</key>
@@ -28120,6 +28120,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/kumaresan/dotfiles/iterm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
