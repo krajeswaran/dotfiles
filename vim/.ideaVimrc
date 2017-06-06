@@ -1,0 +1,92 @@
+set wrap
+set linebreak
+set nolist  " list disables linebreak
+set textwidth=0
+set wrapmargin=0
+set backspace=indent,eol,start  " backspace for dummies
+set linespace=0                 " No extra spaces between rows
+set showmatch                   " show matching brackets/parenthesis
+set incsearch                   " find as you type search
+set hlsearch                    " highlight search terms
+set winminheight=0              " windows can be 0 line high
+set ignorecase                  " case insensitive search
+set smartcase                   " case sensitive when uc present
+set wildmenu                    " show list instead of just completing
+set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git,.idea  " MacOSX/Linux
+set whichwrap=b,s,h,l,<,>,[,]   " backspace and cursor keys wrap to
+set scrolljump=5                " lines to scroll when cursor leaves screen
+set scrolloff=2                 " minimum lines to keep above and below cursor
+"set foldenable                  " auto fold code
+"set list
+set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
+
+
+" Formatting
+set autoindent                  " indent at the same level of the previous line
+set shiftwidth=4                " use indents of 4 spaces
+set expandtab                   " tabs are spaces, not tabs
+set tabstop=4                   " an indentation every four columns
+set softtabstop=4               " let backspace delete indent
+"set matchpairs+=<:>                " match, to be used with %
+set pastetoggle=<F2>                       " no indent on paste
+"set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
+
+" reopen last mark
+autocmd BufReadPost * silent! normal! g`"zv
+
+" Key (re)Mappings
+
+"The default leader is '\', but many people prefer ',' as it's in a standard
+"location
+let mapleader = "\<Space>"
+
+" quick save
+nnoremap <Leader>x :wq<CR>
+
+" Making it so ; works like : for commands. Saves typing and eliminates :W style typos due to lazy holding shift.
+nnoremap ; :
+
+" Easier moving in tabs and windows
+map <C-S-Down> <C-W>j<C-W>_
+map <C-S-Up> <C-W>k<C-W>_
+map <C-S-Right> <C-W>l<C-W>_
+map <C-S-Left> <C-W>h<C-W>_
+
+" Wrapped lines goes down/up to next row, rather than next line in file.
+nnoremap j gj
+nnoremap k gk
+
+" The following two lines conflict with moving to top and bottom of the
+" screen
+" If you prefer that functionality, comment them out.
+map <S-H> gT
+map <S-L> gt
+
+" Stupid shift key fixes
+cmap W w
+cmap WQ wq
+cmap wQ wq
+cmap Q q
+cmap Tabe tabe
+
+" Yank from the cursor to the end of the line, to be consistent with C and D.
+nnoremap Y y$
+
+""" Code folding options
+set foldlevel=99
+nmap <leader>f0 :set foldlevel=0<CR>
+nmap <leader>f1 :set foldlevel=1<CR>
+nmap <leader>f2 :set foldlevel=2<CR>
+nmap <leader>f3 :set foldlevel=3<CR>
+nmap <leader>f4 :set foldlevel=4<CR>
+nmap <leader>f5 :set foldlevel=5<CR>
+nmap <leader>f6 :set foldlevel=6<CR>
+nmap <leader>f7 :set foldlevel=7<CR>
+nmap <leader>f8 :set foldlevel=8<CR>
+nmap <leader>f9 :set foldlevel=9<CR>
+
+"clearing highlighted search
+nmap <silent> <leader>/ :nohlsearch<CR>
+
+

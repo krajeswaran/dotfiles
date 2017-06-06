@@ -1,0 +1,89 @@
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+export EDITOR='vim'
+
+# aliases
+alias ll="ls -larth"
+alias llm="ls -larth | less"
+alias rm='rm -i'
+alias diskusage="du -h -d 1"
+alias gitclean='git clean -fxdq'
+alias gitpdiff='git diff HEAD --'
+alias pwd="pwd -P"
+alias gitlog="git log --graph --pretty=format:'%C(yellow)%h%Creset -%Cred%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+alias smesg="tail -f /var/log/{messages,kernel,dmesg,syslog}"
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias jgrep='find . -name "*.java" -o -name "*.xml" -o -name "*.properties" -type f | xargs grep -nHi '
+alias pygrep='find . -name "*.py" -o -name "*.ini" -o -name "*.yaml" -o -name "*.conf" -type f | xargs grep -nHi '
+alias gogrep='find . -name "*.go" -o -name "*.ini" -o -name "*.yaml" -o -name "*.json" -type f | xargs grep -nHi '
+alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.html" -o -name "*.*ss" -type f | grep -v ".node_modules" | grep -v ".meteor" | xargs grep -nHi '
+
+alias gst='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gdt='git diff-tree --no-commit-id --name-only -r'
+alias gl='git pull'
+alias gup='git pull --rebase'
+alias gp='git push'
+alias gd='git diff'
+alias gdt='git difftool'
+alias gc='git commit -v'
+alias gc!='git commit -v --amend'
+alias gca='git commit -v -a'
+alias gca!='git commit -v -a --amend'
+alias gcmsg='git commit -m'
+alias gco='git checkout'
+alias gcm='git checkout master'
+alias gr='git remote'
+alias grv='git remote -v'
+alias grmv='git remote rename'
+alias grrm='git remote remove'
+alias grset='git remote set-url'
+alias grup='git remote update'
+alias grbi='git rebase -i'
+alias grbc='git rebase --continue'
+alias grba='git rebase --abort'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gbr='git branch --remote'
+alias gcount='git shortlog -sn'
+alias gcl='git config --list'
+alias gcp='git cherry-pick'
+alias glg='git log --stat --max-count=10'
+alias glgg='git log --graph --max-count=10'
+alias glgga='git log --graph --decorate --all'
+alias glo='git log --oneline --decorate --color'
+alias glog='git log --oneline --decorate --color --graph'
+alias gss='git status -s'
+alias ga='git add'
+alias gap='git add --patch'
+alias gm='git merge'
+alias grh='git reset HEAD'
+alias grhh='git reset HEAD --hard'
+alias gclean='git reset --hard && git clean -dfx'
+alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+
+
+gitaddselective() {
+    git add `git status --porcelain | grep ^" M" | cut -d " " -f3 | grep $1`
+}
+
+findandreplace() {
+    find . -name "$1" -type f -print0 | xargs -0 perl -p -i -e "$2"
+}
+
+function current_branch() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || \
+  ref=$(git rev-parse --short HEAD 2> /dev/null) || return
+  echo ${ref#refs/heads/}
+}
+
+
+# these aliases take advantage of the previous function
+alias ggpull='git pull origin $(current_branch)'
+alias ggpur='git pull --rebase origin $(current_branch)'
+alias ggpush='git push origin $(current_branch)'
+alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
