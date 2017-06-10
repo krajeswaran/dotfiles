@@ -10,3 +10,4 @@ if [ $?	-eq 0 ]; then
     vim +PlugInstall +qall
 fi
 
+xdg-user-dirs-update

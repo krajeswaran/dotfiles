@@ -25,7 +25,7 @@ fi
 echo "---------------- Making user dirs -------------------------"
 proceed
 if [ $?	-eq 0 ]; then
-    mkdir ~/src ~/docs ~/videos ~/photos ~/dumps ~/sw
+    mkdir ~/src ~/docs ~/videos ~/photos ~/dumps ~/sw ~/music
 fi
 
 #echo "---------------- Updating dotfiles -------------------------"

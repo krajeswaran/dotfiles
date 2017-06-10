@@ -1,6 +1,6 @@
 [xarchiver]
-preferred_format=14
-confirm_deletion=true
+preferred_format=12
+confirm_deletion=false
 sort_filename_content=true
 store_output=false
 icon_size=1
@@ -9,6 +9,9 @@ show_sidebar=false
 show_location_bar=true
 preferred_temp_dir=/tmp
 allow_sub_dir=1
+mainwindow=500;250;600;400;200;
+extract=14;14;
+add=14;14;
 overwrite=false
 full_path=true
 touch=false
