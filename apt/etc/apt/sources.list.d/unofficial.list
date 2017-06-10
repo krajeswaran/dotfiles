@@ -1,0 +1,36 @@
+#------------------------------------------------------------------------------#
+#                      UNOFFICIAL  REPOS                       
+#------------------------------------------------------------------------------#
+
+###### 3rd Party Binary Repos
+###Debian Multimedia
+deb [arch=amd64] http://www.deb-multimedia.org testing main non-free
+
+###Docker
+#deb https://apt.dockerproject.org/repo/ debian-testing main
+
+###Google Chrome Browser
+deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+
+###Paper GTK Theme
+deb http://ppa.launchpad.net/snwh/pulp/ubuntu yakkety main
+deb-src http://ppa.launchpad.net/snwh/pulp/ubuntu yakkety main
+
+###Papirus GTK Theme
+deb http://ppa.launchpad.net/papirus/papirus/ubuntu yakkety main 
+deb-src http://ppa.launchpad.net/papirus/papirus/ubuntu yakkety main 
+
+###Skype
+#deb [arch=amd64] https://repo.skype.com/deb testing main
+
+###Virtualbox
+deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian stretch contrib non-free
+
+###Firefox
+deb http://http.debian.net/debian experimental main
+
+###Node
+
+
+
+

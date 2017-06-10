@@ -1,0 +1,6 @@
+deb     http://cdn-fastly.deb.debian.org/debian/ stretch-backports main contrib non-free
+deb-src http://cdn-fastly.deb.debian.org/debian/ stretch-backports main contrib non-free
+
+#deb http://ftp.debian.org/debian stretch-backports main contrib non-free 
+#deb-src http://ftp.debian.org/debian stretch-backports main contrib non-free
+
