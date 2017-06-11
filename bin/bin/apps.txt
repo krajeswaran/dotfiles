@@ -36,7 +36,8 @@ htop
 rbenv
 openjdk-8-jdk
 ruby 
-ipython3 
+ipython
+nodejs
 virtualenv 
 silversearcher-ag
 ack
