@@ -4,3 +4,5 @@
 **.pyc
 .netw*
 mpv/**/watch_later/**
+localapps/**/chrome*
+localapps/**/mimeapps*
