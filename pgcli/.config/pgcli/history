@@ -1,0 +1,443 @@
+
+# 2017-05-11 20:28:24.250850
++SELECT * from plivo_account_account;
+
+# 2017-05-11 20:28:40.094011
++SELECT * from plivo_account_account limit 1000;
+
+# 2017-05-11 21:42:48.686458
++select * from plivo_account_account limit 5;
+
+# 2017-05-11 21:47:32.902950
++SELECT * FROM plivo_routing_application;
+
+# 2017-05-12 12:24:18.143175
++SELECT * FROM plivo_routing_application LIMIT 10;
+
+# 2017-05-15 17:34:12.116939
++\d+ auth_user
+
+# 2017-05-15 17:37:20.044881
++\d+ plivo_account_account
+
+# 2017-05-15 18:17:38.336463
++select * from plivo_account_account where country_id is NULL;
+
+# 2017-05-15 21:21:52.495434
++SELECT * from plivo_endpoints_customdomain limit 5;
+
+# 2017-05-15 21:22:53.726036
++\d *
+
+# 2017-05-15 21:27:32.137653
++select * from subscriber where account_id in (select id from plivo_account_account where plivo_account_account.user_id in (select id from auth_user where auth_user.username = 'tuantuan'));
+
+# 2017-05-15 21:28:01.118065
++select * from subscriber where account_id in (select id from plivo_account_account where plivo_account_account.user_id in (select id from auth_user where auth_user.username = 'TuanTuan'));
+
+# 2017-05-15 21:29:35.258345
++select id from plivo_account_account where plivo_account_account.user_id in (select id from auth_user where auth_user.username = 'TuanTuan');
+
+# 2017-05-15 21:30:02.741236
++select * from subscriber where account_id = '68800' limit 50;
+
+# 2017-05-15 21:35:29.736726
++create table temp_table();
+
+# 2017-05-15 21:38:25.832309
++\d temp_table
+
+# 2017-05-15 21:38:27.641177
++\d temp_table;
+
+# 2017-05-15 21:38:37.089439
++create table temp_table ();
+
+# 2017-05-15 21:38:43.903830
++drop table temp_table;
+
+# 2017-05-15 21:38:46.610276
++create table temp_table ();
+
+# 2017-05-15 21:42:34.437422
++create table temp_endpoint_table ();
+
+# 2017-05-15 21:45:13.802636
++COPY temp_endpoint_table FROM '/Users/kumaresan/Downloads/endpoint_list.csv' DELIMITER ',' CSV;
+
+# 2017-05-15 21:45:41.151225
++\copy temp_endpoint_table FROM '/Users/kumaresan/Downloads/endpoint_list.csv' DELIMITER ',' CSV;
+
+# 2017-05-15 21:46:10.620153
++drop table temp_endpoint_table;
+
+# 2017-05-15 21:47:06.574701
++create table temp_endpoint_table (id interger);
+
+# 2017-05-15 21:47:14.073963
++create table temp_endpoint_table (id integer);
+
+# 2017-05-15 21:47:19.350458
++\copy temp_endpoint_table FROM '/Users/kumaresan/Downloads/endpoint_list.csv' DELIMITER ',' CSV;
+
+# 2017-05-15 21:47:39.086256
++\copy temp_endpoint_table(id) FROM '/Users/kumaresan/Downloads/endpoint_list.csv' DELIMITER ',' CSV;
+
+# 2017-05-15 21:47:55.788139
++\d subscriber
+
+# 2017-05-15 21:48:07.759290
++drop table temp_endpoint_table;
+
+# 2017-05-15 21:48:30.338588
++create table temp_endpoint_table (id varchar(15));
+
+# 2017-05-15 21:48:33.861703
++\copy temp_endpoint_table(id) FROM '/Users/kumaresan/Downloads/endpoint_list.csv' DELIMITER ',' CSV;
+
+# 2017-05-15 21:48:57.942509
++select * from temp_endpoint_table;
+
+# 2017-05-15 21:49:15.029997
++select count(*) from temp_endpoint_table;
+
+# 2017-05-15 21:51:30.883452
++delete from subscriber where endpoint_id in (select id from temp_endpoint_table) and subscriber.account_id = '68800';
+
+# 2017-05-15 21:51:59.880337
++drop table temp_endpoint_table;
+
+# 2017-05-15 21:55:40.583704
++select count(*) from subscriber where account_id = '68800';
+
+# 2017-05-16 15:09:21.403878
++select * from auth_user where username = 'rahul_plivo';
+
+# 2017-05-16 15:09:43.041751
++select * from plivo_account_account where user_id = 67433;
+
+# 2017-05-16 15:13:09.903457
++select * from plivo_product_recharge_plan where productplan_id = 538;
+
+# 2017-05-16 15:13:22.253179
++select * from plivo_product_recharge_plans where productplan_id = 538;
+
+# 2017-05-16 15:15:46.627930
++select * from plivo_account_accountplanlog where account_id = 67241;
+
+# 2017-05-16 15:16:40.601330
++select * from plivo_product_productplan where id = '538';
+
+# 2017-05-16 15:18:07.246033
++select * from plivo_product_recharge_plans;
+
+# 2017-05-16 15:18:20.257677
++select * from plivo_product_recharge_plans limit 6;
+
+# 2017-05-16 15:23:18.670886
++select * from plivo_product_recharge_plans where productplan_id='538';
+
+# 2017-05-16 15:25:05.559743
++select * from plivo_account_credit where id=67241;
+
+# 2017-05-16 15:25:17.867157
++select * from plivo_log_accountcredit where id=67241;
+
+# 2017-05-16 15:25:23.184331
++select * from plivo_logs_accountcredit where id=67241;
+
+# 2017-05-16 15:30:37.979741
++select * from plivo_billing_accountcardmapping where account_id = 92841;
+
+# 2017-05-16 15:31:34.725755
++select * from plivo_billing_card_status where account_card_id = 21195;
+
+# 2017-05-16 15:32:40.031229
++select * from plivo_billing_card_status where account_card_id = 24294;
+
+# 2017-05-16 15:33:08.839738
++select * from plivo_billing_card_verification_details where card_status_id = 25820;
+
+# 2017-05-17 15:53:40.303712
++\copy temp_endpoint_table(id) FROM '/Users/kumaresan/Downloads/endpoint_list.csv' DELIMITER ',' CSV;
+
+# 2017-05-17 15:54:20.126943
++create table temp_endpoint_table (id varchar(15));
+
+# 2017-05-17 15:54:26.017925
++\copy temp_endpoint_table(id) FROM '/Users/kumaresan/Downloads/endpoint_list.csv' DELIMITER ',' CSV;
+
+# 2017-05-17 15:54:35.883433
++ll
++;
+
+# 2017-05-17 15:56:02.566509
++select * from subscriber where account_id = 68800 and endpoint_id in (select id from temp_endpoint_table);
+
+# 2017-05-17 15:56:18.997037
++select * from subscriber where account_id=68800 and endpoint_id in (select id from temp_endpoint_table);
+
+# 2017-05-17 15:56:34.164574
++select id from temp_endpoint_table;
+
+# 2017-05-17 15:57:06.656347
++select * from subscriber where account_id=68800 and endpoint_id in (select id from temp_endpoint_table);
+
+# 2017-05-17 15:57:23.266003
++explain select * from subscriber where account_id=68800 and endpoint_id in (select id from temp_endpoint_table);
+
+# 2017-05-17 15:58:36.148627
++explain analyse select * from subscriber where account_id=68800 and endpoint_id in (select id from temp_endpoint_table);
+
+# 2017-05-17 16:02:10.303104
++explain analyse select * from subscriber where endpoint_id in (select id from temp_endpoint_table);
+
+# 2017-05-17 16:02:19.663443
++select * from subscriber where endpoint_id in (select id from temp_endpoint_table);
+
+# 2017-05-17 16:02:50.715909
++select * from subscriber where endpoint_id = '39224609973013';
+
+# 2017-05-17 16:03:09.626516
++select * from subscriber where endpoint_id = '28815249501177';
+
+# 2017-05-17 16:03:35.117450
++select * from subscriber where account_id = 68800;
+
+# 2017-05-17 16:26:12.380787
++select count(*) from subscriber where account_id = 68800;
+
+# 2017-05-17 16:29:37.801456
++select * from temp_endpoint_table;
+
+# 2017-05-17 16:30:21.874449
++select * from subscriber where endpoint_id = '25240859106573';
+
+# 2017-05-17 16:31:39.230213
++select * from subscriber where endpoint_id in (select id from temp_endpoint_table);
+
+# 2017-05-17 19:22:03.227536
++select count(*) from subscriber where account_id = 68800;
+
+# 2017-05-17 19:23:04.862885
++BEGIN;
+
+# 2017-05-17 19:26:51.919082
++select * from auth_user where username = 'TuanTuan';
+
+# 2017-05-17 19:27:24.724858
++select id from plivo_account_account where user_id in (select id from auth_user where username = 'TuanTuan');
+
+# 2017-05-17 19:27:30.101402
++DELETE FROM subscriber WHERE account_id = 68800;
+
+# 2017-05-17 19:28:46.570212
++SELECT * FROM subscriber WHERE account_id = 68800;
+
+# 2017-05-17 19:28:56.538958
++SELECT count(*) FROM subscriber WHERE account_id = 68800;
+
+# 2017-05-17 19:29:06.002385
++select count(*) from subscriber where account_id = 68800;
+
+# 2017-05-17 19:29:14.734211
++COMMIT;
+
+# 2017-05-17 19:29:22.261979
++SELECT count(*) FROM subscriber WHERE account_id = 68800;
+
+# 2017-05-17 20:02:00.458320
++\d auth_user
+
+# 2017-05-17 20:28:03.429978
++EXPLAIN analyze DELETE FROM subscriber where account_id = 6620;
+
+# 2017-05-17 22:48:04.802874
++select * from plivo_billing_paymentlog where account_id = 66127;
+
+# 2017-05-17 22:58:59.126249
++select * from plivo_billing_accountcardmapping where account_id = 66127
++;
+
+# 2017-05-17 23:03:07.542901
++select * from plivo_billing_accountcardmapping where account_id = 66127;
+
+# 2017-05-18 19:26:20.155744
++select * from plivo_billing_customercard where fingerprint = 'dYcHbvgXQA2EoJv0';
+
+# 2017-05-18 19:26:30.364503
++select * from plivo_billing_customercard limit 5;
+
+# 2017-05-18 19:27:50.670764
++select * from plivo_billing_card_status LIMIT 5;
+
+# 2017-05-18 19:28:22.030439
++select * from plivo_billing_card_status ORDER BY modified limit 100;
+
+# 2017-05-18 19:28:59.617100
++select * from plivo_billing_card_status ORDER BY modified DESC limit 100;
+
+# 2017-05-18 19:30:18.384521
++select * from plivo_billing_card_status where modified > '2017-05-17 00.00.00' limit 100;
+
+# 2017-05-18 19:38:05.017958
++select * from plivo_billing_card_status where modified => '2017-05-17 00.00.00' limit 100;
+
+# 2017-05-18 19:38:29.731530
++select * from plivo_billing_card_status where modified > '2017-05-17 00.00.00' limit 100;
+
+# 2017-05-18 19:39:48.505669
++select * from plivo_billing_card_status where modified BETWEEN '2017-05-17 00:00:00' AND '2017-05-17 23:59:59';
+
+# 2017-05-18 19:40:33.671394
++select * from plivo_billing_accountcardmapping where modified BETWEEN '2017-05-17 00:00:00' AND '2017-05-17 23:59:59';
+
+# 2017-05-23 16:52:40.798435
++\d+ subscriber;
+
+# 2017-05-25 15:39:36.045634
++select * from plivo_billing_card_status where account_id in (select id from plivo_account_account where user_id in (select id from auth_user where username = 'siliciomx'));
+
+# 2017-05-25 15:39:58.773658
++\d+ plivo_billing_card_status;
+
+# 2017-05-25 15:40:23.004468
++select id from plivo_account_account where user_id in (select id from auth_user where username = 'siliciomx');
+
+# 2017-05-25 15:40:44.153252
++select * from plivo_billing_accountcardmapping where account_id = 107960;
+
+# 2017-05-25 15:41:08.277179
++select * from plivo_billing_card_status where account_card_id = 24432;
+
+# 2017-05-25 15:41:49.339402
++\d plivo_billing_card_verification_details;
+
+# 2017-05-25 15:42:13.330725
++select * from plivo_billing_card_verification_details where card_status_id = '26046';
+
+# 2017-05-25 15:44:52.340269
++delete from plivo_billing_card_verification_details where id = '26087';
+
+# 2017-05-31 23:11:12.466320
++select * from plivo_dialcode_region limit 5;
+
+# 2017-06-02 18:22:47.668562
++\d+ plivo_billing_incomingnumberrate
+
+# 2017-06-02 18:24:15.928071
++EXPLAIN analyze SELECT "plivo_billing_incomingnumberrate"."id", "plivo_billing_incomingnumberrate"."product_plan_id", "plivo_billing_incomingnumberrate"."tier_id", "plivo_billing_incomingnumberrate"."effective_date", "plivo_billing_incomingnumberrate"."voice_unit", "plivo_billing_incomingnumberrate"."voice_rate", "plivo_billing_incomingnumberrate"."sms_unit", "plivo_billing_incomingnumberrate"."sms_rate", "plivo_billing_incomingnumberrate"."fax_unit", "plivo_billing_incomingnumberrate"."fax_rate", "plivo_billing_incomingnumberrate"."rental_unit", "plivo_billing_incomingnumberrate"."rental_rate", "plivo_billing_incomingnumberrate"."setup_rate" FROM "plivo_billing_incomingnumberrate" INNER JOIN "plivo_billing_tier" ON ("plivo_billing_incomingnumberrate"."tier_id" = "plivo_billing_tier"."id") WHERE ("plivo_billing_tier"."country_id" =   AND "plivo_billing_incomingnumberrate"."product_plan_id" = 1  AND NOT (("plivo_billing_incomingnumberrate"."sms_rate" < 0  OR "plivo_billing_incomingnumberrate"."voice_rate" < 0  OR "plivo_billing_incomingnumberrate"."rental_rate" < 0  OR "plivo_billing_incomingnumberrate"."setup_rate" < 0 )));
+
+# 2017-06-02 18:25:09.427539
++EXPLAIN analyze SELECT "plivo_billing_incomingnumberrate"."id", "plivo_billing_incomingnumberrate"."product_plan_id", "plivo_billing_incomingnumberrate"."tier_id", "plivo_billing_incomingnumberrate"."effective_date", "plivo_billing_incomingnumberrate"."voice_unit", "plivo_billing_incomingnumberrate"."voice_rate", "plivo_billing_incomingnumberrate"."sms_unit", "plivo_billing_incomingnumberrate"."sms_rate", "plivo_billing_incomingnumberrate"."fax_unit", "plivo_billing_incomingnumberrate"."fax_rate", "plivo_billing_incomingnumberrate"."rental_unit", "plivo_billing_incomingnumberrate"."rental_rate", "plivo_billing_incomingnumberrate"."setup_rate" FROM "plivo_billing_incomingnumberrate" INNER JOIN "plivo_billing_tier" ON ("plivo_billing_incomingnumberrate"."tier_id" = "plivo_billing_tier"."id") WHERE ("plivo_billing_tier"."country_id" = 1  AND "plivo_billing_incomingnumberrate"."product_plan_id" = 1  AND NOT (("plivo_billing_incomingnumberrate"."sms_rate" < 0  OR "plivo_billing_incomingnumberrate"."voice_rate" < 0  OR "plivo_billing_incomingnumberrate"."rental_rate" < 0  OR "plivo_billing_incomingnumberrate"."setup_rate" < 0 )));
+
+# 2017-06-02 18:25:51.854762
++EXPLAIN analyze SELECT "plivo_billing_incomingnumberrate"."id", "plivo_billing_incomingnumberrate"."product_plan_id", "plivo_billing_incomingnumberrate"."tier_id", "plivo_billing_incomingnumberrate"."effective_date", "plivo_billing_incomingnumberrate"."voice_unit", "plivo_billing_incomingnumberrate"."voice_rate", "plivo_billing_incomingnumberrate"."sms_unit", "plivo_billing_incomingnumberrate"."sms_rate", "plivo_billing_incomingnumberrate"."fax_unit", "plivo_billing_incomingnumberrate"."fax_rate", "plivo_billing_incomingnumberrate"."rental_unit", "plivo_billing_incomingnumberrate"."rental_rate", "plivo_billing_incomingnumberrate"."setup_rate" FROM "plivo_billing_incomingnumberrate" INNER JOIN "plivo_billing_tier" ON ("plivo_billing_incomingnumberrate"."tier_id" = "plivo_billing_tier"."id") WHERE ("plivo_billing_tier"."country_id" = "1"  AND "plivo_billing_incomingnumberrate"."product_plan_id" = 1  AND NOT (("plivo_billing_incomingnumberrate"."sms_rate" < 0  OR "plivo_billing_incomingnumberrate"."voice_rate" < 0  OR "plivo_billing_incomingnumberrate"."rental_rate" < 0  OR "plivo_billing_incomingnumberrate"."setup_rate" < 0 )));
+
+# 2017-06-02 18:26:13.912945
++\d+ plivo_billing_tier
+
+# 2017-06-02 18:26:56.589603
++EXPLAIN analyze SELECT "plivo_billing_incomingnumberrate"."id", "plivo_billing_incomingnumberrate"."product_plan_id", "plivo_billing_incomingnumberrate"."tier_id", "plivo_billing_incomingnumberrate"."effective_date", "plivo_billing_incomingnumberrate"."voice_unit", "plivo_billing_incomingnumberrate"."voice_rate", "plivo_billing_incomingnumberrate"."sms_unit", "plivo_billing_incomingnumberrate"."sms_rate", "plivo_billing_incomingnumberrate"."fax_unit", "plivo_billing_incomingnumberrate"."fax_rate", "plivo_billing_incomingnumberrate"."rental_unit", "plivo_billing_incomingnumberrate"."rental_rate", "plivo_billing_incomingnumberrate"."setup_rate" FROM "plivo_billing_incomingnumberrate" INNER JOIN "plivo_billing_tier" ON ("plivo_billing_incomingnumberrate"."tier_id" = "plivo_billing_tier"."id") WHERE ("plivo_billing_tier"."country_id" = "US"  AND "plivo_billing_incomingnumberrate"."product_plan_id" = 1  AND NOT (("plivo_billing_incomingnumberrate"."sms_rate" < 0  OR "plivo_billing_incomingnumberrate"."voice_rate" < 0  OR "plivo_billing_incomingnumberrate"."rental_rate" < 0  OR "plivo_billing_incomingnumberrate"."setup_rate" < 0 )));
+
+# 2017-06-02 18:27:08.809880
++select * from plivo_billing_tier;
+
+# 2017-06-02 18:27:29.753664
++EXPLAIN analyze SELECT "plivo_billing_incomingnumberrate"."id", "plivo_billing_incomingnumberrate"."product_plan_id", "plivo_billing_incomingnumberrate"."tier_id", "plivo_billing_incomingnumberrate"."effective_date", "plivo_billing_incomingnumberrate"."voice_unit", "plivo_billing_incomingnumberrate"."voice_rate", "plivo_billing_incomingnumberrate"."sms_unit", "plivo_billing_incomingnumberrate"."sms_rate", "plivo_billing_incomingnumberrate"."fax_unit", "plivo_billing_incomingnumberrate"."fax_rate", "plivo_billing_incomingnumberrate"."rental_unit", "plivo_billing_incomingnumberrate"."rental_rate", "plivo_billing_incomingnumberrate"."setup_rate" FROM "plivo_billing_incomingnumberrate" INNER JOIN "plivo_billing_tier" ON ("plivo_billing_incomingnumberrate"."tier_id" = "plivo_billing_tier"."id") WHERE ("plivo_billing_tier"."country_id" = "US"  AND "plivo_billing_incomingnumberrate"."product_plan_id" = 1  AND NOT (("plivo_billing_incomingnumberrate"."sms_rate" < 0  OR "plivo_billing_incomingnumberrate"."voice_rate" < 0  OR "plivo_billing_incomingnumberrate"."rental_rate" < 0  OR "plivo_billing_incomingnumberrate"."setup_rate" < 0 )));
+
+# 2017-06-02 18:29:08.895249
++explain analyze SELECT "plivo_billing_incomingnumberrate"."id", "plivo_billing_incomingnumberrate"."product_plan_id", "plivo_billing_incomingnumberrate"."tier_id", "plivo_billing_incomingnumberrate"."effective_date", "plivo_billing_incomingnumberrate"."voice_unit", "plivo_billing_incomingnumberrate"."voice_rate", "plivo_billing_incomingnumberrate"."sms_unit", "plivo_billing_incomingnumberrate"."sms_rate", "plivo_billing_incomingnumberrate"."fax_unit", "plivo_billing_incomingnumberrate"."fax_rate", "plivo_billing_incomingnumberrate"."rental_unit", "plivo_billing_incomingnumberrate"."rental_rate", "plivo_billing_incomingnumberrate"."setup_rate" FROM "plivo_billing_incomingnumberrate" INNER JOIN "plivo_billing_tier" ON ("plivo_billing_incomingnumberrate"."tier_id" = "plivo_billing_tier"."id") WHERE ("plivo_billing_tier"."country_id" = “US”   AND "plivo_billing_incomingnumberrate"."product_plan_id" = 1  AND NOT (("plivo_billing_incomingnumberrate"."sms_rate" < 0  OR "plivo_billing_incomingnumberrate"."voice_rate" < 0  OR "plivo_billing_incomingnumberrate"."rental_rate" < 0  OR "plivo_billing_incomingnumberrate"."setup_rate" < 0 )));
+
+# 2017-06-02 18:29:32.858863
++explain analyze SELECT "plivo_billing_incomingnumberrate"."id", "plivo_billing_incomingnumberrate"."product_plan_id", "plivo_billing_incomingnumberrate"."tier_id", "plivo_billing_incomingnumberrate"."effective_date", "plivo_billing_incomingnumberrate"."voice_unit", "plivo_billing_incomingnumberrate"."voice_rate", "plivo_billing_incomingnumberrate"."sms_unit", "plivo_billing_incomingnumberrate"."sms_rate", "plivo_billing_incomingnumberrate"."fax_unit", "plivo_billing_incomingnumberrate"."fax_rate", "plivo_billing_incomingnumberrate"."rental_unit", "plivo_billing_incomingnumberrate"."rental_rate", "plivo_billing_incomingnumberrate"."setup_rate" FROM "plivo_billing_incomingnumberrate" INNER JOIN "plivo_billing_tier" ON ("plivo_billing_incomingnumberrate"."tier_id" = "plivo_billing_tier"."id") WHERE ("plivo_billing_tier"."country_id" = US   AND "plivo_billing_incomingnumberrate"."product_plan_id" = 1  AND NOT (("plivo_billing_incomingnumberrate"."sms_rate" < 0  OR "plivo_billing_incomingnumberrate"."voice_rate" < 0  OR "plivo_billing_incomingnumberrate"."rental_rate" < 0  OR "plivo_billing_incomingnumberrate"."setup_rate" < 0 )));
++
+
+# 2017-06-07 16:36:59.318198
++select * from plivo_billing_paymentlog;
+
+# 2017-06-07 16:37:44.035572
++select * from plivo_billing_paymentlog limit 5;
+
+# 2017-06-07 16:38:38.444511
++select * from plivo_billing_paymentlog where payment_status = 'FAILED';
+
+# 2017-06-10 10:48:16.566777
++select * from plivo_billing_incomingnumberrate where effective_date > now() and product_plan_id = 1;
+
+# 2017-06-10 10:48:36.365255
++\d+ plivo_billing_incomingnumberrate;
+
+# 2017-06-10 10:49:33.932588
++select * from plivo_billing_incomingnumberrate where effective_date <= now() and product_plan_id = 1;
+
+# 2017-06-10 10:50:47.100868
++select * from plivo_billing_stripesubscription;
+
+# 2017-06-10 10:51:05.278126
++select * from plivo_product_productplan where id = 1;
+
+# 2017-06-10 10:51:18.916422
++select * from plivo_billing_incomingnumberrate where effective_date <= now() and product_plan_id = 1;
+
+# 2017-06-10 10:51:59.832917
++select rental_rate from plivo_billing_incomingnumberrate where effective_date <= now() and product_plan_id = 1;
+
+# 2017-06-10 10:54:14.172543
++select rental_rate from plivo_billing_incomingnumberrate where effective_date <= now() and product_plan_id = 1 order by effective_date DESC;
+
+# 2017-06-10 10:54:44.587559
++select tier_id, rental_rate from plivo_billing_incomingnumberrate where effective_date <= now() and product_plan_id = 1 order by effective_date DESC;
+
+# 2017-06-10 11:34:52.192525
++select tier_id, rental_rate from plivo_billing_incomingnumberrate where effective_date <= now() and rental_rate > 0  and product_plan_id = 1 order by effective_date DESC;
+
+# 2017-06-10 11:36:06.174145
++select tier_id, rental_rate from plivo_billing_incomingnumberrate where effective_date <= now()  and product_plan_id = 1 and rental_rate > 0 order by effective_date DESC;
+
+# 2017-06-14 19:58:43.498666
++SELECT * from plivo_billing_incomingnumberrate limit 5;
+
+# 2017-06-14 20:03:09.442696
++SELECT * from plivo_billing_outgoingcharge;
+
+# 2017-06-16 17:00:25.949139
++select count(*) from plivo_billing_paymentlog;
+
+# 2017-06-18 11:38:26.148230
++\d+ plivo_account_account
+
+# 2017-06-18 14:01:01.512092
++select * from plivo_billing_paymentlog where charge_id = '
++    ch_ArgLZrVcIygnSm';
+
+# 2017-06-18 14:01:19.273117
++select * from plivo_billing_paymentlog where charge_id = 'ch_ArgLZrVcIygnSm';
+
+# 2017-06-18 14:01:57.407369
++select * plivo_billing_paymentlog limit 5;
+
+# 2017-06-18 14:02:04.418692
++select * from plivo_billing_paymentlog limit 5;
+
+# 2017-06-18 14:02:34.960989
++select * from plivo_billing_paymentlog where customer_specific_id = 'ch_ArgLZrVcIygnSm';
+
+# 2017-06-19 20:36:59.627873
++select * from auth_user where username like '%kumar%'
++;
+
+# 2017-06-19 20:37:34.765075
++select * from auth_user where username like '%manish%';
+
+# 2017-06-20 19:50:32.504884
++select auth_id from plivo_account_account where id = 39466;
+
+# 2017-06-21 20:47:58.549637
++EXPLAIN ANALYSE SELECT COUNT(*) FROM "plivo_incoming_phonenumberinventory" WHERE UPPER("plivo_incoming_phonenumberinventory"."number"::text) LIKE UPPER('%17192838226%');
+
+# 2017-06-21 20:48:57.621171
++EXPLAIN ANALYSE SELECT COUNT(*) FROM "plivo_incoming_phonenumberinventory" WHERE "plivo_incoming_phonenumberinventory"."number" LIKE '%17192838226%';
+
+# 2017-06-21 20:49:57.954634
++EXPLAIN ANALYSE SELECT COUNT(*) FROM "plivo_incoming_phonenumberinventory" WHERE UPPER("plivo_incoming_phonenumberinventory"."number"::text) LIKE UPPER('%17192838226%');

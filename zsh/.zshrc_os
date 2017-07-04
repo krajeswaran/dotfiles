@@ -35,3 +35,5 @@ export LANG=en_US.UTF-8
 proj() {
 	cd $(find -L ~/src -maxdepth 1 -type d | fzf)
 }
+
+export scalyr_readlog_token='0va2d/eFfyDkkp_MWKu8y0SAbtXaoFjH_iF_C0Nbd4Bo-'

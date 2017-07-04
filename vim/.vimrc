@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 "Plug vim-scripts/DirDo.vim
@@ -373,7 +374,7 @@ if executable('ag')
     let g:ackprg = 'ag'
 endif
 
-" Statusline (requires Powerline font, with highlight groups using Solarized theme)
+" Statusline 
 set laststatus=2
 set statusline=
 set statusline+=%(%{'help'!=&filetype?bufnr('%'):''}\ \|\ %)
@@ -397,6 +398,19 @@ set statusline+=\ \|
 set statusline+=\ %2v " Virtual column number.
 set statusline +=%=%-14.(%l,%c%V%)\ %P
 
+function! InsertStatuslineColor(mode)
+  if a:mode == 'i'
+    hi statusline 
+  elseif a:mode == 'r'
+    hi statusline ctermfg=magenta guifg=magenta
+  else
+    hi statusline ctermfg=red guifg=red
+  endif
+endfunction
+
+au InsertEnter * hi statusline ctermfg=lightgreen guifg=lightgreen
+au InsertChange * hi statusline ctermfg=lightblue guifg=lightblue
+au InsertLeave * hi statusline ctermfg=darkgreen guifg=#c5c8c6
 
 " ALE
 let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥']
@@ -404,14 +418,16 @@ let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥']
 " GUI Settings 
 " GVIM- (here instead of .gvimrc)
 set bg=dark
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
-colorscheme hybrid
-set guioptions-=m  "remove menu bar
-set guioptions-=T  "remove toolbar
-set guioptions-=r  "remove right-hand scroll bar
-set guioptions-=L  "remove left-hand scroll bar
-set guifont=Menlo\ Regular:h14
+if has("gui_running")
+    let g:hybrid_custom_term_colors = 1
+    let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
+    colorscheme hybrid
+    set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right-hand scroll bar
+    set guioptions-=L  "remove left-hand scroll bar
+    set guifont=Menlo\ Regular:h14
+endif
 
 " mucomplete
 set showmode shortmess+=c
@@ -419,3 +435,19 @@ set completeopt-=preview
 set completeopt+=longest,menu,menuone,noinsert
 let g:jedi#popup_on_dot = 1  " It may be 1 as well
 let g:mucomplete#enable_auto_at_startup = 0
+
+" The Silver Searcher
+if executable('rg')
+  " Use ag over grep
+  set grepprg=rg\ --vimgrep 
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  " let g:ctrlp_user_command = 'ag %s -l --nocolor'
+  let g:ctrlp_user_command = ['.git', 'cd %s && rg --files-with-matches ".*"', 'find %s -type f']
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  " let g:ctrlp_use_caching = 0
+
+  let g:ctrlp_working_path_mode = '0'
+endif
+
