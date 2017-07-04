@@ -115,3 +115,9 @@
 2017-07-04 18:11:38,918 (79651/MainThread) pgcli.main ERROR - traceback: 'Traceback (most recent call last):\n  File "/usr/local/Cellar/pgcli/1.5.1/libexec/lib/python2.7/site-packages/pgcli/main.py", line 330, in connect\n    raise e\nOperationalError: asynchronous connection attempt underway\n'
 2017-07-04 18:11:44,974 (79677/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
 2017-07-04 18:11:56,355 (79677/MainThread) pgcli.main ERROR - traceback: 'Traceback (most recent call last):\n  File "/usr/local/Cellar/pgcli/1.5.1/libexec/lib/python2.7/site-packages/pgcli/main.py", line 330, in connect\n    raise e\nOperationalError: FATAL:  password authentication failed for user "plivolog"\n\n'
+2017-07-04 18:16:54,952 (80142/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2017-07-04 18:18:37,564 (80218/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2017-07-04 18:18:39,578 (80218/MainThread) pgcli.main ERROR - traceback: 'Traceback (most recent call last):\n  File "/usr/local/Cellar/pgcli/1.5.1/libexec/lib/python2.7/site-packages/pgcli/main.py", line 330, in connect\n    raise e\nOperationalError: could not send data to server: Socket is not connected\ncould not send startup packet: Socket is not connected\n\n'
+2017-07-04 18:18:41,786 (80242/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager
+2017-07-04 18:18:43,803 (80242/MainThread) pgcli.main ERROR - traceback: 'Traceback (most recent call last):\n  File "/usr/local/Cellar/pgcli/1.5.1/libexec/lib/python2.7/site-packages/pgcli/main.py", line 330, in connect\n    raise e\nOperationalError: could not send data to server: Socket is not connected\ncould not send startup packet: Socket is not connected\n\n'
+2017-07-04 18:18:49,991 (80298/MainThread) pgcli.main INFO - No default pager found in environment. Using os default pager

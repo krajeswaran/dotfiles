@@ -9,3 +9,5 @@ known_hosts
 mpv/.config/mpv/watch_later/
 vim/.vim/plugged
 node_modules
+pgcli/.config/pgcli/history
+pgcli/.config/pgcli/log

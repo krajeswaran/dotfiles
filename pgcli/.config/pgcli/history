@@ -441,3 +441,12 @@
 
 # 2017-06-21 20:49:57.954634
 +EXPLAIN ANALYSE SELECT COUNT(*) FROM "plivo_incoming_phonenumberinventory" WHERE UPPER("plivo_incoming_phonenumberinventory"."number"::text) LIKE UPPER('%17192838226%');
+
+# 2017-07-04 18:17:44.399272
++select count(*) from plivo_logs_invoice_aggregate;
+
+# 2017-07-04 18:17:55.686919
++\d plivo_logs_invoice_aggregate;
+
+# 2017-07-04 18:18:31.824322
++select * from plivo_logs_invoice_aggregate ORDER BY time_generated;
