@@ -321,7 +321,7 @@ function! SearchWithAgInDirectory(...)
 call fzf#vim#ag(join(a:000[1:], ' '), extend({'dir': a:1}, g:fzf#vim#default_layout))
 endfunction
 command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
-let g:fzf_launcher = "~/bin/fzf_iterm %s"
+" let g:fzf_launcher = "~/bin/fzf_iterm %s"
 
 "" taskpaper
 "   let g:task_paper_archive_file = 'Dropbox/todo/archive_todo.txt'
@@ -411,7 +411,7 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
-set guifont=Menlo\ Regular:h14
+set guifont=Hack\ 12
 
 " mucomplete
 set showmode shortmess+=c
