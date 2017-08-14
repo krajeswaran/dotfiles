@@ -24,9 +24,6 @@ proj() {
 	cd $(find -L ~/src -maxdepth 1 -type d | fzf)
 }
 
-export LANG=C
-export LC_ALL=en_IN.UTF-8
-
 export GOPATH=${HOME}/gopath
 export JAVA_HOME=/usr/lib/jvm/default
 export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/thesaneone/.gem/ruby/2.1.0/bin
