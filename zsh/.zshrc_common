@@ -6,7 +6,8 @@ export EDITOR='vim'
 
 # aliases
 alias ll="ls -larth"
-alias llm="ls -larth | less"
+alias less="less -r"
+alias llm="ls -larth | less -r"
 alias rm='rm -I'
 alias revo="mosh thesaneone@thesanerevo"
 alias router="ssh root@192.168.1.1"
