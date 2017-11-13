@@ -450,3 +450,1456 @@
 
 # 2017-07-04 18:18:31.824322
 +select * from plivo_logs_invoice_aggregate ORDER BY time_generated;
+
+# 2017-07-04 18:20:46.787467
++select * from plivo_logs_invoice_aggregate ORDER BY time_generated limit 5;
+
+# 2017-07-04 18:21:07.703905
++select * from plivo_logs_invoice_aggregate ORDER BY time_generated DESC limit 5;
+
+# 2017-07-04 18:22:46.374853
++select * from plivo_logs_aggregator limit 5;
+
+# 2017-07-04 18:23:18.576657
++select * from plivo_logs_aggregator order by time_slab desc limit 5;
+
+# 2017-07-04 18:38:16.625200
++select * from plivo_account_accountcredit;
+
+# 2017-07-04 18:39:45.623351
++TRUNCATE plivo_account_accountcredit RESTART IDENTITY;
+
+# 2017-07-06 16:40:46.577320
++SELECT *, pg_size_pretty(total_bytes) AS total
++    , pg_size_pretty(index_bytes) AS INDEX
++    , pg_size_pretty(toast_bytes) AS toast
++    , pg_size_pretty(table_bytes) AS TABLE
++  FROM (
++  SELECT *, total_bytes-index_bytes-COALESCE(toast_bytes,0) AS table_bytes FROM (
++      SELECT c.oid,nspname AS table_schema, relname AS TABLE_NAME
++              , c.reltuples AS row_estimate
++              , pg_total_relation_size(c.oid) AS total_bytes
++              , pg_indexes_size(c.oid) AS index_bytes
++              , pg_total_relation_size(reltoastrelid) AS toast_bytes
++          FROM pg_class c
++          LEFT JOIN pg_namespace n ON n.oid = c.relnamespace
++          WHERE relkind = 'r'
++  ) a
++) a;
+
+# 2017-07-06 20:02:47.823010
++select * from plivo_logs_calldetailrecord where call_uuid='43927f0f-f866-4f06-beb7-5dca15f9269e';
+
+# 2017-07-06 20:05:40.757990
++select * from plivo_logs_calldetailrecord where call_uuid='5f76b0d4-5664-4c86-8102-4aff42dd1931';
+
+# 2017-07-06 20:06:50.389471
++select * from plivo_logs_calldetailrecord where call_uuid='43927f0f-f866-4f06-beb7-5dca15f9269e';
+
+# 2017-07-06 20:08:17.051068
++select * from plivo_carrier_outgoingcarriervoicecost limit 5;
+
+# 2017-07-06 20:08:38.606481
++select * from plivo_carrier_outgoingcarriervoicecost where prefix='791';
+
+# 2017-07-06 20:12:15.331294
++select * from plivo_carrier_outgoingcarriervoicecost where prefix='791' and effective_from > '2017-05-28';
+
+# 2017-07-06 20:56:27.928495
++select * from plivo_carrier_outgoingcarriervoicecost where prefix='79' and effective_from > '2017-05-28';
+
+# 2017-07-07 20:13:13.401617
++drop plivo_logs_invoice_aggregate_id_seq;
+
+# 2017-07-07 20:13:32.259835
++drop seq plivo_logs_invoice_aggregate_id_seq;
+
+# 2017-07-07 20:13:41.583708
++drop relation plivo_logs_invoice_aggregate_id_seq;
+
+# 2017-07-07 20:13:51.399346
++drop view plivo_logs_invoice_aggregate_id_seq;
+
+# 2017-07-07 20:13:59.959154
++drop sequence plivo_logs_invoice_aggregate_id_seq;
+
+# 2017-07-07 20:14:29.904615
++select tab.relname as tabname, attr.attname as column
++from pg_class as seq
++join pg_depend as dep on (seq.relfilenode = dep.objid)
++join pg_class as tab on (dep.refobjid = tab.relfilenode)
++join pg_attribute as attr on (attr.attnum = dep.refobjsubid and attr.attrelid = dep.refobjid)
++where seq.relname = 'sequence';
+
+# 2017-07-07 20:14:40.073540
++select tab.relname as tabname, attr.attname as column
++from pg_class as seq
++join pg_depend as dep on (seq.relfilenode = dep.objid)
++join pg_class as tab on (dep.refobjid = tab.relfilenode)
++join pg_attribute as attr on (attr.attnum = dep.refobjsubid and attr.attrelid = dep.refobjid)
++where seq.relname = 'plivo_logs_invoice_aggregate_id_seq;';
+
+# 2017-07-07 20:14:43.007647
++select tab.relname as tabname, attr.attname as column
++from pg_class as seq
++join pg_depend as dep on (seq.relfilenode = dep.objid)
++join pg_class as tab on (dep.refobjid = tab.relfilenode)
++join pg_attribute as attr on (attr.attnum = dep.refobjsubid and attr.attrelid = dep.refobjid)
++where seq.relname = 'plivo_logs_invoice_aggregate_id_seq';
+
+# 2017-07-07 20:15:43.044109
++select tab.relname as tabname, attr.attname as column
++from pg_class as seq
++join pg_depend as dep on (seq.relfilenode = dep.objid)
++join pg_class as tab on (dep.refobjid = tab.relfilenode)
++join pg_attribute as attr on (attr.attnum = dep.refobjsubid and attr.attrelid = dep.refobjid)
++where seq.relname = "public.plivo_logs_invoice_aggregate_id_seq";
+
+# 2017-07-07 20:15:53.394745
++select tab.relname as tabname, attr.attname as column
++from pg_class as seq
++join pg_depend as dep on (seq.relfilenode = dep.objid)
++join pg_class as tab on (dep.refobjid = tab.relfilenode)
++join pg_attribute as attr on (attr.attnum = dep.refobjsubid and attr.attrelid = dep.refobjid)
++where seq.relname = 'public.plivo_logs_invoice_aggregate_id_seq';
+
+# 2017-07-07 20:16:24.233027
++SELECT c.relname, u.usename 
++FROM   pg_class c
++JOIN   pg_user  u ON u.usesysid  = c.relowner
++WHERE  c.oid = '"plivo_logs_invoice_aggregate_id_seq"'::regclass;
+
+# 2017-07-07 20:17:29.350699
++\c postgres
+
+# 2017-07-07 20:52:15.851320
++select * from plivo_incoming_accountphonenumbertier;
+
+# 2017-07-07 20:52:40.562758
++select * from plivo_incoming_accountphonenumbertier limit 5;
+
+# 2017-07-07 20:53:13.116961
++select * from plivo_incoming_phonenumberinventory limit 5;
+
+# 2017-07-07 20:53:56.864656
++select * from plivo_incoming_phonenumberinventory where number="12223334572" limit 5;
+
+# 2017-07-07 20:54:08.886444
++select * from plivo_incoming_phonenumberinventory where number = "12223334572" limit 5;
+
+# 2017-07-07 20:54:18.211763
++select * from plivo_incoming_phonenumberinventory where number = '12223334572' limit 5;
+
+# 2017-07-07 20:54:45.149500
++select * from plivo_incoming_accountphonenumbertier limit 5;
+
+# 2017-07-07 20:54:57.314097
++select * from plivo_incoming_accountphonenumbertier where account_phone_number_id = '197307';
+
+# 2017-07-10 13:55:37.816990
++\d+ plivo_logs_accountcredits
+
+# 2017-07-10 13:55:39.604970
++\d+ plivo_logs_accountcredit
+
+# 2017-07-10 13:57:39.363003
++select count(*) from plivo_logs_accountcredit;
+
+# 2017-07-10 13:58:07.685647
++\d+ plivo_logs_accountcredit
+
+# 2017-07-10 13:58:37.321001
++\d+ plivo_logs_accountcredit > test.txt
+
+# 2017-07-10 14:01:14.558485
++\o o.txt \d+ plivo_logs_accountcredit 
+
+# 2017-07-10 14:51:37.316334
++\o o.txt 
+
+# 2017-07-10 14:51:49.322889
++\d+ plivo_logs_accountcredit 
+
+# 2017-07-10 14:55:14.727078
++\o o.txt 
+
+# 2017-07-10 14:55:18.254696
++\d+ plivo_logs_accountcredit
+
+# 2017-07-10 15:25:17.600404
++select * from plivo_logs_accountcredit where account_id = '6162';
+
+# 2017-07-10 15:35:48.023228
++\d+ plivo_logs_accountcredit
+
+# 2017-07-10 15:36:01.363581
++drop check "plivo_logs_accountcredit_account_id_check";
+
+# 2017-07-10 15:36:10.141752
++drop check plivo_logs_accountcredit_account_id_check;
+
+# 2017-07-10 15:36:21.318749
++drop check plivo_logs_accountcredit_account_id_check on plivo_logs_accountcredit;
+
+# 2017-07-10 15:37:21.096243
++alter table plivo_logs_accountcredit drop check plivo_logs_accountcredit_account_id_check;
+
+# 2017-07-10 15:38:09.434676
++alter table plivo_logs_accountcredit drop constraint plivo_logs_accountcredit_account_id_check;
+
+# 2017-07-10 15:40:43.973592
++alter table plivo_logs_accountcredit drop constraint plivo_logs_accountcredit_message*;
+
+# 2017-07-10 15:40:53.694378
++\d+ plivo_logs_accountcredit
+
+# 2017-07-10 15:41:11.193189
++alter table plivo_logs_accountcredit drop constraint "plivo_logs_accountcredit_message_usage_counter_check";
+
+# 2017-07-10 18:54:11.910599
++SELECT
++   relname as "Table",
++   pg_size_pretty(pg_total_relation_size(relid)) As "Size",
++   pg_size_pretty(pg_total_relation_size(relid) - pg_relation_size(relid)) as "External Size"
++   FROM pg_catalog.pg_statio_user_tables ORDER BY pg_total_relation_size(relid) DESC;
+
+# 2017-07-10 18:55:15.858542
++ll
++;
+
+# 2017-07-10 18:55:29.705302
++\d djcelery_taskstate;
+
+# 2017-07-10 18:55:48.631336
++SELECT
++   relname as "Table",
++   pg_size_pretty(pg_total_relation_size(relid)) As "Size",
++   pg_size_pretty(pg_total_relation_size(relid) - pg_relation_size(relid)) as "External Size"
++   FROM pg_catalog.pg_statio_user_tables ORDER BY pg_total_relation_size(relid) DESC;
+
+# 2017-07-10 18:56:18.770292
++select * from delta_public_plivo_billing_outgoingcharge limit 5;
+
+# 2017-07-10 18:56:48.994293
++select * from delta_public_plivo_logs_accountcredit limit 5;
+
+# 2017-07-10 18:58:52.516542
++SELECT
++   relname as "Table",
++   pg_size_pretty(pg_total_relation_size(relid)) As "Size",
++   pg_size_pretty(pg_total_relation_size(relid) - pg_relation_size(relid)) as "External Size"
++   FROM pg_catalog.pg_statio_user_tables ORDER BY pg_total_relation_size(relid) DESC;
+
+# 2017-07-10 19:40:42.145964
++select schema_name
++from information_schema.schemata;
+
+# 2017-07-13 20:39:10.244024
++select * from plivo_account_account inner join auth_user on (auth_user.id = plivo_account_account.user_id);
+
+# 2017-07-13 20:41:16.969456
++explain analyze select * from plivo_account_account inner join auth_user on (auth_user.id = plivo_account_account.user_id);
+
+# 2017-07-13 20:42:48.909622
++explain analyze select * from plivo_account_account left outer join auth_user on (auth_user.id = plivo_account_account.user_id);
+
+# 2017-07-13 20:42:56.591827
++explain analyze select * from plivo_account_account inner join auth_user on (auth_user.id = plivo_account_account.user_id);
+
+# 2017-07-13 20:44:01.922966
++explain analyze select * from plivo_account_account inner join auth_user on (auth_user.id = plivo_account_account.user_id) where plivo_account_account.id = '6642';;
+
+# 2017-07-13 20:44:08.283671
++explain analyze select * from plivo_account_account inner join auth_user on (auth_user.id = plivo_account_account.user_id) where plivo_account_account.id = '6642';
+
+# 2017-07-13 20:44:14.879894
++explain analyze select * from plivo_account_account inner join auth_user on (auth_user.id = plivo_account_account.user_id) where plivo_account_account.id = '6620';
+
+# 2017-07-13 20:44:53.960187
++\o /tmp/t.sql
+
+# 2017-07-13 20:44:56.824645
++explain analyze select * from plivo_account_account inner join auth_user on (auth_user.id = plivo_account_account.user_id) where plivo_account_account.id = '6620';
+
+# 2017-07-18 14:52:24.897895
++select * from plivo_logs_calldetailrecord order by id limit 1;
+
+# 2017-07-18 14:52:31.416324
++select * from plivo_logs_calldetailrecord order by id desc limit 1;
+
+# 2017-07-18 14:53:59.472783
++\d+ plivo_logs_calldetailrecord
+
+# 2017-07-18 14:55:04.968452
++select * from subscriber order by id desc limit 1;
+
+# 2017-07-27 15:55:37.427458
++\d+ plivo_logs_accountcredit
+
+# 2017-07-27 15:56:58.952176
++select * from plivo_logs_accountcredit where account_id = '6620';
+
+# 2017-07-27 15:57:08.472724
++explain analyze select * from plivo_logs_accountcredit where account_id = '6620';
+
+# 2017-07-27 16:00:38.461477
++\o t.sql
+
+# 2017-07-27 16:00:41.055008
++explain analyze select * from plivo_logs_accountcredit where account_id = '6620';
+
+# 2017-07-28 15:40:31.570970
++select * from plivo_logs_calldetailrecord order by id limit 1;
+
+# 2017-07-28 15:41:27.644399
++select * from plivo_logs_calldetailrecord order by id desc limit 1;
+
+# 2017-07-31 13:43:58.252925
++\d+ plivo_incoming_carriertier
+
+# 2017-07-31 13:44:10.880494
++\d+ plivo_carrier_incomingcarriertier
+
+# 2017-07-31 13:51:43.064044
++select count(*) from plivo_carrier_incomingcarriertier;
+
+# 2017-07-31 13:54:35.230088
++explain analyze alter table plivo_carrier_incomingcarriertier alter COLUMN tier type varchar(255);
+
+# 2017-07-31 19:10:09.354040
++alter table plivo_carrier_incomingcarriertier alter COLUMN tier type varchar(255);
+
+# 2017-07-31 19:10:19.805306
++explain alter table plivo_carrier_incomingcarriertier alter COLUMN tier type varchar(255);
+
+# 2017-07-31 19:13:35.267918
++select count(*) from plivo_carrier_incomingcarriertier;
+
+# 2017-07-31 19:15:40.067122
++\d+ plivo_carrier_incomingcarriertier
+
+# 2017-07-31 20:44:40.010635
++\d+ plivo_logs_messagedetailrecords
+
+# 2017-07-31 20:44:41.820389
++\d+ plivo_logs_messagedetailrecord
+
+# 2017-07-31 20:45:30.261487
++\d+ plivo_logs_calldetailrecord;
+
+# 2017-08-21 13:36:34.771399
++\d+ plivo_logs_calldetailrecords
+
+# 2017-08-21 13:36:37.150256
++\d+ plivo_logs_calldetailrecord
+
+# 2017-08-22 00:07:02.655618
++select * from plivo_account_account where auth_id = 'MAYMFHYZJKMJG0NJG4OG';
+
+# 2017-08-30 20:05:06.326331
++\d+ address
+
+# 2017-08-30 20:06:02.849273
++explain plan select ip,grp,mask,port,proto,pattern,context_info,id from address;
+
+# 2017-08-30 20:06:12.454194
++explain analyze select ip,grp,mask,port,proto,pattern,context_info,id from address;
+
+# 2017-08-31 15:00:25.567661
++\d+ plivo_carrier_verificationdocument
+
+# 2017-08-31 15:00:54.217501
++\d+ plivo_carrier_verificationdocument;
+
+# 2017-08-31 20:23:58.228745
++select account, phone_number from plivo_incoming_accountphonenumber where length(number) <= 5;
+
+# 2017-08-31 20:24:32.406742
++select account_id, phone_number from plivo_incoming_accountphonenumber where length(number) <= 5;
+
+# 2017-08-31 20:24:40.059766
++select account_id, number from plivo_incoming_accountphonenumber where length(number) <= 5;
+
+# 2017-08-31 20:30:50.144988
++select n.account_id, n.number from plivo_incoming_accountphonenumber n inner join plivo_account_account a on n.account_id = a.id where length(n.number) <= 5;
+
+# 2017-09-01 13:47:47.596720
++select ip,grp,mask,port,proto,pattern,context_info,id from address;
+
+# 2017-09-01 13:49:00.264765
++select count(*) from address;
+
+# 2017-09-01 13:49:10.517679
++\d+ address
+
+# 2017-09-05 14:03:43.395861
++\d+ django_session
+
+# 2017-09-14 00:53:57.573404
++select count(*) from plivo_account_account;
+
+# 2017-09-14 00:54:40.983062
++alter user plivocfg set password 'hello';
+
+# 2017-09-14 00:54:50.771513
++alter user plivocfg set password to 'hello';
+
+# 2017-09-14 00:55:16.165946
++alter user plivocfg with password 'hello';
+
+# 2017-09-14 00:55:44.174109
++select count(*) from plivo_account_account;
+
+# 2017-09-14 00:56:22.424352
++\d+ plivo_logs_calldetailrecord;
+
+# 2017-09-14 00:57:12.206526
++alter user plivolog with password 'hello';
+
+# 2017-09-14 17:35:56.034137
++\d+ plivo_log_calldetailrecord
+
+# 2017-09-14 17:35:59.121160
++\d+ plivo_log_calldetailrecords
+
+# 2017-09-14 17:36:05.287262
++\d+ plivo_logs_calldetailrecords
+
+# 2017-09-14 17:36:12.532825
++\d+ plivo_logs_calldetailrecord
+
+# 2017-09-15 12:00:48.876340
++select count(*) from subscriber;
+
+# 2017-09-18 20:59:26.984640
++select * from plivo_billing_cloudrate limit 5;
+
+# 2017-09-18 20:59:58.975073
++select * from plivo_billing_cloudrate where plan_id = 1 limit 5;
+
+# 2017-09-18 21:11:29.299853
++select * from plivo_billing_incomingnumberrate where product_plan_id = 1;
+
+# 2017-09-18 21:17:06.747318
++select * from plivo_product_productplan where name = 'ringba';
+
+# 2017-09-18 21:24:08.543775
++select * from plivo_billing_incomingnumberrate where product_plan_id = 658;
+
+# 2017-09-18 21:24:34.498766
++\d+ plivo_billing_incomingnumberrate;
+
+# 2017-09-18 21:28:02.063831
++select (plivo_billing_incomingnumberrate.*)::text, count(*) from plivo_billing_incomingnumberrate GROUP BY plivo_billing_incomingnumberrate.* HAVING count(*) > 1;
+
+# 2017-09-18 21:29:27.436329
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1; 
+
+# 2017-09-18 21:30:40.863537
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id = 658; 
+
+# 2017-09-18 21:30:58.143278
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id = 658 order by tier_id;  
+
+# 2017-09-18 21:31:29.995981
++\o o.txt 
+
+# 2017-09-18 21:31:32.447946
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id = 658 order by tier_id;  
+
+# 2017-09-18 22:38:41.120919
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id = 658 order by effective_from;  
+
+# 2017-09-18 22:38:48.425457
++\d+ plivo_billing_incomingnumberrate;
+
+# 2017-09-18 22:39:01.982077
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id = 658 order by effective_date;  
+
+# 2017-09-19 15:15:31.530456
++select * from plivo_billing_incomingnumberrate where product_plan_id = 658;
+
+# 2017-09-19 17:56:23.526989
++\df+ ll_to_earth()
+
+# 2017-09-19 17:56:33.316770
++\df+ ll_to_earth
+
+# 2017-09-19 17:59:18.095353
++select * from plivo_logs_calldetailrecord where call_uuid = 'c8c61b94-9d35-11e7-91ba-c1011a3abf08';
+
+# 2017-09-19 19:10:52.706074
++\d+ plivo_billing_incomingnumberrate
+
+# 2017-09-19 19:23:06.296270
++select count(*) from plivo_billing_incomingnumberrate;
+
+# 2017-09-19 19:32:48.804826
++\d+ plivo_billing_incomingnumberrate
+
+# 2017-09-20 14:52:43.957526
++select * from plivo_billing_incomingnumberrate where product_plan_id = 658;
+
+# 2017-09-20 14:52:57.649587
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id = 658 order by effective_date;  
+
+# 2017-09-20 14:53:45.136572
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id = 658 and effective_date > '2017-05-30' order by effective_date;  
+
+# 2017-09-20 14:54:20.428231
++select * from plivo_billing_incomingnumberrate where tier_id = 430 and product_plan_id = 658;
+
+# 2017-09-20 21:04:15.302470
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id = 658 and effective_date > '2017-05-30'; 
+
+# 2017-09-20 21:05:43.825327
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and effective_date > '2017-05-30';
+
+# 2017-09-20 21:06:40.358585
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and effective_date < '2017-06-01';
+
+# 2017-09-20 21:07:18.508790
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and effective_date < '2017-06-01' and product_plan_id <> 1;
+
+# 2017-09-20 21:14:45.422211
++\o op.txt
+
+# 2017-09-20 21:14:47.498435
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and effective_date < '2017-06-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:28:40.283407
++select count(*) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and effective_date < '2017-06-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:29:28.078341
++select count(*) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date < '2017-06-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:31:30.661252
++select count(*) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date > '2017-06-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:34:34.555247
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date > '2017-06-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:34:52.683076
++\o op1.txt
+
+# 2017-09-21 19:34:55.825278
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date > '2017-06-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:41:08.315021
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date > '2017-07-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:41:39.893304
++select UNIQUE(product_plan_id) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date > '2017-07-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:41:50.424717
++select UNIQUE product_plan_id from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date > '2017-07-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:41:59.268739
++select product_plan_id from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date > '2017-07-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:42:51.050976
++select distinct product_plan_id from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date > '2017-07-01' and product_plan_id <> 1;
+
+# 2017-09-21 19:43:01.483769
++\o pplan.txt
+
+# 2017-09-21 19:43:03.220644
++select distinct product_plan_id from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 2 and effective_date > '2017-07-01' and product_plan_id <> 1;
+
+# 2017-09-22 16:54:03.254926
++select count(*) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and effective_date > '2017-07-01' and product_plan_id <> 1;
+
+# 2017-09-22 16:54:49.214206
++select count(*) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id <> 1;
+
+# 2017-09-22 16:55:11.312910
++select count(*) from plivo_billing_incomingnumberrate;
+
+# 2017-09-22 16:56:01.858950
++select distinct tier_id from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id <> 1;
+
+# 2017-09-22 16:56:26.990571
++select distinct(tier_id, product_plan_id) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id) > 1 and product_plan_id <> 1;
+
+# 2017-09-22 16:57:38.139655
++select distinct(tier_id, product_plan_id) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 and product_plan_id <> 1;
+
+# 2017-09-22 16:57:53.724579
++select count(*) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 and product_plan_id <> 1;
+
+# 2017-09-22 16:58:33.511237
++select count(*) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1;
+
+# 2017-09-22 17:00:44.750598
++select count(*) from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 order by effective_date;
+
+# 2017-09-22 17:01:11.787959
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 order by effective_date;
+
+# 2017-09-22 17:01:45.271478
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 order by effective_date desc;
+
+# 2017-09-22 17:03:52.479551
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 and oinr.effective_date > iinr.effective_date  order by effective_date desc;
+
+# 2017-09-22 17:04:50.999460
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1;
+
+# 2017-09-22 18:06:58.550638
++SELECT plivo_server_server.id AS plivo_server_server_id, plivo_server_server.name AS plivo_server_server_name, plivo_server_server.category AS plivo_server_server_category, plivo_server_server.weight AS plivo_server_server_weight, plivo_server_server.enabled AS plivo_server_server_enabled, plivo_server_server.active AS plivo_server_server_active, plivo_server_server.max_calls AS plivo_server_server_max_calls, plivo_server_server.hostname AS plivo_server_server_hostname, plivo_server_server.ip AS plivo_server_server_ip, plivo_server_server.switchname AS plivo_server_server_switchname FROM plivo_server_server WHERE plivo_server_server.ip = '52.220.63.130';
+
+# 2017-09-22 19:12:44.862097
++select * from plivo_billing_incomingnumberrate oinr where (select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1;
+
+# 2017-09-22 19:15:12.804506
++select * from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++group by effective_date;
+
+# 2017-09-22 19:15:23.326331
++select * from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++group by oinr.effective_date;
+
+# 2017-09-22 19:16:06.062032
++select *,oinr.effective_date from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++group by oinr.effective_date;
+
+# 2017-09-22 19:16:18.044015
++select *,oinr.effective_date from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++group by oinr.id;
+
+# 2017-09-22 19:16:34.965061
++select *,oinr.effective_date from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++group by oinr.id and effective_date;
+
+# 2017-09-22 19:16:45.102721
++select *,oinr.effective_date from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++group by oinr.id and oinr.effective_date;
+
+# 2017-09-22 19:18:17.976338
++select *,oinr.effective_date from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++order by oinr.effective_date
++limit 1;
+
+# 2017-09-22 19:18:28.070152
++select *,oinr.effective_date from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++order by oinr.effective_date desc
++limit 1;
+
+# 2017-09-22 19:19:01.966082
++select * from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++order by oinr.effective_date desc
++limit 1;
+
+# 2017-09-22 19:20:00.105449
++select * from plivo_billing_incomingnumberrate select * from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++order by oinr.effective_date desc
++limit 1;
+
+# 2017-09-22 19:28:53.724783
++select * from plivo_billing_incomingnumberrate 
++where
++(select * from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)
++order by oinr.effective_date desc
++limit 1;
+
+# 2017-09-22 19:29:05.247055
++select * from plivo_billing_incomingnumberrate 
++where
++(select id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)
++order by oinr.effective_date desc
++limit 1;
+
+# 2017-09-22 19:29:32.380766
++select * from plivo_billing_incomingnumberrate 
++where
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)
++order by oinr.effective_date desc
++limit 1;
+
+# 2017-09-22 19:57:31.522447
++select * from plivo_billing_incomingnumberrate 
++where
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) > 1
++order by oinr.effective_date desc
++limit 1;
+
+# 2017-09-22 19:57:56.015484
++select * from plivo_billing_incomingnumberrate 
++where
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) > 1
++order by effective_date desc
++limit 1;
+
+# 2017-09-22 23:10:54.488306
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) > 1
++order by effective_date desc;
+
+# 2017-09-22 23:11:44.863683
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc;
+
+# 2017-09-22 23:12:59.838808
++\o good.txt
+
+# 2017-09-22 23:13:03.823721
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc;
+
+# 2017-09-22 23:18:38.395453
++\o best.txt
+
+# 2017-09-22 23:19:45.597688
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc limit 1;
+
+# 2017-09-22 23:20:18.996114
++\o
+
+# 2017-09-22 23:21:15.518175
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++order by effective_date desc limit 1);
+
+# 2017-09-22 23:23:35.753158
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++and oinr.effective_date > iinr.effective_date
++order by effective_date desc);
+
+# 2017-09-22 23:24:32.319015
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id and iinr.effective_date > oinr.effective_date ) > 1 
++order by effective_date desc);
+
+# 2017-09-22 23:25:02.368308
++\o best.txt
+
+# 2017-09-22 23:29:49.915449
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id and iinr.effective_date >= oinr.effective_date ) > 1 
++order by effective_date desc);
+
+# 2017-09-22 23:31:01.237580
++\o cmo.txt
+
+# 2017-09-22 23:32:00.268172
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id and iinr.effective_date < oinr.effective_date ) > 1 
++order by effective_date desc);
+
+# 2017-09-22 23:33:09.629917
++\o
+
+# 2017-09-23 00:27:46.957735
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id and iinr.effective_date < oinr.effective_date ) > 1 
++order by effective_date desc);
+
+# 2017-09-23 00:38:00.299126
++select count(*) from plivo_billing_incomingnumberrate rinr 
++where rinr.id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 
++and rinr.effective_date >= oinr.effective_date;
+
+# 2017-09-23 00:38:42.587367
++select count(*) from plivo_billing_incomingnumberrate rinr 
++where rinr.id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) and rinr.effective_date >= oinr.effective_date;
+
+# 2017-09-23 00:39:21.456195
++select count(*) from plivo_billing_incomingnumberrate rinr 
++where rinr.id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 and rinr.effective_date >= oinr.effective_date);
+
+# 2017-09-26 20:56:22.264677
++select * from plivo_billing_incomingnumberrate rinr 
++where rinr.id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) and rinr.effective_date >= oinr.effective_date;
+
+# 2017-09-26 20:56:45.028230
++select * from plivo_billing_incomingnumberrate rinr 
++where rinr.id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 and rinr.effective_date >= oinr.effective_date);
+
+# 2017-09-27 17:15:17.041836
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc;
++
+
+# 2017-09-27 17:15:43.097348
++create view test as select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc;
+
+# 2017-09-27 17:17:19.450789
++select * from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc;
+
+# 2017-09-27 17:17:53.778166
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc;
+
+# 2017-09-27 17:26:12.311234
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc limit 1;
+
+# 2017-09-27 17:27:27.110085
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++where product_plan_id = oinr.product_plan_id and tier_id = oinr.tier_id
++order by effective_date desc limit 1;
+
+# 2017-09-27 17:27:38.802046
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++and product_plan_id = oinr.product_plan_id and tier_id = oinr.tier_id
++order by effective_date desc limit 1;
+
+# 2017-09-27 17:28:15.207815
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate rinr 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++and rinr.product_plan_id = oinr.product_plan_id and rinr.tier_id = oinr.tier_id
++order by effective_date desc limit 1;
+
+# 2017-09-27 17:29:24.218045
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc limit 1;
+
+# 2017-09-27 17:32:57.924684
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 and iinr.effective_date >= oinr.effective_date) 
++order by effective_date desc limit 1;
+
+# 2017-09-27 17:34:08.493584
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 and oinr.effective_date >= oinr.effective_date) 
++order by effective_date desc limit 1;
+
+# 2017-09-27 17:34:14.495864
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1 and oinr.effective_date >= oinr.effective_date) 
++order by effective_date;
+
+# 2017-09-27 17:41:21.051373
++select linr.id, linr.effective_date, linr.tier_id, linr.product_plan_id
++from plivo_billing_incomingnumberrate linr
++left join plivo_billing_incomingnumberrate rinr
++on linr.tier_id = rinr.tier_id and linr.product_plan_id = rinr.product_plan_id
++and linr.effective_date >= rinr.effective_date;
+
+# 2017-09-27 17:43:00.694047
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc limit 1;
+
+# 2017-09-27 17:43:05.238733
++select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate 
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1) 
++order by effective_date desc;
+
+# 2017-09-27 17:47:24.335158
++select * from plivo_billing_incomingnumberrate linr
++left join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id;
+
+# 2017-09-27 17:47:53.915987
++select * from plivo_billing_incomingnumberrate linr
++left join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id and linr.effective_date > rinr.effective_date;
+
+# 2017-09-27 17:48:54.046613
++select * from plivo_billing_incomingnumberrate linr
++inner join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id and linr.effective_date > rinr.effective_date;
+
+# 2017-09-27 17:49:03.055366
++select * from plivo_billing_incomingnumberrate linr
++inner join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id and linr.effective_date >= rinr.effective_date;
+
+# 2017-09-27 17:49:47.815883
++select * from plivo_billing_incomingnumberrate linr
++inner join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id and linr.effective_date >= rinr.effective_date group by 1;
+
+# 2017-09-27 17:50:36.283044
++select * from plivo_billing_incomingnumberrate linr
++inner join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id and linr.effective_date >= rinr.effective_date order by linr.effective_date limit 1;
+
+# 2017-09-27 17:50:43.209002
++select * from plivo_billing_incomingnumberrate linr
++inner join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id and linr.effective_date >= rinr.effective_date order by linr.effective_date desc limit 1;
+
+# 2017-09-27 17:51:33.393661
++select * from plivo_billing_incomingnumberrate linr
++inner join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id and linr.effective_date >= rinr.effective_date;;
+
+# 2017-09-27 17:54:31.824723
++select * from plivo_billing_incomingnumberrate linr
++inner join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id and linr.effective_date >= rinr.effective_date;
+
+# 2017-09-28 20:15:44.090890
++delete from plivo_billing_incomingnumberrate where id in ('12', '12');
+
+# 2017-09-28 20:17:01.822174
++select * from plivo_billing_incomingnumberrate;;
+
+# 2017-09-28 20:17:27.253245
++select * from temp;
+
+# 2017-09-28 20:17:41.403127
++delete from temp where id in (1, 2);
+
+# 2017-09-28 20:17:48.209457
++delete from temp where useR_id in (1, 2);
+
+# 2017-09-28 20:17:52.481774
++delete from temp where user_id in (1, 2);
+
+# 2017-09-28 20:18:00.669212
++delete from temp where user_id in (1, 27471);
+
+# 2017-10-06 12:56:42.866342
++select * from plivo_account_accountcredits;
+
+# 2017-10-06 12:56:51.698915
++select * from plivo_account_accountcredit limit 1;
+
+# 2017-10-06 12:57:05.334151
++select * from plivo_logs_accountcredit limit 1;
+
+# 2017-10-06 12:57:24.949164
++select * from plivo_logs_accountcredit where current_month_usage > 0;
+
+# 2017-10-06 12:58:12.165754
++select * from plivo_logs_accountcredit where current_month_usage > 0 and account_id > 1000;
+
+# 2017-10-06 12:58:25.092374
++select * from plivo_logs_accountcredit where current_month_usage > 0 and account_id > 4000;
+
+# 2017-10-06 12:59:08.916542
++select * from plivo_account_account where id = 63844;
+
+# 2017-10-06 19:24:08.123643
++\d+ location
+
+# 2017-10-06 19:49:53.462972
++select * from location order by id desc limit 5;
+
+# 2017-10-06 19:50:10.264762
++select * from location limit 5;
+
+# 2017-10-06 19:50:32.488103
++select * from plivo_server_server order by id desc limit 5;
+
+# 2017-10-10 16:47:39.832649
++select * from plivo_account_account where user_id = 96234;
+
+# 2017-10-10 16:48:19.114640
++select * from plivo_account_account where plan_id = 458;
+
+# 2017-10-10 16:48:25.786258
++select * from plivo_account_account where plan_id = 658;
+
+# 2017-10-10 16:53:23.270836
++select * plivo_billing_incomingnumberrate where id in (23529,23530,23531,23532,23533,23534,23535,23548,23549,23553,23564,23567,23580,23585,23589,23590,23595,23596,23599,23601,23603,23633,23638,23648,23651,23652,23653,23654,23657,23659,23660,23661,23664,23665,23669,23670);
+
+# 2017-10-10 16:54:35.199055
++select * from plivo_billing_incomingnumberrate where id in (23529,23530,23531,23532,23533,23534,23535,23548,23549,23553,23564,23567,23580,23585,23589,23590,23595,23596,23599,23601,23603,23633,23638,23648,23651,23652,23653,23654,23657,23659,23660,23661,23664,23665,23669,23670);
+
+# 2017-10-10 16:55:36.500181
++select * from plivo_billing_incomingnumberrate where product_plan_id = 658 and effective_date > 2017-05-30;
+
+# 2017-10-10 16:55:49.988068
++select * from plivo_billing_incomingnumberrate where product_plan_id = 658 and effective_date > '2017-05-30';
+
+# 2017-10-12 23:35:12.750768
++select * from plivo_server_server limit 1
++;
+
+# 2017-10-26 18:37:51.900609
++select * from plivo_carrier_outgoingcarriergateway where id not in (select plivo_carrier_outgoingcarriergateway_id in plivo_carrier_outgoingcarriervoicecostgroup_carriers);
+
+# 2017-10-26 18:38:03.444807
++select * from plivo_carrier_outgoingcarriergateway where id not in (select plivo_carrier_outgoingcarriergateway_id from plivo_carrier_outgoingcarriervoicecostgroup_carriers);
+
+# 2017-10-26 18:38:19.597174
++select * from plivo_carrier_outgoingcarriergateway where id not in (select  outgoingcarriergateway_id from plivo_carrier_outgoingcarriervoicecostgroup_carriers);
+
+# 2017-10-26 18:39:02.162813
++select count(*) from plivo_carrier_outgoingcarriergateway where id in (select  outgoingcarriergateway_id from plivo_carrier_outgoingcarriervoicecostgroup_carriers);
+
+# 2017-10-26 18:57:22.804493
++select * from plivo_carrier_outgoingcarriergateway where id not in (select  outgoingcarriergateway_id from plivo_carrier_outgoingcarriervoicecostgroup_carriers);
+
+# 2017-10-26 19:01:48.872972
++select count(*) from plivo_carrier_outgoingcarriergateway where id not in (select  outgoingcarriergateway_id from plivo_carrier_outgoingcarriervoicecostgroup_carriers);
+
+# 2017-10-26 19:18:47.144663
++select * from plivo_carrier_outgoingcarriergateway where id not in (select  outgoingcarriergateway_id from plivo_carrier_outgoingcarriervoicecostgroup_carriers) limit 10;
+
+# 2017-10-26 19:48:08.930551
++select * from plivo_incoming_phonenumberinventory where number = '18772037220';
+
+# 2017-10-26 19:48:45.341481
++select * from plivo_incoming_phonenumberinventory where number = '494087408503';
+
+# 2017-10-26 19:50:46.252663
++select * from plivo_incoming_phonenumberinventory where number = '18772037220';
+
+# 2017-10-26 19:51:32.618876
++select * from plivo_incoming_phonenumberinventory where number = '18882171387';
+
+# 2017-10-26 19:52:27.554664
++select * from plivo_incoming_accountphonenumber where number='18882171387';
+
+# 2017-10-26 20:12:13.354168
++select * from plivo_incoming_phonenumberinventory where number = '494087408503';
+
+# 2017-10-26 20:13:05.417999
++select * from plivo_incoming_phonenumberinventorytier where phone_number_id= 2042833;
+
+# 2017-10-26 20:13:25.860093
++select * from plivo_incoming_accountphonenumber where number='18882171387';
+
+# 2017-10-26 20:13:47.465832
++select * from plivo_incoming_phonenumberinventory where number = '18882171387';
+
+# 2017-10-26 20:13:58.729659
++select * from plivo_incoming_phonenumberinventorytier where phone_number_id= 1781478;
+
+# 2017-10-26 20:15:28.095732
++select * plivo_billing_incomingphonenumber_tier where tier_id = 290;
+
+# 2017-10-26 20:15:40.224729
++select * plivo_billing_incomingnumbertier where tier_id = 290;
+
+# 2017-10-26 20:17:21.740534
++select * from plivo_billing_incomingnumbertier where tier_id = 290;
+
+# 2017-10-26 20:17:31.064896
++select * from plivo_billing_incomingnumberrate where tier_id = 290;
+
+# 2017-10-26 20:17:35.961155
++select * from plivo_billing_incomingnumberrate where tier_id = 600;
+
+# 2017-10-26 20:17:40.381186
++select * from plivo_billing_incomingnumberrate where tier_id = 60;
+
+# 2017-10-26 20:18:18.670229
++select * from plivo_billing_incomingnumberrate where tier_id = 290;
+
+# 2017-10-26 20:19:49.019754
++select * from plivo_incoming_phonenumberinventorytier where phone_number_id= 1781478;
+
+# 2017-10-26 20:21:56.267981
++select * from plivo_billing_carriercustomertiermapping where tier_id = 290;
+
+# 2017-10-26 20:22:09.920544
++select * from plivo_billing_carriercustomertiermapping where carrier_tier_id = 290;
+
+# 2017-10-26 20:22:42.409697
++select * from plivo_billing_incomingnumberrate where tier_id = 574;
+
+# 2017-10-26 20:25:52.592319
++select * from plivo_incoming_phonenumberinventorytier where phone_number_id= 1781478;
+
+# 2017-10-26 20:26:09.127063
++select * from plivo_billing_carriercustomertiermapping where carrier_tier_id = 290;
+
+# 2017-10-26 20:26:14.525755
++select * from plivo_billing_incomingnumberrate where tier_id = 574;
+
+# 2017-10-26 20:32:06.685850
++select * from plivo_billing_carriercustomertiermapping where carrier_tier_id = 290;
+
+# 2017-10-26 20:32:23.756461
++select * from plivo_carrier_outgoingcarriergateway where id not in (select  outgoingcarriergateway_id from plivo_carrier_outgoingcarriervoicecostgroup_carriers) limit 10;
+
+# 2017-10-27 15:02:58.718400
++select * from plivo_carrier_outgoingcarriervoicecostgroup_carriers where outgoingcarriergateway_id in (select id from plivo_carrier_outgoingcarriergateway);
+
+# 2017-10-27 15:03:56.137169
++select count(*) from plivo_carrier_outgoingcarriervoicecostgroup_carriers where outgoingcarriergateway_id in (select id from plivo_carrier_outgoingcarriergateway);
+
+# 2017-10-27 17:42:31.309084
++\d+ plivo_logs_calldetailrecord
+
+# 2017-11-03 03:07:43.715670
++\d+ plivo_carrier_verificationdocument
+
+# 2017-11-06 16:09:27.852692
++select * from plivo_server_server
++;
+
+# 2017-11-06 16:10:25.086258
++select * from plivo_server_server;
+
+# 2017-11-09 12:27:51.221353
++select * from plivo_account_account where id = 4271;
+
+# 2017-11-09 12:57:14.060421
++\d+ plivo_routing_application
+
+# 2017-11-09 13:41:43.844467
++select count(*) from plivo_carrier_outgoingcarriervoicecost;
+
+# 2017-11-09 13:44:27.575312
++explain plan longest_matching_prefix
++;
+
+# 2017-11-09 13:44:38.842114
++explain analyze longest_matching_prefix;
+
+# 2017-11-09 13:45:21.978695
++explain analyze SELECT * FROM longest_prefix_match('18765052006', '13397661581791') limit 1;
+
+# 2017-11-09 16:20:03.445897
++select * from plivo_account_account where auth_id = "MAMDCZNDA1ZWRJYTYXY2";
+
+# 2017-11-09 16:21:12.906992
++select * from plivo_account_account where auth_id = 'MAMDCZNDA1ZWRJYTYXY2';
+
+# 2017-11-09 16:25:02.920057
++select count(*) from plivo_logs_accountcredit;
+
+# 2017-11-09 16:26:24.520078
++select count(*) from plivo_account_account;
+
+# 2017-11-09 16:27:46.100188
++explain analyze select count(*) from plivo_account_account;
+
+# 2017-11-09 16:31:55.158438
++vacuum analyze plivo_logs_accountcredit;
+
+# 2017-11-09 16:37:36.630433
++vacuum analyze plivo_logs_accountcredits;
+
+# 2017-11-09 16:37:39.538806
++vacuum analyze plivo_logs_accountcredit;
+
+# 2017-11-09 16:37:58.697030
++vacuum verbose analyze plivo_logs_accountcredit;
+
+# 2017-11-09 16:39:25.869045
++vacuum  analyze plivo_logs_accountcredit;
+
+# 2017-11-09 16:43:08.107520
++vacuum verbose analyze plivo_logs_accountcredit;
+
+# 2017-11-09 16:44:29.057046
++vacuum verbose  plivo_logs_accountcredit;
+
+# 2017-11-09 16:46:48.210666
++SELECT pg_size_pretty(pg_total_relation_size('"plivo_logs_accountcredit"'));
+
+# 2017-11-09 16:51:48.793093
++vacuum full  plivo_logs_accountcredit;
+
+# 2017-11-09 16:53:17.385859
++SELECT pg_size_pretty(pg_total_relation_size('"plivo_logs_accountcredit"'));
+
+# 2017-11-09 16:57:43.476048
++vacuum verbose analyze plivo_logs_accountcredit;
+
+# 2017-11-09 16:59:51.447825
++SELECT pg_size_pretty(pg_total_relation_size('"plivo_logs_accountcredit"'));
+
+# 2017-11-09 17:03:48.259017
++select * from pg_stat_activity;
+
+# 2017-11-09 17:07:55.117039
++select * from pg_stat_activity limit 5;
+
+# 2017-11-09 17:09:33.605431
++\d+ pg_stat_activity;
+
+# 2017-11-09 17:10:32.748283
++select backend_start from pg_stat_activity; 
+
+# 2017-11-09 17:11:06.315359
++select backend_start from pg_stat_activity order by backend_start desc;
+
+# 2017-11-09 17:11:17.091307
++select * from pg_stat_activity order by backend_start desc;
+
+# 2017-11-09 17:16:42.776997
++\d+ pg_stat_activity
+
+# 2017-11-09 17:17:13.751629
++select * from pg_stat_activity order by backend_start where query like %accountcredit%;
+
+# 2017-11-09 17:17:39.349755
++select * from pg_stat_activity  where query like '%accountcredit%' order by backend_start;
+
+# 2017-11-09 17:19:01.477211
++select * from pg_stat_activity  order by backend_start;
+
+# 2017-11-09 17:22:16.448329
++select * from pg_stat_activity  order by query_start;
+
+# 2017-11-09 17:23:12.748382
++select * from pg_stat_activity  where query_start < '2017-11-09 00:00:00' order by query_start;
+
+# 2017-11-09 17:24:41.560386
++\o long_running_queries.txt
+
+# 2017-11-09 17:24:43.478988
++select * from pg_stat_activity  where query_start < '2017-11-09 00:00:00' order by query_start;
+
+# 2017-11-09 17:26:42.733641
++select * from pg_stat_activity  where query like '%accountcredit%' backend_start < '2017-11-09 00:00:00' order by backend_start;
+
+# 2017-11-09 17:26:52.565389
++select * from pg_stat_activity  where query like '%accountcredit%' and backend_start < '2017-11-09 00:00:00' order by backend_start;
+
+# 2017-11-09 17:27:01.677038
++select * from pg_stat_activity  where query like '%accountcredit%'  order by backend_start;
+
+# 2017-11-09 17:28:06.329140
++\o ~/Desktop/acct_credit_clients.txt
+
+# 2017-11-09 17:28:13.242175
++select * from pg_stat_activity  where query like '%accountcredit%'  order by backend_start;
+
+# 2017-11-09 17:48:34.003874
++create table new_plivo_logs_accountcredits (like plivo_logs_accountcredits);
+
+# 2017-11-09 17:48:53.756698
++create table new_plivo_logs_accountcredit (like plivo_log_accountcredit);
+
+# 2017-11-09 17:49:01.105428
++create table new_plivo_logs_accountcredits (like plivo_log_accountcredits);
+
+# 2017-11-09 17:49:18.296194
++select * from plivo_logs_accountcredit;
+
+# 2017-11-09 17:49:55.849875
++create table new_plivo_logs_accountcredit (like plivo_logs_accountcredit);
+
+# 2017-11-09 17:50:09.664171
++\d+ new_plivo_logs_accountcredit
+
+# 2017-11-09 17:50:40.016957
++\d+ plivo_logs_accountcredit
+
+# 2017-11-09 17:51:39.396721
++drop table new_plivo_logs_accountcredit;
+
+# 2017-11-09 17:51:59.411751
++create table new_plivo_logs_accountcredit (like plivo_logs_accountcredit include indexes);
+
+# 2017-11-09 17:52:11.092206
++create table new_plivo_logs_accountcredit (like plivo_logs_accountcredit including indexes);
+
+# 2017-11-09 17:52:19.284521
++\d+ new_plivo_logs_accountcredit
+
+# 2017-11-09 17:53:49.288387
++select * into new_plivo_logs_accountcredit from plivo_logs_accountcredit;
+
+# 2017-11-09 17:57:54.802841
++insert into new_plivo_logs_accountcredit select * from plivo_logs_accountcredit;
+
+# 2017-11-09 18:00:38.497334
++alter table plivo_logs_accountcredit rename to old_plivo_logs_accountcredit;
+
+# 2017-11-09 18:02:01.011617
++alter table new_plivo_logs_accountcredit rename to plivo_logs_accountcredit;
+
+# 2017-11-09 18:08:06.124440
++\i ~/Desktop/migrate_credits.sql
+
+# 2017-11-09 18:08:25.022684
++drop table old_plivo_logs_accountcredit;
+
+# 2017-11-09 18:09:13.450399
++drop table new_plivo_logs_accountcredit;
+
+# 2017-11-09 18:09:31.550066
++\d+ plivo_logs_accountcredit;
+
+# 2017-11-09 18:10:44.513426
++alter index "new_plivo_logs_accountcredit_pkey" RENAME to plivo_logs_accountcredit_pkey;
+
+# 2017-11-09 18:11:05.687779
++alter index "new_plivo_logs_accountcredit_account_id_idx" rename to plivo_logs_accountcredit_account_id_idx;
+
+# 2017-11-09 18:12:09.370878
++\d+ plivo_logs_accountcredit;
+
+# 2017-11-09 18:12:37.271060
++\i ~/Desktop/migrate_credits.sql
+
+# 2017-11-09 18:17:06.196174
++\d+ plivo_logs_accountcredit;
+
+# 2017-11-09 18:17:33.526215
++\i ~/Desktop/migrate_credits.sql
+
+# 2017-11-09 19:06:09.308283
++  SELECT relation::regclass, * FROM pg_locks WHERE NOT GRANTED;
+
+# 2017-11-09 20:53:38.441379
++select * from plivo_account_account where id = 126194;

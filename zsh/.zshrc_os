@@ -4,7 +4,7 @@ export JAVA_HOME=/Library/Java/Home
 export GRAILS_HOME=${HOME}/src/grails-2.4.3
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export GRADLE_HOME=${HOME}/src/gradle
-export GEM_PATH=${HOME}/.gem/ruby/2.0.0
+#export GEM_PATH=${HOME}/.gem/ruby/2.4.0
 export GOPATH=${HOME}/gopath
 
 ## proxy stuff
@@ -31,7 +31,7 @@ export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
+export HOMEBREW_AUTO_UPDATE_SECS=36000
 proj() {
 	cd $(find -L ~/src -maxdepth 1 -type d | fzf)
 }

@@ -6,6 +6,10 @@ if [[ -f "$HOME/.zfunctions/git-status.zsh" ]]; then
     . "$HOME/.zfunctions/git-status.zsh"
 fi
 
+if [[ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+    source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
 fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=( "$HOME/.zfunctions" $fpath )
 
@@ -345,5 +349,3 @@ prompt purity
 if [[ -s "${ZDOTDIR:-$HOME}/.zshrc_common" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc_common"
 fi
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

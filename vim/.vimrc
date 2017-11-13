@@ -11,7 +11,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-vinegar'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Shougo/denite.nvim'
+Plug 'ivalkeen/vim-ctrlp-tjump'
+Plug 'benmills/vimux'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 "Plug vim-scripts/DirDo.vim
@@ -427,6 +431,8 @@ if has("gui_running")
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
     set guifont=Menlo\ Regular:h14
+    set lines=35
+    set columns=85
 endif
 
 " mucomplete
@@ -444,6 +450,8 @@ if executable('rg')
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   " let g:ctrlp_user_command = 'ag %s -l --nocolor'
   let g:ctrlp_user_command = ['.git', 'cd %s && rg --files-with-matches ".*"', 'find %s -type f']
+  let g:ctrlp_user_command = 'cd %s && rg --files-with-matches ".*" --hidden'
+
 
   " ag is fast enough that CtrlP doesn't need to cache
   " let g:ctrlp_use_caching = 0
@@ -451,3 +459,15 @@ if executable('rg')
   let g:ctrlp_working_path_mode = '0'
 endif
 
+"ctrlptag
+nnoremap <c-]> :CtrlPtjump<cr>
+vnoremap <c-]> :CtrlPtjumpVisual<cr>
+let g:ctrlp_tjump_only_silent = 1
+
+
+call denite#custom#var('file_rec', 'command',
+            \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
+" For ripgrep
+" Note: It is slower than ag
+call denite#custom#var('file_rec', 'command',
+            \ ['rg', '--files', '--glob', '!.git', ''])

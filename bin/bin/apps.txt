@@ -3,5 +3,7 @@ firefox
 Caskroom/cask/iterm2
 Caskroom/cask/seil
 virtualbox
-docker
 sshfs
+insomnia
+android-platform-tools
+android-tools

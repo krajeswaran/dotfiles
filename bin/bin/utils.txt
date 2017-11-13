@@ -1,6 +1,6 @@
 coreutils 
-binutils 
 findutils
+binutils 
 gnu-tar 
 gnu-sed 
 gawk 
@@ -12,6 +12,8 @@ grep
 graphicsmagick 
 rename 
 zsh 
+zsh-completions
+zsh-autosuggestions
 python 
 node 
 tree 
@@ -22,8 +24,8 @@ curl
 wget 
 progress 
 --HEAD universal-ctags 
-vim --with-cscope --with-lua --with-ruby --with-python
-macvim --with-cscope --with-lua --with-ruby --with-python
+vim --with-cscope --with-lua --with-ruby --with-python3 --with-client-server --with-feature=huge
+macvim --with-cscope --with-lua --with-ruby --with-python3 --with-client-server --with-feature=huge
 ack 
 p7zip 
 unrar 
@@ -42,3 +44,23 @@ fzf
 htop
 subliminal
 wakeonlan
+httpie
+graphviz
+bundler
+ripgrep
+nmap
+luagit
+lua
+pgcli
+ffmpeg
+psql
+sloccount
+rbenv
+ruby-build
+jsonlint
+awscli
+pyenv
+virtualenvwrapper
+socat
+openssl
+djmount
