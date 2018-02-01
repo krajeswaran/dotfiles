@@ -195,7 +195,7 @@ except ImportError:
 c.TerminalInteractiveShell.colors = 'Linux'
 
 # Autoindent IPython code entered interactively.
-# c.TerminalInteractiveShell.autoindent = True
+c.TerminalInteractiveShell.autoindent = True
 
 #
 # c.TerminalInteractiveShell.readline_omit__names = 2
@@ -396,3 +396,4 @@ c.IPCompleter.limit_to__all__ = True
 # Prompt Toolkit settings
 
 c.TerminalInteractiveShell.display_completions = 'multicolumn'
+c.TerminalInteractiveShell.editing_mode = 'vi'

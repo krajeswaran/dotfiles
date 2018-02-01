@@ -151,7 +151,7 @@ mdblog = postgresql://plivolog:UPY3vPnwA0nUptIwAD4xl7YsME7@master.dblog.plivo.co
 sdblog = postgresql://plivolog:UPY3vPnwA0nUptIwAD4xl7YsME7@slave.dblog.plivo.com/plivo_cloud_logs
 tdblog = postgresql://plivolog:hello@master.dblog.test.plivo.com/plivo_cloud_logs
 qdblog = postgresql://plivolog:hello@master.dblog.qa.plivodev.com/plivo_cloud_logs
-pdblog = postgresql://plivocfg:hello@master.dblog.platform.plivodev.com/plivo_cloud
+pdblog = postgresql://plivocfg:hello@master.dblog.platform.plivodev.com/plivo_cloud_logs
 
 # Format for number representation
 # for decimal "d" - 12345678, ",d" - 12,345,678

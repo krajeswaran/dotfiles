@@ -1903,3 +1903,584 @@
 
 # 2017-11-09 20:53:38.441379
 +select * from plivo_account_account where id = 126194;
+
+# 2017-11-13 23:18:11.118216
++  SELECT relation::regclass, * FROM pg_locks WHERE NOT GRANTED;
+
+# 2017-11-13 23:18:43.500933
++select * from pg_stat_activity  where query like '%accountcredit%'  order by backend_start;
+
+# 2017-11-13 23:19:02.049757
++select * from pg_stat_activity    order by backend_start;
+
+# 2017-11-13 23:20:17.351132
++\o pgstat.txt
+
+# 2017-11-13 23:20:35.379034
++select * from pg_stat_activity order by backend_start limit 30;
+
+# 2017-11-15 16:12:42.559889
++select * from plivo_account_account limit 1;
+
+# 2017-11-16 15:40:32.858203
++select * from plivo_carrier_outgoingcarriervoicecost limit 1;
+
+# 2017-11-16 15:40:51.825924
++select * from plivo_carrier_outgoingcarriervoicecost where carrier_cost_group_id = 13397661581791;
+
+# 2017-11-16 15:40:58.048343
++select * from plivo_carrier_outgoingcarriervoicecost limit 1;
+
+# 2017-11-16 15:41:53.835112
++select * from plivo_carrier_outgoingcarriervoicecostgroup limit 1;
+
+# 2017-11-16 15:42:10.273858
++select * from plivo_carrier_outgoingcarriervoicecostgroup where carrier_group_id = '13397661581791';
+
+# 2017-11-21 20:41:51.551771
++select * from plivo_account_account where auth_id = 'MAY2ZLMDAWYJE5YWM2ZG';
+
+# 2017-11-22 15:13:46.878557
++\d+ plivo_carrier_outgoingcarriergateway;
+
+# 2017-11-22 15:15:06.749518
++\d+ plivo_carrier_outgoingcarriervoicecost;;
+
+# 2017-11-22 15:15:20.859901
++\d+ plivo_carrier_outgoingcarriervoicecostgroup;
+
+# 2017-11-22 15:15:41.524335
++select count(*) from plivo_carrier_outgoingcarriervoicecostgroup;
+
+# 2017-11-22 15:15:50.079720
++select count(*) from plivo_carrier_outgoingcarriergateway;
+
+# 2017-11-22 15:15:55.852310
++select count(*) from plivo_carrier_outgoingcarriervoicecostgroup;
+
+# 2017-11-23 00:40:25.698875
++SELECT datname,pid,state,query FROM pg_stat_activity ORDER BY procid;
+
+# 2017-11-23 00:40:39.894244
++SELECT datname,pid,state,query FROM pg_stat_activity ORDER BY procpid limit 5;
+
+# 2017-11-23 00:40:51.849302
++SELECT datname,pid,state,query FROM pg_stat_activity limit 5;
+
+# 2017-11-23 00:41:16.441445
++SELECT datname,pid,state,query FROM pg_stat_activity;
+
+# 2017-11-23 00:52:06.376866
++select * from subscriber where account_id = 9315;
+
+# 2017-11-23 00:52:26.023499
++\d+ sub
+
+# 2017-11-23 00:52:29.420636
++\d+ subscriber;
+
+# 2017-11-23 00:53:07.503966
++delete from subscriber where account_id = 9315;
+
+# 2017-11-23 00:54:22.680542
++explain analyze delete from subscriber table where username='k360170419144348';
+
+# 2017-11-23 00:54:37.980017
++explain analyze delete from subscriber where username='k360170419144348';
+
+# 2017-11-23 00:56:01.094900
++select * from subscriber where username='k360170419144348';
+
+# 2017-11-23 00:56:40.795717
++select * from subscriber where account_id=9315;
+
+# 2017-11-25 13:15:51.886580
++\d+ subscriber;
+
+# 2017-11-25 13:18:18.034531
++SELECT
++    t.tablename,
++    indexname,
++    c.reltuples AS num_rows,
++    pg_size_pretty(pg_relation_size(quote_ident(t.tablename)::text)) AS table_size,
++    pg_size_pretty(pg_relation_size(quote_ident(indexrelname)::text)) AS index_size,
++    CASE WHEN indisunique THEN 'Y'
++       ELSE 'N'
++    END AS UNIQUE,
++    idx_scan AS number_of_scans,
++    idx_tup_read AS tuples_read,
++    idx_tup_fetch AS tuples_fetched
++FROM pg_tables t
++LEFT OUTER JOIN pg_class c ON t.tablename=c.relname
++LEFT OUTER JOIN
++    ( SELECT c.relname AS ctablename, ipg.relname AS indexname, x.indnatts AS number_of_columns, idx_scan, idx_tup_read, idx_tup_fetch, indexrelname, indisunique FROM pg_index x
++           JOIN pg_class c ON c.oid = x.indrelid
++           JOIN pg_class ipg ON ipg.oid = x.indexrelid
++           JOIN pg_stat_all_indexes psai ON x.indexrelid = psai.indexrelid )
++    AS foo
++    ON t.tablename = foo.ctablename
++WHERE t.schemaname='public'
++ORDER BY 1,2;
+
+# 2017-11-25 21:27:33.095281
++\d+ subscriber;
+
+# 2017-11-29 20:29:13.600046
++select * from plivo_billing_accountcardmapping where id = '13133';
+
+# 2017-11-29 20:32:27.396230
++select * from plivo_account_account where auth_id = 'MAYWE4Y2Q4ZDFLN2QYNZ';
+
+# 2017-11-29 20:32:46.247228
++select * from plivo_billing_accountcardmapping where id = '13133';
+
+# 2017-11-29 20:33:23.951477
++select * from auth_user where id = 16374;
+
+# 2017-11-29 20:34:03.943262
++select * from plivo_billing_accountcardmapping where id = '13133';
+
+# 2017-11-29 20:34:35.586562
++select * from plivo_billing_customercard where id = '13132';
+
+# 2017-11-29 20:36:32.615849
++select * from plivo_billing_customercard where id = '2166';
+
+# 2017-11-29 20:36:55.870101
++select * from plivo_billing_accountcardmapping where id = '2166';
+
+# 2017-11-29 20:37:29.731065
++select * from plivo_billing_customercard where id = '2166';
+
+# 2017-11-29 20:38:35.908988
++select * from plivo_billing_accountcardmapping where account_id = '16306';
+
+# 2017-11-29 20:40:21.352703
++select * from plivo_billing_customercard where id = 2166;
+
+# 2017-11-29 20:45:33.037058
++select * from plivo_billing_accountcardmapping where account_id = '16306';
+
+# 2017-11-29 20:46:20.360030
++select * from plivo_billing_customercard where id in (select plivo_billing_accountcardmapping.customer_card_id from plivo_billing_accountcardmapping where account_id = '16306');
+
+# 2017-11-29 20:48:33.232082
++select id, card_id, card_type, last_four_digits from plivo_billing_customercard where id in (select plivo_billing_accountcardmapping.customer_card_id from plivo_billing_accountcardmapping where account_id = '16306');
+
+# 2017-11-29 20:51:44.081879
++select id, stripe_card_id, card_type, last_four_digits from plivo_billing_customercard where id in (select plivo_billing_accountcardmapping.customer_card_id from plivo_billing_accountcardmapping where account_id = '16306');
+
+# 2017-11-29 22:48:16.779069
++explain analyze SELECT COUNT(*) FROM "subscriber" WHERE "subscriber"."account_id" = 6620;
+
+# 2017-11-30 16:27:16.927987
++SELECT datname,pid,state,query FROM pg_stat_activity;
+
+# 2017-11-30 16:28:58.717935
++SELECT datname,pid,state,query FROM pg_stat_activity ORDER BY procpid limit 5;
+
+# 2017-11-30 16:29:13.381516
++select * from pg_stat_activity order by backend_start limit 30;
+
+# 2017-11-30 16:29:33.438018
++select * from pg_stat_activity order by backend_start;
+
+# 2017-11-30 16:34:29.037762
++\d+ subscriber;
+
+# 2017-11-30 16:34:57.796219
++\d+ pg_stat_activity
+
+# 2017-11-30 16:35:24.452966
++select * from pg_stat_activity where username = 'accountant_platform';
+
+# 2017-11-30 16:35:33.391802
++select * from pg_stat_activity where usename = 'accountant_platform';
+
+# 2017-11-30 20:47:40.020351
++select * from plivo_account_account where auth_id = 'MANZG5Y2Q0ODGYOGNKZJ';
+
+# 2017-11-30 20:48:59.412431
++select auth_token from plivo_account_account where auth_id = 'MANZG5Y2Q0ODGYOGNKZJ';
+
+# 2017-11-30 20:53:04.294616
++select auth_token from plivo_account_account where auth_id = 'MAZME0YWEXNTEXMZMXZW';
+
+# 2017-11-30 20:53:12.668287
++select auth_token,senderid_whitelisted from plivo_account_account where auth_id = 'MAZME0YWEXNTEXMZMXZW';
+
+# 2017-11-30 21:13:40.151798
++select auth_token,senderid_whitelisted from plivo_account_account where auth_id = 'MANJG4MJY5MWEZZWNLY2';
+
+# 2017-11-30 21:14:49.834411
++select auth_token,senderid_whitelisted from plivo_account_account where auth_id = 'MAYTYWN2FIMDGXNJDJNZ';
+
+# 2017-11-30 21:55:10.402451
++select id from plivo_account_account where senderid_whitelisted = true;
+
+# 2017-11-30 21:56:41.013518
++select count(*) from plivo_account_account where senderid_whitelisted = true;
+
+# 2017-11-30 21:57:09.751785
++select count(*) from plivo_account_account where senderid_whitelisted = false;;
+
+# 2017-11-30 21:57:12.538092
++select count(*) from plivo_account_account where senderid_whitelisted = false;
+
+# 2017-11-30 21:57:19.526090
++select count(*) from plivo_account_account where senderid_whitelisted = true;
+
+# 2017-12-01 16:39:20.562560
++select * from pg_stat_activity order by backend_start;
+
+# 2017-12-01 16:40:57.948026
++select * from pg_stat_activity order by query_start;
+
+# 2017-12-01 17:24:30.655426
++select relname, last_autoanalyze, last_autovacuum, last_vacuum, n_dead_tup
++ from pg_stat_all_tables where n_dead_tup >0;
++
++
+
+# 2017-12-12 17:51:43.974504
++select * from plivo_logs_calldetailrecord where to_number = '84122803610';
+
+# 2017-12-12 17:51:58.008117
++select * from plivo_logs_calldetailrecord where to_number like '%84122803610';
+
+# 2017-12-12 18:29:32.462818
++\
+
+# 2017-12-12 18:31:16.699778
++select * from plivo_billing_incomingnumberrate linr
++inner join (select id, tier_id, product_plan_id, effective_date from plivo_billing_incomingnumberrate
++where id in 
++(select oinr.id from plivo_billing_incomingnumberrate oinr 
++where 
++(select count(*) from plivo_billing_incomingnumberrate iinr where iinr.tier_id = oinr.tier_id and iinr.product_plan_id = oinr.product_plan_id) > 1)) rinr
++on linr.id = rinr.id and linr.effective_date >= rinr.effective_date;
+
+# 2017-12-12 19:08:01.516724
++\d+ plivo_billing_paymentlog
+
+# 2017-12-12 19:08:31.904614
++\d+ plivo_routing_application
+
+# 2017-12-12 19:22:03.006743
++\d+ subscriber;
+
+# 2017-12-12 19:24:05.484335
++\d+ plivo_account_account
+
+# 2017-12-12 19:24:27.439213
++\d+ auth_user
+
+# 2017-12-12 19:25:47.308413
++select conrelid::regclass AS table_from, conname, pg_get_constraintdef(c.oid)
++from   pg_constraint c
++join   pg_namespace n ON n.oid = c.connamespace
++where  contype in ('c','u') order by contype;
+
+# 2017-12-12 22:09:39.315431
++select * from plivo_billing_incomingnumberrate where product_plan_id = 89;
+
+# 2017-12-12 22:14:37.667118
++select * from plivo_billing_cloudrate where plan_id = 89;
+
+# 2017-12-12 22:38:12.784995
++select * from plivo_billing_cloudrate where plan_id = ;
+
+# 2017-12-12 22:38:38.801857
++select * from plivo_billing_incomingnumberrate where product_plan_id = 1 where setup_rate > 4;
+
+# 2017-12-12 22:38:46.751186
++select * from plivo_billing_incomingnumberrate where product_plan_id = 1 and setup_rate > 4;
+
+# 2017-12-12 22:39:32.911526
++select * from plivo_incoming_accountphonenumbertier where tier_id = 491;
+
+# 2017-12-12 22:40:16.879421
++select * from plivo_incoming_pendingnumberorder where id = 3355083;
+
+# 2017-12-12 22:40:33.800255
++select * from plivo_incoming_phonenumberinventory  where id = 3355083;
+
+# 2017-12-12 22:40:46.418681
++select * from plivo_incoming_accountphonenumbertier  where id = 3355083;
+
+# 2017-12-12 22:40:51.858804
++select * from plivo_incoming_accountphonenumber  where id = 3355083;
+
+# 2017-12-12 22:41:22.061543
++select * from plivo_billing_incomingnumberrate where product_plan_id = 1 and setup_rate = 5;
+
+# 2017-12-12 22:42:12.846144
++select * from plivo_billing_tier limit 5;
+
+# 2017-12-12 22:42:28.934721
++select * from plivo_billing_tier where id=491 limit 5;
+
+# 2017-12-12 22:42:44.816168
++select * from plivo_billing_tier where id=538;
+
+# 2017-12-12 22:42:57.615268
++select * from plivo_billing_tier where id=438;
+
+# 2017-12-12 22:43:11.022647
++select * from plivo_billing_tier where id=429;
+
+# 2017-12-12 22:44:08.109536
++select * from plivo_billing_incomingnumberrate where product_plan_id = 89;;
+
+# 2017-12-12 22:44:12.195514
++select * from plivo_billing_incomingnumberrate where product_plan_id = 89;
+
+# 2017-12-14 18:45:14.839745
++\d+ plivo_logs_calldetailrecord
+
+# 2017-12-14 18:49:12.246583
++select extra_data from plivo_logs_calldetailrecord limit 5;
+
+# 2017-12-14 18:50:37.000505
++select extra_data from plivo_logs_calldetailrecord where extra_data->>is_sip=t limit 5;
+
+# 2017-12-14 18:50:51.985201
++select extra_data from plivo_logs_calldetailrecord limit 5;
+
+# 2017-12-14 18:51:59.307465
++select extra_data from plivo_logs_calldetailrecord where extra_data->'call_type_flags'->>'is_sip'=t limit 5;
+
+# 2017-12-14 18:52:07.933957
++select extra_data from plivo_logs_calldetailrecord where extra_data->'call_type_flags'->>'is_sip'= true limit 5;
+
+# 2017-12-14 18:52:13.333572
++select extra_data from plivo_logs_calldetailrecord where extra_data->'call_type_flags'->>'is_sip' = true limit 5;
+
+# 2017-12-14 18:52:29.629907
++select extra_data from plivo_logs_calldetailrecord where extra_data->'call_type_flags'->>'is_sip' = 'true' limit 5;
+
+# 2017-12-14 18:52:57.972469
++select * from plivo_logs_calldetailrecord where extra_data->'call_type_flags'->>'is_sip' = 'true' limit 5;
+
+# 2017-12-14 19:54:27.488956
++select * from subscriber where endpoint_id = 27332415666930216;;
+
+# 2017-12-14 19:54:34.871264
++select * from subscriber where endpoint_id = 27332415666930216;
+
+# 2017-12-14 19:54:41.953101
++select * from subscriber where endpoint_id = '27332415666930216';
+
+# 2017-12-14 19:55:03.858609
++select * from subscriber limit 5;
+
+# 2017-12-14 19:56:46.532336
++select * from plivo_endpoints;
+
+# 2017-12-14 19:56:51.453239
++select * from plivo_endpoints_endpoint;
+
+# 2017-12-14 19:57:04.295116
++select * from plivo_incoming_endpoint;
+
+# 2017-12-14 19:59:45.511185
++select * from subscriber limit 5;
+
+# 2017-12-14 20:01:48.816775
++select * from plivo_logs_calldetailrecord where to_number = 'sip:29899650921109@app.plivo.com' limit 5;
+
+# 2017-12-14 20:03:23.961641
++select * from plivo_logs_calldetailrecord where extra_data->'call_type_flags'->>'is_sip' = 'true' limit 5;
+
+# 2017-12-14 20:05:53.982710
++select * from plivo_routing_application where id = 962;
+
+# 2017-12-14 20:06:25.738512
++select * from plivo_logs_calldetailrecord where to_number = 'sip:28421325777613398@app.plivo.com' limit 5;
+
+# 2017-12-14 20:06:44.529016
++select * from plivo_logs_calldetailrecord where fro_number = 'sip:28421325777613398@app.plivo.com' limit 5;
+
+# 2017-12-14 20:06:53.761629
++select * from plivo_logs_calldetailrecord where from_number = 'sip:28421325777613398@app.plivo.com' limit 5;
+
+# 2017-12-14 20:07:42.794072
++select * from plivo_logs_calldetailrecord where extra_data->'call_type_flags'->>'is_sip' = 'true' limit 5;
+
+# 2017-12-14 20:08:01.575582
++select * from plivo_logs_calldetailrecord where from_number = 'sip:28421325777613398@app.plivo.com:5060' limit 5;
+
+# 2017-12-14 20:08:15.097588
++select * from plivo_logs_calldetailrecord where to_number = 'sip:28421325777613398@app.plivo.com:5060' limit 5;
+
+# 2017-12-14 20:08:46.042341
++select * from plivo_logs_calldetailrecord where to_number like 'sip:28421325777613398@app.plivo%' limit 5;
+
+# 2017-12-19 15:39:59.842887
++select * from address limit 5;
+
+# 2017-12-19 15:42:10.150304
++select count(*) from address ;
+
+# 2018-01-04 18:19:02.401098
++TRUNCATE table django_session;
+
+# 2018-01-04 18:27:35.407877
++desc django_session;
+
+# 2018-01-04 18:27:46.223857
++\d+ django_session;
+
+# 2018-01-04 20:16:29.600739
++select * from plivo_carrier_verificationdocument where document_details->'region'='CA' limit 5;
+
+# 2018-01-04 20:17:34.184129
++\d+ plivo_carrier_verificationdocument
+
+# 2018-01-04 20:17:57.491459
++select * from plivo_carrier_verificationdocument limit 5;
+
+# 2018-01-04 20:18:16.506833
++select * from plivo_carrier_verificationdocument where document_details <> null limit 5;
+
+# 2018-01-04 20:18:24.782430
++select * from plivo_carrier_verificationdocument where document_details is not null limit 5;
+
+# 2018-01-04 20:19:03.320621
++select * from plivo_carrier_verificationdocument where document_details->'region'="CA" limit 5;
+
+# 2018-01-04 20:19:09.381781
++select * from plivo_carrier_verificationdocument where document_details->'region' = "CA" limit 5;
+
+# 2018-01-04 20:19:19.637777
++select * from plivo_carrier_verificationdocument where document_details->'region' like "CA" limit 5;
+
+# 2018-01-04 20:19:26.259391
++select * from plivo_carrier_verificationdocument where document_details->'region' like "%CA" limit 5;
+
+# 2018-01-04 20:19:31.290101
++select * from plivo_carrier_verificationdocument where document_details->'region' like '%CA' limit 5;
+
+# 2018-01-04 20:19:47.650257
++select * from plivo_carrier_verificationdocument where document_details->'region'='CA' limit 5;
+
+# 2018-01-04 20:19:55.130410
++select * from plivo_carrier_verificationdocument where document_details->>'region'='CA' limit 5;
+
+# 2018-01-05 11:55:48.068181
++select * from plivo_logs_calldetailrecord where call_uuid = '052d4106-d455-11e7-b0c9-89239fbb3f21' limit 1;
+
+# 2018-01-05 19:14:53.125408
++\d+ plivo_logs_calldetailrecord
+
+# 2018-01-05 19:16:43.191120
++select * from plivo_logs_calldetailrecord where extra_data->'call_type_flags'->>'is_sip' = 'true' limit 5;
+
+# 2018-01-08 15:20:33.387549
++\d+ plivo_productplan;
+
+# 2018-01-08 15:20:36.953511
++\d+ plivo_product_plan;
+
+# 2018-01-08 15:20:45.163666
++\d+ plivo_product_productplan;
+
+# 2018-01-08 15:21:43.160632
++\d+ plivo_account_accountplanlog
+
+# 2018-01-08 15:21:58.999275
++\d+ plivo_product_productplan;
+
+# 2018-01-08 15:23:31.836310
++\d+ plivo_billing_outgoingcharge
+
+# 2018-01-09 16:14:08.650612
++\d+ plivo_routing_application
+
+# 2018-01-09 16:16:55.450503
++select relname, last_autoanalyze, last_autovacuum, last_vacuum, n_dead_tup
++ from pg_stat_all_tables where n_dead_tup >0;
++
++
+
+# 2018-01-09 16:17:24.372004
++select relname, last_autoanalyze, last_autovacuum, last_vacuum, n_dead_tup
++ from pg_stat_all_tables where n_dead_tup > 0 order by n_dead_tup;
+
+# 2018-01-09 16:19:05.036148
++select * from pg_stat_activity order by backend_start;
+
+# 2018-01-09 16:19:41.125262
++select * from pg_stat_activity order by query_start;
+
+# 2018-01-09 16:20:24.632734
++select * from pg_stat_activity order by query_start and state = 'idle_in_transaction';
+
+# 2018-01-09 16:20:56.300846
++select * from pg_stat_activity state = 'idle_in_transaction' order by query_start;
+
+# 2018-01-09 16:21:09.353465
++select * from pg_stat_activity where state = 'idle_in_transaction' order by query_start;
+
+# 2018-01-09 16:21:20.005874
++select * from pg_stat_activity where state = 'idle in transaction' order by query_start;
+
+# 2018-01-09 16:22:40.344970
++select now();
+
+# 2018-01-09 16:23:24.200553
++select * from pg_stat_activity where state = 'idle in transaction' and query_start < '2018-01-09 10:50:00' order by query_start ;
+
+# 2018-01-09 16:23:58.219989
++select * from pg_stat_activity where state = 'idle in transaction' and query_start < now() - 5min order by query_start ;
+
+# 2018-01-09 16:28:23.527945
++select * from pg_stat_activity where state = 'idle in transaction' and query_start < (CURRENT_TIMESTAMP - INTERVAL 5min) order by query_start ;
+
+# 2018-01-09 16:28:37.171875
++select * from pg_stat_activity where state = 'idle in transaction' and query_start < (CURRENT_TIMESTAMP - INTERVAL '5 minutes') order by query_start ;
+
+# 2018-01-22 16:45:14.552490
++\d+ plivo_logs_callrecording
+
+# 2018-01-22 16:45:46.678865
++select * from plivo_logs_callrecording where recording_url is not null limit 5;
+
+# 2018-01-24 16:57:58.659422
++select * from plivo_incoming_phonenumberinventory where number like '39%';
+
+# 2018-01-24 16:59:00.487740
++select * from plivo_incoming_phonenumberinventory where number like '39%' where blocked=f and rented=f;
+
+# 2018-01-24 16:59:22.387700
++select * from plivo_incoming_phonenumberinventory where number like '39%' and not blocked and not rented;
+
+# 2018-01-24 17:00:22.832303
++select * from plivo_incoming_addressrestriction where carrier_id = 6;
+
+# 2018-01-24 17:00:37.436428
++select * from plivo_incoming_addressrestriction where carrier_id = 6 and country_id = 'IT';
+
+# 2018-01-24 17:01:39.903076
++select * from plivo_incoming_phonenumberinventory where number like '39%' and not blocked and not rented;
+
+# 2018-01-29 16:01:16.090069
++\d+ plivo_carrier_accountphonenumberverificationdocmapping
+
+# 2018-01-30 13:11:09.807258
++ALTER TABLE "plivo_dialcode_region" DROP UNIQUE (slug);
+
+# 2018-01-30 13:11:23.823823
++ALTER TABLE "plivo_dialcode_region" DROP UNIQUE CONSTRAINT (slug);
+
+# 2018-01-30 13:11:30.739216
++ALTER TABLE "plivo_dialcode_region" DROP CONSTRAINT (slug);
+
+# 2018-01-30 13:11:44.166536
++\d+ plivo_dialcode_region
+
+# 2018-01-30 13:12:25.205761
++\d+ "plivo_dialcode_region"
+
+# 2018-02-01 17:50:45.242430
++\d+ plivo_carrier_verificationdocument;

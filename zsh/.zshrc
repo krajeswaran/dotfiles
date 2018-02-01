@@ -13,6 +13,7 @@ fi
 fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=( "$HOME/.zfunctions" $fpath )
 
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 
 #------------------------------
 # History stuff

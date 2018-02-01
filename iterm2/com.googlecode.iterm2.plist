@@ -27385,7 +27385,7 @@
 	<real>1</real>
 	<key>GlobalKeyMap</key>
 	<dict>
-		<key>0x74-0xc0000</key>
+		<key>0x68-0xc0000</key>
 		<dict>
 			<key>Action</key>
 			<integer>28</integer>
@@ -27571,7 +27571,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>383 326 918 495 0 0 1440 900 </string>
+	<string>383 334 937 465 0 0 1440 900 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 316 592 584 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -29343,6 +29343,10 @@
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
+	<key>NoSyncSuppressBroadcastInputWarning</key>
+	<true/>
+	<key>NoSyncSuppressBroadcastInputWarning_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>498513470.82340199</real>
 	<key>OnlyWhenMoreTabs</key>
