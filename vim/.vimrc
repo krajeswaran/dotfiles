@@ -399,7 +399,7 @@ set statusline +=%=%-14.(%l,%c%V%)\ %P
 
 
 " ALE
-let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥']
+let g:ale_statusline_format = ['⨉  %d', '⚠ %d', '⬥ ']
 
 " GUI Settings 
 " GVIM- (here instead of .gvimrc)
@@ -411,6 +411,7 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
+set lines=30
 set guifont=Hack\ 12
 
 " mucomplete

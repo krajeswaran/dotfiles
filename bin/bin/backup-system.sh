@@ -6,16 +6,12 @@ S2='r'
 
 # Backup destination
 backdest=${HOME}/backups
-if [ -d "$backdest" ]; then 
-    echo "Backup directory doesn't exist, you lazy bum."
-    mkdir -p "$backdest"
-fi
+mkdir -p "$backdest"
 
 # Labels for backup name
 pc=${HOSTNAME}
-. /etc/lsb-release
-distro=$DISTRIB_ID
-distro_release=$DISTRIB_RELEASE
+distro=$(lsb_release -s -i)
+distro_release=$(lsb_release -s -c)
 date=$(date "+%F")
 backupfile="$backdest/$pc-$distro-$distro_release-$date.tar.gz"
 
@@ -73,11 +69,11 @@ proceed_yesorno
 
 echo Optimizing apt.......
 proceed_yesorno
-[[ $REPLY = [yY] ]] && apt-get autoremove --purge && apt-get autoclean
+[[ $REPLY = [yY] ]] && apt autoremove --purge && apt autoclean
 
 #echo Purging old kernels........
 #proceed_yesorno
-#[[ $REPLY = [yY] ]] && dpkg -l linux-'*' | awk '/^ii/{ print $2}' | grep -v -e $(uname -r | cut -f1,2 -d"-") | grep -e [0-9] | xargs apt-get purge
+#[[ $REPLY = [yY] ]] && dpkg -l linux-'*' | awk '/^ii/{ print $2}' | grep -v -e $(uname -r | cut -f1,2 -d"-") | grep -e [0-9] | xargs apt purge
 
 echo Purging dead config........
 proceed_yesorno

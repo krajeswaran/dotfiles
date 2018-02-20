@@ -19,7 +19,7 @@ echo "---------------- Installing packages  -------------------------"
 proceed
 if [ $?	-eq 0 ]; then
     echo "list --------- " ${PACKAGES}
-    sudo apt install -t testing $(<${BINPATH}/apps.txt)	
+    sudo apt install $(<${BINPATH}/apps.txt)	
 fi
 
 echo "---------------- Making user dirs -------------------------"

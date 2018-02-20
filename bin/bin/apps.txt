@@ -6,14 +6,12 @@ mpv
 curl
 wget
 aria2
-terminator
 build-essential
 stow
 sshfs
 mosh
 rsync
 progress
-libreoffice-draw
 graphicsmagick
 zsh
 zsh-doc

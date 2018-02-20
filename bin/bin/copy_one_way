@@ -4,8 +4,8 @@
 while getopts dl opt
 do
     case "$opt" in
-      d)  DRYRUN="--dry-run" || LOCALCOPY=;;
-      l)  DRYRUN= || LOCALCOPY=on;;
+      d)  DRYRUN="--dry-run";;
+      l)  LOCALCOPY=on;;
       \?)		# unknown flag
       	  echo >&2 \
 	  "usage: $0 [-d] [-l]"
