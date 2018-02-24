@@ -7,7 +7,7 @@ echo "3. Run mkfs -t vfat /dev/sdX1."
 echo "copying $1 to $2..."
 mkdir -p /mnt/{iso,usb}
 mount -o loop "$1" /mnt/iso
-mount "$2" /mnt/usb
+mount "$2"1 /mnt/usb
 cp -avr /mnt/iso/* /mnt/usb
 sync
 umount /mnt/iso
