@@ -1,0 +1,22 @@
+#!/bin/zsh
+
+echo "1. Make sure to install syslinux, extlinux, dosfstools and mtools."
+echo "2. Run cfdisk /dev/sdX and create a new partition W95 FAT32(0b) partition. Make it bootable and write to disk."
+echo "3. Run mkfs -t vfat /dev/sdX1."
+
+echo "copying $1 to $2..."
+mkdir -p /mnt/{iso,usb}
+mount -o loop "$1" /mnt/iso
+mount "$2" /mnt/usb
+cp -avr /mnt/iso/* /mnt/usb
+sync
+umount /mnt/iso
+
+echo "copy c32 modules+memdisk for syslinux..." 
+cp -v /usr/lib/syslinux/modules/bios/*.c32 /mnt/usb/boot/syslinux
+cp -v /usr/lib/syslinux/memdisk /mnt/usb/boot/syslinux
+
+echo "install syslinux..."
+extlinux --install /mnt/usb/boot/syslinux
+
+echo "now go put a good syslinux.cfg file in boot/syslinux..."
