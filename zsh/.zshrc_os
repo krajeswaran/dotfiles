@@ -33,3 +33,6 @@ export LANG=en_US.UTF-8
 proj() {
 	cd $(find -L ~/src -maxdepth 1 -type d | fzf)
 }
+
+# for nix
+source ${HOME}/.nix-profile/etc/profile.d/nix.sh

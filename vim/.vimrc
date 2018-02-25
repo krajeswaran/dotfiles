@@ -412,7 +412,7 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 set lines=30
-set guifont=Hack\ 12
+set guifont=Fira\ Code\ 12
 
 " mucomplete
 set showmode shortmess+=c

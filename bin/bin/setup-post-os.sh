@@ -21,6 +21,9 @@ ln -s ~thesaneone/.zsh* .
 ln -s ~thesaneone/.zfun* .
 ln -s ~thesaneone/.fzf* .
 
-# install node/pip packages
-# diff-so-fancy, ipython, mechanize
+echo install node/pip packages
+echo diff-so-fancy, mechanize, requests, conda
+echo install nix os
+echo install kali tools
+echo install snaps: keepassxc, libreoffce
 

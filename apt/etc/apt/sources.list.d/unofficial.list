@@ -15,8 +15,6 @@ deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 ###Virtualbox
 deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian stretch contrib non-free
 
-###Firefox
-deb http://http.debian.net/debian experimental main
 
 
 
