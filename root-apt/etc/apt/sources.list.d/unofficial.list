@@ -15,8 +15,9 @@ deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
 ###Virtualbox
 deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian stretch contrib non-free
 
+###NodeJs
+deb https://deb.nodesource.com/node_9.x stretch main
+deb-src https://deb.nodesource.com/node_9.x stretch main
 
-
-
-
-
+## Albert
+deb http://download.opensuse.org/repositories/home:/manuelschneid3r/Debian_9.0/ /

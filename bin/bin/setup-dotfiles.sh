@@ -7,10 +7,16 @@ DOTFILES_PATH="${HOME}/dotfiles"
 
 # execute stow on all config stored
 cd ${DOTFILES_PATH}
-for dirs in $(printf "%s\n" */)
+for dirs in $(printf "%s\n" */ | grep -v "^root-")
 do 
 	echo ${dirs}
 	stow -v3 ${dirs} -t ~/
+done
+
+for dirs in $(printf "%s\n" */ | grep "^root-")
+do 
+	echo ${dirs}
+	sudo stow -v3 ${dirs} -t /
 done
 
 # execute post process for os

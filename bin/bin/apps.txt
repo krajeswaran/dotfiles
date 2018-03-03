@@ -48,9 +48,8 @@ virtualenv
 silversearcher-ag
 ack
 dconf-tools
-snap
+snapd
 flatpak
-plank
 powertop
 deborphan
 wakeonlan
@@ -71,4 +70,7 @@ fonts-freefont-ttf
 fonts-lobstertwo
 fonts-comfortaa
 fonts-firacode
-synapse
+albert
+google-chrome-stable
+python-pip
+virtualenv
