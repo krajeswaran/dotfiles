@@ -1,5 +1,5 @@
 [xarchiver]
-preferred_format=12
+preferred_format=-1
 confirm_deletion=false
 sort_filename_content=true
 store_output=false
