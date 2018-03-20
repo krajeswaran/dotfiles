@@ -25,5 +25,6 @@ echo install node/pip packages
 echo diff-so-fancy, mechanize, requests, conda
 echo install nix os
 echo install kali tools
+echo setup caps:escape for dconf
 echo install snaps: keepassxc, libreoffce
 

@@ -74,3 +74,16 @@ albert
 google-chrome-stable
 python-pip
 virtualenv
+i965-va-driver
+libvdpau-va-gl1
+libdrm2
+libdrm-nouveau2
+libdrm-intel1
+socat
+linux-headers-amd64
+linux-tools
+vdpauinfo
+vdpau-va-driver
+vdpau-driver-all
+android-tools-adb
+android-tools-fastboot
