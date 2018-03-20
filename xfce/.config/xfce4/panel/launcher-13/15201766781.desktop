@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Google Keep - notes and lists
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki
+Icon=chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default
+StartupWMClass=crx_hmjkmjkepdijhoojdojkdfohbdgmmhki
+X-XFCE-Source=file:///home/thesaneone/.local/share/applications/chrome-hmjkmjkepdijhoojdojkdfohbdgmmhki-Default.desktop

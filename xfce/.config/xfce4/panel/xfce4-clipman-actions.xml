@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action>
+		<name>Image</name>
+		<regex>(http|ftp).+\.(jpg|png|gif)</regex>
+		<group>0</group>
+		<commands>
+			<command>
+				<name>View with Ristretto</name>
+				<exec>ristretto &quot;\0&quot;</exec>
+			</command>
+			<command>
+				<name>Edit with Gimp</name>
+				<exec>gimp-remote &quot;\0&quot;</exec>
+			</command>
+		</commands>
+	</action>
+	<action>
+		<name>Long URL</name>
+		<regex>http://[^\s]{120,}</regex>
+		<group>0</group>
+		<commands>
+			<command>
+				<name>Shrink the URL</name>
+				<exec>exo-open http://tinyurl.com/create.php?url=\0</exec>
+			</command>
+		</commands>
+	</action>
+</actions>
