@@ -54,7 +54,7 @@
             <value type="uint" value="65535"/>
           </property>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/images/desktop-base/desktop-background"/>
+          <property name="last-image" type="string" value="/home/thesaneone/dumps/Milky_Way_at_Concordia_Camp,_Karakoram_Range,_Pakistan.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="false"/>
         </property>
       </property>

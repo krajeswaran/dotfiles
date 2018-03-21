@@ -16,7 +16,7 @@
   <property name="default-view" type="string" value="ThunarDetailsView"/>
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_NORMAL"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_SMALLER"/>
-  <property name="last-details-view-column-widths" type="string" value="50,112,50,50,307,50,50,70,202"/>
+  <property name="last-details-view-column-widths" type="string" value="50,112,50,50,271,50,50,70,238"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_DATE_MODIFIED"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_DESCENDING"/>
 </channel>
