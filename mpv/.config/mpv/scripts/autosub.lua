@@ -9,7 +9,7 @@ function load_sub_fn()
     mp.msg.info("Searching subtitle")
     mp.osd_message("Searching subtitle")
     t = {}
-    t.args = {subl, "download", "-l", "en", path}
+    t.args = {subl, "download", "-l", "en", "-s", path}
     res = utils.subprocess(t)
     if res.status == 0 then
         mp.commandv("rescan_external_files", "reselect") 

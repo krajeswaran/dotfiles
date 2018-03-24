@@ -399,7 +399,6 @@ set statusline+=%(\ \|%{(&bomb\|\|'^$\|utf-8'!~#&fileencoding?'\ '.&fileencoding
   \.('unix'!=#&fileformat?'\ '.&fileformat:'')}%)
 set statusline+=%(\ \|\ %{&modifiable?SleuthIndicator():''}%)
 set statusline+=\ \|
-set statusline+=\ %2v " Virtual column number.
 set statusline +=%=%-14.(%l,%c%V%)\ %P
 
 function! InsertStatuslineColor(mode)

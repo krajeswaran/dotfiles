@@ -2484,3 +2484,264 @@
 
 # 2018-02-01 17:50:45.242430
 +\d+ plivo_carrier_verificationdocument;
+
+# 2018-02-06 14:37:58.129419
++\d+ plivo_billing_coupon
+
+# 2018-02-06 14:41:03.414310
++select * from plivo_billing_coupon order by id limit 5;
+
+# 2018-02-06 14:41:10.033701
++select * from plivo_billing_coupon order by id desc limit 5;
+
+# 2018-02-06 15:08:25.263116
++\d+ plivo_logs_calldetailrecord
+
+# 2018-02-07 17:26:01.901201
++select * from plivo_carrier_verificationdocument order by id 5;
+
+# 2018-02-07 17:26:12.893187
++select * from plivo_carrier_verificationdocument order by id limit 5;
+
+# 2018-02-07 17:26:21.237132
++select * from plivo_carrier_verificationdocument order by id desc limit 5;
+
+# 2018-02-07 17:27:09.861288
++select * from plivo_carrier_verificationdocument where document_id = '13593742863056';
+
+# 2018-02-07 17:36:09.613477
++select * from plivo_carrier_verificationdocument where account_id = 76785 order by id desc limit 2;
+
+# 2018-02-07 17:47:08.661211
++select * from plivo_carrier_verificationdocument where document_id = 26482535437697;
+
+# 2018-02-07 17:47:16.342074
++select * from plivo_carrier_verificationdocument where document_id = '26482535437697';
+
+# 2018-02-07 17:47:52.551378
++select * from plivo_carrier_verificationdocument where document_id = '28488007805377';
+
+# 2018-02-07 18:14:38.057374
++\d+ plivo_account_account;
+
+# 2018-02-07 18:15:36.050558
++\d+ plivo_account_feature
+
+# 2018-02-07 18:16:03.244567
++select * from plivo_account_feature limit 5;
+
+# 2018-02-07 18:16:14.653489
++select * from plivo_account_feature;
+
+# 2018-02-07 18:16:35.712290
++\d+ plivo_account_feature
+
+# 2018-02-07 18:25:40.857667
++select id, stripe_card_id, card_type, last_four_digits from plivo_billing_customercard where id in (select plivo_billing_accountcardmapping.customer_card_id from plivo_billing_accountcardmapping where account_id = '16306');
+
+# 2018-02-07 18:26:12.113768
++select id, stripe_card_id, card_type, last_four_digits from plivo_billing_customercard where id in (select plivo_billing_accountcardmapping.customer_card_id from plivo_billing_accountcardmapping where account_id = '42729');
+
+# 2018-02-07 19:19:06.288024
++select * from plivo_carrier_verificationdocument where document_id = '28488007805377';
+
+# 2018-02-08 13:04:41.857446
++select id, stripe_card_id, card_type, last_four_digits from plivo_billing_customercard where id in (select plivo_billing_accountcardmapping.customer_card_id from plivo_billing_accountcardmapping where account_id = '42729');
+
+# 2018-02-08 13:06:45.246460
++\d+ plivo_billing_accountcardmapping;
+
+# 2018-02-08 13:07:14.529881
++\d+ plivo_billing_customercard;
+
+# 2018-02-08 13:11:43.136694
++select * from plivo_billing_customercard limit 5;
+
+# 2018-02-08 13:12:15.662211
++select * from plivo_billing_customercard order by id limit 5;
+
+# 2018-02-08 13:12:22.660991
++select * from plivo_billing_customercard order by id desc limit 5;
+
+# 2018-02-08 13:15:25.046636
++select * from plivo_account_account where auth_id = 'MAMJK3OTU4MDU1NGNHMW';
+
+# 2018-02-08 13:15:41.479554
++select * from plivo_billing_accountcardmapping where account_id = '126170';
+
+# 2018-02-08 13:16:04.797804
++\d+ plivo_billing_customercard;
+
+# 2018-02-08 13:17:20.244478
++select * from plivo_billing_accountcardmapping where account_id = '126170';
+
+# 2018-02-08 13:18:08.574443
++select * from plivo_account_account where id in (select * from auth_user where auth_user.username = 'JamesPiechota');
+
+# 2018-02-08 13:18:25.363581
++select * from plivo_account_account where user_id in (select id from auth_user where auth_user.username = 'JamesPiechota');
+
+# 2018-02-08 13:18:35.552334
++select * from plivo_billing_accountcardmapping where account_id = '84312';
+
+# 2018-02-08 13:19:26.431234
++select * from plivo_billing_customercard where id = 18235;;
+
+# 2018-02-08 13:20:03.116072
++select * from plivo_billing_accountcardmapping where account_id = '84312';
+
+# 2018-02-08 13:23:40.325046
++select * from plivo_billing_customercard where id = 18235;;
+
+# 2018-02-08 13:24:22.233237
++select * from plivo_billing_accountcardmapping where account_id = '84312';
+
+# 2018-02-08 13:32:22.177077
++select * from plivo_account_account where user_id in (select id from auth_user where auth_user.username = 'shmuel');
+
+# 2018-02-08 13:32:38.712435
++select * from plivo_billing_accountcardmapping where account_id = '86386';
+
+# 2018-02-08 13:32:57.249704
++\d+ plivo_billing_customercard;
+
+# 2018-02-08 13:33:41.509863
++\d+ plivo_billing_accountcardmapping
+
+# 2018-02-08 13:34:17.744694
++\d+ plivo_billing_card_status;
+
+# 2018-02-08 13:34:50.511379
++\d+ plivo_billing_paymentlog;
+
+# 2018-02-08 13:35:21.584494
++select * from plivo_billing_paymentlog where account_id = '86386';
+
+# 2018-02-08 13:35:53.630638
++select * from plivo_billing_paymentlog where id = 136247 ;
+
+# 2018-02-08 13:36:29.093909
++\d+ plivo_billing_paymentlog;
+
+# 2018-02-08 13:37:02.891921
++select * from plivo_billing_paymentlog where transaction_id='ch_9kcnofcWuBSHQd' ;
+
+# 2018-02-08 13:37:22.453545
++select * from plivo_billing_paymentlog LIMIT 5;
+
+# 2018-02-08 13:37:39.349178
++select * from plivo_billing_paymentlog where customer_specific_id='ch_9kcnofcWuBSHQd' ;
+
+# 2018-02-08 13:40:05.713109
++select * from plivo_billing_paymentlog LIMIT 5;
+
+# 2018-02-08 13:43:55.814262
++select * from plivo_account_account where auth_id = 'MAMJK3OTU4MDU1NGNHMW';
+
+# 2018-02-08 13:44:37.572502
++select * from plivo_account_account where user_id in (select id from auth_user where auth_user.username = 'JamesPiechota');
+
+# 2018-02-08 13:45:20.850564
++select * from plivo_account_account where user_id in (select id from auth_user where auth_user.username = '1816058A15F54A84BE654CA0918B6F');
+
+# 2018-02-08 13:47:24.080466
++\d+ plivo_billing_paymentlog;
+
+# 2018-02-08 13:49:47.439033
++\d+ plivo_billing_accountcardmapping
+
+# 2018-02-08 13:50:32.864922
++\d+ plivo_billing_stripesubscription;
+
+# 2018-02-08 13:51:03.957541
++select * from plivo_billing_stripesubscription limit 5;
+
+# 2018-02-08 13:51:27.401784
++\d+ plivo_billing_paymentlog;
+
+# 2018-02-08 13:51:40.104813
++\d+ plivo_billing_card_status;
+
+# 2018-02-08 13:53:22.067321
++select * from plivo_billing_paymentlog where customer_specific_id='ch_9kcnofcWuBSHQd' ;
+
+# 2018-02-16 15:54:13.733773
++select * from plivo_logs_calldetailrecord ORDER BY id limit 5;
+
+# 2018-02-16 15:54:20.881370
++select * from plivo_logs_calldetailrecord ORDER BY id desc limit 5;
+
+# 2018-02-23 11:49:19.254026
++\d+ plivo_billing_carriercustomertiermapping
+
+# 2018-02-23 11:50:09.336731
++select * from plivo_billing_carriercustomertiermapping where account_id=9774 and carrier_tier_id=172 ;
+
+# 2018-02-23 11:50:19.205533
++select * from plivo_incoming_phonenumberinventorytier pit where pit.phone_number_id in(select id from plivo_incoming_phonenumberinventory where
++number='6322312117');
+
+# 2018-02-27 19:09:21.068029
++select * from subscriber where endpoint_id = '22380545174476';
+
+# 2018-03-01 18:55:58.667475
++\d+ plivo_account_feature
+
+# 2018-03-01 18:56:16.047186
++select * from plivo_account_feature limit 5;
+
+# 2018-03-08 17:39:44.200283
++\d+ plivo_server_server
+
+# 2018-03-12 19:08:11.202393
++select * from plivo_product_productplan limit 5;
+
+# 2018-03-12 19:08:28.235587
++select * from plivo_product_productplan order by id desc;
+
+# 2018-03-12 19:08:34.525175
++select * from plivo_product_productplan order by id desc limit 1;
+
+# 2018-03-12 19:11:16.451984
++\d+ plivo_billing_outgoingcharge
+
+# 2018-03-12 19:11:49.575893
++select count(*) from plivo_billing_outgoingcharge;
+
+# 2018-03-12 19:48:01.182915
++\d+ plivo_product_productplan
+
+# 2018-03-12 19:54:25.093958
++\d+ "plivo_billing_outgoingshortcodesmscharge"
+
+# 2018-03-12 19:54:55.745625
++\d+ plivo_product_productplan
+
+# 2018-03-14 19:10:26.458122
++select * from plivo_account_account where user_id in (select id from auth_user where auth_user.email = 'support@twilio.com');
+
+# 2018-03-14 19:11:36.049441
++select id from auth_user where auth_user.email = 'support@twilio.com'
++;
+
+# 2018-03-14 19:11:50.605453
++select * from auth_user where auth_user.email = 'support@twilio.com';
+
+# 2018-03-14 19:13:14.498311
++select * from plivo_onboarding_onboarding where account_id = 156767;
+
+# 2018-03-16 21:09:53.104940
++select * from plivo_incoming_accountphonenumber where number='18018766638';
+
+# 2018-03-16 21:10:06.055355
++select * from plivo_incoming_accountphonenumber where number='19495229712'
++;
+
+# 2018-03-16 21:28:48.194199
++select * from plivo_incoming_phonenumberinventory where number = '61399757620';
+
+# 2018-03-16 21:31:21.264158
++select * from plivo_incoming_phonenumberinventory where number = '61399757620' and blocked = true;
+
+# 2018-03-16 21:31:51.610860
++select * from plivo_incoming_phonenumberinventory where number = '18018766638' and blocked = true;

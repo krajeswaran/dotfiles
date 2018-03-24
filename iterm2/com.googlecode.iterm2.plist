@@ -26,6 +26,10 @@
 	<false/>
 	<key>ClosingHotkeySwitchesSpaces</key>
 	<true/>
+	<key>ClosingTmuxTabKillsTmuxWindows</key>
+	<true/>
+	<key>ClosingTmuxWindowKillsTmuxWindows</key>
+	<true/>
 	<key>CommandSelection</key>
 	<false/>
 	<key>Control</key>
@@ -27534,7 +27538,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Downloads</string>
+	<string>~/src</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 459}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -27571,11 +27575,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>383 334 937 465 0 0 1440 900 </string>
+	<string>383 298 918 495 0 0 1440 900 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 316 592 584 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 470 1440 430 0 0 1440 900 </string>
+	<string>0 495 1440 405 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>477 103 650 429 0 0 1440 900 </string>
 	<key>NeverWarnAboutShortLivedSessions_4013B845-C16D-4B7F-8FFC-7FEF7E5D934F</key>
@@ -28256,11 +28260,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>SourceCodePro-Medium 13</string>
+			<string>FiraMono-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Medium 13</string>
+			<string>FiraMono-Regular 13</string>
 			<key>Option Key Sends</key>
 			<integer>2</integer>
 			<key>Place Prompt at First Column</key>
@@ -29120,11 +29124,11 @@
 			<key>Name</key>
 			<string>Hotkey Window</string>
 			<key>Non Ascii Font</key>
-			<string>SourceCodePro-Medium 13</string>
+			<string>FiraMono-Regular 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>SourceCodePro-Medium 13</string>
+			<string>FiraMono-Regular 13</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
@@ -29341,6 +29345,8 @@
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncNewWindowOrTabFromTmuxOpensTmux</key>
+	<true/>
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncSuppressBroadcastInputWarning</key>
