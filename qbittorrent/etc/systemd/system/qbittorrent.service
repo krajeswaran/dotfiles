@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 User=thesaneone
-Type=forking
-ExecStart=/usr/bin/qbittorrent-nox --daemon --webui-port=8080
-RemainAfterExit=yes
+Type=simple
+PrivateTmp=false
+ExecStart=/usr/bin/qbittorrent-nox --webui-port=8080
 
 [Install]
 WantedBy=multi-user.target
