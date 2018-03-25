@@ -60,6 +60,9 @@ moka-icon-theme
 greybird-gtk-theme
 blackbird-gtk-theme
 qtcurve
+fonts-croscore
+fonts-crosextra-caladea
+fonts-crosextra-carlito
 fonts-noto
 fonts-cabin
 fonts-roboto
