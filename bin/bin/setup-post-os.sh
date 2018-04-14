@@ -28,5 +28,6 @@ echo install kali tools
 echo setup caps:escape for dconf
 echo install snaps: keepassxc, libreoffce
 echo install nouveau vdpau and vaapi drivers, vdpau/vaapi utils
-echo extrach nvidia firmware for video accel and test out with mpv
+echo extract nvidia firmware for video accel and test out with mpv
+echo setup kwin for compositing
 

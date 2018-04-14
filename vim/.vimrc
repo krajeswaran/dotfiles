@@ -321,7 +321,7 @@ function! SearchWithAgInDirectory(...)
 call fzf#vim#ag(join(a:000[1:], ' '), extend({'dir': a:1}, g:fzf#vim#default_layout))
 endfunction
 command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
-" let g:fzf_launcher = "~/bin/fzf_iterm %s"
+let g:fzf_launcher = "xfce4-terminal -e \"bash -c %s\" -T'done'"
 
 "" taskpaper
 "   let g:task_paper_archive_file = 'Dropbox/todo/archive_todo.txt'
@@ -360,13 +360,17 @@ au FileType go nmap <Leader>s <Plug>(go-implements)
 
 au FileType go nmap <Leader>e <Plug>(go-rename)
 
+let g:go_list_type = "quickfix"
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
-
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_deadline = "5s"
+let g:go_metalinter_excludes = ['gocyclo']
+let g:go_guru_scope = ["..."]
 
 " ack/ag
 if executable('ag')

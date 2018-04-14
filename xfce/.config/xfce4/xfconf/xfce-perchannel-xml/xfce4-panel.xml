@@ -79,9 +79,9 @@
         <value type="string" value="kupfer.py"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="task manager"/>
+        <value type="string" value="synapse"/>
         <value type="string" value="orage"/>
         <value type="string" value="zeal"/>
-        <value type="string" value="synapse"/>
         <value type="string" value="xfce terminal"/>
         <value type="string" value="clipman"/>
         <value type="string" value="xfce4-power-manager"/>
@@ -93,6 +93,7 @@
       <property name="settings" type="empty">
         <property name="add-primary-clipboard" type="bool" value="false"/>
         <property name="max-texts-in-history" type="uint" value="20"/>
+        <property name="history-ignore-primary-clipboard" type="bool" value="false"/>
       </property>
       <property name="tweaks" type="empty">
         <property name="paste-on-activate" type="uint" value="2"/>

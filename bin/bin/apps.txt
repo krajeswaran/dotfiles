@@ -90,3 +90,6 @@ vdpau-va-driver
 vdpau-driver-all
 android-tools-adb
 android-tools-fastboot
+kwin-x11
+kde-cli-tools
+kwin-addons

@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop
-recent=libreoffice_draw.desktop,exo-web-browser.desktop,exo-file-manager.desktop,libreoffice_libreoffice.desktop,libreoffice_writer.desktop,xfce-backdrop-settings.desktop,org.laptop.WebActivity.activity.desktop,ca.desrt.dconf-editor.desktop,xfce-session-settings.desktop,xfce-ui-settings.desktop
+recent=xfce-settings-manager.desktop,libreoffice_draw.desktop,exo-web-browser.desktop,exo-file-manager.desktop,libreoffice_libreoffice.desktop,libreoffice_writer.desktop,xfce-backdrop-settings.desktop,org.laptop.WebActivity.activity.desktop,ca.desrt.dconf-editor.desktop,xfce-session-settings.desktop
 button-title=Applications
 button-icon=open-menu-symbolic
 button-single-row=true
