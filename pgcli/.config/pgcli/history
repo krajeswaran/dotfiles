@@ -2745,3 +2745,198 @@
 
 # 2018-03-16 21:31:51.610860
 +select * from plivo_incoming_phonenumberinventory where number = '18018766638' and blocked = true;
+
+# 2018-03-27 15:45:50.754033
++\d+ plivo_incoming_phonenumberinventory
+
+# 2018-03-27 15:47:35.429779
++\d+ subscriber
+
+# 2018-03-27 15:48:05.074635
++select * from subscriber limit 5;
+
+# 2018-03-28 18:06:09.040168
++select * from plivo_account_account where auth_id = 'MAZJFLZWVLZWY0NGQ1ZT';
+
+# 2018-03-28 20:58:42.002779
++\d+ plivo_logs_transcriptionrecord;;
+
+# 2018-03-28 21:08:05.912847
++select * from plivo_logs_transcriptionrecord order by add_time desc limit 5;
+
+# 2018-04-02 15:53:14.026266
++\d+ plivo_billing_incomingnumberrate
+
+# 2018-04-02 15:53:58.609453
++select * from plivo_billing_incomingnumberrate where product_plan_id = 89;
+
+# 2018-04-18 19:09:41.324431
++\dt+
+
+# 2018-04-18 19:16:23.687332
++\di
+
+# 2018-04-18 19:28:14.319245
++\dt+
+
+# 2018-04-18 19:28:23.546135
++\di+
+
+# 2018-04-18 19:39:36.179860
++\dt+ sms_cost
+
+# 2018-04-18 19:39:42.257014
++\d+ sms_cost
+
+# 2018-04-19 15:55:48.657748
++\d+ plivo_routing_qualityoutgoingsmsrouter
+
+# 2018-04-19 15:56:28.117426
++select * from plivo_routing_qualityoutgoingsmsrouter limit 5;
+
+# 2018-04-19 15:56:49.226397
++select * from plivo_routing_manualoutgoingsmsrouter limit 5;
+
+# 2018-04-19 15:59:20.931743
++select * from plivo_dialcode_smsphoneprefix limit 5;
+
+# 2018-04-19 15:59:35.807652
++\d+ plivo_dialcode_smsphoneprefix
+
+# 2018-04-19 16:00:17.619080
++\d+ plivo_dialcode_outgoingsmsgroup(id)
+
+# 2018-04-19 16:00:20.082712
++\d+ plivo_dialcode_outgoingsmsgroup
+
+# 2018-04-19 16:00:52.058952
++select * from plivo_dialcode_outgoingsmsgroup limit 5;
+
+# 2018-04-19 19:02:01.485288
++\d+ provider
+
+# 2018-04-19 19:02:31.180615
++\d+ sms_cost
+
+# 2018-04-19 19:02:57.461405
++\d+ account
+
+# 2018-04-19 19:07:50.846100
++\d+ provider
+
+# 2018-04-19 19:08:05.077615
++\d+ sms_cost_provider
+
+# 2018-04-19 19:11:41.143178
++\d+ sms_cost
+
+# 2018-04-19 19:11:56.139651
++\d+ provider
+
+# 2018-04-19 19:17:54.410791
++\d+ sms_cost
+
+# 2018-04-21 22:25:49.942357
++\d+ message_detail_record
+
+# 2018-04-21 22:26:58.012222
++\d+ plan
+
+# 2018-04-21 22:27:07.616053
++\d+ sms_rate
+
+# 2018-04-21 22:28:07.993178
++\d+ message_detail_record
+
+# 2018-04-24 18:41:58.696414
++\dt+
+
+# 2018-04-24 18:42:49.422597
++GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO maze;
+
+# 2018-04-24 18:42:56.917913
++\dt+
+
+# 2018-04-24 18:43:48.880420
++GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO maze;
+
+# 2018-04-24 19:05:34.277099
++\d+ subscriber
+
+# 2018-04-24 19:05:49.649512
++select * from subscriber limit 5;
+
+# 2018-04-24 23:22:43.442834
++\d+ sms_costs
+
+# 2018-04-25 23:42:39.047651
++select * from sms_stats;;
+
+# 2018-04-25 23:42:58.524765
++select * from sms_stats;
+
+# 2018-04-25 23:43:09.505344
++select * from sms_cost;
+
+# 2018-04-25 23:43:12.582971
++select * from sms_costs;
+
+# 2018-04-25 23:43:39.519919
++update sms_stats set sms_cost_id=1 where id=1;
+
+# 2018-04-25 23:43:44.816645
++commit;
+
+# 2018-04-25 23:43:52.646495
++select * from sms_stats;
+
+# 2018-04-26 16:32:53.887860
++select * from provider;
+
+# 2018-04-26 16:32:56.184999
++select * from providers;
+
+# 2018-04-26 17:10:02.986037
++update providers set secret='Mzk4NTA3NTJkZTg3NDYyNGU5NjA0NWQ0MGQwZjAy';
+
+# 2018-04-26 17:10:05.331271
++commit;
+
+# 2018-04-26 17:11:55.454668
++select * from providers;
+
+# 2018-04-27 02:11:43.124603
++update providers set secret='Y2I3YmE1Zjg1N2FmNzFiZTk5M2E5YjljOTI3MmZj';
+
+# 2018-04-27 02:12:00.679341
++update providers set key='MAYMYZMWEYNMM1YTA2MW';
+
+# 2018-04-27 02:28:48.183714
++select * from sms_costs;
+
+# 2018-04-27 02:31:05.892748
++insert into sms_costs(mcc, mnc, cost) values (404, 50, 0.00400);
+
+# 2018-04-27 02:31:14.637215
++select * from sms_costs;
+
+# 2018-04-27 02:31:34.405130
++insert into sms_costs(mcc, mnc, cost, provider_id) values (404, 50, 0.00400, 1);
+
+# 2018-04-27 02:31:50.753587
++insert into sms_costs(mcc, mnc, cost, provider_id, created) values (404, 50, 0.00400, 1, now());
+
+# 2018-04-27 02:32:11.300217
++insert into sms_costs(mcc, mnc, cost, provider_id, created, modified) values (404, 50, 0.00400, 1, now(), now());
+
+# 2018-04-27 02:32:25.069310
++insert into sms_costs(mcc, mnc, cost, provider_id, created, modified) values (404, 50, 0.003900, 2, now(), now());
+
+# 2018-04-27 02:37:17.266589
++update providers set secret='Mzk4NTA3NTJkZTg3NDYyNGU5NjA0NWQ0MGQwZjAy';
+
+# 2018-04-27 02:41:19.861387
++update providers set key='MANWVLYTK4ZWU1YTY4ZT';
+
+# 2018-04-27 20:27:09.330670
++select * from sms_stats;
