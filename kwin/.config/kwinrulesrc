@@ -1,2 +1,15 @@
+[1]
+Description=Window settings for nvim-qt
+clientmachine=localhost
+clientmachinematch=0
+size=683,595
+sizerule=4
+title=Neovim
+titlematch=1
+types=1
+wmclass=nvim-qt
+wmclasscomplete=false
+wmclassmatch=1
+
 [General]
-count=0
+count=1

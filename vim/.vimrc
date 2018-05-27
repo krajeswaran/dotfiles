@@ -1,6 +1,5 @@
 " General
 set nocompatible        " must be first line
-set background=dark     " Assume a dark background
 
 set shell=/bin/bash  " posix complaint shell for os x 
 " Plugins
@@ -76,7 +75,7 @@ Plug 'pangloss/vim-javascript'
 "themes
 "Plug altercation/vim-colors-solarized
 "Plug chriskempson/base16-vim
-Plug 'w0ng/vim-hybrid'
+"Plug 'w0ng/vim-hybrid'
 
 call plug#end()
 
@@ -408,15 +407,15 @@ let g:ale_statusline_format = ['⨉  %d', '⚠ %d', '⬥ ']
 " GUI Settings 
 " GVIM- (here instead of .gvimrc)
 set bg=dark
-let g:hybrid_custom_term_colors = 1
-let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
-colorscheme hybrid
-set guioptions-=m  "remove menu bar
-set guioptions-=T  "remove toolbar
-set guioptions-=r  "remove right-hand scroll bar
-set guioptions-=L  "remove left-hand scroll bar
-set lines=25
-set guifont=Fira\ Code\ 12
+if has('gui_running')
+    set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right-hand scroll bar
+    set guioptions-=L  "remove left-hand scroll bar
+    set guifont=Hack\ 11
+    colorscheme evening
+    set lines=30
+endif
 
 " mucomplete
 set showmode shortmess+=c

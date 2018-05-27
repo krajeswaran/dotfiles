@@ -1,5 +1,6 @@
 git
-vim-gtk
+neovim
+neovim-qt
 cscope
 exuberant-ctags
 mpv
@@ -15,7 +16,6 @@ progress
 graphicsmagick
 zsh
 zsh-doc
-vim-doc
 p7zip
 unrar
 gparted
@@ -60,7 +60,6 @@ moka-icon-theme
 greybird-gtk-theme
 blackbird-gtk-theme
 qtcurve
-fonts-croscore
 fonts-crosextra-caladea
 fonts-crosextra-carlito
 fonts-noto
@@ -73,8 +72,6 @@ fonts-freefont-ttf
 fonts-lobstertwo
 fonts-comfortaa
 fonts-firacode
-albert
-google-chrome-stable
 python-pip
 virtualenv
 i965-va-driver
@@ -83,8 +80,9 @@ libdrm2
 libdrm-nouveau2
 libdrm-intel1
 socat
-linux-headers-amd64
-linux-tools
+nmap
+linux-headers-generic
+linux-tools-generic
 vdpauinfo
 vdpau-va-driver
 vdpau-driver-all
@@ -93,3 +91,18 @@ android-tools-fastboot
 kwin-x11
 kde-cli-tools
 kwin-addons
+smbclient
+cifs-utils
+tmux
+tmux-plugin-manager
+build-essential
+libssl-dev
+zlib1g-dev
+libbz2-dev
+libreadline-dev
+libsqlite3-dev
+llvm
+libncurses5-dev
+libncursesw5-dev
+xz-utils
+tk-dev

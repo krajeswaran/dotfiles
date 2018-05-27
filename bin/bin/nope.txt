@@ -13,4 +13,7 @@ parole
 gmusicbrowser
 sane-utils
 simple-scan
-
+gnome-*
+sgml-base
+libgnome-games-support-common
+whoopsie

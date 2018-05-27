@@ -1,11 +1,8 @@
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export JAVA_HOME=/Library/Java/Home
-export GRAILS_HOME=${HOME}/src/grails-2.4.3
-export ANDROID_HOME=${HOME}/Library/Android/sdk
-export GRADLE_HOME=${HOME}/src/gradle
-export GEM_PATH=${HOME}/.gem/ruby/2.0.0
-export GOROOT=/opt/go
+# export JAVA_HOME=/Library/Java/Home
+# export GRAILS_HOME=${HOME}/src/grails-2.4.3
+# export ANDROID_HOME=${HOME}/Library/Android/sdk
+# export GRADLE_HOME=${HOME}/src/gradle
+# export GEM_PATH=${HOME}/.gem/ruby/2.0.0
 export GOPATH=${HOME}/gopath
 
 ## proxy stuff
@@ -26,7 +23,7 @@ export GOPATH=${HOME}/gopath
 
 alias ls="ls --color"
 alias vi="vim"
-export PATH=/usr/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${GOPATH}/bin:${GOROOT}/bin:${PATH}
+export PATH=/usr/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${GOPATH}/bin:${GOROOT}/bin:${HOME}/.local/bin:${PATH}
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -35,5 +32,14 @@ proj() {
 	cd $(find -L ~/src -maxdepth 1 -type d | fzf)
 }
 
-# for nix
-source ${HOME}/.nix-profile/etc/profile.d/nix.sh
+export USE_CCACHE=1
+export CCACHE_COMPRESS=1
+export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
+
+# replace caps with escape
+setxkbmap -option caps:escape
+
+# pyenv
+export PATH="/home/thesaneone/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

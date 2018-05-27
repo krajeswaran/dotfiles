@@ -22,7 +22,7 @@ URxvt.colorBD: #B5BD68
 URxvt.colorIT: #B294BB
 URxvt.colorUL: #81A2BE
 ! font
-URxvt.font: xft:Source\ Code\ Pro\ Semibold:size=9.5, xft:DejaVu\ Sans\ Mono:size=9.5
+URxvt.font: xft:Monospace:size=9.5, xft:DejaVu\ Sans\ Mono:size=9.5
 URxvt.letterSpace: -1
 ! extensions
 URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
@@ -59,63 +59,39 @@ URxvt*scrollTtyKeypress: true
 ! --- http://ciembor.github.com/4bit -------------------------------------------
 ! ------------------------------------------------------------------------------
 
-! --- special colors ---
-
-*background: #000000
-*foreground: #00b01d
-
-! --- standard colors ---
+! special
+*.foreground:   #00bb00
+*.background:   #000000
+*.cursorColor:  #00bb00
 
 ! black
-*color0: #000000
-
-! bright_black
-*color8: #262626
+*.color0:       #000000
+*.color8:       #555555
 
 ! red
-*color1: #a07d88
-
-! bright_red
-*color9: #bdb1bd
+*.color1:       #830004
+*.color9:       #ff5555
 
 ! green
-*color2: #6ead8a
-
-! bright_green
-*color10: #a3c9be
+*.color2:       #00bb00
+*.color10:      #55ff55
 
 ! yellow
-*color3: #9ead88
-
-! bright_yellow
-*color11: #bbc9bd
+*.color3:       #bbbb00
+*.color11:      #fed955
 
 ! blue
-*color4: #717bb9
-
-! bright_blue
-*color12: #a5b0d6
+*.color4:       #0072be
+*.color12:      #094fc2
 
 ! magenta
-*color5: #a07bb7
-
-! bright_magenta
-*color13: #bdb0d5
+*.color5:       #7e2649
+*.color13:      #974f95
 
 ! cyan
-*color6: #6eaab9
-
-! bright_cyan
-*color14: #a3c8d6
+*.color6:       #00bbbb
+*.color14:      #83c1bf
 
 ! white
-*color7: #d9d9d9
-
-! bright_white
-*color15: #ffffff
-
-
-! ------------------------------------------------------------------------------
-! --- end of terminal colors section -------------------------------------------
-! ------------------------------------------------------------------------------
-
+*.color7:       #878787
+*.color15:      #a3a3a3

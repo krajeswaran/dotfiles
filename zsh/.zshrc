@@ -9,6 +9,9 @@ fi
 fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=( "$HOME/.zfunctions" $fpath )
 
+if [[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+    source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi 
 
 #------------------------------
 # History stuff

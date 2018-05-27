@@ -5,7 +5,7 @@
     <property name="RightHanded" type="bool" value="true"/>
     <property name="ReverseScrolling" type="bool" value="true"/>
     <property name="Threshold" type="int" value="12"/>
-    <property name="Acceleration" type="double" value="4.800000"/>
+    <property name="Acceleration" type="double" value="3.800000"/>
     <property name="Properties" type="empty">
       <property name="Synaptics_Tap_Action" type="array">
         <value type="int" value="0"/>

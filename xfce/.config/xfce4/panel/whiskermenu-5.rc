@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop
-recent=xfce-settings-manager.desktop,libreoffice_draw.desktop,exo-web-browser.desktop,exo-file-manager.desktop,libreoffice_libreoffice.desktop,libreoffice_writer.desktop,xfce-backdrop-settings.desktop,org.laptop.WebActivity.activity.desktop,ca.desrt.dconf-editor.desktop,xfce-session-settings.desktop
+recent=org.kde.kwalletmanager5.desktop,ristretto.desktop,xarchiver.desktop,firefox.desktop,exo-web-browser.desktop,libreoffice-startcenter.desktop,switch-user.desktop,xfce-ui-settings.desktop,xfce-settings-manager.desktop,exo-file-manager.desktop
 button-title=Applications
 button-icon=open-menu-symbolic
 button-single-row=true
@@ -10,6 +10,7 @@ launcher-show-description=true
 launcher-show-tooltip=true
 item-icon-size=2
 hover-switch-category=false
+category-show-name=true
 category-icon-size=1
 load-hierarchy=false
 recent-items-max=10

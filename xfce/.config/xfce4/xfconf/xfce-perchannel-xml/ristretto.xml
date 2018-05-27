@@ -22,4 +22,7 @@
   <property name="file" type="empty">
     <property name="current-uri" type="string" value="file:///home/thesaneone/photos"/>
   </property>
+  <property name="desktop" type="empty">
+    <property name="type" type="string" value="xfce"/>
+  </property>
 </channel>
