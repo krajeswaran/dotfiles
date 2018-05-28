@@ -350,3 +350,5 @@ prompt purity
 if [[ -s "${ZDOTDIR:-$HOME}/.zshrc_common" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc_common"
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

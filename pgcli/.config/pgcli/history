@@ -2940,3 +2940,321 @@
 
 # 2018-04-27 20:27:09.330670
 +select * from sms_stats;
+
+# 2018-05-09 02:02:46.344055
++\d+ sms_costs
+
+# 2018-05-09 02:03:27.861245
++\dt+
+
+# 2018-05-09 02:03:40.032101
++\dt+ sms_costs
+
+# 2018-05-09 02:03:52.291794
++\ds sms_costs
+
+# 2018-05-09 02:03:58.257333
++\ds
+
+# 2018-05-09 02:04:14.222255
++\ds sms_cost_id_seq
+
+# 2018-05-11 15:21:41.704850
++drop table message_detail_records;
+
+# 2018-05-11 15:22:29.796610
++\dt+ message_detail_records
+
+# 2018-05-11 15:22:35.177854
++\d+ message_detail_records
+
+# 2018-05-11 15:22:56.266299
++\d+ information_schema.sequences
+
+# 2018-05-11 15:23:14.812791
++\d+ public.sequences
+
+# 2018-05-11 15:25:15.442907
++\d+ message_detail_records
+
+# 2018-05-11 15:34:21.004495
++drop table accounts;
+
+# 2018-05-11 15:34:26.010903
++drop table balances;
+
+# 2018-05-11 15:34:41.827655
++drop table plans;
+
+# 2018-05-11 15:35:15.652665
++drop table providers;
+
+# 2018-05-11 15:35:31.297224
++drop table providers cascade;
+
+# 2018-05-11 15:35:53.561657
++drop table sms_costs;
+
+# 2018-05-11 15:35:59.322150
++drop table sms_costs cascade;
+
+# 2018-05-11 15:36:10.023585
++drop table sms_cost_computes;
+
+# 2018-05-11 15:36:26.304198
++drop table sms_rates;
+
+# 2018-05-11 15:36:36.764474
++drop table sms_stats;
+
+# 2018-05-11 15:57:04.722271
++\d+ django_session;
+
+# 2018-05-11 15:57:10.374316
++\d+ django_users;
+
+# 2018-05-11 15:57:35.259495
++\d+ django_migrations;
+
+# 2018-05-11 15:57:46.772429
++\d+ users_user;
+
+# 2018-05-11 15:57:58.674651
++\d+ users_user_groups;
+
+# 2018-05-11 15:58:06.183406
++\d+ users_user_user_permissions;
+
+# 2018-05-11 15:58:52.790103
++\d+ auth_permission;
+
+# 2018-05-11 15:59:00.217059
++select * from auth_permission;
+
+# 2018-05-11 16:00:52.005836
++\d+ message_detail_records
+
+# 2018-05-11 16:09:26.104809
++\d+ sms_rate
+
+# 2018-05-11 16:09:27.255383
++\d+ sms_rates
+
+# 2018-05-11 16:32:12.645409
++select * from sms_rates;
+
+# 2018-05-11 16:35:01.656180
++drop table accounts sms_costs;
+
+# 2018-05-11 16:35:06.003668
++drop table accounts,sms_costs;
+
+# 2018-05-11 16:36:18.451068
++drop table accounts,sms_costs,sms_rates,plans,providers,sms_cost_computes,message_detail_records cascade;
+
+# 2018-05-11 16:36:34.081157
++drop table accounts,sms_costs,sms_rates,plans,providers,sms_cost_computes,message_detail_records,sms_stats cascade;
+
+# 2018-05-11 16:36:42.715094
++drop table sms_stats;
+
+# 2018-05-11 16:36:55.320374
++drop table balances;
+
+# 2018-05-11 16:37:08.349948
++drop table user_profiles;
+
+# 2018-05-11 16:43:10.252230
++select * from accounts;
+
+# 2018-05-11 16:43:24.047263
++select * from sms_costs;
+
+# 2018-05-11 16:43:31.208787
++select * from providers;
+
+# 2018-05-11 16:44:34.344997
++GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO maze;
+
+# 2018-05-11 16:54:20.488570
++select * from message_detail_records;
+
+# 2018-05-11 17:47:18.559843
++select * from accounts;
+
+# 2018-05-11 18:41:02.117611
++select * from providers;
+
+# 2018-05-11 18:41:07.883122
++select * from sms_costs;
+
+# 2018-05-11 18:41:29.278253
++update sms_costs semt mnc='861';
+
+# 2018-05-11 18:41:33.633293
++update sms_costs set mnc='861';
+
+# 2018-05-11 19:00:30.068775
++select * from sms_costs;
+
+# 2018-05-11 19:00:40.688432
++select * from sms_stats;
+
+# 2018-05-11 19:00:48.694373
++select * from message_detail_records;
+
+# 2018-05-17 17:46:48.544125
++drop DATABASE hostdb;
+
+# 2018-05-18 01:33:43.261067
++\dt+
+
+# 2018-05-18 01:33:55.839099
++drop table django_migrations;
+
+# 2018-05-18 01:37:06.395797
++\dt+
+
+# 2018-05-18 01:48:59.877409
++\d+ payment_prefs
+
+# 2018-05-18 01:58:23.127170
++\d+ balance
+
+# 2018-05-18 01:58:28.355882
++\d+ balances
+
+# 2018-05-18 01:58:56.497698
++alter table balances COLUMN account_ud type uuid;
+
+# 2018-05-18 01:59:07.061829
++alter table balances set COLUMN account_ud type uuid;
+
+# 2018-05-18 01:59:16.840718
++drop table balances;
+
+# 2018-05-18 01:59:41.435501
++select * from django_migrations;;
+
+# 2018-05-18 02:00:23.282295
++delete from django_migrations where app='billing';
+
+# 2018-05-18 02:00:40.557800
++drop table payment_prefs;;
+
+# 2018-05-18 02:00:59.484996
++drop table payment_prefs;
+
+# 2018-05-18 02:01:06.073300
++drop table balances;
+
+# 2018-05-18 02:01:46.199779
++\d+ balances
+
+# 2018-05-18 02:02:05.713260
++delete from django_migrations where app='billing';
+
+# 2018-05-18 02:02:17.046812
++\d+ balances
+
+# 2018-05-18 02:02:45.290681
++truncate table accounts;
+
+# 2018-05-18 02:02:53.771895
++truncate table accounts cascade;
+
+# 2018-05-18 02:03:23.928173
++select * from sms_costs;
+
+# 2018-05-20 04:40:38.848229
++\d+ sms_rates
+
+# 2018-05-20 04:41:25.845101
++explain analyze select * from sms_rates where id = 1;
+
+# 2018-05-20 04:41:38.714837
++explain analyze select * from sms_rates where sms_cost_id = 1;
+
+# 2018-05-20 04:43:35.830553
++\d+ payment_prefs
+
+# 2018-05-20 05:21:31.757321
++GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO maze;
+
+# 2018-05-24 00:56:15.260940
++select * from accounts;
+
+# 2018-05-24 00:56:35.873302
++select * from message_detail_records;
+
+# 2018-05-24 00:56:43.933766
++\d+ message_detail_records
+
+# 2018-05-24 00:59:18.269772
++truncate table accounts cascade;
+
+# 2018-05-24 01:00:15.093881
++select * from accounts;
+
+# 2018-05-24 01:04:34.535381
++update sms_costs set mnc='40';
+
+# 2018-05-24 01:04:37.763153
++update sms_costs set mnc='50';
+
+# 2018-05-24 01:04:53.067359
++update sms_costs set mcc='404';
+
+# 2018-05-24 01:13:19.881812
++\d+ balances;
+
+# 2018-05-24 01:13:27.009791
++GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO maze;
+
+# 2018-05-24 01:16:51.833045
++GRANT ALL PRIVILEGES ON ALL  IN SCHEMA public TO maze;
+
+# 2018-05-24 01:17:02.955682
++GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO maze;
+
+# 2018-05-24 01:26:56.250968
++select * from accounts;
+
+# 2018-05-24 01:27:05.429748
++select * from balances;
+
+# 2018-05-24 01:36:52.889501
++\d+ sms_costs
+
+# 2018-05-24 01:37:34.070475
++select * from users;
+
+# 2018-05-24 01:37:47.496571
++\d+ users;
+
+# 2018-05-24 01:38:27.491032
++\d+ sms_rates
+
+# 2018-05-24 01:39:23.957856
++update sms_rates set id=3,sms_cost_id=0.03,sms_cost_id=1,created=now(),modified=now();
+
+# 2018-05-24 01:39:39.707645
++update sms_rates set id=3,sms_unit_rate=0.03,sms_cost_id=1,created=now(),modified=now();
+
+# 2018-05-24 01:39:54.328663
++update sms_rates set id=11,sms_unit_rate=0.03,sms_cost_id=1,created=now(),modified=now();
+
+# 2018-05-24 01:40:05.362381
++select * from sms_rates;
+
+# 2018-05-24 01:40:21.913314
++update sms_rates set id=11,sms_unit_rate=0.03,sms_cost_id=1,created=now(),modified=now();
+
+# 2018-05-24 01:40:42.192730
++update sms_rates set sms_unit_rate=0.03,sms_cost_id=1,created=now(),modified=now();
+
+# 2018-05-24 01:41:31.589201
++update sms_rates set sms_unit_rate=0.03,sms_cost_id=11,created=now(),modified=now();
+
+# 2018-05-24 01:41:54.580183
++update sms_rates set sms_unit_rate=0.03,sms_cost_id=21,created=now(),modified=now();
