@@ -209,11 +209,6 @@ map <F7> :setlocal spell spelllang=en
 map <silent> <leader>cn :cn<CR>zv
 map <silent> <leader>cp :cp<CR>zv
 
-
-" flag bad whitespace
-highlight BadWhitespace ctermbg=red guibg=darkred
-highlight EndOfBuffer ctermbg=black ctermfg=black 
-
 " complete
 set showmode shortmess+=c
 set completeopt-=preview
@@ -223,6 +218,13 @@ set completeopt+=longest,menu,menuone,noinsert
 " Colors
 "----------------------------------------------
 set background=dark
+
+" fucking magenta autocomplete menu
+highlight Pmenu ctermbg=darkgrey
+
+" flag bad whitespace
+highlight BadWhitespace ctermbg=red guibg=darkred
+highlight EndOfBuffer ctermbg=black ctermfg=black 
 
 "----------------------------------------------
 " Searching
@@ -289,18 +291,8 @@ set statusline+=%(\ \|\ %{&modifiable?SleuthIndicator():''}%)
 set statusline+=\ \|
 set statusline +=%=%-14.(%l,%c%V%)\ %P
 
-" function! InsertStatuslineColor(mode)
-"   if a:mode == 'i'
-"     hi statusline 
-"   elseif a:mode == 'r'
-"     hi statusline ctermfg=magenta guifg=magenta
-"   else
-"     hi statusline ctermfg=red guifg=red
-"   endif
-" endfunction
-
-au InsertEnter * hi statusline ctermfg=lightgreen guifg=lightgreen
-au InsertChange * hi statusline ctermfg=lightblue guifg=lightblue
+au InsertEnter * hi statusline ctermfg=lightblue guifg=lightgreen
+au InsertChange * hi statusline ctermfg=lightgreen guifg=lightblue
 au InsertLeave * hi statusline ctermfg=darkgreen guifg=#c5c8c6
 
 "----------------------------------------------
