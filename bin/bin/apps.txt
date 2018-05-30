@@ -9,6 +9,7 @@ wget
 aria2
 build-essential
 stow
+openssh-server
 sshfs
 mosh
 rsync

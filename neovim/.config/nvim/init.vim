@@ -7,26 +7,27 @@
 "----------------------------------------------
 call plug#begin('~/.config/nvim/plugged')
 
-" Dependencies
-Plug 'godlygeek/tabular'           " This must come before plasticboy/vim-markdown
-
 " General plugins
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
-Plug 'neomake/neomake'
-Plug 'tpope/vim-commentary'
-Plug 'sebdah/vim-delve'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
+Plug 'godlygeek/tabular'
+Plug 'airblade/vim-rooter'
+Plug 'junegunn/goyo.vim'
 
 " Coding
 Plug 'sheerun/vim-polyglot'
+Plug 'w0rp/ale'
+" Plug 'neomake/neomake'
+Plug 'tpope/vim-commentary'
+Plug 'sebdah/vim-delve'
 
 " golang
 Plug 'fatih/vim-go'                            " Go support
@@ -49,8 +50,7 @@ set go+=a
 set splitbelow
 set splitright
 set showfulltag
-set clipboard=unnamed
-"set clipboard=unnamedplus
+set clipboard^=unnamed,unnamedplus
 scriptencoding utf-8
 set encoding=utf-8
 "imap ^V ^O"+p
@@ -195,14 +195,6 @@ vnoremap > >gv
 " For when you forget to sudo.. Really Write the file.
 cmap w!! w !sudo tee % >/dev/null
 
-" Some helpers to edit mode
-" http://vimcasts.org/e/14
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>ew :e %%
-map <leader>es :sp %%
-map <leader>ev :vsp %%
-map <leader>et :tabe %%
-
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
 
@@ -220,8 +212,12 @@ map <silent> <leader>cp :cp<CR>zv
 
 " flag bad whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
-au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /\s\+$/
+highlight EndOfBuffer ctermbg=black ctermfg=black 
 
+" complete
+set showmode shortmess+=c
+set completeopt-=preview
+set completeopt+=longest,menu,menuone,noinsert
 
 "----------------------------------------------
 " Colors
@@ -229,25 +225,9 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /\s\+$/
 set background=dark
 
 "----------------------------------------------
-" GUI Settings 
-"----------------------------------------------
-" GVIM- (here instead of .gvimrc)
-if has('gui_running')
-    set guioptions-=m  "remove menu bar
-    set guioptions-=T  "remove toolbar
-    set guioptions-=r  "remove right-hand scroll bar
-    set guioptions-=L  "remove left-hand scroll bar
-    set guifont=Hack\ 11
-    colorscheme evening
-    set lines=30
-endif
-
-"----------------------------------------------
 " Searching
 "----------------------------------------------
-if has('nvim')
-	set inccommand=split          " enables interactive search and replace
-endif
+set inccommand=split          " enables interactive search and replace
 
 " These mappings will make it so that going to the next one in a search will
 " center on the line it's found in.
@@ -298,7 +278,7 @@ set statusline+=\ %1*|
 " Name of the current branch (needs fugitive.vim)
 set statusline +=\ %{fugitive#statusline()}
 set statusline+=\ \|
-set statusline+=\ %#ErrorMsg#%{neomake#statusline#QflistStatus('qf:\ ')}
+set statusline +=\ %{LinterStatus()}
 set statusline+=\ %1*|
 set statusline+=%= " Separation point between left and right aligned items.
 set statusline+=\ %1*|
@@ -308,6 +288,20 @@ set statusline+=%(\ \|%{(&bomb\|\|'^$\|utf-8'!~#&fileencoding?'\ '.&fileencoding
 set statusline+=%(\ \|\ %{&modifiable?SleuthIndicator():''}%)
 set statusline+=\ \|
 set statusline +=%=%-14.(%l,%c%V%)\ %P
+
+" function! InsertStatuslineColor(mode)
+"   if a:mode == 'i'
+"     hi statusline 
+"   elseif a:mode == 'r'
+"     hi statusline ctermfg=magenta guifg=magenta
+"   else
+"     hi statusline ctermfg=red guifg=red
+"   endif
+" endfunction
+
+au InsertEnter * hi statusline ctermfg=lightgreen guifg=lightgreen
+au InsertChange * hi statusline ctermfg=lightblue guifg=lightblue
+au InsertLeave * hi statusline ctermfg=darkgreen guifg=#c5c8c6
 
 "----------------------------------------------
 " Plugin: Shougo/deoplete.nvim
@@ -353,8 +347,8 @@ nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 " Plugin: easymotion/vim-easymotion
 "----------------------------------------------
 " Enable support for bidirectional motions
-map  <leader><leader>w <Plug>(easymotion-bd-w)
-nmap <leader><leader>w <Plug>(easymotion-overwin-w)
+" map  <leader><leader>w <Plug>(easymotion-bd-w)
+" nmap <leader><leader>w <Plug>(easymotion-overwin-w)
 
 
 "----------------------------------------------
@@ -378,19 +372,22 @@ if executable('ag')
 endif
 
 "----------------------------------------------
-" Plugin: neomake/neomake
+" Plugin: ale
 "----------------------------------------------
-" Configure signs.
-let g:neomake_error_sign   = {'text': '✖', 'texthl': 'NeomakeErrorSign'}
-let g:neomake_warning_sign = {'text': '∆', 'texthl': 'NeomakeWarningSign'}
-let g:neomake_message_sign = {'text': '➤', 'texthl': 'NeomakeMessageSign'}
-let g:neomake_info_sign    = {'text': 'ℹ', 'texthl': 'NeomakeInfoSign'}
+" ALE
+let g:ale_statusline_format = ['✖ %d', '⚠ %d', '⬥']
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
 
-" Full config: when writing or reading a buffer, and on changes in insert and
-" normal mode (after 1s; no delay when writing).
-call neomake#configure#automake('nrwi', 500)
-let g:neomake_open_list = 2
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
 
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
 "----------------------------------------------
 " Plugin: sebdah/vim-delve
 "----------------------------------------------
@@ -410,18 +407,28 @@ let g:multi_cursor_skip_key='<C-b>'
 let g:deoplete#sources#go#pointer = 1
 
 "----------------------------------------------
+" Plugin: vim-rooter
+"----------------------------------------------
+let g:rooter_change_directory_for_non_project_files = 'current'
+
+let g:rooter_patterns = ['.vimroot', '.git/', 'venv', 'vendor']
+
+augroup vimrc_rooter
+    autocmd VimEnter * :Rooter
+augroup END
+
+
+"----------------------------------------------
 " Language: Golang
 "----------------------------------------------
-au FileType go set noexpandtab
-au FileType go set shiftwidth=4
-au FileType go set softtabstop=4
-au FileType go set tabstop=4
+set autowrite
+autocmd BufRead $GOPATH/src/*.go
+        \ :GoGuruScope $GOPATH/src/maze/
 
 " Mappings
 au FileType go nmap <F8> :GoMetaLinter<cr>
 au FileType go nmap <F9> :GoCoverageToggle -short<cr>
 au FileType go nmap <F10> :GoTest -short<cr>
-au FileType go nmap <F12> <Plug>(go-def)
 au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
 au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
 au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
@@ -432,6 +439,21 @@ au FileType go nmap <leader>gdv <Plug>(go-def-vertical)
 au FileType go nmap <leader>gdh <Plug>(go-def-split)
 au FileType go nmap <leader>gD <Plug>(go-doc)
 au FileType go nmap <leader>gDv <Plug>(go-doc-vertical)
+
+au FileType go nmap <leader>r <Plug>(go-rename)
+" who just builds
+au FileType go nmap <leader>b <Plug>(go-run)  
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+
+
+au FileType go nmap <Leader>s <Plug>(go-implements)
+au FileType go nmap <Leader>e <Plug>(go-rename)
+
 
 " Run goimports when running gofmt
 let g:go_fmt_command = "goimports"
@@ -482,27 +504,28 @@ let g:go_metalinter_enabled = [
 " Set whether the JSON tags should be snakecase or camelcase.
 let g:go_addtags_transform = "snakecase"
 
-" neomake configuration for Go.
-let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
-let g:neomake_go_gometalinter_maker = {
-			\ 'args': [
-			\   '--tests',
-			\   '--enable-gc',
-			\   '--concurrency=3',
-			\   '--fast',
-			\   '-D', 'aligncheck',
-			\   '-D', 'dupl',
-			\   '-D', 'gocyclo',
-			\   '-D', 'gotype',
-			\   '-E', 'misspell',
-			\   '-E', 'unused',
-			\   '%:p:h',
-			\ ],
-			\ 'append_file': 0,
-			\ 'errorformat':
-			\   '%E%f:%l:%c:%trror: %m,' .
-			\   '%W%f:%l:%c:%tarning: %m,' .
-			\   '%E%f:%l::%trror: %m,' .
-			\   '%W%f:%l::%tarning: %m'
-			\ }
+" " neomake configuration for Go.
+" let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
+" let g:neomake_go_gometalinter_maker = {
+" 			\ 'args': [
+" 			\   '--tests',
+" 			\   '--enable-gc',
+" 			\   '--concurrency=3',
+" 			\   '--fast',
+" 			\   '-D', 'aligncheck',
+" 			\   '-D', 'dupl',
+" 			\   '-D', 'gocyclo',
+" 			\   '-D', 'gotype',
+" 			\   '-E', 'misspell',
+" 			\   '-E', 'unused',
+" 			\   '%:p:h',
+" 			\ ],
+" 			\ 'append_file': 0,
+" 			\ 'errorformat':
+" 			\   '%E%f:%l:%c:%trror: %m,' .
+" 			\   '%W%f:%l:%c:%tarning: %m,' .
+" 			\   '%E%f:%l::%trror: %m,' .
+" 			\   '%W%f:%l::%tarning: %m'
+" 			\ }
+
 

@@ -96,7 +96,7 @@
     </property>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
-        <property name="add-primary-clipboard" type="bool" value="false"/>
+        <property name="add-primary-clipboard" type="bool" value="true"/>
         <property name="max-texts-in-history" type="uint" value="20"/>
         <property name="history-ignore-primary-clipboard" type="bool" value="false"/>
         <property name="max-images-in-history" type="uint" value="0"/>
