@@ -48,7 +48,7 @@ Left=None
 Right=None
 Top=None
 TopLeft=None
-TopRight=LockScreen
+TopRight=None
 
 [MouseBindings]
 CommandActiveTitlebar1=Raise
@@ -75,6 +75,7 @@ flipswitchEnabled=true
 highlightwindowEnabled=true
 kwin4_effect_scaleinEnabled=true
 minimizeallEnabled=false
+snaphelperEnabled=true
 synchronizeskipswitcherEnabled=true
 videowallEnabled=false
 windowgeometryEnabled=true
