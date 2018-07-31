@@ -21,8 +21,8 @@
     <property name="lid-action-on-ac" type="uint" value="1"/>
     <property name="critical-power-level" type="uint" value="5"/>
     <property name="critical-power-action" type="uint" value="2"/>
-    <property name="brightness-level-on-battery" type="uint" value="14"/>
-    <property name="brightness-level-on-ac" type="uint" value="23"/>
+    <property name="brightness-level-on-battery" type="uint" value="10"/>
+    <property name="brightness-level-on-ac" type="uint" value="20"/>
     <property name="presentation-mode" type="bool" value="true"/>
     <property name="general-notification" type="bool" value="true"/>
   </property>

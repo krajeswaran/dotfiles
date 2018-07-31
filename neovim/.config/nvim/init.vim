@@ -45,6 +45,10 @@ call plug#end()
 "----------------------------------------------
 " General settings
 "----------------------------------------------
+"set python path separate from venvs
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'
+
 set mouse=v                 " automatically enable mouse usage
 set go+=a
 set splitbelow

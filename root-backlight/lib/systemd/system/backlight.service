@@ -1,0 +1,10 @@
+[Unit]
+Description=Fuuck brightness shit
+After=suspend.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c "echo 10 > /sys/class/backlight/nv_backlight/brightness"
+
+[Install]
+WantedBy=suspend.target

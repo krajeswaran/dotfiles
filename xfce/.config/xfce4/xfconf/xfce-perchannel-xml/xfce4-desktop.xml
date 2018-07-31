@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-desktop" version="1.0">
+  <property name="desktop-icons" type="empty">
+    <property name="style" type="int" value="0"/>
+    <property name="file-icons" type="empty">
+      <property name="show-home" type="bool" value="false"/>
+      <property name="show-filesystem" type="bool" value="false"/>
+      <property name="show-removable" type="bool" value="false"/>
+      <property name="show-trash" type="bool" value="false"/>
+    </property>
+    <property name="icon-size" type="uint" value="32"/>
+    <property name="tooltip-size" type="empty"/>
+    <property name="show-thumbnails" type="bool" value="false"/>
+    <property name="show-tooltips" type="bool" value="false"/>
+  </property>
   <property name="backdrop" type="empty">
     <property name="screen0" type="empty">
       <property name="monitor0" type="empty">
+        <property name="image-path" type="string" value="/usr/share/xfce4/backdrops/moon_venus.jpg"/>
+        <property name="image-style" type="empty"/>
+        <property name="image-show" type="empty"/>
         <property name="brightness" type="empty"/>
         <property name="color1" type="empty"/>
         <property name="color2" type="empty"/>
         <property name="color-style" type="empty"/>
-        <property name="image-path" type="string" value="/usr/share/xfce4/backdrops/moon_venus.jpg"/>
-        <property name="image-show" type="empty"/>
         <property name="last-image" type="empty"/>
         <property name="last-single-image" type="string" value="/usr/share/xfce4/backdrops/moon_venus.jpg"/>
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="color1" type="array">
-            <value type="uint" value="8995"/>
-            <value type="uint" value="10023"/>
-            <value type="uint" value="10537"/>
+            <value type="uint" value="14392"/>
+            <value type="uint" value="14392"/>
+            <value type="uint" value="14392"/>
             <value type="uint" value="65535"/>
           </property>
           <property name="color2" type="array">
@@ -26,17 +40,21 @@
             <value type="uint" value="46848"/>
             <value type="uint" value="65535"/>
           </property>
-          <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/moon_venus.jpg"/>
+          <property name="image-style" type="int" value="0"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/soren_krarup_olesen__east_harbour_sunrise__4k.jpg"/>
+          <property name="brightness" type="int" value="0"/>
+          <property name="saturation" type="double" value="1.000000"/>
+          <property name="backdrop-cycle-enable" type="bool" value="false"/>
         </property>
       </property>
       <property name="monitor1" type="empty">
+        <property name="image-path" type="empty"/>
+        <property name="image-style" type="empty"/>
+        <property name="image-show" type="empty"/>
         <property name="brightness" type="empty"/>
         <property name="color1" type="empty"/>
         <property name="color2" type="empty"/>
         <property name="color-style" type="empty"/>
-        <property name="image-path" type="empty"/>
-        <property name="image-show" type="empty"/>
         <property name="last-image" type="empty"/>
         <property name="last-single-image" type="empty"/>
         <property name="workspace0" type="empty">
@@ -53,25 +71,21 @@
             <value type="uint" value="46848"/>
             <value type="uint" value="65535"/>
           </property>
-          <property name="image-style" type="int" value="5"/>
+          <property name="image-style" type="int" value="0"/>
           <property name="last-image" type="string" value="/home/thesaneone/dumps/Milky_Way_at_Concordia_Camp,_Karakoram_Range,_Pakistan.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="false"/>
+        </property>
+      </property>
+      <property name="monitorLVDS-1" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/moon_venus.jpg"/>
         </property>
       </property>
     </property>
     <property name="single-workspace-mode" type="bool" value="true"/>
     <property name="single-workspace-number" type="int" value="0"/>
-  </property>
-  <property name="desktop-icons" type="empty">
-    <property name="icon-size" type="uint" value="32"/>
-    <property name="style" type="int" value="0"/>
-    <property name="show-thumbnails" type="bool" value="false"/>
-    <property name="file-icons" type="empty">
-      <property name="show-home" type="bool" value="false"/>
-      <property name="show-filesystem" type="bool" value="false"/>
-      <property name="show-trash" type="bool" value="false"/>
-      <property name="show-removable" type="bool" value="false"/>
-    </property>
   </property>
   <property name="desktop-menu" type="empty">
     <property name="show" type="bool" value="false"/>

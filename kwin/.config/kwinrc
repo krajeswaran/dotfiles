@@ -1,15 +1,15 @@
 [Compositing]
-AnimationSpeed=1
+AnimationSpeed=0
 Backend=OpenGL
 Enabled=true
 GLColorCorrection=false
-GLCore=false
+GLCore=true
 GLPlatformInterface=glx
 GLPreferBufferSwap=a
 GLTextureFilter=1
 HiddenPreviews=5
 OpenGLIsUnsafe=false
-WindowsBlockCompositing=true
+WindowsBlockCompositing=false
 XRenderSmoothScale=false
 
 [Desktops]
@@ -24,9 +24,13 @@ TabBoxAlternative=false
 BorderActivate=9
 BorderActivateCylinder=9
 BorderActivateSphere=9
+TouchBorderActivate=9
+TouchBorderActivateCylinder=9
+TouchBorderActivateSphere=9
 
 [Effect-DesktopGrid]
 BorderActivate=9
+TouchBorderActivate=9
 
 [Effect-FlipSwitch]
 TabBox=false
@@ -36,6 +40,9 @@ TabBoxAlternative=false
 BorderActivate=9
 BorderActivateAll=5
 BorderActivateClass=9
+TouchBorderActivate=7
+TouchBorderActivateAll=9
+TouchBorderActivateClass=9
 
 [Effect-Zoom]
 InitialZoom=1
@@ -96,6 +103,8 @@ MultiScreenMode=0
 ShowDesktopMode=0
 ShowTabBox=true
 SwitchingMode=0
+TouchBorderActivate=9
+TouchBorderAlternativeActivate=9
 
 [TabBoxAlternative]
 ActivitiesMode=1
@@ -109,11 +118,17 @@ ShowDesktopMode=0
 ShowTabBox=true
 SwitchingMode=0
 
+[TouchEdges]
+Bottom=None
+Left=None
+Right=None
+Top=None
+
 [Windows]
 ActiveMouseScreen=false
 AutoRaise=false
 AutoRaiseInterval=750
-AutogroupInForeground=true
+AutogroupInForeground=false
 AutogroupSimilarWindows=false
 BorderSnapZone=10
 CenterSnapZone=0
@@ -126,7 +141,7 @@ ElectricBorderMaximize=true
 ElectricBorderTiling=true
 ElectricBorders=0
 FocusPolicy=ClickToFocus
-FocusStealingPreventionLevel=1
+FocusStealingPreventionLevel=0
 GeometryTip=true
 HideUtilityWindowsForInactive=true
 InactiveTabsSkipTaskbar=false

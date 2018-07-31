@@ -6,4 +6,4 @@ GuiFont Hack:h11
 colorscheme evening
 set lines=30
 map! <S-Insert>  <C-R>+
-highlight EndOfBuffer guifg=grey guibg=slate 
+highlight EndOfBuffer guifg=#333333 guibg=slate 

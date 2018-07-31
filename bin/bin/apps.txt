@@ -44,6 +44,7 @@ openjdk-8-jdk
 ruby 
 perl
 ipython
+python-ipdb
 nodejs
 virtualenv 
 silversearcher-ag
@@ -107,3 +108,9 @@ libncurses5-dev
 libncursesw5-dev
 xz-utils
 tk-dev
+tree
+units
+python-jedi
+subliminal
+keepassxc
+drive
