@@ -22,8 +22,8 @@
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
-        <property name="Y" type="int" value="0"/>
+        <property name="X" type="int" value="202"/>
+        <property name="Y" type="int" value="1080"/>
       </property>
     </property>
     <property name="HDMI-1" type="string" value="2. Dell 22&quot;">
