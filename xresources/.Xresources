@@ -22,8 +22,8 @@ URxvt.colorBD: #B5BD68
 URxvt.colorIT: #B294BB
 URxvt.colorUL: #81A2BE
 ! font
-URxvt.font: xft:Monospace:size=9.5, xft:DejaVu\ Sans\ Mono:size=9.5
-URxvt.letterSpace: -1
+URxvt.font: xft:Fira\ Code\ Medium:size=11, xft:Monospace:size=11 
+URxvt.letterSpace: -1.5
 ! extensions
 URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
 ! clipboard
@@ -44,7 +44,7 @@ URxvt.url-select.underline: true
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false
-URxvt*saveLines: 80000
+URxvt*saveLines: 100000
 
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
 URxvt*scrollWithBuffer: true
@@ -95,3 +95,19 @@ URxvt*scrollTtyKeypress: true
 ! white
 *.color7:       #878787
 *.color15:      #a3a3a3
+
+! yeahconsole
+
+term:                  urxvtc
+restart:               0
+xOffset:               0
+screenWidth:           Display width
+consoleHeight:         20
+aniDelay:              40
+stepSize:              1
+toggleKey:             ControlAlt+y
+keySmaller:            Control+KP_Subtract
+keyBigger:             Control+KP_Add
+keyFull:               Alt+F11
+
+
