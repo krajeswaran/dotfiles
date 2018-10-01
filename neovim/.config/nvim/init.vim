@@ -24,21 +24,19 @@ Plug 'junegunn/goyo.vim'
 
 " Coding
 Plug 'sheerun/vim-polyglot'
-Plug 'w0rp/ale'
 " Plug 'neomake/neomake'
 Plug 'tpope/vim-commentary'
-Plug 'sebdah/vim-delve'
 
 " golang
-Plug 'fatih/vim-go'                            " Go support
-Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' } " Go auto completion
-Plug 'zchee/deoplete-go', { 'do': 'make'}      " Go auto completion
+"Plug 'fatih/vim-go'                            " Go support
+"Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' } " Go auto completion
+"Plug 'zchee/deoplete-go', { 'do': 'make'}      " Go auto completion
+"Plug 'sebdah/vim-delve'
 
 " python
-Plug 'zchee/deoplete-jedi'                     
+Plug 'bfredl/nvim-ipy'
 
 " javascript
-Plug 'carlitux/deoplete-ternjs', { 'do': 'sudo npm install -g tern' }
 
 call plug#end()
 
@@ -283,8 +281,8 @@ set statusline+=%{&readonly?'\ ':''}
 set statusline+=\ %1*|
 " Name of the current branch (needs fugitive.vim)
 set statusline +=\ %{fugitive#statusline()}
-set statusline+=\ \|
-set statusline +=\ %{LinterStatus()}
+" set statusline+=\ \|
+" set statusline +=\ %{LinterStatus()}
 set statusline+=\ %1*|
 set statusline+=%= " Separation point between left and right aligned items.
 set statusline+=\ %1*|
@@ -343,8 +341,8 @@ nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 " Plugin: easymotion/vim-easymotion
 "----------------------------------------------
 " Enable support for bidirectional motions
-" map  <leader><leader>w <Plug>(easymotion-bd-w)
-" nmap <leader><leader>w <Plug>(easymotion-overwin-w)
+map  <leader><leader>w <Plug>(easymotion-bd-w)
+nmap <leader><leader>w <Plug>(easymotion-overwin-w)
 
 
 "----------------------------------------------
@@ -371,24 +369,24 @@ endif
 " Plugin: ale
 "----------------------------------------------
 " ALE
-let g:ale_statusline_format = ['✖ %d', '⚠ %d', '⬥']
-function! LinterStatus() abort
-    let l:counts = ale#statusline#Count(bufnr(''))
+" let g:ale_statusline_format = ['✖ %d', '⚠ %d', '⬥']
+" function! LinterStatus() abort
+"     let l:counts = ale#statusline#Count(bufnr(''))
 
-    let l:all_errors = l:counts.error + l:counts.style_error
-    let l:all_non_errors = l:counts.total - l:all_errors
+"     let l:all_errors = l:counts.error + l:counts.style_error
+"     let l:all_non_errors = l:counts.total - l:all_errors
 
-    return l:counts.total == 0 ? 'OK' : printf(
-    \   '%dW %dE',
-    \   all_non_errors,
-    \   all_errors
-    \)
-endfunction
+"     return l:counts.total == 0 ? 'OK' : printf(
+"     \   '%dW %dE',
+"     \   all_non_errors,
+"     \   all_errors
+"     \)
+" endfunction
 "----------------------------------------------
 " Plugin: sebdah/vim-delve
 "----------------------------------------------
 " Set the Delve backend.
-let g:delve_backend = "native"
+"let g:delve_backend = "native"
 
 "----------------------------------------------
 " Plugin: 'terryma/vim-multiple-cursors'
@@ -418,110 +416,107 @@ augroup END
 " Language: Golang
 "----------------------------------------------
 set autowrite
-autocmd BufRead $GOPATH/src/*.go
-        \ :GoGuruScope $GOPATH/src/maze/
-
-" Mappings
-au FileType go nmap <F8> :GoMetaLinter<cr>
-au FileType go nmap <F9> :GoCoverageToggle -short<cr>
-au FileType go nmap <F10> :GoTest -short<cr>
-au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
-au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
-au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
-au FileType go nmap <leader>gt :GoDeclsDir<cr>
-au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
-au FileType go nmap <leader>gd <Plug>(go-def)
-au FileType go nmap <leader>gdv <Plug>(go-def-vertical)
-au FileType go nmap <leader>gdh <Plug>(go-def-split)
-au FileType go nmap <leader>gD <Plug>(go-doc)
-au FileType go nmap <leader>gDv <Plug>(go-doc-vertical)
-
-au FileType go nmap <leader>r <Plug>(go-rename)
-" who just builds
-au FileType go nmap <leader>b <Plug>(go-run)  
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
-
-au FileType go nmap <Leader>ds <Plug>(go-def-split)
-au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-
-
-au FileType go nmap <Leader>s <Plug>(go-implements)
-au FileType go nmap <Leader>e <Plug>(go-rename)
-
-
-" Run goimports when running gofmt
-let g:go_fmt_command = "goimports"
-
-" Set neosnippet as snippet engine
-"let g:go_snippet_engine = "neosnippet"
-
-" Enable syntax highlighting per default
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_extra_types = 1
-
-" Show the progress when running :GoCoverage
-let g:go_echo_command_info = 1
-
-" Show type information
-let g:go_auto_type_info = 1
-
-" Highlight variable uses
-let g:go_auto_sameids = 1
-
-" Fix for location list when vim-go is used together with Syntastic
-let g:go_list_type = "quickfix"
-
-" Add the failing test name to the output of :GoTest
-let g:go_test_show_name = 1
-
-" gometalinter configuration
-let g:go_metalinter_command = ""
-let g:go_metalinter_deadline = "5s"
-let g:go_metalinter_enabled = [
-			\ 'deadcode',
-			\ 'gas',
-			\ 'goconst',
-			\ 'gocyclo',
-			\ 'golint',
-			\ 'gosimple',
-			\ 'ineffassign',
-			\ 'vet',
-			\ 'vetshadow'
-			\]
-
-" Set whether the JSON tags should be snakecase or camelcase.
-let g:go_addtags_transform = "snakecase"
-
-" " neomake configuration for Go.
-" let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
-" let g:neomake_go_gometalinter_maker = {
-" 			\ 'args': [
-" 			\   '--tests',
-" 			\   '--enable-gc',
-" 			\   '--concurrency=3',
-" 			\   '--fast',
-" 			\   '-D', 'aligncheck',
-" 			\   '-D', 'dupl',
-" 			\   '-D', 'gocyclo',
-" 			\   '-D', 'gotype',
-" 			\   '-E', 'misspell',
-" 			\   '-E', 'unused',
-" 			\   '%:p:h',
-" 			\ ],
-" 			\ 'append_file': 0,
-" 			\ 'errorformat':
-" 			\   '%E%f:%l:%c:%trror: %m,' .
-" 			\   '%W%f:%l:%c:%tarning: %m,' .
-" 			\   '%E%f:%l::%trror: %m,' .
-" 			\   '%W%f:%l::%tarning: %m'
-" 			\ }
-
-
+"autocmd BufRead $GOPATH/src/*.go
+"        \ :GoGuruScope $GOPATH/src/maze/
+"
+"" Run goimports when running gofmt
+"let g:go_fmt_command = "goimports"
+"
+"" Set neosnippet as snippet engine
+""let g:go_snippet_engine = "neosnippet"
+"
+"" Enable syntax highlighting per default
+"let g:go_highlight_types = 1
+"let g:go_highlight_fields = 1
+"let g:go_highlight_functions = 1
+"let g:go_highlight_methods = 1
+"let g:go_highlight_structs = 1
+"let g:go_highlight_operators = 1
+"let g:go_highlight_build_constraints = 1
+"let g:go_highlight_extra_types = 1
+"
+"" Show the progress when running :GoCoverage
+"let g:go_echo_command_info = 1
+"
+"" Show type information
+"let g:go_auto_type_info = 1
+"
+"" Highlight variable uses
+"let g:go_auto_sameids = 1
+"
+"" Fix for location list when vim-go is used together with Syntastic
+"let g:go_list_type = "quickfix"
+"
+"" Add the failing test name to the output of :GoTest
+"let g:go_test_show_name = 1
+"
+"" gometalinter configuration
+"let g:go_metalinter_command = ""
+"let g:go_metalinter_deadline = "5s"
+"let g:go_metalinter_enabled = [
+"			\ 'deadcode',
+"			\ 'gas',
+"			\ 'goconst',
+"			\ 'gocyclo',
+"			\ 'golint',
+"			\ 'gosimple',
+"			\ 'ineffassign',
+"			\ 'vet',
+"			\ 'vetshadow'
+"			\]
+"
+"" Set whether the JSON tags should be snakecase or camelcase.
+"let g:go_addtags_transform = "snakecase"
+"
+"" " neomake configuration for Go.
+"" let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
+"" let g:neomake_go_gometalinter_maker = {
+"" 			\ 'args': [
+"" 			\   '--tests',
+"" 			\   '--enable-gc',
+"" 			\   '--concurrency=3',
+"" 			\   '--fast',
+"" 			\   '-D', 'aligncheck',
+"" 			\   '-D', 'dupl',
+"" 			\   '-D', 'gocyclo',
+"" 			\   '-D', 'gotype',
+"" 			\   '-E', 'misspell',
+"" 			\   '-E', 'unused',
+"" 			\   '%:p:h',
+"" 			\ ],
+"" 			\ 'append_file': 0,
+"" 			\ 'errorformat':
+"" 			\   '%E%f:%l:%c:%trror: %m,' .
+"" 			\   '%W%f:%l:%c:%tarning: %m,' .
+"" 			\   '%E%f:%l::%trror: %m,' .
+"" 			\   '%W%f:%l::%tarning: %m'
+"" 			\ }
+"
+"" Mappings
+"au FileType go nmap <F8> :GoMetaLinter<cr>
+"au FileType go nmap <F9> :GoCoverageToggle -short<cr>
+"au FileType go nmap <F10> :GoTest -short<cr>
+"au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
+"au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
+"au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
+"au FileType go nmap <leader>gt :GoDeclsDir<cr>
+"au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
+"au FileType go nmap <leader>gd <Plug>(go-def)
+"au FileType go nmap <leader>gdv <Plug>(go-def-vertical)
+"au FileType go nmap <leader>gdh <Plug>(go-def-split)
+"au FileType go nmap <leader>gD <Plug>(go-doc)
+"au FileType go nmap <leader>gDv <Plug>(go-doc-vertical)
+"
+"au FileType go nmap <leader>r <Plug>(go-rename)
+"" who just builds
+"au FileType go nmap <leader>b <Plug>(go-run)  
+"au FileType go nmap <leader>t <Plug>(go-test)
+"au FileType go nmap <leader>c <Plug>(go-coverage)
+"
+"au FileType go nmap <Leader>ds <Plug>(go-def-split)
+"au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+"au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+"
+"
+"au FileType go nmap <Leader>s <Plug>(go-implements)
+"au FileType go nmap <Leader>e <Plug>(go-rename)

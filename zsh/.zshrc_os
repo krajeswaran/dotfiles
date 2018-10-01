@@ -25,7 +25,7 @@ export NODE_PATH=${HOME}/.node/lib/modules:$NODE_PATH
 alias ls="ls --color"
 alias vi="vim"
 alias ejectusb="udisksctl power-off -b "
-export PATH=/usr/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${GOPATH}/bin:${GOROOT}/bin:${HOME}/.node/bin:${HOME}/.local/bin:${PATH}
+export PATH=/usr/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${GOPATH}/bin:${GOROOT}/bin:${HOME}/.node/bin:${HOME}/.local/bin:${PATH}
 export MANPATH=${HOME}/.node/share/man:${MANPATH}
 
 export LC_ALL=en_US.UTF-8

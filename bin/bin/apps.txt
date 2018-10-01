@@ -1,6 +1,6 @@
 git
-neovim
-neovim-qt
+vim-nox
+vim-gtk
 cscope
 exuberant-ctags
 mpv
