@@ -50,7 +50,6 @@
       <property name="&lt;Super&gt;t" type="string" value="xfce4-terminal"/>
       <property name="F12" type="string" value="xfce4-terminal --drop-down"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xfce4-taskmanager"/>
-      <property name="&lt;Primary&gt;Escape" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Super&gt;v" type="string" value="xfce4-popup-clipman"/>
     </property>
   </property>

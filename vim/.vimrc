@@ -305,29 +305,30 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 "----------------------------------------------
 set laststatus=2
 set statusline=
-set statusline+=%(%{'help'!=&filetype?bufnr('%'):''}\ \|\ %)
-set statusline+=%< " Where to truncate line
-set statusline+=%f " Path to the file in the buffer, as typed or relative to current directory
+if has('gui_running')
+	set statusline+=%#CursorColumn#
+else
+	set statusline+=%#Pmenu#
+endif
+set statusline+=\ %f
 set statusline+=%{&modified?'\ +':''}
 set statusline+=%{&readonly?'\ ':''}
-set statusline+=\ %1*|
-" Name of the current branch (needs fugitive.vim)
-set statusline +=\ %{fugitive#statusline()}
-" set statusline+=\ \|
-" set statusline +=\ %{LinterStatus()}
-set statusline+=\ %1*|
-set statusline+=%= " Separation point between left and right aligned items.
-set statusline+=\ %1*|
-set statusline+=\ %{''!=#&filetype?&filetype:'-'}
-set statusline+=%(\ \|%{(&bomb\|\|'^$\|utf-8'!~#&fileencoding?'\ '.&fileencoding.(&bomb?'-bom':''):'')
-  \.('unix'!=#&fileformat?'\ '.&fileformat:'')}%)
-set statusline+=%(\ \|\ %{&modifiable?SleuthIndicator():''}%)
-set statusline+=\ \|
-set statusline +=%=%-14.(%l,%c%V%)\ %P
-
-au InsertEnter * hi statusline ctermfg=lightblue guifg=lightgreen
-au InsertChange * hi statusline ctermfg=lightgreen guifg=lightblue
-au InsertLeave * hi statusline ctermfg=darkgreen guifg=#c5c8c6
+if has('gui_running')
+	set statusline+=%#LineNr#
+else
+	set statusline+=%#PmenuSel#
+endif
+set statusline+=%=
+set statusline+=%{'help'!=&filetype?bufnr('%'):''}
+set statusline+=\ %{fugitive#statusline()}
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\ %{&fileformat}
+" set statusline+=%#NonText#
+set statusline+=%#Normal#
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
 
 "----------------------------------------------
 " Plugin: prabirshrestha/asyncomplete
@@ -392,6 +393,16 @@ au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#source
     \ 'priority': 10,
     \ 'completor': function('asyncomplete#sources#file#completor')
     \ }))
+
+
+" -- Enable omni as a last resort
+if has("autocmd") && exists("+omnifunc")
+	autocmd Filetype *
+				\	if &omnifunc == "" |
+				\		setlocal omnifunc=syntaxcomplete#Complete |
+				\	endif
+endif
+
 
 "----------------------------------------------
 " Plugin: easymotion/vim-easymotion
