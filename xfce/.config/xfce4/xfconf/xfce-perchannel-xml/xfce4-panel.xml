@@ -61,10 +61,10 @@
     </property>
     <property name="plugin-3" type="string" value="tasklist">
       <property name="show-handle" type="bool" value="false"/>
-      <property name="sort-order" type="uint" value="4"/>
+      <property name="sort-order" type="uint" value="0"/>
       <property name="middle-click" type="uint" value="1"/>
       <property name="switch-workspace-on-unminimize" type="bool" value="false"/>
-      <property name="show-wireframes" type="bool" value="true"/>
+      <property name="show-wireframes" type="bool" value="false"/>
       <property name="include-all-workspaces" type="bool" value="true"/>
       <property name="flat-buttons" type="bool" value="true"/>
     </property>
@@ -84,17 +84,22 @@
         <value type="string" value="network"/>
         <value type="string" value="orage"/>
         <value type="string" value="zeal"/>
+        <value type="string" value="kde connect indicator"/>
         <value type="string" value="synapse"/>
         <value type="string" value="xfce terminal"/>
         <value type="string" value="blueman-applet"/>
         <value type="string" value="keepassxc"/>
         <value type="string" value="clipman"/>
+        <value type="string" value="zoom"/>
         <value type="string" value="update-notifier"/>
         <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="albert"/>
         <value type="string" value="gpick"/>
+        <value type="string" value="albert"/>
+        <value type="string" value="acestreamengine"/>
         <value type="string" value="slack"/>
+        <value type="string" value="skypeforlinux"/>
         <value type="string" value="copyq"/>
+        <value type="string" value="qbittorrent"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
     </property>
@@ -120,13 +125,13 @@
     <property name="plugin-17" type="string" value="power-manager-plugin"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676"/>
+      <property name="mpris-players" type="string" value="mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676;vlc"/>
     </property>
     <property name="plugin-5" type="string" value="whiskermenu"/>
     <property name="plugin-8" type="string" value="showdesktop"/>
     <property name="plugin-9" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15200891251.desktop"/>
+        <value type="string" value="15403746251.desktop"/>
       </property>
     </property>
     <property name="plugin-10" type="string" value="launcher">

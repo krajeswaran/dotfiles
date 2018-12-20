@@ -11,7 +11,10 @@
       <value type="string" value="Electron"/>
       <value type="string" value="Firefox"/>
       <value type="string" value="google-chrome"/>
+      <value type="string" value="KDE Connect"/>
       <value type="string" value="nm-applet"/>
+      <value type="string" value="qBittorrent"/>
+      <value type="string" value="Skype"/>
       <value type="string" value="Studio"/>
       <value type="string" value="Thunar"/>
       <value type="string" value="thunar-volman"/>
