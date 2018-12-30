@@ -17,8 +17,9 @@ Name_1=Workspace 1
 Number=1
 
 [Effect-CoverSwitch]
+Reflection=false
 TabBox=false
-TabBoxAlternative=false
+TabBoxAlternative=true
 
 [Effect-Cube]
 BorderActivate=9
@@ -76,6 +77,8 @@ CommandWindow3=Activate and pass click
 CommandWindowWheel=Scroll
 
 [Plugins]
+blurEnabled=true
+contrastEnabled=true
 coverswitchEnabled=true
 enforcedecoEnabled=true
 flipswitchEnabled=true
@@ -100,8 +103,8 @@ HighlightWindows=true
 LayoutName=thumbnails
 MinimizedMode=0
 MultiScreenMode=0
-ShowDesktopMode=0
-ShowTabBox=true
+ShowDesktopMode=1
+ShowTabBox=false
 SwitchingMode=0
 TouchBorderActivate=9
 TouchBorderAlternativeActivate=9
@@ -149,7 +152,7 @@ MaximizeButtonLeftClickCommand=Maximize
 MaximizeButtonMiddleClickCommand=Maximize (horizontal only)
 MaximizeButtonRightClickCommand=Maximize (horizontal only)
 NextFocusPrefersMouse=false
-Placement=Smart
+Placement=UnderMouse
 SeparateScreenFocus=false
 ShadeHover=false
 ShadeHoverInterval=250
@@ -160,7 +163,7 @@ WindowSnapZone=10
 [org.kde.kdecoration2]
 BorderSize=None
 ButtonsOnLeft=
-ButtonsOnRight=IAX
+ButtonsOnRight=IX
 CloseOnDoubleClickOnMenu=false
 library=org.kde.kwin.aurorae
 theme=__aurorae__svg__Arc-Dark
