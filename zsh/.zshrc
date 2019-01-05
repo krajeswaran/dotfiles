@@ -2,16 +2,16 @@
 # Source some stuff
 #-----------------------------
 
-if [[ -f "$HOME/.zfunctions/git-status.zsh" ]]; then
-    . "$HOME/.zfunctions/git-status.zsh"
+if [[ -f "${HOME}/.zfunctions/git-status.zsh" ]]; then
+    source "${HOME}/.zfunctions/git-status.zsh"
 fi
+
+if [[ -f "${HOME}/.zfunctions/zsh-autosuggestions.zsh" ]]; then
+    source "${HOME}/.zfunctions/zsh-autosuggestions.zsh"
+fi 
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=( "$HOME/.zfunctions" $fpath )
-
-if [[ -f ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
-    source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi 
 
 #------------------------------
 # History stuff

@@ -47,12 +47,12 @@ export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G
 setxkbmap -option caps:escape
 
 # pyenv
-export PATH="/home/thesaneone/.pyenv/bin:$PATH"
+export PATH="${HOME}/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 ###-tns-completion-start-###
-if [ -f /home/thesaneone/.tnsrc ]; then 
-    source /home/thesaneone/.tnsrc 
+if [ -f ${HOME}/.tnsrc ]; then 
+    source ${HOME}/.tnsrc 
 fi
 ###-tns-completion-end-###
