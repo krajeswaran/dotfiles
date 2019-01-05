@@ -2,18 +2,16 @@
 # Source some stuff
 #-----------------------------
 
-if [[ -f "$HOME/.zfunctions/git-status.zsh" ]]; then
-    . "$HOME/.zfunctions/git-status.zsh"
+if [[ -f "${HOME}/.zfunctions/git-status.zsh" ]]; then
+    source "${HOME}/.zfunctions/git-status.zsh"
 fi
 
-if [[ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
-    source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
+if [[ -f "${HOME}/.zfunctions/zsh-autosuggestions.zsh" ]]; then
+    source "${HOME}/.zfunctions/zsh-autosuggestions.zsh"
+fi 
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=( "$HOME/.zfunctions" $fpath )
-
-export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
 
 #------------------------------
 # History stuff
@@ -244,17 +242,6 @@ setopt hist_reduce_blanks # Remove extra blanks from each command line being add
 setopt hist_verify # don't execute, just expand history
 setopt share_history # imports new commands and appends typed commands to history
 
-# ===== Completion 
-setopt always_to_end # When completing from the middle of a word, move the cursor to the end of the word    
-setopt auto_menu # show completion menu on successive tab press. needs unsetop menu_complete to work
-setopt auto_name_dirs # any parameter that is set to the absolute name of a directory immediately becomes a name for that directory
-setopt complete_in_word # Allow completion from within a word/phrase
-
-unsetopt menu_complete # do not autoselect the first completion entry
-
-# ===== Correction
-unsetopt correct  # eff off
-
 # ===== Prompt
 setopt prompt_subst # Enable parameter expansion, command substitution, and arithmetic expansion in the prompt
 setopt transient_rprompt # only show the rprompt on the current prompt
@@ -267,6 +254,9 @@ setopt multios # perform implicit tees or cats when multiple redirections are at
 autoload -Uz compinit 
 compinit -u -i
 zmodload -i zsh/complist
+
+# ===== Correction
+unsetopt correct_all # eff off
 
 # man zshcontrib
 zstyle ':vcs_info:*' actionformats '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
@@ -290,9 +280,9 @@ zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
 
 # list of completers to use
-zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
+zstyle ':completion:*::::' completer _expand _complete _ignored 
 
-zstyle ':completion:*' menu select=1 _complete _ignored _approximate
+zstyle ':completion:*' menu select=1 _complete _ignored 
 
 # insert all expansions for expand completer
 # zstyle ':completion:*:expand:*' tag-order all-expansions
@@ -308,7 +298,6 @@ zstyle ':completion:*' verbose yes
 zstyle ':completion:*:descriptions' format '%B%d%b'
 zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format 'No matches for: %d'
-zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle ':completion:*' group-name ''
  
 # ignore completion functions (until the _ignored completer)
@@ -322,6 +311,16 @@ zstyle '*' single-ignored show
 zstyle :compinstall filename '${HOME}/.zshrc'
 
 setopt COMPLETE_ALIASES
+
+# ===== Completion 
+setopt always_to_end # When completing from the middle of a word, move the cursor to the end of the word    
+setopt auto_menu # show completion menu on successive tab press. needs unsetop menu_complete to work
+setopt auto_name_dirs # any parameter that is set to the absolute name of a directory immediately becomes a name for that directory
+setopt complete_in_word # Allow completion from within a word/phrase
+
+unsetopt menu_complete # do not autoselect the first completion entry
+
+
 
 #------------------------------
 # History search

@@ -1,5 +1,12 @@
 #!/bin/bash
 
+echo "############## installing permissions... #####################"
+for dir in "/usr/local/* /usr/local/bin/* /usr/local/include/* /usr/local/lib/* /usr/local/share/*"; do
+	sudo chgrp admin $dir
+	sudo chmod g+w $dir
+done
+
+# homebrew
 
 # Check for Homebrew,
 # Install if we don't have it
@@ -9,40 +16,41 @@ if test ! $(which brew); then
 fi
 
 # Update homebrew recipes
-brew update
+brew install caskroom/cask/brew-cask
+brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 
-brew tap "homebrew/dupes"
-brew tap "gapple/services"
-brew tap "universal-ctags/universal-ctags"
+# it gets annoying after that
+export HOMEBREW_NO_AUTO_UPDATE=1
 
-echo "installing binaries..."
-brew install $(<${HOME}/dotfiles/bin/bin/utils.txt)
+echo "############## installing binaries... #####################"
+for app in $(cat ${HOME}/dotfiles/bin/bin/utils.txt)
+do
+    brew install ${app}
+done
 
 # Apps
-# Install apps to /Applications
-# Default is: /Users/$user/Applications
-echo "installing apps..."
-brew cask install --appdir="/Applications" $(<${HOME}/dotfiles/bin/bin/apps.txt)
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+echo "############## installing apps... #####################"
+for app in $(cat ${HOME}/dotfiles/bin/bin/apps.txt)
+do
+    brew cask install ${app}
+done
 
 brew tap caskroom/fonts
+
+brew tap "gapple/services"
 
 brew tap caskroom/versions
 
 # fonts
 fonts=(
-font-lato
-font-clear-sans
 font-source-code-pro 
-font-terminus 
-font-open-sans
-font-droid-sans-mono
+font-hack-nerd-font
+font-fira-code
 )
 
-# install fonts
-echo "installing fonts..."
+echo "############## installing fonts... #####################"
 brew cask install ${fonts[@]}
-
-brew linkapps --system
 
 # create vim dirs
 # install vim plugs

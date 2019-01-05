@@ -1,9 +1,14 @@
 " General
 set nocompatible        " must be first line
-set background=dark     " Assume a dark background
 
-set shell=/bin/bash  " posix complaint shell for os x 
 " Plugins
+"----------------------------------------------
+" Plugin management
+"
+" Download vim-plug from the URL below and follow the installation
+" instructions:
+" https://github.com/junegunn/vim-plug
+"----------------------------------------------
 call plug#begin('~/.vim/plugged')
 
 "general
@@ -11,89 +16,64 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-vinegar'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Shougo/denite.nvim'
-Plug 'ivalkeen/vim-ctrlp-tjump'
-Plug 'benmills/vimux'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-"Plug vim-scripts/DirDo.vim
 Plug 'Lokaltog/vim-easymotion'
-"Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mileszs/ack.vim'
-Plug 'xolox/vim-notes'
-Plug 'xolox/vim-misc'
+Plug 'junegunn/goyo.vim'
 
 "coding
-"Plug scrooloose/syntastic
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
-Plug 'w0rp/ale'
-Plug 'lifepillar/vim-mucomplete'
-" Plug 'ajh17/VimCompletesMe'
-Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
-"Plug 'Shougo/neocomplete'
-"Plug Shougo/neosnippet
-"Plug Valloric/YouCompleteMe
-"Plug majutsushi/tagbar
-"Plug xolox/vim-easytags
-
-"ruby
-"Plug vim-ruby/vim-ruby
-"Plug tpope/vim-rake
-"Plug ecomba/vim-ruby-refactoring
-"Plug astashov/vim-ruby-debugger
+Plug 'airblade/vim-rooter'
+Plug 'sheerun/vim-polyglot'
+Plug 'benmills/vimux'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-buffer.vim'
+Plug 'wellle/tmux-complete.vim'
+Plug 'yami-beta/asyncomplete-omni.vim'
+Plug 'prabirshrestha/asyncomplete-file.vim'
 
 "python
-"Plug klen/python-mode
 "Plug davidhalter/jedi 
-Plug 'davidhalter/jedi-vim'
-"https:/hub.com/tmhedberg/SimpylFold
-"https:/hub.com/vim-scripts/indentpython.vim
+"Plug 'davidhalter/jedi-vim'
+Plug 'julienr/vim-cellmode'
 
 "Go
-Plug 'fatih/vim-go'
+"Plug 'fatih/vim-go'                            " Go support
+"Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' } " Go auto completion
+"Plug 'zchee/deoplete-go', { 'do': 'make'}      " Go auto completion
+"Plug 'sebdah/vim-delve'
 
 "Javascript
-"Plug leshill/vim-json
-"Plug groenewege/vim-less
-"Plug taxilian/vim-web-indent
 
 "html
-"Plug amirh/HTML-AutoCloseTag
-"Plug ChrisYip/Better-CSS-Syntax-for-Vim
-"Plug mattn/emmet-vim
-
-"addl.syntaxes
-"Plug tpope/vim-haml
-Plug 'tpope/vim-markdown'
-Plug 'pangloss/vim-javascript'
 
 "misc
-"Plug vim-scripts/Conque-Shell
-"Plug mutewinter/LustyJuggler
-"Plug fmoralesc/vim-pad
-"Plug 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 
 "themes
-"Plug altercation/vim-colors-solarized
 "Plug chriskempson/base16-vim
 Plug 'w0ng/vim-hybrid'
 
 call plug#end()
 
+"----------------------------------------------
+" General settings
+"----------------------------------------------
+"set python path separate from venvs
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python3'
 
-" General
 set mouse=v                 " automatically enable mouse usage
 set go+=a
 set splitbelow
 set splitright
 set showfulltag
-set clipboard=unnamed
-"set clipboard=unnamedplus
+set clipboard^=unnamed,unnamedplus
 scriptencoding utf-8
 set encoding=utf-8
 "imap ^V ^O"+p
@@ -104,23 +84,24 @@ set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatib
 set history=1000                " Store a ton of history (default is 20)
 set hidden                      " allow buffer switching without saving
 
-" Setting up the directories 
+" Setting up the directories
 set backup                      " backups are nice ...
 set lazyredraw                  " no unnecessary redraws
 if has('persistent_undo')
-    set undofile
-    set undodir=~/.vimundo/
-    set undolevels=1000         "maximum number of changes that can be undone
-    set undoreload=10000        "maximum number lines to save for undo on a buffer reload
+	set undofile
+	set undodir=~/.vimundo/
+	set undolevels=1000         "maximum number of changes that can be undone
+	set undoreload=10000        "maximum number lines to save for undo on a buffer reload
 endif
-"au BufWinLeave * silent! mkview  "make vim save view (state) (folds, cursor, etc)
-"au BufWinEnter * silent! loadview "make vim load view (state) (folds, cursor, etc)
 
-" Vim UI
-"set tabpagemax=15               " only show 15 tabs
-"set showmode                    " display the current mode
+" Enable mouse if possible
+if has('mouse')
+	set mouse=a
+endif
 
-"autocmd FileType text setlocal textwidth=78
+" Allow vim to set a custom font or color for a word
+syntax enable
+
 set wrap
 set linebreak
 set nolist  " list disables linebreak
@@ -237,14 +218,6 @@ vnoremap > >gv
 " For when you forget to sudo.. Really Write the file.
 cmap w!! w !sudo tee % >/dev/null
 
-" Some helpers to edit mode
-" http://vimcasts.org/e/14
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>ew :e %%
-map <leader>es :sp %%
-map <leader>ev :vsp %%
-map <leader>et :tabe %%
-
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
 
@@ -255,39 +228,62 @@ map zh zH
 "spell check
 map <F7> :setlocal spell spelllang=en
 
-"jump error list easily 
+"jump error list easily
 map <silent> <leader>cn :cn<CR>zv
 map <silent> <leader>cp :cp<CR>zv
 
-highlight BadWhitespace ctermbg=red guibg=darkred
+"----------------------------------------------
+" Colors
+"----------------------------------------------
+set background=dark
 
-" py tabs
-" au BufNewFile,BufRead *.py 
-"         \ set tabstop=4 |
-"         \ set softtabstop=4 |
-"         \ set shiftwidth=4 |
-"         \ set textwidth=120 |
-"         \ set expandtab |
-"         \ set autoindent |
-"         \ set fileformat=unix |
-
-" " js tabs
-" au BufNewFile,BufRead *.js,*.html,*.css
-"         \ set tabstop=2 |
-"         \ set softtabstop=2 |
-"         \ set shiftwidth=2 |
+" fucking magenta autocomplete menu
+highlight Pmenu ctermbg=darkgrey
 
 " flag bad whitespace
-au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /\s\+$/
+highlight BadWhitespace ctermbg=red guibg=darkred
+highlight EndOfBuffer ctermbg=black ctermfg=black 
 
+"----------------------------------------------
+" GUI Settings 
+"----------------------------------------------
+" GVIM- (here instead of .gvimrc)
+set bg=dark
+if has('gui_running')
+    set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right-hand scroll bar
+    set guioptions-=L  "remove left-hand scroll bar
+    set guifont=HackNerdFontComplete-Regular:h14
+    colorscheme hybrid
+    set lines=30
+    highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
+endif
 
-" Plugins 
+"----------------------------------------------
+" Searching
+"----------------------------------------------
+"set inccommand=split          " enables interactive search and replace
 
-" Notes
-let g:notes_directories=['~/Google Drive/Notes']
-let g:notes_suffix = '.txt'
-let g:notes_title_sync = 'rename_file'
-let g:notes_list_bullets = ['•', '◦', '▸', '▹', '▪', '▫']
+" These mappings will make it so that going to the next one in a search will
+" center on the line it's found in.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+"----------------------------------------------
+" Navigation
+"----------------------------------------------
+" Disable arrow keys
+"noremap <Up> <NOP>
+"noremap <Down> <NOP>
+"noremap <Left> <NOP>
+"noremap <Right> <NOP>
+
+" ... but skip the quickfix when navigating
+augroup qf
+	autocmd!
+	autocmd FileType qf set nobuflisted
+augroup END
 
 " Path
 set path+=**
@@ -302,171 +298,287 @@ let g:netrw_list_hide+=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 
-
 " JSON
 nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
+"----------------------------------------------
+" Status line
+"----------------------------------------------
+set laststatus=2
+set statusline=
+if has('gui_running')
+	set statusline+=%#CursorColumn#
+else
+	set statusline+=%#Pmenu#
+endif
+set statusline+=\ %f
+set statusline+=%{&modified?'\ +':''}
+set statusline+=%{&readonly?'\ ':''}
+if has('gui_running')
+	set statusline+=%#LineNr#
+else
+	set statusline+=%#PmenuSel#
+endif
+set statusline+=%=
+set statusline+=%{'help'!=&filetype?bufnr('%'):''}
+set statusline+=\ %{fugitive#statusline()}
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\ %{&fileformat}
+" set statusline+=%#NonText#
+set statusline+=%#Normal#
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
+
+"----------------------------------------------
+" Plugin: prabirshrestha/asyncomplete
+"----------------------------------------------
+set showmode shortmess+=c
+set completeopt-=preview
+set completeopt+=longest,menu,menuone,noinsert
+"
+" <TAB>: completion.
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+
+imap <c-space> <Plug>(asyncomplete_force_refresh)
+
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ asyncomplete#force_refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+"let g:asyncomplete_remove_duplicates = 1
+
+"let g:asyncomplete_smart_completion = 1
+"let g:asyncomplete_auto_popup = 1
+
+call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
+    \ 'name': 'buffer',
+    \ 'whitelist': ['*'],
+    \ 'blacklist': ['go'],
+    \ 'completor': function('asyncomplete#sources#buffer#completor'),
+    \ }))
+
+let g:tmuxcomplete#asyncomplete_source_options = {
+            \ 'name':      'tmuxcomplete',
+            \ 'whitelist': ['*'],
+            \ 'config': {
+            \     'splitmode':      'words',
+            \     'filter_prefix':   1,
+            \     'show_incomplete': 1,
+            \     'sort_candidates': 0,
+            \     'scrollback':      0,
+            \     'truncate':        0
+            \     }
+            \ }
+
+call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
+			\ 'name': 'omni',
+			\ 'whitelist': ['*'],
+			\ 'blacklist': ['c', 'cpp', 'html'],
+			\ 'completor': function('asyncomplete#sources#omni#completor')
+			\  }))
+
+au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
+    \ 'name': 'file',
+    \ 'whitelist': ['*'],
+    \ 'priority': 10,
+    \ 'completor': function('asyncomplete#sources#file#completor')
+    \ }))
 
 
-" fzf
-"let g:fzf_nvim_statusline = 0 " disable statusline overwriting
+" -- Enable omni as a last resort
+if has("autocmd") && exists("+omnifunc")
+	autocmd Filetype *
+				\	if &omnifunc == "" |
+				\		setlocal omnifunc=syntaxcomplete#Complete |
+				\	endif
+endif
 
+
+"----------------------------------------------
+" Plugin: easymotion/vim-easymotion
+"----------------------------------------------
+" Enable support for bidirectional motions
+map  <leader><leader>w <Plug>(easymotion-bd-w)
+nmap <leader><leader>w <Plug>(easymotion-overwin-w)
+
+
+"----------------------------------------------
+" Plugin: 'junegunn/fzf.vim'
+"----------------------------------------------
 nnoremap <silent> <leader>o :Files<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>p :History<CR>
 nnoremap <silent> <leader>/ :execute 'Ag ' . input('Ag/')<CR>
 nnoremap <silent> <leader>. :AgIn 
 
-" nnoremap <silent> <leader>gc :Commits<CR>
-nnoremap <silent> <leader>gs :GFiles?<CR>
-
-imap <C-x><C-f> <plug>(fzf-complete-file-ag)
-imap <C-x><C-l> <plug>(fzf-complete-line)
-
-function! SearchWithAgInDirectory(...)
-call fzf#vim#ag(join(a:000[1:], ' '), extend({'dir': a:1}, g:fzf#vim#default_layout))
-endfunction
-command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
-let g:fzf_launcher = "~/bin/fzf_iterm %s"
-
-"" taskpaper
-"   let g:task_paper_archive_file = 'Dropbox/todo/archive_todo.txt'
-"
-
-" singlecompile
-nmap <F9> :SCCompile<cr>
-nmap <F10> :SCCompileRun<cr>
-let g:SingleCompile_showquickfixiferror = 1
-let g:SingleCompile_showresultafterrun = 1
-
-
-" python
-" autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
-let g:jedi#use_splits_not_buffers = "right"
-autocmd BufNewFile,BufRead *.py let g:ackprg = 'ag --python'
-
-
-" golang
-set autowrite
-autocmd BufNewFile,BufRead *.go let g:ackprg = 'ag --go'
-
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
-
-au FileType go nmap <Leader>ds <Plug>(go-def-split)
-au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-
-au FileType go nmap <Leader>gd <Plug>(go-doc)
-au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
-
-au FileType go nmap <Leader>s <Plug>(go-implements)
-
-au FileType go nmap <Leader>e <Plug>(go-rename)
-
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_types = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-
+"----------------------------------------------
+" Plugin: mileszs/ack.vim
+"----------------------------------------------
+" Open ack
+nnoremap <leader>a :Ack!<space>
 
 " ack/ag
 if executable('ag')
     let g:ackprg = 'ag'
 endif
 
-" Statusline 
-set laststatus=2
-set statusline=
-set statusline+=%(%{'help'!=&filetype?bufnr('%'):''}\ \|\ %)
-set statusline+=%< " Where to truncate line
-set statusline+=%f " Path to the file in the buffer, as typed or relative to current directory
-set statusline+=%{&modified?'\ +':''}
-set statusline+=%{&readonly?'\ ':''}
-set statusline+=\ %1*|
-" Name of the current branch (needs fugitive.vim)
-set statusline +=\ %{fugitive#statusline()}
-set statusline+=\ \|
-set statusline +=\ %{ALEGetStatusLine()}
-set statusline+=\ %1*|
-set statusline+=%= " Separation point between left and right aligned items.
-set statusline+=\ %1*|
-set statusline+=\ %{''!=#&filetype?&filetype:'-'}
-set statusline+=%(\ \|%{(&bomb\|\|'^$\|utf-8'!~#&fileencoding?'\ '.&fileencoding.(&bomb?'-bom':''):'')
-  \.('unix'!=#&fileformat?'\ '.&fileformat:'')}%)
-set statusline+=%(\ \|\ %{&modifiable?SleuthIndicator():''}%)
-set statusline+=\ \|
-set statusline +=%=%-14.(%l,%c%V%)\ %P
-
-function! InsertStatuslineColor(mode)
-  if a:mode == 'i'
-    hi statusline 
-  elseif a:mode == 'r'
-    hi statusline ctermfg=magenta guifg=magenta
-  else
-    hi statusline ctermfg=red guifg=red
-  endif
-endfunction
-
-au InsertEnter * hi statusline ctermfg=lightgreen guifg=lightgreen
-au InsertChange * hi statusline ctermfg=lightblue guifg=lightblue
-au InsertLeave * hi statusline ctermfg=darkgreen guifg=#c5c8c6
-
+"----------------------------------------------
+" Plugin: ale
+"----------------------------------------------
 " ALE
-let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥']
+" let g:ale_statusline_format = ['✖ %d', '⚠ %d', '⬥']
+" function! LinterStatus() abort
+"     let l:counts = ale#statusline#Count(bufnr(''))
 
-" GUI Settings 
-" GVIM- (here instead of .gvimrc)
-set bg=dark
-if has("gui_running")
-    let g:hybrid_custom_term_colors = 1
-    let g:hybrid_reduced_contrast = 1 " Remove this line if using the default palette.
-    colorscheme hybrid
-    set guioptions-=m  "remove menu bar
-    set guioptions-=T  "remove toolbar
-    set guioptions-=r  "remove right-hand scroll bar
-    set guioptions-=L  "remove left-hand scroll bar
-    set guifont=Menlo\ Regular:h14
-    set lines=35
-    set columns=85
-endif
+"     let l:all_errors = l:counts.error + l:counts.style_error
+"     let l:all_non_errors = l:counts.total - l:all_errors
 
-" mucomplete
-set showmode shortmess+=c
-set completeopt-=preview
-set completeopt+=longest,menu,menuone,noinsert
-let g:jedi#popup_on_dot = 1  " It may be 1 as well
-let g:mucomplete#enable_auto_at_startup = 0
+"     return l:counts.total == 0 ? 'OK' : printf(
+"     \   '%dW %dE',
+"     \   all_non_errors,
+"     \   all_errors
+"     \)
+" endfunction
+"----------------------------------------------
+" Plugin: sebdah/vim-delve
+"----------------------------------------------
+" Set the Delve backend.
+"let g:delve_backend = "native"
 
-" The Silver Searcher
-if executable('rg')
-  " Use ag over grep
-  set grepprg=rg\ --vimgrep 
+"----------------------------------------------
+" Plugin: 'terryma/vim-multiple-cursors'
+"----------------------------------------------
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_skip_key='<C-b>'
 
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  " let g:ctrlp_user_command = 'ag %s -l --nocolor'
-  let g:ctrlp_user_command = ['.git', 'cd %s && rg --files-with-matches ".*"', 'find %s -type f']
-  let g:ctrlp_user_command = 'cd %s && rg --files-with-matches ".*" --hidden'
+"----------------------------------------------
+" Plugin: vim-rooter
+"----------------------------------------------
+let g:rooter_change_directory_for_non_project_files = 'current'
+let g:rooter_silent_chdir = 1
+let g:rooter_patterns = ['.vimroot', '.git/', 'venv/', 'vendor/']
 
-
-  " ag is fast enough that CtrlP doesn't need to cache
-  " let g:ctrlp_use_caching = 0
-
-  let g:ctrlp_working_path_mode = '0'
-endif
-
-"ctrlptag
-nnoremap <c-]> :CtrlPtjump<cr>
-vnoremap <c-]> :CtrlPtjumpVisual<cr>
-let g:ctrlp_tjump_only_silent = 1
+augroup vimrc_rooter
+    autocmd VimEnter * :Rooter
+augroup END
 
 
-call denite#custom#var('file_rec', 'command',
-            \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
-" For ripgrep
-" Note: It is slower than ag
-call denite#custom#var('file_rec', 'command',
-            \ ['rg', '--files', '--glob', '!.git', ''])
+"----------------------------------------------
+" Language: Golang
+"----------------------------------------------
+set autowrite
+"autocmd BufRead $GOPATH/src/*.go
+"        \ :GoGuruScope $GOPATH/src/maze/
+"
+"" Run goimports when running gofmt
+"let g:go_fmt_command = "goimports"
+"
+"" Set neosnippet as snippet engine
+""let g:go_snippet_engine = "neosnippet"
+"
+"" Enable syntax highlighting per default
+"let g:go_highlight_types = 1
+"let g:go_highlight_fields = 1
+"let g:go_highlight_functions = 1
+"let g:go_highlight_methods = 1
+"let g:go_highlight_structs = 1
+"let g:go_highlight_operators = 1
+"let g:go_highlight_build_constraints = 1
+"let g:go_highlight_extra_types = 1
+"
+"" Show the progress when running :GoCoverage
+"let g:go_echo_command_info = 1
+"
+"" Show type information
+"let g:go_auto_type_info = 1
+"
+"" Highlight variable uses
+"let g:go_auto_sameids = 1
+"
+"" Fix for location list when vim-go is used together with Syntastic
+"let g:go_list_type = "quickfix"
+"
+"" Add the failing test name to the output of :GoTest
+"let g:go_test_show_name = 1
+"
+"" gometalinter configuration
+"let g:go_metalinter_command = ""
+"let g:go_metalinter_deadline = "5s"
+"let g:go_metalinter_enabled = [
+"			\ 'deadcode',
+"			\ 'gas',
+"			\ 'goconst',
+"			\ 'gocyclo',
+"			\ 'golint',
+"			\ 'gosimple',
+"			\ 'ineffassign',
+"			\ 'vet',
+"			\ 'vetshadow'
+"			\]
+"
+"" Set whether the JSON tags should be snakecase or camelcase.
+"let g:go_addtags_transform = "snakecase"
+"
+"" " neomake configuration for Go.
+"" let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
+"" let g:neomake_go_gometalinter_maker = {
+"" 			\ 'args': [
+"" 			\   '--tests',
+"" 			\   '--enable-gc',
+"" 			\   '--concurrency=3',
+"" 			\   '--fast',
+"" 			\   '-D', 'aligncheck',
+"" 			\   '-D', 'dupl',
+"" 			\   '-D', 'gocyclo',
+"" 			\   '-D', 'gotype',
+"" 			\   '-E', 'misspell',
+"" 			\   '-E', 'unused',
+"" 			\   '%:p:h',
+"" 			\ ],
+"" 			\ 'append_file': 0,
+"" 			\ 'errorformat':
+"" 			\   '%E%f:%l:%c:%trror: %m,' .
+"" 			\   '%W%f:%l:%c:%tarning: %m,' .
+"" 			\   '%E%f:%l::%trror: %m,' .
+"" 			\   '%W%f:%l::%tarning: %m'
+"" 			\ }
+"
+"" Mappings
+"au FileType go nmap <F8> :GoMetaLinter<cr>
+"au FileType go nmap <F9> :GoCoverageToggle -short<cr>
+"au FileType go nmap <F10> :GoTest -short<cr>
+"au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
+"au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
+"au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
+"au FileType go nmap <leader>gt :GoDeclsDir<cr>
+"au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
+"au FileType go nmap <leader>gd <Plug>(go-def)
+"au FileType go nmap <leader>gdv <Plug>(go-def-vertical)
+"au FileType go nmap <leader>gdh <Plug>(go-def-split)
+"au FileType go nmap <leader>gD <Plug>(go-doc)
+"au FileType go nmap <leader>gDv <Plug>(go-doc-vertical)
+"
+"au FileType go nmap <leader>r <Plug>(go-rename)
+"" who just builds
+"au FileType go nmap <leader>b <Plug>(go-run)  
+"au FileType go nmap <leader>t <Plug>(go-test)
+"au FileType go nmap <leader>c <Plug>(go-coverage)
+"
+"au FileType go nmap <Leader>ds <Plug>(go-def-split)
+"au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+"au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+"
+"
+"au FileType go nmap <Leader>s <Plug>(go-implements)
+"au FileType go nmap <Leader>e <Plug>(go-rename)
+

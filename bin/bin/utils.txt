@@ -3,6 +3,15 @@ findutils
 binutils 
 gnu-tar 
 gnu-sed 
+autoconf
+automake
+freetype
+go
+jq
+libxml2
+readline
+sqlite
+youtube-dl
 gawk 
 gnutls 
 gnu-indent 
@@ -13,7 +22,6 @@ graphicsmagick
 rename 
 zsh 
 zsh-completions
-zsh-autosuggestions
 python 
 node 
 tree 
@@ -23,9 +31,7 @@ cscope
 curl 
 wget 
 progress 
---HEAD universal-ctags 
 vim --with-cscope --with-lua --with-ruby --with-python3 --with-client-server --with-feature=huge
-macvim --with-cscope --with-lua --with-ruby --with-python3 --with-client-server --with-feature=huge
 ack 
 p7zip 
 unrar 
@@ -33,34 +39,31 @@ aria2
 xz  
 openssh 
 mosh 
-golang 
 python3 
 redis 
 postgresql 
 tmux
 mpv
-the_silver_searcher
 fzf
 htop
 subliminal
 wakeonlan
 httpie
 graphviz
-bundler
 ripgrep
+fd
 nmap
-luagit
-lua
 pgcli
 ffmpeg
-psql
 sloccount
-rbenv
-ruby-build
 jsonlint
 awscli
+luarocks
 pyenv
-virtualenvwrapper
+pyenv-virtualenvwrapper
 socat
 openssl
 djmount
+sshfs
+mps-youtube
+fdupes

@@ -1,0 +1,6 @@
+pane	0	0	:zsh	1	:*	0	:/Users/thesaneone	0	zsh	:
+pane	0	0	:zsh	1	:*	1	:/Users/thesaneone	1	zsh	:
+pane	0	0	:zsh	1	:*	2	:/Users/thesaneone	0	zsh	:
+pane	0	0	:zsh	1	:*	3	:/Users/thesaneone	0	zsh	:
+window	0	0	1	:*	62ae,178x49,0,0{89x49,0,0[89x24,0,0,0,89x24,0,25,3],88x49,90,0[88x24,90,0,1,88x24,90,25,2]}
+state	0	
