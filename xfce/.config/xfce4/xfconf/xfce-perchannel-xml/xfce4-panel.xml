@@ -51,13 +51,14 @@
         <value type="string" value="+hibernate"/>
         <value type="string" value="-separator"/>
         <value type="string" value="+shutdown"/>
-        <value type="string" value="-restart"/>
+        <value type="string" value="+restart"/>
         <value type="string" value="+separator"/>
         <value type="string" value="-logout"/>
         <value type="string" value="+logout-dialog"/>
       </property>
       <property name="ask-confirmation" type="bool" value="false"/>
       <property name="appearance" type="uint" value="1"/>
+      <property name="invert-orientation" type="bool" value="false"/>
     </property>
     <property name="plugin-3" type="string" value="tasklist">
       <property name="show-handle" type="bool" value="false"/>

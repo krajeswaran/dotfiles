@@ -1,0 +1,7 @@
+/gopath/*
+.git
+.node_modules
+.bower_components
+vendor
+.config
+src
