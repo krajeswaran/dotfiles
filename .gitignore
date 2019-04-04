@@ -7,3 +7,6 @@
 mpv/**/watch_later/**
 localapps/**/chrome*
 localapps/**/mimeapps*
+albert/.config/albert/core.db
+ssh/.ssh/id_rsa*
+ssh/.ssh/known*

@@ -8,7 +8,6 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " General plugins
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -26,6 +25,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'sheerun/vim-polyglot'
 " Plug 'neomake/neomake'
 Plug 'tpope/vim-commentary'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 
 " golang
 "Plug 'fatih/vim-go'                            " Go support
