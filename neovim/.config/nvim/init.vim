@@ -11,10 +11,8 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'mileszs/ack.vim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
 Plug 'godlygeek/tabular'
@@ -22,19 +20,27 @@ Plug 'airblade/vim-rooter'
 Plug 'junegunn/goyo.vim'
 
 " Coding
+Plug 'mhinz/vim-signify'
+Plug 'rhysd/git-messenger.vim'
 Plug 'sheerun/vim-polyglot'
-" Plug 'neomake/neomake'
 Plug 'tpope/vim-commentary'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+" Plug 'neoclide/coc-tsserver', 
+" Plug 'neoclide/coc-tslint-plugin', 
+" Plug 'neoclide/coc-json', 
+" Plug 'neoclide/coc-java', 
+" Plug 'neoclide/coc-gocode', 
+" Plug 'neoclide/coc-vetur',
+" Plug 'neoclide/coc-lists',
+" Plug 'neoclide/coc-css', 
+" Plug 'neoclide/coc-html', 
+" Plug 'neoclide/coc-python',
+" Plug 'neoclide/coc-highlight',
 
 " golang
-"Plug 'fatih/vim-go'                            " Go support
-"Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' } " Go auto completion
-"Plug 'zchee/deoplete-go', { 'do': 'make'}      " Go auto completion
-"Plug 'sebdah/vim-delve'
 
 " python
-Plug 'bfredl/nvim-ipy'
+Plug 'Vigemus/iron.nvim'
 
 " javascript
 
@@ -47,20 +53,16 @@ call plug#end()
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 
-set mouse=v                 " automatically enable mouse usage
+set mouse=a                 " automatically enable mouse usage
 set go+=a
 set splitbelow
 set splitright
 set showfulltag
 set clipboard^=unnamed,unnamedplus
 scriptencoding utf-8
-set encoding=utf-8
-"imap ^V ^O"+p
-"set shellcmdflag=-ic
 set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
 set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
 "set virtualedit=onemore         " allow for cursor beyond last character
-set history=1000                " Store a ton of history (default is 20)
 set hidden                      " allow buffer switching without saving
 
 " Setting up the directories
@@ -73,47 +75,27 @@ if has('persistent_undo')
 	set undoreload=10000        "maximum number lines to save for undo on a buffer reload
 endif
 
-" Enable mouse if possible
-if has('mouse')
-	set mouse=a
-endif
-
-" Allow vim to set a custom font or color for a word
-syntax enable
 
 set wrap
 set linebreak
 set nolist  " list disables linebreak
 set textwidth=0
 set wrapmargin=0
-set backspace=indent,eol,start  " backspace for dummies
 set linespace=0                 " No extra spaces between rows
 set showmatch                   " show matching brackets/parenthesis
-set incsearch                   " find as you type search
 set hlsearch                    " highlight search terms
 set winminheight=0              " windows can be 0 line high
 set ignorecase                  " case insensitive search
 set smartcase                   " case sensitive when uc present
-set wildmenu                    " show list instead of just completing
 set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git,.idea  " MacOSX/Linux
 set whichwrap=b,s,h,l,<,>,[,]   " backspace and cursor keys wrap to
 set scrolljump=5                " lines to scroll when cursor leaves screen
-set scrolloff=2                 " minimum lines to keep above and below cursor
-"set foldenable                  " auto fold code
-"set list
-set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 
 " Formatting
-set autoindent                  " indent at the same level of the previous line
-set shiftwidth=4                " use indents of 4 spaces
-set expandtab                   " tabs are spaces, not tabs
-set tabstop=4                   " an indentation every four columns
-set softtabstop=4               " let backspace delete indent
-"set matchpairs+=<:>                " match, to be used with %
 set pastetoggle=<F2>                       " no indent on paste
-"set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
+
 
 " other niceties
 set mousemodel=popup
@@ -164,7 +146,7 @@ cmap W w
 cmap WQ wq
 cmap wQ wq
 cmap Q q
-cmap Tabe tabe
+
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
@@ -181,9 +163,6 @@ nmap <leader>f6 :set foldlevel=6<CR>
 nmap <leader>f7 :set foldlevel=7<CR>
 nmap <leader>f8 :set foldlevel=8<CR>
 nmap <leader>f9 :set foldlevel=9<CR>
-
-"clearing highlighted search
-nmap <silent> <leader>/ :nohlsearch<CR>
 
 " Shortcuts
 " Change Working Directory to that of the current file
@@ -211,11 +190,6 @@ map <F7> :setlocal spell spelllang=en
 map <silent> <leader>cn :cn<CR>zv
 map <silent> <leader>cp :cp<CR>zv
 
-" complete
-set showmode shortmess+=c
-set completeopt-=preview
-set completeopt+=longest,menu,menuone,noinsert
-
 "----------------------------------------------
 " Colors
 "----------------------------------------------
@@ -223,6 +197,7 @@ set background=dark
 
 " fucking magenta autocomplete menu
 highlight Pmenu ctermbg=darkgrey
+highlight SignColumn ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
 
 " flag bad whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
@@ -271,61 +246,40 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 "----------------------------------------------
 " Status line
 "----------------------------------------------
-set laststatus=2
 set statusline=
-set statusline+=%(%{'help'!=&filetype?bufnr('%'):''}\ \|\ %)
-set statusline+=%< " Where to truncate line
-set statusline+=%f " Path to the file in the buffer, as typed or relative to current directory
+if has('gui_running')
+	set statusline+=%#CursorColumn#
+else
+	set statusline+=%#Pmenu#
+endif
+set statusline+=\ %f
 set statusline+=%{&modified?'\ +':''}
 set statusline+=%{&readonly?'\ ':''}
-set statusline+=\ %1*|
-" Name of the current branch (needs fugitive.vim)
-set statusline +=\ %{fugitive#statusline()}
-" set statusline+=\ \|
-" set statusline +=\ %{LinterStatus()}
-set statusline+=\ %1*|
-set statusline+=%= " Separation point between left and right aligned items.
-set statusline+=\ %1*|
-set statusline+=\ %{''!=#&filetype?&filetype:'-'}
-set statusline+=%(\ \|%{(&bomb\|\|'^$\|utf-8'!~#&fileencoding?'\ '.&fileencoding.(&bomb?'-bom':''):'')
-  \.('unix'!=#&fileformat?'\ '.&fileformat:'')}%)
-set statusline+=%(\ \|\ %{&modifiable?SleuthIndicator():''}%)
-set statusline+=\ \|
-set statusline +=%=%-14.(%l,%c%V%)\ %P
-
-au InsertEnter * hi statusline ctermfg=lightblue guifg=lightgreen
-au InsertChange * hi statusline ctermfg=lightgreen guifg=lightblue
-au InsertLeave * hi statusline ctermfg=darkgreen guifg=#c5c8c6
+if has('gui_running')
+	set statusline+=%#LineNr#
+else
+	set statusline+=%#PmenuSel#
+endif
+set statusline+=%=
+set statusline+=%{'help'!=&filetype?bufnr('%'):''}
+set statusline+=\ %{coc#status()}
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\ %{&fileformat}
+" set statusline+=%#NonText#
+set statusline+=%#Normal#
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
 
 "----------------------------------------------
-" Plugin: Shougo/deoplete.nvim
+" Plugin: rhysd/git-messenger
 "----------------------------------------------
-" Enable deoplete on startup
-let g:deoplete#enable_at_startup = 1
-
-" Disable deoplete when in multi cursor mode
-function! Multiple_cursors_before()
-	let b:deoplete_disable_auto_complete = 1
-endfunction
-
-function! Multiple_cursors_after()
-	let b:deoplete_disable_auto_complete = 0
-endfunction
-
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+let g:git_messenger_include_diff="current"
 
 "----------------------------------------------
 " Plugin: christoomey/vim-tmux-navigator
 "----------------------------------------------
-" tmux will send xterm-style keys when its xterm-keys option is on.
-if &term =~ '^screen'
-	execute "set <xUp>=\e[1;*A"
-	execute "set <xDown>=\e[1;*B"
-	execute "set <xRight>=\e[1;*C"
-	execute "set <xLeft>=\e[1;*D"
-endif
-
 " Tmux vim integration
 let g:tmux_navigator_no_mappings = 1
 let g:tmux_navigator_save_on_switch = 1
@@ -338,67 +292,18 @@ nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 
 "----------------------------------------------
-" Plugin: easymotion/vim-easymotion
-"----------------------------------------------
-" Enable support for bidirectional motions
-map  <leader><leader>w <Plug>(easymotion-bd-w)
-nmap <leader><leader>w <Plug>(easymotion-overwin-w)
-
-
-"----------------------------------------------
 " Plugin: 'junegunn/fzf.vim'
 "----------------------------------------------
 nnoremap <silent> <leader>o :Files<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>p :History<CR>
-nnoremap <silent> <leader>/ :execute 'Ag ' . input('Ag/')<CR>
-nnoremap <silent> <leader>. :AgIn 
-
-"----------------------------------------------
-" Plugin: mileszs/ack.vim
-"----------------------------------------------
-" Open ack
-nnoremap <leader>a :Ack!<space>
-
-" ack/ag
-if executable('ag')
-    let g:ackprg = 'ag'
-endif
-
-"----------------------------------------------
-" Plugin: ale
-"----------------------------------------------
-" ALE
-" let g:ale_statusline_format = ['✖ %d', '⚠ %d', '⬥']
-" function! LinterStatus() abort
-"     let l:counts = ale#statusline#Count(bufnr(''))
-
-"     let l:all_errors = l:counts.error + l:counts.style_error
-"     let l:all_non_errors = l:counts.total - l:all_errors
-
-"     return l:counts.total == 0 ? 'OK' : printf(
-"     \   '%dW %dE',
-"     \   all_non_errors,
-"     \   all_errors
-"     \)
-" endfunction
-"----------------------------------------------
-" Plugin: sebdah/vim-delve
-"----------------------------------------------
-" Set the Delve backend.
-"let g:delve_backend = "native"
+nnoremap <silent> <leader>/ :Ag<CR>
 
 "----------------------------------------------
 " Plugin: 'terryma/vim-multiple-cursors'
 "----------------------------------------------
 let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_skip_key='<C-b>'
-
-"----------------------------------------------
-" Plugin: zchee/deoplete-go
-"----------------------------------------------
-" Enable completing of go pointers
-let g:deoplete#sources#go#pointer = 1
 
 "----------------------------------------------
 " Plugin: vim-rooter
@@ -413,110 +318,119 @@ augroup END
 
 
 "----------------------------------------------
-" Language: Golang
+" Plugin: coc
 "----------------------------------------------
-set autowrite
-"autocmd BufRead $GOPATH/src/*.go
-"        \ :GoGuruScope $GOPATH/src/maze/
-"
-"" Run goimports when running gofmt
-"let g:go_fmt_command = "goimports"
-"
-"" Set neosnippet as snippet engine
-""let g:go_snippet_engine = "neosnippet"
-"
-"" Enable syntax highlighting per default
-"let g:go_highlight_types = 1
-"let g:go_highlight_fields = 1
-"let g:go_highlight_functions = 1
-"let g:go_highlight_methods = 1
-"let g:go_highlight_structs = 1
-"let g:go_highlight_operators = 1
-"let g:go_highlight_build_constraints = 1
-"let g:go_highlight_extra_types = 1
-"
-"" Show the progress when running :GoCoverage
-"let g:go_echo_command_info = 1
-"
-"" Show type information
-"let g:go_auto_type_info = 1
-"
-"" Highlight variable uses
-"let g:go_auto_sameids = 1
-"
-"" Fix for location list when vim-go is used together with Syntastic
-"let g:go_list_type = "quickfix"
-"
-"" Add the failing test name to the output of :GoTest
-"let g:go_test_show_name = 1
-"
-"" gometalinter configuration
-"let g:go_metalinter_command = ""
-"let g:go_metalinter_deadline = "5s"
-"let g:go_metalinter_enabled = [
-"			\ 'deadcode',
-"			\ 'gas',
-"			\ 'goconst',
-"			\ 'gocyclo',
-"			\ 'golint',
-"			\ 'gosimple',
-"			\ 'ineffassign',
-"			\ 'vet',
-"			\ 'vetshadow'
-"			\]
-"
-"" Set whether the JSON tags should be snakecase or camelcase.
-"let g:go_addtags_transform = "snakecase"
-"
-"" " neomake configuration for Go.
-"" let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
-"" let g:neomake_go_gometalinter_maker = {
-"" 			\ 'args': [
-"" 			\   '--tests',
-"" 			\   '--enable-gc',
-"" 			\   '--concurrency=3',
-"" 			\   '--fast',
-"" 			\   '-D', 'aligncheck',
-"" 			\   '-D', 'dupl',
-"" 			\   '-D', 'gocyclo',
-"" 			\   '-D', 'gotype',
-"" 			\   '-E', 'misspell',
-"" 			\   '-E', 'unused',
-"" 			\   '%:p:h',
-"" 			\ ],
-"" 			\ 'append_file': 0,
-"" 			\ 'errorformat':
-"" 			\   '%E%f:%l:%c:%trror: %m,' .
-"" 			\   '%W%f:%l:%c:%tarning: %m,' .
-"" 			\   '%E%f:%l::%trror: %m,' .
-"" 			\   '%W%f:%l::%tarning: %m'
-"" 			\ }
-"
-"" Mappings
-"au FileType go nmap <F8> :GoMetaLinter<cr>
-"au FileType go nmap <F9> :GoCoverageToggle -short<cr>
-"au FileType go nmap <F10> :GoTest -short<cr>
-"au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
-"au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
-"au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
-"au FileType go nmap <leader>gt :GoDeclsDir<cr>
-"au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
-"au FileType go nmap <leader>gd <Plug>(go-def)
-"au FileType go nmap <leader>gdv <Plug>(go-def-vertical)
-"au FileType go nmap <leader>gdh <Plug>(go-def-split)
-"au FileType go nmap <leader>gD <Plug>(go-doc)
-"au FileType go nmap <leader>gDv <Plug>(go-doc-vertical)
-"
-"au FileType go nmap <leader>r <Plug>(go-rename)
-"" who just builds
-"au FileType go nmap <leader>b <Plug>(go-run)  
-"au FileType go nmap <leader>t <Plug>(go-test)
-"au FileType go nmap <leader>c <Plug>(go-coverage)
-"
-"au FileType go nmap <Leader>ds <Plug>(go-def-split)
-"au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-"au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-"
-"
-"au FileType go nmap <Leader>s <Plug>(go-implements)
-"au FileType go nmap <Leader>e <Plug>(go-rename)
+
+" complete
+" set showmode shortmess+=c
+" set completeopt-=preview
+" set completeopt+=longest,menu,menuone,noinsert
+
+
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Use `[c` and `]c` to navigate diagnostics
+nmap <silent> <leader>cn <Plug>(coc-diagnostic-prev)
+nmap <silent> <leader>cp <Plug>(coc-diagnostic-next)
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+" Highlight symbol under cursor on CursorHold
+autocmd CursorHold * silent call CocActionAsync('highlight')
+
+" Remap for rename current word
+nmap <leader>rn <Plug>(coc-rename)
+
+" Remap for format selected region
+vmap <leader>=  <Plug>(coc-format-selected)
+nmap <leader>=  <Plug>(coc-format-selected)
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
+" Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
+vmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
+" Remap for do codeAction of current line
+nmap <leader>ac  <Plug>(coc-codeaction)
+" Fix autofix problem of current line
+nmap <leader>qf  <Plug>(coc-fix-current)
+
+" Use `:Format` to format current buffer
+command! -nargs=0 Format :call CocAction('format')
+
+" Use `:Fold` to fold current buffer
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+
+" Add diagnostic info for https://github.com/itchyny/lightline.vim
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status'
+      \ },
+      \ }
+
+
+
+" Using CocList
+" Show all diagnostics
+" nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+" " Manage extensions
+" nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+" " Show commands
+" nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+" " Find symbol of current document
+" nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+" " Search workspace symbols
+" nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+" " Do default action for next item.
+" nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+" " Do default action for previous item.
+" nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+" " Resume latest coc list
+" nnoremap <silent> <space>p  :<C-u>CocListResume<CR>

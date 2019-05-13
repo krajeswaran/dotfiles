@@ -56,3 +56,5 @@ if [ -f ${HOME}/.tnsrc ]; then
     source ${HOME}/.tnsrc 
 fi
 ###-tns-completion-end-###
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

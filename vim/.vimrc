@@ -203,9 +203,6 @@ nmap <leader>f7 :set foldlevel=7<CR>
 nmap <leader>f8 :set foldlevel=8<CR>
 nmap <leader>f9 :set foldlevel=9<CR>
 
-"clearing highlighted search
-nmap <silent> <leader>/ :nohlsearch<CR>
-
 " Shortcuts
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
@@ -418,8 +415,7 @@ nmap <leader><leader>w <Plug>(easymotion-overwin-w)
 nnoremap <silent> <leader>o :Files<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>p :History<CR>
-nnoremap <silent> <leader>/ :execute 'Ag ' . input('Ag/')<CR>
-nnoremap <silent> <leader>. :AgIn 
+nnoremap <silent> <leader>/ :Ag<CR>
 
 "----------------------------------------------
 " Plugin: mileszs/ack.vim

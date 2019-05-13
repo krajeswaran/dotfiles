@@ -19,7 +19,7 @@
         <value type="int" value="12"/>
         <value type="int" value="3"/>
         <value type="int" value="15"/>
-        <value type="int" value="7"/>
+        <value type="int" value="16"/>
         <value type="int" value="17"/>
         <value type="int" value="1"/>
         <value type="int" value="6"/>
@@ -44,20 +44,20 @@
   <property name="plugins" type="empty">
     <property name="plugin-2" type="string" value="actions">
       <property name="items" type="array">
-        <value type="string" value="+lock-screen"/>
-        <value type="string" value="+switch-user"/>
-        <value type="string" value="+separator"/>
-        <value type="string" value="+suspend"/>
-        <value type="string" value="+hibernate"/>
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
         <value type="string" value="-separator"/>
-        <value type="string" value="+shutdown"/>
-        <value type="string" value="+restart"/>
-        <value type="string" value="+separator"/>
-        <value type="string" value="-logout"/>
-        <value type="string" value="+logout-dialog"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-shutdown"/>
+        <value type="string" value="-restart"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="-logout-dialog"/>
       </property>
       <property name="ask-confirmation" type="bool" value="false"/>
-      <property name="appearance" type="uint" value="1"/>
+      <property name="appearance" type="uint" value="0"/>
       <property name="invert-orientation" type="bool" value="false"/>
     </property>
     <property name="plugin-3" type="string" value="tasklist">
@@ -75,34 +75,14 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
-        <value type="string" value="thunar"/>
-        <value type="string" value="vlc"/>
-        <value type="string" value="google-chrome"/>
-        <value type="string" value="kupfer.py"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="google-chrome-stable"/>
-        <value type="string" value="task manager"/>
         <value type="string" value="network"/>
-        <value type="string" value="orage"/>
-        <value type="string" value="zeal"/>
-        <value type="string" value="kde connect indicator"/>
-        <value type="string" value="synapse"/>
-        <value type="string" value="xfce terminal"/>
-        <value type="string" value="blueman-applet"/>
-        <value type="string" value="keepassxc"/>
-        <value type="string" value="clipman"/>
-        <value type="string" value="zoom"/>
-        <value type="string" value="update-notifier"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="gpick"/>
-        <value type="string" value="albert"/>
-        <value type="string" value="acestreamengine"/>
         <value type="string" value="slack"/>
-        <value type="string" value="skypeforlinux"/>
-        <value type="string" value="copyq"/>
-        <value type="string" value="qbittorrent"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="vlc"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
+      <property name="names-hidden" type="array">
+      </property>
     </property>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
@@ -155,6 +135,6 @@
         <value type="string" value="15201766781.desktop"/>
       </property>
     </property>
-    <property name="plugin-7" type="string" value="xfce4-clipman-plugin"/>
+    <property name="plugin-16" type="string" value="xfce4-clipman-plugin"/>
   </property>
 </channel>

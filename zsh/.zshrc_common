@@ -27,6 +27,7 @@ alias pygrep='find . -name "*.py" -o -name "*.ini" -o -name "*.yaml" -o -name "*
 alias gogrep='find . -name "*.go" -o -name "*.ini" -o -name "*.yaml" -o -name "*.json" -type f | xargs grep -nHi '
 alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.html" -o -name "*.*ss" -type f | grep -v ".node_modules" | grep -v ".meteor" | xargs grep -nHi '
 alias whitenoise='mpv av://lavfi:anoisesrc=color=pink'
+alias scanport='nmap -p 22 --open -sV 192.168.178.0/24'
 
 hvectoh264() {
     ffmpeg -xerror -hide_banner -threads 4 -i "$1"   -c:a copy -c:s copy -c:v libx264 "$2"
