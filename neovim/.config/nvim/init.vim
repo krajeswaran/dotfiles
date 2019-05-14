@@ -25,6 +25,7 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'julienr/vim-cellmode'
 " Plug 'neoclide/coc-tsserver', 
 " Plug 'neoclide/coc-tslint-plugin', 
 " Plug 'neoclide/coc-json', 
@@ -40,7 +41,6 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 " golang
 
 " python
-Plug 'Vigemus/iron.nvim'
 
 " javascript
 
