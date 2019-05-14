@@ -4,6 +4,7 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from optparse import OptionParser
 import json
+import sys
 
 
 class RequestHandler(BaseHTTPRequestHandler):
@@ -41,7 +42,7 @@ class RequestHandler(BaseHTTPRequestHandler):
     do_DELETE = do_GET
 
 def main():
-    port = 8080
+    port = 8080 if not len(sys.argv) > 1 else int(sys.argv[1])
     print('Listening on localhost:%s' % port)
     server = HTTPServer(('', port), RequestHandler)
     server.serve_forever()
