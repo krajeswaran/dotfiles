@@ -20,16 +20,15 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'mileszs/ack.vim'
 Plug 'junegunn/goyo.vim'
+Plug 'godlygeek/tabular'
+Plug 'airblade/vim-rooter'
+Plug 'christoomey/vim-tmux-navigator'
 
 "coding
-Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
-Plug 'airblade/vim-rooter'
 Plug 'sheerun/vim-polyglot'
-Plug 'benmills/vimux'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-buffer.vim'
@@ -51,9 +50,6 @@ Plug 'julienr/vim-cellmode'
 "Javascript
 
 "html
-
-"misc
-Plug 'godlygeek/tabular'
 
 "themes
 "Plug chriskempson/base16-vim
@@ -320,7 +316,7 @@ else
 endif
 set statusline+=%=
 set statusline+=%{'help'!=&filetype?bufnr('%'):''}
-set statusline+=\ %{fugitive#statusline()}
+" set statusline+=\ %{fugitive#statusline()}
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %{&fileformat}
@@ -418,19 +414,8 @@ nmap <leader><leader>w <Plug>(easymotion-overwin-w)
 nnoremap <silent> <leader>o :Files<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>p :History<CR>
-nnoremap <silent> <leader>/ :execute 'Ag ' . input('Ag/')<CR>
-nnoremap <silent> <leader>. :AgIn 
+nnoremap <silent> <leader>/ :Ag<CR>
 
-"----------------------------------------------
-" Plugin: mileszs/ack.vim
-"----------------------------------------------
-" Open ack
-nnoremap <leader>a :Ack!<space>
-
-" ack/ag
-if executable('ag')
-    let g:ackprg = 'ag'
-endif
 
 "----------------------------------------------
 " Plugin: ale
