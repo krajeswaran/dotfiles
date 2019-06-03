@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop
-recent=pavucontrol.desktop,xfce-settings-manager.desktop,xfce-wm-settings.desktop,xfce-ui-settings.desktop,xfce-session-settings.desktop,exo-terminal-emulator.desktop,xfce-display-settings.desktop,firefox.desktop,exo-web-browser.desktop,switch-user.desktop
+recent=xfce-session-settings.desktop,exo-terminal-emulator.desktop,xfce-display-settings.desktop,xfce-settings-manager.desktop,firefox.desktop,exo-web-browser.desktop,libreoffice-startcenter.desktop,switch-user.desktop
 button-title=Applications
 button-icon=open-menu-symbolic
 button-single-row=true
@@ -19,7 +19,7 @@ display-recent-default=false
 position-search-alternate=false
 position-commands-alternate=false
 position-categories-alternate=false
-menu-width=431
+menu-width=400
 menu-height=500
 menu-opacity=100
 command-settings=xfce4-settings-manager
