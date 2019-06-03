@@ -12,7 +12,10 @@ fi
 echo "---------------- Removing packages  -------------------------"
 proceed
 if [ $?	-eq 0 ]; then
-    sudo apt remove --purge $(<${BINPATH}/nope.txt)
+	for app in $(cat ${HOME}/dotfiles/bin/bin/nope.txt)
+	do
+            sudo apt remove --purge $app
+	done
 fi
 
 echo "---------------- Upgrading installed packages  -------------------------"
@@ -25,7 +28,10 @@ echo "---------------- Installing packages  -------------------------"
 proceed
 if [ $?	-eq 0 ]; then
     echo "list --------- " ${PACKAGES}
-    sudo apt install $(<${BINPATH}/apps.txt)	
+	for app in $(cat ${HOME}/dotfiles/bin/bin/apps.txt)
+	do
+	    sudo apt install -y $app	
+	done
 fi
 
 echo "---------------- Making user dirs -------------------------"

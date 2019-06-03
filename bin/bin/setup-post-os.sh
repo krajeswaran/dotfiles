@@ -22,7 +22,7 @@ ln -s ~thesaneone/.zfun* .
 ln -s ~thesaneone/.fzf* .
 
 echo install google chrome. setup firefox/chrome sync addons
-echo install cool utils: fd, rg, diff-so-fancy, albert
+echo install cool utils: fd, rg, bat, prettyping, albert
 echo install pyenv/pip packages: pgcli http-prompt neovim ipython jedi
 echo "install js/npm packages: npm(already installed with node) term"
 echo "swap caps:escape make sure is working"

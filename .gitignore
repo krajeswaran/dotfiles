@@ -7,3 +7,9 @@
 mpv/**/watch_later/**
 localapps/**/chrome*
 localapps/**/mimeapps*
+albert/.config/albert/core.db
+albert/.config/albert/last_used_version
+albert/.config/albert/Qt*
+ssh/.ssh/id_rsa*
+ssh/.ssh/known*
+tmux/.tmux/resurrect/tmux_resurrect_*

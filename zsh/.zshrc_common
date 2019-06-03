@@ -10,7 +10,7 @@ alias llm="ls -larth | less -R"
 alias rm='rm -i'
 alias revo="ssh thesaneone@thesanerevo"
 alias router="ssh root@192.168.1.1"
-alias box="mosh thesaneone@thesanebox"
+alias box="ssh thesaneone@thesanebox"
 alias diskusage="du -h -d 1"
 alias sshfs='sshfs -C -o reconnect,workaround=all'
 # newly born hostname, child or project?
@@ -26,6 +26,8 @@ alias jgrep='find . -name "*.java" -o -name "*.xml" -o -name "*.properties" -typ
 alias pygrep='find . -name "*.py" -o -name "*.ini" -o -name "*.yaml" -o -name "*.conf" -type f | xargs grep -nHi '
 alias gogrep='find . -name "*.go" -o -name "*.ini" -o -name "*.yaml" -o -name "*.json" -type f | xargs grep -nHi '
 alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.html" -o -name "*.*ss" -type f | grep -v ".node_modules" | grep -v ".meteor" | xargs grep -nHi '
+alias whitenoise='mpv av://lavfi:anoisesrc=color=pink'
+alias scanport='nmap -p 22 --open -sV 192.168.178.0/24'
 
 hvectoh264() {
     ffmpeg -xerror -hide_banner -threads 4 -i "$1"   -c:a copy -c:s copy -c:v libx264 "$2"
@@ -49,3 +51,4 @@ if [ -f ~/.zshrc_work ]; then
     source ~/.zshrc_work
 fi
 
+command -v bat >/dev/null 2>&1 && alias cat="bat" 
