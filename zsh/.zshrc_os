@@ -3,6 +3,7 @@
 export ANDROID_HOME=${HOME}/src/android-sdk
 # export GRADLE_HOME=${HOME}/src/gradle
 # export GEM_PATH=${HOME}/.gem/ruby/2.0.0
+export GOROOT=/usr/local/go
 export GOPATH=${HOME}/gopath
 export NODE_PATH=${HOME}/.node/lib/modules:$NODE_PATH
 

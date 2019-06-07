@@ -1,7 +1,7 @@
 git
 vim-nox
 vim-gtk
-cscope
+global
 exuberant-ctags
 mpv
 curl

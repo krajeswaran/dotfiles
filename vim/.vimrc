@@ -29,30 +29,22 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'sheerun/vim-polyglot'
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-buffer.vim'
+Plug 'ajh17/VimCompletesMe'
 Plug 'wellle/tmux-complete.vim'
-Plug 'yami-beta/asyncomplete-omni.vim'
-Plug 'prabirshrestha/asyncomplete-file.vim'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'skywind3000/gutentags_plus'
 
 "python
-"Plug davidhalter/jedi 
-"Plug 'davidhalter/jedi-vim'
 Plug 'julienr/vim-cellmode'
 
 "Go
 "Plug 'fatih/vim-go'                            " Go support
-"Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' } " Go auto completion
-"Plug 'zchee/deoplete-go', { 'do': 'make'}      " Go auto completion
-"Plug 'sebdah/vim-delve'
 
 "Javascript
 
 "html
 
 "themes
-"Plug chriskempson/base16-vim
 Plug 'w0ng/vim-hybrid'
 
 call plug#end()
@@ -60,10 +52,6 @@ call plug#end()
 "----------------------------------------------
 " General settings
 "----------------------------------------------
-"set python path separate from venvs
-let g:python_host_prog = '/usr/bin/python2'
-let g:python3_host_prog = '/usr/bin/python3'
-
 set mouse=v                 " automatically enable mouse usage
 set go+=a
 set splitbelow
@@ -324,77 +312,50 @@ set statusline+=\ %l:%c
 set statusline+=\ 
 
 "----------------------------------------------
-" Plugin: prabirshrestha/asyncomplete
+" Plugin: ajh17/VimCompletesMe
 "----------------------------------------------
 set showmode shortmess+=c
 set completeopt-=preview
-set completeopt+=longest,menu,menuone,noinsert
-"
-" <TAB>: completion.
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+set completeopt+=longest,menu,menuone
 
-imap <c-space> <Plug>(asyncomplete_force_refresh)
+" turn omni func for all
+set omnifunc=syntaxcomplete#Complete
 
-function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
+" tmux config
+let g:tmuxcomplete#trigger = 'completefunc'
 
-inoremap <silent><expr> <TAB>
-  \ pumvisible() ? "\<C-n>" :
-  \ <SID>check_back_space() ? "\<TAB>" :
-  \ asyncomplete#force_refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+autocmd FileType markdown,text setlocal complete+=k/usr/share/dict/words
+autocmd FileType * let b:vcm_tab_complete = "user"
 
-"let g:asyncomplete_remove_duplicates = 1
+"----------------------------------------------
+" Plugin: gutentags
+"----------------------------------------------
+let g:gutentags_project_root = ['package.json', '.root', '.git/', 'venv/', 'vendor/']
 
-"let g:asyncomplete_smart_completion = 1
-"let g:asyncomplete_auto_popup = 1
+let g:gutentags_ctags_tagfile = '.tags'
 
-call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
-    \ 'name': 'buffer',
-    \ 'whitelist': ['*'],
-    \ 'blacklist': ['go'],
-    \ 'completor': function('asyncomplete#sources#buffer#completor'),
-    \ }))
-
-let g:tmuxcomplete#asyncomplete_source_options = {
-            \ 'name':      'tmuxcomplete',
-            \ 'whitelist': ['*'],
-            \ 'config': {
-            \     'splitmode':      'words',
-            \     'filter_prefix':   1,
-            \     'show_incomplete': 1,
-            \     'sort_candidates': 0,
-            \     'scrollback':      0,
-            \     'truncate':        0
-            \     }
-            \ }
-
-call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
-			\ 'name': 'omni',
-			\ 'whitelist': ['*'],
-			\ 'blacklist': ['c', 'cpp', 'html'],
-			\ 'completor': function('asyncomplete#sources#omni#completor')
-			\  }))
-
-au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
-    \ 'name': 'file',
-    \ 'whitelist': ['*'],
-    \ 'priority': 10,
-    \ 'completor': function('asyncomplete#sources#file#completor')
-    \ }))
-
-
-" -- Enable omni as a last resort
-if has("autocmd") && exists("+omnifunc")
-	autocmd Filetype *
-				\	if &omnifunc == "" |
-				\		setlocal omnifunc=syntaxcomplete#Complete |
-				\	endif
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+if !isdirectory(s:vim_tags)
+   silent! call mkdir(s:vim_tags, 'p')
 endif
+
+let g:gutentags_modules = []
+if executable('ctags')
+    let g:gutentags_modules += ['ctags']
+endif
+if executable('gtags-cscope') && executable('gtags')
+    let g:gutentags_modules += ['gtags_cscope']
+endif
+
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+let g:gutentags_auto_add_gtags_cscope = 0
+
+" change focus to quickfix window after search (optional).
+let g:gutentags_plus_switch = 1
 
 
 "----------------------------------------------
@@ -404,7 +365,6 @@ endif
 map  <leader><leader>w <Plug>(easymotion-bd-w)
 nmap <leader><leader>w <Plug>(easymotion-overwin-w)
 
-
 "----------------------------------------------
 " Plugin: 'junegunn/fzf.vim'
 "----------------------------------------------
@@ -413,29 +373,6 @@ nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>p :History<CR>
 nnoremap <silent> <leader>/ :Ag<CR>
 
-
-"----------------------------------------------
-" Plugin: ale
-"----------------------------------------------
-" ALE
-" let g:ale_statusline_format = ['✖ %d', '⚠ %d', '⬥']
-" function! LinterStatus() abort
-"     let l:counts = ale#statusline#Count(bufnr(''))
-
-"     let l:all_errors = l:counts.error + l:counts.style_error
-"     let l:all_non_errors = l:counts.total - l:all_errors
-
-"     return l:counts.total == 0 ? 'OK' : printf(
-"     \   '%dW %dE',
-"     \   all_non_errors,
-"     \   all_errors
-"     \)
-" endfunction
-"----------------------------------------------
-" Plugin: sebdah/vim-delve
-"----------------------------------------------
-" Set the Delve backend.
-"let g:delve_backend = "native"
 
 "----------------------------------------------
 " Plugin: 'terryma/vim-multiple-cursors'
@@ -448,119 +385,10 @@ let g:multi_cursor_skip_key='<C-b>'
 "----------------------------------------------
 let g:rooter_change_directory_for_non_project_files = 'current'
 let g:rooter_silent_chdir = 1
-let g:rooter_patterns = ['.vimroot', '.git/', 'venv/', 'vendor/']
+let g:rooter_patterns = g:gutentags_project_root
 
 augroup vimrc_rooter
     autocmd VimEnter * :Rooter
 augroup END
 
-
-"----------------------------------------------
-" Language: Golang
-"----------------------------------------------
-set autowrite
-"autocmd BufRead $GOPATH/src/*.go
-"        \ :GoGuruScope $GOPATH/src/maze/
-"
-"" Run goimports when running gofmt
-"let g:go_fmt_command = "goimports"
-"
-"" Set neosnippet as snippet engine
-""let g:go_snippet_engine = "neosnippet"
-"
-"" Enable syntax highlighting per default
-"let g:go_highlight_types = 1
-"let g:go_highlight_fields = 1
-"let g:go_highlight_functions = 1
-"let g:go_highlight_methods = 1
-"let g:go_highlight_structs = 1
-"let g:go_highlight_operators = 1
-"let g:go_highlight_build_constraints = 1
-"let g:go_highlight_extra_types = 1
-"
-"" Show the progress when running :GoCoverage
-"let g:go_echo_command_info = 1
-"
-"" Show type information
-"let g:go_auto_type_info = 1
-"
-"" Highlight variable uses
-"let g:go_auto_sameids = 1
-"
-"" Fix for location list when vim-go is used together with Syntastic
-"let g:go_list_type = "quickfix"
-"
-"" Add the failing test name to the output of :GoTest
-"let g:go_test_show_name = 1
-"
-"" gometalinter configuration
-"let g:go_metalinter_command = ""
-"let g:go_metalinter_deadline = "5s"
-"let g:go_metalinter_enabled = [
-"			\ 'deadcode',
-"			\ 'gas',
-"			\ 'goconst',
-"			\ 'gocyclo',
-"			\ 'golint',
-"			\ 'gosimple',
-"			\ 'ineffassign',
-"			\ 'vet',
-"			\ 'vetshadow'
-"			\]
-"
-"" Set whether the JSON tags should be snakecase or camelcase.
-"let g:go_addtags_transform = "snakecase"
-"
-"" " neomake configuration for Go.
-"" let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
-"" let g:neomake_go_gometalinter_maker = {
-"" 			\ 'args': [
-"" 			\   '--tests',
-"" 			\   '--enable-gc',
-"" 			\   '--concurrency=3',
-"" 			\   '--fast',
-"" 			\   '-D', 'aligncheck',
-"" 			\   '-D', 'dupl',
-"" 			\   '-D', 'gocyclo',
-"" 			\   '-D', 'gotype',
-"" 			\   '-E', 'misspell',
-"" 			\   '-E', 'unused',
-"" 			\   '%:p:h',
-"" 			\ ],
-"" 			\ 'append_file': 0,
-"" 			\ 'errorformat':
-"" 			\   '%E%f:%l:%c:%trror: %m,' .
-"" 			\   '%W%f:%l:%c:%tarning: %m,' .
-"" 			\   '%E%f:%l::%trror: %m,' .
-"" 			\   '%W%f:%l::%tarning: %m'
-"" 			\ }
-"
-"" Mappings
-"au FileType go nmap <F8> :GoMetaLinter<cr>
-"au FileType go nmap <F9> :GoCoverageToggle -short<cr>
-"au FileType go nmap <F10> :GoTest -short<cr>
-"au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
-"au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
-"au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
-"au FileType go nmap <leader>gt :GoDeclsDir<cr>
-"au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
-"au FileType go nmap <leader>gd <Plug>(go-def)
-"au FileType go nmap <leader>gdv <Plug>(go-def-vertical)
-"au FileType go nmap <leader>gdh <Plug>(go-def-split)
-"au FileType go nmap <leader>gD <Plug>(go-doc)
-"au FileType go nmap <leader>gDv <Plug>(go-doc-vertical)
-"
-"au FileType go nmap <leader>r <Plug>(go-rename)
-"" who just builds
-"au FileType go nmap <leader>b <Plug>(go-run)  
-"au FileType go nmap <leader>t <Plug>(go-test)
-"au FileType go nmap <leader>c <Plug>(go-coverage)
-"
-"au FileType go nmap <Leader>ds <Plug>(go-def-split)
-"au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-"au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-"
-"
-"au FileType go nmap <Leader>s <Plug>(go-implements)
-"au FileType go nmap <Leader>e <Plug>(go-rename)
 

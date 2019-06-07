@@ -126,7 +126,7 @@
     <property name="plugin-17" type="string" value="power-manager-plugin"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676;vlc"/>
+      <property name="mpris-players" type="string" value="mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance13264;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676;vlc"/>
     </property>
     <property name="plugin-5" type="string" value="whiskermenu"/>
     <property name="plugin-8" type="string" value="showdesktop"/>
