@@ -118,4 +118,3 @@ units
 subliminal
 keepassxc
 drive
-golang

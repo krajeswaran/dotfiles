@@ -107,7 +107,7 @@
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
         <property name="add-primary-clipboard" type="bool" value="false"/>
-        <property name="max-texts-in-history" type="uint" value="20"/>
+        <property name="max-texts-in-history" type="uint" value="50"/>
         <property name="history-ignore-primary-clipboard" type="bool" value="true"/>
         <property name="max-images-in-history" type="uint" value="1"/>
         <property name="enable-actions" type="bool" value="false"/>
@@ -137,7 +137,7 @@
     </property>
     <property name="plugin-10" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15200892765.desktop"/>
+        <value type="string" value="15605017001.desktop"/>
       </property>
     </property>
     <property name="plugin-11" type="string" value="launcher">

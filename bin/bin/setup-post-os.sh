@@ -23,7 +23,9 @@ ln -s ~thesaneone/.fzf* .
 
 echo install google chrome. setup firefox/chrome sync addons
 echo install cool utils: fd, rg, bat, prettyping, albert
-echo install pyenv/pip packages: pgcli http-prompt neovim ipython jedi
+echo install umake, install umake go, node
+echo install snap, install code..
+echo install pyenv/pip packages: pgcli http-prompt ipython 
 echo "install js/npm packages: npm(already installed with node) term"
 echo "swap caps:escape make sure is working"
-echo setup kwin for compositing
+echo setup kwin/compositing
