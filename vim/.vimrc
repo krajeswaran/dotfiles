@@ -29,7 +29,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'sheerun/vim-polyglot'
-Plug 'ajh17/VimCompletesMe'
+Plug 'lifepillar/vim-mucomplete'
 Plug 'wellle/tmux-complete.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'skywind3000/gutentags_plus'
@@ -312,11 +312,14 @@ set statusline+=\ %l:%c
 set statusline+=\ 
 
 "----------------------------------------------
-" Plugin: ajh17/VimCompletesMe
+" Plugin: lifepillar/vim-mucomplete
 "----------------------------------------------
 set showmode shortmess+=c
+set belloff+=ctrlg
 set completeopt-=preview
-set completeopt+=longest,menu,menuone
+set complete-=t
+set complete-=i
+set completeopt+=menuone,noinsert,noselect
 
 " turn omni func for all
 set omnifunc=syntaxcomplete#Complete
@@ -324,14 +327,25 @@ set omnifunc=syntaxcomplete#Complete
 " tmux config
 let g:tmuxcomplete#trigger = 'completefunc'
 
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-autocmd FileType markdown,text setlocal complete+=k/usr/share/dict/words
-autocmd FileType * let b:vcm_tab_complete = "user"
+autocmd FileType markdown,text setlocal spell spelllang=en_us
+
+imap <expr> <down> mucomplete#extend_fwd("\<down>")
+let g:mucomplete#chains = {
+			\ 'default' : ['path', 'omni', 'keyn', 'dict', 'uspl', 'user'],
+			\ 'markdown' : ['keyn', 'dict', 'uspl', 'user', 'path'],
+			\ 'text' : ['keyn', 'dict', 'uspl', 'user', 'path'],
+			\ 'python' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'ruby' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'javascript' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'java' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'html' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'css' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ }
 
 "----------------------------------------------
 " Plugin: gutentags
 "----------------------------------------------
-let g:gutentags_project_root = ['package.json', '.root', '.git/', 'venv/', 'vendor/']
+let g:gutentags_project_root = ['package.json', 'Readme.md', 'readme.md', 'README.md', '.root', '.git/', 'venv/', 'vendor/']
 
 let g:gutentags_ctags_tagfile = '.tags'
 
