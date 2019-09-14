@@ -1,3 +1,3 @@
 TerminalEmulator=xfce4-terminal
-WebBrowser=debian-sensible-browser
 
+WebBrowser=google-chrome

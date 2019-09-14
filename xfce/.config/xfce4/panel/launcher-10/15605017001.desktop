@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Firefox Developer Edition
+Icon=/home/thesaneone/.local/share/umake/web/firefox-devy/browser/chrome/icons/default/default128.png
+TryExec=/home/thesaneone/.local/share/umake/web/firefox-devy/firefox
+Exec=/home/thesaneone/.local/share/umake/web/firefox-devy/firefox
+Comment=Firefox Aurora with Developer tools
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=Firefox Developer Edition
+X-XFCE-Source=file:///home/thesaneone/.local/share/applications/firefox-developer.desktop

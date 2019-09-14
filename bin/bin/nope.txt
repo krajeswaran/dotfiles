@@ -17,3 +17,6 @@ gnome-*
 sgml-base
 libgnome-games-support-common
 whoopsie
+unattended-upgrades
+libgnome-desktop*
+snapd

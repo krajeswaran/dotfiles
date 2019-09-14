@@ -4,7 +4,7 @@ After=suspend.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh -c "echo 10 > /sys/class/backlight/nv_backlight/brightness"
+ExecStart=/bin/sh -c "echo 1000 > /sys/class/backlight/intel_backlight/brightness"
 
 [Install]
 WantedBy=suspend.target

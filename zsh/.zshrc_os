@@ -1,9 +1,8 @@
 # export JAVA_HOME=/Library/Java/Home
 # export GRAILS_HOME=${HOME}/src/grails-2.4.3
 export ANDROID_HOME=${HOME}/src/android-sdk
-# export GRADLE_HOME=${HOME}/src/gradle
+export GRADLE_HOME=${HOME}/src/gradle
 # export GEM_PATH=${HOME}/.gem/ruby/2.0.0
-export GOROOT=/usr/local/go
 export GOPATH=${HOME}/gopath
 export NODE_PATH=${HOME}/.node/lib/modules:$NODE_PATH
 
@@ -26,15 +25,11 @@ export NODE_PATH=${HOME}/.node/lib/modules:$NODE_PATH
 alias ls="ls --color"
 alias vi="vim"
 alias ejectusb="udisksctl power-off -b "
-export PATH=/usr/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${GOPATH}/bin:${GOROOT}/bin:${HOME}/.node/bin:${HOME}/.local/bin:${PATH}
+export PATH=/usr/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${GOPATH}/bin:${HOME}/.node/bin:${HOME}/.local/bin:${PATH}
 export MANPATH=${HOME}/.node/share/man:${MANPATH}
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-proj() {
-	cd $(find -L ~/src -maxdepth 1 -type d | fzf)
-}
 
 xo() {
 	xdg-open "$@" 2>/dev/null
@@ -52,10 +47,11 @@ export PATH="${HOME}/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-###-tns-completion-start-###
-if [ -f ${HOME}/.tnsrc ]; then 
-    source ${HOME}/.tnsrc 
-fi
-###-tns-completion-end-###
-
+# yarn 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Ubuntu make installation of Ubuntu Make binary symlink
+export PATH=/home/thesaneone/.local/share/umake/bin:$PATH
+
+# Ubuntu make installation of Nodejs Lang
+export PATH=/home/thesaneone/.local/share/umake/nodejs/nodejs-lang/bin:/home/thesaneone/.npm_modules/bin:$PATH

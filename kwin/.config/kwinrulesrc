@@ -1,21 +1,4 @@
 [1]
-Description=Window settings for firefox
-clientmachine=thesanelap
-clientmachinematch=0
-noborder[$d]
-noborderrule[$d]
-size=1399,820
-sizerule=4
-title=MySessions Options - Mozilla Firefox
-titlematch=0
-types=1
-windowrole=browser
-windowrolematch=1
-wmclass=navigator firefox
-wmclasscomplete=true
-wmclassmatch=1
-
-[2]
 Description=Settings for urxvt
 clientmachine[$d]
 clientmachinematch[$d]
@@ -31,6 +14,23 @@ windowrolematch[$d]
 wmclass=urxvt
 wmclasscomplete=false
 wmclassmatch=1
+
+[2]
+Description[$d]
+clientmachine[$d]
+clientmachinematch[$d]
+noborder[$d]
+noborderrule[$d]
+size[$d]
+sizerule[$d]
+title[$d]
+titlematch[$d]
+types[$d]
+windowrole[$d]
+windowrolematch[$d]
+wmclass[$d]
+wmclasscomplete[$d]
+wmclassmatch[$d]
 
 [3]
 Description[$d]
@@ -78,4 +78,4 @@ wmclasscomplete[$d]
 wmclassmatch[$d]
 
 [General]
-count=2
+count=1

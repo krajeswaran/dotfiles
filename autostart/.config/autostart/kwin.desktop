@@ -7,5 +7,5 @@ Comment=kwin
 Exec=kwin --replace --no-kactivities
 StartupNotify=false
 Terminal=false
-Hidden=false
+Hidden=true
 

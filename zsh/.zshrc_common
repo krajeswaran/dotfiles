@@ -28,6 +28,8 @@ alias gogrep='find . -name "*.go" -o -name "*.ini" -o -name "*.yaml" -o -name "*
 alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.html" -o -name "*.*ss" -type f | grep -v ".node_modules" | grep -v ".meteor" | xargs grep -nHi '
 alias whitenoise='mpv av://lavfi:anoisesrc=color=pink'
 alias scanport='nmap -p 22 --open -sV 192.168.178.0/24'
+alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | fzy | sed 's/^ *//' | cut -f1 -d' '"
+command -v bat >/dev/null 2>&1 && alias cat="bat" 
 
 hvectoh264() {
     ffmpeg -xerror -hide_banner -threads 4 -i "$1"   -c:a copy -c:s copy -c:v libx264 "$2"
@@ -41,6 +43,14 @@ findandreplace() {
     find . -name "$1" -type f -print0 | xargs -0 perl -p -i -e "$2"
 }
 
+proj() {
+	cd $(fd . ~/src -d1 -td | fzy)
+}
+
+fcd(){
+  cd "$(fd -td -H -d7 | fzy)"
+}
+
 # os specific
 if [ -f ~/.zshrc_os ]; then
     source ~/.zshrc_os
@@ -50,5 +60,3 @@ fi
 if [ -f ~/.zshrc_work ]; then
     source ~/.zshrc_work
 fi
-
-command -v bat >/dev/null 2>&1 && alias cat="bat" 

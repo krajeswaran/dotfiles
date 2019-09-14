@@ -12,7 +12,7 @@ fi
 echo "---------------- Removing packages  -------------------------"
 proceed
 if [ $?	-eq 0 ]; then
-	for app in $(cat ${HOME}/dotfiles/bin/bin/nope.txt)
+	for app in $(cat ${HOME}/dotfiles/bin/bin/nope.txt | sed 's/#.*//' | tr -d '[:blank:]')
 	do
             sudo apt remove --purge $app
 	done
@@ -28,7 +28,7 @@ echo "---------------- Installing packages  -------------------------"
 proceed
 if [ $?	-eq 0 ]; then
     echo "list --------- " ${PACKAGES}
-	for app in $(cat ${HOME}/dotfiles/bin/bin/apps.txt)
+	for app in $(cat ${HOME}/dotfiles/bin/bin/apps.txt | sed 's/#.*//' | tr -d '[:blank:]')
 	do
 	    sudo apt install -y $app	
 	done

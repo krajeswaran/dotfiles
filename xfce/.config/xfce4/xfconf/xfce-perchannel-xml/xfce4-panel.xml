@@ -44,21 +44,22 @@
   <property name="plugins" type="empty">
     <property name="plugin-2" type="string" value="actions">
       <property name="items" type="array">
-        <value type="string" value="+lock-screen"/>
-        <value type="string" value="+switch-user"/>
-        <value type="string" value="+separator"/>
-        <value type="string" value="+suspend"/>
-        <value type="string" value="+hibernate"/>
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
         <value type="string" value="-separator"/>
-        <value type="string" value="+shutdown"/>
-        <value type="string" value="+restart"/>
-        <value type="string" value="+separator"/>
-        <value type="string" value="-logout"/>
-        <value type="string" value="+logout-dialog"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-shutdown"/>
+        <value type="string" value="-restart"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="-logout-dialog"/>
+        <value type="string" value="-hybrid-sleep"/>
       </property>
       <property name="ask-confirmation" type="bool" value="false"/>
-      <property name="appearance" type="uint" value="1"/>
-      <property name="invert-orientation" type="bool" value="false"/>
+      <property name="appearance" type="uint" value="0"/>
+      <property name="invert-orientation" type="bool" value="true"/>
     </property>
     <property name="plugin-3" type="string" value="tasklist">
       <property name="show-handle" type="bool" value="false"/>
@@ -67,7 +68,8 @@
       <property name="switch-workspace-on-unminimize" type="bool" value="false"/>
       <property name="show-wireframes" type="bool" value="false"/>
       <property name="include-all-workspaces" type="bool" value="true"/>
-      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="show-labels" type="bool" value="true"/>
     </property>
     <property name="plugin-15" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -103,6 +105,12 @@
         <value type="string" value="qbittorrent"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="gpick"/>
+        <value type="string" value="keepassxc"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="networkmanager applet"/>
+      </property>
     </property>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
@@ -126,7 +134,7 @@
     <property name="plugin-17" type="string" value="power-manager-plugin"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance13264;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676;vlc"/>
+      <property name="mpris-players" type="string" value="chrome.instance16520;chrome.instance30884;chrome.instance31815;chrome.instance3410;mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance13264;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676;vlc"/>
     </property>
     <property name="plugin-5" type="string" value="whiskermenu"/>
     <property name="plugin-8" type="string" value="showdesktop"/>

@@ -16,8 +16,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/goyo.vim'
@@ -35,14 +33,10 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'skywind3000/gutentags_plus'
 
 "python
-Plug 'julienr/vim-cellmode'
+Plug 'julienr/vim-cellmode', {'for': ['python', 'shell', 'ruby', 'javascript']}
 
 "Go
 "Plug 'fatih/vim-go'                            " Go support
-
-"Javascript
-
-"html
 
 "themes
 Plug 'w0ng/vim-hybrid'
@@ -380,13 +374,224 @@ map  <leader><leader>w <Plug>(easymotion-bd-w)
 nmap <leader><leader>w <Plug>(easymotion-overwin-w)
 
 "----------------------------------------------
-" Plugin: 'junegunn/fzf.vim'
+" Plugin: srstevenson/vim-picker, copied/modded
 "----------------------------------------------
-nnoremap <silent> <leader>o :Files<CR>
-nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>p :History<CR>
-nnoremap <silent> <leader>/ :Ag<CR>
+let g:picker_selector_executable = 'fzy'
+let g:picker_split = 'botright'
+let g:picker_height = 10
 
+function! ListFilesCommand() abort
+    " Return a shell command suitable for listing the files in the
+    " current directory, based on whether the user has specified a
+    " custom find tool, and if not, whether the current directory is a
+    " Git repository and if fd is installed.
+    "
+    " Returns
+    " -------
+    " String
+    "     Shell command to list files in the current directory.
+    if executable('fd')
+        return 'fd --color never --type f'
+    else
+        return 'find . -type f'
+    endif
+endfunction
+
+function! ListBuffersCommand() abort
+    " Return a shell command which will list current listed buffers.
+    "
+    " Returns
+    " -------
+    " String
+    "     Shell command to list current listed buffers.
+    let l:bufnrs = range(1, bufnr('$'))
+
+    " Filter out buffers which do not exist or are not listed, and the
+    " current buffer.
+    let l:bufnrs = filter(l:bufnrs, 'buflisted(v:val) && v:val != bufnr("%")')
+
+    let l:bufnames = map(l:bufnrs, 'bufname(v:val)')
+	let l:oldfiles = filter(map(copy(v:oldfiles), 'expand(v:val)'), 'filereadable(v:val)')
+
+    return 'echo "' . join(l:bufnames + l:oldfiles, "\n"). '"'
+endfunction
+
+function! ListTagsCommand() abort
+    " Return a shell command which will list known tags.
+    "
+    " Returns
+    " -------
+    " String
+    "     Shell command to list known tags.
+    return 'grep -vh "^!_TAG_" ' . join(tagfiles()) . ' | cut -f 1 | sort -u'
+endfunction
+
+function! s:PickerTermopen(list_command, callback) abort
+    " Open a Neovim terminal emulator buffer in a new window using termopen,
+    " execute list_command piping its output to the fuzzy selector, and call
+    " callback.on_select with the item selected by the user as the first
+    " argument.
+    "
+    " Parameters
+    " ----------
+    " list_command : String
+    "     Shell command to generate list user will choose from.
+    " callback.on_select : String -> Void
+    "     Function executed with the item selected by the user as the
+    "     first argument.
+    let l:callback = {
+                \ 'window_id': win_getid(),
+                \ 'filename': tempname(),
+                \ 'callback': a:callback
+                \ }
+
+    let l:directory = getcwd()
+    if has_key(a:callback, 'cwd') && isdirectory(a:callback.cwd)
+        let l:callback['cwd'] = a:callback.cwd
+        let l:directory = a:callback.cwd
+    endif
+
+    function! l:callback.on_exit(job_id, data, event) abort
+		" Close the current window, deleting buffers that are no longer displayed.
+		set bufhidden=delete
+		close!
+        call win_gotoid(l:self.window_id)
+        if filereadable(l:self.filename)
+            try
+                call l:self.callback.on_select(readfile(l:self.filename)[0])
+            catch /E684/
+            endtry
+            call delete(l:self.filename)
+        endif
+    endfunction
+
+    execute g:picker_split g:picker_height . 'new'
+    let l:term_command = a:list_command . '|' . g:picker_selector_executable .
+                \ ' ' . '--lines=10' . '>' . l:callback.filename
+    let s:picker_job_id = termopen(l:term_command, l:callback)
+    let b:picker_statusline = 'Pick [pwd: ' . l:directory . ']'
+    setlocal nonumber norelativenumber statusline=%{b:picker_statusline}
+    setfiletype picker
+    startinsert
+endfunction
+
+function! s:PickerTermStart(list_command, callback) abort
+    " Open a Vim terminal emulator buffer in a new window using term_start,
+    " execute list_command piping its output to the fuzzy selector, and call
+    " callback.on_select with the item selected by the user as the first
+    " argument.
+    "
+    " Parameters
+    " ----------
+    " list_command : String
+    "     Shell command to generate list user will choose from.
+    " callback.on_select : String -> Void
+    "     Function executed with the item selected by the user as the
+    "     first argument.
+    let l:callback = {
+                \ 'window_id': win_getid(),
+                \ 'filename': tempname(),
+                \ 'callback': a:callback
+                \ }
+
+    let l:directory = getcwd()
+    if has_key(a:callback, 'cwd') && isdirectory(a:callback.cwd)
+        let l:callback['cwd'] = a:callback.cwd
+        let l:directory = a:callback.cwd
+    endif
+
+    function! l:callback.exit_cb(...) abort
+        close!
+        call win_gotoid(l:self.window_id)
+        if filereadable(l:self.filename)
+            try
+                call l:self.callback.on_select(readfile(l:self.filename)[0])
+            catch /E684/
+            endtry
+            call delete(l:self.filename)
+        endif
+    endfunction
+
+    let l:options = {
+                \ 'curwin': 1,
+                \ 'exit_cb': l:callback.exit_cb,
+                \ }
+
+    if strlen(l:directory)
+        let l:options.cwd = l:directory
+    endif
+
+    execute g:picker_split g:picker_height . 'new'
+    let l:term_command = a:list_command . '|' . g:picker_selector_executable .
+                \ ' ' . '--lines=10' . '>' . l:callback.filename
+    let s:picker_buf_num = term_start([&shell, &shellcmdflag, l:term_command],
+                \ l:options)
+    let b:picker_statusline = 'Pick [pwd: ' . l:directory . ']'
+    setlocal nonumber norelativenumber statusline=%{b:picker_statusline}
+    setfiletype picker
+    startinsert
+endfunction
+
+
+function! s:Picker(list_command, callback) abort
+    " Invoke callback.on_select on the line of output of list_command
+    " selected by the user, using PickerTermopen() in Neovim and
+    " PickerSystemlist() otherwise.
+    "
+    " Parameters
+    " ----------
+    " list_command : String
+    "     Shell command to generate list user will choose from.
+    " callback.on_select : String -> Void
+    "     Function executed with the item selected by the user as the
+    "     first argument.
+    if exists('*termopen')
+        call s:PickerTermopen(a:list_command, a:callback)
+    else 
+        call s:PickerTermStart(a:list_command, a:callback)
+    endif
+endfunction
+
+function! PickFile(list_command, vim_command, ...) abort
+    " Create a callback that executes a Vim command against the user's
+    " selection escaped for use as a filename, and invoke Picker() with
+    " that callback.
+    "
+    " Parameters
+    " ----------
+    " list_command : String
+    "     Shell command to generate list user will choose from.
+    " vim_command : String
+    "     Readable representation of the Vim command which will be
+    "     invoked against the user's selection, for display in the
+    "     statusline.
+    let l:callback = {'vim_command': a:vim_command}
+
+    function! l:callback.on_select(selection) abort
+		exec l:self.vim_command fnameescape(a:selection)
+    endfunction
+
+    call s:Picker(a:list_command, l:callback)
+endfunction
+
+function! Rg()
+	let pattern = input('Rg/')
+
+    let l:callback = {'vim_command': 'edit'}
+
+    function! l:callback.on_select(selection) abort
+		let l:fname = split(a:selection, ':')[0]
+		exec l:self.vim_command fnameescape(l:fname)
+    endfunction
+
+    call s:Picker('rg "' . pattern . '"', l:callback)
+endfunction
+
+nmap <unique> <leader>e :call PickFile(ListFilesCommand(), 'edit')<CR>
+nmap <unique> <leader>v :call PickFile(ListFilesCommand(), 'vsplit')<CR>
+nmap <unique> <leader>p :call PickFile(ListBuffersCommand(), 'edit')<CR>
+nmap <unique> <leader>t :call PickFile(ListTagsCommand(), 'vsplit')<CR>
+nmap <unique> <leader>/ :call Rg()<CR>
 
 "----------------------------------------------
 " Plugin: 'terryma/vim-multiple-cursors'

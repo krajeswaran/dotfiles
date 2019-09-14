@@ -1,18 +1,3 @@
-#-----------------------------
-# Source some stuff
-#-----------------------------
-
-if [[ -f "${HOME}/.zfunctions/git-status.zsh" ]]; then
-    source "${HOME}/.zfunctions/git-status.zsh"
-fi
-
-if [[ -f "${HOME}/.zfunctions/zsh-autosuggestions.zsh" ]]; then
-    source "${HOME}/.zfunctions/zsh-autosuggestions.zsh"
-fi 
-
-fpath=(/usr/local/share/zsh-completions $fpath)
-fpath=( "$HOME/.zfunctions" $fpath )
-
 #------------------------------
 # History stuff
 #------------------------------
@@ -82,6 +67,24 @@ bindkey '\e.' insert-last-word
 
 export KEYTIMEOUT=1
 
+#-----------------------------
+# Source some stuff
+#-----------------------------
+
+if [[ -f "${HOME}/.zfunctions/git-status.zsh" ]]; then
+    source "${HOME}/.zfunctions/git-status.zsh"
+fi
+
+if [[ -f "${HOME}/.zfunctions/zsh-autosuggestions.zsh" ]]; then
+    source "${HOME}/.zfunctions/zsh-autosuggestions.zsh"
+fi 
+
+if [[ -f "${HOME}/.zfunctions/fzy.zsh" ]]; then
+    source "${HOME}/.zfunctions/fzy.zsh"
+fi 
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=( "$HOME/.zfunctions" $fpath )
 
 
 #------------------------------
@@ -349,7 +352,3 @@ prompt purity
 if [[ -s "${ZDOTDIR:-$HOME}/.zshrc_common" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc_common"
 fi
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

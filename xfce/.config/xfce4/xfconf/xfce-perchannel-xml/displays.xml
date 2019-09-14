@@ -25,6 +25,7 @@
         <property name="X" type="int" value="0"/>
         <property name="Y" type="int" value="0"/>
       </property>
+      <property name="EDID" type="string" value="ccd65a4191a5deb1e789358ab8c2caa0f04035be"/>
     </property>
     <property name="HDMI-1" type="string" value="2. Dell 22&quot;">
       <property name="Active" type="bool" value="true"/>
@@ -40,8 +41,21 @@
     </property>
     <property name="default" type="string" value="default">
       <property name="Active" type="bool" value="true"/>
-      <property name="Resolution" type="string" value="1024x768"/>
-      <property name="RefreshRate" type="double" value="61.000000"/>
+      <property name="Resolution" type="string" value="640x480"/>
+      <property name="RefreshRate" type="double" value="73.000000"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="LVDS-1-1" type="string" value="Laptop">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="ccd65a4191a5deb1e789358ab8c2caa0f04035be"/>
+      <property name="Resolution" type="string" value="1600x900"/>
+      <property name="RefreshRate" type="double" value="59.993734"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
@@ -52,4 +66,6 @@
     </property>
   </property>
   <property name="Notify" type="bool" value="true"/>
+  <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="IdentityPopups" type="bool" value="false"/>
 </channel>

@@ -21,11 +21,8 @@ ln -s ~thesaneone/.zsh* .
 ln -s ~thesaneone/.zfun* .
 ln -s ~thesaneone/.fzf* .
 
-echo install google chrome. setup firefox/chrome sync addons
-echo install cool utils: fd, rg, bat, prettyping, albert
-echo install umake, install umake go, node
-echo install snap, install code..
+echo install umake, install umake go, node, firefox-dev
+echo setup google chrome. setup firefox/chrome sync addons
 echo install pyenv/pip packages: pgcli http-prompt ipython 
-echo "install js/npm packages: npm(already installed with node) term"
-echo "swap caps:escape make sure is working"
-echo setup kwin/compositing
+echo swap caps:escape make sure is working
+echo setup compositing/vblank/mpv/xfdashboard
