@@ -27,7 +27,6 @@ lib32stdc++6
 lib32ncurses5
 bleachbit
 djmount
-redshift
 ranger
 xfce4-clipman-plugin
 xfce4-battery-plugin
@@ -39,7 +38,6 @@ xfce4-screenshooter
 ristretto
 highlight
 htop
-rbenv
 openjdk-8-jdk
 ruby 
 perl
@@ -54,25 +52,18 @@ python3-ipdb
 python-requests
 virtualenv 
 silversearcher-ag
-ack
 dconf-tools
 snapd
-powertop
 deborphan
 wakeonlan
 tasksel
 lnav
 powertop
-moka-icon-theme
 greybird-gtk-theme
 blackbird-gtk-theme
-qtcurve
-fonts-crosextra-caladea
-fonts-crosextra-carlito
+elementary-xfce-icon-theme
 fonts-noto
 fonts-cabin
-fonts-roboto
-fonts-roboto-slab
 fonts-go
 fonts-font-awesome
 fonts-hack-ttf
@@ -81,6 +72,7 @@ fonts-freefont-ttf
 fonts-lobstertwo
 fonts-comfortaa
 fonts-firacode
+ttf-mscorefonts-installer
 python-pip
 virtualenv
 i965-va-driver
@@ -111,8 +103,6 @@ llvm
 libncurses5-dev
 libncursesw5-dev
 xz-utils
-compton
-compton-conf
 tk-dev
 tree
 units
@@ -130,3 +120,5 @@ gotop
 google-chrome-stable
 ubuntu-make
 code
+xfdashboard
+xfdashboard-plugins

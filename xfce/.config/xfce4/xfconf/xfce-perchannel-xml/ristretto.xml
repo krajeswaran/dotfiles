@@ -8,7 +8,7 @@
     <property name="bgcolor-override" type="bool" value="true"/>
     <property name="height" type="uint" value="440"/>
     <property name="width" type="uint" value="600"/>
-    <property name="maximize-on-startup" type="bool" value="false"/>
+    <property name="maximize-on-startup" type="bool" value="true"/>
     <property name="toolbar" type="empty">
       <property name="show" type="bool" value="false"/>
     </property>

@@ -13,7 +13,7 @@
     <property name="dpms-on-battery-sleep" type="uint" value="20"/>
     <property name="dpms-on-battery-off" type="uint" value="50"/>
     <property name="show-panel-label" type="empty"/>
-    <property name="brightness-switch-restore-on-exit" type="int" value="1"/>
+    <property name="brightness-switch-restore-on-exit" type="int" value="0"/>
     <property name="brightness-switch" type="int" value="0"/>
     <property name="sleep-button-action" type="uint" value="1"/>
     <property name="hibernate-button-action" type="uint" value="2"/>

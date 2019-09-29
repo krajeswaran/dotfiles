@@ -117,8 +117,6 @@ set pastetoggle=<F2>                       " no indent on paste
 " other niceties
 set mousemodel=popup
 
-set grepformat=%f:%l:%m
-
 set diffopt=filler,context:4,vertical
 set makeprg=g++\ \\\--std=c++0x\ \\\\{$*}
 
@@ -138,6 +136,24 @@ let mapleader = "\<Space>"
 
 " quick save
 nnoremap <Leader>x :wq<CR>
+
+" grep
+set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+set grepformat="%f:%l:%c:%m"
+fun! s:RgSearch(txt)
+  silent! exe 'grep! ' . a:txt
+  if len(getqflist())
+    exe 'copen'
+    redraw!
+  else
+    cclose
+    redraw!
+    echo "No match found for " . a:txt
+  endif
+endfun
+command! -nargs=1 -complete=tag RgSearch :call s:RgSearch(<q-args>)
+
+nnoremap <unique> <Leader>f :RgSearch<Space>
 
 " Making it so ; works like : for commands. Saves typing and eliminates :W style typos due to lazy holding shift.
 nnoremap ; :
@@ -584,7 +600,7 @@ function! Rg()
 		exec l:self.vim_command fnameescape(l:fname)
     endfunction
 
-    call s:Picker('rg "' . pattern . '"', l:callback)
+    call s:Picker('rg --color never -M 120 "' . pattern . '"', l:callback)
 endfunction
 
 nmap <unique> <leader>e :call PickFile(ListFilesCommand(), 'edit')<CR>
