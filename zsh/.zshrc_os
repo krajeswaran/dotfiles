@@ -55,3 +55,9 @@ export PATH=/home/thesaneone/.local/share/umake/bin:$PATH
 
 # Ubuntu make installation of Nodejs Lang
 export PATH=/home/thesaneone/.local/share/umake/nodejs/nodejs-lang/bin:/home/thesaneone/.npm_modules/bin:$PATH
+
+function docker_prune() {
+	docker system df
+	docker container prune
+	docker image prune
+}

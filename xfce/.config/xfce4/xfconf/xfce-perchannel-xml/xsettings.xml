@@ -34,7 +34,7 @@
     <property name="MenuImages" type="bool" value="false"/>
     <property name="ButtonImages" type="bool" value="false"/>
     <property name="MenuBarAccel" type="empty"/>
-    <property name="CursorThemeName" type="string" value="DMZ-Black"/>
+    <property name="CursorThemeName" type="string" value="default"/>
     <property name="CursorThemeSize" type="empty"/>
     <property name="DecorationLayout" type="string" value=":maximize,close"/>
   </property>

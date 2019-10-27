@@ -14,7 +14,6 @@
         <value type="int" value="8"/>
         <value type="int" value="10"/>
         <value type="int" value="9"/>
-        <value type="int" value="13"/>
         <value type="int" value="11"/>
         <value type="int" value="12"/>
         <value type="int" value="3"/>
@@ -24,6 +23,7 @@
         <value type="int" value="1"/>
         <value type="int" value="6"/>
         <value type="int" value="4"/>
+        <value type="int" value="13"/>
         <value type="int" value="2"/>
       </property>
       <property name="autohide-behavior" type="uint" value="0"/>
@@ -106,6 +106,7 @@
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="slack"/>
         <value type="string" value="network"/>
         <value type="string" value="zoom"/>
         <value type="string" value="gpick"/>
@@ -136,7 +137,7 @@
     <property name="plugin-17" type="string" value="power-manager-plugin"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance16520;chrome.instance30884;chrome.instance31815;chrome.instance3410;mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance13264;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676;vlc"/>
+      <property name="mpris-players" type="string" value="chrome.instance16520;chrome.instance30884;chrome.instance31815;chrome.instance3410;chromium.instance20567;chromium.instance26178;chromium.instance2896;chromium.instance3890;mps-youtube.instance10487;mps-youtube.instance10550;mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance11959;mps-youtube.instance12188;mps-youtube.instance13074;mps-youtube.instance13264;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676;vlc"/>
     </property>
     <property name="plugin-5" type="string" value="whiskermenu"/>
     <property name="plugin-8" type="string" value="showdesktop"/>
@@ -160,11 +161,7 @@
         <value type="string" value="15200893087.desktop"/>
       </property>
     </property>
-    <property name="plugin-13" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="15201766781.desktop"/>
-      </property>
-    </property>
     <property name="plugin-7" type="string" value="xfce4-clipman-plugin"/>
+    <property name="plugin-13" type="string" value="xfce4-timer-plugin"/>
   </property>
 </channel>

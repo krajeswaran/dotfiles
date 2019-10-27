@@ -36,27 +36,26 @@ proceed_yesorno() {
 if [ "$1" = "$S2" ]; then
     echo "WARNING: This will wreak hell and havoc upon thy drive."
     proceed_yesorno
-    echo "Please enter the full path of the archive to restore -- "        
-    read fileName
     echo "Just sit back and watch the fireworks.This might take a while. When it is done, you have a fully restored system!"
-    tar xzvpf $fileName -C /
+    tar xzvpf "$2" -C "$3"/
 
     #Just to make sure that all excluded directories are re-created
     echo "Creating excluded directories"    
-    mkdir /proc
-    mkdir /lost+found
-    mkdir /mnt
-    mkdir /sys
-    mkdir /dev
-    mkdir /tmp
-    chmod 777 /tmp
-    mkdir /run
-    mkdir /media
-    mkdir /var/log
-    mkdir /var/cache
-    mkdir /var/tmp
-    mkdir /var/run
-    mkdir /var/crash
+    mkdir "$3"/proc
+    mkdir "$3"/lost+found
+    mkdir "$3"/mnt
+    mkdir "$3"/sys
+    mkdir "$3"/dev
+    mkdir "$3"/tmp
+    mkdir "$3"/run
+    mkdir "$3"/media
+    mkdir "$3"/var/log
+    mkdir "$3"/var/cache
+    mkdir "$3"/var/tmp
+    mkdir "$3"/var/crash
+    chmod 777 "$3"/tmp
+    ln -s "$3"/run "$3"/var/run
+    ln -s "$3"/run/lock "$3"/var/run/lock
     echo "Remember to edit /etc/fstab and /boot files !!!"
     echo "-----------------#-----*----------#@****** ALL DONE! HAVE FUN! OR NOT! -----------##########--------------------------"
     exit 
