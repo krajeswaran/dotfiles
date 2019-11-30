@@ -26,5 +26,5 @@ proj() {
 
 export GOPATH=${HOME}/gopath
 export JAVA_HOME=/usr/lib/jvm/default
-export GEMPATH=/usr/lib/ruby/gems/2.2.0/bin:/home/thesaneone/.gem/ruby/2.1.0/bin
 export PATH=$PATH:$JAVA_HOME/bin:$GEMPATH:$GOPATH/bin:$HOME/bin
+alias fd="fdfind"
