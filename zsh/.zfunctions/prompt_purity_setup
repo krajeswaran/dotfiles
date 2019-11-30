@@ -34,7 +34,7 @@ prompt_purity_setup() {
 	autoload -Uz vcs_info
 
 	# show username@host if logged in through SSH
-	[[ "$SSH_CONNECTION" != '' ]] && prompt_purity_username='%m: '
+	[[ "$SSH_CONNECTION" != '' ]] && prompt_purity_username='%m '
 
 	ZSH_THEME_GIT_PROMPT_PREFIX=" %F{yellow}"
 	ZSH_THEME_GIT_PROMPT_SUFFIX="%b"
