@@ -1,3 +1,5 @@
 {
-"tslint.jsEnable": true
+"tslint.jsEnable": true,
+"git.enableGlobalStatus":false,
+"list.source.mru.defaultArgs": ["-A"]
 }

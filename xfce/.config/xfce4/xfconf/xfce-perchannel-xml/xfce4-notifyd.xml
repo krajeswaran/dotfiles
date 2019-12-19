@@ -15,6 +15,7 @@
       <value type="string" value="nm-applet"/>
       <value type="string" value="qBittorrent"/>
       <value type="string" value="Skype"/>
+      <value type="string" value="Slack"/>
       <value type="string" value="Studio"/>
       <value type="string" value="Thunar"/>
       <value type="string" value="thunar-volman"/>

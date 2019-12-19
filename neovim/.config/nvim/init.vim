@@ -1,7 +1,3 @@
-" TODO
-" - auto install coc plugins, install coc-snippet
-" - cleanup coc config: see reddit for inspiration
-" - add vim-rest-client
 "----------------------------------------------
 " Plugin management
 "
@@ -11,42 +7,52 @@
 "----------------------------------------------
 call plug#begin('~/.config/nvim/plugged')
 
-" General plugins
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-sensible'
+"general
+"Plug thesaneone/taskpaper.vim
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
-Plug 'godlygeek/tabular'
-Plug 'airblade/vim-rooter'
+Plug 'Lokaltog/vim-easymotion'
 Plug 'junegunn/goyo.vim'
+Plug 'airblade/vim-rooter'
+Plug 'christoomey/vim-tmux-navigator'
+
+"themes
+Plug 'w0ng/vim-hybrid'
 
 " Coding
-Plug 'mhinz/vim-signify'
+Plug 'airblade/vim-gitgutter'
 Plug 'rhysd/git-messenger.vim'
+Plug 'diepm/vim-rest-console'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'julienr/vim-cellmode'
-" Plug 'neoclide/coc-tsserver', 
-" Plug 'neoclide/coc-tslint-plugin', 
-" Plug 'neoclide/coc-json', 
-" Plug 'neoclide/coc-java', 
-" Plug 'neoclide/coc-gocode', 
-" Plug 'neoclide/coc-vetur',
-" Plug 'neoclide/coc-lists',
-" Plug 'neoclide/coc-css', 
-" Plug 'neoclide/coc-html', 
-" Plug 'neoclide/coc-python',
-" Plug 'neoclide/coc-highlight',
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc-git',{'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-lists',{'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-highlight',{'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc-dictionary',{'do': 'yarn install --frozen-lockfile'} "
+" use cocinstall instead
+Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
+
+" html
+Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
 
 " golang
+Plug 'josa42/coc-go', {'do': 'yarn install --frozen-lockfile'}
 
 " python
+Plug 'neoclide/coc-python',{'do': 'yarn install --frozen-lockfile'}
 
 " javascript
+Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc-vetur',{'do': 'yarn install --frozen-lockfile'}
+
+" java
+Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
+
 
 call plug#end()
 
@@ -57,16 +63,20 @@ call plug#end()
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 
-set mouse=a                 " automatically enable mouse usage
+set mouse=v                 " automatically enable mouse usage
 set go+=a
 set splitbelow
 set splitright
 set showfulltag
 set clipboard^=unnamed,unnamedplus
 scriptencoding utf-8
+set encoding=utf-8
+"imap ^V ^O"+p
+"set shellcmdflag=-ic
 set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
 set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
 "set virtualedit=onemore         " allow for cursor beyond last character
+set history=1000                " Store a ton of history (default is 20)
 set hidden                      " allow buffer switching without saving
 
 " Setting up the directories
@@ -79,32 +89,50 @@ if has('persistent_undo')
 	set undoreload=10000        "maximum number lines to save for undo on a buffer reload
 endif
 
+" Enable mouse if possible
+if has('mouse')
+	set mouse=a
+endif
+
+" Allow vim to set a custom font or color for a word
+syntax enable
 
 set wrap
 set linebreak
 set nolist  " list disables linebreak
 set textwidth=0
 set wrapmargin=0
+set backspace=indent,eol,start  " backspace for dummies
 set linespace=0                 " No extra spaces between rows
 set showmatch                   " show matching brackets/parenthesis
+set incsearch                   " find as you type search
 set hlsearch                    " highlight search terms
 set winminheight=0              " windows can be 0 line high
 set ignorecase                  " case insensitive search
 set smartcase                   " case sensitive when uc present
+set wildmenu                    " show list instead of just completing
 set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git,.idea  " MacOSX/Linux
 set whichwrap=b,s,h,l,<,>,[,]   " backspace and cursor keys wrap to
 set scrolljump=5                " lines to scroll when cursor leaves screen
+set scrolloff=2                 " minimum lines to keep above and below cursor
+"set foldenable                  " auto fold code
+"set list
+set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 
 " Formatting
+set autoindent                  " indent at the same level of the previous line
+set shiftwidth=4                " use indents of 4 spaces
+set expandtab                   " tabs are spaces, not tabs
+set tabstop=4                   " an indentation every four columns
+set softtabstop=4               " let backspace delete indent
+"set matchpairs+=<:>                " match, to be used with %
 set pastetoggle=<F2>                       " no indent on paste
-
+"set comments=sl:/*,mb:*,elx:*/  " auto format comment blocks
 
 " other niceties
 set mousemodel=popup
-
-set grepformat=%f:%l:%m
 
 set diffopt=filler,context:4,vertical
 set makeprg=g++\ \\\--std=c++0x\ \\\\{$*}
@@ -150,7 +178,7 @@ cmap W w
 cmap WQ wq
 cmap wQ wq
 cmap Q q
-
+cmap Tabe tabe
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
 nnoremap Y y$
@@ -191,8 +219,8 @@ map zh zH
 map <F7> :setlocal spell spelllang=en
 
 "jump error list easily
-map <silent> <leader>cn :cn<CR>zv
-map <silent> <leader>cp :cp<CR>zv
+"map <silent> <leader>cn :cn<CR>zv
+"map <silent> <leader>cp :cp<CR>zv
 
 "----------------------------------------------
 " Colors
@@ -201,16 +229,33 @@ set background=dark
 
 " fucking magenta autocomplete menu
 highlight Pmenu ctermbg=darkgrey
-highlight SignColumn ctermbg=NONE cterm=NONE guibg=NONE gui=NONE
 
 " flag bad whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
 highlight EndOfBuffer ctermbg=black ctermfg=black 
 
 "----------------------------------------------
+" GUI Settings 
+"----------------------------------------------
+" GVIM- (here instead of .gvimrc)
+set bg=dark
+if exists('g:fvim_loaded')
+	" FVimCursorSmoothMove v:true
+    " FVimCursorSmoothBlink v:true
+	set guifont=Hack:h15
+    colorscheme hybrid
+    set lines=30
+    highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
+	" Ctrl-ScrollWheel for zooming in/out
+    nnoremap <silent> <C-ScrollWheelUp> :set guifont=+<CR>
+    nnoremap <silent> <C-ScrollWheelDown> :set guifont=-<CR>
+    nnoremap <A-CR> :FVimToggleFullScreen<CR>
+endif
+
+"----------------------------------------------
 " Searching
 "----------------------------------------------
-set inccommand=split          " enables interactive search and replace
+"set inccommand=split          " enables interactive search and replace
 
 " These mappings will make it so that going to the next one in a search will
 " center on the line it's found in.
@@ -250,8 +295,9 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 "----------------------------------------------
 " Status line
 "----------------------------------------------
+set laststatus=2
 set statusline=
-if has('gui_running')
+if exists('g:fvim_loaded')
 	set statusline+=%#CursorColumn#
 else
 	set statusline+=%#Pmenu#
@@ -259,14 +305,14 @@ endif
 set statusline+=\ %f
 set statusline+=%{&modified?'\ +':''}
 set statusline+=%{&readonly?'\ ':''}
-if has('gui_running')
+if exists('g:fvim_loaded')
 	set statusline+=%#LineNr#
 else
 	set statusline+=%#PmenuSel#
 endif
 set statusline+=%=
-set statusline+=%{'help'!=&filetype?bufnr('%'):''}
 set statusline+=\ %{coc#status()}
+set statusline+=\ %{get(g:,'coc_git_status','')}
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %{&fileformat}
@@ -296,25 +342,11 @@ nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 
 "----------------------------------------------
-" Plugin: 'junegunn/fzf.vim'
-"----------------------------------------------
-nnoremap <silent> <leader>o :Files<CR>
-nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>p :History<CR>
-nnoremap <silent> <leader>/ :Ag<CR>
-
-"----------------------------------------------
-" Plugin: 'terryma/vim-multiple-cursors'
-"----------------------------------------------
-let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_skip_key='<C-b>'
-
-"----------------------------------------------
 " Plugin: vim-rooter
 "----------------------------------------------
 let g:rooter_change_directory_for_non_project_files = 'current'
 let g:rooter_silent_chdir = 1
-let g:rooter_patterns = ['.vimroot', '.git/', 'venv/', 'vendor/']
+let g:rooter_patterns = ['package.json', 'Readme.md', 'readme.md', 'README.md', '.vimroot', '.git/', 'venv/', 'vendor/']
 
 augroup vimrc_rooter
     autocmd VimEnter * :Rooter
@@ -324,12 +356,24 @@ augroup END
 "----------------------------------------------
 " Plugin: coc
 "----------------------------------------------
+" if hidden is not set, TextEdit might fail.
+set hidden
 
-" complete
-" set showmode shortmess+=c
-" set completeopt-=preview
-" set completeopt+=longest,menu,menuone,noinsert
+" Some servers have issues with backup files, see #649
+set nobackup
+set nowritebackup
 
+" Better display for messages
+set cmdheight=2
+
+" You will have bad experience for diagnostic messages when it's default 4000.
+set updatetime=300
+
+" don't give |ins-completion-menu| messages.
+set shortmess+=c
+
+" always show signcolumns
+"set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
@@ -338,7 +382,6 @@ inoremap <silent><expr> <TAB>
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -351,10 +394,12 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" Or use `complete_info` if your vim support it, like:
+" inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 
-" Use `[c` and `]c` to navigate diagnostics
-nmap <silent> <leader>cn <Plug>(coc-diagnostic-prev)
-nmap <silent> <leader>cp <Plug>(coc-diagnostic-next)
+" Use `[g` and `]g` to navigate diagnostics
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
@@ -380,7 +425,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Remap for format selected region
-vmap <leader>=  <Plug>(coc-format-selected)
+xmap <leader>=  <Plug>(coc-format-selected)
 nmap <leader>=  <Plug>(coc-format-selected)
 
 augroup mygroup
@@ -392,7 +437,7 @@ augroup mygroup
 augroup end
 
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-vmap <leader>a  <Plug>(coc-codeaction-selected)
+xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap for do codeAction of current line
@@ -400,41 +445,47 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+" Create mappings for function text object, requires document symbols feature of languageserver.
+xmap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap if <Plug>(coc-funcobj-i)
+omap af <Plug>(coc-funcobj-a)
+
+" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+" nmap <silent> <C-d> <Plug>(coc-range-select)
+" xmap <silent> <C-d> <Plug>(coc-range-select)
+
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
 
 " Use `:Fold` to fold current buffer
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
+" use `:OR` for organize import of current buffer
+command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
-" Add diagnostic info for https://github.com/itchyny/lightline.vim
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'cocstatus': 'coc#status'
-      \ },
-      \ }
-
-
+" Add status line support, for integration with other plugin, checkout `:h coc-status`
+" set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Using CocList
-" Show all diagnostics
-" nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
-" " Manage extensions
-" nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
-" " Show commands
-" nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
-" " Find symbol of current document
-" nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
-" " Search workspace symbols
-" nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
-" " Do default action for next item.
-" nnoremap <silent> <space>j  :<C-u>CocNext<CR>
-" " Do default action for previous item.
-" nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
-" " Resume latest coc list
-" nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+" Do default action for next item.
+nnoremap <unique> <leader>cn :<C-u>CocNext<CR>
+" Do default action for previous item.
+nnoremap <unique> <leader>cp  :<C-u>CocPrev<CR>
+nnoremap <unique> <leader>p  :<C-u>CocList mru<CR>
+nnoremap <unique> <leader>f  :<C-u>CocList files<CR>
+" Search workleader symbols
+nnoremap <unique> <leader>t  :<C-u>CocList -I symbols<cr>
+
+" grep word under cursor
+command! -nargs=+ -complete=custom,s:GrepArgs Rg exe 'CocList grep '.<q-args>
+
+function! s:GrepArgs(...)
+  let list = ['-S', '-smartcase', '-i', '-ignorecase', '-w', '-word',
+        \ '-e', '-regex', '-u', '-skip-vcs-ignores', '-t', '-extension']
+  return join(list, "\n")
+endfunction
+
+" Keymapping for grep word under cursor with interactive mode
+nnoremap <unique> <leader>/ :exe 'CocList -I --input='.input('Rg/').' grep'<CR>
+

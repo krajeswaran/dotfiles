@@ -137,24 +137,6 @@ let mapleader = "\<Space>"
 " quick save
 nnoremap <Leader>x :wq<CR>
 
-" grep
-set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
-set grepformat="%f:%l:%c:%m"
-fun! s:RgSearch(txt)
-  silent! exe 'grep! ' . a:txt
-  if len(getqflist())
-    exe 'copen'
-    redraw!
-  else
-    cclose
-    redraw!
-    echo "No match found for " . a:txt
-  endif
-endfun
-command! -nargs=1 -complete=tag RgSearch :call s:RgSearch(<q-args>)
-
-nnoremap <unique> <Leader>f :RgSearch<Space>
-
 " Making it so ; works like : for commands. Saves typing and eliminates :W style typos due to lazy holding shift.
 nnoremap ; :
 

@@ -106,6 +106,8 @@
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="task manager"/>
+        <value type="string" value="gigolo"/>
         <value type="string" value="slack"/>
         <value type="string" value="network"/>
         <value type="string" value="zoom"/>

@@ -8,6 +8,7 @@ Xft.antialias:  true
 Xft.rgba:       rgb
 Xft.hinting:    true
 Xft.hintstyle:  hintslight
+Xft*lcdfilter: lcddefault
 
 ! URxvt Options
 URxvt.depth: 32
@@ -25,26 +26,15 @@ URxvt.colorUL: #81A2BE
 URxvt.borderLess: True
 URxvt.iconFile: /usr/share/icons/Adwaita/scalable/apps/utilities-terminal-symbolic.svg
 ! font
-!!URxvt.cjkWidth: true
+!URxvt.cjkWidth: true
 URxvt.utf8: True
 URxvt.locale: True
-URxvt.font: xft:Fira\ Code\ Medium:size=11, xft:Monospace:size=11 
-URxvt.letterSpace: -1
+!URxvt.font: xft:Fira\ Code\ Medium:size=11, xft:Monospace:size=11 
+URxvt.font: xft:Hack:size=11 
+URxvt*letterSpace: -1
 ! ext.nsions
-URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select
-! cli.board
-URxvt.keysym.M-c: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
-URxvt.clipboard.copycmd:  xsel -ib
-URxvt.clipboard.pastecmd: xsel -ob
-! key.oard-select
-URxvt.keysym.M-Escape: perl:keyboard-select:activate
-URxvt.keysym.M-s: perl:keyboard-select:search
-! url.select
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.autocopy: true
-URxvt.url-select.button: 1
+URxvt.perl-lib: /usr/lib/x86_64-linux-gnu/urxvt/perl
+URxvt.perl-ext-common: default,selection-to-clipboard
 
 ! do not scroll with output
 URxvt*scrollTtyOutput: false

@@ -16,7 +16,7 @@
   <property name="plugins" type="empty">
     <property name="hot-corner" type="empty">
       <property name="activation-corner" type="string" value="XFDASHBOARD_HOT_CORNER_SETTINGS_ACTIVATION_CORNER_BOTTOM_LEFT"/>
-      <property name="activation-radius" type="int" value="69"/>
+      <property name="activation-radius" type="int" value="30"/>
       <property name="activation-duration" type="int64" value="100"/>
     </property>
   </property>

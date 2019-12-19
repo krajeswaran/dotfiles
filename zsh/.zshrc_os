@@ -4,7 +4,7 @@ export ANDROID_HOME=${HOME}/src/android-sdk
 export GRADLE_HOME=${HOME}/src/gradle
 # export GEM_PATH=${HOME}/.gem/ruby/2.0.0
 export GOPATH=${HOME}/gopath
-export NODE_PATH=${HOME}/.node/lib/modules:$NODE_PATH
+export NODE_PATH=${HOME}/.node/lib/node_modules:$NODE_PATH
 
 ## proxy stuff
 #proxy_on() 
@@ -54,7 +54,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=/home/thesaneone/.local/share/umake/bin:$PATH
 
 # Ubuntu make installation of Nodejs Lang
-export PATH=/home/thesaneone/.local/share/umake/nodejs/nodejs-lang/bin:/home/thesaneone/.npm_modules/bin:$PATH
+export PATH=/home/thesaneone/.local/share/umake/nodejs/nodejs-lang/bin:/home/thesaneone/.npm_modules/bin:node_modules/.bin:$PATH
 
 function docker_prune() {
 	docker system df
