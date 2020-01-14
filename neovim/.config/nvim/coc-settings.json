@@ -1,5 +1,105 @@
 {
-"tslint.jsEnable": true,
-"git.enableGlobalStatus":false,
-"list.source.mru.defaultArgs": ["-A"]
+  // suggest
+  "suggest.enablePreview": true,
+  "suggest.timeout": 500,
+  "suggest.snippetIndicator": "🌟",
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+  "suggest.removeDuplicateItems": true,
+  "suggest.completionItemKindLabels": {
+    "keyword": "\uf1de",
+    "variable": "\ue79b",
+    "value": "\uf89f",
+    "operator": "\u03a8",
+    "function": "\u2A15",
+    "reference": "\ufa46",
+    "constant": "\uf8fe",
+    "method": "\uf09a",
+    "struct": "\ufb44",
+    "class": "\uf0e8",
+    "interface": "\uf417",
+    "text": "\u2663",
+    "enum": "\uf435",
+    "enumMember": "\uf02b",
+    "module": "\uf530",
+    "color": "\ue22b",
+    "property": "\ue624",
+    "field": "\uf6a6",
+    "unit": "\uf475",
+    "event": "\ufacd",
+    "file": "\uf723",
+    "folder": "\uf114",
+    "snippet": "\ue60b",
+    "typeParameter": "\uf728",
+    "default": "\uf29c"
+  },
+  "codeLens.enable": true,
+  "coc.preferences.jumpCommand": "drop",
+  "coc.preferences.rootPatterns": [
+    "package.json",
+    "Readme.md",
+    "readme.md",
+    "README.md",
+    ".vimroot",
+    ".git/",
+    "venv/",
+    "vendor/"
+  ],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "javascriptreact",
+    "typescriptreact",
+    "css",
+    "golang",
+    "html",
+    "javascript",
+    "typescript"
+  ],
+  //Snippet
+  "coc.preferences.snippetStatusText": "Ⓢ ",
+  //CocList
+  "list.source.files.defaultOptions": [
+    "--auto-preview"
+  ],
+  "list.source.outline.defaultOptions": [
+    "--auto-preview"
+  ],
+  "list.source.mru.defaultArgs": [
+    "-A"
+  ],
+  //multiple curssors
+  "cursors.nextKey": "<C-n>",
+  "cursors.previousKey": "<C-p>",
+  "cursors.cancelKey": "<esc>",
+  "diagnostic.checkCurrentLine": true,
+  // languageserver
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": [
+        "go.mod",
+        ".git/",
+        "vendor/"
+      ],
+      "filetypes": [
+        "go"
+      ]
+    }
+  },
+  // explorer
+  "explorer.icon.expanded": "▾",
+  "explorer.icon.collapsed": "▸",
+  "explorer.width": 30,
+  // golang
+  "go.goplsOptions": {
+    "usePlaceholders": true,
+    "completeUnimported": true,
+    "deepCompletion": true
+  },
+  // python
+  "python.jediEnabled": false,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black"
 }

@@ -35,6 +35,12 @@ xo() {
 	xdg-open "$@" 2>/dev/null
 }
 
+function docker_prune() {
+	docker system df
+	docker container prune
+	docker image prune
+}
+
 export USE_CCACHE=1
 export CCACHE_COMPRESS=1
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
@@ -53,11 +59,16 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # Ubuntu make installation of Ubuntu Make binary symlink
 export PATH=/home/thesaneone/.local/share/umake/bin:$PATH
 
+# Ubuntu make installation of Go Lang
+PATH=/home/thesaneone/.local/share/umake/go/go-lang/bin:$PATH
+export GOROOT=/home/thesaneone/.local/share/umake/go/go-lang
+
 # Ubuntu make installation of Nodejs Lang
 export PATH=/home/thesaneone/.local/share/umake/nodejs/nodejs-lang/bin:/home/thesaneone/.npm_modules/bin:node_modules/.bin:$PATH
 
-function docker_prune() {
-	docker system df
-	docker container prune
-	docker image prune
-}
+if [ -e /home/thesaneone/.nix-profile/etc/profile.d/nix.sh ]; then . /home/thesaneone/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# for nix pkgs
+export LOCALE_ARCHIVE_2_11="$(nix-build --no-out-link "<nixpkgs>" -A glibcLocales)/lib/locale/locale-archive"
+export LOCALE_ARCHIVE_2_27="$(nix-build --no-out-link "<nixpkgs>" -A glibcLocales)/lib/locale/locale-archive"
+export LOCALE_ARCHIVE="/usr/bin/locale"

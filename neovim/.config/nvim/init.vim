@@ -5,6 +5,12 @@
 " instructions:
 " https://github.com/junegunn/vim-plug
 "----------------------------------------------
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.config/nvim/plugged')
 
 "general
@@ -18,50 +24,54 @@ Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
 
 "themes
-Plug 'w0ng/vim-hybrid'
+Plug 'arcticicestudio/nord-vim'
+"Plug 'w0ng/vim-hybrid'
 
 " Coding
+Plug 'tpope/vim-fugitive'
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'airblade/vim-gitgutter'
-Plug 'rhysd/git-messenger.vim'
-Plug 'diepm/vim-rest-console'
+Plug 'diepm/vim-rest-console', { 'for': ['markdown', 'text'] }
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
-Plug 'julienr/vim-cellmode'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc-git',{'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-lists',{'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-highlight',{'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc-dictionary',{'do': 'yarn install --frozen-lockfile'} "
-" use cocinstall instead
-Plug 'weirongxu/coc-explorer', {'do': 'yarn install --frozen-lockfile'}
+Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
 
-" html
-Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
-
-" golang
-Plug 'josa42/coc-go', {'do': 'yarn install --frozen-lockfile'}
-
-" python
-Plug 'neoclide/coc-python',{'do': 'yarn install --frozen-lockfile'}
-
-" javascript
-Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-Plug 'neoclide/coc-vetur',{'do': 'yarn install --frozen-lockfile'}
-
-" java
-Plug 'neoclide/coc-java', {'do': 'yarn install --frozen-lockfile'}
-
+"golang
+Plug 'fatih/vim-go'
 
 call plug#end()
+
+"coc
+let g:coc_global_extensions = ['coc-explorer', 'coc-lists', 'coc-json', 'coc-tsserver', 'coc-tslint-plugin', 'coc-highlight', 'coc-snippets', 'coc-html', 'coc-css', 'coc-python', 'coc-go', 'coc-vetur', ]
 
 "----------------------------------------------
 " General settings
 "----------------------------------------------
 "set python path separate from venvs
 let g:python_host_prog = '/usr/bin/python2'
-let g:python3_host_prog = '/usr/bin/python3'
+let g:python3_host_prog = '/home/thesaneone/.pyenv/shims/python3'
+
+" Disable vim distribution plugins
+let g:loaded_getscript = 1
+let g:loaded_getscriptPlugin = 1
+let g:loaded_gzip = 1
+let g:loaded_logiPat = 1
+let g:loaded_matchit = 1
+let g:loaded_matchparen = 1
+let g:loaded_netrw = 1 
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+let g:loaded_rrhelper = 1  " ?
+let g:loaded_shada_plugin = 1  " ?
+let g:loaded_tar = 1
+let g:loaded_tarPlugin = 1
+let g:loaded_tutor_mode_plugin = 1
+let g:loaded_2html_plugin = 1
+let g:loaded_vimball = 1
+let g:loaded_vimballPlugin = 1
+let g:loaded_zip = 1
+let g:loaded_zipPlugin = 1
 
 set mouse=v                 " automatically enable mouse usage
 set go+=a
@@ -74,6 +84,10 @@ set encoding=utf-8
 "imap ^V ^O"+p
 "set shellcmdflag=-ic
 set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
+
+" set title for terminal
+set title
+
 set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
 "set virtualedit=onemore         " allow for cursor beyond last character
 set history=1000                " Store a ton of history (default is 20)
@@ -157,11 +171,6 @@ nnoremap <Leader>x :wq<CR>
 " Making it so ; works like : for commands. Saves typing and eliminates :W style typos due to lazy holding shift.
 nnoremap ; :
 
-" Easier moving in tabs and windows
-map <C-S-Down> <C-W>j<C-W>_
-map <C-S-Up> <C-W>k<C-W>_
-map <C-S-Right> <C-W>l<C-W>_
-map <C-S-Left> <C-W>h<C-W>_
 
 " Wrapped lines goes down/up to next row, rather than next line in file.
 nnoremap j gj
@@ -174,10 +183,8 @@ map <S-H> gT
 map <S-L> gt
 
 " Stupid shift key fixes
-cmap W w
 cmap WQ wq
 cmap wQ wq
-cmap Q q
 cmap Tabe tabe
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
@@ -222,34 +229,22 @@ map <F7> :setlocal spell spelllang=en
 "map <silent> <leader>cn :cn<CR>zv
 "map <silent> <leader>cp :cp<CR>zv
 
+"execute macros over visual range
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction
+
 "----------------------------------------------
 " Colors
 "----------------------------------------------
 set background=dark
 
-" fucking magenta autocomplete menu
-highlight Pmenu ctermbg=darkgrey
-
-" flag bad whitespace
-highlight BadWhitespace ctermbg=red guibg=darkred
-highlight EndOfBuffer ctermbg=black ctermfg=black 
-
-"----------------------------------------------
-" GUI Settings 
-"----------------------------------------------
-" GVIM- (here instead of .gvimrc)
-set bg=dark
-if exists('g:fvim_loaded')
-	" FVimCursorSmoothMove v:true
-    " FVimCursorSmoothBlink v:true
-	set guifont=Hack:h15
-    colorscheme hybrid
-    set lines=30
-    highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
-	" Ctrl-ScrollWheel for zooming in/out
-    nnoremap <silent> <C-ScrollWheelUp> :set guifont=+<CR>
-    nnoremap <silent> <C-ScrollWheelDown> :set guifont=-<CR>
-    nnoremap <A-CR> :FVimToggleFullScreen<CR>
+if has('termguicolors')
+  set termguicolors " Use true colours
+  colorscheme nord
 endif
 
 "----------------------------------------------
@@ -295,37 +290,50 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 "----------------------------------------------
 " Status line
 "----------------------------------------------
+function! DiagnosticStatus() abort
+  let info = get(b:, 'coc_diagnostic_info', {})
+  if empty(info) | return '' | endif
+  let msgs = []
+  if get(info, 'error', 0)
+    call add(msgs, 'E' . info['error'])
+  endif
+  if get(info, 'warning', 0)
+    call add(msgs, 'W' . info['warning'])
+  endif
+  return join(msgs, ' ')
+endfunction
+
+function! GitStatus()
+    if exists('*fugitive#head')
+        return (fugitive#head() != '' ? ' '.fugitive#head() : '')
+    endif
+endfunction
+
 set laststatus=2
 set statusline=
-if exists('g:fvim_loaded')
-	set statusline+=%#CursorColumn#
-else
-	set statusline+=%#Pmenu#
-endif
+set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=%{&modified?'\ +':''}
 set statusline+=%{&readonly?'\ ':''}
-if exists('g:fvim_loaded')
-	set statusline+=%#LineNr#
-else
-	set statusline+=%#PmenuSel#
-endif
+set statusline+=%#LineNr#
 set statusline+=%=
-set statusline+=\ %{coc#status()}
-set statusline+=\ %{get(g:,'coc_git_status','')}
+set statusline+=\ %{DiagnosticStatus()}
+set statusline+=\ %{GitStatus()}
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %{&fileformat}
 " set statusline+=%#NonText#
-set statusline+=%#Normal#
+" set statusline+=%#Normal#
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 
 
 "----------------------------------------------
-" Plugin: rhysd/git-messenger
+" Plugin: nathanaelkane/vim-indent-guides
 "----------------------------------------------
-let g:git_messenger_include_diff="current"
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_start_level = 3
+let g:indent_guides_exclude_filetypes = ['help', 'coc-explorer']
 
 "----------------------------------------------
 " Plugin: christoomey/vim-tmux-navigator
@@ -352,20 +360,18 @@ augroup vimrc_rooter
     autocmd VimEnter * :Rooter
 augroup END
 
+"----------------------------------------------
+" Plugin: vim-go
+"----------------------------------------------
+" disable vim-go :GoDef short cut (gd)
+" this is handled by LanguageClient [LC]
+let g:go_def_mapping_enabled = 0
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 "----------------------------------------------
 " Plugin: coc
 "----------------------------------------------
-" if hidden is not set, TextEdit might fail.
-set hidden
-
-" Some servers have issues with backup files, see #649
-set nobackup
-set nowritebackup
-
-" Better display for messages
-set cmdheight=2
-
 " You will have bad experience for diagnostic messages when it's default 4000.
 set updatetime=300
 
@@ -411,7 +417,9 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
+  if coc#util#has_float()
+    call coc#util#float_hide()
+  elseif (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
   else
     call CocAction('doHover')
@@ -419,7 +427,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
+"autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
@@ -472,8 +480,8 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 nnoremap <unique> <leader>cn :<C-u>CocNext<CR>
 " Do default action for previous item.
 nnoremap <unique> <leader>cp  :<C-u>CocPrev<CR>
-nnoremap <unique> <leader>p  :<C-u>CocList mru<CR>
-nnoremap <unique> <leader>f  :<C-u>CocList files<CR>
+nnoremap <unique> <leader>f  :<C-u>CocList mru<CR>
+nnoremap <unique> <leader>p  :<C-u>CocList files<CR>
 " Search workleader symbols
 nnoremap <unique> <leader>t  :<C-u>CocList -I symbols<cr>
 
@@ -488,4 +496,7 @@ endfunction
 
 " Keymapping for grep word under cursor with interactive mode
 nnoremap <unique> <leader>/ :exe 'CocList -I --input='.input('Rg/').' grep'<CR>
+
+" coc explorer
+nmap <unique> ge :CocCommand explorer<CR>
 

@@ -7,7 +7,8 @@
 #
 
 ZSH_FZY_TMUX="${0:A:h}/fzy-tmux"
-ZSH_FZY=$(command -v fzy)
+ZSH_FZY="${HOME}/.local/bin/sk"
+ZSH_FZY=$(command -v peco)
 if [[ -z ${ZSH_FZY} ]] ; then
 	echo 'fzy is not installed. See https://github.com/jhawthorn/fzy'
 	return 1

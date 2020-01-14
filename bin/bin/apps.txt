@@ -11,10 +11,9 @@ build-essential
 stow
 openssh-server
 sshfs
-mosh
 rsync
-progress
 graphicsmagick
+graphviz
 zsh
 zsh-doc
 p7zip
@@ -27,7 +26,6 @@ lib32stdc++6
 lib32ncurses5
 bleachbit
 djmount
-ranger
 xfce4-clipman-plugin
 xfce4-battery-plugin
 xfce4-datetime-plugin
@@ -35,12 +33,10 @@ xfce4-timer-plugin
 xfce4-whiskermenu-plugin
 xfce4-taskmanager
 xfce4-screenshooter
-ristretto
+sxiv
 highlight
 htop
-openjdk-8-jdk
-ruby 
-perl
+openjdk-8-jre-headless
 python-dev
 python3-dev
 ipython
@@ -53,12 +49,10 @@ python-requests
 virtualenv 
 silversearcher-ag
 dconf-tools
-snapd
 deborphan
 wakeonlan
 tasksel
 lnav
-powertop
 greybird-gtk-theme
 blackbird-gtk-theme
 elementary-xfce-icon-theme
@@ -103,7 +97,6 @@ llvm
 libncurses5-dev
 libncursesw5-dev
 xz-utils
-tk-dev
 tree
 units
 subliminal
@@ -119,6 +112,5 @@ vlc
 gotop
 google-chrome-stable
 ubuntu-make
-code
 xfdashboard
 xfdashboard-plugins
