@@ -50,3 +50,4 @@ function docker_prune() {
 	docker container prune
 	docker image prune
 }
+alias fd="fdfind"

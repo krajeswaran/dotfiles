@@ -11,7 +11,7 @@ UUID=611876e2-e1d5-4219-8b48-79b5f4cc8fae /tv             ext4    nofail,auto,de
 UUID=2ddfdd70-2df0-470e-a092-2ce0c0ef4a82 /data           ext4    nofail,auto,defaults 0      2
 UUID=95cb5a01-3b84-4aa0-8e24-0049adbb86f9 /movies1        ext4    nofail,auto,defaults 0      2
 UUID=b8aea924-0636-11e7-bbe7-eb761e19bf56 /movies         ext4    nofail,auto,defaults 0      2
-UUID="EBAE-19F4"   /DIMPS                                 vfat    nofail,auto,user,umask=000,defaults 0  2
+UUID="EBAE-19F4"   /DIMPS                                 vfat    nofail,noauto,user,umask=000,defaults 0  2
 
 
 /data/photos /photos            none     nofail,auto,bind     0      0
