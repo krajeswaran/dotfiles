@@ -83,7 +83,10 @@
       ],
       "filetypes": [
         "go"
-      ]
+      ],
+      "initializationOptions": {
+        "usePlaceholders": true
+      }
     }
   },
   // explorer

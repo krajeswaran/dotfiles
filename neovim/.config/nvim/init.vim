@@ -237,6 +237,18 @@ function! ExecuteMacroOverVisualRange()
   execute ":'<,'>normal @".nr2char(getchar())
 endfunction
 
+"better terminal mappings
+" turn terminal to normal mode with escape
+tnoremap <Esc> <C-\><C-n>
+" start terminal in insert mode
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+" open terminal on ctrl+n
+function! OpenTerminal()
+  split term://zsh
+  resize 10
+endfunction
+nnoremap <leader>T :call OpenTerminal()<CR>
+
 "----------------------------------------------
 " Colors
 "----------------------------------------------
@@ -368,6 +380,7 @@ augroup END
 let g:go_def_mapping_enabled = 0
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 
 "----------------------------------------------
 " Plugin: coc
@@ -482,8 +495,9 @@ nnoremap <unique> <leader>cn :<C-u>CocNext<CR>
 nnoremap <unique> <leader>cp  :<C-u>CocPrev<CR>
 nnoremap <unique> <leader>f  :<C-u>CocList mru<CR>
 nnoremap <unique> <leader>p  :<C-u>CocList files<CR>
+nnoremap <unique> <leader>b  :<C-u>CocList buffers<CR>
 " Search workleader symbols
-nnoremap <unique> <leader>t  :<C-u>CocList -I symbols<cr>
+nnoremap <unique> <leader>s  :<C-u>CocList -I symbols<cr>
 
 " grep word under cursor
 command! -nargs=+ -complete=custom,s:GrepArgs Rg exe 'CocList grep '.<q-args>
