@@ -72,3 +72,18 @@ if [ -e /home/thesaneone/.nix-profile/etc/profile.d/nix.sh ]; then . /home/thesa
 export LOCALE_ARCHIVE_2_11="$(nix-build --no-out-link "<nixpkgs>" -A glibcLocales)/lib/locale/locale-archive"
 export LOCALE_ARCHIVE_2_27="$(nix-build --no-out-link "<nixpkgs>" -A glibcLocales)/lib/locale/locale-archive"
 export LOCALE_ARCHIVE="/usr/bin/locale"
+
+# nix aliases
+function nix() {
+	case $* in
+		list* ) nix-env -q ;;
+		search* ) shift 1; nix-env -qas "$@" ;;
+		install* ) shift 1; nix-env -i "$@" ;;
+		uninstall* ) shift 1; nix-env --uninstall "$@" ;;
+		update* ) nix-channel --update ;;
+		upgrade* ) nix-env -u ;;
+		repair* ) nix-store --verify --check-contents --repair ;;
+		show* ) shift 1; nix-env -qa --description ".*"$@".*" ;;
+		clean* ) nix-collect-garbage -d ;;
+	esac
+}

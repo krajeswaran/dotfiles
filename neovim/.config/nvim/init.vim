@@ -18,7 +18,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
-Plug 'Lokaltog/vim-easymotion'
 Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
@@ -40,7 +39,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lock
 
 "golang
 Plug 'fatih/vim-go'
-
 call plug#end()
 
 "coc
@@ -109,22 +107,17 @@ if has('mouse')
 endif
 
 " Allow vim to set a custom font or color for a word
-syntax enable
 
 set wrap
 set linebreak
 set nolist  " list disables linebreak
 set textwidth=0
 set wrapmargin=0
-set backspace=indent,eol,start  " backspace for dummies
 set linespace=0                 " No extra spaces between rows
 set showmatch                   " show matching brackets/parenthesis
-set incsearch                   " find as you type search
-set hlsearch                    " highlight search terms
 set winminheight=0              " windows can be 0 line high
 set ignorecase                  " case insensitive search
 set smartcase                   " case sensitive when uc present
-set wildmenu                    " show list instead of just completing
 set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git,.idea  " MacOSX/Linux
 set whichwrap=b,s,h,l,<,>,[,]   " backspace and cursor keys wrap to
@@ -136,7 +129,6 @@ set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 
 " Formatting
-set autoindent                  " indent at the same level of the previous line
 set shiftwidth=4                " use indents of 4 spaces
 set expandtab                   " tabs are spaces, not tabs
 set tabstop=4                   " an indentation every four columns
@@ -287,16 +279,6 @@ augroup END
 " Path
 set path+=**
 
-" netrw
-let g:netrw_banner=0        " disable annoying banner
-let g:netrw_browse_split=4  " open in prior window
-let g:netrw_altv=1          " open splits to the right
-let g:netrw_liststyle=3     " tree view
-let g:netrw_list_hide = &wildignore
-let g:netrw_list_hide+=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
-
 " JSON
 nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 "----------------------------------------------
@@ -321,7 +303,6 @@ function! GitStatus()
     endif
 endfunction
 
-set laststatus=2
 set statusline=
 set statusline+=%#LineNr#
 set statusline+=\ %f
