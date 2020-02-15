@@ -60,7 +60,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=/home/thesaneone/.local/share/umake/bin:$PATH
 
 # Ubuntu make installation of Go Lang
-PATH=/home/thesaneone/.local/share/umake/go/go-lang/bin:$PATH
+export PATH=/home/thesaneone/.local/share/umake/go/go-lang/bin:$PATH
 export GOROOT=/home/thesaneone/.local/share/umake/go/go-lang
 
 # Ubuntu make installation of Nodejs Lang
@@ -87,3 +87,6 @@ function nix() {
 		clean* ) nix-collect-garbage -d ;;
 	esac
 }
+
+export XDG_DATA_DIRS=$HOME/.nix-profile/share:$XDG_DATA_DIRS
+

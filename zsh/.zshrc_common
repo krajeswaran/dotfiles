@@ -52,8 +52,8 @@ fcd(){
 }
 
 # os specific
-if [ -f ~/.zshrc_os ]; then
-    source ~/.zshrc_os
+if [ -f ~/.profile ]; then
+    source ~/.profile
 fi
 
 # work specific

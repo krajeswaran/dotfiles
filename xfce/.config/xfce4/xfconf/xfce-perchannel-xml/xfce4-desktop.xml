@@ -95,9 +95,9 @@
           <property name="image-style" type="int" value="5"/>
           <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/moon_venus.jpg"/>
           <property name="rgba1" type="array">
-            <value type="double" value="0.180392"/>
-            <value type="double" value="0.203922"/>
-            <value type="double" value="0.211765"/>
+            <value type="double" value="0.000000"/>
+            <value type="double" value="0.000000"/>
+            <value type="double" value="0.000000"/>
             <value type="double" value="1.000000"/>
           </property>
         </property>
