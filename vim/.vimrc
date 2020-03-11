@@ -326,24 +326,22 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 "----------------------------------------------
 set laststatus=2
 function! GitStatus()
-    if exists('*fugitive#head')
-        return fugitive#head() != '' ? ' '.fugitive#head() : ''
-    endif
+  return fugitive#head() != '' ? ' '.fugitive#head() : ''
 endfunction
 
 set statusline=
 if has('gui_running')
-	set statusline+=%#CursorColumn#
+  set statusline+=%#CursorColumn#
 else
-	set statusline+=%#Pmenu#
+  set statusline+=%#NonText#
 endif
 set statusline+=\ %f
 set statusline+=%{&modified?'\ +':''}
 set statusline+=%{&readonly?'\ ':''}
 if has('gui_running')
-	set statusline+=%#LineNr#
+  set statusline+=%#LineNr#
 else
-	set statusline+=%#PmenuSel#
+  set statusline+=%#PmenuSel#
 endif
 set statusline+=%=
 set statusline+=%{'help'!=&filetype?bufnr('%'):''}
@@ -351,8 +349,11 @@ set statusline+=\ %{GitStatus()}
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %{&fileformat}
-" set statusline+=%#NonText#
-set statusline+=%#Normal#
+if has('gui_running')
+  set statusline+=%#NonText#
+else
+  set statusline+=%#PmenuSel#
+endif
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 

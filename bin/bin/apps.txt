@@ -57,6 +57,8 @@ greybird-gtk-theme
 blackbird-gtk-theme
 elementary-xfce-icon-theme
 fonts-noto
+fonts-noto-color-emoji
+fonts-ibm-plex-ttf
 fonts-cabin
 fonts-go
 fonts-font-awesome
