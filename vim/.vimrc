@@ -45,6 +45,7 @@ Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
 Plug 'lifepillar/vim-mucomplete'
 Plug 'pechorin/any-jump.vim'
 Plug 'wellle/tmux-complete.vim'
+Plug 'previm/previm'
 
 "golang
 "Plug 'fatih/vim-go'
@@ -415,6 +416,11 @@ nnoremap <unique> <silent> <leader>/ :Rg<CR>
 
 
 "----------------------------------------------
+" Plugin: previm/previm
+"----------------------------------------------
+let g:previm_open_cmd = 'xdg-open'
+
+"----------------------------------------------
 " Plugin: justinmk/dirvish
 "----------------------------------------------
 autocmd FileType dirvish sort ,^.*[\/],
@@ -468,6 +474,7 @@ let g:mucomplete#chains = {
 			\ 'markdown' : ['keyn', 'dict', 'uspl', 'user', 'path'],
 			\ 'text' : ['keyn', 'dict', 'uspl', 'user', 'path'],
 			\ 'python' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'go' : ['tags', 'path', 'omni', 'keyn', 'user'],
 			\ 'ruby' : ['tags', 'path', 'omni', 'keyn', 'user'],
 			\ 'javascript' : ['tags', 'path', 'omni', 'keyn', 'user'],
 			\ 'java' : ['tags', 'path', 'omni', 'keyn', 'user'],

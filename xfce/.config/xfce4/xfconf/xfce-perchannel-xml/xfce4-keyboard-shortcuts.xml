@@ -52,7 +52,8 @@
       <property name="&lt;Super&gt;t" type="string" value="rxvt-unicode"/>
       <property name="F12" type="string" value="xfce4-terminal --drop-down"/>
       <property name="&lt;Super&gt;m" type="string" value="xfce4-terminal -e &quot;zsh -i -c nvim&quot;"/>
-      <property name="&lt;Super&gt;n" type="string" value="/home/thesaneone/.nix-profile/bin/nvim-qt"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Super&gt;n" type="string" value="/home/thesaneone/.nix-profile/bin/nvim-qt"/>
+      <property name="&lt;Super&gt;n" type="string" value="gvim"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
