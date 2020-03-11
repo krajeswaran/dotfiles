@@ -26,7 +26,7 @@
         <value type="int" value="4"/>
         <value type="int" value="2"/>
       </property>
-      <property name="autohide-behavior" type="uint" value="2"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="background-alpha" type="uint" value="100"/>
       <property name="background-image" type="string" value="/home/thesaneone/photos/66474.JPG"/>
@@ -141,7 +141,7 @@
     <property name="plugin-17" type="string" value="power-manager-plugin"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance16520;chrome.instance30884;chrome.instance31815;chrome.instance3410;chromium.instance14003;chromium.instance20567;chromium.instance26178;chromium.instance2896;chromium.instance3890;mps-youtube.instance10487;mps-youtube.instance10550;mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance11959;mps-youtube.instance12188;mps-youtube.instance13074;mps-youtube.instance13264;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676;vlc"/>
+      <property name="mpris-players" type="string" value="chrome.instance16520;chrome.instance30884;chrome.instance31815;chrome.instance3410;chromium.instance1049;chromium.instance14003;chromium.instance20567;chromium.instance26178;chromium.instance2896;chromium.instance3890;mps-youtube.instance10487;mps-youtube.instance10550;mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance11959;mps-youtube.instance12188;mps-youtube.instance13074;mps-youtube.instance13264;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance4676;vlc"/>
     </property>
     <property name="plugin-5" type="string" value="whiskermenu"/>
     <property name="plugin-8" type="string" value="showdesktop"/>

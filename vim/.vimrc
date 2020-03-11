@@ -9,6 +9,12 @@ set nocompatible        " must be first line
 " instructions:
 " https://github.com/junegunn/vim-plug
 "----------------------------------------------
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
 "general
@@ -16,36 +22,57 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
-Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'junegunn/goyo.vim'
-Plug 'godlygeek/tabular'
 Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
-
-"coding
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-commentary'
-Plug 'sheerun/vim-polyglot'
-Plug 'lifepillar/vim-mucomplete'
-Plug 'wellle/tmux-complete.vim'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'skywind3000/gutentags_plus'
-
-"python
-Plug 'julienr/vim-cellmode', {'for': ['python', 'shell', 'ruby', 'javascript']}
-
-"Go
-"Plug 'fatih/vim-go'                            " Go support
+Plug 'lotabout/skim'
+Plug 'lotabout/skim.vim'
+Plug 'justinmk/vim-dirvish'
 
 "themes
+"Plug 'arcticicestudio/nord-vim'
 Plug 'w0ng/vim-hybrid'
 
+" Coding
+Plug 'tpope/vim-fugitive'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'airblade/vim-gitgutter'
+Plug 'diepm/vim-rest-console', { 'for': ['markdown', 'text'] }
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-commentary'
+Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
+Plug 'lifepillar/vim-mucomplete'
+Plug 'pechorin/any-jump.vim'
+Plug 'wellle/tmux-complete.vim'
+
+"golang
+"Plug 'fatih/vim-go'
 call plug#end()
 
 "----------------------------------------------
 " General settings
 "----------------------------------------------
+" Disable vim distribution plugins
+let g:loaded_getscript = 1
+let g:loaded_getscriptPlugin = 1
+"let g:loaded_gzip = 1
+let g:loaded_logiPat = 1
+let g:loaded_matchit = 1
+"let g:loaded_matchparen = 1
+let g:loaded_netrw = 1 
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+let g:loaded_rrhelper = 1  " ?
+let g:loaded_shada_plugin = 1  " ?
+"let g:loaded_tar = 1
+"let g:loaded_tarPlugin = 1
+let g:loaded_tutor_mode_plugin = 1
+let g:loaded_2html_plugin = 1
+let g:loaded_vimball = 1
+let g:loaded_vimballPlugin = 1
+"let g:loaded_zip = 1
+"let g:loaded_zipPlugin = 1
+
 set mouse=v                 " automatically enable mouse usage
 set go+=a
 set splitbelow
@@ -57,6 +84,10 @@ set encoding=utf-8
 "imap ^V ^O"+p
 "set shellcmdflag=-ic
 set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
+
+" set title for terminal
+set title
+
 set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
 "set virtualedit=onemore         " allow for cursor beyond last character
 set history=1000                " Store a ton of history (default is 20)
@@ -157,10 +188,8 @@ map <S-H> gT
 map <S-L> gt
 
 " Stupid shift key fixes
-cmap W w
 cmap WQ wq
 cmap wQ wq
-cmap Q q
 cmap Tabe tabe
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
@@ -205,10 +234,28 @@ map <F7> :setlocal spell spelllang=en
 map <silent> <leader>cn :cn<CR>zv
 map <silent> <leader>cp :cp<CR>zv
 
+"execute macros over visual range
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction
+
+"better terminal mappings
+" turn terminal to normal mode with escape
+tnoremap <Esc> <C-W>N
+" open terminal on ctrl+n
+nnoremap <leader>T :term ++rows=10<CR>
+
 "----------------------------------------------
 " Colors
 "----------------------------------------------
 set background=dark
+
+" if has('termguicolors')
+"   set termguicolors " Use true colours
+" endif
 
 " fucking magenta autocomplete menu
 highlight Pmenu ctermbg=darkgrey
@@ -277,6 +324,12 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 " Status line
 "----------------------------------------------
 set laststatus=2
+function! GitStatus()
+    if exists('*fugitive#head')
+        return fugitive#head() != '' ? ' '.fugitive#head() : ''
+    endif
+endfunction
+
 set statusline=
 if has('gui_running')
 	set statusline+=%#CursorColumn#
@@ -293,7 +346,7 @@ else
 endif
 set statusline+=%=
 set statusline+=%{'help'!=&filetype?bufnr('%'):''}
-" set statusline+=\ %{fugitive#statusline()}
+set statusline+=\ %{GitStatus()}
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %{&fileformat}
@@ -302,6 +355,94 @@ set statusline+=%#Normal#
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 
+
+"----------------------------------------------
+" Plugin: nathanaelkane/vim-indent-guides
+"----------------------------------------------
+let g:indent_guides_enable_on_vim_startup = 0
+let g:indent_guides_start_level = 3
+let g:indent_guides_exclude_filetypes = ['help', 'dirvish']
+
+"----------------------------------------------
+" Plugin: christoomey/vim-tmux-navigator
+"----------------------------------------------
+" Tmux vim integration
+let g:tmux_navigator_no_mappings = 1
+let g:tmux_navigator_save_on_switch = 1
+
+" Move between splits with ctrl+h,j,k,l
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
+
+"----------------------------------------------
+" Plugin: vim-rooter
+"----------------------------------------------
+let g:rooter_change_directory_for_non_project_files = 'current'
+let g:rooter_silent_chdir = 1
+let g:rooter_patterns = ['package.json', 'Readme.md', 'readme.md', 'README.md', '.vimroot', '.git/', 'venv/', 'vendor/']
+
+augroup vimrc_rooter
+    autocmd VimEnter * :Rooter
+augroup END
+
+"----------------------------------------------
+" Plugin: 'terryma/vim-multiple-cursors'
+"----------------------------------------------
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_skip_key='<C-b>'
+
+"----------------------------------------------
+" Plugin: vim-go
+"----------------------------------------------
+" disable vim-go :GoDef short cut (gd)
+" this is handled by LanguageClient [LC]
+"let g:go_def_mapping_enabled = 0
+"let g:go_def_mode='gopls'
+"let g:go_info_mode='gopls'
+"autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
+
+"----------------------------------------------
+" Plugin: lotabout/skim.vim
+"----------------------------------------------
+command! -bang -nargs=* Rg call fzf#vim#rg_interactive(<q-args>, fzf#vim#with_preview('right:50%:hidden', 'alt-h'))
+nnoremap <unique> <silent> <leader>f :History<CR>
+nnoremap <unique> <silent> <leader>b :Buffers<CR>
+nnoremap <unique> <silent> <leader>p :Files<CR>
+nnoremap <unique> <silent> <leader>/ :Rg<CR>
+
+
+"----------------------------------------------
+" Plugin: justinmk/dirvish
+"----------------------------------------------
+autocmd FileType dirvish sort ,^.*[\/],
+
+command! -nargs=? -complete=dir Explore belowright vsplit | silent Dirvish <args> | vertical resize 50
+command! -nargs=? -complete=dir Sexplore belowright vsplit | silent Dirvish <args> | vertical resize 50
+command! -nargs=? -complete=dir Vexplore belowright vsplit | silent Dirvish <args> | vertical resize 50
+
+augroup dirvish_config
+  autocmd!
+
+  " Map `gh` to hide dot-prefixed files.  Press `R` to "toggle" (reload).
+  autocmd FileType dirvish nnoremap <silent><buffer>
+    \ gh :silent keeppatterns g@\v/\.[^\/]+/?$@d _<cr>:setl cole=3<cr>
+
+  " Map `o` to open in split
+  autocmd FileType dirvish
+    \  nnoremap <silent><buffer> o :call dirvish#open('vsplit', 0)<CR>
+    \ |xnoremap <silent><buffer> o :call dirvish#open('vsplit', 0)<CR>
+
+  " New Folder
+  autocmd FileType dirvish
+    \  nnoremap <buffer> md :!mkdir %
+
+  " New File
+  autocmd FileType dirvish
+    \  nnoremap <buffer> mm :e %
+augroup END
 
 "----------------------------------------------
 " Plugin: lifepillar/vim-mucomplete
@@ -334,278 +475,5 @@ let g:mucomplete#chains = {
 			\ 'css' : ['tags', 'path', 'omni', 'keyn', 'user'],
 			\ }
 
-"----------------------------------------------
-" Plugin: gutentags
-"----------------------------------------------
-let g:gutentags_project_root = ['package.json', 'Readme.md', 'readme.md', 'README.md', '.root', '.git/', 'venv/', 'vendor/']
-
-let g:gutentags_ctags_tagfile = '.tags'
-
-let s:vim_tags = expand('~/.cache/tags')
-let g:gutentags_cache_dir = s:vim_tags
-if !isdirectory(s:vim_tags)
-   silent! call mkdir(s:vim_tags, 'p')
-endif
-
-let g:gutentags_modules = []
-if executable('ctags')
-    let g:gutentags_modules += ['ctags']
-endif
-if executable('gtags-cscope') && executable('gtags')
-    let g:gutentags_modules += ['gtags_cscope']
-endif
-
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
-let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
-let g:gutentags_auto_add_gtags_cscope = 0
-
-" change focus to quickfix window after search (optional).
-let g:gutentags_plus_switch = 1
-
-
-"----------------------------------------------
-" Plugin: easymotion/vim-easymotion
-"----------------------------------------------
-" Enable support for bidirectional motions
-map  <leader><leader>w <Plug>(easymotion-bd-w)
-nmap <leader><leader>w <Plug>(easymotion-overwin-w)
-
-"----------------------------------------------
-" Plugin: srstevenson/vim-picker, copied/modded
-"----------------------------------------------
-let g:picker_selector_executable = 'fzy'
-let g:picker_split = 'botright'
-let g:picker_height = 10
-
-function! ListFilesCommand() abort
-    " Return a shell command suitable for listing the files in the
-    " current directory, based on whether the user has specified a
-    " custom find tool, and if not, whether the current directory is a
-    " Git repository and if fd is installed.
-    "
-    " Returns
-    " -------
-    " String
-    "     Shell command to list files in the current directory.
-    if executable('fd')
-        return 'fd --color never --type f'
-    else
-        return 'find . -type f'
-    endif
-endfunction
-
-function! ListBuffersCommand() abort
-    " Return a shell command which will list current listed buffers.
-    "
-    " Returns
-    " -------
-    " String
-    "     Shell command to list current listed buffers.
-    let l:bufnrs = range(1, bufnr('$'))
-
-    " Filter out buffers which do not exist or are not listed, and the
-    " current buffer.
-    let l:bufnrs = filter(l:bufnrs, 'buflisted(v:val) && v:val != bufnr("%")')
-
-    let l:bufnames = map(l:bufnrs, 'bufname(v:val)')
-	let l:oldfiles = filter(map(copy(v:oldfiles), 'expand(v:val)'), 'filereadable(v:val)')
-
-    return 'echo "' . join(l:bufnames + l:oldfiles, "\n"). '"'
-endfunction
-
-function! ListTagsCommand() abort
-    " Return a shell command which will list known tags.
-    "
-    " Returns
-    " -------
-    " String
-    "     Shell command to list known tags.
-    return 'grep -vh "^!_TAG_" ' . join(tagfiles()) . ' | cut -f 1 | sort -u'
-endfunction
-
-function! s:PickerTermopen(list_command, callback) abort
-    " Open a Neovim terminal emulator buffer in a new window using termopen,
-    " execute list_command piping its output to the fuzzy selector, and call
-    " callback.on_select with the item selected by the user as the first
-    " argument.
-    "
-    " Parameters
-    " ----------
-    " list_command : String
-    "     Shell command to generate list user will choose from.
-    " callback.on_select : String -> Void
-    "     Function executed with the item selected by the user as the
-    "     first argument.
-    let l:callback = {
-                \ 'window_id': win_getid(),
-                \ 'filename': tempname(),
-                \ 'callback': a:callback
-                \ }
-
-    let l:directory = getcwd()
-    if has_key(a:callback, 'cwd') && isdirectory(a:callback.cwd)
-        let l:callback['cwd'] = a:callback.cwd
-        let l:directory = a:callback.cwd
-    endif
-
-    function! l:callback.on_exit(job_id, data, event) abort
-		" Close the current window, deleting buffers that are no longer displayed.
-		set bufhidden=delete
-		close!
-        call win_gotoid(l:self.window_id)
-        if filereadable(l:self.filename)
-            try
-                call l:self.callback.on_select(readfile(l:self.filename)[0])
-            catch /E684/
-            endtry
-            call delete(l:self.filename)
-        endif
-    endfunction
-
-    execute g:picker_split g:picker_height . 'new'
-    let l:term_command = a:list_command . '|' . g:picker_selector_executable .
-                \ ' ' . '--lines=10' . '>' . l:callback.filename
-    let s:picker_job_id = termopen(l:term_command, l:callback)
-    let b:picker_statusline = 'Pick [pwd: ' . l:directory . ']'
-    setlocal nonumber norelativenumber statusline=%{b:picker_statusline}
-    setfiletype picker
-    startinsert
-endfunction
-
-function! s:PickerTermStart(list_command, callback) abort
-    " Open a Vim terminal emulator buffer in a new window using term_start,
-    " execute list_command piping its output to the fuzzy selector, and call
-    " callback.on_select with the item selected by the user as the first
-    " argument.
-    "
-    " Parameters
-    " ----------
-    " list_command : String
-    "     Shell command to generate list user will choose from.
-    " callback.on_select : String -> Void
-    "     Function executed with the item selected by the user as the
-    "     first argument.
-    let l:callback = {
-                \ 'window_id': win_getid(),
-                \ 'filename': tempname(),
-                \ 'callback': a:callback
-                \ }
-
-    let l:directory = getcwd()
-    if has_key(a:callback, 'cwd') && isdirectory(a:callback.cwd)
-        let l:callback['cwd'] = a:callback.cwd
-        let l:directory = a:callback.cwd
-    endif
-
-    function! l:callback.exit_cb(...) abort
-        close!
-        call win_gotoid(l:self.window_id)
-        if filereadable(l:self.filename)
-            try
-                call l:self.callback.on_select(readfile(l:self.filename)[0])
-            catch /E684/
-            endtry
-            call delete(l:self.filename)
-        endif
-    endfunction
-
-    let l:options = {
-                \ 'curwin': 1,
-                \ 'exit_cb': l:callback.exit_cb,
-                \ }
-
-    if strlen(l:directory)
-        let l:options.cwd = l:directory
-    endif
-
-    execute g:picker_split g:picker_height . 'new'
-    let l:term_command = a:list_command . '|' . g:picker_selector_executable .
-                \ ' ' . '--lines=10' . '>' . l:callback.filename
-    let s:picker_buf_num = term_start([&shell, &shellcmdflag, l:term_command],
-                \ l:options)
-    let b:picker_statusline = 'Pick [pwd: ' . l:directory . ']'
-    setlocal nonumber norelativenumber statusline=%{b:picker_statusline}
-    setfiletype picker
-    startinsert
-endfunction
-
-
-function! s:Picker(list_command, callback) abort
-    " Invoke callback.on_select on the line of output of list_command
-    " selected by the user, using PickerTermopen() in Neovim and
-    " PickerSystemlist() otherwise.
-    "
-    " Parameters
-    " ----------
-    " list_command : String
-    "     Shell command to generate list user will choose from.
-    " callback.on_select : String -> Void
-    "     Function executed with the item selected by the user as the
-    "     first argument.
-    if exists('*termopen')
-        call s:PickerTermopen(a:list_command, a:callback)
-    else 
-        call s:PickerTermStart(a:list_command, a:callback)
-    endif
-endfunction
-
-function! PickFile(list_command, vim_command, ...) abort
-    " Create a callback that executes a Vim command against the user's
-    " selection escaped for use as a filename, and invoke Picker() with
-    " that callback.
-    "
-    " Parameters
-    " ----------
-    " list_command : String
-    "     Shell command to generate list user will choose from.
-    " vim_command : String
-    "     Readable representation of the Vim command which will be
-    "     invoked against the user's selection, for display in the
-    "     statusline.
-    let l:callback = {'vim_command': a:vim_command}
-
-    function! l:callback.on_select(selection) abort
-		exec l:self.vim_command fnameescape(a:selection)
-    endfunction
-
-    call s:Picker(a:list_command, l:callback)
-endfunction
-
-function! Rg()
-	let pattern = input('Rg/')
-
-    let l:callback = {'vim_command': 'edit'}
-
-    function! l:callback.on_select(selection) abort
-		let l:fname = split(a:selection, ':')[0]
-		exec l:self.vim_command fnameescape(l:fname)
-    endfunction
-
-    call s:Picker('rg --color never -M 120 "' . pattern . '"', l:callback)
-endfunction
-
-nmap <unique> <leader>e :call PickFile(ListFilesCommand(), 'edit')<CR>
-nmap <unique> <leader>v :call PickFile(ListFilesCommand(), 'vsplit')<CR>
-nmap <unique> <leader>p :call PickFile(ListBuffersCommand(), 'edit')<CR>
-nmap <unique> <leader>t :call PickFile(ListTagsCommand(), 'vsplit')<CR>
-nmap <unique> <leader>/ :call Rg()<CR>
-
-"----------------------------------------------
-" Plugin: 'terryma/vim-multiple-cursors'
-"----------------------------------------------
-let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_skip_key='<C-b>'
-
-"----------------------------------------------
-" Plugin: vim-rooter
-"----------------------------------------------
-let g:rooter_change_directory_for_non_project_files = 'current'
-let g:rooter_silent_chdir = 1
-let g:rooter_patterns = g:gutentags_project_root
-
-augroup vimrc_rooter
-    autocmd VimEnter * :Rooter
-augroup END
 
 

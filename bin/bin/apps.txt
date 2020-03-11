@@ -103,7 +103,7 @@ subliminal
 keepassxc
 drive
 fd
-fzy
+skim
 ripgrep
 bat
 exa

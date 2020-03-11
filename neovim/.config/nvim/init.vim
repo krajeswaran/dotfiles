@@ -129,6 +129,7 @@ set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 
 " Formatting
+set autoindent                  " indent at the same level of the previous line
 set shiftwidth=4                " use indents of 4 spaces
 set expandtab                   " tabs are spaces, not tabs
 set tabstop=4                   " an indentation every four columns
@@ -163,6 +164,11 @@ nnoremap <Leader>x :wq<CR>
 " Making it so ; works like : for commands. Saves typing and eliminates :W style typos due to lazy holding shift.
 nnoremap ; :
 
+" Easier moving in tabs and windows
+map <C-S-Down> <C-W>j<C-W>_
+map <C-S-Up> <C-W>k<C-W>_
+map <C-S-Right> <C-W>l<C-W>_
+map <C-S-Left> <C-W>h<C-W>_
 
 " Wrapped lines goes down/up to next row, rather than next line in file.
 nnoremap j gj

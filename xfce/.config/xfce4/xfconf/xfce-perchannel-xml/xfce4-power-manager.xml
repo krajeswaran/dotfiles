@@ -23,7 +23,7 @@
     <property name="critical-power-action" type="uint" value="4"/>
     <property name="brightness-level-on-battery" type="uint" value="10"/>
     <property name="brightness-level-on-ac" type="uint" value="20"/>
-    <property name="presentation-mode" type="bool" value="true"/>
+    <property name="presentation-mode" type="bool" value="false"/>
     <property name="general-notification" type="bool" value="true"/>
     <property name="show-tray-icon" type="bool" value="false"/>
   </property>
