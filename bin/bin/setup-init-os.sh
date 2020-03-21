@@ -24,13 +24,23 @@ if [ $?	-eq 0 ]; then
     sudo apt update; sudo apt upgrade
 fi
 
-echo "---------------- Installing packages  -------------------------"
+echo "---------------- Installing os packages  -------------------------"
 proceed
 if [ $?	-eq 0 ]; then
     echo "list --------- " ${PACKAGES}
 	for app in $(cat ${HOME}/dotfiles/bin/bin/apps.txt | sed 's/#.*//' | tr -d '[:blank:]')
 	do
 	    sudo apt install -y $app	
+	done
+fi
+
+echo "---------------- Installing nix packages  -------------------------"
+proceed
+if [ $?	-eq 0 ]; then
+    echo "list --------- " ${PACKAGES}
+	for app in $(cat ${HOME}/dotfiles/bin/bin/apps-nix.txt | sed 's/#.*//' | tr -d '[:blank:]')
+	do
+	    nix install $app	
 	done
 fi
 

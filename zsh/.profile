@@ -85,6 +85,7 @@ function nix() {
 		repair* ) nix-store --verify --check-contents --repair ;;
 		show* ) shift 1; nix-env -qa --description ".*"$@".*" ;;
 		clean* ) nix-collect-garbage -d ;;
+		** ) echo "Try nix <command>\nAvailable commands: list, search, install, uninstall, update, upgrade, repair, show, clean\n"
 	esac
 }
 
