@@ -1,5 +1,11 @@
 build-essential
+curl
+wget
+aria2
 stow
+git
+tmux
+tmux-plugin-manager
 openssh-server
 sshfs
 rsync
@@ -25,10 +31,6 @@ htop
 openjdk-8-jre-headless
 python-dev
 python3-dev
-ipython
-ipython3
-virtualenv 
-silversearcher-ag
 dconf-tools
 deborphan
 wakeonlan
@@ -51,7 +53,6 @@ fonts-comfortaa
 fonts-firacode
 ttf-mscorefonts-installer
 python-pip
-virtualenv
 i965-va-driver
 libvdpau-va-gl1
 libdrm2
@@ -68,7 +69,6 @@ android-tools-adb
 android-tools-fastboot
 smbclient
 cifs-utils
-build-essential
 libssl-dev
 zlib1g-dev
 libbz2-dev
@@ -81,7 +81,6 @@ tree
 units
 subliminal
 keepassxc
-drive
 fd
 skim
 ripgrep

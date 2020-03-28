@@ -1,0 +1,10 @@
+[Unit]
+Description=Fuck laptop shit
+After=suspend.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/thesaneone/bin/turn-off-lvds.sh
+
+[Install]
+WantedBy=suspend.target

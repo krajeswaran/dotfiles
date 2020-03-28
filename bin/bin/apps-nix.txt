@@ -1,0 +1,13 @@
+bleachbit
+chromium
+docker
+drive
+firefox-devedition-bin
+mpv
+nvm
+pyenv
+vim
+zoom-us
+scrcpy
+ripgrep
+

@@ -1,5 +1,5 @@
 [Unit]
-Description=Fuuck brightness shit
+Description=Fuck brightness shit
 After=suspend.target
 
 [Service]
