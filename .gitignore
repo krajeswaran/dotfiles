@@ -13,3 +13,4 @@ albert/.config/albert/Qt*
 ssh/.ssh/id_rsa*
 ssh/.ssh/known*
 tmux/.tmux/resurrect/tmux_resurrect_*
+mpsyt/**cache**

@@ -1,0 +1,32 @@
+q
+help
+help v
+add -l ~/music/music/Premam_Malare.opus
+
+add -l ~/music/music/\*.opus
+add -l ~/music/music/*.opus
+hi
+set show_all_tracks
+colorscheme solarized-dark
+colorscheme xterm-white
+colorscheme zenburn
+colorscheme night
+colorscheme gray-88
+colorscheme jellybeans
+colorscheme green-mono-88
+filter filename="*.m4a"
+filter filename="*.opus"
+filter opus|mp4
+filter opus
+1
+filename="*.mp3"
+set follow=true
+set shuffle=true
+shuffle 
+help shuffle
+help 
+set auto_expand_albums_follow
+set auto_reshuffle
+add ~/music/
+colorscheme green
+set color_cmdline_attr
