@@ -51,6 +51,13 @@ fcd(){
   cd "$(fd -td -H -d7 | fzy)"
 }
 
+compress_videos() {
+  for file in *.mp4
+  do
+    ffmpeg -i $file "c-"$file -vcodec libx265 -crf 24
+  done
+}
+
 # os specific
 if [ -f ~/.profile ]; then
     source ~/.profile

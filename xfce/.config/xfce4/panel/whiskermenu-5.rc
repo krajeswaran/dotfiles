@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-web-browser.desktop
-recent=albert.desktop,xfce-display-settings.desktop,nvidia-settings.desktop,xfce-mouse-settings.desktop,xfce4-color-settings.desktop,xfce-settings-manager.desktop,software-properties-drivers.desktop,xfce4-settings-editor.desktop,xfdashboard-settings.desktop,xfce4-appfinder.desktop
+recent=react-native-debugger.desktop,albert.desktop,xfce-display-settings.desktop,nvidia-settings.desktop,xfce-mouse-settings.desktop,xfce4-color-settings.desktop,xfce-settings-manager.desktop,software-properties-drivers.desktop,xfce4-settings-editor.desktop,xfdashboard-settings.desktop
 button-title=Applications
 button-icon=open-menu-symbolic
 button-single-row=true

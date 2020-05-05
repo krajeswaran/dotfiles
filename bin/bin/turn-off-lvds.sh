@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sleep 2s
+sleep 7s
 
 export XAUTHORITY=/home/thesaneone/.Xauthority 
 export DISPLAY=:0

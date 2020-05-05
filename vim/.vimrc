@@ -275,7 +275,7 @@ if has('gui_running')
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
-    set guifont=Hack\ 11
+    set guifont=Hack\ 10.5
     colorscheme hybrid
     set lines=30
     highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
