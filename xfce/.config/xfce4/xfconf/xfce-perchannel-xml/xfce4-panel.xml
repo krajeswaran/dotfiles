@@ -122,16 +122,16 @@
     </property>
     <property name="clipman" type="empty">
       <property name="settings" type="empty">
-        <property name="add-primary-clipboard" type="bool" value="true"/>
+        <property name="add-primary-clipboard" type="bool" value="false"/>
         <property name="max-texts-in-history" type="uint" value="50"/>
-        <property name="history-ignore-primary-clipboard" type="bool" value="true"/>
+        <property name="history-ignore-primary-clipboard" type="bool" value="false"/>
         <property name="max-images-in-history" type="uint" value="1"/>
         <property name="enable-actions" type="bool" value="false"/>
       </property>
       <property name="tweaks" type="empty">
         <property name="paste-on-activate" type="uint" value="2"/>
         <property name="popup-at-pointer" type="bool" value="true"/>
-        <property name="never-confirm-history-clear" type="bool" value="false"/>
+        <property name="never-confirm-history-clear" type="bool" value="true"/>
       </property>
     </property>
     <property name="plugin-4" type="string" value="clock">
@@ -142,7 +142,7 @@
     <property name="plugin-17" type="string" value="power-manager-plugin"/>
     <property name="plugin-1" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance16520;chrome.instance30884;chrome.instance31815;chrome.instance3410;chromium.instance1049;chromium.instance14003;chromium.instance2048;chromium.instance20567;chromium.instance26178;chromium.instance2896;chromium.instance3489;chromium.instance3890;chromium.instance5108;cmus;mps-youtube.instance10197;mps-youtube.instance10335;mps-youtube.instance10487;mps-youtube.instance10550;mps-youtube.instance10585;mps-youtube.instance10862;mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance11959;mps-youtube.instance12188;mps-youtube.instance13074;mps-youtube.instance13264;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance30272;mps-youtube.instance4155;mps-youtube.instance4676;mps-youtube.instance4969;mps-youtube.instance5252;vlc"/>
+      <property name="mpris-players" type="string" value="chrome.instance16520;chrome.instance30884;chrome.instance31815;chrome.instance3410;chromium.instance1049;chromium.instance14003;chromium.instance2048;chromium.instance20567;chromium.instance26178;chromium.instance2896;chromium.instance3489;chromium.instance3890;chromium.instance5108;chromium.instance978;cmus;mps-youtube.instance10197;mps-youtube.instance10335;mps-youtube.instance10487;mps-youtube.instance10550;mps-youtube.instance10585;mps-youtube.instance10862;mps-youtube.instance11437;mps-youtube.instance11701;mps-youtube.instance11959;mps-youtube.instance12188;mps-youtube.instance13074;mps-youtube.instance13264;mps-youtube.instance14975;mps-youtube.instance15936;mps-youtube.instance17351;mps-youtube.instance18057;mps-youtube.instance19497;mps-youtube.instance28879;mps-youtube.instance29791;mps-youtube.instance30272;mps-youtube.instance4155;mps-youtube.instance4676;mps-youtube.instance4969;mps-youtube.instance5252;vlc"/>
     </property>
     <property name="plugin-5" type="string" value="whiskermenu"/>
     <property name="plugin-8" type="string" value="showdesktop"/>

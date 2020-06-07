@@ -467,13 +467,13 @@ set omnifunc=syntaxcomplete#Complete
 " tmux config
 let g:tmuxcomplete#trigger = 'completefunc'
 
-autocmd FileType markdown,text setlocal spell spelllang=en_us
+autocmd FileType markdown,text setlocal spell spelllang=en_us complete+=k dictionary+=spell
 
 imap <expr> <down> mucomplete#extend_fwd("\<down>")
 let g:mucomplete#chains = {
-			\ 'default' : ['path', 'omni', 'keyn', 'dict', 'uspl', 'user'],
-			\ 'markdown' : ['keyn', 'dict', 'uspl', 'user', 'path'],
-			\ 'text' : ['keyn', 'dict', 'uspl', 'user', 'path'],
+			\ 'default' : ['file', 'c-n', 'path', 'omni', 'keyn', 'dict', 'uspl', 'user'],
+			\ 'markdown' : ['file', 'c-n', 'omni', 'keyn', 'dict', 'uspl', 'user', 'path'],
+			\ 'text' : ['file', 'c-n', 'omni', 'keyn', 'dict', 'uspl', 'user', 'path'],
 			\ 'python' : ['tags', 'path', 'omni', 'keyn', 'user'],
 			\ 'go' : ['tags', 'path', 'omni', 'keyn', 'user'],
 			\ 'ruby' : ['tags', 'path', 'omni', 'keyn', 'user'],
@@ -483,5 +483,9 @@ let g:mucomplete#chains = {
 			\ 'css' : ['tags', 'path', 'omni', 'keyn', 'user'],
 			\ }
 
-
-
+" for spelling in autocomplete
+let g:mucomplete#can_complete = {}
+let g:mucomplete#can_complete.default = {
+        \     'c-n' : { t -> t =~# '\v\k{2,}$' },
+        \     'uspl': { t -> t =~# '\v\k{3,}$' && &l:spell && !empty(&l:spelllang) },
+        \ }

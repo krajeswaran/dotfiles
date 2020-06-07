@@ -1,5 +1,12 @@
+add -l ~/music
+clear 
+refresh 
+delet
 q
 help
+rm
+del
+save
 help v
 add -l ~/music/music/Premam_Malare.opus
 

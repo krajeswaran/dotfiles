@@ -44,7 +44,7 @@
 /home/thesaneone/music/music/Deep_Purple_Woman_from_Tokyo.ogg
 /home/thesaneone/music/music/Dharmadurai - Makka Kalanguthappa _ Lyric Video _ Vijay Sethupathi, Tamannaah _ Yuvan Shankar Raja.m4a
 /home/thesaneone/music/music/Dharmadurai_Makka_Kalanguthappa_Lyric_Video_Vijay_Sethupathi_Tamannaah_Yuvan_Shankar_Raja.m4a
-/home/thesaneone/music/music/Dharmadurai - Makka Kalanguthappa _ Lyric Video _ Vijay Sethupathi, Tamannaah _ Yuvan Shankar Raja.webm
+/home/thesaneone/music/music/Dharmadurai - Makka Kalanguthappa _ Lyric Video _ Vijay Sethupathi, Tamannaah _ Yuvan Shankar Raja.ogg
 /home/thesaneone/music/music/Dire_Straits_Brothers_In_Arms_Official_Video_.ogg
 /home/thesaneone/music/music/Dire_Straits_Calling_Elvis_Official_Video_.ogg
 /home/thesaneone/music/music/Dire_Straits_Down_To_The_Waterline_HQ_Audio_LYRICS.ogg
@@ -83,7 +83,6 @@
 /home/thesaneone/music/music/Eazy_E_Real_Mothafuckin_G_s_ft_Dresta_B_G_Knock_Out_Lyrics_.m4a
 /home/thesaneone/music/music/Ennio_Morricone_For_A_Few_Dollars_More_HQ_.ogg
 /home/thesaneone/music/music/Geto Boys - Damn It Feels Good To Be A Gangsta [Explicit].m4a
-/home/thesaneone/music/music/Gimme_Three_Steps_Lynyrd_Skynyrd.ogg
 /home/thesaneone/music/music/Guns_N_Roses_Don_t_Cry.m4a
 /home/thesaneone/music/music/Guns_N_Roses_Estranged.m4a
 /home/thesaneone/music/music/Guns_N_Roses_November_Rain.m4a
@@ -135,8 +134,6 @@
 /home/thesaneone/music/music/Led_Zeppelin_Whole_Lotta_Love_Official_Music_Video_.m4a
 /home/thesaneone/music/music/Livin_On_A_Prayer.m4a
 /home/thesaneone/music/music/Lynyrd_Skynyrd_Free_Bird.ogg
-/home/thesaneone/music/music/Lynyrd_Skynyrd_Still_Unbroken_OFFICIAL_VIDEO_.ogg
-/home/thesaneone/music/music/Lynyrd_Skynyrd_Sweet_Home_Alabama.ogg
 /home/thesaneone/music/music/Lyrics_Black_Sabbath_Heaven_And_Hell.m4a
 /home/thesaneone/music/music/Madai_thiranthu_Tamil_Rap.m4a
 /home/thesaneone/music/music/Marvin_Gaye_Inner_City_Blues_Make_Me_Wanna_Holler_.m4a
@@ -213,7 +210,6 @@
 /home/thesaneone/music/music/santana_black_magic_woman.m4a
 /home/thesaneone/music/music/Scarface - I Seen A Man Die [Explicit].m4a
 /home/thesaneone/music/music/Scorpions_holiday.ogg
-/home/thesaneone/music/music/Simple_Man_Lynyrd_Skynyrd_Lyrics_HD.ogg
 /home/thesaneone/music/music/Snoop_Dogg_Gangsta_Luv_DIRTY_LYRICS_2009.m4a
 /home/thesaneone/music/music/Snoop_Dogg_I_Wanna_Rock_Explicit_.m4a
 /home/thesaneone/music/music/Snoop_Dogg_Sensual_Seduction.m4a
@@ -226,7 +222,6 @@
 /home/thesaneone/music/music/Subramaniapuram - Kangal Irandal Video _ James _ Jai.m4a
 /home/thesaneone/music/music/Subramaniapuram_Kangal_Irandal_Video_James_Jai.ogg
 /home/thesaneone/music/music/Subramaniapuram_Madura_Kulunga_Video_James_Jai.m4a
-/home/thesaneone/music/music/Sweet_Home_Alabama_Lynyrd_Skynyrd.m4a
 /home/thesaneone/music/music/Thaanaa Serndha Koottam - Sodakku Tamil Lyric _ Suriya _ Anirudh l Vignesh ShivN.m4a
 /home/thesaneone/music/music/Thaniye_Feat_Neha_Bhasin_Emcee_Jesz_HQ_Video_Song_Sing_Along.m4a
 /home/thesaneone/music/music/Tharai Thappattai Tamil Movie _ Scenes _ Vathana Vathana vadivelan song _ Varalaxmi _ Sasikumar.m4a
@@ -324,6 +319,7 @@
 /home/thesaneone/music/music/Ilayaraja_hd_audio/Solai Poovil  Vellai RojaS.P.BIlayaraja.m4a
 /home/thesaneone/music/music/Ilayaraja_hd_audio/Sriranga Ranganathanin.m4a
 /home/thesaneone/music/music/Ilayaraja_hd_audio/Thalaiyai Kuniyum Thamaraiye.m4a
+/home/thesaneone/music/music/The Frozen Heart (Ice Worker's Song) from FROZEN by Disney.ogg
 /home/thesaneone/music/music/Ilayaraja_hd_audio/Thendral Vandhu Ennai Thodu.m4a
 /home/thesaneone/music/music/Ilayaraja_hd_audio/Thendral Vandhu Theendum (Avatharam) -Ilayaraja Duet.m4a
 /home/thesaneone/music/music/Ilayaraja_hd_audio/Thoongatha Vizhikal Rendu.m4a
@@ -364,6 +360,7 @@
 /home/thesaneone/music/music/AC DC/The Rolling Stone Magazines 500 Greatest Songs Of All Time/254 - Highway To Hell.mp3
 /home/thesaneone/music/music/The Velvet Underground/The Rolling Stone Magazines 500 Greatest Songs Of All Time/335 - Sweet Jane.mp3
 /home/thesaneone/music/music/The Velvet Underground/The Rolling Stone Magazines 500 Greatest Songs Of All Time/448 - Heroin.mp3
+/home/thesaneone/music/music/Abba - Dancing Queen (Official Video).ogg
 /home/thesaneone/music/music/Best_of_Joey_Bada/Audio Push (feat. Joey Bada$$) - Tis The Season (Produced by Hit-Boy) (Official Video)  Elite Daily.m4a
 /home/thesaneone/music/music/Beethoven - The Very Best Of Beethoven (2005) [FLAC] dussin/101_Beethoven_-_Symphony_No_5_in_C_minor_Op_67_I_Allegro_con_brio.flac
 /home/thesaneone/music/music/Beethoven - The Very Best Of Beethoven (2005) [FLAC] dussin/102_Beethoven_-_Egmont_Op_84_Overture.flac
@@ -394,6 +391,7 @@
 /home/thesaneone/music/music/Eric Clapton/The Rolling Stone Magazines 500 Greatest Songs Of All Time/353. Tears In Heaven.mp3
 /home/thesaneone/music/music/Best_of_Joey_Bada/Fire in the Booth - Joey Bada$$ and Kirk Knight.m4a
 /home/thesaneone/music/music/Top_Tracks_-_Scorpions/fly to the rainbow - Scorpions.m4a
+/home/thesaneone/music/music/Idina Menzel - Let It Go (from Frozen) (Official Video).ogg
 /home/thesaneone/music/music/Ilayaraja_hd_audio/Ilankaathu Veesuthe - Pithamagan.m4a
 /home/thesaneone/music/music/Kadhal oviyam/Kaathal_Oviyam_-_Kuyilae_Kuilae.mp3
 /home/thesaneone/music/music/Kadhal oviyam/Kaathal_Oviyam_-_Naatham_En_Jeevanae.mp3
@@ -615,6 +613,11 @@
 /home/thesaneone/music/music/Best_of_Joey_Bada/Pro Era - Like Water (Capital STEEZ, Joey Bada$$ & CJ Fly).m4a
 /home/thesaneone/music/music/Best_of_Joey_Bada/PRO ERA - School High (Joey Bada$$, Dyemond Lewis, Kirk Knight & Nyck Caution).m4a
 /home/thesaneone/music/music/Best_of_Joey_Bada/Pro Era - Sol Luna (Feat. Joey Bada$$, Dyemond Lewis & A La $ole).m4a
+/home/thesaneone/music/music/Rage Against The Machine - Bulls On Parade (Official Music Video).ogg
+/home/thesaneone/music/music/Rage Against The Machine - Guerrilla Radio (Official Music Video).ogg
+/home/thesaneone/music/music/Rage Against The Machine - Killing In the Name (Official Music Video).ogg
+/home/thesaneone/music/music/Rage Against The Machine - Sleep Now in the Fire (Official Music Video).ogg
+/home/thesaneone/music/music/Rage Against The Machine - Testify (Official Music Video).ogg
 /home/thesaneone/music/music/rains of castamere.mp3
 /home/thesaneone/music/music/Misty Mountains Over Hill Richard Armitage The Dwarf Cast The Hobbit OST 2012.mp3
 /home/thesaneone/music/music/Mohan hits/Izhaiya Nila Pozhikirathe.mp3

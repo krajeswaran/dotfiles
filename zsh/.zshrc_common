@@ -67,3 +67,4 @@ fi
 if [ -f ~/.zshrc_work ]; then
     source ~/.zshrc_work
 fi
+

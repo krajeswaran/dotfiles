@@ -8,6 +8,7 @@
   <property name="expire-timeout" type="int" value="3"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="chromium-browser"/>
       <value type="string" value="Electron"/>
       <value type="string" value="Firefox"/>
       <value type="string" value="google-chrome"/>

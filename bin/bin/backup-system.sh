@@ -70,6 +70,10 @@ echo Optimizing apt.......
 proceed_yesorno
 [[ $REPLY = [yY] ]] && apt autoremove --purge && apt autoclean
 
+echo Purging journalctl.......
+proceed_yesorno
+[[ $REPLY = [yY] ]] && journalctl --vacuum-time=1
+
 #echo Purging old kernels........
 #proceed_yesorno
 #[[ $REPLY = [yY] ]] && dpkg -l linux-'*' | awk '/^ii/{ print $2}' | grep -v -e $(uname -r | cut -f1,2 -d"-") | grep -e [0-9] | xargs apt purge
