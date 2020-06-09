@@ -28,8 +28,8 @@ Plug 'tpope/vim-sleuth'
 Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'haya14busa/incsearch.vim'
+Plug 'romainl/cool.vim'
+Plug 'romainl/vim-qf'
 Plug 'voldikss/vim-floaterm'
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 Plug 'brooth/far.vim'
@@ -294,12 +294,6 @@ nnoremap N Nzzzv
 "noremap <Left> <NOP>
 "noremap <Right> <NOP>
 
-" ... but skip the quickfix when navigating
-augroup qf
-	autocmd!
-	autocmd FileType qf set nobuflisted
-augroup END
-
 " Path
 set path+=**
 
@@ -419,20 +413,20 @@ tnoremap <ESC><ESC> <C-\><C-N>
 "----------------------------------------------
 let g:indentLine_char_list = ['┊']
 
-"----------------------------------------------
-" Plugin: incsearch
-"----------------------------------------------
-map /  <Plug>(incsearch-forward)
-map ?  <Plug>(incsearch-backward)
-map g/ <Plug>(incsearch-stay)
-set hlsearch
-let g:incsearch#auto_nohlsearch = 1
-map n  <Plug>(incsearch-nohl-n)
-map N  <Plug>(incsearch-nohl-N)
-map *  <Plug>(incsearch-nohl-*)
-map #  <Plug>(incsearch-nohl-#)
-map g* <Plug>(incsearch-nohl-g*)
-map g# <Plug>(incsearch-nohl-g#)
+""----------------------------------------------
+"" Plugin: incsearch
+""----------------------------------------------
+"map /  <Plug>(incsearch-forward)
+"map ?  <Plug>(incsearch-backward)
+"map g/ <Plug>(incsearch-stay)
+"set hlsearch
+"let g:incsearch#auto_nohlsearch = 1
+"map n  <Plug>(incsearch-nohl-n)
+"map N  <Plug>(incsearch-nohl-N)
+"map *  <Plug>(incsearch-nohl-*)
+"map #  <Plug>(incsearch-nohl-#)
+"map g* <Plug>(incsearch-nohl-g*)
+"map g# <Plug>(incsearch-nohl-g#)
 "----------------------------------------------
 " Plugin: clap
 "----------------------------------------------
@@ -585,7 +579,7 @@ let g:ale_completion_enabled = 0
 let g:ale_sign_error = 'X'
 let g:ale_sign_warning = ''
 let g:ale_sign_column_always = 1
-let g:ale_completion_tsserver_autoimport = 1
+let g:ale_completion_tsserver_autoimport = 0
 let g:ale_fixers = {
       \'javascript': ['eslint'],
       \'json': ['prettier'],
