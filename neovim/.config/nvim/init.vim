@@ -600,8 +600,17 @@ function! LinterStatus() abort
     \)
 endfunction
 
-nmap <silent> ]d <Plug>(ale_previous_wrap)
-nmap <silent> [d <Plug>(ale_next_wrap)
+nmap <unique> ]d <Plug>(ale_previous_wrap)
+nmap <unique> [d <Plug>(ale_next_wrap)
+
+
+"----------------------------------------------
+" Plugin: vim-qf
+"----------------------------------------------
+nmap <unique> <F5> <Plug>(qf_qf_toggle)
+nmap <unique> ]e <Plug>(qf_qf_previous)
+nmap <unique> [e <Plug>(qf_qf_next)
+
 "----------------------------------------------
 " Plugin: nvim-lsp
 "----------------------------------------------
