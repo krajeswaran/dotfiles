@@ -3258,3 +3258,112 @@
 
 # 2018-05-24 01:41:54.580183
 +update sms_rates set sms_unit_rate=0.03,sms_cost_id=21,created=now(),modified=now();
+
+# 2020-06-14 00:59:46.660933
++alter user tang_app createdb;
+
+# 2020-06-14 01:00:41.075126
++\c tang
+
+# 2020-06-14 01:00:41.151425
++CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+# 2020-06-14 01:00:41.315456
++CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA public;
+
+# 2020-06-14 01:01:20.458143
++\dt
+
+# 2020-06-14 01:01:23.998207
++\d+
+
+# 2020-06-14 01:02:35.865402
++\c tang
+
+# 2020-06-14 01:05:33.977309
++drop db tang;
+
+# 2020-06-14 01:05:44.186931
++drop DATABASE tang;
+
+# 2020-06-14 01:06:04.668643
++\c tang
+
+# 2020-06-14 01:06:10.484148
++CREATE EXTENSION IF NOT EXISTS pgcrypto WITH SCHEMA public;
+
+# 2020-06-14 01:06:21.465958
++CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+# 2020-06-14 01:15:05.568844
++\d+ bank;
+
+# 2020-06-14 01:15:09.658159
++\c tang
+
+# 2020-06-14 01:15:11.394212
++\d+ bank;
+
+# 2020-06-14 01:15:58.166940
++\d+ partner;
+
+# 2020-06-14 13:46:15.351062
++\c tang
+
+# 2020-06-14 13:46:25.778960
++\d+ partner_type_enum
+
+# 2020-06-14 13:46:29.365096
++\dt+ partner_type_enum
+
+# 2020-06-14 13:46:36.459148
++\dT+ partner_type_enum
+
+# 2020-06-14 13:58:07.108718
++create DATABASE tang1;
+
+# 2020-06-14 13:58:16.131577
++create user tang1app;
+
+# 2020-06-14 13:58:43.741738
++alter user tang1app createdb;
+
+# 2020-06-14 13:59:57.072429
++grant all PRIVILEGES on database tang1 to tang1app;
+
+# 2020-06-14 14:00:45.104810
++CONNECT to tang1;
+
+# 2020-06-14 14:00:53.472808
++connect -h
++;
+
+# 2020-06-14 14:01:02.389140
++connect tang1;
+
+# 2020-06-14 14:01:07.035861
++connect db tang1;
+
+# 2020-06-14 14:10:47.129158
++\c tang
+
+# 2020-06-14 14:11:12.503831
++alter type funding_instrument_type_enum RENAME value 'STRIPE' TO 'CARD';
+
+# 2020-06-14 14:11:21.311451
++\dT+ funding_instrument_type_enum
+
+# 2020-06-14 15:17:51.799560
++\d
+
+# 2020-06-14 15:17:55.316625
++\d user
+
+# 2020-06-14 15:17:58.098573
++\d users
+
+# 2020-06-14 15:18:06.547252
++\c tang
+
+# 2020-06-14 15:18:24.030589
++select * from account where status='*';
