@@ -67,3 +67,4 @@ djmount
 sshfs
 mps-youtube
 fdupes
+broot
