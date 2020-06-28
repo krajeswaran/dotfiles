@@ -46,6 +46,7 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'diepm/vim-rest-console', { 'for': ['markdown', 'text', 'http'] }
+Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
@@ -82,7 +83,7 @@ call plug#end()
 "----------------------------------------------
 "set python path separate from venvs
 let g:python_host_prog = '/usr/bin/python2'
-let g:python3_host_prog = '/home/thesaneone/.pyenv/shims/python3'
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 " Disable vim distribution plugins
 let g:loaded_getscript = 1
@@ -566,8 +567,8 @@ nnoremap <unique> <leader>/  :Clap grep<CR>
 " Plugin: ale
 "----------------------------------------------
 let g:ale_linters = {
-      \'javascript': ['eslint'],
-      \'typescript': ['eslint', 'tsserver', 'prettier'],
+      \'javascript': ['eslint', 'prettier'],
+      \'typescript': ['tslint', 'eslint', 'prettier'],
       \}
 let g:ale_completion_enabled = 0
 let g:ale_sign_error = 'X'
@@ -575,9 +576,9 @@ let g:ale_sign_warning = ''
 let g:ale_sign_column_always = 1
 let g:ale_completion_tsserver_autoimport = 0
 let g:ale_fixers = {
-      \'javascript': ['eslint'],
+      \'javascript': ['eslint', 'prettier'],
       \'json': ['prettier'],
-      \'typescript': ['eslint', 'prettier'],
+      \'typescript': ['tslint', 'eslint', 'prettier'],
       \'markdown': ['prettier'],
       \}
 
@@ -616,6 +617,19 @@ nmap <unique> [e <Plug>(qf_qf_next)
 " Plugin: vim-bufonly
 "----------------------------------------------
 nmap <unique> <leader>q <cmd>:Bonly<CR>
+
+"----------------------------------------------
+" Plugin: vim-rest-console
+"----------------------------------------------
+" vim-rest-console
+let g:vrc_curl_opts = {
+  \ '--connect-timeout' : 10,
+  \ '-L': '',
+  \ '-i': '',
+  \ '-sS': '',
+  \ '--max-time': 60,
+  \ '-k': '',
+\}
 
 "----------------------------------------------
 " Plugin: colorizer
@@ -700,6 +714,14 @@ inoremap <silent><expr> <TAB>
 " possible value: 'UltiSnips', 'Neosnippet'
 let g:completion_enable_snippet = 'UltiSnips'
 
+" unset these as tab is used by haorenW1025/completion-nvim
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsListSnippets="<F19>"
+let g:UltiSnipsExpandTrigger="<F19>"
+let g:UltiSnipsJumpForwardTrigger="<F19>"
+let g:UltiSnipsJumpBackwardTrigger="<F19>"
+
 inoremap <silent><expr> <C-Space> completion#trigger_completion()
 
 " Use completion-nvim in every buffer
@@ -712,7 +734,8 @@ let g:completion_auto_change_source = 1
 let g:completion_chain_complete_list = {
       \ 'default' : {
       \   'default': [
-      \       {'complete_items': ['lsp', 'snippet', 'ale', 'dict', 'thes', 'spel', 'c-n', 'c-p', 'file']},
+      \       {'complete_items': ['lsp', 'snippet','ts', 'buffers', 'ale', 'dict', 'thes', 'spel', 'c-n', 'c-p', 'file']},
+      \       {'complete_items': ['path'], 'triggered_only': ['/']},
       \       {'mode': '<c-p>'},
       \       {'mode': '<c-n>'}],
       \ }
