@@ -35,6 +35,7 @@ Plug 'wincent/ferret'
 Plug 'mg979/vim-visual-multi'
 Plug 'simnalamburt/vim-mundo'
 Plug 'bogado/file-line'
+Plug 'regedarek/ZoomWin'
 
 "themes
 Plug 'arcticicestudio/nord-vim'
@@ -42,13 +43,13 @@ Plug 'arcticicestudio/nord-vim'
 
 " Coding
 Plug 'tpope/vim-fugitive'
-Plug 'rhysd/git-messenger.vim'
-Plug 'Yggdroot/indentLine'
+Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'Yggdroot/indentLine'
 Plug 'diepm/vim-rest-console', { 'for': ['markdown', 'text', 'http'] }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'editorconfig/editorconfig-vim'
+" Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 " Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
@@ -58,9 +59,10 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'rstacruz/vim-closer'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neovim/nvim-lsp'
-Plug 'haorenW1025/completion-nvim'
+" Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-lua/completion-nvim'
+Plug 'nvim-lua/diagnostic-nvim'
 Plug 'dense-analysis/ale'
-" Plug 'haorenW1025/diagnostic-nvim'
 " Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
 
 "js
@@ -121,7 +123,7 @@ set encoding=utf-8
 set title
 
 set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
-"set virtualedit=onemore         " allow for cursor beyond last character
+set virtualedit=onemore         " allow for cursor beyond last character
 set history=1000                " Store a ton of history (default is 20)
 set hidden                      " allow buffer switching without saving
 
@@ -132,7 +134,6 @@ if has('persistent_undo')
 	set undofile
 	set undodir=~/.vimundo/
 	set undolevels=1000         "maximum number of changes that can be undone
-	set undoreload=10000        "maximum number lines to save for undo on a buffer reload
 endif
 
 " Enable mouse if possible
@@ -186,6 +187,9 @@ set directory=$HOME/.vimswap
 "
 " reopen last mark
 autocmd BufReadPost * silent! normal! g`"zv
+
+" autoread files
+set autoread
 
 " Key (re)Mappings
 
@@ -283,12 +287,18 @@ endif
 "----------------------------------------------
 " Searching
 "----------------------------------------------
-"set inccommand=split          " enables interactive search and replace
+set inccommand=split          " enables interactive search and replace
 
 " These mappings will make it so that going to the next one in a search will
 " center on the line it's found in.
 nnoremap n nzzzv
 nnoremap N Nzzzv
+
+" highlight yank
+augroup LuaHighlight
+  autocmd!
+  autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank()
+augroup END
 
 "----------------------------------------------
 " Navigation
@@ -308,19 +318,6 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 " Status line
 "----------------------------------------------
 
-
-" function! DiagnosticStatus() abort
-"   if luaeval('vim.lsp.buf.server_ready()')
-"     let sl='E: '
-"     let sl .= luaeval("vim.lsp.util.buf_diagnostics_count(\"Error\")")
-"     let sl .= ' W: '
-"     let sl .= luaeval("vim.lsp.util.buf_diagnostics_count(\"Warning\")")
-"     return sl
-"   else
-"     return ''
-"   endif
-" endfunction
-
 function! GitStatus()
   return fugitive#head() != '' ? ' '.fugitive#head() : ''
 endfunction
@@ -332,7 +329,6 @@ set statusline+=%{&modified?'\ +':''}
 set statusline+=%{&readonly?'\ ':''}
 set statusline+=%#LineNr#
 set statusline+=%=
-" set statusline+=\ %{DiagnosticStatus()}
 set statusline+=\ %{LinterStatus()}
 set statusline+=\ %{GitStatus()}
 set statusline+=\ %y
@@ -568,17 +564,19 @@ nnoremap <unique> <leader>/  :Clap grep<CR>
 "----------------------------------------------
 let g:ale_linters = {
       \'javascript': ['eslint', 'prettier'],
-      \'typescript': ['tslint', 'eslint', 'prettier'],
+      \'typescript': ['tslint', 'eslint'],
       \}
+let g:ale_linters_explicit = 1
 let g:ale_completion_enabled = 0
 let g:ale_sign_error = 'X'
 let g:ale_sign_warning = ''
 let g:ale_sign_column_always = 1
-let g:ale_completion_tsserver_autoimport = 0
+let g:ale_completion_tsserver_autoimport = 1
+let g:ale_virtualtext_cursor = 1
 let g:ale_fixers = {
       \'javascript': ['eslint', 'prettier'],
       \'json': ['prettier'],
-      \'typescript': ['tslint', 'eslint', 'prettier'],
+      \'typescript': ['tslint', 'eslint'],
       \'markdown': ['prettier'],
       \}
 
@@ -603,8 +601,8 @@ nmap <unique> [d <Plug>(ale_next_wrap)
 " Plugin: vim-qf
 "----------------------------------------------
 nmap <unique> <F5> <Plug>(qf_qf_toggle)
-nmap <unique> ]e <Plug>(qf_qf_previous)
-nmap <unique> [e <Plug>(qf_qf_next)
+nmap <unique> ]l <Plug>(qf_qf_previous)
+nmap <unique> [l <Plug>(qf_qf_next)
 
 "----------------------------------------------
 " Plugin: far
@@ -632,6 +630,45 @@ let g:vrc_curl_opts = {
 \}
 
 "----------------------------------------------
+" Plugin: nvim-treesitter
+"----------------------------------------------
+" lua <<EOF
+" require'nvim-treesitter.configs'.setup {
+"     highlight = {
+"         enable = true,                    -- false will disable the whole extension
+"         disable = { 'c' },        -- list of language that will be disabled
+"     },
+"     incremental_selection = {
+"         enable = false,
+"         disable = { 'cpp', 'lua' },
+"         keymaps = {                       -- mappings for incremental selection (visual mappings)
+"           init_selection = 'gnn',         -- maps in normal mode to init the node/scope selection
+"           node_incremental = "grn",       -- increment to the upper named parent
+"           scope_incremental = "grc",      -- increment to the upper scope (as defined in locals.scm)
+"           node_decremental = "grm",       -- decrement to the previous node
+"         }
+"     },
+"     refactor = {
+"       highlight_defintions = {
+"         enable = false
+"       },
+"       smart_rename = {
+"         enable = false,
+"         smart_rename = "grr"              -- mapping to rename reference under cursor
+"       },
+"       navigation = {
+"         enable = false,
+"         goto_definition = "gnd",          -- mapping to go to definition of symbol under cursor
+"         list_definitions = "gnD"          -- mapping to list all definitions in current file
+"       }
+"     },
+"     ensure_installed = 'all' -- one of 'all', 'language', or a list of languages
+" }
+" EOF
+
+
+
+"----------------------------------------------
 " Plugin: colorizer
 "----------------------------------------------
 lua <<EOF
@@ -645,6 +682,8 @@ require 'colorizer'.setup {
 }
 EOF
 
+
+
 "----------------------------------------------
 " Plugin: nvim-lsp
 "----------------------------------------------
@@ -652,6 +691,7 @@ lua <<EOF
 local nvim_lsp = require'nvim_lsp'
 
 local on_attach_vim = function()
+  require'diagnostic'.on_attach()
   require'completion'.on_attach()
 end
 
@@ -662,10 +702,10 @@ nvim_lsp.jsonls.setup({
   on_attach=on_attach_vim,
 })
 nvim_lsp.tsserver.setup({on_attach=on_attach_vim})
-nvim_lsp.pyls.setup({on_attach=on_attach_vim})
-nvim_lsp.gopls.setup({on_attach=on_attach_vim})
+--- nvim_lsp.efm.setup({on_attach=on_attach_vim})
+--- nvim_lsp.pyls_ms.setup({on_attach=on_attach_vim})
+--- nvim_lsp.gopls.setup({on_attach=on_attach_vim})
 
-vim.lsp.callbacks["textDocument/publishDiagnostics"] = function() end
 EOF
 
 set omnifunc=v:lua.vim.lsp.omnifunc
@@ -681,21 +721,24 @@ nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
 nnoremap <silent> g=    <cmd>lua vim.lsp.buf.formatting()<CR>
 nnoremap <silent> gR    <cmd>lua vim.lsp.buf.rename()<CR>
+nnoremap <silent> <a-CR>    <cmd>lua vim.lsp.buf.code_action()<CR>
 
-" call sign_define('LspDiagnosticsErrorSign', {'text' : 'X', 'texthl' : 'LspDiagnosticsError'})
-" call sign_define('LspDiagnosticsWarningSign', {'text' : '', 'texthl' : 'LspDiagnosticsWarning'})
-" call sign_define('LspDiagnosticInformationSign', {'text' : 'i', 'texthl' : 'LspDiagnosticsInformation'})
-" call sign_define('LspDiagnosticHintSign', {'text' : 'H', 'texthl' : 'LspDiagnosticsHint'})
+call sign_define('LspDiagnosticsErrorSign', {'text' : 'X', 'texthl' : 'LspDiagnosticsError'})
+call sign_define('LspDiagnosticsWarningSign', {'text' : '', 'texthl' : 'LspDiagnosticsWarning'})
+call sign_define('LspDiagnosticInformationSign', {'text' : 'i', 'texthl' : 'LspDiagnosticsInformation'})
+call sign_define('LspDiagnosticHintSign', {'text' : 'H', 'texthl' : 'LspDiagnosticsHint'})
 
-" nnoremap <unique> ]d <Cmd>NextDiagnosticCycle<CR>
-" nnoremap <unique> [d <Cmd>PrevDiagnosticCycle<CR>
+let g:diagnostic_enable_virtual_text = 1
+
+nnoremap <unique> ]e <Cmd>NextDiagnosticCycle<CR>
+nnoremap <unique> [e <Cmd>PrevDiagnosticCycle<CR>
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Set completeopt to have a better completion experience
-set completeopt=menuone,preview,noinsert,noselect
+set completeopt=menuone,preview,noinsert
 
 " Avoid showing message extra message when using completion
 set shortmess+=c
@@ -726,18 +769,22 @@ inoremap <silent><expr> <C-Space> completion#trigger_completion()
 
 " Use completion-nvim in every buffer
 autocmd BufEnter * lua require'completion'.on_attach()
+autocmd CursorHold * lua vim.lsp.util.show_line_diagnostics()
 
 " auto swictch sources
 let g:completion_auto_change_source = 1
 
 " Chain completion list
 let g:completion_chain_complete_list = {
-      \ 'default' : {
-      \   'default': [
-      \       {'complete_items': ['lsp', 'snippet','ts', 'buffers', 'ale', 'dict', 'thes', 'spel', 'c-n', 'c-p', 'file']},
+      \ 'default' : [
+      \       {'complete_items': ['lsp', 'snippet']},
       \       {'complete_items': ['path'], 'triggered_only': ['/']},
       \       {'mode': '<c-p>'},
-      \       {'mode': '<c-n>'}],
-      \ }
+      \       {'mode': '<c-n>'},
+      \       {'mode': 'dict'},
+      \       {'mode': 'file'},
+      \       {'mode': 'spel'},
+      \       {'mode': 'thes'},
+      \       {'mode': 'user'}],
       \ }
 
