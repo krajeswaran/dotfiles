@@ -9,64 +9,83 @@ set nocompatible        " must be first line
 " instructions:
 " https://github.com/junegunn/vim-plug
 "----------------------------------------------
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
 "general
 "Plug thesaneone/taskpaper.vim
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'Lokaltog/vim-easymotion'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'mileszs/ack.vim'
+Plug 'machakann/vim-sandwich'
+Plug 'schickling/vim-bufonly'
+Plug 'tpope/vim-sleuth'
+Plug 'romainl/vim-cool'
+Plug 'romainl/vim-qf'
+Plug 'wincent/ferret'
+Plug 'mg979/vim-visual-multi'
+Plug 'mbbill/undotree'
+Plug 'bogado/file-line'
+Plug 'regedarek/ZoomWin'
 Plug 'junegunn/goyo.vim'
-
-"coding
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-rooter'
-Plug 'sheerun/vim-polyglot'
-Plug 'benmills/vimux'
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-buffer.vim'
-Plug 'wellle/tmux-complete.vim'
-Plug 'yami-beta/asyncomplete-omni.vim'
-Plug 'prabirshrestha/asyncomplete-file.vim'
-
-"python
-"Plug davidhalter/jedi 
-"Plug 'davidhalter/jedi-vim'
-Plug 'julienr/vim-cellmode'
-
-"Go
-"Plug 'fatih/vim-go'                            " Go support
-"Plug 'nsf/gocode', { 'rtp': 'vim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' } " Go auto completion
-"Plug 'zchee/deoplete-go', { 'do': 'make'}      " Go auto completion
-"Plug 'sebdah/vim-delve'
-
-"Javascript
-
-"html
-
-"misc
-Plug 'godlygeek/tabular'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+Plug 'justinmk/vim-dirvish'
 
 "themes
-"Plug chriskempson/base16-vim
+"Plug 'arcticicestudio/nord-vim'
 Plug 'w0ng/vim-hybrid'
 
+" Coding
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'Yggdroot/indentLine'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-commentary'
+Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
+Plug 'lifepillar/vim-mucomplete'
+Plug 'wellle/tmux-complete.vim'
+Plug 'previm/previm'
+
+"js
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'
+
+"python
+Plug 'vim-python/python-syntax'
+"golang
+"Plug 'fatih/vim-go'
 call plug#end()
 
 "----------------------------------------------
 " General settings
 "----------------------------------------------
-"set python path separate from venvs
-let g:python_host_prog = '/usr/bin/python2'
-let g:python3_host_prog = '/usr/bin/python3'
+" Disable vim distribution plugins
+let g:loaded_getscript = 1
+let g:loaded_getscriptPlugin = 1
+"let g:loaded_gzip = 1
+let g:loaded_logiPat = 1
+let g:loaded_matchit = 1
+"let g:loaded_matchparen = 1
+let g:loaded_netrw = 1 
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+let g:loaded_rrhelper = 1  " ?
+let g:loaded_shada_plugin = 1  " ?
+"let g:loaded_tar = 1
+"let g:loaded_tarPlugin = 1
+let g:loaded_tutor_mode_plugin = 1
+let g:loaded_2html_plugin = 1
+let g:loaded_vimball = 1
+let g:loaded_vimballPlugin = 1
+"let g:loaded_zip = 1
+"let g:loaded_zipPlugin = 1
 
 set mouse=v                 " automatically enable mouse usage
 set go+=a
@@ -79,6 +98,10 @@ set encoding=utf-8
 "imap ^V ^O"+p
 "set shellcmdflag=-ic
 set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
+
+" set title for terminal
+set title
+
 set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
 "set virtualedit=onemore         " allow for cursor beyond last character
 set history=1000                " Store a ton of history (default is 20)
@@ -139,8 +162,6 @@ set pastetoggle=<F2>                       " no indent on paste
 " other niceties
 set mousemodel=popup
 
-set grepformat=%f:%l:%m
-
 set diffopt=filler,context:4,vertical
 set makeprg=g++\ \\\--std=c++0x\ \\\\{$*}
 
@@ -181,10 +202,8 @@ map <S-H> gT
 map <S-L> gt
 
 " Stupid shift key fixes
-cmap W w
 cmap WQ wq
 cmap wQ wq
-cmap Q q
 cmap Tabe tabe
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
@@ -202,9 +221,6 @@ nmap <leader>f6 :set foldlevel=6<CR>
 nmap <leader>f7 :set foldlevel=7<CR>
 nmap <leader>f8 :set foldlevel=8<CR>
 nmap <leader>f9 :set foldlevel=9<CR>
-
-"clearing highlighted search
-nmap <silent> <leader>/ :nohlsearch<CR>
 
 " Shortcuts
 " Change Working Directory to that of the current file
@@ -232,10 +248,28 @@ map <F7> :setlocal spell spelllang=en
 map <silent> <leader>cn :cn<CR>zv
 map <silent> <leader>cp :cp<CR>zv
 
+"execute macros over visual range
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction
+
+"better terminal mappings
+" turn terminal to normal mode with escape
+tnoremap <Esc> <C-W>N
+" open terminal on ctrl+n
+nnoremap <leader>T :term ++rows=10<CR>
+
 "----------------------------------------------
 " Colors
 "----------------------------------------------
 set background=dark
+
+" if has('termguicolors')
+"   set termguicolors " Use true colours
+" endif
 
 " fucking magenta autocomplete menu
 highlight Pmenu ctermbg=darkgrey
@@ -254,7 +288,7 @@ if has('gui_running')
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
-    set guifont=HackNerdFontComplete-Regular:h14
+    set guifont=Menlo:h13
     colorscheme hybrid
     set lines=30
     highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
@@ -304,281 +338,173 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 " Status line
 "----------------------------------------------
 set laststatus=2
+function! GitStatus()
+  return fugitive#head() != '' ? ' '.fugitive#head() : ''
+endfunction
+
 set statusline=
 if has('gui_running')
-	set statusline+=%#CursorColumn#
+  set statusline+=%#CursorColumn#
 else
-	set statusline+=%#Pmenu#
+  set statusline+=%#NonText#
 endif
 set statusline+=\ %f
 set statusline+=%{&modified?'\ +':''}
 set statusline+=%{&readonly?'\ ':''}
 if has('gui_running')
-	set statusline+=%#LineNr#
+  set statusline+=%#LineNr#
 else
-	set statusline+=%#PmenuSel#
+  set statusline+=%#PmenuSel#
 endif
 set statusline+=%=
 set statusline+=%{'help'!=&filetype?bufnr('%'):''}
-set statusline+=\ %{fugitive#statusline()}
+set statusline+=\ %{GitStatus()}
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %{&fileformat}
-" set statusline+=%#NonText#
-set statusline+=%#Normal#
+if has('gui_running')
+  set statusline+=%#NonText#
+else
+  set statusline+=%#PmenuSel#
+endif
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 
 
 "----------------------------------------------
-" Plugin: prabirshrestha/asyncomplete
+" Plugin: christoomey/vim-tmux-navigator
 "----------------------------------------------
-set showmode shortmess+=c
-set completeopt-=preview
-set completeopt+=longest,menu,menuone,noinsert
-"
-" <TAB>: completion.
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+" Tmux vim integration
+let g:tmux_navigator_no_mappings = 1
+let g:tmux_navigator_save_on_switch = 1
 
-imap <c-space> <Plug>(asyncomplete_force_refresh)
-
-function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-inoremap <silent><expr> <TAB>
-  \ pumvisible() ? "\<C-n>" :
-  \ <SID>check_back_space() ? "\<TAB>" :
-  \ asyncomplete#force_refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-"let g:asyncomplete_remove_duplicates = 1
-
-"let g:asyncomplete_smart_completion = 1
-"let g:asyncomplete_auto_popup = 1
-
-call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
-    \ 'name': 'buffer',
-    \ 'whitelist': ['*'],
-    \ 'blacklist': ['go'],
-    \ 'completor': function('asyncomplete#sources#buffer#completor'),
-    \ }))
-
-let g:tmuxcomplete#asyncomplete_source_options = {
-            \ 'name':      'tmuxcomplete',
-            \ 'whitelist': ['*'],
-            \ 'config': {
-            \     'splitmode':      'words',
-            \     'filter_prefix':   1,
-            \     'show_incomplete': 1,
-            \     'sort_candidates': 0,
-            \     'scrollback':      0,
-            \     'truncate':        0
-            \     }
-            \ }
-
-call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
-			\ 'name': 'omni',
-			\ 'whitelist': ['*'],
-			\ 'blacklist': ['c', 'cpp', 'html'],
-			\ 'completor': function('asyncomplete#sources#omni#completor')
-			\  }))
-
-au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
-    \ 'name': 'file',
-    \ 'whitelist': ['*'],
-    \ 'priority': 10,
-    \ 'completor': function('asyncomplete#sources#file#completor')
-    \ }))
-
-
-" -- Enable omni as a last resort
-if has("autocmd") && exists("+omnifunc")
-	autocmd Filetype *
-				\	if &omnifunc == "" |
-				\		setlocal omnifunc=syntaxcomplete#Complete |
-				\	endif
-endif
-
-
-"----------------------------------------------
-" Plugin: easymotion/vim-easymotion
-"----------------------------------------------
-" Enable support for bidirectional motions
-map  <leader><leader>w <Plug>(easymotion-bd-w)
-nmap <leader><leader>w <Plug>(easymotion-overwin-w)
-
-
-"----------------------------------------------
-" Plugin: 'junegunn/fzf.vim'
-"----------------------------------------------
-nnoremap <silent> <leader>o :Files<CR>
-nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>p :History<CR>
-nnoremap <silent> <leader>/ :execute 'Ag ' . input('Ag/')<CR>
-nnoremap <silent> <leader>. :AgIn 
-
-"----------------------------------------------
-" Plugin: mileszs/ack.vim
-"----------------------------------------------
-" Open ack
-nnoremap <leader>a :Ack!<space>
-
-" ack/ag
-if executable('ag')
-    let g:ackprg = 'ag'
-endif
-
-"----------------------------------------------
-" Plugin: ale
-"----------------------------------------------
-" ALE
-" let g:ale_statusline_format = ['✖ %d', '⚠ %d', '⬥']
-" function! LinterStatus() abort
-"     let l:counts = ale#statusline#Count(bufnr(''))
-
-"     let l:all_errors = l:counts.error + l:counts.style_error
-"     let l:all_non_errors = l:counts.total - l:all_errors
-
-"     return l:counts.total == 0 ? 'OK' : printf(
-"     \   '%dW %dE',
-"     \   all_non_errors,
-"     \   all_errors
-"     \)
-" endfunction
-"----------------------------------------------
-" Plugin: sebdah/vim-delve
-"----------------------------------------------
-" Set the Delve backend.
-"let g:delve_backend = "native"
-
-"----------------------------------------------
-" Plugin: 'terryma/vim-multiple-cursors'
-"----------------------------------------------
-let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_skip_key='<C-b>'
+" Move between splits with ctrl+h,j,k,l
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 
 "----------------------------------------------
 " Plugin: vim-rooter
 "----------------------------------------------
 let g:rooter_change_directory_for_non_project_files = 'current'
 let g:rooter_silent_chdir = 1
-let g:rooter_patterns = ['.vimroot', '.git/', 'venv/', 'vendor/']
+let g:rooter_patterns = ['package.json', 'Readme.md', 'readme.md', 'README.md', '.vimroot', '.git/', 'venv/', 'vendor/']
 
 augroup vimrc_rooter
     autocmd VimEnter * :Rooter
 augroup END
 
+"----------------------------------------------
+" Plugin: indent
+"----------------------------------------------
+let g:indentLine_char_list = ['┊']
+
+""----------------------------------------------
+"" Plugin: vim-cool
+""----------------------------------------------
+let g:CoolTotalMatches = 1
+"----------------------------------------------
+" Plugin: vim-qf
+"----------------------------------------------
+nmap <unique> <F5> <Plug>(qf_qf_toggle)
+nmap <unique> ]l <Plug>(qf_qf_previous)
+nmap <unique> [l <Plug>(qf_qf_next)
 
 "----------------------------------------------
-" Language: Golang
+" Plugin: vim-go
 "----------------------------------------------
-set autowrite
-"autocmd BufRead $GOPATH/src/*.go
-"        \ :GoGuruScope $GOPATH/src/maze/
-"
-"" Run goimports when running gofmt
-"let g:go_fmt_command = "goimports"
-"
-"" Set neosnippet as snippet engine
-""let g:go_snippet_engine = "neosnippet"
-"
-"" Enable syntax highlighting per default
-"let g:go_highlight_types = 1
-"let g:go_highlight_fields = 1
-"let g:go_highlight_functions = 1
-"let g:go_highlight_methods = 1
-"let g:go_highlight_structs = 1
-"let g:go_highlight_operators = 1
-"let g:go_highlight_build_constraints = 1
-"let g:go_highlight_extra_types = 1
-"
-"" Show the progress when running :GoCoverage
-"let g:go_echo_command_info = 1
-"
-"" Show type information
-"let g:go_auto_type_info = 1
-"
-"" Highlight variable uses
-"let g:go_auto_sameids = 1
-"
-"" Fix for location list when vim-go is used together with Syntastic
-"let g:go_list_type = "quickfix"
-"
-"" Add the failing test name to the output of :GoTest
-"let g:go_test_show_name = 1
-"
-"" gometalinter configuration
-"let g:go_metalinter_command = ""
-"let g:go_metalinter_deadline = "5s"
-"let g:go_metalinter_enabled = [
-"			\ 'deadcode',
-"			\ 'gas',
-"			\ 'goconst',
-"			\ 'gocyclo',
-"			\ 'golint',
-"			\ 'gosimple',
-"			\ 'ineffassign',
-"			\ 'vet',
-"			\ 'vetshadow'
-"			\]
-"
-"" Set whether the JSON tags should be snakecase or camelcase.
-"let g:go_addtags_transform = "snakecase"
-"
-"" " neomake configuration for Go.
-"" let g:neomake_go_enabled_makers = [ 'go', 'gometalinter' ]
-"" let g:neomake_go_gometalinter_maker = {
-"" 			\ 'args': [
-"" 			\   '--tests',
-"" 			\   '--enable-gc',
-"" 			\   '--concurrency=3',
-"" 			\   '--fast',
-"" 			\   '-D', 'aligncheck',
-"" 			\   '-D', 'dupl',
-"" 			\   '-D', 'gocyclo',
-"" 			\   '-D', 'gotype',
-"" 			\   '-E', 'misspell',
-"" 			\   '-E', 'unused',
-"" 			\   '%:p:h',
-"" 			\ ],
-"" 			\ 'append_file': 0,
-"" 			\ 'errorformat':
-"" 			\   '%E%f:%l:%c:%trror: %m,' .
-"" 			\   '%W%f:%l:%c:%tarning: %m,' .
-"" 			\   '%E%f:%l::%trror: %m,' .
-"" 			\   '%W%f:%l::%tarning: %m'
-"" 			\ }
-"
-"" Mappings
-"au FileType go nmap <F8> :GoMetaLinter<cr>
-"au FileType go nmap <F9> :GoCoverageToggle -short<cr>
-"au FileType go nmap <F10> :GoTest -short<cr>
-"au Filetype go nmap <leader>ga <Plug>(go-alternate-edit)
-"au Filetype go nmap <leader>gah <Plug>(go-alternate-split)
-"au Filetype go nmap <leader>gav <Plug>(go-alternate-vertical)
-"au FileType go nmap <leader>gt :GoDeclsDir<cr>
-"au FileType go nmap <leader>gc <Plug>(go-coverage-toggle)
-"au FileType go nmap <leader>gd <Plug>(go-def)
-"au FileType go nmap <leader>gdv <Plug>(go-def-vertical)
-"au FileType go nmap <leader>gdh <Plug>(go-def-split)
-"au FileType go nmap <leader>gD <Plug>(go-doc)
-"au FileType go nmap <leader>gDv <Plug>(go-doc-vertical)
-"
-"au FileType go nmap <leader>r <Plug>(go-rename)
-"" who just builds
-"au FileType go nmap <leader>b <Plug>(go-run)  
-"au FileType go nmap <leader>t <Plug>(go-test)
-"au FileType go nmap <leader>c <Plug>(go-coverage)
-"
-"au FileType go nmap <Leader>ds <Plug>(go-def-split)
-"au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-"au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-"
-"
-"au FileType go nmap <Leader>s <Plug>(go-implements)
-"au FileType go nmap <Leader>e <Plug>(go-rename)
+" disable vim-go :GoDef short cut (gd)
+" this is handled by LanguageClient [LC]
+"let g:go_def_mapping_enabled = 0
+"let g:go_def_mode='gopls'
+"let g:go_info_mode='gopls'
+"autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 
+"----------------------------------------------
+" Plugin: clap
+"----------------------------------------------
+nnoremap <unique> <leader>o  :Clap history<CR>
+nnoremap <unique> <leader>p  :Clap files<CR>
+nnoremap <unique> <leader>f  :Clap filer<CR>
+nnoremap <unique> <leader>/  :Clap grep<CR>
+
+"----------------------------------------------
+" Plugin: previm/previm
+"----------------------------------------------
+let g:previm_open_cmd = 'xdg-open'
+
+"----------------------------------------------
+" Plugin: vim-bufonly
+"----------------------------------------------
+nmap <unique> <leader>q <cmd>:Bonly<CR>
+
+"----------------------------------------------
+" Plugin: justinmk/dirvish
+"----------------------------------------------
+autocmd FileType dirvish sort ,^.*[\/],
+
+command! -nargs=? -complete=dir Explore belowright vsplit | silent Dirvish <args> | vertical resize 50
+command! -nargs=? -complete=dir Sexplore belowright vsplit | silent Dirvish <args> | vertical resize 50
+command! -nargs=? -complete=dir Vexplore belowright vsplit | silent Dirvish <args> | vertical resize 50
+
+augroup dirvish_config
+  autocmd!
+
+  " Map `gh` to hide dot-prefixed files.  Press `R` to "toggle" (reload).
+  autocmd FileType dirvish nnoremap <silent><buffer>
+    \ gh :silent keeppatterns g@\v/\.[^\/]+/?$@d _<cr>:setl cole=3<cr>
+
+  " Map `o` to open in split
+  autocmd FileType dirvish
+    \  nnoremap <silent><buffer> o :call dirvish#open('vsplit', 0)<CR>
+    \ |xnoremap <silent><buffer> o :call dirvish#open('vsplit', 0)<CR>
+
+  " New Folder
+  autocmd FileType dirvish
+    \  nnoremap <buffer> md :!mkdir %
+
+  " New File
+  autocmd FileType dirvish
+    \  nnoremap <buffer> mm :e %
+augroup END
+
+"----------------------------------------------
+" Plugin: lifepillar/vim-mucomplete
+"----------------------------------------------
+set showmode shortmess+=c
+set belloff+=ctrlg
+set completeopt-=preview
+set complete-=t
+set complete-=i
+set completeopt+=menuone,noinsert,noselect
+
+" turn omni func for all
+set omnifunc=syntaxcomplete#Complete
+
+" tmux config
+let g:tmuxcomplete#trigger = 'completefunc'
+
+autocmd FileType markdown,text setlocal spell spelllang=en_us complete+=k dictionary+=spell
+
+imap <expr> <down> mucomplete#extend_fwd("\<down>")
+let g:mucomplete#chains = {
+			\ 'default' : ['file', 'c-n', 'path', 'omni', 'keyn', 'dict', 'uspl', 'user'],
+			\ 'markdown' : ['file', 'c-n', 'omni', 'keyn', 'dict', 'uspl', 'user', 'path'],
+			\ 'text' : ['file', 'c-n', 'omni', 'keyn', 'dict', 'uspl', 'user', 'path'],
+			\ 'python' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'go' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'ruby' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'javascript' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'java' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'html' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'css' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ }
+
+" for spelling in autocomplete
+let g:mucomplete#can_complete = {}
+let g:mucomplete#can_complete.default = {
+        \     'c-n' : { t -> t =~# '\v\k{2,}$' },
+        \     'uspl': { t -> t =~# '\v\k{3,}$' && &l:spell && !empty(&l:spelllang) },
+        \ }

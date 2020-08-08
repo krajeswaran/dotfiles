@@ -11,10 +11,18 @@
     autocorrect = 1
 [core]
     mergeoptions = --no-edit
-	editor = vim -f
+    editor = nvim -f
 [init]
-	templatedir = ~/.git_template
+    templatedir = ~/.git_template
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
+
+[merge]
+tool = vim_mergetool
+conflictstyle = diff3
+
+[mergetool "vim_mergetool"]
+cmd = nvim -f -c "MergetoolStart" "$MERGED" "$BASE" "$LOCAL" "$REMOTE"
+trustExitCode = true

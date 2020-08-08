@@ -3,6 +3,10 @@ findutils
 binutils 
 gnu-tar 
 gnu-sed 
+gnu-indent
+gnutls
+grep
+gawk
 autoconf
 automake
 freetype
@@ -12,12 +16,7 @@ libxml2
 readline
 sqlite
 youtube-dl
-gawk 
-gnutls 
-gnu-indent 
-gnu-getopt
 stow 
-grep 
 graphicsmagick 
 rename 
 zsh 
@@ -68,3 +67,5 @@ sshfs
 mps-youtube
 fdupes
 broot
+exa
+bat

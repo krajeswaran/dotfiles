@@ -33,7 +33,7 @@ Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 "Plug 'brooth/far.vim'
 Plug 'wincent/ferret'
 Plug 'mg979/vim-visual-multi'
-Plug 'simnalamburt/vim-mundo'
+Plug 'mbbill/undotree'
 Plug 'bogado/file-line'
 Plug 'regedarek/ZoomWin'
 
@@ -56,7 +56,7 @@ Plug 'tpope/vim-commentary'
 Plug 'previm/previm'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'AndrewRadev/splitjoin.vim'
-Plug 'rstacruz/vim-closer'
+Plug 'samoshkin/vim-mergetool'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neovim/nvim-lsp'
 " Plug 'nvim-treesitter/nvim-treesitter'
@@ -128,17 +128,16 @@ set history=1000                " Store a ton of history (default is 20)
 set hidden                      " allow buffer switching without saving
 
 " Setting up the directories
-set backup                      " backups are nice ...
+set nobackup                      " backups are nice ...
 set lazyredraw                  " no unnecessary redraws
 if has('persistent_undo')
-	set undofile
-	set undodir=~/.vimundo/
-	set undolevels=1000         "maximum number of changes that can be undone
+  set undofile
+  set undodir=~/.vimundo/
 endif
 
 " Enable mouse if possible
 if has('mouse')
-	set mouse=a
+  set mouse=a
 endif
 
 " Allow vim to set a custom font or color for a word
@@ -182,14 +181,20 @@ set makeprg=g++\ \\\--std=c++0x\ \\\\{$*}
 
 " directories
 set viewdir=$HOME/.vimview
-set backupdir=$HOME/.vimbackup
+"set backupdir=$HOME/.vimbackup
 set directory=$HOME/.vimswap
 "
 " reopen last mark
 autocmd BufReadPost * silent! normal! g`"zv
 
+" enable spell for select files
+autocmd FileType markdown,text setlocal spell spelllang=en_us complete+=k dictionary+=spell
+
 " autoread files
 set autoread
+
+" update faster
+set updatetime=100
 
 " Key (re)Mappings
 
@@ -738,7 +743,7 @@ inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Set completeopt to have a better completion experience
-set completeopt=menuone,preview,noinsert
+set completeopt=menu,menuone,noinsert,noselect
 
 " Avoid showing message extra message when using completion
 set shortmess+=c
@@ -774,6 +779,9 @@ autocmd CursorHold * lua vim.lsp.util.show_line_diagnostics()
 " auto swictch sources
 let g:completion_auto_change_source = 1
 
+" change completion matching strategy
+let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+
 " Chain completion list
 let g:completion_chain_complete_list = {
       \ 'default' : [
@@ -781,10 +789,6 @@ let g:completion_chain_complete_list = {
       \       {'complete_items': ['path'], 'triggered_only': ['/']},
       \       {'mode': '<c-p>'},
       \       {'mode': '<c-n>'},
-      \       {'mode': 'dict'},
-      \       {'mode': 'file'},
-      \       {'mode': 'spel'},
-      \       {'mode': 'thes'},
-      \       {'mode': 'user'}],
+      \       {'mode': 'file'}]
       \ }
 
