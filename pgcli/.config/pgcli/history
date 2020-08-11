@@ -3476,3 +3476,78 @@
 
 # 2020-08-09 01:20:37.301329
 +\c tang
+
+# 2020-08-09 02:11:51.375137
++drop type promo_code_status_enum;
+
+# 2020-08-09 02:18:11.750690
++\c tang
+
+# 2020-08-09 02:18:19.510201
++drop table promo;
+
+# 2020-08-09 02:18:34.441498
++drop table promo cascade;
+
+# 2020-08-09 02:19:10.815436
++\c tang
+
+# 2020-08-09 02:19:17.825156
++\d+ promo
+
+# 2020-08-09 02:31:49.913765
++alter table account_promo drop COLUMN time_activated;
+
+# 2020-08-09 03:23:27.423955
++\c tang
+
+# 2020-08-09 03:23:44.178880
++\dT promo_code_status_enum
+
+# 2020-08-09 03:23:50.130626
++\dT+ promo_code_status_enum
+
+# 2020-08-09 03:24:17.550683
++alter type promo_code_status_enum add value 'RESERVED';
+
+# 2020-08-09 03:24:21.708808
++\dT+ promo_code_status_enum
+
+# 2020-08-09 03:24:39.349934
++alter table promo drop COLUMN status;
+
+# 2020-08-09 03:25:48.955810
++alter table promo add column status public.promo_code_status_enum DEFAULT 'RESERVERD'::public.promo_code_status_enum NOT NULL;
+
+# 2020-08-09 03:29:45.769031
++alter table promo add column status public.promo_code_status_enum DEFAULT 'RESERVED'::public.promo_code_status_enum NOT NULL;
+
+# 2020-08-11 01:13:34.472987
++\c tang
+
+# 2020-08-11 01:13:49.049051
++drop table account_promo cascade;
+
+# 2020-08-11 01:14:22.617315
++alter type promo_code_status_enum drop value 'ACTIVATED';
+
+# 2020-08-11 01:14:29.604642
++alter type promo_code_status_enum drop  'ACTIVATED';
+
+# 2020-08-11 01:15:06.748158
++drop type promo_code_status_enum;
+
+# 2020-08-11 01:15:24.876915
++drop table promo cascade;
+
+# 2020-08-11 01:15:30.350839
++drop type promo_code_status_enum;
+
+# 2020-08-11 12:53:50.906714
++\c tang
+
+# 2020-08-11 12:54:12.030630
++drop INDEX promo_code_idx;
+
+# 2020-08-11 12:55:04.612428
++create unique index concurrently promo_code_idx on promo (code);
