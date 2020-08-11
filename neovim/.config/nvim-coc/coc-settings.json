@@ -115,19 +115,4 @@
   // coc-list
   // coc-actions
   "coc-actions.hideCursor": false,
-  // Cspell
-  "cSpell.fixSpellingWithRenameProvider": true,
-  "cSpell.showStatus": false,
-  "cSpell.enabledLanguageIds": [
-    "asciidoc",
-    "git-commit",
-    "gitcommit",
-    "html",
-    "json",
-    "jsonc",
-    "latex",
-    "markdown",
-    "plaintext",
-    "text"
-  ]
 }

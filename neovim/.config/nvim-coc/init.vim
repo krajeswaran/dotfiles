@@ -70,7 +70,7 @@ Plug 'vim-python/python-syntax'
 call plug#end()
 
 "coc
-let g:coc_global_extensions = ['coc-actions', 'coc-pairs', 'coc-restclient', 'coc-spell-checker', 'coc-explorer', 'coc-highlight', 'coc-snippets', 'coc-lists', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css', 'coc-pyright', 'coc-go', 'coc-react-refactor']
+let g:coc_global_extensions = ['coc-actions', 'coc-pairs', 'coc-restclient', 'coc-explorer', 'coc-highlight', 'coc-snippets', 'coc-lists', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css', 'coc-pyright', 'coc-go', 'coc-react-refactor']
 
 "----------------------------------------------
 " General settings
@@ -442,6 +442,9 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 
 let g:coc_snippet_next = '<tab>'
+
+let g:coc_status_error_sign = 'E: '
+let g:coc_status_warning_sign = 'W: '
 
 function! s:check_back_space() abort
   let col = col('.') - 1
