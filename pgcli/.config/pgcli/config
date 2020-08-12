@@ -141,17 +141,6 @@ Token.Toolbar.Transaction.Failed = 'bg:#222222 #ff005f bold'
 
 # DNS to call by -D option
 [alias_dsn]
-local = postgresql://plivocfg:hello@localhost/plivo_cloud
-mdbcfg = postgresql://plivocfg:UPY3vPnwA0nUptIwAD4xl7YsME7@master.dbcfg.plivo.com/plivo_cloud
-sdbcfg = postgresql://plivocfg:UPY3vPnwA0nUptIwAD4xl7YsME7@slave.dbcfg.plivo.com/plivo_cloud
-tdbcfg = postgresql://plivocfg:hello@master.dbcfg.test.plivo.com/plivo_cloud
-qdbcfg = postgresql://plivocfg:hello@master.dbcfg.qa.plivodev.com/plivo_cloud
-pdbcfg = postgresql://plivocfg:hello@master.dbcfg.platform.plivodev.com/plivo_cloud
-mdblog = postgresql://plivolog:UPY3vPnwA0nUptIwAD4xl7YsME7@master.dblog.plivo.com/plivo_cloud_logs
-sdblog = postgresql://plivolog:UPY3vPnwA0nUptIwAD4xl7YsME7@slave.dblog.plivo.com/plivo_cloud_logs
-tdblog = postgresql://plivolog:hello@master.dblog.test.plivo.com/plivo_cloud_logs
-qdblog = postgresql://plivolog:hello@master.dblog.qa.plivodev.com/plivo_cloud_logs
-pdblog = postgresql://plivocfg:hello@master.dblog.platform.plivodev.com/plivo_cloud_logs
 
 # Format for number representation
 # for decimal "d" - 12345678, ",d" - 12,345,678
