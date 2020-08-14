@@ -41,22 +41,6 @@
   "diagnostic.infoSign": "●",
   "diagnostic.displayByAle": false,
   "diagnostic.refreshOnInsertMode": true,
-  //git
-  "git.enableGutters": true,
-  "git.branchCharacter": "\uf418",
-  "git.addGBlameToBufferVar": true,
-  "git.addGBlameToVirtualText": true,
-  "git.virtualTextPrefix": " ❯ ",
-  "git.addedSign.hlGroup": "GitGutterAdd",
-  "git.changedSign.hlGroup": "GitGutterChange",
-  "git.removedSign.hlGroup": "GitGutterDelete",
-  "git.topRemovedSign.hlGroup": "GitGutterDelete",
-  "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
-  "git.addedSign.text": "▋",
-  "git.changedSign.text": "▋",
-  "git.removedSign.text": "▋",
-  "git.topRemovedSign.text": "▔",
-  "git.changeRemovedSign.text": "▋",
   //Snippet
   "coc.preferences.snippetStatusText": "Ⓢ ",
   //CocList
@@ -64,6 +48,7 @@
   "list.source.outline.defaultOptions": ["--auto-preview"],
   "list.source.files.args": ["--hidden", "--files"],
   //prettier
+  "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "html",
     "css",
@@ -80,14 +65,6 @@
   "prettier.tslintIntegration": false,
   "prettier.stylelintIntegration": true,
   "prettier.disableSuccessMessage": true,
-  //emmet
-  "emmet.includeLanguages": {
-    "vue-html": "html",
-    "javascript": "javascriptreact",
-    "typescriptreact": "typescriptreact"
-  },
-  //imselect
-  "imselect.enableStatusItem": false,
   //multiple curssor
   "cursors.nextKey": "<C-n>",
   "cursors.previousKey": "<C-p>",
@@ -100,8 +77,10 @@
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.quitOnOpen": true,
-  "explorer.floating.width": -20,
-  "explorer.floating.height": -10,
+   "explorer.keyMappings": {
+   "<cr>": ["expandable?", "expand", "open"],
+   "v": "open:vsplit"
+  },
   "explorer.openAction.strategy": "sourceWindow",
   // eslint
   "eslint.filetypes": [
@@ -114,5 +93,5 @@
   "eslint.autoFixOnSave": false,
   // coc-list
   // coc-actions
-  "coc-actions.hideCursor": false,
+  "coc-actions.hideCursor": false
 }

@@ -1,6 +1,11 @@
 " TODO
+"  - ALEFix equivalent(fix on save?), some lint fix stuff not working
+"  - coc-actions being a cunt
+"  - rein in coc-pairs
+"  - coc-explorer icons
 " debug(vimspector, vim-delve, tsdebug)
 " asynctasks.vim or test run plugin
+" ---------------------------------------------
 " workflow: new terminal window /pane (no tmuxes)
 "----------------------------------------------
 " Plugin management
@@ -33,7 +38,8 @@ Plug 'bogado/file-line'
 Plug 'regedarek/ZoomWin'
 
 "themes
-Plug 'arcticicestudio/nord-vim'
+" Plug 'arcticicestudio/nord-vim'
+Plug 'cocopon/iceberg.vim'
 "Plug 'w0ng/vim-hybrid'
 
 " Coding
@@ -157,6 +163,7 @@ set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 
 " Formatting
+set formatoptions-=ro
 set autoindent                  " indent at the same level of the previous line
 set shiftwidth=4                " use indents of 4 spaces
 set expandtab                   " tabs are spaces, not tabs
@@ -279,8 +286,9 @@ set background=dark
 
 if has('termguicolors')
   set termguicolors " Use true colours
-  colorscheme nord
 endif
+
+colorscheme iceberg
 
 "----------------------------------------------
 " Searching
@@ -462,7 +470,8 @@ inoremap <silent><expr> <c-space> coc#refresh()
 if exists('*complete_info')
   inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 else
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+	\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 endif
 
 " Use `[e` and `]e` to navigate diagnostics
@@ -470,10 +479,12 @@ nmap <silent> [d <Plug>(coc-diagnostic-prev)
 nmap <silent> ]d <Plug>(coc-diagnostic-next)
 
 " Remap keys for gotos
+nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gD <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gR <Plug>(coc-rename)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -488,9 +499,6 @@ endfunction
 
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
-
-" Remap for rename current word
-nmap <leader>gR <Plug>(coc-rename)
 
 " Remap for format selected region
 xmap g=  <Plug>(coc-format-selected)
@@ -511,12 +519,12 @@ endfunction
 xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
 
-" Remap for do codeAction of current line
-xmap <a-CR>  <Plug>(coc-codeaction)
+" Remap for do codeAction for entire file
 nmap <a-CR>  <Plug>(coc-codeaction)
 
 " Fix autofix problem of current line
-nmap <leader>ff  <Plug>(coc-fix-current)
+nmap <leader>ff  <Plug>(coc-codeaction-line)
+xmap <leader>ff  <Plug>(coc-codeaction-selected)
 
 " Create mappings for function text object, requires document symbols feature of languageserver.
 xmap if <Plug>(coc-funcobj-i)
@@ -623,17 +631,9 @@ nmap <unique> [l <Plug>(qf_qf_next)
 nmap <unique> <leader>q <cmd>:Bonly<CR>
 
 "----------------------------------------------
-" Plugin: vim-rest-console
+" Plugin: coc-restclient
 "----------------------------------------------
-" vim-rest-console
-" let g:vrc_curl_opts = {
-"   \ '--connect-timeout' : 10,
-"   \ '-L': '',
-"   \ '-i': '',
-"   \ '-sS': '',
-"   \ '--max-time': 60,
-"   \ '-k': '',
-" \}
+nmap <unique> <leader>J :CocCommand rest-client.request<cr>
 
 "----------------------------------------------
 " Plugin: nvim-treesitter

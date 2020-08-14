@@ -150,6 +150,7 @@ set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 
 " Formatting
+set formatoptions-=ro
 set autoindent                  " indent at the same level of the previous line
 set shiftwidth=4                " use indents of 4 spaces
 set expandtab                   " tabs are spaces, not tabs
@@ -433,7 +434,7 @@ nnoremap <unique> <leader>/  :Clap grep<CR>
 "----------------------------------------------
 " Plugin: previm/previm
 "----------------------------------------------
-let g:previm_open_cmd = 'xdg-open'
+let g:previm_open_cmd = 'open'
 
 "----------------------------------------------
 " Plugin: vim-bufonly
