@@ -1,4 +1,3 @@
-
 {
   "suggest.triggerAfterInsertEnter": false,
   "suggest.timeout": 500,
@@ -48,18 +47,19 @@
   "list.source.outline.defaultOptions": ["--auto-preview"],
   "list.source.files.args": ["--hidden", "--files"],
   //prettier
-  "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes": [
-    "html",
-    "css",
-    "markdown",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "go",
-    "json"
-  ],
+  //"coc.preferences.formatOnSaveFiletypes": [
+  //  "html",
+  //  "css",
+  //  "markdown",
+  //  "javascript",
+  //  "javascriptreact",
+  //  "typescript",
+  //  "typescriptreact",
+  //  "go",
+  //  "json"
+  //],
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "prettier.statusItemText": "ⓟ ",
   "prettier.eslintIntegration": true,
   "prettier.tslintIntegration": false,
@@ -77,9 +77,9 @@
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.quitOnOpen": true,
-   "explorer.keyMappings": {
-   "<cr>": ["expandable?", "expand", "open"],
-   "v": "open:vsplit"
+  "explorer.keyMappings": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "open:vsplit"
   },
   "explorer.openAction.strategy": "sourceWindow",
   // eslint
@@ -89,9 +89,8 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.autoFix": false,
-  "eslint.autoFixOnSave": false,
+  "eslint.autoFix": true,
+  "eslint.autoFixOnSave": true
   // coc-list
   // coc-actions
-  "coc-actions.hideCursor": false
 }

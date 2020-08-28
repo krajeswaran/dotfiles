@@ -12,3 +12,4 @@ vim/.vim/plugged
 node_modules
 pgcli/.config/pgcli/history
 pgcli/.config/pgcli/log
+ssh/*

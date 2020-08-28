@@ -1,5 +1,5 @@
 " TODO
-"  - ALEFix equivalent(fix on save?), some lint fix stuff not working
+"  - ALEFix equivalent(fix on save?), eslint msgs not showing up
 "  - coc-actions being a cunt
 "  - rein in coc-pairs
 "  - coc-explorer icons
@@ -20,7 +20,7 @@ if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('~/.config/nvim-coc/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 "general
 "Plug thesaneone/taskpaper.vim
@@ -64,8 +64,9 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "js
-Plug 'yuezk/vim-js'
-Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'yuezk/vim-js'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 "python
 Plug 'vim-python/python-syntax'
@@ -512,19 +513,12 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-" Remap for do codeAction of selected region
-function! s:cocActionsOpenFromSelected(type) abort
-  execute 'CocCommand actions.open ' . a:type
-endfunction
-xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
-nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
-
 " Remap for do codeAction for entire file
 nmap <a-CR>  <Plug>(coc-codeaction)
 
 " Fix autofix problem of current line
-nmap <leader>ff  <Plug>(coc-codeaction-line)
-xmap <leader>ff  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-line)
+xmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Create mappings for function text object, requires document symbols feature of languageserver.
 xmap if <Plug>(coc-funcobj-i)
@@ -558,72 +552,21 @@ nnoremap <unique> ]n :<C-u>CocNext<CR>
 " Do default action for previous item.
 nnoremap <unique> [n :<C-u>CocPrev<CR>
 
-" " clap/fzf stuff
-" nnoremap <unique> <leader>o  :<C-u>CocList mru<CR>
-" nnoremap <unique> <leader>f  :<C-u>CocList files<CR>
-" " Search workleader symbols
-" nnoremap <unique> <leader>s  :<C-u>CocList -I symbols<cr>
-
-" " grep word under cursor
-" command! -nargs=+ -complete=custom,s:GrepArgs Rg exe 'CocList grep '.<q-args>
-
-" function! s:GrepArgs(...)
-"   let list = ['-S', '-smartcase', '-i', '-ignorecase', '-w', '-word',
-"         \ '-e', '-regex', '-u', '-skip-vcs-ignores', '-t', '-extension']
-"   return join(list, "\n")
-" endfunction
-
-" " Keymapping for grep word under cursor with interactive mode
-" nnoremap <unique> <leader>/ :exe 'CocList -I --input='.input('Rg/').' grep'<CR>
-
 " coc explorer
 nmap <unique> ge :CocCommand explorer<CR>
 
-
-"----------------------------------------------
-" Plugin: ale
-"----------------------------------------------
-" let g:ale_linters = {
-"       \'javascript': ['eslint', 'prettier'],
-"       \'typescript': ['tslint', 'eslint'],
-"       \}
-" let g:ale_linters_explicit = 1
-" let g:ale_completion_enabled = 0
-" let g:ale_sign_error = 'X'
-" let g:ale_sign_warning = ''
-" let g:ale_sign_column_always = 1
-" let g:ale_completion_tsserver_autoimport = 1
-" let g:ale_virtualtext_cursor = 1
-" let g:ale_fixers = {
-"       \'javascript': ['eslint', 'prettier'],
-"       \'json': ['prettier'],
-"       \'typescript': ['tslint', 'eslint'],
-"       \'markdown': ['prettier'],
-"       \}
-
-" function! LinterStatus() abort
-"     let l:counts = ale#statusline#Count(bufnr(''))
-
-"     let l:all_errors = l:counts.error + l:counts.style_error
-"     let l:all_non_errors = l:counts.total - l:all_errors
-
-"     return l:counts.total == 0 ? 'OK' : printf(
-"     \   '%dW %dE',
-"     \   all_non_errors,
-"     \   all_errors
-"     \)
-" endfunction
-
-" nmap <unique> ]d <Plug>(ale_previous_wrap)
-" nmap <unique> [d <Plug>(ale_next_wrap)
-
+" coc symbol search
+nmap <unique> gs :CocList symbols<CR>
 
 "----------------------------------------------
 " Plugin: vim-qf
 "----------------------------------------------
 nmap <unique> <F5> <Plug>(qf_qf_toggle)
-nmap <unique> ]l <Plug>(qf_qf_previous)
-nmap <unique> [l <Plug>(qf_qf_next)
+" nmap <unique> ]l <Plug>(qf_qf_previous)
+" nmap <unique> [l <Plug>(qf_qf_next)
+
+nmap <unique> ]l <Plug>(coc-next)
+nmap <unique> [l <Plug>(coc-previous)
 
 "----------------------------------------------
 " Plugin: vim-bufonly
@@ -633,163 +576,5 @@ nmap <unique> <leader>q <cmd>:Bonly<CR>
 "----------------------------------------------
 " Plugin: coc-restclient
 "----------------------------------------------
-nmap <unique> <leader>J :CocCommand rest-client.request<cr>
-
-"----------------------------------------------
-" Plugin: nvim-treesitter
-"----------------------------------------------
-" lua <<EOF
-" require'nvim-treesitter.configs'.setup {
-"     highlight = {
-"         enable = true,                    -- false will disable the whole extension
-"         disable = { 'c' },        -- list of language that will be disabled
-"     },
-"     incremental_selection = {
-"         enable = false,
-"         disable = { 'cpp', 'lua' },
-"         keymaps = {                       -- mappings for incremental selection (visual mappings)
-"           init_selection = 'gnn',         -- maps in normal mode to init the node/scope selection
-"           node_incremental = "grn",       -- increment to the upper named parent
-"           scope_incremental = "grc",      -- increment to the upper scope (as defined in locals.scm)
-"           node_decremental = "grm",       -- decrement to the previous node
-"         }
-"     },
-"     refactor = {
-"       highlight_defintions = {
-"         enable = false
-"       },
-"       smart_rename = {
-"         enable = false,
-"         smart_rename = "grr"              -- mapping to rename reference under cursor
-"       },
-"       navigation = {
-"         enable = false,
-"         goto_definition = "gnd",          -- mapping to go to definition of symbol under cursor
-"         list_definitions = "gnD"          -- mapping to list all definitions in current file
-"       }
-"     },
-"     ensure_installed = 'all' -- one of 'all', 'language', or a list of languages
-" }
-" EOF
-
-
-
-"----------------------------------------------
-" Plugin: colorizer
-"----------------------------------------------
-" lua <<EOF
-" require 'colorizer'.setup {
-"   'css';
-"   'javascript';
-"   'typescript';
-"   html = {
-"     mode = 'foreground';
-"   }
-" }
-" EOF
-
-
-
-"----------------------------------------------
-" Plugin: nvim-lsp
-"----------------------------------------------
-" lua <<EOF
-" local nvim_lsp = require'nvim_lsp'
-
-" local on_attach_vim = function()
-"   require'diagnostic'.on_attach()
-"   require'completion'.on_attach()
-" end
-
-" nvim_lsp.cssls.setup({on_attach=on_attach_vim})
-" nvim_lsp.html.setup({on_attach=on_attach_vim})
-" nvim_lsp.jsonls.setup({
-"   cmd = {"json-languageserver", "--stdio"},
-"   on_attach=on_attach_vim,
-" })
-" nvim_lsp.tsserver.setup({on_attach=on_attach_vim})
-" --- nvim_lsp.efm.setup({on_attach=on_attach_vim})
-" --- nvim_lsp.pyls_ms.setup({on_attach=on_attach_vim})
-" --- nvim_lsp.gopls.setup({on_attach=on_attach_vim})
-
-" EOF
-
-" set omnifunc=v:lua.vim.lsp.omnifunc
-
-" nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
-" nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
-" nnoremap <silent> K     <cmd>lua vim.lsp.buf.hover()<CR>
-" nnoremap <silent> gi    <cmd>lua vim.lsp.buf.implementation()<CR>
-" nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
-" nnoremap <silent> gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
-" nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
-" nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
-" nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
-" nnoremap <silent> g=    <cmd>lua vim.lsp.buf.formatting()<CR>
-" nnoremap <silent> gR    <cmd>lua vim.lsp.buf.rename()<CR>
-" nnoremap <silent> <a-CR>    <cmd>lua vim.lsp.buf.code_action()<CR>
-
-" call sign_define('LspDiagnosticsErrorSign', {'text' : 'X', 'texthl' : 'LspDiagnosticsError'})
-" call sign_define('LspDiagnosticsWarningSign', {'text' : '', 'texthl' : 'LspDiagnosticsWarning'})
-" call sign_define('LspDiagnosticInformationSign', {'text' : 'i', 'texthl' : 'LspDiagnosticsInformation'})
-" call sign_define('LspDiagnosticHintSign', {'text' : 'H', 'texthl' : 'LspDiagnosticsHint'})
-
-" let g:diagnostic_enable_virtual_text = 1
-
-" nnoremap <unique> ]e <Cmd>NextDiagnosticCycle<CR>
-" nnoremap <unique> [e <Cmd>PrevDiagnosticCycle<CR>
-
-" " Use <Tab> and <S-Tab> to navigate through popup menu
-" inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-
-" " Set completeopt to have a better completion experience
-" set completeopt=menu,menuone,noinsert,noselect
-
-" " Avoid showing message extra message when using completion
-" set shortmess+=c
-
-" " trigger manual completion using tab
-" function! s:check_back_space() abort
-"     let col = col('.') - 1
-"     return !col || getline('.')[col - 1]  =~ '\s'
-" endfunction
-
-" inoremap <silent><expr> <TAB>
-"   \ pumvisible() ? "\<C-n>" :
-"   \ <SID>check_back_space() ? "\<TAB>" :
-"   \ completion#trigger_completion()
-
-" " possible value: 'UltiSnips', 'Neosnippet'
-" let g:completion_enable_snippet = 'UltiSnips'
-
-" " unset these as tab is used by haorenW1025/completion-nvim
-" " If you want :UltiSnipsEdit to split your window.
-" let g:UltiSnipsEditSplit="vertical"
-" let g:UltiSnipsListSnippets="<F19>"
-" let g:UltiSnipsExpandTrigger="<F19>"
-" let g:UltiSnipsJumpForwardTrigger="<F19>"
-" let g:UltiSnipsJumpBackwardTrigger="<F19>"
-
-" inoremap <silent><expr> <C-Space> completion#trigger_completion()
-
-" " Use completion-nvim in every buffer
-" autocmd BufEnter * lua require'completion'.on_attach()
-" autocmd CursorHold * lua vim.lsp.util.show_line_diagnostics()
-
-" " auto swictch sources
-" let g:completion_auto_change_source = 1
-
-" " change completion matching strategy
-" let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
-
-" " Chain completion list
-" let g:completion_chain_complete_list = {
-"       \ 'default' : [
-"       \       {'complete_items': ['lsp', 'snippet']},
-"       \       {'complete_items': ['path'], 'triggered_only': ['/']},
-"       \       {'mode': '<c-p>'},
-"       \       {'mode': '<c-n>'},
-"       \       {'mode': 'file'}]
-"       \ }
+nmap <unique> <leader>j :CocCommand rest-client.request<cr>
 
