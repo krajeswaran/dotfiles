@@ -25,7 +25,7 @@ export NODE_PATH=${HOME}/.node/lib/modules:$NODE_PATH
 alias vi="nvim"
 alias ls="ls --color=auto"
 alias cat="bat"
-export PATH=/usr/sbin:/usr/local/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${GEM_PATH}/bin:${HOME}/bin:${GOPATH}/bin:${HOME}/.node/bin:${HOME}/.local/bin:${PATH}
+export PATH=/usr/sbin:/usr/local/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${GEM_PATH}/bin:${HOME}/bin:${GOPATH}/bin:${HOME}/.node/bin:${HOME}/.local/bin:${PATH}
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${HOME}/.node/share/man:${MANPATH}
 
@@ -33,7 +33,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 proj() {
-	cd $(find -L ~/src -maxdepth 1 -type d | fzf)
+	cd $(find -L ~/src -maxdepth 1 -type d | sk)
 }
 
 xo() {

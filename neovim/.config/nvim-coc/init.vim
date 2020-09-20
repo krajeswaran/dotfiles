@@ -64,9 +64,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "js
-" Plug 'yuezk/vim-js'
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'
 
 "python
 Plug 'vim-python/python-syntax'
@@ -287,9 +286,8 @@ set background=dark
 
 if has('termguicolors')
   set termguicolors " Use true colours
+  colorscheme iceberg
 endif
-
-colorscheme iceberg
 
 "----------------------------------------------
 " Searching

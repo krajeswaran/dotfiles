@@ -18,7 +18,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 "general
-"Plug thesaneone/taskpaper.vim
+Plug 'thesaneone/taskpaper.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'machakann/vim-sandwich'
@@ -35,7 +35,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
-Plug 'justinmk/vim-dirvish'
 
 "themes
 "Plug 'arcticicestudio/nord-vim'
