@@ -1,5 +1,2 @@
 ipython
-mps-youtube
 pgcli
-units
-youtube-dl

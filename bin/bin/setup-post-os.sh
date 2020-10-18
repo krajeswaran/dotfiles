@@ -16,10 +16,10 @@ xdg-user-dirs-update
 # link dirs for root user
 sudo su
 mkdir ${HOME}/.vimviews ${HOME}/.vimbackup ${HOME}/.vimswap
-ln -s ~thesaneone/.vim* .
-ln -s ~thesaneone/.zsh* .
-ln -s ~thesaneone/.zfun* .
-ln -s ~thesaneone/.fzf* .
+ln -s ~${USER}/.vim* .
+ln -s ~${USER}/.zsh* .
+ln -s ~${USER}/.zfun* .
+ln -s ~${USER}/.fzf* .
 
 echo install umake, install umake go, node, firefox-dev
 echo setup google chrome. setup firefox/chrome sync addons

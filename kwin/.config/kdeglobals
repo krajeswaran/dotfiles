@@ -1,15 +1,17 @@
 [$Version]
-update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed
 
 [Appmenu Style]
 Style=InApplication
 
 [ColorEffects:Disabled]
+ChangeSelectionColor=
 Color=56,56,56
 ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.65
 ContrastEffect=1
+Enable=
 IntensityAmount=0.1
 IntensityEffect=2
 
@@ -109,68 +111,46 @@ ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
 [DesktopIcons]
-ActiveColor=169,156,255
-ActiveColor2=0,0,0
-ActiveEffect=togamma
-ActiveSemiTransparent=false
-ActiveValue=0.699999988079071
-Animated=true
-DefaultColor=144,128,248
-DefaultColor2=0,0,0
-DefaultEffect=none
-DefaultSemiTransparent=false
-DefaultValue=1
-DisabledColor=34,202,0
-DisabledColor2=0,0,0
-DisabledEffect=togray
-DisabledSemiTransparent=true
-DisabledValue=1
 Size=48
 
 [DialogIcons]
-ActiveColor=169,156,255
-ActiveColor2=0,0,0
-ActiveEffect=none
-ActiveSemiTransparent=false
-ActiveValue=1
-Animated=false
-DefaultColor=144,128,248
-DefaultColor2=0,0,0
-DefaultEffect=none
-DefaultSemiTransparent=false
-DefaultValue=1
-DisabledColor=34,202,0
-DisabledColor2=0,0,0
-DisabledEffect=togray
-DisabledSemiTransparent=true
-DisabledValue=1
 Size=32
 
+[Emoticons]
+emoticonsTheme=EmojiOne
+parseMode=2
+
 [General]
-BrowserApplication=google-chrome.desktop
-ColorScheme=Breeze Dark
+BrowserApplication=!/opt/firefox-dev/firefox $s
+ColorScheme=BreezeDark
 Name=Breeze Dark
-TerminalApplication[$e]=xfce4-terminal.wrapper
+TerminalApplication=rxv
+XftHintStyle=hintslight
+XftSubPixel=rgb
+dbfile=/home/kumaresan/.mozilla/firefox/3o4qr36j.default/places.sqlite
 fixed=Hack,9,-1,5,50,0,0,0,0,0,Regular
-font=Go Medium,10,-1,5,57,0,0,0,0,0,Regular
-menuFont=Go Medium,10,-1,5,57,0,0,0,0,0,Regular
-smallestReadableFont=Go Medium,8,-1,5,57,0,0,0,0,0,Regular
-toolBarFont=Go Medium,10,-1,5,57,0,0,0,0,0,Regular
+font=Noto Sans Display SemiBold,10,-1,5,63,0,0,0,0,0
+menuFont=Noto Sans Display SemiBold,10,-1,5,63,0,0,0,0,0
+smallestReadableFont=Noto Sans Display SemiBold,8,-1,5,63,0,0,0,0,0
+toolBarFont=Noto Sans Display SemiBold,10,-1,5,63,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
 Theme=breeze-dark
 
 [KDE]
+AnimationDurationFactor=0.000000
 ColorScheme=Breeze Dark
 LookAndFeelPackage=org.kde.breezedark.desktop
+ScrollbarLeftClickNavigatesByPage=false
 ShowDeleteCommand=true
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=false
 contrast=4
-widgetStyle=breeze
+widgetStyle=Fusion
 
 [KFileDialog Settings]
+Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=true
 Decoration position=0
@@ -178,6 +158,7 @@ LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Show Bookmarks=false
 Show Full Path=false
+Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=false
@@ -188,64 +169,19 @@ Speedbar Width=89
 View Style=Simple
 listViewIconSize=0
 
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
 [MainToolbarIcons]
-ActiveColor=169,156,255
-ActiveColor2=0,0,0
-ActiveEffect=none
-ActiveSemiTransparent=false
-ActiveValue=1
-Animated=false
-DefaultColor=144,128,248
-DefaultColor2=0,0,0
-DefaultEffect=none
-DefaultSemiTransparent=false
-DefaultValue=1
-DisabledColor=34,202,0
-DisabledColor2=0,0,0
-DisabledEffect=togray
-DisabledSemiTransparent=true
-DisabledValue=1
 Size=22
 
 [PanelIcons]
-ActiveColor=169,156,255
-ActiveColor2=0,0,0
-ActiveEffect=togamma
-ActiveSemiTransparent=false
-ActiveValue=0.699999988079071
-Animated=false
-DefaultColor=144,128,248
-DefaultColor2=0,0,0
-DefaultEffect=none
-DefaultSemiTransparent=false
-DefaultValue=1
-DisabledColor=34,202,0
-DisabledColor2=0,0,0
-DisabledEffect=togray
-DisabledSemiTransparent=true
-DisabledValue=1
 Size=32
 
 [PreviewSettings]
 MaximumRemoteSize=0
 
 [SmallIcons]
-ActiveColor=169,156,255
-ActiveColor2=0,0,0
-ActiveEffect=none
-ActiveSemiTransparent=false
-ActiveValue=1
-Animated=false
-DefaultColor=144,128,248
-DefaultColor2=0,0,0
-DefaultEffect=none
-DefaultSemiTransparent=false
-DefaultValue=1
-DisabledColor=34,202,0
-DisabledColor2=0,0,0
-DisabledEffect=togray
-DisabledSemiTransparent=true
-DisabledValue=1
 Size=16
 
 [Toolbar style]
@@ -253,22 +189,6 @@ ToolButtonStyle=NoText
 ToolButtonStyleOtherToolbars=NoText
 
 [ToolbarIcons]
-ActiveColor=169,156,255
-ActiveColor2=0,0,0
-ActiveEffect=none
-ActiveSemiTransparent=false
-ActiveValue=1
-Animated=false
-DefaultColor=144,128,248
-DefaultColor2=0,0,0
-DefaultEffect=none
-DefaultSemiTransparent=false
-DefaultValue=1
-DisabledColor=34,202,0
-DisabledColor2=0,0,0
-DisabledEffect=togray
-DisabledSemiTransparent=true
-DisabledValue=1
 Size=22
 
 [Translations]
@@ -278,7 +198,7 @@ LANGUAGE=en_US
 FakeEntryToKeepThisGroup=true
 activeBackground=49,54,59
 activeBlend=255,255,255
-activeFont=Go Medium,10,-1,5,57,0,0,0,0,0,Regular
+activeFont=Noto Sans Display SemiBold,10,-1,5,63,0,0,0,0,0
 activeForeground=239,240,241
 inactiveBackground=49,54,59
 inactiveBlend=75,71,67

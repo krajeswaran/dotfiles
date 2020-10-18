@@ -29,10 +29,10 @@ URxvt.iconFile: /usr/share/icons/Adwaita/scalable/apps/utilities-terminal-symbol
 !URxvt.cjkWidth: true
 URxvt.utf8: True
 URxvt.locale: True
-!URxvt.font: xft:Fira\ Code\ Medium:size=11, xft:Monospace:size=11 
-*.font: xft:Hack:size=11 
-URxvt.font: xft:Hack:size=11 
-URxvt*letterSpace: -1
+!URxvt.font: xft:JetBrainsMono\ Nerd\ Font:size=13, xft:Monospace:size=13 
+*.font: xft:Hack:size=13 
+URxvt.font: xft:Hack:size=13 
+URxvt*letterSpace: -2
 ! ext.nsions
 URxvt.perl-lib: /usr/lib/x86_64-linux-gnu/urxvt/perl
 URxvt.perl-ext-common: default,selection-to-clipboard

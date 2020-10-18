@@ -28,8 +28,10 @@ alias gogrep='find . -name "*.go" -o -name "*.ini" -o -name "*.yaml" -o -name "*
 alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.html" -o -name "*.*ss" -type f | grep -v ".node_modules" | grep -v ".meteor" | xargs grep -nHi '
 alias whitenoise='mpv av://lavfi:anoisesrc=color=pink'
 alias scanport='nmap -p 22 --open -sV 192.168.178.0/24'
-alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | fzy | sed 's/^ *//' | cut -f1 -d' '"
-command -v bat >/dev/null 2>&1 && alias cat="bat" 
+alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | sk | sed 's/^ *//' | cut -f1 -d' '"
+command -v batcat >/dev/null 2>&1 && alias cat="batcat" 
+alias ls="ls --color"
+command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
 
 hvectoh264() {
     ffmpeg -xerror -hide_banner -threads 4 -i "$1"   -c:a copy -c:s copy -c:v libx264 "$2"
@@ -44,11 +46,11 @@ findandreplace() {
 }
 
 proj() {
-	cd $(fd . ~/src -d1 -td | fzy)
+	cd $(fd . ~/src -d1 -td | sk)
 }
 
 fcd(){
-  cd "$(fd -td -H -d7 | fzy)"
+  cd "$(fd -td -H -d7 | sk)"
 }
 
 compress_videos() {

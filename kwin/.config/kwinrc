@@ -1,5 +1,7 @@
+[$Version]
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed
+
 [Compositing]
-AnimationSpeed=0
 Backend=OpenGL
 Enabled=true
 GLColorCorrection=false
@@ -13,13 +15,15 @@ WindowsBlockCompositing=true
 XRenderSmoothScale=false
 
 [Desktops]
+Id_1=180d68a3-26ea-4434-95d0-eeb68d341a49
 Name_1=Workspace 1
 Number=1
+Rows=1
 
 [Effect-CoverSwitch]
 Reflection=false
 TabBox=false
-TabBoxAlternative=true
+TabBoxAlternative=false
 
 [Effect-Cube]
 BorderActivate=9
@@ -39,7 +43,7 @@ TabBoxAlternative=false
 
 [Effect-PresentWindows]
 BorderActivate=9
-BorderActivateAll=5
+BorderActivateAll=5,7
 BorderActivateClass=9
 TouchBorderActivate=7
 TouchBorderActivateAll=9
@@ -51,7 +55,7 @@ InitialZoom=1
 [ElectricBorders]
 Bottom=None
 BottomLeft=None
-BottomRight=None
+BottomRight=LockScreen
 Left=None
 Right=None
 Top=None
@@ -60,7 +64,7 @@ TopRight=None
 
 [MouseBindings]
 CommandActiveTitlebar1=Raise
-CommandActiveTitlebar2=Start window tab drag
+CommandActiveTitlebar2=Raise
 CommandActiveTitlebar3=Operations menu
 CommandAll1=Move
 CommandAll2=Toggle raise and lower
@@ -68,9 +72,9 @@ CommandAll3=Resize
 CommandAllKey=Meta
 CommandAllWheel=Nothing
 CommandInactiveTitlebar1=Activate and raise
-CommandInactiveTitlebar2=Start window tab drag
+CommandInactiveTitlebar2=Activate and raise
 CommandInactiveTitlebar3=Operations menu
-CommandTitlebarWheel=Switch to Window Tab to the Left/Right
+CommandTitlebarWheel=Raise/Lower
 CommandWindow1=Activate, raise and pass click
 CommandWindow2=Activate and pass click
 CommandWindow3=Activate and pass click
@@ -83,7 +87,7 @@ coverswitchEnabled=true
 enforcedecoEnabled=true
 flipswitchEnabled=true
 highlightwindowEnabled=true
-kwin4_effect_scaleinEnabled=true
+kwin4_effect_scaleEnabled=true
 minimizeallEnabled=false
 snaphelperEnabled=true
 synchronizeskipswitcherEnabled=true
@@ -92,29 +96,29 @@ windowgeometryEnabled=true
 zoomEnabled=false
 
 [TabBox]
-ActivitiesMode=1
+ActivitiesMode=0
 ApplicationsMode=0
 BorderActivate=9
 BorderAlternativeActivate=9
 DesktopLayout=org.kde.breeze.desktop
 DesktopListLayout=org.kde.breeze.desktop
-DesktopMode=1
+DesktopMode=0
 HighlightWindows=true
 LayoutName=thumbnails
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
-ShowTabBox=false
+ShowTabBox=true
 SwitchingMode=0
 TouchBorderActivate=9
 TouchBorderAlternativeActivate=9
 
 [TabBoxAlternative]
-ActivitiesMode=1
+ActivitiesMode=0
 ApplicationsMode=0
-DesktopMode=1
-HighlightWindows=true
-LayoutName=big_icons
+DesktopMode=0
+HighlightWindows=false
+LayoutName=present_windows
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
@@ -128,7 +132,7 @@ Right=None
 Top=None
 
 [Windows]
-ActiveMouseScreen=false
+ActiveMouseScreen=true
 AutoRaise=false
 AutoRaiseInterval=750
 AutogroupInForeground=false
@@ -144,7 +148,7 @@ ElectricBorderMaximize=true
 ElectricBorderTiling=true
 ElectricBorders=0
 FocusPolicy=ClickToFocus
-FocusStealingPreventionLevel=0
+FocusStealingPreventionLevel=2
 GeometryTip=true
 HideUtilityWindowsForInactive=true
 InactiveTabsSkipTaskbar=false
@@ -162,8 +166,7 @@ WindowSnapZone=10
 
 [org.kde.kdecoration2]
 BorderSize=None
+BorderSizeAuto=false
 ButtonsOnLeft=
-ButtonsOnRight=IX
+ButtonsOnRight=IAX
 CloseOnDoubleClickOnMenu=false
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Arc-Dark

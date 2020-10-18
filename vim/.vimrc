@@ -18,17 +18,23 @@ endif
 call plug#begin('~/.vim/plugged')
 
 "general
-"Plug thesaneone/taskpaper.vim
+Plug 'thesaneone/taskpaper.vim'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'machakann/vim-sandwich'
+Plug 'schickling/vim-bufonly'
+Plug 'tpope/vim-sleuth'
+Plug 'romainl/vim-cool'
+Plug 'romainl/vim-qf'
+Plug 'wincent/ferret'
+Plug 'mg979/vim-visual-multi'
+Plug 'mbbill/undotree'
+Plug 'bogado/file-line'
+Plug 'regedarek/ZoomWin'
 Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'lotabout/skim'
-Plug 'lotabout/skim.vim'
-Plug 'justinmk/vim-dirvish'
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
 "themes
 "Plug 'arcticicestudio/nord-vim'
@@ -36,17 +42,23 @@ Plug 'w0ng/vim-hybrid'
 
 " Coding
 Plug 'tpope/vim-fugitive'
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'diepm/vim-rest-console', { 'for': ['markdown', 'text'] }
+Plug 'Yggdroot/indentLine'
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
 Plug 'lifepillar/vim-mucomplete'
-Plug 'pechorin/any-jump.vim'
 Plug 'wellle/tmux-complete.vim'
 Plug 'previm/previm'
 
+"js
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'
+
+"python
+Plug 'vim-python/python-syntax'
 "golang
 "Plug 'fatih/vim-go'
 call plug#end()
@@ -137,6 +149,7 @@ set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 
 " Formatting
+set formatoptions-=ro
 set autoindent                  " indent at the same level of the previous line
 set shiftwidth=4                " use indents of 4 spaces
 set expandtab                   " tabs are spaces, not tabs
@@ -275,7 +288,6 @@ if has('gui_running')
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
-    set guifont=Hack\ 10.5
     colorscheme hybrid
     set lines=30
     highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
@@ -359,13 +371,6 @@ set statusline+=\ %l:%c
 set statusline+=\ 
 
 "----------------------------------------------
-" Plugin: nathanaelkane/vim-indent-guides
-"----------------------------------------------
-let g:indent_guides_enable_on_vim_startup = 0
-let g:indent_guides_start_level = 3
-let g:indent_guides_exclude_filetypes = ['help', 'dirvish']
-
-"----------------------------------------------
 " Plugin: christoomey/vim-tmux-navigator
 "----------------------------------------------
 " Tmux vim integration
@@ -391,10 +396,20 @@ augroup vimrc_rooter
 augroup END
 
 "----------------------------------------------
-" Plugin: 'terryma/vim-multiple-cursors'
+" Plugin: indent
 "----------------------------------------------
-let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_skip_key='<C-b>'
+let g:indentLine_char_list = ['┊']
+
+""----------------------------------------------
+"" Plugin: vim-cool
+""----------------------------------------------
+let g:CoolTotalMatches = 1
+"----------------------------------------------
+" Plugin: vim-qf
+"----------------------------------------------
+nmap <unique> <F5> <Plug>(qf_qf_toggle)
+nmap <unique> ]l <Plug>(qf_qf_previous)
+nmap <unique> [l <Plug>(qf_qf_next)
 
 "----------------------------------------------
 " Plugin: vim-go
@@ -407,19 +422,22 @@ let g:multi_cursor_skip_key='<C-b>'
 "autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 
 "----------------------------------------------
-" Plugin: lotabout/skim.vim
+" Plugin: clap
 "----------------------------------------------
-command! -bang -nargs=* Rg call fzf#vim#rg_interactive(<q-args>, fzf#vim#with_preview('right:50%:hidden', 'alt-h'))
-nnoremap <unique> <silent> <leader>f :History<CR>
-nnoremap <unique> <silent> <leader>b :Buffers<CR>
-nnoremap <unique> <silent> <leader>p :Files<CR>
-nnoremap <unique> <silent> <leader>/ :Rg<CR>
-
+nnoremap <unique> <leader>o  :Clap history<CR>
+nnoremap <unique> <leader>p  :Clap files<CR>
+nnoremap <unique> <leader>f  :Clap filer<CR>
+nnoremap <unique> <leader>/  :Clap grep<CR>
 
 "----------------------------------------------
 " Plugin: previm/previm
 "----------------------------------------------
-let g:previm_open_cmd = 'xdg-open'
+let g:previm_open_cmd = 'open'
+
+"----------------------------------------------
+" Plugin: vim-bufonly
+"----------------------------------------------
+nmap <unique> <leader>q <cmd>:Bonly<CR>
 
 "----------------------------------------------
 " Plugin: justinmk/dirvish

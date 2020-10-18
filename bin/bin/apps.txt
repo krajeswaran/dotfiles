@@ -81,11 +81,8 @@ tree
 units
 subliminal
 keepassxc
-fd
-skim
+fdfind
 ripgrep
-bat
-exa
 qpdfview
 vlc
 gotop
@@ -93,3 +90,8 @@ xfdashboard
 xfdashboard-plugins
 cmus
 httpie
+units
+jq
+alacritty
+pandoc
+bat
