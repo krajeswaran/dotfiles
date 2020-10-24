@@ -1,0 +1,29 @@
+[Appearance]
+BackgroundColorOpacity=80
+Skin=breeze-minimal
+SkinInstalledWithKns=true
+
+[Behavior]
+OpenAfterStart=true
+
+[Desktop Entry]
+DefaultProfile=default.profile
+
+[Dialogs]
+ConfirmQuit=false
+FirstRun=false
+
+[DownloadDialog Settings]
+Height 1080=494
+Width 1920=700
+
+[Favorite Profiles]
+Favorites=
+
+[KFileDialog Settings]
+listViewIconSize=0
+
+[Window]
+KeepOpen=false
+ShowTabBar=false
+Width=100

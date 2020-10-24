@@ -1,0 +1,8 @@
+[BusyCursorSettings]
+Timeout=3
+
+[FeedbackStyle]
+TaskbarButton=false
+
+[TaskbarButtonSettings]
+Timeout=3

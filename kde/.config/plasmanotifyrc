@@ -1,0 +1,8 @@
+[Applications][firefox]
+Seen=true
+
+[Applications][slack]
+Seen=true
+
+[Services][networkmanagement]
+ShowInHistory=false

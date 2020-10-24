@@ -21,8 +21,22 @@ ln -s ~${USER}/.zsh* .
 ln -s ~${USER}/.zfun* .
 ln -s ~${USER}/.fzf* .
 
-echo install umake, install umake go, node, firefox-dev
-echo setup google chrome. setup firefox/chrome sync addons
-echo install pyenv/pip packages: pgcli http-prompt ipython 
-echo swap caps:escape make sure is working
-echo setup compositing/vblank/mpv/xfdashboard
+echo "Here are things you might want to do: 
+    - unfuck dotfiles stowing
+	- asdf install: yarn, golang, python, node
+	- pip install: pgcli, ipython, pynvim
+	- yarn install: diff-so-fancy
+	- setup neovim: checkhealth
+	- keyboard shortcuts
+	- firefox-dev
+	- setup local firefox, chromium
+	- gtk/xfce/kde themes, greeter config, icon themes
+	- f12 console
+	- install android-studio, install android-sdk
+	- postgres, redis
+	- install proj stuff
+	- syncthing setup
+    - fonts fuckery: get nerd-fonts: rxvt, gvim, neovim
+	- playx + instantmusic + musickube
+	- lsd
+"

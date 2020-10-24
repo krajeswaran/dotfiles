@@ -1,0 +1,13 @@
+[KPropertiesDialog]
+Height 1080=444
+Width 1920=476
+
+[Notification Messages]
+FormatSettingsChanged=false
+
+[Open-with settings]
+CompletionMode=1
+History=sync,fire,rxv
+
+[PlasmaRunnerManager]
+LaunchCounts=

@@ -18,7 +18,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 "general
-Plug 'thesaneone/taskpaper.vim'
+Plug 'krajeswaran/taskpaper.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'machakann/vim-sandwich'
@@ -485,7 +485,7 @@ set omnifunc=syntaxcomplete#Complete
 " tmux config
 let g:tmuxcomplete#trigger = 'completefunc'
 
-autocmd FileType markdown,text setlocal spell spelllang=en_us complete+=k dictionary+=spell
+autocmd FileType markdown,text setlocal complete+=k dictionary+=spell
 
 imap <expr> <down> mucomplete#extend_fwd("\<down>")
 let g:mucomplete#chains = {

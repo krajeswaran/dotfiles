@@ -14,6 +14,8 @@ p7zip
 unrar
 gparted
 zip
+chromium
+rxvt-unicode-256
 lib32z1
 lib32z1-dev
 lib32stdc++6
@@ -94,4 +96,5 @@ units
 jq
 alacritty
 pandoc
-bat
+batbat
+yakuake
