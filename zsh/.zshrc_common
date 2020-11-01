@@ -12,7 +12,7 @@ alias revo="ssh thesaneone@thesanerevo"
 alias router="ssh root@192.168.1.1"
 alias box="ssh thesaneone@thesanebox"
 alias diskusage="du -h -d 1"
-alias sshfs='sshfs -C -o reconnect,workaround=all'
+# alias sshfs='sshfs -C -o reconnect,workaround=all'
 # newly born hostname, child or project?
 alias namemaker="shuf -n 2 /usr/share/dict/words | tr -dc 'A-Za-z0-9'"
 alias gitclean='git clean -fxdq'

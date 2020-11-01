@@ -1,0 +1,24 @@
+[1]
+Description=Settings for urxvt
+noborder=true
+noborderrule=2
+types=1
+wmclass=urxvt
+wmclasscomplete=false
+wmclassmatch=1
+
+[2]
+Description=FFDEV
+clientmachine=localhost
+clientmachinematch=0
+size=1745,987
+sizerule=4
+title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
+titlematch=0
+types=1
+wmclass=firefox developer edition
+wmclasscomplete=false
+wmclassmatch=1
+
+[General]
+count=2

@@ -13,6 +13,10 @@ Recent Files[$e]=Screenshot from 2020-10-01 19-35-46.png,file:$HOME/photos/Scree
 Recent URLs[$e]=file:$HOME/photos/
 listViewIconSize=0
 
+[KPropertiesDialog]
+Height 1080=452
+Width 1920=418
+
 [PlasmaRunnerManager]
 LaunchCounts=1 services_kcm_style.desktop,1 services_powerdevilprofilesconfig.desktop,1 services_org.kde.dolphin.desktop,1 services_kcm_keyboard.desktop,2 services_kwindecoration.desktop,1 services_kwintabbox.desktop,1 services_componentchooser.desktop,3 services_org.kde.konsole.desktop,1 services_kwinscreenedges.desktop,1 services_autostart.desktop,1 services_fontinst.desktop,1 services_kcm_activities.desktop,1 services_mouse.desktop,1 services_keys.desktop,1 services_exec::plasma-discover --mode update,1 services_firefox.desktop,1 services_rxvt-unicode.desktop,1 services_org.kde.yakuake.desktop,1 services_powerdevilglobalconfig.desktop,1 services_kcm_pulseaudio.desktop
 pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconverter,shell,bookmarks,recentdocuments,locations,baloosearch

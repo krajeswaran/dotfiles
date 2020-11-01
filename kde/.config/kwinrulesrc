@@ -16,21 +16,21 @@ wmclasscomplete=false
 wmclassmatch=1
 
 [2]
-Description[$d]
-clientmachine[$d]
-clientmachinematch[$d]
+Description=FFDEV
+clientmachine=localhost
+clientmachinematch=0
 noborder[$d]
 noborderrule[$d]
-size[$d]
-sizerule[$d]
-title[$d]
-titlematch[$d]
-types[$d]
+size=1800,980
+sizerule=4
+title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
+titlematch=0
+types=1
 windowrole[$d]
 windowrolematch[$d]
-wmclass[$d]
-wmclasscomplete[$d]
-wmclassmatch[$d]
+wmclass=firefox developer edition
+wmclasscomplete=false
+wmclassmatch=1
 
 [3]
 Description[$d]
@@ -78,4 +78,4 @@ wmclasscomplete[$d]
 wmclassmatch[$d]
 
 [General]
-count=1
+count=2

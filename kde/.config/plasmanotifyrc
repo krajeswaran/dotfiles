@@ -4,5 +4,8 @@ Seen=true
 [Applications][slack]
 Seen=true
 
+[DoNotDisturb]
+NotificationSoundsMuted=false
+
 [Services][networkmanagement]
 ShowInHistory=false
