@@ -1,10 +1,16 @@
 [Background]
 Color=0,0,0
 
+[BackgroundFaint]
+Color=0,0,0
+
 [BackgroundIntense]
 Color=0,0,0
 
 [Color0]
+Color=0,0,0
+
+[Color0Faint]
 Color=0,0,0
 
 [Color0Intense]
@@ -13,10 +19,16 @@ Color=85,85,85
 [Color1]
 Color=131,0,4
 
+[Color1Faint]
+Color=131,0,4
+
 [Color1Intense]
 Color=255,85,85
 
 [Color2]
+Color=0,187,0
+
+[Color2Faint]
 Color=0,187,0
 
 [Color2Intense]
@@ -25,10 +37,16 @@ Color=85,255,85
 [Color3]
 Color=187,187,0
 
+[Color3Faint]
+Color=187,187,0
+
 [Color3Intense]
 Color=254,217,85
 
 [Color4]
+Color=0,114,190
+
+[Color4Faint]
 Color=0,114,190
 
 [Color4Intense]
@@ -37,10 +55,16 @@ Color=9,79,194
 [Color5]
 Color=126,38,73
 
+[Color5Faint]
+Color=126,38,73
+
 [Color5Intense]
 Color=151,79,149
 
 [Color6]
+Color=0,187,187
+
+[Color6Faint]
 Color=0,187,187
 
 [Color6Intense]
@@ -49,39 +73,24 @@ Color=131,193,191
 [Color7]
 Color=135,135,135
 
+[Color7Faint]
+Color=135,135,135
+
 [Color7Intense]
 Color=163,163,163
 
-[Desktop Entry]
-DefaultProfile=default.profile
-
-[DownloadDialog Settings]
-Height 1080=442
-Width 1920=700
-
-[Favorite Profiles]
-Favorites=
-
 [Foreground]
-Color=52,146,37
+Color=60,167,42
+
+[ForegroundFaint]
+Color=37,104,26
 
 [ForegroundIntense]
-Bold=true
-Color=52,146,37
+Color=78,209,52
 
 [General]
+Blur=false
+ColorRandomization=false
 Description=terminal.sexy
 Opacity=1
 Wallpaper=
-
-[KonsoleWindow]
-RemoveWindowTitleBarAndFrame=true
-ShowMenuBarByDefault=false
-ShowWindowTitleOnTitleBar=true
-
-[MainWindow]
-Height 1080=989
-MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAA6gAAAJDAAAABAAAAAQAAAAIAAAACPwAAAAA
-ToolBarsMovable=Disabled
-Width 1920=1471
