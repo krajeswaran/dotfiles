@@ -27,6 +27,7 @@ echo "Here are things you might want to do:
 	- pip install: pgcli, ipython, pynvim
 	- yarn install: diff-so-fancy
 	- setup neovim: checkhealth
+	- install gdrive, setup keepassxc
 	- keyboard shortcuts
 	- firefox-dev
 	- setup local firefox, chromium

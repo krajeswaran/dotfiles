@@ -6,37 +6,27 @@ confirmLogout=false
 shutdownType=2
 
 [LegacySession: saved at previous logout]
-clientMachine1=localhost
-clientMachine2=localhost
-command1=gvim
-command2=/usr/bin/urxvt
-count=2
+count=0
 
 [Session: saved at previous logout]
 clientId1=10d5d1de67000160219951000000012120003
-clientId2=10d5d1de67000160244052000000010800007
-clientId3=10d5d1de67000160241181800000011140040
-clientId4=10d5d1de67000160245478100000010800047
-count=4
-discardCommand1[$e]=rm,$HOME/.config/session/kwin_10d5d1de67000160219951000000012120003_1602458101_294595
-discardCommand4[$e]=rm,$HOME/.config/session/yakuake_10d5d1de67000160245478100000010800047_1602458101_286590
+clientId2=10d5d1de67000160668519700000015530007
+clientId3=10d5d1de67000160245478100000010800047
+count=3
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_10d5d1de67000160219951000000012120003_1606726927_958727
+discardCommand3[$e]=rm,$HOME/.config/session/yakuake_10d5d1de67000160245478100000010800047_1606726927_952353
 program1=/usr/bin/kwin_x11
 program2=pulseaudio
-program3=firefox
-program4=/usr/bin/yakuake
-restartCommand1=/usr/bin/kwin_x11,-session,10d5d1de67000160219951000000012120003_1602458101_294595
+program3=/usr/bin/yakuake
+restartCommand1=/usr/bin/kwin_x11,-session,10d5d1de67000160219951000000012120003_1606726927_958727
 restartCommand2=
-restartCommand3=/opt/firefox-dev/firefox,--sm-client-id,10d5d1de67000160241181800000011140040
-restartCommand4=/usr/bin/yakuake,-session,10d5d1de67000160245478100000010800047_1602458101_286590
+restartCommand3=/usr/bin/yakuake,-session,10d5d1de67000160245478100000010800047_1606726927_952353
 restartStyleHint1=0
 restartStyleHint2=0
 restartStyleHint3=0
-restartStyleHint4=0
 userId1=kumaresan
 userId2=kumaresan
 userId3=kumaresan
-userId4=kumaresan
 wasWm1=true
 wasWm2=false
 wasWm3=false
-wasWm4=false

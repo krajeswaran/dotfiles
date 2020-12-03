@@ -21,7 +21,7 @@ clientmachine=localhost
 clientmachinematch=0
 noborder[$d]
 noborderrule[$d]
-size=1800,980
+size=1823,1009
 sizerule=4
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 titlematch=0

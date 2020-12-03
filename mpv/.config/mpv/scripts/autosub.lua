@@ -3,7 +3,7 @@
 -- keyname script_binding auto_load_subs
 local utils = require 'mp.utils'
 function load_sub_fn()
-    subl = "/usr/local/bin/subliminal" -- use 'which subliminal' to find the path 
+    subl = "subliminal" -- use 'which subliminal' to find the path 
     local path = mp.get_property("path")
     path = string.sub(path, 0, -2 - string.len(get_extension(path)))
     mp.msg.info("Searching subtitle")

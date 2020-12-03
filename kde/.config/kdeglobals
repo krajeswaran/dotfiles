@@ -9,36 +9,36 @@ ChangeSelectionColor=
 Color=56,56,56
 ColorAmount=0
 ColorEffect=0
-ContrastAmount=0.65
+ContrastAmount=0.65000000000000002
 ContrastEffect=1
 Enable=
-IntensityAmount=0.1
+IntensityAmount=0.10000000000000001
 IntensityEffect=2
 
 [ColorEffects:Inactive]
 ChangeSelectionColor=true
 Color=112,111,110
-ColorAmount=0.025
+ColorAmount=0.025000000000000001
 ColorEffect=2
-ContrastAmount=0.1
+ContrastAmount=0.10000000000000001
 ContrastEffect=2
-Enable=false
+Enable=true
 IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=77,77,77
-BackgroundNormal=49,54,59
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
+BackgroundAlternate=64,69,82
+BackgroundNormal=65,72,87
+DecorationFocus=82,148,226
+DecorationHover=82,148,226
 ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
+ForegroundInactive=102,106,115
 ForegroundLink=41,128,185
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=211,218,227
 ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
+ForegroundVisited=82,148,226
 
 [Colors:Complementary]
 BackgroundAlternate=59,64,69
@@ -56,59 +56,59 @@ ForegroundVisited=61,174,230
 
 [Colors:Selection]
 BackgroundAlternate=29,153,243
-BackgroundNormal=61,174,233
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
+BackgroundNormal=82,148,226
+DecorationFocus=82,148,226
+DecorationHover=82,148,226
 ForegroundActive=252,252,252
-ForegroundInactive=239,240,241
+ForegroundInactive=211,218,227
 ForegroundLink=253,188,75
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=211,218,227
 ForegroundPositive=39,174,96
 ForegroundVisited=189,195,199
 
 [Colors:Tooltip]
-BackgroundAlternate=77,77,77
-BackgroundNormal=49,54,59
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
+BackgroundAlternate=47,52,63
+BackgroundNormal=53,57,69
+DecorationFocus=82,148,226
+DecorationHover=82,148,226
 ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
+ForegroundInactive=102,106,115
 ForegroundLink=41,128,185
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=211,218,227
 ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
+ForegroundVisited=82,148,226
 
 [Colors:View]
-BackgroundAlternate=49,54,59
-BackgroundNormal=35,38,41
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
+BackgroundAlternate=64,69,82
+BackgroundNormal=64,69,82
+DecorationFocus=82,148,226
+DecorationHover=82,148,226
 ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
+ForegroundInactive=102,106,115
 ForegroundLink=41,128,185
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=211,218,227
 ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
+ForegroundVisited=82,148,226
 
 [Colors:Window]
-BackgroundAlternate=77,77,77
-BackgroundNormal=49,54,59
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
+BackgroundAlternate=47,52,63
+BackgroundNormal=47,52,63
+DecorationFocus=82,148,226
+DecorationHover=82,148,226
 ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
+ForegroundInactive=102,106,115
 ForegroundLink=41,128,185
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=211,218,227
 ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
+ForegroundVisited=82,148,226
 
 [DesktopIcons]
 Size=48
@@ -117,13 +117,13 @@ Size=48
 Size=32
 
 [Emoticons]
-emoticonsTheme=EmojiOne
+emoticonsTheme=Breeze
 parseMode=2
 
 [General]
 BrowserApplication=!/opt/firefox-dev/firefox $s
-ColorScheme=BreezeDark
-Name=Breeze Dark
+ColorScheme=ArcDark
+Name=Arc Dark
 TerminalApplication=rxv
 XftHintStyle=hintnone
 XftSubPixel=rgb
@@ -131,17 +131,18 @@ dbfile=/home/kumaresan/.mozilla/firefox/3o4qr36j.default/places.sqlite
 fixed=Hack,9,-1,5,50,0,0,0,0,0,Regular
 font=Noto Sans Display SemiBold,10,-1,5,63,0,0,0,0,0
 menuFont=Noto Sans Display SemiBold,10,-1,5,63,0,0,0,0,0
+shadeSortColumn=true
 smallestReadableFont=Noto Sans Display SemiBold,8,-1,5,63,0,0,0,0,0
 toolBarFont=Noto Sans Display SemiBold,10,-1,5,63,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
-Theme=breeze-dark
+Theme=Arc-ICONS
 
 [KDE]
 AnimationDurationFactor=0.000000
 ColorScheme=Breeze Dark
-LookAndFeelPackage=org.kde.breezedark.desktop
+LookAndFeelPackage=com.github.varlesh.arc-dark
 ScrollbarLeftClickNavigatesByPage=false
 ShowDeleteCommand=true
 ShowIconsInMenuItems=true
@@ -162,11 +163,11 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=false
-Sort by=Name
+Sort by=Date
 Sort directories first=true
-Sort reversed=false
+Sort reversed=true
 Speedbar Width=89
-View Style=Simple
+View Style=Detail
 listViewIconSize=0
 
 [KShortcutsDialog Settings]
@@ -196,10 +197,10 @@ LANGUAGE=en_US
 
 [WM]
 FakeEntryToKeepThisGroup=true
-activeBackground=49,54,59
-activeBlend=255,255,255
-activeFont=Noto Sans Display SemiBold,10,-1,5,63,0,0,0,0,0
-activeForeground=239,240,241
-inactiveBackground=49,54,59
-inactiveBlend=75,71,67
-inactiveForeground=127,140,141
+activeBackground=47,52,63
+activeBlend=47,52,63
+activeFont=Noto Sans Display SemiCondensed Black,11,-1,5,87,0,0,0,0,0
+activeForeground=211,218,227
+inactiveBackground=47,52,63
+inactiveBlend=47,52,63
+inactiveForeground=102,106,115

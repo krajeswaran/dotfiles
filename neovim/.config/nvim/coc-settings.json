@@ -47,13 +47,13 @@
   "list.source.outline.defaultOptions": ["--auto-preview"],
   "list.source.files.args": ["--hidden", "--files"],
   "list.insertMappings": {
-		"<C-x>": "action:split",
-		"<C-v>": "action:vsplit"
-	},
-	"list.normalMappings": {
-		"<C-x>": "action:split",
-		"<C-v>": "action:vsplit"
-	},
+    "<C-x>": "action:split",
+    "<C-v>": "action:vsplit"
+  },
+  "list.normalMappings": {
+    "<C-x>": "action:split",
+    "<C-v>": "action:vsplit"
+  },
   //prettier
   //"coc.preferences.formatOnSaveFiletypes": [
   //  "html",
@@ -85,7 +85,7 @@
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.quitOnOpen": true,
-  "explorer.keyMappings": {
+  "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },

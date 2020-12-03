@@ -210,7 +210,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_2_3Actions0]
-CommandURL=urxvt
+CommandURL=konsole
 Type=COMMAND_URL
 
 [Data_2_3Conditions]
