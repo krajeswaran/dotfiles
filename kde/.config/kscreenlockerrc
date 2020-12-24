@@ -6,3 +6,7 @@ Timeout=15
 
 [Greeter]
 Theme=com.github.varlesh.arc-dark
+WallpaperPlugin=org.kde.color
+
+[Greeter][Wallpaper][org.kde.color][General]
+Color=0,0,0

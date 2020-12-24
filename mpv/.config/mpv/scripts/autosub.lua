@@ -3,7 +3,7 @@
 -- keyname script_binding auto_load_subs
 local utils = require 'mp.utils'
 function load_sub_fn()
-    subl = "subliminal" -- use 'which subliminal' to find the path 
+    subl = "/bin/subliminal" -- use 'which subliminal' to find the path 
     local path = mp.get_property("path")
     path = string.sub(path, 0, -2 - string.len(get_extension(path)))
     mp.msg.info("Searching subtitle")
@@ -11,9 +11,13 @@ function load_sub_fn()
     t = {}
     t.args = {subl, "download", "-l", "en", "-s", path}
     res = utils.subprocess(t)
-    if res.status == 0 then
+    for k, v in ipairs(res) do
+        print(k, v)
+    end
+    print(res[0], res.status, res.error)
+    if res.exit_status == 0 then
         mp.commandv("rescan_external_files", "reselect") 
-        mp.msg.info("Subtitle download succeeded")
+        mp.msg.info("Subtitle download succeeded" .. res.status)
         mp.osd_message("Subtitle download succeeded")
     else
         mp.msg.warn("Subtitle download failed")

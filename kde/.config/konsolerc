@@ -82,6 +82,9 @@ ShowWindowTitleOnTitleBar=true
 [MainWindow]
 Height 1080=1010
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAABb8AAAPdAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAABjgAAAPyAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
 Width 1920=1592
+
+[TabBar]
+CloseTabButton=None

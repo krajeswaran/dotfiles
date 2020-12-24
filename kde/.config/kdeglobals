@@ -116,6 +116,9 @@ Size=48
 [DialogIcons]
 Size=32
 
+[DirSelect Dialog]
+DirSelectDialog Size=847,586
+
 [Emoticons]
 emoticonsTheme=Breeze
 parseMode=2
@@ -124,7 +127,7 @@ parseMode=2
 BrowserApplication=!/opt/firefox-dev/firefox $s
 ColorScheme=ArcDark
 Name=Arc Dark
-TerminalApplication=rxv
+TerminalApplication=konsole
 XftHintStyle=hintnone
 XftSubPixel=rgb
 dbfile=/home/kumaresan/.mozilla/firefox/3o4qr36j.default/places.sqlite
@@ -147,6 +150,7 @@ ScrollbarLeftClickNavigatesByPage=false
 ShowDeleteCommand=true
 ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=false
+SingleClick=false
 contrast=4
 widgetStyle=Fusion
 

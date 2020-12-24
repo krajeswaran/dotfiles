@@ -10,17 +10,17 @@ count=0
 
 [Session: saved at previous logout]
 clientId1=10d5d1de67000160219951000000012120003
-clientId2=10d5d1de67000160668519700000015530007
-clientId3=10d5d1de67000160245478100000010800047
+clientId2=10d5d1de67000160245478100000010800047
+clientId3=10d5d1de67000160881084900000015610006
 count=3
-discardCommand1[$e]=rm,$HOME/.config/session/kwin_10d5d1de67000160219951000000012120003_1606726927_958727
-discardCommand3[$e]=rm,$HOME/.config/session/yakuake_10d5d1de67000160245478100000010800047_1606726927_952353
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_10d5d1de67000160219951000000012120003_1608813512_957460
+discardCommand2[$e]=rm,$HOME/.config/session/yakuake_10d5d1de67000160245478100000010800047_1608813512_942013
 program1=/usr/bin/kwin_x11
-program2=pulseaudio
-program3=/usr/bin/yakuake
-restartCommand1=/usr/bin/kwin_x11,-session,10d5d1de67000160219951000000012120003_1606726927_958727
-restartCommand2=
-restartCommand3=/usr/bin/yakuake,-session,10d5d1de67000160245478100000010800047_1606726927_952353
+program2=/usr/bin/yakuake
+program3=pulseaudio
+restartCommand1=/usr/bin/kwin_x11,-session,10d5d1de67000160219951000000012120003_1608813512_957460
+restartCommand2=/usr/bin/yakuake,-session,10d5d1de67000160245478100000010800047_1608813512_942013
+restartCommand3=
 restartStyleHint1=0
 restartStyleHint2=0
 restartStyleHint3=0

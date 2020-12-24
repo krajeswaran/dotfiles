@@ -2,5 +2,8 @@
 Bouncing=false
 Timeout=2
 
+[FeedbackStyle]
+TaskbarButton=false
+
 [TaskbarButtonSettings]
 Timeout=2

@@ -5,11 +5,11 @@ update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-
 Backend=OpenGL
 Enabled=true
 GLColorCorrection=false
-GLCore=false
+GLCore=true
 GLPlatformInterface=glx
 GLPreferBufferSwap=a
 GLTextureFilter=1
-HiddenPreviews=5
+HiddenPreviews=6
 OpenGLIsUnsafe=false
 WindowsBlockCompositing=true
 XRenderSmoothScale=false
@@ -45,8 +45,8 @@ TabBoxAlternative=false
 BorderActivate=9
 BorderActivateAll=5,7
 BorderActivateClass=9
-TouchBorderActivate=7
-TouchBorderActivateAll=9
+TouchBorderActivate=9
+TouchBorderActivateAll=7
 TouchBorderActivateClass=9
 
 [Effect-Zoom]
@@ -127,9 +127,9 @@ SwitchingMode=0
 
 [TouchEdges]
 Bottom=None
-Left=None
+Left=KRunner
 Right=None
-Top=None
+Top=KRunner
 
 [Windows]
 ActiveMouseScreen=true
@@ -167,8 +167,9 @@ WindowSnapZone=10
 [org.kde.kdecoration2]
 BorderSize=None
 BorderSizeAuto=false
-ButtonsOnLeft=
+ButtonsOnLeft=N
 ButtonsOnRight=IAX
 CloseOnDoubleClickOnMenu=false
+ShowToolTips=false
 library=org.kde.kwin.aurorae
 theme=__aurorae__svg__Arc-Dark
