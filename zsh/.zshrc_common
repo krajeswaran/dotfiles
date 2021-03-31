@@ -12,7 +12,7 @@ alias revo="ssh thesaneone@thesanerevo"
 alias router="ssh root@192.168.1.1"
 alias box="ssh thesaneone@thesanebox"
 alias diskusage="du -h -d 1"
-alias sshfs='sshfs -C -o reconnect,workaround=all'
+alias sshfs='sshfs -C -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3'
 # newly born hostname, child or project?
 alias namemaker="shuf -n 2 /usr/share/dict/words | tr -dc 'A-Za-z0-9'"
 alias gitclean='git clean -fxdq'
@@ -20,16 +20,18 @@ alias gitpdiff='git diff HEAD --'
 alias pwd="pwd -P"
 alias gitlog="git log --graph --pretty=format:'%C(yellow)%h%Creset -%Cred%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias smesg="tail -f /var/log/{messages,kernel,dmesg,syslog}"
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
-alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias urlencode='python -c "import sys, urllib as ul; print(ul.quote_plus(sys.argv[1]))"'
+alias urldecode='python -c "import sys, urllib as ul; print(ul.unquote_plus(sys.argv[1]))"'
 alias jgrep='find . -name "*.java" -o -name "*.xml" -o -name "*.properties" -type f | xargs grep -nHi '
 alias pygrep='find . -name "*.py" -o -name "*.ini" -o -name "*.yaml" -o -name "*.conf" -type f | xargs grep -nHi '
 alias gogrep='find . -name "*.go" -o -name "*.ini" -o -name "*.yaml" -o -name "*.json" -type f | xargs grep -nHi '
 alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.html" -o -name "*.*ss" -type f | grep -v ".node_modules" | grep -v ".meteor" | xargs grep -nHi '
 alias whitenoise='mpv av://lavfi:anoisesrc=color=pink'
 alias scanport='nmap -p 22 --open -sV 192.168.178.0/24'
-alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | fzy | sed 's/^ *//' | cut -f1 -d' '"
-command -v bat >/dev/null 2>&1 && alias cat="bat" 
+alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | sk | sed 's/^ *//' | cut -f1 -d' '"
+command -v batcat >/dev/null 2>&1 && alias cat="batcat" 
+alias ls="ls --color"
+command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
 
 hvectoh264() {
     ffmpeg -xerror -hide_banner -threads 4 -i "$1"   -c:a copy -c:s copy -c:v libx264 "$2"
@@ -44,19 +46,27 @@ findandreplace() {
 }
 
 proj() {
-	cd $(fd . ~/src -d1 -td | fzy)
+	cd $(fd . ~/src -d1 -td | sk)
 }
 
 fcd(){
-  cd "$(fd -td -H -d7 | fzy)"
+  cd "$(fd -td -H -d7 | sk)"
+}
+
+compress_videos() {
+  for file in *.mp4
+  do
+    ffmpeg -i $file "c-"$file -vcodec libx265 -crf 24
+  done
 }
 
 # os specific
-if [ -f ~/.zshrc_os ]; then
-    source ~/.zshrc_os
+if [ -f ~/.profile ]; then
+    source ~/.profile
 fi
 
 # work specific
 if [ -f ~/.zshrc_work ]; then
     source ~/.zshrc_work
 fi
+

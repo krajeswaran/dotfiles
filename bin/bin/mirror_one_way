@@ -6,10 +6,10 @@ do
     case "$opt" in
       d)  DRYRUN="--dry-run";;
       l)  LOCALCOPY=on;;
-      \?)		# unknown flag
-      	  echo >&2 \
-	  "usage: $0 [-d] [-l]"
-	  exit 1;;
+      \?)               # unknown flag
+          echo >&2 \
+          "usage: $0 [-d] [-l]"
+          exit 1;;
     esac
 done
 shift `expr $OPTIND - 1`

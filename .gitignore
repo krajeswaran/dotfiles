@@ -13,3 +13,4 @@ ssh/.ssh/authorized_keys
 ssh/.ssh/known_hosts
 ssh/.ssh/id_rsa*
 vim/.vim/.netrwhist/
+vim/.vim/plugged/

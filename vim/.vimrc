@@ -1,121 +1,130 @@
 " General
 set nocompatible        " must be first line
-set background=dark     " Assume a dark background
 
-set shell=/bin/bash  " posix complaint shell for os x 
 " Plugins
+"----------------------------------------------
+" Plugin management
+"
+" Download vim-plug from the URL below and follow the installation
+" instructions:
+" https://github.com/junegunn/vim-plug
+"----------------------------------------------
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
 "general
-"Plug thesaneone/taskpaper.vim
+Plug 'krajeswaran/taskpaper.vim'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-"Plug kien/ctrlp.vim
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'tpope/vim-sleuth'
+Plug 'machakann/vim-sandwich'
+Plug 'schickling/vim-bufonly'
+Plug 'tpope/vim-sleuth'
+Plug 'romainl/vim-cool'
+Plug 'romainl/vim-qf'
+Plug 'wincent/ferret'
+Plug 'mg979/vim-visual-multi'
+Plug 'mbbill/undotree'
+Plug 'bogado/file-line'
+Plug 'regedarek/ZoomWin'
+Plug 'junegunn/goyo.vim'
+Plug 'airblade/vim-rooter'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"Plug vim-scripts/DirDo.vim
-Plug 'Lokaltog/vim-easymotion'
-Plug 'itchyny/lightline.vim'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'mileszs/ack.vim'
-Plug 'xolox/vim-notes'
-Plug 'xolox/vim-misc'
-
-"coding
-"Plug scrooloose/syntastic
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-commentary'
-Plug 'w0rp/ale'
-Plug 'lifepillar/vim-mucomplete'
-" Plug 'ajh17/VimCompletesMe'
-Plug 'ternjs/tern_for_vim', { 'for': 'javascript', 'do': 'npm install' }
-"Plug 'Shougo/neocomplete'
-"Plug Shougo/neosnippet
-"Plug Valloric/YouCompleteMe
-"Plug majutsushi/tagbar
-"Plug xolox/vim-easytags
-
-"ruby
-"Plug vim-ruby/vim-ruby
-"Plug tpope/vim-rake
-"Plug ecomba/vim-ruby-refactoring
-"Plug astashov/vim-ruby-debugger
-
-"python
-"Plug klen/python-mode
-"Plug davidhalter/jedi 
-Plug 'davidhalter/jedi-vim'
-"https:/hub.com/tmhedberg/SimpylFold
-"https:/hub.com/vim-scripts/indentpython.vim
-
-"Go
-Plug 'fatih/vim-go'
-
-"Javascript
-"Plug leshill/vim-json
-"Plug groenewege/vim-less
-"Plug taxilian/vim-web-indent
-
-"html
-"Plug amirh/HTML-AutoCloseTag
-"Plug ChrisYip/Better-CSS-Syntax-for-Vim
-"Plug mattn/emmet-vim
-
-"addl.syntaxes
-"Plug tpope/vim-haml
-Plug 'tpope/vim-markdown'
-Plug 'pangloss/vim-javascript'
-
-"misc
-"Plug vim-scripts/Conque-Shell
-"Plug mutewinter/LustyJuggler
-"Plug fmoralesc/vim-pad
-Plug 'godlygeek/tabular'
 
 "themes
-"Plug altercation/vim-colors-solarized
-"Plug chriskempson/base16-vim
+"Plug 'arcticicestudio/nord-vim'
 Plug 'w0ng/vim-hybrid'
 
+" Coding
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'Yggdroot/indentLine'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-commentary'
+Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
+Plug 'lifepillar/vim-mucomplete'
+Plug 'wellle/tmux-complete.vim'
+Plug 'previm/previm'
+
+"js
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'
+
+"python
+Plug 'vim-python/python-syntax'
+"golang
+"Plug 'fatih/vim-go'
 call plug#end()
 
+"----------------------------------------------
+" General settings
+"----------------------------------------------
+" Disable vim distribution plugins
+let g:loaded_getscript = 1
+let g:loaded_getscriptPlugin = 1
+"let g:loaded_gzip = 1
+let g:loaded_logiPat = 1
+let g:loaded_matchit = 1
+"let g:loaded_matchparen = 1
+let g:loaded_netrw = 1 
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+let g:loaded_rrhelper = 1  " ?
+let g:loaded_shada_plugin = 1  " ?
+"let g:loaded_tar = 1
+"let g:loaded_tarPlugin = 1
+let g:loaded_tutor_mode_plugin = 1
+let g:loaded_2html_plugin = 1
+let g:loaded_vimball = 1
+let g:loaded_vimballPlugin = 1
+"let g:loaded_zip = 1
+"let g:loaded_zipPlugin = 1
 
-" General
 set mouse=v                 " automatically enable mouse usage
 set go+=a
 set splitbelow
 set splitright
 set showfulltag
-set clipboard=unnamed
-"set clipboard=unnamedplus
+set clipboard^=unnamed,unnamedplus
 scriptencoding utf-8
 set encoding=utf-8
 "imap ^V ^O"+p
 "set shellcmdflag=-ic
 set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
+
+" set title for terminal
+set title
+
 set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
 "set virtualedit=onemore         " allow for cursor beyond last character
 set history=1000                " Store a ton of history (default is 20)
 set hidden                      " allow buffer switching without saving
 
-" Setting up the directories 
+" Setting up the directories
 set backup                      " backups are nice ...
 set lazyredraw                  " no unnecessary redraws
 if has('persistent_undo')
-    set undofile
-    set undodir=~/.vimundo/
-    set undolevels=1000         "maximum number of changes that can be undone
-    set undoreload=10000        "maximum number lines to save for undo on a buffer reload
+	set undofile
+	set undodir=~/.vimundo/
+	set undolevels=1000         "maximum number of changes that can be undone
+	set undoreload=10000        "maximum number lines to save for undo on a buffer reload
 endif
-"au BufWinLeave * silent! mkview  "make vim save view (state) (folds, cursor, etc)
-"au BufWinEnter * silent! loadview "make vim load view (state) (folds, cursor, etc)
 
-" Vim UI
-"set tabpagemax=15               " only show 15 tabs
-"set showmode                    " display the current mode
+" Enable mouse if possible
+if has('mouse')
+	set mouse=a
+endif
 
-"autocmd FileType text setlocal textwidth=78
+" Allow vim to set a custom font or color for a word
+syntax enable
+
 set wrap
 set linebreak
 set nolist  " list disables linebreak
@@ -141,6 +150,7 @@ set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 
 " Formatting
+set formatoptions-=ro
 set autoindent                  " indent at the same level of the previous line
 set shiftwidth=4                " use indents of 4 spaces
 set expandtab                   " tabs are spaces, not tabs
@@ -152,8 +162,6 @@ set pastetoggle=<F2>                       " no indent on paste
 
 " other niceties
 set mousemodel=popup
-
-set grepformat=%f:%l:%m
 
 set diffopt=filler,context:4,vertical
 set makeprg=g++\ \\\--std=c++0x\ \\\\{$*}
@@ -195,10 +203,8 @@ map <S-H> gT
 map <S-L> gt
 
 " Stupid shift key fixes
-cmap W w
 cmap WQ wq
 cmap wQ wq
-cmap Q q
 cmap Tabe tabe
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
@@ -217,9 +223,6 @@ nmap <leader>f7 :set foldlevel=7<CR>
 nmap <leader>f8 :set foldlevel=8<CR>
 nmap <leader>f9 :set foldlevel=9<CR>
 
-"clearing highlighted search
-nmap <silent> <leader>/ :nohlsearch<CR>
-
 " Shortcuts
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
@@ -232,14 +235,6 @@ vnoremap > >gv
 " For when you forget to sudo.. Really Write the file.
 cmap w!! w !sudo tee % >/dev/null
 
-" Some helpers to edit mode
-" http://vimcasts.org/e/14
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>ew :e %%
-map <leader>es :sp %%
-map <leader>ev :vsp %%
-map <leader>et :tabe %%
-
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
 
@@ -250,216 +245,269 @@ map zh zH
 "spell check
 map <F7> :setlocal spell spelllang=en
 
-"jump error list easily 
+"jump error list easily
 map <silent> <leader>cn :cn<CR>zv
 map <silent> <leader>cp :cp<CR>zv
 
-highlight BadWhitespace ctermbg=red guibg=darkred
+"execute macros over visual range
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
 
-" py tabs
-au BufNewFile,BufRead *.py 
-        \ set tabstop=4 |
-        \ set softtabstop=4 |
-        \ set shiftwidth=4 |
-        \ set textwidth=120 |
-        \ set expandtab |
-        \ set autoindent |
-        \ set fileformat=unix |
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction
 
-" js tabs
-au BufNewFile,BufRead *.js,*.html,*.css
-        \ set tabstop=2 |
-        \ set softtabstop=2 |
-        \ set shiftwidth=2 |
+"better terminal mappings
+" turn terminal to normal mode with escape
+tnoremap <Esc> <C-W>N
+" open terminal on ctrl+n
+nnoremap <leader>T :term ++rows=10<CR>
+
+"----------------------------------------------
+" Colors
+"----------------------------------------------
+set background=dark
+
+" if has('termguicolors')
+"   set termguicolors " Use true colours
+" endif
+
+" fucking magenta autocomplete menu
+highlight Pmenu ctermbg=darkgrey
 
 " flag bad whitespace
-au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /\s\+$/
+highlight BadWhitespace ctermbg=red guibg=darkred
+highlight EndOfBuffer ctermbg=black ctermfg=black 
 
+"----------------------------------------------
+" GUI Settings 
+"----------------------------------------------
+" GVIM- (here instead of .gvimrc)
+set bg=dark
+if has('gui_running')
+    set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right-hand scroll bar
+    set guioptions-=L  "remove left-hand scroll bar
+    colorscheme hybrid
+    set lines=30
+    highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
+endif
 
-" Plugins 
+"----------------------------------------------
+" Searching
+"----------------------------------------------
+"set inccommand=split          " enables interactive search and replace
 
-" Notes
-let g:notes_directories=['~/Google Drive/Notes']
-let g:notes_suffix = '.txt'
-let g:notes_title_sync = 'rename_file'
-let g:notes_list_bullets = ['•', '◦', '▸', '▹', '▪', '▫']
+" These mappings will make it so that going to the next one in a search will
+" center on the line it's found in.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+"----------------------------------------------
+" Navigation
+"----------------------------------------------
+" Disable arrow keys
+"noremap <Up> <NOP>
+"noremap <Down> <NOP>
+"noremap <Left> <NOP>
+"noremap <Right> <NOP>
+
+" ... but skip the quickfix when navigating
+augroup qf
+	autocmd!
+	autocmd FileType qf set nobuflisted
+augroup END
+
+" Path
+set path+=**
 
 " netrw
-let g:netrw_banner = 0
-let g:netrw_liststyle = 1
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
+let g:netrw_banner=0        " disable annoying banner
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide = &wildignore
-
+let g:netrw_list_hide+=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 
 " JSON
 nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
-
-
-" fzf
-"let g:fzf_nvim_statusline = 0 " disable statusline overwriting
-
-nnoremap <silent> <leader>o :Files<CR>
-nnoremap <silent> <leader>b :Buffers<CR>
-nnoremap <silent> <leader>p :History<CR>
-nnoremap <silent> <leader>/ :execute 'Ag ' . input('Ag/')<CR>
-nnoremap <silent> <leader>. :AgIn 
-
-" nnoremap <silent> <leader>gc :Commits<CR>
-nnoremap <silent> <leader>gs :GFiles?<CR>
-
-imap <C-x><C-f> <plug>(fzf-complete-file-ag)
-imap <C-x><C-l> <plug>(fzf-complete-line)
-
-function! SearchWithAgInDirectory(...)
-call fzf#vim#ag(join(a:000[1:], ' '), extend({'dir': a:1}, g:fzf#vim#default_layout))
-endfunction
-command! -nargs=+ -complete=dir AgIn call SearchWithAgInDirectory(<f-args>)
-let g:fzf_launcher = "~/bin/fzf_iterm %s"
-
-"" taskpaper
-"   let g:task_paper_archive_file = 'Dropbox/todo/archive_todo.txt'
-"
-
-" singlecompile
-nmap <F9> :SCCompile<cr>
-nmap <F10> :SCCompileRun<cr>
-let g:SingleCompile_showquickfixiferror = 1
-let g:SingleCompile_showresultafterrun = 1
-
-
-" python
-autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
-let g:jedi#use_splits_not_buffers = "right"
-autocmd BufNewFile,BufRead *.py let g:ackprg = 'ag --python'
-
-
-" golang
-set autowrite
-autocmd BufNewFile,BufRead *.go let g:ackprg = 'ag --go'
-
-au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
-au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
-
-au FileType go nmap <Leader>ds <Plug>(go-def-split)
-au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-
-au FileType go nmap <Leader>gd <Plug>(go-doc)
-au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
-
-au FileType go nmap <Leader>s <Plug>(go-implements)
-
-au FileType go nmap <Leader>e <Plug>(go-rename)
-
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_types = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-
-
-" ack/ag
-if executable('ag')
-    let g:ackprg = 'ag'
-endif
-
-
-" lightline
+"----------------------------------------------
+" Status line
+"----------------------------------------------
 set laststatus=2
-let g:lightline = {
-            \ 'colorscheme': 'wombat',
-            \ 'separator': { 'left': '', 'right': '' },
-            \ 'subseparator': { 'left': '|', 'right': '|' },
-            \ 'active': {
-            \   'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ], ['ctrlpmark'] ],
-            \   'right': [ [ 'lineinfo' ], ['percent'], [ 'fileformat', 'fileencoding', 'filetype' ] ]
-            \ },
-            \ 'component_function': {
-            \   'fugitive': 'LightLineFugitive',
-            \   'filename': 'LightLineFilename',
-            \   'fileformat': 'LightLineFileformat',
-            \   'ctrlpmark': 'ALEStatusline'
-            \ },
-            \ }
-
-function! LightLineModified()
-    return &ft =~ 'help' ? '' : &modified ? '+' : &modifiable ? '' : '-'
+function! GitStatus()
+  return fugitive#head() != '' ? ' '.fugitive#head() : ''
 endfunction
 
-function! LightLineReadonly()
-    return &ft !~? 'help' && &readonly ? 'RO' : ''
-endfunction
+set statusline=
+if has('gui_running')
+  set statusline+=%#CursorColumn#
+else
+  set statusline+=%#NonText#
+endif
+set statusline+=\ %f
+set statusline+=%{&modified?'\ +':''}
+set statusline+=%{&readonly?'\ ':''}
+if has('gui_running')
+  set statusline+=%#LineNr#
+else
+  set statusline+=%#PmenuSel#
+endif
+set statusline+=%=
+set statusline+=%{'help'!=&filetype?bufnr('%'):''}
+set statusline+=\ %{GitStatus()}
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\ %{&fileformat}
+if has('gui_running')
+  set statusline+=%#NonText#
+else
+  set statusline+=%#PmenuSel#
+endif
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
 
-function! LightLineFilename()
-    let fname = expand('%:t')
-    return fname == 'ControlP' && has_key(g:lightline, 'ctrlp_item') ? g:lightline.ctrlp_item :
-                \ fname == '__Tagbar__' ? g:lightline.fname :
-                \ &ft == 'vimfiler' ? vimfiler#get_status_string() :
-                \ &ft == 'vimshell' ? vimshell#get_status_string() :
-                \ ('' != LightLineReadonly() ? LightLineReadonly() . ' ' : '') .
-                \ ('' != fname ? fname : '[No Name]') .
-                \ ('' != LightLineModified() ? ' ' . LightLineModified() : '')
-endfunction
+"----------------------------------------------
+" Plugin: christoomey/vim-tmux-navigator
+"----------------------------------------------
+" Tmux vim integration
+let g:tmux_navigator_no_mappings = 1
+let g:tmux_navigator_save_on_switch = 1
 
-function! LightLineFugitive()
-    try
-        if expand('%:t') !~? 'Tagbar\|Gundo\|NERD' && &ft !~? 'vimfiler' && exists('*fugitive#head')
-            let mark = ''  " edit here for cool mark
-            let branch = fugitive#head()
-            return branch !=# '' ? mark.branch : ''
-        endif
-    catch
-    endtry
-    return ''
-endfunction
+" Move between splits with ctrl+h,j,k,l
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
+nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
 
-function! LightLineFileformat()
-    return winwidth(0) > 70 ? &fileformat : ''
-endfunction
+"----------------------------------------------
+" Plugin: vim-rooter
+"----------------------------------------------
+let g:rooter_change_directory_for_non_project_files = 'current'
+let g:rooter_silent_chdir = 1
+let g:rooter_patterns = ['package.json', 'Readme.md', 'readme.md', 'README.md', '.vimroot', '.git/', 'venv/', 'vendor/']
 
-function! LightLineFiletype()
-    return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
-endfunction
+augroup vimrc_rooter
+    autocmd VimEnter * :Rooter
+augroup END
 
-function! LightLineFileencoding()
-    return winwidth(0) > 70 ? (&fenc !=# '' ? &fenc : &enc) : ''
-endfunction
+"----------------------------------------------
+" Plugin: indent
+"----------------------------------------------
+let g:indentLine_char_list = ['┊']
 
-function! LightLineMode()
-    let fname = expand('%:t')
-    return fname == '__Tagbar__' ? 'Tagbar' :
-                \ fname == '__Gundo_Preview__' ? 'Gundo Preview' :
-                \ &ft == 'unite' ? 'Unite' :
-                \ &ft == 'vimfiler' ? 'VimFiler' :
-                \ &ft == 'vimshell' ? 'VimShell' :
-                \ winwidth(0) > 60 ? lightline#mode() : ''
-endfunction
+""----------------------------------------------
+"" Plugin: vim-cool
+""----------------------------------------------
+let g:CoolTotalMatches = 1
+"----------------------------------------------
+" Plugin: vim-qf
+"----------------------------------------------
+nmap <unique> <F5> <Plug>(qf_qf_toggle)
+nmap <unique> ]l <Plug>(qf_qf_previous)
+nmap <unique> [l <Plug>(qf_qf_next)
 
-let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '⬥ ok']
-function! ALEStatusline()
-    return ALEGetStatusLine()
-endfunction
+"----------------------------------------------
+" Plugin: vim-go
+"----------------------------------------------
+" disable vim-go :GoDef short cut (gd)
+" this is handled by LanguageClient [LC]
+"let g:go_def_mapping_enabled = 0
+"let g:go_def_mode='gopls'
+"let g:go_info_mode='gopls'
+"autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 
-" GUI Settings 
-" GVIM- (here instead of .gvimrc)
-set t_Co=256
-let g:hybrid_use_Xresources = 1
-colorscheme hybrid
-set guioptions-=m  "remove menu bar
-set guioptions-=T  "remove toolbar
-set guioptions-=r  "remove right-hand scroll bar
-set guioptions-=L  "remove left-hand scroll bar
-set guifont=Menlo\ Regular:h14
+"----------------------------------------------
+" Plugin: clap
+"----------------------------------------------
+command! -bang -nargs=* Ag call fzf#vim#ag_interactive(<q-args>, fzf#vim#with_preview('right:50%:hidden', 'alt-h'))
+command! -bang -nargs=* Rg call fzf#vim#rg_interactive(<q-args>, fzf#vim#with_preview('right:50%:hidden', 'alt-h'))
 
-" mucomplete
+nnoremap <unique> <leader>o  :History<CR>
+nnoremap <unique> <leader>p  :Files<CR>
+nnoremap <unique> <leader>f  :GFiles<CR>
+nnoremap <unique> <leader>/  :Rg 
+
+"----------------------------------------------
+" Plugin: previm/previm
+"----------------------------------------------
+let g:previm_open_cmd = 'open'
+
+"----------------------------------------------
+" Plugin: vim-bufonly
+"----------------------------------------------
+nmap <unique> <leader>q <cmd>:Bonly<CR>
+
+"----------------------------------------------
+" Plugin: justinmk/dirvish
+"----------------------------------------------
+autocmd FileType dirvish sort ,^.*[\/],
+
+command! -nargs=? -complete=dir Explore belowright vsplit | silent Dirvish <args> | vertical resize 50
+command! -nargs=? -complete=dir Sexplore belowright vsplit | silent Dirvish <args> | vertical resize 50
+command! -nargs=? -complete=dir Vexplore belowright vsplit | silent Dirvish <args> | vertical resize 50
+
+augroup dirvish_config
+  autocmd!
+
+  " Map `gh` to hide dot-prefixed files.  Press `R` to "toggle" (reload).
+  autocmd FileType dirvish nnoremap <silent><buffer>
+    \ gh :silent keeppatterns g@\v/\.[^\/]+/?$@d _<cr>:setl cole=3<cr>
+
+  " Map `o` to open in split
+  autocmd FileType dirvish
+    \  nnoremap <silent><buffer> o :call dirvish#open('vsplit', 0)<CR>
+    \ |xnoremap <silent><buffer> o :call dirvish#open('vsplit', 0)<CR>
+
+  " New Folder
+  autocmd FileType dirvish
+    \  nnoremap <buffer> md :!mkdir %
+
+  " New File
+  autocmd FileType dirvish
+    \  nnoremap <buffer> mm :e %
+augroup END
+
+"----------------------------------------------
+" Plugin: lifepillar/vim-mucomplete
+"----------------------------------------------
 set showmode shortmess+=c
+set belloff+=ctrlg
 set completeopt-=preview
-set completeopt+=longest,menu,menuone,noinsert
-let g:jedi#popup_on_dot = 1  " It may be 1 as well
-let g:mucomplete#enable_auto_at_startup = 0
+set complete-=t
+set complete-=i
+set completeopt+=menuone,noinsert,noselect
+
+" turn omni func for all
+set omnifunc=syntaxcomplete#Complete
+
+" tmux config
+let g:tmuxcomplete#trigger = 'completefunc'
+
+autocmd FileType markdown,text setlocal complete+=k dictionary+=spell
+
+imap <expr> <down> mucomplete#extend_fwd("\<down>")
+let g:mucomplete#chains = {
+			\ 'default' : ['file', 'c-n', 'path', 'omni', 'keyn', 'dict', 'uspl', 'user'],
+			\ 'markdown' : ['file', 'c-n', 'omni', 'keyn', 'dict', 'uspl', 'user', 'path'],
+			\ 'text' : ['file', 'c-n', 'omni', 'keyn', 'dict', 'uspl', 'user', 'path'],
+			\ 'python' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'go' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'ruby' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'javascript' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'java' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'html' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ 'css' : ['tags', 'path', 'omni', 'keyn', 'user'],
+			\ }
+
+" for spelling in autocomplete
+let g:mucomplete#can_complete = {}
+let g:mucomplete#can_complete.default = {
+        \     'c-n' : { t -> t =~# '\v\k{2,}$' },
+        \     'uspl': { t -> t =~# '\v\k{3,}$' && &l:spell && !empty(&l:spelllang) },
+        \ }
