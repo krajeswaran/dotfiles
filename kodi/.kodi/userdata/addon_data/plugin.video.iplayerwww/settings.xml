@@ -1,0 +1,45 @@
+<settings version="2">
+    <setting id="bbc_id_autologin" default="true">false</setting>
+    <setting id="bbc_id_enabled" default="true">false</setting>
+    <setting id="bbc_id_password" default="true"></setting>
+    <setting id="bbc_id_username" default="true"></setting>
+    <setting id="catchup_bitrate" default="true">0</setting>
+    <setting id="catchup_source" default="true">0</setting>
+    <setting id="kids_mode" default="true"></setting>
+    <setting id="licence_warning_shown" default="true">true</setting>
+    <setting id="live_bitrate" default="true">0</setting>
+    <setting id="live_source" default="true">0</setting>
+    <setting id="menu_radio_added">true</setting>
+    <setting id="menu_radio_az">true</setting>
+    <setting id="menu_radio_categories">true</setting>
+    <setting id="menu_radio_following">true</setting>
+    <setting id="menu_radio_live">true</setting>
+    <setting id="menu_radio_most_popular">true</setting>
+    <setting id="menu_radio_search">true</setting>
+    <setting id="menu_video_added">true</setting>
+    <setting id="menu_video_az">true</setting>
+    <setting id="menu_video_categories">true</setting>
+    <setting id="menu_video_channel_az">true</setting>
+    <setting id="menu_video_channel_highlights">true</setting>
+    <setting id="menu_video_highlights">true</setting>
+    <setting id="menu_video_live">true</setting>
+    <setting id="menu_video_most_popular">true</setting>
+    <setting id="menu_video_red_button">true</setting>
+    <setting id="menu_video_search">true</setting>
+    <setting id="menu_video_uhd_trial">true</setting>
+    <setting id="menu_video_watching">true</setting>
+    <setting id="paginate_episodes">1</setting>
+    <setting id="radio_live_bitrate">3</setting>
+    <setting id="radio_location" default="true">0</setting>
+    <setting id="radio_paginate_episodes" default="true">0</setting>
+    <setting id="radio_source" default="true">0</setting>
+    <setting id="redbutton_warning">true</setting>
+    <setting id="scrape_atoz" default="true">0</setting>
+    <setting id="search_ad" default="true">false</setting>
+    <setting id="search_signed" default="true">false</setting>
+    <setting id="stream_protocol">1</setting>
+    <setting id="streams_autoplay">true</setting>
+    <setting id="subtitle_source" default="true">0</setting>
+    <setting id="subtitles" default="true">false</setting>
+    <setting id="suppress_incomplete" default="true">false</setting>
+</settings>

@@ -1,0 +1,6 @@
+<settings version="2">
+    <setting id="lastnotified_stable" default="true">19.0 stable</setting>
+    <setting id="upgrade_apt" default="true">false</setting>
+    <setting id="upgrade_system" default="true">false</setting>
+    <setting id="versioncheck_enable">true</setting>
+</settings>

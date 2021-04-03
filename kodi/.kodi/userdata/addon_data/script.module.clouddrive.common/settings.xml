@@ -1,0 +1,5 @@
+<settings version="2">
+    <setting id="allow_directory_listing">true</setting>
+    <setting id="port_directory_listing">8585</setting>
+    <setting id="source.service.port" default="true">8585</setting>
+</settings>

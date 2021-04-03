@@ -1,0 +1,20 @@
+<settings version="2">
+    <setting id="API">cda9c8b4f95c725ab265bb56f25e17cf</setting>
+    <setting id="Debug" default="true">false</setting>
+    <setting id="LatLon" default="true">false</setting>
+    <setting id="Location1">Mayiladuthurai (IN)</setting>
+    <setting id="Location1ID">1263247</setting>
+    <setting id="Location2" default="true"></setting>
+    <setting id="Location2ID" default="true"></setting>
+    <setting id="Location3" default="true"></setting>
+    <setting id="Location3ID" default="true"></setting>
+    <setting id="Location4" default="true"></setting>
+    <setting id="Location4ID" default="true"></setting>
+    <setting id="Location5" default="true"></setting>
+    <setting id="Location5ID" default="true"></setting>
+    <setting id="Station" default="true">false</setting>
+    <setting id="StationID" default="true"></setting>
+    <setting id="Weekend" default="true">0</setting>
+    <setting id="WMaps">true</setting>
+    <setting id="Zoom">4</setting>
+</settings>
