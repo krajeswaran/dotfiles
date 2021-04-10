@@ -9,6 +9,7 @@ alias ll="ls -larth"
 alias llm="ls -larth | less -R"
 alias rm='rm -i'
 alias revo="ssh thesaneone@thesanerevo"
+alias pi="ssh pi@thesanepi"
 alias router="ssh root@192.168.1.1"
 alias box="ssh thesaneone@thesanebox"
 alias diskusage="du -h -d 1"

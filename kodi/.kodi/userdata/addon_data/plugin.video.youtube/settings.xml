@@ -39,14 +39,14 @@
     <setting id="kodion.setup_wizard">false</setting>
     <setting id="kodion.subtitle.configure" default="true"></setting>
     <setting id="kodion.subtitle.download" default="true">false</setting>
-    <setting id="kodion.subtitle.languages.num" default="true">0</setting>
+    <setting id="kodion.subtitle.languages.num">2</setting>
     <setting id="kodion.support.alternative_player" default="true">false</setting>
     <setting id="kodion.thumbnail.size">1</setting>
     <setting id="kodion.users.add" default="true"></setting>
     <setting id="kodion.users.remove" default="true"></setting>
     <setting id="kodion.users.rename" default="true"></setting>
     <setting id="kodion.users.switch" default="true"></setting>
-    <setting id="kodion.video.quality">3</setting>
+    <setting id="kodion.video.quality">2</setting>
     <setting id="kodion.video.quality.ask" default="true">false</setting>
     <setting id="kodion.video.quality.mpd" default="true">false</setting>
     <setting id="kodion.video.quality.mpd.configure" default="true"></setting>
@@ -61,30 +61,30 @@
     <setting id="youtube.filter.my_subscriptions_filtered.blacklist" default="true">false</setting>
     <setting id="youtube.filter.my_subscriptions_filtered.list" default="true"></setting>
     <setting id="youtube.folder.browse_channels.show">true</setting>
-    <setting id="youtube.folder.completed.live.show">true</setting>
-    <setting id="youtube.folder.disliked_videos.show">true</setting>
+    <setting id="youtube.folder.completed.live.show">false</setting>
+    <setting id="youtube.folder.disliked_videos.show">false</setting>
     <setting id="youtube.folder.history.playlist" default="true"></setting>
     <setting id="youtube.folder.history.show">true</setting>
-    <setting id="youtube.folder.liked_videos.show">true</setting>
-    <setting id="youtube.folder.live.show">true</setting>
-    <setting id="youtube.folder.my_channel.show">true</setting>
-    <setting id="youtube.folder.my_location.show">true</setting>
+    <setting id="youtube.folder.liked_videos.show">false</setting>
+    <setting id="youtube.folder.live.show">false</setting>
+    <setting id="youtube.folder.my_channel.show">false</setting>
+    <setting id="youtube.folder.my_location.show">false</setting>
     <setting id="youtube.folder.my_subscriptions.show">true</setting>
     <setting id="youtube.folder.my_subscriptions_filtered.show" default="true">false</setting>
     <setting id="youtube.folder.playlists.show">true</setting>
-    <setting id="youtube.folder.popular_right_now.show">true</setting>
+    <setting id="youtube.folder.popular_right_now.show">false</setting>
     <setting id="youtube.folder.purchases.show">true</setting>
     <setting id="youtube.folder.quick_search.show" default="true">false</setting>
     <setting id="youtube.folder.quick_search_incognito.show" default="true">false</setting>
-    <setting id="youtube.folder.recommendations.show">true</setting>
+    <setting id="youtube.folder.recommendations.show">false</setting>
     <setting id="youtube.folder.saved.playlists.show">true</setting>
     <setting id="youtube.folder.search.show">true</setting>
     <setting id="youtube.folder.settings.show">true</setting>
     <setting id="youtube.folder.sign.in.show">true</setting>
     <setting id="youtube.folder.sign.out.show">true</setting>
-    <setting id="youtube.folder.subscriptions.show">true</setting>
-    <setting id="youtube.folder.switch.user.show">true</setting>
-    <setting id="youtube.folder.upcoming.live.show">true</setting>
+    <setting id="youtube.folder.subscriptions.show">false</setting>
+    <setting id="youtube.folder.switch.user.show">false</setting>
+    <setting id="youtube.folder.upcoming.live.show">false</setting>
     <setting id="youtube.folder.watch_later.playlist" default="true"></setting>
     <setting id="youtube.folder.watch_later.show">true</setting>
     <setting id="youtube.language">en</setting>

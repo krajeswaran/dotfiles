@@ -122,11 +122,11 @@
     <setting id="musiclibrary.exportoverwrite" default="true">false</setting>
     <setting id="musiclibrary.exportskipnfo" default="true">false</setting>
     <setting id="musiclibrary.exportunscraped" default="true">false</setting>
-    <setting id="musiclibrary.overridetags" default="true">false</setting>
-    <setting id="musiclibrary.preferonlinealbumart" default="true">false</setting>
+    <setting id="musiclibrary.overridetags">true</setting>
+    <setting id="musiclibrary.preferonlinealbumart">true</setting>
     <setting id="musiclibrary.showallitems" default="true">true</setting>
     <setting id="musiclibrary.showcompilationartists" default="true">true</setting>
-    <setting id="musiclibrary.updateonstartup" default="true">false</setting>
+    <setting id="musiclibrary.updateonstartup">true</setting>
     <setting id="musiclibrary.useartistsortname" default="true">false</setting>
     <setting id="musicplayer.autoplaynextitem" default="true">true</setting>
     <setting id="musicplayer.crossfade" default="true">0</setting>
@@ -147,7 +147,7 @@
     <setting id="myvideos.flatten" default="true">false</setting>
     <setting id="myvideos.replacelabels" default="true">true</setting>
     <setting id="myvideos.selectaction" default="true">1</setting>
-    <setting id="myvideos.stackvideos" default="true">false</setting>
+    <setting id="myvideos.stackvideos">true</setting>
     <setting id="myvideos.usetags" default="true">false</setting>
     <setting id="network.bandwidth" default="true">0</setting>
     <setting id="network.httpproxypassword" default="true"></setting>
@@ -200,7 +200,7 @@
     <setting id="scrapers.moviesdefault" default="true">metadata.themoviedb.org</setting>
     <setting id="scrapers.musicvideosdefault" default="true">metadata.local</setting>
     <setting id="scrapers.tvshowsdefault" default="true">metadata.tvshows.themoviedb.org</setting>
-    <setting id="screensaver.mode" default="true">default</setting>
+    <setting id="screensaver.mode" default="true">screensaver.xbmc.builtin.dim</setting>
     <setting id="screensaver.time" default="true">3</setting>
     <setting id="screensaver.usedimonpause" default="true">true</setting>
     <setting id="screensaver.usemusicvisinstead" default="true">true</setting>
@@ -262,14 +262,14 @@
     <setting id="videolibrary.actorthumbs" default="true">true</setting>
     <setting id="videolibrary.backgroundupdate" default="true">false</setting>
     <setting id="videolibrary.flattentvshows" default="true">1</setting>
-    <setting id="videolibrary.groupmoviesets" default="true">false</setting>
-    <setting id="videolibrary.groupsingleitemsets" default="true">false</setting>
+    <setting id="videolibrary.groupmoviesets">true</setting>
+    <setting id="videolibrary.groupsingleitemsets">true</setting>
     <setting id="videolibrary.showallitems" default="true">true</setting>
     <setting id="videolibrary.showemptytvshows" default="true">false</setting>
     <setting id="videolibrary.showunwatchedplots" default="true">0,1,2</setting>
     <setting id="videolibrary.tvshowsincludeallseasonsandspecials" default="true">0</setting>
     <setting id="videolibrary.tvshowsselectfirstunwatcheditem" default="true">0</setting>
-    <setting id="videolibrary.updateonstartup" default="true">false</setting>
+    <setting id="videolibrary.updateonstartup">true</setting>
     <setting id="videoplayer.adjustrefreshrate" default="true">0</setting>
     <setting id="videoplayer.autoplaynextitem" default="true"></setting>
     <setting id="videoplayer.errorinaspect" default="true">0</setting>
@@ -448,7 +448,7 @@
             <level>0</level>
             <showhigherlevels>true</showhigherlevels>
         </eventlog>
-        <systemtotaluptime>0</systemtotaluptime>
+        <systemtotaluptime>7627</systemtotaluptime>
     </general>
     <resolutions />
     <defaultvideosettings>
@@ -498,6 +498,6 @@
     </myvideos>
     <audio>
         <mute>false</mute>
-        <fvolumelevel>1.000000</fvolumelevel>
+        <fvolumelevel>0.722221</fvolumelevel>
     </audio>
 </settings>

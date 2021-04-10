@@ -3,10 +3,11 @@ Description=qbittorrent-nox Daemon
 After=network.target
 
 [Service]
-User=thesaneone
 Type=simple
+User=pi
+Group=pi
 PrivateTmp=false
-ExecStart=/usr/bin/qbittorrent-nox --webui-port=8080
+ExecStart=/bin/qbittorrent-nox --webui-port=8001
 
 [Install]
 WantedBy=multi-user.target

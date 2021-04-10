@@ -5,7 +5,7 @@
     <setting id="cache-expiration-time">5</setting>
     <setting id="clean_folder">true</setting>
     <setting id="default_stream_quality" default="true">Original</setting>
-    <setting id="download.service.port" default="true">52857</setting>
+    <setting id="download.service.port" default="true">50547</setting>
     <setting id="hide_export_progress" default="true">false</setting>
     <setting id="no_extension_strm" default="true">false</setting>
     <setting id="port_directory_listing">8587</setting>
