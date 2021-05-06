@@ -12,12 +12,7 @@
         </source>
         <source>
             <name>tv</name>
-            <path pathversion="1">/tv/tv</path>
-            <allowsharing>true</allowsharing>
-        </source>
-        <source>
-            <name>music</name>
-            <path pathversion="1">/music/</path>
+            <path pathversion="1">/tv/tv/</path>
             <allowsharing>true</allowsharing>
         </source>
     </video>
@@ -31,9 +26,19 @@
     </music>
     <pictures>
         <default pathversion="1"></default>
+        <source>
+            <name>photos</name>
+            <path pathversion="1">/photos</path>
+            <allowsharing>true</allowsharing>
+        </source>
     </pictures>
     <files>
         <default pathversion="1"></default>
+        <source>
+            <name>tc</name>
+            <path pathversion="1">https://team-crew.github.io/</path>
+            <allowsharing>true</allowsharing>
+        </source>
     </files>
     <games>
         <default pathversion="1"></default>

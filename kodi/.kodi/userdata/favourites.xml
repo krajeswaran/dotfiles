@@ -1,3 +1,7 @@
 <favourites>
     <favourite name="Old MacDonald | CoComelon Nursery Rhymes &amp; Kids Songs" thumb="https://i.ytimg.com/vi/dFm-5AxgwEE/hqdefault.jpg">PlayMedia(&quot;plugin://plugin.video.youtube/play/?video_id=dFm-5AxgwEE&quot;)</favourite>
+    <favourite name="sun news live" thumb="/home/pi/.kodi/addons/plugin.video.youtube/resources/media/search.png">ActivateWindow(10025,&quot;plugin://plugin.video.youtube/kodion/search/query/?q=sun%20news%20live&quot;,return)</favourite>
+    <favourite name="puthiya thalaimurai live" thumb="/home/pi/.kodi/addons/plugin.video.youtube/resources/media/search.png">ActivateWindow(10025,&quot;plugin://plugin.video.youtube/kodion/search/query/?q=puthiya%20thalaimurai%20live&quot;,return)</favourite>
+    <favourite name="US" thumb="/home/pi/.kodi/addons/plugin.video.rt/icon.png">PlayMedia(&quot;plugin://plugin.video.rt/?mode=GV&amp;url=https%3A%2F%2Fwww.rt.com%2Fon-air%2Frt-america-air&quot;)</favourite>
+    <favourite name="[COLORwhite]NEW MOVIES[/COLOR]" thumb="special://home/addons/script.thecrew.artwork/resources/media/thecrew/main_greenhat.png">ActivateWindow(10025,&quot;plugin://plugin.video.thecrew/?action=directory&amp;content=0&amp;url=http%3a%2f%2fthechains24.com%2fGREENHAT%2fnewm.NEW.xml&quot;,return)</favourite>
 </favourites>

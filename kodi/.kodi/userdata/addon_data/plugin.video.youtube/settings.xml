@@ -46,7 +46,7 @@
     <setting id="kodion.users.remove" default="true"></setting>
     <setting id="kodion.users.rename" default="true"></setting>
     <setting id="kodion.users.switch" default="true"></setting>
-    <setting id="kodion.video.quality">2</setting>
+    <setting id="kodion.video.quality" default="true">3</setting>
     <setting id="kodion.video.quality.ask" default="true">false</setting>
     <setting id="kodion.video.quality.mpd" default="true">false</setting>
     <setting id="kodion.video.quality.mpd.configure" default="true"></setting>
