@@ -27,3 +27,11 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+
+[merge]
+tool = vim_mergetool
+conflictstyle = diff3
+
+[mergetool "vim_mergetool"]
+cmd = nvim -f -c "MergetoolStart" "$MERGED" "$BASE" "$LOCAL" "$REMOTE"
+trustExitCode = true

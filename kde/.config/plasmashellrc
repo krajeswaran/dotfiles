@@ -23,8 +23,11 @@ Height 1080=452
 Width 1920=418
 
 [PlasmaRunnerManager]
-LaunchCounts=1 services_firefox.desktop,1 services_kcm_style.desktop,1 services_kwinscreenedges.desktop,1 services_mouse.desktop,2 services_kwindecoration.desktop,1 services_exec::plasma-discover --mode update,1 services_systemsettings.desktop,1 services_kcm_keyboard.desktop,1 services_rxvt-unicode.desktop,1 services_kwintabbox.desktop,1 services_powerdevilprofilesconfig.desktop,1 services_autostart.desktop,1 services_keys.desktop,1 services_org.kde.dolphin.desktop,3 services_org.kde.konsole.desktop,1 services_kcm_activities.desktop,1 services_fontinst.desktop,1 services_kcm_pulseaudio.desktop,1 services_org.kde.yakuake.desktop,1 services_componentchooser.desktop,1 services_powerdevilglobalconfig.desktop,1 desktopsessions_1
+LaunchCounts=1 services_org.kde.kcalc.desktop,1 services_powerdevilglobalconfig.desktop,1 services_kwinscreenedges.desktop,1 services_slack.desktop,1 desktopsessions_1,1 services_fontinst.desktop,1 services_autostart.desktop,3 services_org.kde.konsole.desktop,2 services_kwindecoration.desktop,1 services_exec::plasma-discover --mode update,1 services_org.kde.yakuake.desktop,1 services_org.kde.dolphin.desktop,1 services_systemsettings.desktop,1 services_componentchooser.desktop,1 services_kcm_activities.desktop,1 services_firefox.desktop,2 services_kcm_style.desktop,1 services_keys.desktop,1 services_kcm_keyboard.desktop,1 services_kcm_pulseaudio.desktop,1 services_powerdevilprofilesconfig.desktop,1 services_rxvt-unicode.desktop,1 services_mouse.desktop,1 services_kwintabbox.desktop
 pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconverter,shell,bookmarks,recentdocuments,locations,baloosearch
+
+[PlasmaTransientsConfig]
+PreloadWeight=42
 
 [PlasmaViews][Panel 2][Defaults]
 thickness=24
@@ -33,8 +36,8 @@ thickness=24
 thickness=24
 
 [ScreenConnectors]
-0=eDP
-1=HDMI-A-0
+0=HDMI-A-0
+1=eDP
 2=:0.0
 
 [Updates]

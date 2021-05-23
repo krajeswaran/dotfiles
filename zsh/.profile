@@ -82,6 +82,9 @@ export XDG_DATA_DIRS=$HOME/.nix-profile/share:$XDG_DATA_DIRS
 
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
+
+export AWS_CLI_AUTO_PROMPT=on
+
 # initialise completions with ZSH's compinit
 autoload -Uz compinit
 compinit

@@ -1,8 +1,4 @@
 " TODO
-"  - ALEFix equivalent(fix on save?), eslint msgs not showing up
-"  - coc-actions being a cunt
-"  - rein in coc-pairs
-"  - coc-explorer icons
 " debug(vimspector, vim-delve, tsdebug)
 " asynctasks.vim or test run plugin
 " ---------------------------------------------
@@ -189,6 +185,8 @@ autocmd BufReadPost * silent! normal! g`"zv
 
 " enable spell for select files
 autocmd FileType markdown,text setlocal spell spelllang=en_us complete+=k dictionary+=spell
+autocmd FileType javascript,typescript set tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType go set tabstop=8 shiftwidth=8 softtabstop=8
 
 " autoread files
 set autoread
@@ -562,11 +560,8 @@ nmap <unique> gs :CocList symbols<CR>
 " Plugin: vim-qf
 "----------------------------------------------
 nmap <unique> <F5> <Plug>(qf_qf_toggle)
-" nmap <unique> ]l <Plug>(qf_qf_previous)
-" nmap <unique> [l <Plug>(qf_qf_next)
-
-nmap <unique> ]l <Plug>(coc-next)
-nmap <unique> [l <Plug>(coc-previous)
+nmap <unique> ]l <Plug>(qf_qf_previous)
+nmap <unique> [l <Plug>(qf_qf_next)
 
 "----------------------------------------------
 " Plugin: vim-bufonly

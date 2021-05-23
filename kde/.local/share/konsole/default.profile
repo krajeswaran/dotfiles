@@ -1,8 +1,9 @@
 [Appearance]
 AntiAliasFonts=true
+BoldIntense=false
 ColorScheme=nkonsole
-Font=Hack,12,-1,5,50,0,0,0,0,0
-UseFontLineChararacters=false
+Font=Hack Nerd Font Mono,14,-1,5,50,0,0,0,0,0
+UseFontLineChararacters=true
 
 [General]
 DimWhenInactive=true

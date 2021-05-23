@@ -1,10 +1,10 @@
 [General]
 FreeFloating=true
 font=Noto Sans,16,-1,5,50,0,0,0,0,0
-history=syste,vlc,theme,wind,sett,gtk,qb,fire,ala,sync,sla,peek,spec,dol,kde,chro,wri,sound,pai,kol,calc,fli,android,ind,sys,des,worksp,touch,touc,mouse,57,backg,log ou,cur,icon,w,appe,reboot,f,sessi,swit,glo,ico,killall,in,lau,app,bit,cal,yak
+history=hotk,shor,defa,ala,fi,qb,sign,chro,cal,sla,fi\\\\,sync,fon,emoj,keep,mpv,fire,emo,spe,remm,kwi,virt,rem,re ,android,vlc,300 * sin(60 s) * s,f,dol,mouse,aut,start,part,ok,l,ima,vnc,krd,tas,plas,kde,app,kva,syste,m,window,theme,kv,edd,sett
 
 [PlasmaRunnerManager]
-LaunchCounts=1 services_fontinst.desktop,5 services_kwindecoration.desktop,1 services_syncthing-ui.desktop,4 shell_vlc,1 services_kcm_cursortheme.desktop,1 services_org.kde.konsole.desktop,1 services_kcmkded.desktop,2 services_rxvt-unicode.desktop,1 services_org.kde.kolourpaint.desktop,1 services_wayland.desktop,6 services_firefox.desktop,1 services_org.kde.spectacle.desktop,1 services_kcmsmserver.desktop,4 services_com.alacritty.Alacritty.desktop,1 services_kcm_kwin_effects.desktop,1 services_oxygenstyleconfig.desktop,1 services_breezedecorationconfig.desktop,1 services_kcm_kscreen.desktop,2 services_chromium.desktop,1 services_kcm_fonts.desktop,1 services_libreoffice-writer.desktop,1 services_kcm_desktoptheme.desktop,1 services_org.kde.dolphin.desktop,3 services_com.uploadedlobster.peek.desktop,1 services_breezestyleconfig.desktop,4 services_org.qbittorrent.qBittorrent.desktop,5 services_firefox-dev.desktop,7 services_systemsettings.desktop,1 recentdocuments_file:///home/kumaresan/.local/share/applications/firefox-dev.desktop,2 services_kcm_lookandfeel.desktop,1 services_kcm_pulseaudio.desktop,2 services_slack.desktop,4 services_kcm_icons.desktop,1 services_kcm_kdeconnect.desktop
+LaunchCounts=1 services_musikcube.desktop,2 services_rxvt-unicode.desktop,7 services_virt-manager.desktop,3 services_com.uploadedlobster.peek.desktop,7 services_kwindecoration.desktop,10 services_systemsettings.desktop,1 services_kcmsmserver.desktop,4 shell_vlc,5 services_kcm_fonts.desktop,22 services_firefox-dev.desktop,4 services_org.keepassxc.KeePassXC.desktop,1 services_kcm_kdeconnect.desktop,3 services_fontinst.desktop,1 services_breezestyleconfig.desktop,2 services_kcm_colors.desktop,1 services_kcmkded.desktop,1 services_kcm_kwin_effects.desktop,15 services_org.qbittorrent.qBittorrent.desktop,2 services_org.kde.dolphin.desktop,9 services_kcm_style.desktop,2 services_oxygenstyleconfig.desktop,3 services_syncthing-ui.desktop,1 services_kwincompositing.desktop,1 services_mpv.desktop,4 services_org.remmina.Remmina.desktop,1 services_gvim.desktop,43 services_firefox-esr.desktop,1 services_exec::/usr/bin/remmina --icon,1 services_kcm_kscreen.desktop,20 services_slack.desktop,1 services_libreoffice-writer.desktop,2 services_org.kde.spectacle.desktop,1 services_org.kde.kolourpaint.desktop,4 services_kcm_desktoptheme.desktop,1 services_wayland.desktop,4 services_kvantummanager.desktop,6 services_firefox.desktop,31 services_chromium.desktop,2 services_breezedecorationconfig.desktop,2 services_com.github.donadigo.eddy.desktop,1 recentdocuments_file:///home/kumaresan/.local/share/applications/firefox-dev.desktop,1 services_kcm_pulseaudio.desktop,1 services_useragent.desktop,8 services_com.alacritty.Alacritty.desktop,1 services_org.kde.konsole.desktop,6 services_kcm_icons.desktop,2 services_kcm_cursortheme.desktop,2 services_org.kde.plasma.emojier.desktop,4 services_kcm_lookandfeel.desktop
 
 [Plugins]
 Kill RunnerEnabled=true
@@ -25,4 +25,4 @@ recentdocumentsEnabled=true
 servicesEnabled=true
 shellEnabled=true
 webshortcutsEnabled=false
-windowsEnabled=true
+windowsEnabled=false

@@ -50,7 +50,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
 Plug 'lifepillar/vim-mucomplete'
-Plug 'wellle/tmux-complete.vim'
 Plug 'previm/previm'
 
 "js
@@ -172,6 +171,8 @@ set directory=$HOME/.vimswap
 "
 " reopen last mark
 autocmd BufReadPost * silent! normal! g`"zv
+autocmd BufRead todo.md set ft=taskpaper
+autocmd BufRead todo.md call gitgutter#disable()
 
 " Key (re)Mappings
 
@@ -289,6 +290,7 @@ if has('gui_running')
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
     colorscheme hybrid
+    set guifont=Hack\ Nerd\ Font\ Mono\ 12
     set lines=30
     highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
 endif
@@ -432,7 +434,7 @@ nnoremap <unique> <leader>/  :Clap grep<CR>
 "----------------------------------------------
 " Plugin: previm/previm
 "----------------------------------------------
-let g:previm_open_cmd = 'open'
+let g:previm_open_cmd = 'xdg-open'
 
 "----------------------------------------------
 " Plugin: vim-bufonly
@@ -483,7 +485,7 @@ set completeopt+=menuone,noinsert,noselect
 set omnifunc=syntaxcomplete#Complete
 
 " tmux config
-let g:tmuxcomplete#trigger = 'completefunc'
+" let g:tmuxcomplete#trigger = 'completefunc'
 
 autocmd FileType markdown,text setlocal complete+=k dictionary+=spell
 

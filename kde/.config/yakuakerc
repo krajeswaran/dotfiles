@@ -23,6 +23,9 @@ Favorites=
 [KFileDialog Settings]
 listViewIconSize=0
 
+[Notification Messages]
+ShowPasteUnprintableWarning=false
+
 [Window]
 KeepOpen=false
 ShowTabBar=false

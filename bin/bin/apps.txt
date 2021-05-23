@@ -10,7 +10,7 @@ openssh-server
 sshfs
 rsync
 graphviz
-p7zip
+p7zip-full
 unrar
 gparted
 zip
@@ -98,3 +98,8 @@ alacritty
 pandoc
 batbat
 yakuake
+remmina
+qemu
+uml-utilities
+virt-manager
+libguestfs-tools

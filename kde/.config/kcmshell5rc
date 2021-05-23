@@ -1,4 +1,7 @@
 [KFileDialog Settings]
+Recent Files[$e]=jp-free-02.protonvpn.com.udp.ovpn,file:///opt/firefox-dev/firefox
+Recent URLs[$e]=file:///opt/firefox-dev/
+detailViewIconSize=0
 listViewIconSize=0
 
 [KPropertiesDialog]
@@ -7,6 +10,7 @@ Width 1920=476
 
 [Notification Messages]
 FormatSettingsChanged=false
+copyCertificatesDialog=true
 
 [Open-with settings]
 CompletionMode=1

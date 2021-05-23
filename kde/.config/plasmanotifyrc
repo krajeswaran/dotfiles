@@ -8,7 +8,8 @@ Seen=true
 Seen=true
 
 [DoNotDisturb]
-NotificationSoundsMuted=false
+NotificationSoundsMuted=true
+Until=2022,4,23,23,39,47
 
 [Services][networkmanagement]
 ShowInHistory=false

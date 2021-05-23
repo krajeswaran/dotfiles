@@ -1,8 +1,11 @@
+q
+shell 
+add ~/music
+clear
 add -l ~/music
 clear 
 refresh 
 delet
-q
 help
 rm
 del
