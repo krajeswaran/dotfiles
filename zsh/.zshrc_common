@@ -46,7 +46,7 @@ findandreplace() {
     find . -name "$1" -type f -print0 | xargs -0 perl -p -i -e "$2"
 }
 
-proj() {
+p() {
 	cd $(fd . ~/src -d1 -td | sk)
 }
 

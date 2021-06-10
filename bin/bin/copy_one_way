@@ -18,5 +18,5 @@ if [ "$LOCALCOPY" ]; then
     # cp can only copy one way, can't delete files in dest(mirror)
     cp -a -f -r -u --verbose "$1" "$2"
 else
-    rsync --verbose --stats --recursive --itemize-changes --verbose --progress --archive --protect-args $DRYRUN "$1" "$2" 
+    rsync -L --verbose --stats --recursive --itemize-changes --verbose --progress --archive --protect-args $DRYRUN "$1" "$2" 
 fi

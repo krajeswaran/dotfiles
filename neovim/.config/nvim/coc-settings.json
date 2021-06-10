@@ -34,7 +34,9 @@
     "default": "\uf29c"
   },
   //diagnostic
-  "diagnostic.signOffset": 9999999,
+  "diagnostic.virtualTextCurrentLineOnly": true,
+  "diagnostic.enableMessage": "never",
+  "diagnostic.virtualText": true,
   "diagnostic.errorSign": "●",
   "diagnostic.warningSign": "●",
   "diagnostic.infoSign": "●",

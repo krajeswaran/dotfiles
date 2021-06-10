@@ -13,4 +13,4 @@ do
 done
 shift `expr $OPTIND - 1`
 
-rsync --verbose --stats --recursive --itemize-changes --verbose --progress --archive --delete --protect-args $DRYRUN "$1" "$2" 
+rsync -L --verbose --stats --recursive --itemize-changes --verbose --progress --archive --delete --protect-args $DRYRUN "$1" "$2" 
