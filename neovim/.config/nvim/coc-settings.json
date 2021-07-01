@@ -86,7 +86,7 @@
   "explorer.icon.collapsed": "▸",
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
-  "explorer.quitOnOpen": true,
+  "explorer.quitOnOpen": false,
   "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"

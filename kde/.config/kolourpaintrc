@@ -2,10 +2,20 @@ Height 1080=768
 State=AAAA/wAAAAD9AAAAAQAAAAMAAARsAAAAbPwBAAAAAfsAAAASAEMAbwBsAG8AcgAgAEIAbwB4AQAAAEgAAARsAAACEgEAAAMAAARsAAACNgAAAAQAAAAEAAAAAQAAAAL8AAAAAgAAAAAAAAABAAAAEABUAG8AbwBsACAAQgBvAHgDAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAQAAAXr/////AAAAAAAAAAA=
 Width 1920=1204
 
+[File/Save As]
+Forced Quality=75
+
 [General Settings]
 First Time=false
 Last Document Size=1503,835
 Open Images in the Same Window=false
+
+[KFileDialog Settings]
+Height 1080=570
+Recent Files[$e]=IMG_20210619_203705.jpg,file:$HOME/dumps/125230-aatukutti/IMG_20210619_203705.jpg
+Recent URLs[$e]=file:$HOME/dumps/125230-aatukutti/
+Width 1920=960
+detailViewIconSize=0
 
 [MainWindow]
 Height 1080=1080
@@ -15,12 +25,19 @@ ToolBarsMovable=Disabled
 Width 1920=1920
 Window-Maximized 1080x1920=true
 
+[MimeType Properties Version 1.2-3]
+Configurable Color Depth=image/png,image/bmp,image/x-pcx,image/x-rgb,image/x-xpixmap
+Configurable Quality Setting=image/jp2,image/jpeg,image/x-webp
+Maximum Color Depth=image/x-eps:32,image/x-portable-bitmap:1,image/x-portable-graymap:8,image/x-xbitmap:1
+
 [Recent Files]
 File1[$e]=$HOME/notes/work/ph-payment-options.png
+File2[$e]=$HOME/dumps/125230-aatukutti/IMG_20210619_203705.jpg
 Name1[$e]=ph-payment-options.png
+Name2[$e]=IMG_20210619_203705.jpg
 
 [Tool Settings]
-Last Used Tool=11
+Last Used Tool=1
 Tool Widget Brush Col=0
 Tool Widget Brush Row=0
 Tool Widget Eraser Size Col=0

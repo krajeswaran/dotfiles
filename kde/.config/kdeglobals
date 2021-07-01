@@ -120,7 +120,7 @@ Size=32
 DirSelectDialog Size=829,568
 
 [Emoticons]
-emoticonsTheme=Breeze
+emoticonsTheme=GoogleEmojiComplete
 parseMode=2
 
 [General]

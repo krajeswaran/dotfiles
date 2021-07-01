@@ -43,7 +43,7 @@ TabBoxAlternative=false
 
 [Effect-PresentWindows]
 BorderActivate=9
-BorderActivateAll=5,7
+BorderActivateAll=5
 BorderActivateClass=9
 TouchBorderActivate=9
 TouchBorderActivateAll=7

@@ -1,12 +1,12 @@
+refresh 
+help
 q
 shell 
 add ~/music
 clear
 add -l ~/music
 clear 
-refresh 
 delet
-help
 rm
 del
 save

@@ -185,8 +185,11 @@ autocmd BufReadPost * silent! normal! g`"zv
 
 " enable spell for select files
 autocmd FileType markdown,text setlocal spell spelllang=en_us complete+=k dictionary+=spell
-autocmd FileType javascript,typescript set tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType javascript set tabstop=2 shiftwidth=2 softtabstop=2 filetype=javascriptreact
+autocmd FileType typescript set tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType go set tabstop=8 shiftwidth=8 softtabstop=8
+
+
 
 " autoread files
 set autoread
@@ -452,6 +455,11 @@ let g:coc_snippet_next = '<tab>'
 
 let g:coc_status_error_sign = 'E: '
 let g:coc_status_warning_sign = 'W: '
+
+" remap js files
+let g:coc_filetype_map = {
+      \'javascript': 'javascriptreact',
+      \ }
 
 function! s:check_back_space() abort
   let col = col('.') - 1

@@ -25,7 +25,7 @@ echo "Here are things you might want to do:
     - unfuck dotfiles stowing
 	- asdf install: yarn, golang, python, node
 	- pip install: pgcli, ipython, pynvim
-	- yarn install: diff-so-fancy
+	- binaries: fd, rg, bat, lsd, duf, dust, delta, bottom
 	- setup neovim: checkhealth
 	- install gdrive, setup keepassxc
 	- keyboard shortcuts

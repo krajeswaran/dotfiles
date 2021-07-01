@@ -1,0 +1,7 @@
+#!/bin/sh 
+adb kill-server
+sleep 3
+IP="thesanemobile.lan"
+echo "Connecting to ${IP}"
+adb connect $IP
+scrcpy -S &

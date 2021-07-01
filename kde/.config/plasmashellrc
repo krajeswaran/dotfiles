@@ -27,7 +27,7 @@ LaunchCounts=1 services_org.kde.kcalc.desktop,1 services_powerdevilglobalconfig.
 pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconverter,shell,bookmarks,recentdocuments,locations,baloosearch
 
 [PlasmaTransientsConfig]
-PreloadWeight=2
+PreloadWeight=0
 
 [PlasmaViews][Panel 2][Defaults]
 thickness=24
