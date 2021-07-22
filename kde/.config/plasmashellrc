@@ -35,6 +35,12 @@ thickness=24
 [PlasmaViews][Panel 2][Horizontal1920]
 thickness=24
 
+[PlasmaViews][Panel 37][Defaults]
+thickness=40
+
+[PlasmaViews][Panel 37][Horizontal1920]
+thickness=40
+
 [ScreenConnectors]
 0=eDP
 1=HDMI-A-0

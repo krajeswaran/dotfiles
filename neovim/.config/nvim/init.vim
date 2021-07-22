@@ -1,6 +1,8 @@
 " TODO
+" lua port
+" nvim-lsp
+" simple repl
 " debug(vimspector, vim-delve, tsdebug)
-" asynctasks.vim or test run plugin
 " ---------------------------------------------
 " workflow: new terminal window /pane (no tmuxes)
 "----------------------------------------------
@@ -20,51 +22,41 @@ call plug#begin('~/.config/nvim/plugged')
 
 "general
 "Plug thesaneone/taskpaper.vim
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/popup.nvim'
 Plug 'machakann/vim-sandwich'
 Plug 'schickling/vim-bufonly'
 Plug 'tpope/vim-sleuth'
 Plug 'airblade/vim-rooter'
 Plug 'romainl/vim-cool'
 Plug 'romainl/vim-qf'
-Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'fannheyward/telescope-coc.nvim'
 Plug 'wincent/ferret'
 Plug 'mg979/vim-visual-multi'
 Plug 'mbbill/undotree'
 Plug 'bogado/file-line'
 Plug 'regedarek/ZoomWin'
+Plug 'gennaro-tedesco/nvim-peekup'
 
 "themes
-" Plug 'arcticicestudio/nord-vim'
-Plug 'cocopon/iceberg.vim'
-"Plug 'w0ng/vim-hybrid'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+"Plug 'cocopon/iceberg.vim'
 
 " Coding
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'Yggdroot/indentLine'
-Plug 'honza/vim-snippets'
-" Plug 'editorconfig/editorconfig-vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-commentary'
+Plug 'NTBBloodbath/rest.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'b3nj5m1n/kommentary'
+Plug 'akinsho/nvim-toggleterm.lua'
 " Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
 Plug 'previm/previm'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'samoshkin/vim-mergetool'
-Plug 'ryanoasis/vim-devicons'
-" Plug 'neovim/nvim-lsp'
-" Plug 'nvim-treesitter/nvim-treesitter'
-" Plug 'nvim-lua/completion-nvim'
-" Plug 'nvim-lua/diagnostic-nvim'
-" Plug 'dense-analysis/ale'
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-"js
-Plug 'yuezk/vim-js'
-Plug 'HerringtonDarkholme/yats.vim'
-
-"python
-Plug 'vim-python/python-syntax'
 
 "golang
 " Plug 'fatih/vim-go'
@@ -72,7 +64,7 @@ Plug 'vim-python/python-syntax'
 call plug#end()
 
 "coc
-let g:coc_global_extensions = ['coc-actions', 'coc-pairs', 'coc-restclient', 'coc-explorer', 'coc-highlight', 'coc-snippets', 'coc-lists', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css', 'coc-pyright', 'coc-go', 'coc-react-refactor']
+let g:coc_global_extensions = ['coc-actions', 'coc-pairs', 'coc-explorer', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css', 'coc-pyright', 'coc-go', 'coc-react-refactor']
 
 "----------------------------------------------
 " General settings
@@ -195,7 +187,7 @@ autocmd FileType go set tabstop=8 shiftwidth=8 softtabstop=8
 set autoread
 
 " update faster
-set updatetime=300
+set updatetime=100
 
 " Key (re)Mappings
 
@@ -289,7 +281,10 @@ if $TERM =~ "256color"
   colorscheme default
 else
   set termguicolors " Use true colours
-  colorscheme iceberg
+  colorscheme tokyonight
+  let g:tokyonight_style = "night"
+  colorscheme tokyonight
+  let g:tokyonight_sidebars=["qf", "terminal", "packer"]
 endif
 
 "----------------------------------------------
@@ -374,65 +369,45 @@ augroup vimrc_rooter
 augroup END
 
 "----------------------------------------------
-" Plugin: vim-go
-"----------------------------------------------
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-let g:go_doc_popup_window=1
-
-let g:go_highlight_array_whitespace_error = 0
-let g:go_highlight_chan_whitespace_error = 0
-let g:go_highlight_extra_types = 1
-let g:go_highlight_space_tab_error = 0
-let g:go_highlight_trailing_whitespace_error = 0
-let g:go_highlight_operators = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_function_parameters = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_generate_tags = 0
-let g:go_highlight_string_spellcheck = 1
-let g:go_highlight_format_strings = 1
-let g:go_highlight_variable_declarations = 1
-let g:go_highlight_variable_assignments = 1
-let g:go_highlight_diagnostic_errors = 1
-let g:go_highlight_diagnostic_warnings = 1
-
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_deadline = "5s"
-
-"----------------------------------------------
 " Plugin: previm/previm
 "----------------------------------------------
 let g:previm_open_cmd = 'xdg-open'
 
 "----------------------------------------------
-" Plugin: floaterm
+" Plugin: toggleterm
 "----------------------------------------------
-nnoremap <unique> <leader>tn  :FloatermNew --name=ft1 --wintype=normal --height=0.3 --autoclose=2<CR>
-nnoremap <unique> <leader>t  :FloatermToggle<CR>
-tnoremap <ESC><ESC> <C-\><C-N>
+let g:toggleterm_terminal_mapping = '<leader>t'
+nnoremap <unique> <leader>rr  <cmd>lua require('repl').start_repl()<CR>
 
+lua <<EOF
+require("toggleterm").setup{}
+EOF
 
 "----------------------------------------------
 " Plugin: indent
 "----------------------------------------------
-let g:indentLine_char_list = ['┊']
+let g:indent_blankline_char = '│ '
+let g:indent_blankline_space_char = ' '
+let g:indent_blankline_use_treesitter = v:true
+let g:indent_blankline_filetype_exclude = ['help', 'terminal']
+let g:indent_blankline_show_first_indent_level = v:false
+let g:indent_blankline_show_current_context = v:true
 
 ""----------------------------------------------
 "" Plugin: vim-cool
 ""----------------------------------------------
 let g:CoolTotalMatches = 1
 "----------------------------------------------
-" Plugin: clap
+" Plugin: Telescope
 "----------------------------------------------
-nnoremap <unique> <leader>o  :Clap history<CR>
-nnoremap <unique> <leader>p  :Clap files<CR>
-nnoremap <unique> <leader>f  :Clap filer<CR>
-nnoremap <unique> <leader>/  :Clap grep<CR>
+nnoremap <unique> <leader>/  <cmd>Telescope live_grep<CR>
+nnoremap <unique> <leader>p  <cmd>Telescope find_files<CR>
+nnoremap <unique> <leader>f  <cmd>Telescope find_browser<CR>
+nnoremap <unique> <leader>o  <cmd>Telescope oldfiles<CR>
+
+lua <<EOF
+require('telescope').setup()
+EOF
 
 "----------------------------------------------
 " Plugin: coc
@@ -450,8 +425,6 @@ inoremap <silent><expr> <TAB>
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
-
-let g:coc_snippet_next = '<tab>'
 
 let g:coc_status_error_sign = 'E: '
 let g:coc_status_warning_sign = 'W: '
@@ -489,8 +462,9 @@ nmap <silent> ]d <Plug>(coc-diagnostic-next)
 nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gD <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gi <cmd>Telescope coc implementations<CR>
+nmap <silent> gr <cmd>Telescope coc references<CR>
+nmap <silent> gs <cmd>Telescope coc workspace_symbols<CR>
 nmap <silent> gR <Plug>(coc-rename)
 
 " Use K to show documentation in preview window
@@ -503,9 +477,6 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
-
-" Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for format selected region
 xmap g=  <Plug>(coc-format-selected)
@@ -552,17 +523,8 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 " set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
-" Using CocList
-" Do default action for next item.
-nnoremap <unique> ]n :<C-u>CocNext<CR>
-" Do default action for previous item.
-nnoremap <unique> [n :<C-u>CocPrev<CR>
-
 " coc explorer
 nmap <unique> ge :CocCommand explorer<CR>
-
-" coc symbol search
-nmap <unique> gs :CocList symbols<CR>
 
 "----------------------------------------------
 " Plugin: vim-qf
@@ -577,7 +539,42 @@ nmap <unique> [l <Plug>(qf_qf_next)
 nmap <unique> <leader>q <cmd>:Bonly<CR>
 
 "----------------------------------------------
-" Plugin: coc-restclient
+" Plugin: rest.nvim
 "----------------------------------------------
-nmap <unique> <leader>j :CocCommand rest-client.request<cr>
+nmap <unique> <leader>h <Plug>RestNvim<cr>
+
+"----------------------------------------------
+" Plugin: gitsigns
+"----------------------------------------------
+
+lua <<EOF
+require('gitsigns').setup()
+EOF
+
+"----------------------------------------------
+" Plugin: treesitter
+"----------------------------------------------
+
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+  },
+    incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn",
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+   indent = {
+    enable = true
+  },
+}
+EOF
 

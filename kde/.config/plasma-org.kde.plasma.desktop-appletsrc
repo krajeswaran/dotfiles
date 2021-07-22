@@ -121,30 +121,32 @@ systemApplications=systemsettings.desktop,org.kde.kinfocenter.desktop
 [Containments][2][Applets][25][Shortcuts]
 global=Meta+Esc
 
-[Containments][2][Applets][31]
-immutability=1
-plugin=org.kde.plasma.taskmanager
-
-[Containments][2][Applets][31][Configuration]
-PreloadWeight=0
-
-[Containments][2][Applets][31][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][2][Applets][31][Configuration][General]
-groupingStrategy=0
-maxStripes=1
-middleClickAction=Close
-showOnlyCurrentActivity=false
-showOnlyCurrentDesktop=false
-
 [Containments][2][Applets][4]
 immutability=1
 plugin=org.kde.plasma.pager
 
 [Containments][2][Applets][4][Configuration]
 PreloadWeight=0
+
+[Containments][2][Applets][44]
+immutability=1
+plugin=org.kde.plasma.showdesktop
+
+[Containments][2][Applets][53]
+immutability=1
+plugin=org.kde.plasma.taskmanager
+
+[Containments][2][Applets][53][Configuration][ConfigDialog]
+DialogHeight=600
+DialogWidth=800
+
+[Containments][2][Applets][53][Configuration][General]
+groupingStrategy=0
+highlightWindows=true
+maxStripes=1
+middleClickAction=Close
+showOnlyCurrentActivity=false
+showOnlyCurrentDesktop=false
 
 [Containments][2][Applets][6]
 immutability=1
@@ -162,7 +164,7 @@ DialogWidth=1920
 PreloadWeight=0
 
 [Containments][2][General]
-AppletOrder=25;4;31;6;23;21
+AppletOrder=25;4;53;6;23;44;21
 
 [Containments][28]
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
@@ -220,7 +222,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][11][Configuration]
-PreloadWeight=48
+PreloadWeight=58
 
 [Containments][7][Applets][12]
 immutability=1
@@ -241,21 +243,21 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][7][Applets][15]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=54
+PreloadWeight=59
 
 [Containments][7][Applets][16]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][7][Applets][16][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][7][Applets][17]
 immutability=1
