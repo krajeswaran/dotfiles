@@ -9,3 +9,11 @@ The idea is to divide the repo using branches -- each OS setup has it's own bran
 * `macos` is my work MBP
 * `server` is a my home server
 * `vm` is my VM config
+
+TODO
+====
+
+- [ ] fzf/fzy for zsh
+- [ ] repl for nvim
+- [ ] markdown/language processors/gui for nvim: for note taking replacement
+- [ ] reduce vimrc to single .vimrc without plugins(just for bootstrapping)

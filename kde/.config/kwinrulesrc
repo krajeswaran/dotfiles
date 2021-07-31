@@ -1,13 +1,24 @@
 [1]
-Description=Settings for urxvt
-clientmachine[$d]
-clientmachinematch[$d]
-noborder=true
-noborderrule=2
+Description=Window settings for\s
+above=true
+aboverule=2
+clientmachine=localhost
+clientmachinematch=0
 size[$d]
 sizerule[$d]
-title[$d]
-titlematch[$d]
+title=Android Emulator
+titlematch=2
+types=1
+windowrole[$d]
+windowrolematch[$d]
+wmclass=
+wmclasscomplete=false
+wmclassmatch=1
+
+[2]
+Description=Settings for urxvt
+noborder=true
+noborderrule=2
 types=1
 windowrole[$d]
 windowrolematch[$d]
@@ -15,7 +26,7 @@ wmclass=urxvt
 wmclasscomplete=false
 wmclassmatch=1
 
-[2]
+[3]
 Description=FFDEV
 clientmachine=localhost
 clientmachinematch=0
@@ -31,23 +42,6 @@ windowrolematch[$d]
 wmclass=firefox developer edition
 wmclasscomplete=false
 wmclassmatch=1
-
-[3]
-Description[$d]
-clientmachine[$d]
-clientmachinematch[$d]
-noborder[$d]
-noborderrule[$d]
-size[$d]
-sizerule[$d]
-title[$d]
-titlematch[$d]
-types[$d]
-windowrole[$d]
-windowrolematch[$d]
-wmclass[$d]
-wmclasscomplete[$d]
-wmclassmatch[$d]
 
 [4]
 Description[$d]
@@ -78,4 +72,4 @@ wmclasscomplete[$d]
 wmclassmatch[$d]
 
 [General]
-count=2
+count=3

@@ -1,7 +1,7 @@
 " TODO
+" simple repl
 " lua port
 " nvim-lsp
-" simple repl
 " debug(vimspector, vim-delve, tsdebug)
 " ---------------------------------------------
 " workflow: new terminal window /pane (no tmuxes)
@@ -40,8 +40,7 @@ Plug 'regedarek/ZoomWin'
 Plug 'gennaro-tedesco/nvim-peekup'
 
 "themes
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-"Plug 'cocopon/iceberg.vim'
+Plug 'bluz71/vim-nightfly-guicolors'
 
 " Coding
 Plug 'tpope/vim-fugitive'
@@ -50,11 +49,12 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'b3nj5m1n/kommentary'
-Plug 'akinsho/nvim-toggleterm.lua'
-" Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
+Plug 'andymass/vim-matchup'
+Plug 'kassio/neoterm'
 Plug 'previm/previm'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'samoshkin/vim-mergetool'
+Plug 'norcalli/nvim-colorizer.lua'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -78,10 +78,12 @@ let g:loaded_getscript = 1
 let g:loaded_getscriptPlugin = 1
 let g:loaded_gzip = 1
 let g:loaded_logiPat = 1
-" let g:loaded_matchit = 1
-" let g:loaded_matchparen = 1
+let g:loaded_matchit = 1
+let g:loaded_matchparen = 1
 let g:loaded_netrw = 1 
+let g:loaded_netrwPlugin = 1 
 let g:netrw_nogx = 1 " disable netrw's gx mapping.
+let g:loaded_remote_plugins = 1
 let g:loaded_rrhelper = 1  " ?
 let g:loaded_shada_plugin = 1  " ?
 let g:loaded_tar = 1
@@ -92,6 +94,8 @@ let g:loaded_vimball = 1
 let g:loaded_vimballPlugin = 1
 let g:loaded_zip = 1
 let g:loaded_zipPlugin = 1
+let g:loaded_man = 1
+let g:loaded_spellfile_plugin = 1
 
 set mouse=v                 " automatically enable mouse usage
 set go+=a
@@ -278,13 +282,12 @@ endfunction
 set background=dark
 
 if $TERM =~ "256color"
+  set termguicolors " Use true colours
   colorscheme default
 else
   set termguicolors " Use true colours
-  colorscheme tokyonight
-  let g:tokyonight_style = "night"
-  colorscheme tokyonight
-  let g:tokyonight_sidebars=["qf", "terminal", "packer"]
+  colorscheme nightfly
+  let g:nightflyCursorColor = 1
 endif
 
 "----------------------------------------------
@@ -374,19 +377,32 @@ augroup END
 let g:previm_open_cmd = 'xdg-open'
 
 "----------------------------------------------
-" Plugin: toggleterm
+" Plugin: neoterm
 "----------------------------------------------
-let g:toggleterm_terminal_mapping = '<leader>t'
-nnoremap <unique> <leader>rr  <cmd>lua require('repl').start_repl()<CR>
+nnoremap <unique> <leader>tl :<c-u>exec v:count.'Tclear'<cr>
+nmap     <unique> gx <Plug>(neoterm-repl-send)
+xmap     <unique> gx <Plug>(neoterm-repl-send)
+let g:neoterm_default_mod=':vertical'
 
+"----------------------------------------------
+" Plugin: colorizer
+"----------------------------------------------
 lua <<EOF
-require("toggleterm").setup{}
+require("colorizer").setup{
+  'css';
+  'javascript';
+  'html';
+  'haml';
+  'sass';
+  'javascriptreact';
+  'typescriptreact';
+}
 EOF
 
 "----------------------------------------------
 " Plugin: indent
 "----------------------------------------------
-let g:indent_blankline_char = '│ '
+let g:indent_blankline_char = '│'
 let g:indent_blankline_space_char = ' '
 let g:indent_blankline_use_treesitter = v:true
 let g:indent_blankline_filetype_exclude = ['help', 'terminal']
@@ -402,11 +418,26 @@ let g:CoolTotalMatches = 1
 "----------------------------------------------
 nnoremap <unique> <leader>/  <cmd>Telescope live_grep<CR>
 nnoremap <unique> <leader>p  <cmd>Telescope find_files<CR>
-nnoremap <unique> <leader>f  <cmd>Telescope find_browser<CR>
+nnoremap <unique> <leader>f  <cmd>Telescope file_browser<CR>
 nnoremap <unique> <leader>o  <cmd>Telescope oldfiles<CR>
 
 lua <<EOF
-require('telescope').setup()
+require('telescope').setup{
+ pickers = {
+    -- Your special builtin config goes in here
+    find_browser = {
+      previewer = false,
+    },
+    oldfiles = {
+      theme = "dropdown",
+      previewer = false,
+    },
+    find_files = {
+      theme = "dropdown",
+      previewer = false,
+    },
+  },
+}
 EOF
 
 "----------------------------------------------
@@ -574,6 +605,9 @@ require'nvim-treesitter.configs'.setup {
   },
    indent = {
     enable = true
+  }, 
+  matchup = {
+    enable = true,              -- mandatory, false will disable the whole extension
   },
 }
 EOF

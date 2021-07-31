@@ -20,46 +20,28 @@ call plug#begin('~/.vim/plugged')
 "general
 Plug 'krajeswaran/taskpaper.vim'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-sleuth'
 Plug 'machakann/vim-sandwich'
 Plug 'schickling/vim-bufonly'
-Plug 'tpope/vim-sleuth'
 Plug 'romainl/vim-cool'
-Plug 'romainl/vim-qf'
 Plug 'wincent/ferret'
 Plug 'mg979/vim-visual-multi'
 Plug 'mbbill/undotree'
-Plug 'bogado/file-line'
 Plug 'regedarek/ZoomWin'
 Plug 'junegunn/goyo.vim'
-Plug 'airblade/vim-rooter'
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
 "themes
 "Plug 'arcticicestudio/nord-vim'
 Plug 'w0ng/vim-hybrid'
 
-" Coding
+"language tools
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/gv.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'Yggdroot/indentLine'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'tpope/vim-commentary'
-Plug 'rhysd/reply.vim', { 'on': ['Repl', 'ReplAuto'] }
+Plug 'tpope/vim-abolish'
+Plug 'preservim/vim-pencil'
+Plug 'rhysd/vim-grammarous'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'previm/previm'
 
-"js
-Plug 'yuezk/vim-js'
-Plug 'HerringtonDarkholme/yats.vim'
-
-"python
-Plug 'vim-python/python-syntax'
-"golang
-"Plug 'fatih/vim-go'
 call plug#end()
 
 "----------------------------------------------
@@ -68,22 +50,22 @@ call plug#end()
 " Disable vim distribution plugins
 let g:loaded_getscript = 1
 let g:loaded_getscriptPlugin = 1
-"let g:loaded_gzip = 1
+let g:loaded_gzip = 1
 let g:loaded_logiPat = 1
 let g:loaded_matchit = 1
-"let g:loaded_matchparen = 1
+let g:loaded_matchparen = 1
 let g:loaded_netrw = 1 
 let g:netrw_nogx = 1 " disable netrw's gx mapping.
 let g:loaded_rrhelper = 1  " ?
 let g:loaded_shada_plugin = 1  " ?
-"let g:loaded_tar = 1
-"let g:loaded_tarPlugin = 1
+let g:loaded_tar = 1
+let g:loaded_tarPlugin = 1
 let g:loaded_tutor_mode_plugin = 1
 let g:loaded_2html_plugin = 1
 let g:loaded_vimball = 1
 let g:loaded_vimballPlugin = 1
-"let g:loaded_zip = 1
-"let g:loaded_zipPlugin = 1
+let g:loaded_zip = 1
+let g:loaded_zipPlugin = 1
 
 set mouse=v                 " automatically enable mouse usage
 set go+=a
@@ -172,7 +154,6 @@ set directory=$HOME/.vimswap
 " reopen last mark
 autocmd BufReadPost * silent! normal! g`"zv
 autocmd BufRead todo.md set ft=taskpaper
-autocmd BufRead todo.md call gitgutter#disable()
 
 " Key (re)Mappings
 
@@ -261,7 +242,7 @@ endfunction
 " turn terminal to normal mode with escape
 tnoremap <Esc> <C-W>N
 " open terminal on ctrl+n
-nnoremap <leader>T :term ++rows=10<CR>
+nnoremap <leader>t :term ++rows=10<CR>
 
 "----------------------------------------------
 " Colors
@@ -314,24 +295,8 @@ nnoremap N Nzzzv
 "noremap <Left> <NOP>
 "noremap <Right> <NOP>
 
-" ... but skip the quickfix when navigating
-augroup qf
-	autocmd!
-	autocmd FileType qf set nobuflisted
-augroup END
-
 " Path
 set path+=**
-
-" netrw
-let g:netrw_banner=0        " disable annoying banner
-let g:netrw_browse_split=4  " open in prior window
-let g:netrw_altv=1          " open splits to the right
-let g:netrw_liststyle=3     " tree view
-let g:netrw_list_hide = &wildignore
-let g:netrw_list_hide+=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
 
 " JSON
 nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
@@ -372,56 +337,10 @@ set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 
 
-"----------------------------------------------
-" Plugin: christoomey/vim-tmux-navigator
-"----------------------------------------------
-" Tmux vim integration
-let g:tmux_navigator_no_mappings = 1
-let g:tmux_navigator_save_on_switch = 1
-
-" Move between splits with ctrl+h,j,k,l
-nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
-nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
-
-"----------------------------------------------
-" Plugin: vim-rooter
-"----------------------------------------------
-let g:rooter_change_directory_for_non_project_files = 'current'
-let g:rooter_silent_chdir = 1
-let g:rooter_patterns = ['package.json', 'Readme.md', 'readme.md', 'README.md', '.vimroot', '.git/', 'venv/', 'vendor/']
-
-augroup vimrc_rooter
-    autocmd VimEnter * :Rooter
-augroup END
-
-"----------------------------------------------
-" Plugin: indent
-"----------------------------------------------
-let g:indentLine_char_list = ['┊']
-
 ""----------------------------------------------
 "" Plugin: vim-cool
 ""----------------------------------------------
 let g:CoolTotalMatches = 1
-"----------------------------------------------
-" Plugin: vim-qf
-"----------------------------------------------
-nmap <unique> <F5> <Plug>(qf_qf_toggle)
-nmap <unique> ]l <Plug>(qf_qf_previous)
-nmap <unique> [l <Plug>(qf_qf_next)
-
-"----------------------------------------------
-" Plugin: vim-go
-"----------------------------------------------
-" disable vim-go :GoDef short cut (gd)
-" this is handled by LanguageClient [LC]
-"let g:go_def_mapping_enabled = 0
-"let g:go_def_mode='gopls'
-"let g:go_info_mode='gopls'
-"autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 
 "----------------------------------------------
 " Plugin: clap
@@ -432,6 +351,20 @@ nnoremap <unique> <leader>f  :Clap filer<CR>
 nnoremap <unique> <leader>/  :Clap grep<CR>
 
 "----------------------------------------------
+" Plugin: grammarous
+"----------------------------------------------
+let g:grammarous#hooks = {}
+function! g:grammarous#hooks.on_check(errs) abort
+    nmap <buffer>]d <Plug>(grammarous-move-to-next-error)
+    nmap <buffer>[d <Plug>(grammarous-move-to-previous-error)
+endfunction
+
+function! g:grammarous#hooks.on_reset(errs) abort
+    nunmap <buffer>]d
+    nunmap <buffer>[d
+endfunction
+
+"----------------------------------------------
 " Plugin: previm/previm
 "----------------------------------------------
 let g:previm_open_cmd = 'xdg-open'
@@ -440,36 +373,6 @@ let g:previm_open_cmd = 'xdg-open'
 " Plugin: vim-bufonly
 "----------------------------------------------
 nmap <unique> <leader>q <cmd>:Bonly<CR>
-
-"----------------------------------------------
-" Plugin: justinmk/dirvish
-"----------------------------------------------
-autocmd FileType dirvish sort ,^.*[\/],
-
-command! -nargs=? -complete=dir Explore belowright vsplit | silent Dirvish <args> | vertical resize 50
-command! -nargs=? -complete=dir Sexplore belowright vsplit | silent Dirvish <args> | vertical resize 50
-command! -nargs=? -complete=dir Vexplore belowright vsplit | silent Dirvish <args> | vertical resize 50
-
-augroup dirvish_config
-  autocmd!
-
-  " Map `gh` to hide dot-prefixed files.  Press `R` to "toggle" (reload).
-  autocmd FileType dirvish nnoremap <silent><buffer>
-    \ gh :silent keeppatterns g@\v/\.[^\/]+/?$@d _<cr>:setl cole=3<cr>
-
-  " Map `o` to open in split
-  autocmd FileType dirvish
-    \  nnoremap <silent><buffer> o :call dirvish#open('vsplit', 0)<CR>
-    \ |xnoremap <silent><buffer> o :call dirvish#open('vsplit', 0)<CR>
-
-  " New Folder
-  autocmd FileType dirvish
-    \  nnoremap <buffer> md :!mkdir %
-
-  " New File
-  autocmd FileType dirvish
-    \  nnoremap <buffer> mm :e %
-augroup END
 
 "----------------------------------------------
 " Plugin: lifepillar/vim-mucomplete
@@ -484,9 +387,7 @@ set completeopt+=menuone,noinsert,noselect
 " turn omni func for all
 set omnifunc=syntaxcomplete#Complete
 
-" tmux config
-" let g:tmuxcomplete#trigger = 'completefunc'
-
+set dictionary='/usr/share/dict/words'
 autocmd FileType markdown,text setlocal complete+=k dictionary+=spell
 
 imap <expr> <down> mucomplete#extend_fwd("\<down>")
