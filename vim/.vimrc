@@ -19,6 +19,8 @@ call plug#begin('~/.vim/plugged')
 
 "general
 Plug 'krajeswaran/taskpaper.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-repeat'
 Plug 'machakann/vim-sandwich'
 Plug 'schickling/vim-bufonly'
@@ -28,7 +30,6 @@ Plug 'mg979/vim-visual-multi'
 Plug 'mbbill/undotree'
 Plug 'regedarek/ZoomWin'
 Plug 'junegunn/goyo.vim'
-Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
 "themes
 "Plug 'arcticicestudio/nord-vim'
@@ -343,12 +344,11 @@ set statusline+=\
 let g:CoolTotalMatches = 1
 
 "----------------------------------------------
-" Plugin: clap
+" Plugin: fzf
 "----------------------------------------------
-nnoremap <unique> <leader>o  :Clap history<CR>
-nnoremap <unique> <leader>p  :Clap files<CR>
-nnoremap <unique> <leader>f  :Clap filer<CR>
-nnoremap <unique> <leader>/  :Clap grep<CR>
+nnoremap <unique> <leader>o  :History<CR>
+nnoremap <unique> <leader>p  :Files<CR>
+nnoremap <unique> <leader>/  :Rg <CR>
 
 "----------------------------------------------
 " Plugin: grammarous

@@ -23,21 +23,20 @@ ln -s ~${USER}/.fzf* .
 
 echo "Here are things you might want to do: 
     - unfuck dotfiles stowing
-	- asdf install: yarn, golang, python, node
-	- pip install: pgcli, ipython, pynvim
-	- binaries: fd, rg, bat, lsd, duf, dust, delta, bottom
-	- setup neovim: checkhealth
-	- install gdrive, setup keepassxc
-	- keyboard shortcuts
-	- firefox-dev
-	- setup local firefox, chromium
-	- gtk/xfce/kde themes, greeter config, icon themes
-	- f12 console
-	- install android-studio, install android-sdk
-	- postgres, redis
-	- install proj stuff
-	- syncthing setup
-    - fonts fuckery: get nerd-fonts: rxvt, gvim, neovim
-	- playx + instantmusic + musickube
-	- lsd
+    - asdf install: neovim, yarn, golang, python, node
+    - pip install: pgcli, ipython, awscli, pynvim
+    - binaries: fd, rg, bat, lsd, duf, dust, delta, bottom. See: https://github.com/ibraheemdev/modern-unix
+    - setup neovim: checkhealth
+    - install gdrive, setup keepassxc
+    - keyboard shortcuts
+    - firefox-dev
+    - setup local firefox, ungoogled-chromium
+    - gtk/xfce/kde themes, greeter config, icon themes
+    - f12 console
+    - install android-studio, install android-sdk
+    - postgres, redis
+    - install proj stuff
+    - syncthing setup
+    - fonts fuckery: get nerd-fonts: Hack, Jetbrains, Fira
+    - playx + instantmusic + musickube
 "

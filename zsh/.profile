@@ -85,6 +85,9 @@ fpath=(${ASDF_DIR}/completions $fpath)
 
 export AWS_CLI_AUTO_PROMPT=on
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # initialise completions with ZSH's compinit
 autoload -Uz compinit
 compinit

@@ -87,7 +87,6 @@ fdfind
 ripgrep
 qpdfview
 vlc
-gotop
 xfdashboard
 xfdashboard-plugins
 cmus
