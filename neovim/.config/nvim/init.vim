@@ -1,8 +1,7 @@
 " TODO
-" simple repl
 " lua port
 " nvim-lsp
-" debug(vimspector, vim-delve, tsdebug)
+" debug(nvim-dap, vimspector, vim-delve, tsdebug)
 " ---------------------------------------------
 " workflow: new terminal window /pane (no tmuxes)
 "----------------------------------------------
@@ -40,7 +39,7 @@ Plug 'regedarek/ZoomWin'
 Plug 'gennaro-tedesco/nvim-peekup'
 
 "themes
-Plug 'bluz71/vim-nightfly-guicolors'
+Plug 'EdenEast/nightfox.nvim'
 
 " Coding
 Plug 'tpope/vim-fugitive'
@@ -64,7 +63,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 "coc
-let g:coc_global_extensions = ['coc-actions', 'coc-pairs', 'coc-explorer', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css', 'coc-pyright', 'coc-go', 'coc-react-refactor']
+let g:coc_global_extensions = ['coc-actions', 'coc-pairs', 'coc-explorer', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-eslint', 'coc-html', 'coc-css']
 
 "----------------------------------------------
 " General settings
@@ -286,8 +285,8 @@ if $TERM =~ "256color"
   colorscheme default
 else
   set termguicolors " Use true colours
-  colorscheme nightfly
-  let g:nightflyCursorColor = 1
+  colorscheme nightfox
+  let g:nightfox_italic_comments = 1
 endif
 
 "----------------------------------------------

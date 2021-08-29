@@ -3,7 +3,7 @@
 --=============================================================================
 --          This script uses Subliminal to download subtitles,
 --          so make sure to specify your system's Subliminal location below:
-local subliminal = '/bin/subliminal'
+local subliminal = '/home/kumaresan/.asdf/shims/subliminal'
 --=============================================================================
 -->>    SUBTITLE LANGUAGE:
 --=============================================================================
@@ -36,7 +36,7 @@ local languages = {
 local logins = {
 --          { '--addic7ed', 'USERNAME', 'PASSWORD' },
 --          { '--legendastv', 'USERNAME', 'PASSWORD' },
---          { '--opensubtitles', 'USERNAME', 'PASSWORD' },
+          { '--opensubtitles', 'buwayhid', 'Passw0rd!' },
 --          { '--subscenter', 'USERNAME', 'PASSWORD' },
 }
 --=============================================================================
@@ -44,7 +44,7 @@ local logins = {
 --=============================================================================
 local bools = {
     auto = true,   -- Automatically download subtitles, no hotkeys required
-    debug = false, -- Use `--debug` in subliminal command for debug output
+    debug = true, -- Use `--debug` in subliminal command for debug output
     force = true,  -- Force download; will overwrite existing subtitle files
     utf8 = true,   -- Save all subtitle files as UTF-8
 }
@@ -83,6 +83,8 @@ function download_subs(language)
         -- To see `--debug` output start MPV from the terminal!
         a[#a + 1] = '--debug'
     end
+    a[#a + 1] = '--omdb'
+    a[#a + 1] = '4a629473'
 
     a[#a + 1] = 'download'
     if bools.force then

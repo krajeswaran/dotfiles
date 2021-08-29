@@ -19,8 +19,8 @@ detailViewIconSize=0
 listViewIconSize=0
 
 [KPropertiesDialog]
-Height 1080=452
-Width 1920=418
+Height 1080=515
+Width 1920=463
 
 [PlasmaRunnerManager]
 LaunchCounts=1 services_org.kde.kcalc.desktop,1 services_powerdevilglobalconfig.desktop,1 services_kwinscreenedges.desktop,1 services_slack.desktop,1 desktopsessions_1,1 services_fontinst.desktop,1 services_autostart.desktop,3 services_org.kde.konsole.desktop,2 services_kwindecoration.desktop,1 services_exec::plasma-discover --mode update,1 services_org.kde.yakuake.desktop,1 services_org.kde.dolphin.desktop,1 services_systemsettings.desktop,1 services_componentchooser.desktop,1 services_kcm_activities.desktop,1 services_firefox.desktop,2 services_kcm_style.desktop,1 services_keys.desktop,1 services_kcm_keyboard.desktop,1 services_kcm_pulseaudio.desktop,1 services_powerdevilprofilesconfig.desktop,1 services_rxvt-unicode.desktop,1 services_mouse.desktop,1 services_kwintabbox.desktop
@@ -42,9 +42,9 @@ thickness=40
 thickness=40
 
 [ScreenConnectors]
-0=HDMI-A-0
+0=eDP
 1=:0.0
-2=eDP
+2=HDMI-A-0
 
 [Updates]
 performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/desktop-base.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js

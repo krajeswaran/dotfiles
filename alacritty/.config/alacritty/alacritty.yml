@@ -123,75 +123,39 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Nightfly Colors
+#Colors (Iceberg Dark)
 colors:
   # Default colors
   primary:
-    background:        '#011627'
-    foreground:        '#acb4c2'
-    bright_foreground: '#eeeeee'
-
-  # Cursor colors
-  cursor:
-    text:   '#080808'
-    cursor: '#9ca1aa'
-
-  # Selection colors
-  selection:
-    text:       '#080808'
-    background: '#b2ceee'
+    background: '#192330'
+    foreground: '#CDCECF'
 
   # Normal colors
   normal:
-    black:   '#1d3b53'
-    red:     '#fc514e'
-    green:   '#a1cd5e'
-    yellow:  '#e3d18a'
-    blue:    '#82aaff'
-    magenta: '#c792ea'
-    cyan:    '#7fdbca'
-    white:   '#a1aab8'
+    black      : "#393b44"
+    red        : "#c94f6d"
+    green      : "#81B29A"
+    yellow     : "#dbc074"
+    blue       : "#719cd6"
+    magenta    : "#9D79D6"
+    cyan       : "#63cdcf"
+    white      : "#dfdfe0"
+    orange     : "#F4A261"
+    pink       : "#D67AD2"
+
 
   # Bright colors
   bright:
-    black:   '#7c8f8f'
-    red:     '#ff5874'
-    green:   '#21c7a8'
-    yellow:  '#ecc48d'
-    blue:    '#82aaff'
-    magenta: '#ae81ff'
-    cyan:    '#7fdbca'
-    white:   '#d6deeb'
-
-
-# Colors (Iceberg Dark)
-#colors:
-#  # Default colors
-#  primary:
-#    background: '#161821'
-#    foreground: '#d2d4de'
-#
-#  # Normal colors
-#  normal:
-#    black:   '#161821'
-#    red:     '#e27878'
-#    green:   '#b4be82'
-#    yellow:  '#e2a478'
-#    blue:    '#84a0c6'
-#    magenta: '#a093c7'
-#    cyan:    '#89b8c2'
-#    white:   '#c6c8d1'
-#
-#  # Bright colors
-#  bright:
-#    black:   '#6b7089'
-#    red:     '#e98989'
-#    green:   '#c0ca8e'
-#    yellow:  '#e9b189'
-#    blue:    '#91acd1'
-#    magenta: '#ada0d3'
-#    cyan:    '#95c4ce'
-#    white:   '#d2d4de'
+    black   : "#7f8c98"
+    red     : "#D6616B"
+    green   : "#58cd8b"
+    yellow  : "#FFE37E"
+    blue    : "#84CEE4"
+    magenta : "#B8A1E3"
+    cyan    : "#59F0FF"
+    white   : "#F2F2F2"
+    orange  : "#F6A878"
+    pink    : "#DF97DB"
 
 # Visual Bell
 #
@@ -298,7 +262,7 @@ mouse:
   # If this is `true`, the cursor is temporarily hidden when typing.
   hide_when_typing: true
 
-  #url:
+  # url:
     # URL launcher
     #
     # This program is executed when clicking on a text which is recognized as a URL.
@@ -318,7 +282,7 @@ mouse:
     #
     # These are the modifiers that need to be held down for opening URLs when clicking
     # on them. The available modifiers are documented in the key binding section.
-    #modifiers: None
+    # modifiers: Control
 
 # Mouse bindings
 #

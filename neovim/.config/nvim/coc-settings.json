@@ -44,30 +44,17 @@
   "diagnostic.refreshOnInsertMode": true,
   //Snippet
   "coc.preferences.snippetStatusText": "Ⓢ ",
-  //CocList
-  "list.source.files.defaultOptions": ["--auto-preview"],
-  "list.source.outline.defaultOptions": ["--auto-preview"],
-  "list.source.files.args": ["--hidden", "--files"],
-  "list.insertMappings": {
-    "<C-x>": "action:split",
-    "<C-v>": "action:vsplit"
-  },
-  "list.normalMappings": {
-    "<C-x>": "action:split",
-    "<C-v>": "action:vsplit"
-  },
   //prettier
-  //"coc.preferences.formatOnSaveFiletypes": [
-  //  "html",
-  //  "css",
-  //  "markdown",
-  //  "javascript",
-  //  "javascriptreact",
-  //  "typescript",
-  //  "typescriptreact",
-  //  "go",
-  //  "json"
-  //],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "html",
+    "css",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "go",
+    "json"
+  ],
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "prettier.statusItemText": "ⓟ ",
@@ -80,7 +67,7 @@
   "cursors.previousKey": "<C-p>",
   "cursors.cancelKey": "<esc>",
   //sessions
-  "session.directory": "~/.cache/vim/session",
+  // "session.directory": "~/.cache/vim/session",
   // coc-explorer
   "explorer.icon.expanded": "▾",
   "explorer.icon.collapsed": "▸",
@@ -99,8 +86,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "eslint.autoFix": true,
+  "eslint.format.enable": true,
   "eslint.autoFixOnSave": true
-  // coc-list
-  // coc-actions
 }

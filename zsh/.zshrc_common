@@ -13,7 +13,7 @@ alias router="ssh root@192.168.1.1"
 alias box="ssh thesaneone@thesanebox"
 alias pi="ssh pi@thesanepi"
 alias diskusage="du -h -d 1"
-alias sshfs='sshfs -C -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3'
+alias sshfs='sshfs -C -o nonempty,reconnect,ServerAliveInterval=15,ServerAliveCountMax=3'
 # newly born hostname, child or project?
 alias namemaker="shuf -n 2 /usr/share/dict/words | tr -dc 'A-Za-z0-9'"
 alias gitclean='git clean -fxdq'

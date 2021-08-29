@@ -121,17 +121,6 @@ systemApplications=systemsettings.desktop,org.kde.kinfocenter.desktop
 [Containments][2][Applets][25][Shortcuts]
 global=Meta+Esc
 
-[Containments][2][Applets][4]
-immutability=1
-plugin=org.kde.plasma.pager
-
-[Containments][2][Applets][4][Configuration]
-PreloadWeight=0
-
-[Containments][2][Applets][44]
-immutability=1
-plugin=org.kde.plasma.showdesktop
-
 [Containments][2][Applets][53]
 immutability=1
 plugin=org.kde.plasma.taskmanager
@@ -164,7 +153,7 @@ DialogWidth=1920
 PreloadWeight=0
 
 [Containments][2][General]
-AppletOrder=25;4;53;6;23;44;21
+AppletOrder=25;53;6;23;21
 
 [Containments][28]
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
@@ -186,8 +175,13 @@ PreloadWeight=0
 Color=35,38,41
 
 [Containments][54]
+activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
+formfactor=0
+immutability=1
 lastScreen=2
-wallpaperplugin=org.kde.color
+location=0
+plugin=org.kde.desktopcontainment
+wallpaperplugin=org.kde.image
 
 [Containments][54][ConfigDialog]
 DialogHeight=600
@@ -224,14 +218,14 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][11][Configuration]
-PreloadWeight=58
+PreloadWeight=63
 
 [Containments][7][Applets][12]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][12][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][7][Applets][13]
 immutability=1
