@@ -28,7 +28,7 @@
         <default pathversion="1"></default>
         <source>
             <name>photos</name>
-            <path pathversion="1">/photos</path>
+            <path pathversion="1">/photos/</path>
             <allowsharing>true</allowsharing>
         </source>
     </pictures>
@@ -37,6 +37,16 @@
         <source>
             <name>tc</name>
             <path pathversion="1">https://team-crew.github.io/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>dumps</name>
+            <path pathversion="1">/dumps/</path>
+            <allowsharing>true</allowsharing>
+        </source>
+        <source>
+            <name>movies1</name>
+            <path pathversion="1">/movies1</path>
             <allowsharing>true</allowsharing>
         </source>
     </files>

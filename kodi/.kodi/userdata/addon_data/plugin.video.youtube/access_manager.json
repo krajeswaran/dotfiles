@@ -12,7 +12,7 @@
                 "refresh_token": "", 
                 "token_expires": -1, 
                 "watch_history": "HL", 
-                "watch_later": " WL"
+                "watch_later": ""
             }
         }
     }
