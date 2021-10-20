@@ -40,6 +40,9 @@ wallpaperplugin=org.kde.color
 immutability=1
 plugin=fokus
 
+[Containments][18][Applets][35][Configuration]
+PreloadWeight=42
+
 [Containments][18][Applets][35][Configuration][ConfigDialog]
 DialogHeight=600
 DialogWidth=800
@@ -125,6 +128,9 @@ global=Meta+Esc
 immutability=1
 plugin=org.kde.plasma.taskmanager
 
+[Containments][2][Applets][53][Configuration]
+PreloadWeight=42
+
 [Containments][2][Applets][53][Configuration][ConfigDialog]
 DialogHeight=600
 DialogWidth=800
@@ -188,7 +194,7 @@ DialogHeight=600
 DialogWidth=800
 
 [Containments][54][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][54][Wallpaper][org.kde.color][General]
 Color=47,52,63
@@ -207,7 +213,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][7][Applets][10][Configuration]
-PreloadWeight=100
+PreloadWeight=97
 
 [Containments][7][Applets][10][Configuration][ConfigDialog]
 DialogHeight=1032
@@ -218,35 +224,35 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][11][Configuration]
-PreloadWeight=63
+PreloadWeight=70
 
 [Containments][7][Applets][12]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][12][Configuration]
-PreloadWeight=100
+PreloadWeight=97
 
 [Containments][7][Applets][13]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][13][Configuration]
-PreloadWeight=68
+PreloadWeight=60
 
 [Containments][7][Applets][14]
 immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][7][Applets][14][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][7][Applets][15]
 immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=59
+PreloadWeight=51
 
 [Containments][7][Applets][16]
 immutability=1
@@ -274,7 +280,7 @@ immutability=1
 plugin=touchpad
 
 [Containments][7][Applets][32][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][7][ConfigDialog]
 DialogHeight=480

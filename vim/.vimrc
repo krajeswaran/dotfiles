@@ -1,5 +1,6 @@
 " General
 set nocompatible        " must be first line
+filetype plugin on
 
 " Plugins
 "----------------------------------------------
@@ -30,15 +31,19 @@ Plug 'mg979/vim-visual-multi'
 Plug 'mbbill/undotree'
 Plug 'regedarek/ZoomWin'
 Plug 'junegunn/goyo.vim'
+Plug 'mtth/scratch.vim'
+Plug 'tpope/vim-abolish'
+Plug 'junegunn/goyo.vim'
 
 "themes
-"Plug 'arcticicestudio/nord-vim'
-Plug 'w0ng/vim-hybrid'
+"Plug 'w0ng/vim-hybrid'
+Plug 'pgdouyon/vim-yin-yang'
 
 "language tools
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-abolish'
 Plug 'preservim/vim-pencil'
+Plug 'preservim/vim-lexical',
+Plug 'preservim/vim-litecorrect',
 Plug 'rhysd/vim-grammarous'
 Plug 'lifepillar/vim-mucomplete'
 Plug 'previm/previm'
@@ -250,9 +255,9 @@ nnoremap <leader>t :term ++rows=10<CR>
 "----------------------------------------------
 set background=dark
 
-" if has('termguicolors')
-"   set termguicolors " Use true colours
-" endif
+if has('termguicolors')
+  set termguicolors " Use true colours
+endif
 
 " fucking magenta autocomplete menu
 highlight Pmenu ctermbg=darkgrey
@@ -271,10 +276,10 @@ if has('gui_running')
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
-    colorscheme hybrid
+    colorscheme yin
     set guifont=Hack\ Nerd\ Font\ Mono\ 12
     set lines=30
-    highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
+    highlight EndOfBuffer guifg=#1c1c1c guibg=#1c1c1c
 endif
 
 "----------------------------------------------
@@ -310,16 +315,12 @@ function! GitStatus()
 endfunction
 
 set statusline=
-if has('gui_running')
-  set statusline+=%#CursorColumn#
-else
-  set statusline+=%#NonText#
-endif
+set statusline+=%#NonText#
 set statusline+=\ %f
 set statusline+=%{&modified?'\ +':''}
 set statusline+=%{&readonly?'\ ':''}
 if has('gui_running')
-  set statusline+=%#LineNr#
+  set statusline+=%#NonText#
 else
   set statusline+=%#PmenuSel#
 endif
@@ -349,6 +350,31 @@ let g:CoolTotalMatches = 1
 nnoremap <unique> <leader>o  :History<CR>
 nnoremap <unique> <leader>p  :Files<CR>
 nnoremap <unique> <leader>/  :Rg <CR>
+tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
+
+"----------------------------------------------
+" Plugin: pencil
+"----------------------------------------------
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,text 
+                            \ | call lexical#init()
+                            \ | call litecorrect#init()
+augroup END
+
+"----------------------------------------------
+" Plugin: lexical
+"----------------------------------------------
+let g:lexical#spelllang = ['en_us','en_in']
+
+"if empty(glob('~/.vim/thesaurus/words.txt'))
+"  silent !curl -fLo ~/.vim/thesaurus/words.txt --create-dirs
+"    \ https://raw.githubusercontent.com/zeke/moby/master/words.txt
+"endif
+"
+"let g:lexical#thesaurus = ['~/.vim/thesaurus/words.txt',]
+let g:lexical#dictionary = ['/usr/share/dict/words',]
+let g:lexical#spell = 0
 
 "----------------------------------------------
 " Plugin: grammarous
@@ -373,6 +399,14 @@ let g:previm_open_cmd = 'xdg-open'
 " Plugin: vim-bufonly
 "----------------------------------------------
 nmap <unique> <leader>q <cmd>:Bonly<CR>
+
+"----------------------------------------------
+" Plugin: scratch
+"----------------------------------------------
+let g:scratch_persistence_file=$HOME . '/scratch.md'
+let g:scratch_filetype='markdown'
+let g:scratch_horizontal=0
+let g:scratch_height=100
 
 "----------------------------------------------
 " Plugin: lifepillar/vim-mucomplete
@@ -403,6 +437,7 @@ let g:mucomplete#chains = {
 			\ 'html' : ['tags', 'path', 'omni', 'keyn', 'user'],
 			\ 'css' : ['tags', 'path', 'omni', 'keyn', 'user'],
 			\ }
+
 
 " for spelling in autocomplete
 let g:mucomplete#can_complete = {}

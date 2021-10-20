@@ -50,7 +50,6 @@
     "css",
     "javascript",
     "javascriptreact",
-    "typescript",
     "typescriptreact",
     "go",
     "json"
@@ -66,8 +65,6 @@
   "cursors.nextKey": "<C-n>",
   "cursors.previousKey": "<C-p>",
   "cursors.cancelKey": "<esc>",
-  //sessions
-  // "session.directory": "~/.cache/vim/session",
   // coc-explorer
   "explorer.icon.expanded": "▾",
   "explorer.icon.collapsed": "▸",
@@ -79,13 +76,6 @@
     "v": "open:vsplit"
   },
   "explorer.openAction.strategy": "sourceWindow",
-  // eslint
-  "eslint.filetypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.mode": "all",
   "eslint.autoFixOnSave": true
 }

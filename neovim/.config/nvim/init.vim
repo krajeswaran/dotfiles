@@ -35,7 +35,6 @@ Plug 'wincent/ferret'
 Plug 'mg979/vim-visual-multi'
 Plug 'mbbill/undotree'
 Plug 'bogado/file-line'
-Plug 'regedarek/ZoomWin'
 Plug 'gennaro-tedesco/nvim-peekup'
 
 "themes
@@ -50,13 +49,12 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 Plug 'b3nj5m1n/kommentary'
 Plug 'andymass/vim-matchup'
 Plug 'kassio/neoterm'
-Plug 'previm/previm'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'samoshkin/vim-mergetool'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+Plug 'HerringtonDarkholme/yats.vim'
 "golang
 " Plug 'fatih/vim-go'
 " Plug 'sebdah/vim-delve'
@@ -346,20 +344,6 @@ set statusline+=\ %l:%c
 set statusline+=\ 
 
 "----------------------------------------------
-" Plugin: christoomey/vim-tmux-navigator
-"----------------------------------------------
-" Tmux vim integration
-let g:tmux_navigator_no_mappings = 1
-let g:tmux_navigator_save_on_switch = 1
-
-" Move between splits with ctrl+h,j,k,l
-nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
-nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
-nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
-nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
-nnoremap <silent> <c-\> :TmuxNavigatePrevious<cr>
-
-"----------------------------------------------
 " Plugin: vim-rooter
 "----------------------------------------------
 let g:rooter_change_directory_for_non_project_files = 'current'
@@ -369,11 +353,6 @@ let g:rooter_patterns = ['package.json', 'Readme.md', 'readme.md', 'README.md', 
 augroup vimrc_rooter
     autocmd VimEnter * :Rooter
 augroup END
-
-"----------------------------------------------
-" Plugin: previm/previm
-"----------------------------------------------
-let g:previm_open_cmd = 'xdg-open'
 
 "----------------------------------------------
 " Plugin: neoterm
@@ -416,9 +395,9 @@ let g:CoolTotalMatches = 1
 " Plugin: Telescope
 "----------------------------------------------
 nnoremap <unique> <leader>/  <cmd>Telescope live_grep<CR>
-nnoremap <unique> <leader>p  <cmd>Telescope find_files<CR>
+nnoremap <unique> <leader>o  <cmd>Telescope find_files<CR>
 nnoremap <unique> <leader>f  <cmd>Telescope file_browser<CR>
-nnoremap <unique> <leader>o  <cmd>Telescope oldfiles<CR>
+nnoremap <unique> <leader>p  <cmd>Telescope oldfiles<CR>
 
 lua <<EOF
 require('telescope').setup{
@@ -524,8 +503,8 @@ augroup end
 nmap <a-CR>  <Plug>(coc-codeaction)
 
 " Fix autofix problem of current line
-nmap <leader>a  <Plug>(coc-codeaction-line)
-xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap ga  <Plug>(coc-codeaction-line)
+xmap ga  <Plug>(coc-codeaction-selected)
 
 " Create mappings for function text object, requires document symbols feature of languageserver.
 xmap if <Plug>(coc-funcobj-i)
@@ -592,9 +571,11 @@ lua <<EOF
 require'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
+    disable = {"typescript"}
   },
     incremental_selection = {
     enable = true,
+    disable = {"typescript"},
     keymaps = {
       init_selection = "gnn",
       node_incremental = "grn",
@@ -603,11 +584,22 @@ require'nvim-treesitter.configs'.setup {
     },
   },
    indent = {
-    enable = true
+    enable = true,
+    disable = {"typescript"}
   }, 
   matchup = {
-    enable = true,              -- mandatory, false will disable the whole extension
+    enable = true,
+    disable = {"typescript"}
   },
 }
 EOF
 
+highlight link TSError Normal
+
+
+"----------------------------------------------
+" Plugin: neovide
+"----------------------------------------------
+let g:neovide_fullscreen=v:true
+let g:neovide_cursor_trail_length=0
+let g:neovide_cursor_animation_length=0

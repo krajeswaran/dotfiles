@@ -33,6 +33,8 @@ alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | sk | sed 's/^ *//
 command -v batcat >/dev/null 2>&1 && alias cat="batcat" 
 alias ls="ls --color"
 command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
+alias ebp='eb --profile=prod'
+alias awsp='aws --profile=prod'
 
 hvectoh264() {
     ffmpeg -xerror -hide_banner -threads 4 -i "$1"   -c:a copy -c:s copy -c:v libx264 "$2"

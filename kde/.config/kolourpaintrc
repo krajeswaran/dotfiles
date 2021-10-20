@@ -32,9 +32,9 @@ Maximum Color Depth=image/x-eps:32,image/x-portable-bitmap:1,image/x-portable-gr
 
 [Recent Files]
 File1[$e]=$HOME/notes/work/ph-payment-options.png
-File2[$e]=$HOME/dumps/125230-aatukutti/IMG_20210619_203705.jpg
+File2[$e]=$HOME/src/tang-mobile-app/assets/images/RechargeBg.svg
 Name1[$e]=ph-payment-options.png
-Name2[$e]=IMG_20210619_203705.jpg
+Name2[$e]=RechargeBg.svg
 
 [Tool Settings]
 Last Used Tool=1
