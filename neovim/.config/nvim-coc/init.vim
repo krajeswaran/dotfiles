@@ -11,8 +11,12 @@
 " instructions:
 " https://github.com/junegunn/vim-plug
 "----------------------------------------------
-if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
-  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+" don't go looking for .local/share directories
+set runtimepath=~/.config/nvim,$VIMRUNTIME
+set packpath=&runtimepath
+
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
@@ -38,7 +42,7 @@ Plug 'bogado/file-line'
 Plug 'gennaro-tedesco/nvim-peekup'
 
 "themes
-Plug 'EdenEast/nightfox.nvim'
+Plug 'sainnhe/sonokai'
 
 " Coding
 Plug 'tpope/vim-fugitive'
@@ -94,22 +98,16 @@ let g:loaded_zipPlugin = 1
 let g:loaded_man = 1
 let g:loaded_spellfile_plugin = 1
 
-set mouse=v                 " automatically enable mouse usage
-set go+=a
 set splitbelow
 set splitright
-set showfulltag
 set clipboard^=unnamed,unnamedplus
 scriptencoding utf-8
 set encoding=utf-8
-"imap ^V ^O"+p
-"set shellcmdflag=-ic
-" set shortmess+=filmnrxoOtT      " abbrev. of messages (avoids 'hit enter')
 
 " set title for terminal
 set title
 
-set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatibility
+let g:cursorline=v:false
 set virtualedit=onemore         " allow for cursor beyond last character
 set history=1000                " Store a ton of history (default is 20)
 set hidden                      " allow buffer switching without saving
@@ -130,17 +128,11 @@ endif
 
 " Allow vim to set a custom font or color for a word
 
-set wrap
 set linebreak
-set nolist  " list disables linebreak
-set textwidth=0
-set wrapmargin=0
-set linespace=0                 " No extra spaces between rows
 set showmatch                   " show matching brackets/parenthesis
 set winminheight=0              " windows can be 0 line high
 set ignorecase                  " case insensitive search
 set smartcase                   " case sensitive when uc present
-set wildmenu
 set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git,.idea,build/*  " MacOSX/Linux
 set whichwrap=b,s,h,l,<,>,[,]   " backspace and cursor keys wrap to
@@ -153,7 +145,6 @@ set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 
 " Formatting
 set formatoptions-=ro
-set autoindent                  " indent at the same level of the previous line
 set shiftwidth=4                " use indents of 4 spaces
 set expandtab                   " tabs are spaces, not tabs
 set tabstop=4                   " an indentation every four columns
@@ -168,11 +159,6 @@ set mousemodel=popup
 set diffopt=filler,context:4,vertical
 set makeprg=g++\ \\\--std=c++0x\ \\\\{$*}
 
-" directories
-set viewdir=$HOME/.vimview
-"set backupdir=$HOME/.vimbackup
-set directory=$HOME/.vimswap
-"
 " reopen last mark
 autocmd BufReadPost * silent! normal! g`"zv
 
@@ -277,14 +263,21 @@ endfunction
 " Colors
 "----------------------------------------------
 set background=dark
+set termguicolors " Use true colours
 
-if $TERM =~ "256color"
-  set termguicolors " Use true colours
+if $TERMPURPOSE =~ "console"
   colorscheme default
 else
-  set termguicolors " Use true colours
-  colorscheme nightfox
-  let g:nightfox_italic_comments = 1
+  if $TERMPURPOSE =~ "backend"
+    let g:sonokai_style = 'andromeda'
+  else
+    let g:sonokai_style = 'maia'
+  endif
+  let g:sonokai_enable_italic = 1
+  let g:sonokai_show_eob = 0
+  let g:sonokai_diagnostic_text_highlight = 1
+  let g:sonokai_better_performance = 1
+  colorscheme sonokai
 endif
 
 "----------------------------------------------
@@ -596,10 +589,3 @@ EOF
 
 highlight link TSError Normal
 
-
-"----------------------------------------------
-" Plugin: neovide
-"----------------------------------------------
-let g:neovide_fullscreen=v:true
-let g:neovide_cursor_trail_length=0
-let g:neovide_cursor_animation_length=0

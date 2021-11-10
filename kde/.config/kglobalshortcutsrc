@@ -5,7 +5,7 @@ switch-to-activity-eaf11a9b-32d8-4c20-9ebc-233e522ba4e2=none,none,Switch to acti
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
 Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
-_k_friendly_name=System Settings Module
+_k_friendly_name=KDE Daemon
 
 [kaccess]
 Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
@@ -23,7 +23,8 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=System Settings Module
+_k_friendly_name=KDE Daemon
+{1574ec19-b53f-4d36-8cb3-678bd5b18e15}=none,none,New Action
 {16a986a4-0406-4229-8150-3eaf5a27bf82}=Meta+T,none,Run term
 {1bf2f361-664f-49c2-bceb-35f2db618f73}=Meta+N,none,Run Vim
 {43b12498-8852-4f48-bcb3-6d8abb8f4e83}=Meta+E,none,Run filemanager

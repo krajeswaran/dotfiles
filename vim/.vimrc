@@ -11,7 +11,7 @@ filetype plugin on
 " https://github.com/junegunn/vim-plug
 "----------------------------------------------
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
@@ -92,6 +92,7 @@ set viewoptions=folds,options,cursor,unix,slash " better unix / windows compatib
 "set virtualedit=onemore         " allow for cursor beyond last character
 set history=1000                " Store a ton of history (default is 20)
 set hidden                      " allow buffer switching without saving
+set autoread
 
 " Setting up the directories
 set backup                      " backups are nice ...
@@ -353,14 +354,31 @@ nnoremap <unique> <leader>/  :Rg <CR>
 tnoremap <expr> <Esc> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
 
 "----------------------------------------------
-" Plugin: pencil
+" Plugin: texting
 "----------------------------------------------
-augroup pencil
+" set header title for journal & enter writing mode
+function! JournalMode()
+    "open journal file with date
+    let fname = "~\/notes\/journal\/" . strftime("%Y") ."\/" . strftime("%d%b") . ".md"
+    execute "e ".fnameescape(fname)
+    execute '0r '.fnameescape("~/notes/journal/journal.skeleton")
+    "execute 'normal gg'
+    "execute 'normal o'
+    execute 'Goyo'
+endfunction
+
+augroup texting
   autocmd!
   autocmd FileType markdown,text 
                             \ | call lexical#init()
                             \ | call litecorrect#init()
+
+  autocmd VimEnter */journal/**   setlocal complete=k/~/notes/journal/**/*
+  autocmd TextChanged,TextChangedI */journal/** silent write  
 augroup END
+
+nnoremap <unique> <leader>j  :call JournalMode()<CR>
+nnoremap <unique> <leader>je  :!~/bin/send-journal %<CR>
 
 "----------------------------------------------
 " Plugin: lexical

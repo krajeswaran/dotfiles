@@ -1,11 +1,16 @@
 [Applications][com.uploadedlobster.peek]
 Seen=true
+ShowInHistory=false
 
 [Applications][firefox]
 Seen=true
 
+[Applications][org.kde.spectacle]
+ShowInHistory=false
+
 [Applications][slack]
 Seen=true
+ShowInHistory=false
 
 [Services][networkmanagement]
 ShowInHistory=false

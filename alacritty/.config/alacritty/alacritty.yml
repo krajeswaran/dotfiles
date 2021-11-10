@@ -61,6 +61,7 @@ window:
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
   startup_mode: Fullscreen
+  title: App 
 
 
 scrolling:
@@ -123,39 +124,31 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-#Colors (Iceberg Dark)
+# sonokai maia
 colors:
-  # Default colors
   primary:
-    background: '#192330'
-    foreground: '#CDCECF'
+    background: "0x273136"
+    foreground: "0xe1e2e3"
 
-  # Normal colors
   normal:
-    black      : "#393b44"
-    red        : "#c94f6d"
-    green      : "#81B29A"
-    yellow     : "#dbc074"
-    blue       : "#719cd6"
-    magenta    : "#9D79D6"
-    cyan       : "#63cdcf"
-    white      : "#dfdfe0"
-    orange     : "#F4A261"
-    pink       : "#D67AD2"
+    black: "0x1c1e1f"
+    red: "0xf76c7c"
+    green: "0x9cd57b"
+    yellow: "0xe3d367"
+    blue: "0x78cee9"
+    magenta: "0xbaa0f8"
+    cyan: "0xf3a96a"
+    white: "0xe1e2e3"
 
-
-  # Bright colors
   bright:
-    black   : "#7f8c98"
-    red     : "#D6616B"
-    green   : "#58cd8b"
-    yellow  : "#FFE37E"
-    blue    : "#84CEE4"
-    magenta : "#B8A1E3"
-    cyan    : "#59F0FF"
-    white   : "#F2F2F2"
-    orange  : "#F6A878"
-    pink    : "#DF97DB"
+    black: "0x82878b"
+    red: "0xf76c7c"
+    green: "0x9cd57b"
+    yellow: "0xe3d367"
+    blue: "0x78cee9"
+    magenta: "0xbaa0f8"
+    cyan: "0xf3a96a"
+    white: "0xe1e2e3"
 
 # Visual Bell
 #
@@ -195,9 +188,6 @@ selection:
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: true
 
-# Allow terminal applications to change Alacritty's window title.
-window.dynamic_title: true
-
 cursor:
   # Cursor style
   #
@@ -234,7 +224,7 @@ live_config_reload: true
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
-#working_directory: None
+working_directory: /home/kumaresan/src/tang-mobile-app
 
 # WinPTY backend (Windows only)
 #

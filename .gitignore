@@ -14,3 +14,5 @@ ssh/.ssh/id_rsa*
 ssh/.ssh/known*
 tmux/.tmux/resurrect/tmux_resurrect_*
 mpsyt/**cache**
+vim/.vim/thesaurus
+zsh/.zfunctions/_gh

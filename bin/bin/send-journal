@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo got $1
+
+TO="nila.kumaresan.valliyoor@gmail.com"
+SUBJECT=$(basename "$1" .md)
+MSG=$(cat "$1")
+
+printf "To: ${TO}\nSubject: ${SUBJECT}\n\n${MSG}\n" | ssmtp -t
