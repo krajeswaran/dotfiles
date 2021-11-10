@@ -9,7 +9,7 @@ vim.api.nvim_exec(
   [[
   augroup Packer
   autocmd!
-  autocmd BufWritePost init.lua source init.lua | PackerCompile
+  autocmd BufWritePost init.lua source ~/.config/nvim/init.lua | PackerCompile
   augroup end
   ]],
   false
@@ -240,16 +240,16 @@ if term == "console" then
   vim.cmd [[colorscheme default]]
   vim.o.background = 'light'
 else
-  vim.o.background = 'dark'
+  -- vim.o.background = 'dark'
   if term == "backend" then
-    vim.o.sonokai_style = 'andromeda'
+    vim.g.sonokai_style = 'andromeda'
   else
-    vim.o.sonokai_style = 'atlantis'
+    vim.g.sonokai_style = 'atlantis'
   end
-  vim.o.sonokai_enable_italic = 1
-  vim.o.sonokai_show_eob = 0
-  vim.o.sonokai_diagnostic_text_highlight = 1
-  vim.o.sonokai_better_performance = 1
+  vim.g.sonokai_enable_italic = 1
+  vim.g.sonokai_show_eob = 0
+  vim.g.sonokai_diagnostic_text_highlight = 1
+  vim.g.sonokai_better_performance = 1
   vim.cmd [[colorscheme sonokai]]
 end
 
