@@ -2,11 +2,12 @@
 AntiAliasFonts=true
 BoldIntense=false
 ColorScheme=nkonsole
-Font=Hack Nerd Font Mono,14,-1,5,50,0,0,0,0,0
+Font=Hack Nerd Font,14,-1,5,50,0,0,0,0,0
 UseFontLineChararacters=true
 
 [General]
 DimWhenInactive=true
+Environment=TERM=xterm-256color,COLORTERM=truecolor,TERMPURPOSE=console
 Name=default
 Parent=FALLBACK/
 

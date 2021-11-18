@@ -23,8 +23,7 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=KDE Daemon
-{1574ec19-b53f-4d36-8cb3-678bd5b18e15}=none,none,New Action
+_k_friendly_name=System Settings Module
 {16a986a4-0406-4229-8150-3eaf5a27bf82}=Meta+T,none,Run term
 {1bf2f361-664f-49c2-bceb-35f2db618f73}=Meta+N,none,Run Vim
 {43b12498-8852-4f48-bcb3-6d8abb8f4e83}=Meta+E,none,Run filemanager

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Application;TerminalEmulator;Developer;
+Comment[en_US]=APP Alacritty
+Comment=APP Alacritty
+Exec=alacritty --config-file=/home/kumaresan/.config/alacritty/ide1.yml
+GenericName[en_US]=APP Alacritty
+GenericName=APP Alacritty
+Icon=finalterm
+MimeType=
+Name[en_US]=APP Alacritty
+Name=APP Alacritty
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=alacritty
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

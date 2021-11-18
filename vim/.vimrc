@@ -33,7 +33,6 @@ Plug 'regedarek/ZoomWin'
 Plug 'junegunn/goyo.vim'
 Plug 'mtth/scratch.vim'
 Plug 'tpope/vim-abolish'
-Plug 'junegunn/goyo.vim'
 
 "themes
 "Plug 'w0ng/vim-hybrid'

@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Application;TerminalEmulator;Developer;
+Comment[en_US]=API Alacritty
+Comment=API Alacritty
+Exec=alacritty --config-file=/home/kumaresan/.config/alacritty/ide.yml
+GenericName[en_US]=API Alacritty
+GenericName=API Alacritty
+Icon=gksu-root-terminal
+MimeType=
+Name[en_US]=API Alacritty
+Name=API Alacritty
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=alacritty
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

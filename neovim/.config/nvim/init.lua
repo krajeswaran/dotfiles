@@ -1,3 +1,11 @@
+-- pre-requisites
+--yarn global add typescript cssls jsonls html bash-language-server sql-language-server eslint_d @fsouza/prettierd typescript-language-server
+--pip install --user pyright flake8 black autopep8 pylint
+--do :TSInstall all to install all Treesitter parsers
+--TODO scratch +  cleanup gvim
+--TODO debug mode
+--TODO opttimize runtime?
+
 -- Install packer
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 
@@ -44,6 +52,10 @@ for _, plugin in pairs(disabled_built_ins) do
   vim.g["loaded_" .. plugin] = 1
 end
 
+local isEditor = function() 
+    return os.getenv("TERMPURPOSE") == "editor"
+end
+
 -- Packer plugins
 local use = require('packer').use
 local util = require('packer.util')
@@ -58,6 +70,14 @@ require('packer').startup({function()
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons',
+    cmd = {'NvimTreeFindFileToggle', 'NvimTree'},
+    config = function() require("nvim-tree").setup({
+        update_cwd = true,
+        update_focused_file = {
+            enable = true,
+            update_cwd = true
+        }
+    }) end
   }
 
   use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
@@ -74,6 +94,22 @@ require('packer').startup({function()
 
   -- themes
   use { 'sainnhe/sonokai' }
+  use { 
+    'pgdouyon/vim-yin-yang',
+    cond = isEditor
+  }
+  
+  -- text editing
+  use { 
+    'iamcco/markdown-preview.nvim',
+    run = 'cd app && yarn install',
+    cmd = 'MarkdownPreview',
+    cond = isEditor
+  }
+  use {
+    'krajeswaran/taskpaper.vim',
+    cond = isEditor
+  }
 
   -- coding
   use 'andymass/vim-matchup'
@@ -96,7 +132,15 @@ require('packer').startup({function()
   use { 
     'lewis6991/gitsigns.nvim', 
     event = 'BufRead',
-    config = function() require("gitsigns").setup() end,
+    config = function() require("gitsigns").setup({
+      attach_to_untracked = true,
+      on_attach = function(bufnr)
+        if vim.api.nvim_buf_get_name(bufnr):match('todo.md') then
+          -- Don't attach to specific buffers whose name matches a pattern
+          return false
+        end
+      end
+    }) end,
     requires = { 'nvim-lua/plenary.nvim' }
   }
   use {
@@ -106,7 +150,11 @@ require('packer').startup({function()
     run = ':TSUpdate'
   }
   use { 'NTBBloodbath/rest.nvim', event = 'BufRead' }
-  use { 'kassio/neoterm', cmd = 'TRepl' }
+  use { 
+        'kassio/neoterm', 
+        cmd = 'Tnew',
+        config = function() vim.g.neoterm_default_mod = ':vertical'  end,
+    }
   use {
     'norcalli/nvim-colorizer.lua',
     event = "BufRead",
@@ -121,12 +169,8 @@ require('packer').startup({function()
     }) end
   }
   use {
-    "folke/zen-mode.nvim",
-    config = function()    require("zen-mode").setup()  end
-  }
-  use {
-    'folke/twilight.nvim',
-    config = function()    require("twilight").setup()  end
+    "junegunn/goyo.vim",
+    cmd = "Goyo"
   }
   use {
     'folke/todo-comments.nvim',
@@ -135,7 +179,6 @@ require('packer').startup({function()
   }
   use {
     'neovim/nvim-lspconfig', 
-    'williamboman/nvim-lsp-installer'
   }
   use {
     'jose-elias-alvarez/null-ls.nvim',
@@ -162,23 +205,25 @@ require('packer').startup({function()
     after='nvim-cmp',
     event='BufRead'
   }
-  use {'mfussenegger/nvim-dap'}
+  use {
+    'mfussenegger/nvim-dap',
+  }
   use {
     'Pocco81/DAPInstall.nvim',
     'rcarriga/nvim-dap-ui',
-    requires = {'mfussenegger/nvim-dap'}
+    after = {'mfussenegger/nvim-dap'},
+    cmd = 'DebugOn'
   }
 end,
   config = {
     compile_path = util.join_paths(vim.fn.stdpath('data'), 'site/plugin', 'packer_compiled.lua'),
     display = {
       open_fn = function()
-	return util.float({ border = 'single' })
+        return util.float({ border = 'single' })
       end
     }
   }
 })
-
 
 --Incremental live completion (note: this is now a default on master)
 vim.o.inccommand = 'nosplit'
@@ -213,7 +258,7 @@ vim.o.breakindent = true
 
 --Save undo history
 vim.opt.undofile = true
-vim.opt.undodir = '~/.nvimundo'
+vim.opt.undodir = util.join_paths(os.getenv('HOME'), '.nvimundo')
 
 --backups
 vim.o.backup = false
@@ -239,12 +284,14 @@ local term = os.getenv("TERMPURPOSE")
 if term == "console" then
   vim.cmd [[colorscheme default]]
   vim.o.background = 'light'
+elseif term == "editor" then
+  vim.cmd [[colorscheme yin]]
 else
-  -- vim.o.background = 'dark'
+  vim.o.background = 'dark'
   if term == "backend" then
     vim.g.sonokai_style = 'andromeda'
   else
-    vim.g.sonokai_style = 'atlantis'
+    vim.g.sonokai_style = 'maia'
   end
   vim.g.sonokai_enable_italic = 1
   vim.g.sonokai_show_eob = 0
@@ -268,9 +315,9 @@ vim.o.diffopt = vim.o.diffopt .. ",vertical,indent-heuristic,iwhiteall,algorithm
 
 -- tab / indent stuff
 vim.o.expandtab = true
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
-vim.o.softtabstop = 4
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.softtabstop = 2
 
 --path
 vim.opt.path = vim.opt.path + '**'
@@ -278,16 +325,6 @@ vim.opt.path = vim.opt.path + '**'
 --scroll stuff
 vim.o.scrolljump=5
 vim.o.scrolloff=2   
-
--- no cursorline
-vim.cmd('set nocul')
-vim.opt.cursorline = false
-vim.o.cursorline = false
-vim.wo.cursorline = false
-vim.cmd [[
-autocmd BufRead * silent! lua vim.o.cursorline = false
-]]
-
 
 -- visual search
 vim.o.inccommand = 'split'
@@ -377,6 +414,40 @@ vim.api.nvim_set_keymap('n', 'N', 'Nzzzv', { noremap = true })
 -- json format
 vim.api.nvim_set_keymap('n', '<leader>jt', '<Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>', {})
 
+
+-- text editing
+vim.cmd [[
+augroup texting
+  autocmd!
+  function! Echo_Nothing(timer)
+    echo ''
+  endfunction
+
+  autocmd BufRead,BufNewFile todo.md set ft=taskpaper 
+  autocmd BufRead,BufNewFile todo.md set statusline=
+  autocmd BufRead,BufNewFile todo.md :Goyo 80
+
+  autocmd CmdlineLeave markdown,text,taskpaper call timer_start(1000, 'Echo_Nothing')
+  autocmd FileType markdown,text,taskpaper set autowriteall
+
+  autocmd TextChanged,TextChangedI */journal/** silent write  
+  autocmd VimEnter */journal/**  setlocal complete=k/~/notes/journal/**/*
+  autocmd BufRead  */journal/**  set statusline=
+augroup END
+]]
+
+_G.JournalMode = function()
+  -- open journal file with date
+  local fname = util.join_paths(os.getenv('HOME'), 'notes', 'journal', os.date("%Y"), os.date("%d%b") .. ".md")
+  local skeleton = util.join_paths(os.getenv('HOME'), 'notes', 'journal', 'journal.skeleton')
+  vim.api.nvim_command('e ' .. fname)
+  vim.api.nvim_command('0r ' .. skeleton)
+  vim.api.nvim_command('Goyo')
+  vim.api.nvim_command('set statusline=')
+end
+
+vim.api.nvim_set_keymap('n', '<leader>j', ':lua JournalMode()<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>je', ':!~/bin/send-journal %<CR>', { noremap = true })
 
 -- statusline --
 
@@ -515,15 +586,7 @@ require("project_nvim").setup {
 
 --nvim-tree
 vim.g.nvim_tree_respect_buf_cwd = 1
-vim.api.nvim_set_keymap('n', 'ge', ':NvimTreeFindFileToggle', { noremap = true })
-
-require("nvim-tree").setup({
-  update_cwd = true,
-  update_focused_file = {
-    enable = true,
-    update_cwd = true
-  },
-})
+vim.api.nvim_set_keymap('n', 'ge', ':NvimTreeFindFileToggle<CR>', { noremap = true })
 
 -- Indent blankline
 vim.g.indent_blankline_char = '┊'
@@ -562,6 +625,7 @@ vim.api.nvim_set_keymap('n', '<leader>p', [[<cmd>lua require('telescope.builtin'
 -- Treesitter 
 vim.o.foldmethod='expr'
 vim.o.foldexpr='nvim_treesitter#foldexpr()'
+vim.o.foldlevel=99
 
 require('nvim-treesitter.configs').setup {
   highlight = {
@@ -665,7 +729,22 @@ vim.lsp.handlers["workspace/symbol"] = telescope.lsp_workspace_symbols
 
 -- null-ls setup
 local null_ls = require('null-ls')
-null_ls.config({
+if isEditor() then 
+  null_ls.config({
+    sources = {
+      -- completions
+      null_ls.builtins.completion.spell,
+      null_ls.builtins.diagnostics.vale,
+
+      -- formatting sources
+      null_ls.builtins.formatting.autopep8, 
+      null_ls.builtins.formatting.black, 
+      -- null_ls.builtins.formatting.codespell, 
+      null_ls.builtins.formatting.json_tool,
+    }
+  }) 
+else 
+  null_ls.config({
     sources = { 
       -- code action sources
       -- null_ls.builtins.code_actions.gitsigns,
@@ -682,23 +761,21 @@ null_ls.config({
       -- null_ls.builtins.diagnostics.pylint, 
       null_ls.builtins.diagnostics.flake8, 
       -- null_ls.builtins.diagnostics.shellcheck, 
-      --[[ null_ls.builtins.diagnostics.misspell, 
-      null_ls.builtins.diagnostics.proselint, 
-      null_ls.builtins.diagnostics.vale,  ]]
 
       -- formatting sources
       null_ls.builtins.formatting.autopep8, 
       null_ls.builtins.formatting.black, 
       -- null_ls.builtins.formatting.codespell, 
       null_ls.builtins.formatting.json_tool,
-      null_ls.builtins.formatting.lua_format,
+      -- null_ls.builtins.formatting.lua_format,
       null_ls.builtins.formatting.prettierd, 
       -- null_ls.builtins.formatting.shfmt, 
       null_ls.builtins.formatting.sqlformat, 
       null_ls.builtins.formatting.terraform_fmt, 
       -- null_ls.builtins.formatting.uncrustify, 
     }
-})
+  })
+end
 
 nvim_lsp["null-ls"].setup({
     -- see the nvim-lspconfig documentation for available configuration options
@@ -805,7 +882,9 @@ cmp.setup {
 }
 
 -- nvim-cmp supports additional completion capabilities
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities(), {
+    snippetSupport = false,
+})
 
 -- Enable the following language servers
 local servers = { 'pyright', 'tsserver', 'html', 'jsonls', 'cssls', 'bashls', 'sqlls'  }
@@ -816,6 +895,11 @@ for _, lsp in ipairs(servers) do
     flags = { debounce_text_changes = 150 },
   }
 end
+
+--sqlls setup
+require'lspconfig'.sqlls.setup{
+  cmd = {"sql-language-server", "up", "--method", "stdio"};
+}
 
 -- tsserver override setup
 

@@ -1,8 +1,4 @@
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-export EDITOR='vim'
+export AWS_CLI_AUTO_PROMPT=on
 
 # aliases
 alias ll="ls -larth"
@@ -33,6 +29,8 @@ alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | sk | sed 's/^ *//
 command -v batcat >/dev/null 2>&1 && alias cat="batcat" 
 alias ls="ls --color"
 command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
+command -v nvim >/dev/null 2>&1 && alias vi="nvim" 
+command -v fdfind >/dev/null 2>&1 && alias fd="fdfind" 
 alias ebp='eb --profile=prod'
 alias awsp='aws --profile=prod'
 
@@ -63,6 +61,12 @@ compress_videos() {
   done
 }
 
+docker_prune() {
+	docker system df
+	docker container prune
+	docker image prune
+}
+
 # os specific
 if [ -f ~/.profile ]; then
     source ~/.profile
@@ -72,4 +76,34 @@ fi
 if [ -f ~/.zshrc_work ]; then
     source ~/.zshrc_work
 fi
+
+# for nix pkgs
+#export LOCALE_ARCHIVE_2_11="$(nix-build --no-out-link "<nixpkgs>" -A glibcLocales)/lib/locale/locale-archive"
+#export LOCALE_ARCHIVE_2_27="$(nix-build --no-out-link "<nixpkgs>" -A glibcLocales)/lib/locale/locale-archive"
+#export LOCALE_ARCHIVE="/usr/bin/locale"
+
+# nix aliases
+#function nix() {
+#	case $* in
+#		list* ) nix-env -q ;;
+#		search* ) shift 1; nix-env -qas "$@" ;;
+#		install* ) shift 1; nix-env -i "$@" ;;
+#		uninstall* ) shift 1; nix-env --uninstall "$@" ;;
+#		update* ) nix-channel --update ;;
+#		upgrade* ) nix-env -u ;;
+#		repair* ) nix-store --verify --check-contents --repair ;;
+#		show* ) shift 1; nix-env -qa --description ".*"$@".*" ;;
+#		clean* ) nix-collect-garbage -d ;;
+#		** ) echo "Try nix <command>\nAvailable commands: list, search, install, uninstall, update, upgrade, repair, show, clean\n"
+#	esac
+#}
+#
+#export XDG_DATA_DIRS=$HOME/.nix-profile/share:$XDG_DATA_DIRS
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit
 
