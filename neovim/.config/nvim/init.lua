@@ -430,7 +430,7 @@ augroup texting
   autocmd CmdlineLeave markdown,text,taskpaper call timer_start(1000, 'Echo_Nothing')
   autocmd FileType markdown,text,taskpaper set autowriteall
 
-  autocmd TextChanged,TextChangedI */journal/** silent write  
+  autocmd TextChanged,TextChangedI */journal/**,*/scratch.md silent write  
   autocmd VimEnter */journal/**  setlocal complete=k/~/notes/journal/**/*
   autocmd BufRead  */journal/**  set statusline=
 augroup END
@@ -444,10 +444,23 @@ _G.JournalMode = function()
   vim.api.nvim_command('0r ' .. skeleton)
   vim.api.nvim_command('Goyo')
   vim.api.nvim_command('set statusline=')
+  vim.api.nvim_command('set signcolumn=no')
+end
+
+_G.ScratchPad = function()
+  -- open journal file with date
+  local fname = util.join_paths(os.getenv('HOME'), 'scratch.md')
+  vim.api.nvim_command('e ' .. fname)
+  vim.api.nvim_command('Goyo')
+  vim.api.nvim_command('set statusline=')
+  vim.api.nvim_command('set signcolumn=no')
+  vim.api.nvim_command('set autowriteall')
 end
 
 vim.api.nvim_set_keymap('n', '<leader>j', ':lua JournalMode()<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>je', ':!~/bin/send-journal %<CR>', { noremap = true })
+vim.cmd [[ command! Journal execute 'lua JournalMode()' ]]
+vim.cmd [[ command! Scratch execute 'lua ScratchPad()' ]]
 
 -- statusline --
 

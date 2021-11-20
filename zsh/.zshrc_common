@@ -29,7 +29,7 @@ alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | sk | sed 's/^ *//
 command -v batcat >/dev/null 2>&1 && alias cat="batcat" 
 alias ls="ls --color"
 command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
-command -v nvim >/dev/null 2>&1 && alias vi="nvim" 
+alias vi="nvim" 
 command -v fdfind >/dev/null 2>&1 && alias fd="fdfind" 
 alias ebp='eb --profile=prod'
 alias awsp='aws --profile=prod'
