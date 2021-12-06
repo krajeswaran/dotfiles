@@ -1,8 +1,7 @@
 -- pre-requisites
---yarn global add typescript cssls jsonls html bash-language-server sql-language-server eslint_d @fsouza/prettierd typescript-language-server
+--yarn global add typescript cssls vscode-json-languageserver html bash-language-server sql-language-server eslint_d @fsouza/prettierd typescript-language-server
 --pip install --user pyright flake8 black autopep8 pylint
 --do :TSInstall all to install all Treesitter parsers
---TODO scratch +  cleanup gvim
 --TODO debug mode
 --TODO opttimize runtime?
 
@@ -186,13 +185,45 @@ require('packer').startup({function()
     after = 'neovim/nvim-lspconfig',
     requires = {"nvim-lua/plenary.nvim", "neovim/nvim-lspconfig"}
   }
+
+  use {
+    "rafamadriz/friendly-snippets",
+    event = "InsertEnter",
+  }
+
   use {
     'hrsh7th/nvim-cmp', 
-    'hrsh7th/cmp-nvim-lsp',
-    'hrsh7th/cmp-buffer',
-    'hrsh7th/cmp-path',
-    'hrsh7th/cmp-cmdline',
   }
+  use {
+    "L3MON4D3/LuaSnip",
+    wants = "friendly-snippets",
+    after = "nvim-cmp",
+  }
+
+  use {
+    "saadparwaiz1/cmp_luasnip",
+    after = "LuaSnip",
+  }
+
+  use {
+    "hrsh7th/cmp-nvim-lsp",
+  }
+
+  use {
+    "hrsh7th/cmp-buffer",
+    after = "cmp-nvim-lsp",
+  }
+
+  use {
+    "hrsh7th/cmp-path",
+    after = "cmp-buffer",
+  }
+
+  use {
+    "hrsh7th/cmp-cmdline",
+    after = "cmp-path",
+  }
+
   use {
     'folke/trouble.nvim',
     requires = 'kyazdani42/nvim-web-devicons',
@@ -631,7 +662,6 @@ require('telescope').setup {
 vim.api.nvim_set_keymap('n', '<leader>b', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>o', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>k', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>*', [[<cmd>lua require('telescope.builtin').grep_string()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>/', [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>p', [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]], { noremap = true, silent = true })
 
@@ -716,9 +746,9 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gs', [[<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>]], opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'g=', '<cmd>lua vim.lsp.buf.formatting()', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'v', 'g=', '<cmd>lua vim.lsp.buf.range_formatting()', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gs', [[:Telescope lsp_workspace_symbols query=' '<CR>]], opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'g=', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'v', 'g=', '<cmd>lua vim.lsp.buf.range_formatting()<CR>', opts)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 
   -- save on formatting
@@ -738,7 +768,7 @@ vim.lsp.handlers["textDocument/documentSymbol"] = telescope.lsp_document_symbols
 vim.lsp.handlers["textDocument/implementation"] = telescope.lsp_implementations
 vim.lsp.handlers["textDocument/references"] = telescope.lsp_references
 vim.lsp.handlers["textDocument/typeDefinition"] = telescope.lsp_definitions
-vim.lsp.handlers["workspace/symbol"] = telescope.lsp_workspace_symbols
+-- vim.lsp.handlers["workspace/symbol"] = telescope.lsp_workspace_symbols
 
 -- null-ls setup
 local null_ls = require('null-ls')
@@ -765,7 +795,7 @@ else
       -- null_ls.builtins.code_actions.refactoring,
 
       -- completions
-      null_ls.builtins.completion.spell,
+      -- null_ls.builtins.completion.spell,
 
       -- diagnostic sources
       -- null_ls.builtins.diagnostics.codespell, 
@@ -822,43 +852,53 @@ local LSP_KIND_SIGNS = {
 
 local has_words_before = function()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match('%s') == nil
 end
 
 local cmp = require 'cmp'
 cmp.setup {
+  snippet = {
+    expand = function(args)
+      require("luasnip").lsp_expand(args.body)
+    end,
+  },
+
   mapping = {
-    ['<C-d>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
-    ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
-    ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
+    ['<C-Space>'] = cmp.mapping.confirm {
+      behavior = cmp.ConfirmBehavior.Insert,
+      select = true,
+    },
+
     ['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
-    ['<C-e>'] = cmp.mapping({
-      i = cmp.mapping.abort(),
-      c = cmp.mapping.close(),
-    }),
 
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
-	cmp.select_next_item()
+        cmp.select_next_item()
+      elseif luasnip.expand_or_jumpable() then
+        luasnip.expand_or_jump()
       elseif has_words_before() then
-	cmp.complete()
+        cmp.complete()
       else
-	fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
+        fallback()
       end
     end, { "i", "s" }),
 
-    ["<S-Tab>"] = cmp.mapping(function()
+    ["<S-Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
-	cmp.select_prev_item()
+        cmp.select_prev_item()
+      elseif luasnip.jumpable(-1) then
+        luasnip.jump(-1)
+      else
+        fallback()
       end
     end, { "i", "s" }),
 
-
-    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+    ['<CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false }),
   },
 
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
+    { name = "luasnip" },
     { name = 'buffer' },
     { name = 'path' },
   }),
@@ -866,9 +906,10 @@ cmp.setup {
   formatting = {
     format = function(entry, vim_item)
       vim_item.menu = ({
-	nvim_lsp = 'S',
-	buffer   = 'B',
-	path = 'P',
+        nvim_lsp = 'C',
+        buffer   = 'B',
+        path = 'P',
+        snippet = 'S',
       })[entry.source.name]
 
       -- vim_item.kind = string.format("%s %s", LSP_KIND_SIGNS[vim_item.kind], vim_item.kind)
@@ -951,7 +992,7 @@ nvim_lsp.tsserver.setup {
 
     -- no default maps, so you may want to define some here
     local opts = { silent = true }
-    vim.cmd [[ command! OR execute ':TSLspOrganize<CR>' ]]
+    vim.cmd [[ command! OR execute ':TSLspOrganize' ]]
   end
 }
 
@@ -959,7 +1000,9 @@ nvim_lsp.tsserver.setup {
 vim.cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
 
 -- RestNvim
-vim.api.nvim_set_keymap('', '<leader>h', '<Plug>RestNvim<cr>', { noremap = true, silent = true })
+vim.cmd [[
+nmap <leader>h <Plug>RestNvim<CR>
+]]
 
 -- DAP
 local dap_install = require("dap-install")

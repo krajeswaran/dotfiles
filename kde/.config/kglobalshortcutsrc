@@ -23,14 +23,12 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=System Settings Module
+_k_friendly_name=KDE Daemon
 {16a986a4-0406-4229-8150-3eaf5a27bf82}=Meta+T,none,Run term
 {1bf2f361-664f-49c2-bceb-35f2db618f73}=Meta+N,none,Run Vim
 {43b12498-8852-4f48-bcb3-6d8abb8f4e83}=Meta+E,none,Run filemanager
-{90f55265-ffda-4f6b-a830-5a77bc003007}=Ctrl+Alt+T,none,Launch Konsole
 {b291028c-82ab-4d13-be96-c8681844eb40}=Meta+B,none,Run Browser
 {b332be0d-d4bd-413d-906b-545108f27748}=Meta+C,none,Run chat
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Search
 
 [kmix]
 _k_friendly_name=Audio Volume

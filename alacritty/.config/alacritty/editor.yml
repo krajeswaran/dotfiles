@@ -253,7 +253,7 @@ shell:
     - -l
     - -c
     # - -i
-    - exec /home/kumaresan/.asdf/shims/nvim
+    - exec nvim
 
 # Startup directory
 #
