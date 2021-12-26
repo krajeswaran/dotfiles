@@ -78,6 +78,7 @@ Wallpaper=
 RemoveWindowTitleBarAndFrame=true
 ShowMenuBarByDefault=false
 ShowWindowTitleOnTitleBar=true
+UseSingleInstance=true
 
 [MainWindow]
 Height 1080=704
@@ -88,3 +89,4 @@ Width 1920=1280
 
 [TabBar]
 CloseTabButton=None
+TabBarVisibility=AlwaysHideTabBar

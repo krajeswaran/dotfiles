@@ -1,0 +1,9 @@
+scrcpy
+gh
+fzf
+vale
+neovim
+golang
+nodejs
+python
+yarn

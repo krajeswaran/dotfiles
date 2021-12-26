@@ -1,7 +1,0 @@
-bleachbit
-drive
-firefox-devedition-bin
-zoom-us
-scrcpy
-skim
-bat

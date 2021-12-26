@@ -181,6 +181,7 @@ PreloadWeight=0
 Color=35,38,41
 
 [Containments][54]
+ItemGeometriesHorizontal=
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
 formfactor=0
 immutability=1
@@ -231,7 +232,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][12][Configuration]
-PreloadWeight=97
+PreloadWeight=100
 
 [Containments][7][Applets][13]
 immutability=1
@@ -259,7 +260,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][7][Applets][16][Configuration]
-PreloadWeight=89
+PreloadWeight=100
 
 [Containments][7][Applets][17]
 immutability=1

@@ -10,6 +10,9 @@ DimWhenInactive=true
 Environment=TERM=xterm-256color,COLORTERM=truecolor,TERMPURPOSE=console
 Name=default
 Parent=FALLBACK/
+SilenceSeconds=25
+TerminalCenter=true
+TerminalMargin=5
 
 [Interaction Options]
 AutoCopySelectedText=true
@@ -24,3 +27,4 @@ ScrollFullPage=true
 
 [Terminal Features]
 BlinkingCursorEnabled=true
+UrlHintsModifiers=67108864

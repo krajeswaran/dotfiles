@@ -1,16 +1,36 @@
 [Applications][com.uploadedlobster.peek]
 Seen=true
+ShowBadges=false
 ShowInHistory=false
+ShowPopups=false
 
 [Applications][firefox]
 Seen=true
 
-[Applications][org.kde.spectacle]
+[Applications][org.kde.ksysguard]
+ShowBadges=false
 ShowInHistory=false
+ShowPopups=false
+
+[Applications][org.kde.spectacle]
+ShowBadges=false
+ShowInHistory=false
+ShowPopups=false
+ShowPopupsInDndMode=false
+
+[Applications][org.kde.yakuake]
+ShowBadges=false
+ShowInHistory=false
+ShowPopups=false
 
 [Applications][slack]
 Seen=true
 ShowInHistory=false
+ShowPopupsInDndMode=true
+
+[Applications][vlc]
+ShowBadges=false
+ShowPopups=false
 
 [Services][networkmanagement]
 ShowInHistory=false

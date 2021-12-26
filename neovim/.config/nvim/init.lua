@@ -102,7 +102,7 @@ require('packer').startup({function()
   use { 
     'iamcco/markdown-preview.nvim',
     run = 'cd app && yarn install',
-    cmd = 'MarkdownPreview',
+    ft = {'markdown', 'text'},
     cond = isEditor
   }
   use {
@@ -150,10 +150,17 @@ require('packer').startup({function()
   }
   use { 'NTBBloodbath/rest.nvim', event = 'BufRead' }
   use { 
-        'kassio/neoterm', 
-        cmd = 'Tnew',
-        config = function() vim.g.neoterm_default_mod = ':vertical'  end,
+    'kassio/neoterm', 
+    cmd = 'Tnew',
+    config = function() vim.g.neoterm_default_mod = ':vertical'  end,
+  }
+  use {
+    "ThePrimeagen/refactoring.nvim",
+    requires = {
+      {"nvim-lua/plenary.nvim"},
+      {"nvim-treesitter/nvim-treesitter"}
     }
+  }
   use {
     'norcalli/nvim-colorizer.lua',
     event = "BufRead",
@@ -187,17 +194,13 @@ require('packer').startup({function()
   }
 
   use {
-    "rafamadriz/friendly-snippets",
-    event = "InsertEnter",
-  }
-
-  use {
     'hrsh7th/nvim-cmp', 
   }
   use {
+    "rafamadriz/friendly-snippets",
+  }
+  use {
     "L3MON4D3/LuaSnip",
-    wants = "friendly-snippets",
-    after = "nvim-cmp",
   }
 
   use {
@@ -230,6 +233,14 @@ require('packer').startup({function()
   }
   use {
     'windwp/nvim-autopairs',
+    after='nvim-cmp',
+    config = function()  
+      require('nvim-autopairs').setup({
+        disable_filetype = { "TelescopePrompt" , "terminal", "NvimTree", "vim" },
+      })
+    end
+  }
+  use {
     'kosayoda/nvim-lightbulb',
     'ray-x/lsp_signature.nvim',
     'nvim-lua/lsp-status.nvim',
@@ -313,10 +324,12 @@ vim.o.autoread = true
 vim.o.termguicolors = true
 local term = os.getenv("TERMPURPOSE")
 if term == "console" then
-  vim.cmd [[colorscheme default]]
-  vim.o.background = 'light'
+  vim.cmd [[colorscheme murphy]]
+  vim.o.background = 'dark'
+  vim.cmd [[highlight Pmenu guibg=0]]
 elseif term == "editor" then
   vim.cmd [[colorscheme yin]]
+  vim.cmd [[highlight EndOfBuffer guifg=#1c1c1c]]
 else
   vim.o.background = 'dark'
   if term == "backend" then
@@ -450,20 +463,16 @@ vim.api.nvim_set_keymap('n', '<leader>jt', '<Esc>:%!python -m json.tool<CR><Esc>
 vim.cmd [[
 augroup texting
   autocmd!
-  function! Echo_Nothing(timer)
-    echo ''
-  endfunction
 
   autocmd BufRead,BufNewFile todo.md set ft=taskpaper 
-  autocmd BufRead,BufNewFile todo.md set statusline=
+  autocmd BufRead,BufNewFile */journal/**,todo.md set statusline=
   autocmd BufRead,BufNewFile todo.md :Goyo 80
 
-  autocmd CmdlineLeave markdown,text,taskpaper call timer_start(1000, 'Echo_Nothing')
+  autocmd BufWritePost */journal/**,todo.md call timer_start(1000, {-> execute("echo ''", "")})
   autocmd FileType markdown,text,taskpaper set autowriteall
 
-  autocmd TextChanged,TextChangedI */journal/**,*/scratch.md silent write  
-  autocmd VimEnter */journal/**  setlocal complete=k/~/notes/journal/**/*
-  autocmd BufRead  */journal/**  set statusline=
+  autocmd TextChanged,TextChangedI */journal/**,*/scratch.md,todo.md silent write  
+  autocmd VimEnter */journal/**,todo.md  setlocal complete=k/~/notes/journal/**/*
 augroup END
 ]]
 
@@ -742,11 +751,11 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-]>', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gs', [[:Telescope lsp_workspace_symbols query=' '<CR>]], opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>q', '<cmd>lua vim.diagnostic.set_loclist()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gs', [[:Telescope lsp_dynamic_workspace_symbols<CR>]], opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'g=', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'v', 'g=', '<cmd>lua vim.lsp.buf.range_formatting()<CR>', opts)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
@@ -768,12 +777,12 @@ vim.lsp.handlers["textDocument/documentSymbol"] = telescope.lsp_document_symbols
 vim.lsp.handlers["textDocument/implementation"] = telescope.lsp_implementations
 vim.lsp.handlers["textDocument/references"] = telescope.lsp_references
 vim.lsp.handlers["textDocument/typeDefinition"] = telescope.lsp_definitions
--- vim.lsp.handlers["workspace/symbol"] = telescope.lsp_workspace_symbols
+vim.lsp.handlers["workspace/symbol"] = telescope.lsp_workspace_symbols
 
 -- null-ls setup
 local null_ls = require('null-ls')
 if isEditor() then 
-  null_ls.config({
+  null_ls.setup({
     sources = {
       -- completions
       null_ls.builtins.completion.spell,
@@ -784,10 +793,11 @@ if isEditor() then
       null_ls.builtins.formatting.black, 
       -- null_ls.builtins.formatting.codespell, 
       null_ls.builtins.formatting.json_tool,
-    }
+    },
+    on_attach = on_attach
   }) 
 else 
-  null_ls.config({
+  null_ls.setup({
     sources = { 
       -- code action sources
       -- null_ls.builtins.code_actions.gitsigns,
@@ -816,14 +826,10 @@ else
       null_ls.builtins.formatting.sqlformat, 
       null_ls.builtins.formatting.terraform_fmt, 
       -- null_ls.builtins.formatting.uncrustify, 
-    }
+    },
+    on_attach = on_attach
   })
 end
-
-nvim_lsp["null-ls"].setup({
-    -- see the nvim-lspconfig documentation for available configuration options
-    on_attach = on_attach
-})
 
 -- nvim-cmp setup
 local LSP_KIND_SIGNS = {
@@ -856,10 +862,11 @@ local has_words_before = function()
 end
 
 local cmp = require 'cmp'
+local luasnip = require("luasnip")
 cmp.setup {
   snippet = {
     expand = function(args)
-      require("luasnip").lsp_expand(args.body)
+      luasnip.lsp_expand(args.body)
     end,
   },
 
@@ -1012,4 +1019,36 @@ dap_install.config("chrome", {})
 -- lsp signature
 require "lsp_signature".setup()
 
+-- refactoring
+local refactor = require("refactoring")
+refactor.setup({})
+
+-- telescope refactoring helper
+local function refactor(prompt_bufnr)
+    local content = require("telescope.actions.state").get_selected_entry(
+        prompt_bufnr
+    )
+    require("telescope.actions").close(prompt_bufnr)
+    require("refactoring").refactor(content.value)
+end
+
+_G.refactors = function()
+    local opts = require("telescope.themes").get_cursor() -- set personal telescope options
+    require("telescope.pickers").new(opts, {
+        prompt_title = "refactors",
+        finder = require("telescope.finders").new_table({
+            results = require("refactoring").get_refactors(),
+        }),
+        sorter = require("telescope.config").values.generic_sorter(opts),
+        attach_mappings = function(_, map)
+            map("i", "<CR>", refactor)
+            map("n", "<CR>", refactor)
+            return true
+        end
+    }):find()
+end
+
+vim.api.nvim_set_keymap("v", "<Leader>re", [[ <Esc><Cmd>lua require('refactoring').refactor('Extract Function')<CR>]], {noremap = true, silent = true, expr = false})
+vim.api.nvim_set_keymap("v", "<Leader>rf", [[ <Esc><Cmd>lua require('refactoring').refactor('Extract Function To File')<CR>]], {noremap = true, silent = true, expr = false})
+vim.api.nvim_set_keymap("v", "<Leader>rt", [[ <Esc><Cmd>lua M.refactors()<CR>]], {noremap = true, silent = true, expr = false})
 

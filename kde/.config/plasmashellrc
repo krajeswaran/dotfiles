@@ -26,6 +26,9 @@ Width 1920=485
 LaunchCounts=2 services_kcm_style.desktop,1 services_fontinst.desktop,1 services_org.qbittorrent.qBittorrent.desktop,1 desktopsessions_1,1 services_keys.desktop,1 services_org.kde.yakuake.desktop,1 services_org.kde.dolphin.desktop,1 services_kwintabbox.desktop,1 services_autostart.desktop,1 services_slack.desktop,1 desktopsessions_4,1 services_systemsettings.desktop,1 services_kcm_keyboard.desktop,1 services_org.kde.kcalc.desktop,2 services_kwindecoration.desktop,1 services_kcm_pulseaudio.desktop,1 services_firefox.desktop,1 services_kwinscreenedges.desktop,3 services_org.kde.konsole.desktop,1 services_mouse.desktop,1 services_rxvt-unicode.desktop,1 services_powerdevilprofilesconfig.desktop,1 services_exec::plasma-discover --mode update,1 services_kcm_activities.desktop,1 services_powerdevilglobalconfig.desktop,1 services_componentchooser.desktop
 pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconverter,shell,bookmarks,recentdocuments,locations,baloosearch
 
+[PlasmaTransientsConfig]
+PreloadWeight=42
+
 [PlasmaViews][Panel 2][Defaults]
 thickness=24
 
@@ -39,9 +42,9 @@ thickness=40
 thickness=40
 
 [ScreenConnectors]
-0=eDP
-1=HDMI-A-0
-2=:0.0
+0=HDMI-A-0
+1=:0.0
+2=eDP
 
 [Updates]
 performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/desktop-base.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js
