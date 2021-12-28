@@ -34,13 +34,13 @@ Maximum Color Depth=image/x-eps:32,image/x-portable-bitmap:1,image/x-portable-gr
 File1[$e]=$HOME/notes/work/ph-payment-options.png
 File2[$e]=$HOME/src/tang-mobile-app/assets/images/RechargeBg.svg
 File3[$e]=$HOME/dumps/DSC04302.jpg
-File4[$e]=$HOME/src/designs/general/arch-diagram.png
-File5[$e]=$HOME/dumps/Screenshot_20211225_233117.png
+File4[$e]=$HOME/dumps/Screenshot_20211225_233117.png
+File5[$e]=$HOME/src/tang-mobile-app/assets/images/splash.png
 Name1[$e]=ph-payment-options.png
 Name2[$e]=RechargeBg.svg
 Name3[$e]=DSC04302.jpg
-Name4[$e]=arch-diagram.png
-Name5[$e]=Screenshot_20211225_233117.png
+Name4[$e]=Screenshot_20211225_233117.png
+Name5[$e]=splash.png
 
 [Tool Settings]
 Last Used Tool=10

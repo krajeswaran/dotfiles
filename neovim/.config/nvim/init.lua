@@ -85,9 +85,9 @@ require('packer').startup({function()
   use 'nathom/filetype.nvim'
   use 'romainl/vim-cool'
   use 'mg979/vim-visual-multi'
-  -- use 'windwp/nvim-spectre'
+  use 'windwp/nvim-spectre'
   -- use {'kevinhwang91/nvim-bqf', ft = 'qf'}
-  use { 'gabrielpoca/replacer.nvim', ft = 'qf' }
+  -- use { 'gabrielpoca/replacer.nvim', ft = 'qf' }
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim', 'nvim-lua/popup.nvim' } }
   use { "beauwilliams/focus.nvim", config = function() require("focus").setup({cursorline = false}) end }
 
@@ -247,15 +247,15 @@ require('packer').startup({function()
     after='nvim-cmp',
     event='BufRead'
   }
-  use {
+  --[[ use {
     'mfussenegger/nvim-dap',
   }
   use {
-    'Pocco81/DAPInstall.nvim',
-    'rcarriga/nvim-dap-ui',
+    -- 'Pocco81/DAPInstall.nvim',
+    -- 'rcarriga/nvim-dap-ui',
     after = {'mfussenegger/nvim-dap'},
     cmd = 'DebugOn'
-  }
+  } ]]
 end,
   config = {
     compile_path = util.join_paths(vim.fn.stdpath('data'), 'site/plugin', 'packer_compiled.lua'),
@@ -1011,10 +1011,10 @@ vim.cmd [[
 nmap <leader>h <Plug>RestNvim<CR>
 ]]
 
--- DAP
+--[[ -- DAP
 local dap_install = require("dap-install")
 dap_install.config("python", {})
-dap_install.config("chrome", {})
+dap_install.config("chrome", {}) ]]
 
 -- lsp signature
 require "lsp_signature".setup()

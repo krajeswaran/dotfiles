@@ -46,12 +46,18 @@ xo() {
 # replace caps with escape
 setxkbmap -option caps:escape
 
-# asdf vm stuff
-. $HOME/.asdf/asdf.sh
+# # asdf vm stuff
+# . $HOME/.asdf/asdf.sh
 
-# append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
+# # append completions to fpath
+# fpath=(${ASDF_DIR}/completions $fpath)
 
 # brew stuff
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# for node 14
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@14/bin:$PATH"
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@14/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@14/include"
+
 
