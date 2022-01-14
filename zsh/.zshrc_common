@@ -25,7 +25,7 @@ alias gogrep='find . -name "*.go" -o -name "*.ini" -o -name "*.yaml" -o -name "*
 alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*.html" -o -name "*.*ss" -type f | grep -v ".node_modules" | grep -v ".meteor" | xargs grep -nHi '
 alias whitenoise='mpv av://lavfi:anoisesrc=color=pink'
 alias scanport='nmap -p 22 --open -sV 192.168.178.0/24'
-alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | sk | sed 's/^ *//' | cut -f1 -d' '"
+alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | fzf | sed 's/^ *//' | cut -f1 -d' '"
 command -v batcat >/dev/null 2>&1 && alias cat="batcat" 
 alias ls="ls --color"
 command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
@@ -47,11 +47,11 @@ findandreplace() {
 }
 
 p() {
-	cd $(fd . ~/src -d1 -td | sk)
+	cd $(fd . ~/src -d1 -td | fzf)
 }
 
 fcd(){
-  cd "$(fd -td -H -d7 | sk)"
+  cd "$(fd -td -H -d7 | fzf)"
 }
 
 compress_videos() {

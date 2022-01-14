@@ -3,7 +3,7 @@
 --=============================================================================
 --          This script uses Subliminal to download subtitles,
 --          so make sure to specify your system's Subliminal location below:
-local subliminal = '/home/kumaresan/.asdf/shims/subliminal'
+local subliminal = '/bin/subliminal'
 --=============================================================================
 -->>    SUBTITLE LANGUAGE:
 --=============================================================================
@@ -83,8 +83,9 @@ function download_subs(language)
         -- To see `--debug` output start MPV from the terminal!
         a[#a + 1] = '--debug'
     end
-    a[#a + 1] = '--omdb'
-    a[#a + 1] = '4a629473'
+
+    --[[ a[#a + 1] = '--omdb'
+    a[#a + 1] = '4a629473' ]]
 
     a[#a + 1] = 'download'
     if bools.force then
@@ -101,6 +102,8 @@ function download_subs(language)
     a[#a + 1] = directory
     a[#a + 1] = filename --> Subliminal command ends with the movie filename.
 
+
+    print(table[0])
     local result = utils.subprocess(table)
 
     if string.find(result.stdout, 'Downloaded 1 subtitle') then

@@ -3,7 +3,7 @@ Height 1080=474
 Width 1920=700
 
 [KFileDialog Settings]
-Recent Files[$e]=jp-free-02.protonvpn.com.udp.ovpn,file:$HOME/.local/share/applications/Alacritty-API.desktop,file:///opt/firefox-dev/firefox
+Recent Files[$e]=jp-free-02.protonvpn.com.udp.ovpn,file:$HOME/dumps/Windscribe-StaticIP(1).ovpn,file:$HOME/dumps/Windscribe-Mumbai-Mahim.ovpn,file:$HOME/dumps/Windscribe-StaticIP.ovpn,file:$HOME/.local/share/applications/Alacritty-API.desktop,file:///opt/firefox-dev/firefox
 Recent URLs[$e]=file:$HOME/.local/share/applications/
 detailViewIconSize=0
 listViewIconSize=0

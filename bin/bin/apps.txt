@@ -3,6 +3,7 @@ android-tools-fastboot
 aria2
 batbat
 blackbird-gtk-theme
+progress
 bleachbit
 build-essential
 cifs-utils

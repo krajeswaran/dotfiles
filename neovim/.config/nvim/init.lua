@@ -85,9 +85,7 @@ require('packer').startup({function()
   use 'nathom/filetype.nvim'
   use 'romainl/vim-cool'
   use 'mg979/vim-visual-multi'
-  use 'windwp/nvim-spectre'
-  -- use {'kevinhwang91/nvim-bqf', ft = 'qf'}
-  -- use { 'gabrielpoca/replacer.nvim', ft = 'qf' }
+  use 'dyng/ctrlsf.vim'
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim', 'nvim-lua/popup.nvim' } }
   use { "beauwilliams/focus.nvim", config = function() require("focus").setup({cursorline = false}) end }
 
@@ -470,6 +468,7 @@ augroup texting
 
   autocmd BufWritePost */journal/**,todo.md call timer_start(1000, {-> execute("echo ''", "")})
   autocmd FileType markdown,text,taskpaper set autowriteall
+  autocmd FileType markdown,text,taskpaper set spell spelllang=en
 
   autocmd TextChanged,TextChangedI */journal/**,*/scratch.md,todo.md silent write  
   autocmd VimEnter */journal/**,todo.md  setlocal complete=k/~/notes/journal/**/*
@@ -622,7 +621,7 @@ vim.api.nvim_exec([[
   augroup Statusline
   au!
   au WinEnter,BufEnter * setlocal statusline=%!v:lua.Statusline()
-  au WinEnter,BufEnter,FileType NvimTree,Terminal setlocal statusline=
+  au WinEnter,BufEnter,FileType taskpaper,NvimTree,Terminal setlocal statusline=
   augroup END
 ]], false)
 
@@ -785,13 +784,11 @@ if isEditor() then
   null_ls.setup({
     sources = {
       -- completions
-      null_ls.builtins.completion.spell,
       null_ls.builtins.diagnostics.vale,
 
       -- formatting sources
       null_ls.builtins.formatting.autopep8, 
       null_ls.builtins.formatting.black, 
-      -- null_ls.builtins.formatting.codespell, 
       null_ls.builtins.formatting.json_tool,
     },
     on_attach = on_attach
@@ -801,8 +798,7 @@ else
     sources = { 
       -- code action sources
       -- null_ls.builtins.code_actions.gitsigns,
-      -- null_ls.builtins.code_actions.proselint,
-      -- null_ls.builtins.code_actions.refactoring,
+      null_ls.builtins.code_actions.refactoring,
 
       -- completions
       -- null_ls.builtins.completion.spell,
