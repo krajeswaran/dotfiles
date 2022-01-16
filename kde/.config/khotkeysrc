@@ -210,7 +210,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_2_3Actions0]
-CommandURL=kitty -1 --instance-group=terminal
+CommandURL=kitty
 Type=COMMAND_URL
 
 [Data_2_3Conditions]
@@ -378,7 +378,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_2_8Actions0]
-CommandURL=kitty -1 --instance-group=editor --class libreoffice-writer --config ~/.config/kitty/editor.conf zsh -l -c nvim
+CommandURL=kitty --class libreoffice-writer --config ~/.config/kitty/editor.conf zsh -l -c nvim
 Type=COMMAND_URL
 
 [Data_2_8Conditions]
