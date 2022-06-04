@@ -1,8 +1,11 @@
+[$Version]
+update_info=kxkb.upd:remove-empty-lists,kxkb.upd:add-back-resetoptions,kxkb_variants.upd:split-variants
+
 [Layout]
 DisplayNames=
 LayoutList=us
 LayoutLoopCount=-1
-Model=pc101
+Model=pc86
 Options=caps:escape
 ResetOldOptions=true
 ShowFlag=false

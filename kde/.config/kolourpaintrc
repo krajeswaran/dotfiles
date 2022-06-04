@@ -5,25 +5,35 @@ Width 1920=1204
 [File/Save As]
 Forced Quality=75
 
+[Flatten Effect Settings]
+Color1=255,0,0
+Color2=0,0,255
+
 [General Settings]
+Color Similarity=0
 First Time=false
 Last Document Size=1503,835
+More Effects - Last Effect=6
 Open Images in the Same Window=false
 
 [KFileDialog Settings]
 Height 1080=570
-Recent Files[$e]=IMG_20210619_203705.jpg,file:$HOME/dumps/125230-aatukutti/IMG_20210619_203705.jpg
-Recent URLs[$e]=file:$HOME/dumps/125230-aatukutti/
+Recent Files[$e]=IMG_20210619_203705.jpg,file:$HOME/dumps/kr-sign.png,file:$HOME/dumps/IMG_20211025_160236.jpg
+Recent URLs[$e]=file:$HOME/dumps/taxshit/
 Width 1920=960
 detailViewIconSize=0
 
 [MainWindow]
-Height 1080=1080
+HDMI-A-0 eDP Height 2560x1080=680
+HDMI-A-0 eDP Width 2560x1080=1280
+HDMI-A-0 eDP XPosition 2560x1080=2560
+HDMI-A-0 eDP YPosition 2560x1080=223
+Height 1080=680
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAQAAAAMAAAcyAAAAbvwBAAAAAfsAAAASAEMAbwBsAG8AcgAgAEIAbwB4AQAAAE4AAAcyAAACCwD///8AAAcyAAADagAAAAQAAAAEAAAAAQAAAAL8AAAAAgAAAAAAAAABAAAAEABUAG8AbwBsACAAQgBvAHgDAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAAAAAU//////AAAAAAAAAAA=
+State=AAAA/wAAAAD9AAAAAQAAAAMAAASyAAAAbvwBAAAAAfsAAAASAEMAbwBsAG8AcgAgAEIAbwB4AQAAAE4AAASyAAACCQD///8AAASyAAAB6AAAAAQAAAAEAAAAAQAAAAL8AAAAAgAAAAAAAAABAAAAEABUAG8AbwBsACAAQgBvAHgDAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAAAAAYv/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
-Width 1920=1920
-Window-Maximized 1080x1920=true
+Width 1920=1280
+Width 2560=640
 
 [MimeType Properties Version 1.2-3]
 Configurable Color Depth=image/png,image/bmp,image/x-pcx,image/x-rgb,image/x-xpixmap
@@ -32,30 +42,38 @@ Maximum Color Depth=image/x-eps:32,image/x-portable-bitmap:1,image/x-portable-gr
 
 [Recent Files]
 File1[$e]=$HOME/notes/work/ph-payment-options.png
-File2[$e]=$HOME/src/tang-mobile-app/assets/images/RechargeBg.svg
-File3[$e]=$HOME/dumps/DSC04302.jpg
-File4[$e]=$HOME/dumps/Screenshot_20211225_233117.png
-File5[$e]=$HOME/src/tang-mobile-app/assets/images/splash.png
+File2[$e]=$HOME/dumps/DSC04302.jpg
+File3[$e]=$HOME/src/tang-mobile-app/assets/images/splash.png
+File4[$e]=$HOME/src/tang-mobile-app/assets/images/SidneySendMoney.svg
+File5[$e]=$HOME/dumps/IMG_20211025_160236.jpg
+File6[$e]=$HOME/dumps/kr-sign.png
+File7[$e]=$HOME/src/docs/app/cicd.svg
 Name1[$e]=ph-payment-options.png
-Name2[$e]=RechargeBg.svg
-Name3[$e]=DSC04302.jpg
-Name4[$e]=Screenshot_20211225_233117.png
-Name5[$e]=splash.png
+Name2[$e]=DSC04302.jpg
+Name3[$e]=splash.png
+Name4[$e]=SidneySendMoney.svg
+Name5[$e]=IMG_20211025_160236.jpg
+Name6[$e]=kr-sign.png
+Name7[$e]=cicd.svg
+
+[Text Settings]
+Font Family=Comfortaa
+Font Size=48
 
 [Tool Settings]
-Last Used Tool=10
+Last Used Tool=16
 Tool Widget Brush Col=0
 Tool Widget Brush Row=0
 Tool Widget Eraser Size Col=0
-Tool Widget Eraser Size Row=1
+Tool Widget Eraser Size Row=2
 Tool Widget Fill Style Col=0
 Tool Widget Fill Style Row=0
 Tool Widget Line Width Col=0
 Tool Widget Line Width Row=0
 Tool Widget Opaque/Transparent Col=0
-Tool Widget Opaque/Transparent Row=0
+Tool Widget Opaque/Transparent Row=1
 Tool Widget Spraycan Size Col=0
-Tool Widget Spraycan Size Row=0
+Tool Widget Spraycan Size Row=1
 
 [Undo/Redo Settings]
 Max Limit=500

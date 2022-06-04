@@ -1,15 +1,15 @@
 [$Version]
-update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default
 
 [Compositing]
 Backend=OpenGL
-Enabled=true
 GLColorCorrection=false
 GLCore=true
 GLPlatformInterface=glx
 GLPreferBufferSwap=a
 GLTextureFilter=1
 HiddenPreviews=6
+LatencyPolicy=Low
 OpenGLIsUnsafe=false
 WindowsBlockCompositing=true
 XRenderSmoothScale=false
@@ -43,7 +43,6 @@ TabBoxAlternative=false
 
 [Effect-PresentWindows]
 BorderActivate=9
-BorderActivateAll=5
 BorderActivateClass=9
 TouchBorderActivate=9
 TouchBorderActivateAll=7
@@ -61,6 +60,9 @@ Right=None
 Top=None
 TopLeft=None
 TopRight=None
+
+[ModifierOnlyShortcuts]
+Meta=org.kde.kglobalaccel,/component/kwin,,invokeShortcut,Overview
 
 [MouseBindings]
 CommandActiveTitlebar1=Raise
@@ -84,11 +86,13 @@ CommandWindowWheel=Scroll
 blurEnabled=true
 contrastEnabled=true
 coverswitchEnabled=true
+desktopchangeosdEnabled=false
 enforcedecoEnabled=true
 flipswitchEnabled=true
 highlightwindowEnabled=true
 kwin4_effect_scaleEnabled=true
 minimizeallEnabled=false
+overviewEnabled=true
 snaphelperEnabled=true
 synchronizeskipswitcherEnabled=true
 videowallEnabled=false
@@ -100,11 +104,8 @@ ActivitiesMode=0
 ApplicationsMode=0
 BorderActivate=9
 BorderAlternativeActivate=9
-DesktopLayout=org.kde.breeze.desktop
-DesktopListLayout=org.kde.breeze.desktop
 DesktopMode=0
 HighlightWindows=true
-LayoutName=present_windows
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
@@ -118,7 +119,7 @@ ActivitiesMode=0
 ApplicationsMode=0
 DesktopMode=0
 HighlightWindows=true
-LayoutName=thumbnail_grid
+LayoutName=present_windows
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
@@ -157,8 +158,7 @@ MaximizeButtonLeftClickCommand=Maximize
 MaximizeButtonMiddleClickCommand=Maximize (horizontal only)
 MaximizeButtonRightClickCommand=Maximize (horizontal only)
 NextFocusPrefersMouse=false
-Placement=Smart
-SeparateScreenFocus=false
+SeparateScreenFocus=true
 ShadeHover=false
 ShadeHoverInterval=250
 SnapOnlyWhenOverlapping=false
@@ -168,9 +168,8 @@ WindowSnapZone=10
 [org.kde.kdecoration2]
 BorderSize=None
 BorderSizeAuto=false
-ButtonsOnLeft=N
-ButtonsOnRight=IAX
+ButtonsOnLeft=
+ButtonsOnRight=IX
 CloseOnDoubleClickOnMenu=false
 ShowToolTips=false
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Arc-Dark
+theme=__aurorae__svg__Layan-solid

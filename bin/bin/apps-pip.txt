@@ -1,8 +1,13 @@
 virtualenv
 ipython
 psycopg2-binary
-psycopg2
 pgcli
 awslogs
 awsebcli
 proselint
+flake8
+black
+autopep8
+neovim
+pyright
+pylint

@@ -9,7 +9,7 @@ alias router="ssh root@192.168.1.1"
 alias box="ssh thesaneone@thesanebox"
 alias pi="ssh pi@thesanepi"
 alias diskusage="du -h -d 1"
-alias sshfs='sshfs -C -o nonempty,reconnect,ServerAliveInterval=15,ServerAliveCountMax=3'
+alias sshfs='sshfs -C -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3'
 # newly born hostname, child or project?
 alias namemaker="shuf -n 2 /usr/share/dict/words | tr -dc 'A-Za-z0-9'"
 alias gitclean='git clean -fxdq'
@@ -26,7 +26,7 @@ alias jsgrep='find . -name "*.js" -o -name "*.css" -o -name "*.json" -o -name "*
 alias whitenoise='mpv av://lavfi:anoisesrc=color=pink'
 alias scanport='nmap -p 22 --open -sV 192.168.178.0/24'
 alias fpid="ps axww -o pid,user,%cpu,%mem,start,time,command | fzf | sed 's/^ *//' | cut -f1 -d' '"
-command -v batcat >/dev/null 2>&1 && alias cat="batcat" 
+command -v batcat >/dev/null 2>&1 && alias cat="batcat --paging=never" 
 alias ls="ls --color"
 command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
 alias vi="nvim" 
@@ -102,6 +102,12 @@ fi
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# brew sitefunctions source
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
 
 # initialise completions with ZSH's compinit
 autoload -Uz compinit

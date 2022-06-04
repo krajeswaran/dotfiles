@@ -3,6 +3,7 @@ update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_valu
 
 [General]
 confirmLogout=false
+loginMode=emptySession
 shutdownType=2
 
 [LegacySession: saved at previous logout]
@@ -11,22 +12,28 @@ count=0
 [Session: saved at previous logout]
 clientId1=10d5d1de67000160219951000000012120003
 clientId2=10d5d1de67000160245478100000010800047
-clientId3=10d5d1de67000163091411700000015440007
-count=3
-discardCommand1[$e]=rm,$HOME/.config/session/kwin_10d5d1de67000160219951000000012120003_1633467988_888423
-discardCommand2[$e]=rm,$HOME/.config/session/yakuake_10d5d1de67000160245478100000010800047_1633467988_860907
+clientId3=10d5d1de67000165139622900000016570007
+clientId4=10d5d1de67000165141325400000016570008
+count=4
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_10d5d1de67000160219951000000012120003_1651473168_624690
+discardCommand2[$e]=rm,$HOME/.config/session/yakuake_10d5d1de67000160245478100000010800047_1651473168_606706
 program1=/usr/bin/kwin_x11
 program2=/usr/bin/yakuake
 program3=pulseaudio
-restartCommand1=/usr/bin/kwin_x11,-session,10d5d1de67000160219951000000012120003_1633467988_888423
-restartCommand2=/usr/bin/yakuake,-session,10d5d1de67000160245478100000010800047_1633467988_860907
+program4=firefox
+restartCommand1=/usr/bin/kwin_x11,-session,10d5d1de67000160219951000000012120003_1651473168_624690
+restartCommand2=/usr/bin/yakuake,-session,10d5d1de67000160245478100000010800047_1651473168_606706
 restartCommand3=
+restartCommand4=/opt/firefox-dev/firefox,--sm-client-id,10d5d1de67000165141325400000016570008
 restartStyleHint1=0
 restartStyleHint2=0
 restartStyleHint3=0
+restartStyleHint4=0
 userId1=kumaresan
 userId2=kumaresan
 userId3=kumaresan
+userId4=kumaresan
 wasWm1=true
 wasWm2=false
 wasWm3=false
+wasWm4=false

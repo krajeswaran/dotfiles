@@ -1,10 +1,15 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
 [1]
 Description=Window settings for Android emulator
 above=true
 aboverule=2
 clientmachine=localhost
 clientmachinematch=0
-size=447,943
+screen=1
+screenrule=2
+size=450,940
 sizerule=2
 title=Android Emulator
 titlematch=2
@@ -17,12 +22,12 @@ wmclassmatch=1
 Description=FFDEV
 clientmachine=localhost
 clientmachinematch=0
-size=1724,1015
+size=1716,969
 sizerule=4
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 titlematch=0
 types=1
-wmclass=firefox developer edition
+wmclass=firefox-aurora
 wmclasscomplete=false
 wmclassmatch=1
 
@@ -36,3 +41,4 @@ windowrolematch[$d]
 
 [General]
 count=2
+rules=1,2

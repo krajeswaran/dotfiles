@@ -1,6 +1,6 @@
 [Appearance]
 BackgroundColorOpacity=80
-Skin=breeze-minimal
+Skin=tabsonly
 SkinInstalledWithKns=true
 
 [Behavior]
@@ -28,5 +28,7 @@ ShowPasteUnprintableWarning=false
 
 [Window]
 KeepOpen=false
+ShowSystrayIcon=false
 ShowTabBar=false
+ShowTitleBar=false
 Width=100

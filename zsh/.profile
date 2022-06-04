@@ -18,6 +18,8 @@
 ############ OS ALIASES ######################
 
 alias ejectusb="udisksctl power-off -b "
+alias kssh="kitty +kitten ssh"
+alias kiv="kitty +kitten icat "
 
 ############ OS ENV ######################
 # export JAVA_HOME=/Library/Java/Home
@@ -54,6 +56,8 @@ setxkbmap -option caps:escape
 
 # brew stuff
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
 
 # for node 14
 export PATH="/home/linuxbrew/.linuxbrew/opt/node@14/bin:$PATH"

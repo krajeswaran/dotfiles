@@ -1,5 +1,5 @@
 [$Version]
-update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed
+update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
 
 [Appmenu Style]
 Style=InApplication
@@ -27,88 +27,116 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=65,70,84
-BackgroundNormal=65,70,84
-DecorationFocus=170,170,170
-DecorationHover=150,150,150
+BackgroundAlternate=49,51,56
+BackgroundNormal=68,69,75
+DecorationFocus=86,87,245
+DecorationHover=86,87,245
 ForegroundActive=255,128,224
-ForegroundInactive=160,160,160
-ForegroundLink=46,184,230
-ForegroundNegative=240,1,1
-ForegroundNeutral=255,221,0
-ForegroundNormal=255,255,255
-ForegroundPositive=128,255,128
-ForegroundVisited=255,102,102
-
-[Colors:Complementary]
-BackgroundAlternate=38,41,46
-BackgroundNormal=38,41,46
-DecorationFocus=58,167,221
-DecorationHover=110,214,255
-ForegroundActive=255,128,224
-ForegroundInactive=137,136,135
-ForegroundLink=88,172,255
+ForegroundInactive=153,153,153
+ForegroundLink=66,133,244
 ForegroundNegative=191,3,3
 ForegroundNeutral=176,128,0
-ForegroundNormal=231,253,255
+ForegroundNormal=234,234,234
 ForegroundPositive=0,110,40
-ForegroundVisited=150,111,232
+ForegroundVisited=224,64,251
+
+[Colors:Complementary]
+BackgroundAlternate=54,57,62
+BackgroundNormal=33,35,41
+DecorationFocus=66,133,244
+DecorationHover=89,151,244
+ForegroundActive=255,128,224
+ForegroundInactive=153,153,153
+ForegroundLink=66,133,244
+ForegroundNegative=191,3,3
+ForegroundNeutral=176,128,0
+ForegroundNormal=234,234,234
+ForegroundPositive=0,110,40
+ForegroundVisited=224,64,251
+
+[Colors:Header]
+BackgroundAlternate=54,56,62
+BackgroundNormal=49,49,58
+DecorationFocus=86,87,245
+DecorationHover=86,87,245
+ForegroundActive=255,128,224
+ForegroundInactive=153,153,153
+ForegroundLink=66,133,244
+ForegroundNegative=191,3,3
+ForegroundNeutral=176,128,0
+ForegroundNormal=234,234,234
+ForegroundPositive=0,110,40
+ForegroundVisited=224,64,251
+
+[Colors:Header][Inactive]
+BackgroundAlternate=54,56,62
+BackgroundNormal=49,49,58
+DecorationFocus=86,87,245
+DecorationHover=86,87,245
+ForegroundActive=255,128,224,150
+ForegroundInactive=153,153,153
+ForegroundLink=66,133,244
+ForegroundNegative=191,3,3
+ForegroundNeutral=176,128,0
+ForegroundNormal=234,234,234,150
+ForegroundPositive=0,110,40
+ForegroundVisited=224,64,251
 
 [Colors:Selection]
 BackgroundAlternate=82,148,226
-BackgroundNormal=82,148,226
-DecorationFocus=170,170,170
-DecorationHover=150,150,150
+BackgroundNormal=86,87,245
+DecorationFocus=86,87,245
+DecorationHover=86,87,245
 ForegroundActive=255,128,224
-ForegroundInactive=160,160,160
-ForegroundLink=46,184,230
-ForegroundNegative=240,1,1
+ForegroundInactive=142,203,233
+ForegroundLink=66,133,244
+ForegroundNegative=156,14,14
 ForegroundNeutral=255,221,0
 ForegroundNormal=255,255,255
 ForegroundPositive=128,255,128
-ForegroundVisited=255,102,102
+ForegroundVisited=224,64,251
 
 [Colors:Tooltip]
-BackgroundAlternate=0,0,0
-BackgroundNormal=0,0,0
-DecorationFocus=170,170,170
-DecorationHover=150,150,150
+BackgroundAlternate=54,57,62
+BackgroundNormal=33,35,41
+DecorationFocus=86,87,245
+DecorationHover=86,87,245
 ForegroundActive=255,128,224
-ForegroundInactive=225,225,225
-ForegroundLink=46,184,230
-ForegroundNegative=240,1,1
-ForegroundNeutral=255,221,0
-ForegroundNormal=255,255,255
-ForegroundPositive=128,255,128
-ForegroundVisited=255,102,102
+ForegroundInactive=153,153,153
+ForegroundLink=66,133,244
+ForegroundNegative=191,3,3
+ForegroundNeutral=176,128,0
+ForegroundNormal=221,221,221
+ForegroundPositive=0,110,40
+ForegroundVisited=224,64,251
 
 [Colors:View]
-BackgroundAlternate=60,67,79
-BackgroundNormal=64,69,82
-DecorationFocus=170,170,170
-DecorationHover=150,150,150
+BackgroundAlternate=54,56,62
+BackgroundNormal=49,49,58
+DecorationFocus=86,87,245
+DecorationHover=86,87,245
 ForegroundActive=255,128,224
-ForegroundInactive=160,160,160
-ForegroundLink=46,184,230
-ForegroundNegative=240,1,1
-ForegroundNeutral=255,221,0
-ForegroundNormal=255,255,255
-ForegroundPositive=128,255,128
-ForegroundVisited=255,102,102
+ForegroundInactive=153,153,153
+ForegroundLink=66,133,244
+ForegroundNegative=191,3,3
+ForegroundNeutral=176,128,0
+ForegroundNormal=234,234,234
+ForegroundPositive=0,110,40
+ForegroundVisited=224,64,251
 
 [Colors:Window]
-BackgroundAlternate=56,60,74
-BackgroundNormal=56,60,74
-DecorationFocus=170,170,170
-DecorationHover=150,150,150
+BackgroundAlternate=54,56,62
+BackgroundNormal=49,49,58
+DecorationFocus=86,87,245
+DecorationHover=86,87,245
 ForegroundActive=255,128,224
-ForegroundInactive=160,160,160
-ForegroundLink=46,184,230
-ForegroundNegative=240,1,1
-ForegroundNeutral=255,221,0
-ForegroundNormal=255,255,255
-ForegroundPositive=128,255,128
-ForegroundVisited=255,102,102
+ForegroundInactive=153,153,153
+ForegroundLink=66,133,244
+ForegroundNegative=191,3,3
+ForegroundNeutral=176,128,0
+ForegroundNormal=234,234,234
+ForegroundPositive=0,110,40
+ForegroundVisited=224,64,251
 
 [DesktopIcons]
 Size=48
@@ -117,35 +145,39 @@ Size=48
 Size=32
 
 [DirSelect Dialog]
-DirSelectDialog Size=829,568
+DirSelectDialog Size=848,572
+History Items[$e]=file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
 
 [Emoticons]
 emoticonsTheme=GoogleEmojiComplete
 parseMode=2
 
 [General]
-BrowserApplication=!/opt/firefox-dev/firefox $s
-ColorScheme=KvArcDark
+AccentColor[$d]
+BrowserApplication=userapp-Firefox Developer Edition-RNM4L1.desktop
+ColorSchemeHash=dd1942b5e93c3bbb5d5263740caa393b95b49d23
 Name=Arc Dark
-TerminalApplication=alacritty --config-file=/home/kumaresan/.config/alacritty/console.yml
-XftHintStyle=hintslight
+TerminalApplication=kitty
+TerminalService=kitty.desktop
+XftAntialias=true
+XftHintStyle=hintnone
 XftSubPixel=rgb
 dbfile=/home/kumaresan/.mozilla/firefox/w1fds1yk.default-release/places.sqlite
 fixed=Hack Nerd Font Mono,11,-1,5,50,0,0,0,0,0
 font=Fira Sans,11,-1,5,57,0,0,0,0,0,Medium
 menuFont=Fira Sans,11,-1,5,57,0,0,0,0,0,Medium
 shadeSortColumn=true
-smallestReadableFont=Fira Sans,8,-1,5,57,0,0,0,0,0,Medium
+smallestReadableFont=Fira Sans,9,-1,5,57,0,0,0,0,0,Medium
 toolBarFont=Fira Sans,11,-1,5,57,0,0,0,0,0,Medium
 widgetStyle=Breeze
 
 [Icons]
-Theme=Arc-ICONS
+Theme=Tela
 
 [KDE]
-AnimationDurationFactor=0.000000
+AnimationDurationFactor=0.25
 ColorScheme=Breeze Dark
-LookAndFeelPackage=com.github.varlesh.arc-dark
+LookAndFeelPackage=com.github.vinceliuice.Layan
 ScrollbarLeftClickNavigatesByPage=false
 ShowDeleteCommand=true
 ShowIconsInMenuItems=true
@@ -163,7 +195,7 @@ LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Show Bookmarks=false
 Show Full Path=false
-Show Inline Previews=true
+Show Inline Previews=false
 Show Preview=false
 Show Speedbar=true
 Show hidden files=true
@@ -181,10 +213,10 @@ Dialog Size=600,480
 Size=22
 
 [PanelIcons]
-Size=32
+Size=24
 
 [PreviewSettings]
-MaximumRemoteSize=0
+MaximumRemoteSize=24117248
 
 [SmallIcons]
 Size=16
@@ -201,10 +233,10 @@ LANGUAGE=en_US
 
 [WM]
 FakeEntryToKeepThisGroup=true
-activeBackground=47,52,63
-activeBlend=47,52,63
+activeBackground=54,56,62
+activeBlend=59,62,68
 activeFont=Fira Sans,11,-1,5,63,0,0,0,0,0,SemiBold
-activeForeground=255,255,255
-inactiveBackground=47,52,63
-inactiveBlend=47,52,63
-inactiveForeground=200,200,200
+activeForeground=221,221,221
+inactiveBackground=62,65,71
+inactiveBlend=67,71,77
+inactiveForeground=120,120,120

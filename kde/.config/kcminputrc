@@ -1,9 +1,19 @@
+[$Version]
+update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize,kcminputrc_fix_botched_5_21_0.upd:kcminputrc_fix_botched_5_21_0_pre,kcminputrc_fix_botched_5_21_0.upd:kcminputrc_fix_botched_5_21_0,kcminputrc_repeat.upd:kcminputrc_migrate_key_repeat
+
 [Keyboard]
-KeyboardRepeating=0
+KeyRepeat=repeat
 NumLock=2
 RepeatDelay=600
 RepeatRate=25
 
+[Libinput][2][14][ETPS/2 Elantech Touchpad]
+TapToClick=true
+
 [Mouse]
+XLbInptMiddleEmulation=false
 cursorSize=24
-cursorTheme=Quintom_Ink
+cursorTheme=Breeze_Snow
+
+[Tmp]
+update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize

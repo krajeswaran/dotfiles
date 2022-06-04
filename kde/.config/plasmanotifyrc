@@ -23,6 +23,9 @@ ShowBadges=false
 ShowInHistory=false
 ShowPopups=false
 
+[Applications][org.qbittorrent.qBittorrent]
+Seen=true
+
 [Applications][slack]
 Seen=true
 ShowInHistory=false
@@ -31,6 +34,12 @@ ShowPopupsInDndMode=true
 [Applications][vlc]
 ShowBadges=false
 ShowPopups=false
+
+[Jobs]
+PermanentPopups=false
+
+[Notifications]
+PopupTimeout=3000
 
 [Services][networkmanagement]
 ShowInHistory=false

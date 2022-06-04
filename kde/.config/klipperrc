@@ -4,6 +4,7 @@ StripWhiteSpace=false
 
 [General]
 IgnoreImages=false
+IgnoreSelection=false
 MaxClipItems=30
 SyncClipboards=true
-Version=5.18.7
+Version=5.24.4

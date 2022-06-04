@@ -1,5 +1,5 @@
 -- pre-requisites
---yarn global add typescript cssls vscode-json-languageserver html bash-language-server sql-language-server eslint_d @fsouza/prettierd typescript-language-server
+--yarn global add typescript bash-language-server sql-language-server @fsouza/prettierd typescript-language-server vscode-langservers-extracted
 --pip install --user pyright flake8 black autopep8 pylint
 --do :TSInstall all to install all Treesitter parsers
 --TODO debug mode
@@ -71,6 +71,10 @@ require('packer').startup({function()
     requires = 'kyazdani42/nvim-web-devicons',
     cmd = {'NvimTreeFindFileToggle', 'NvimTree'},
     config = function() require("nvim-tree").setup({
+      git = {
+        enable = true,
+        ignore = false,
+      },
         update_cwd = true,
         update_focused_file = {
             enable = true,
@@ -83,7 +87,6 @@ require('packer').startup({function()
 
   use 'gennaro-tedesco/nvim-peekup'
   use 'nathom/filetype.nvim'
-  use 'romainl/vim-cool'
   use 'mg979/vim-visual-multi'
   use 'dyng/ctrlsf.vim'
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim', 'nvim-lua/popup.nvim' } }
@@ -107,6 +110,19 @@ require('packer').startup({function()
     'krajeswaran/taskpaper.vim',
     cond = isEditor
   }
+  use {
+    'uga-rosa/cmp-dictionary',
+    cond = isEditor,
+    config = function() require("cmp_dictionary").setup({
+      dic = {
+        ["*"] = { "/usr/share/dict/words" },
+        spelllang = {
+          en = "/usr/share/hunspell/en_US.dic",
+        },
+      },
+    })
+    end
+  }
 
   -- coding
   use 'andymass/vim-matchup'
@@ -119,7 +135,10 @@ require('packer').startup({function()
     'sindrets/diffview.nvim',
   }
   use {
-    'b3nj5m1n/kommentary',
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end,
     event = "BufRead",
   }
   use {
@@ -136,6 +155,34 @@ require('packer').startup({function()
           -- Don't attach to specific buffers whose name matches a pattern
           return false
         end
+
+        local function map(mode, lhs, rhs, opts)
+          opts = vim.tbl_extend('force', {noremap = true, silent = true}, opts or {})
+          vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts)
+        end
+
+        -- Navigation
+        map('n', ']c', "&diff ? ']c' : '<cmd>Gitsigns next_hunk<CR>'", {expr=true})
+        map('n', '[c', "&diff ? '[c' : '<cmd>Gitsigns prev_hunk<CR>'", {expr=true})
+
+        -- Actions
+        map('n', '<leader>hs', ':Gitsigns stage_hunk<CR>')
+        map('v', '<leader>hs', ':Gitsigns stage_hunk<CR>')
+        map('n', '<leader>hr', ':Gitsigns reset_hunk<CR>')
+        map('v', '<leader>hr', ':Gitsigns reset_hunk<CR>')
+        map('n', '<leader>hS', '<cmd>Gitsigns stage_buffer<CR>')
+        map('n', '<leader>hu', '<cmd>Gitsigns undo_stage_hunk<CR>')
+        map('n', '<leader>hR', '<cmd>Gitsigns reset_buffer<CR>')
+        map('n', '<leader>hp', '<cmd>Gitsigns preview_hunk<CR>')
+        map('n', '<leader>hb', '<cmd>lua require"gitsigns".blame_line{full=true}<CR>')
+        map('n', '<leader>tb', '<cmd>Gitsigns toggle_current_line_blame<CR>')
+        map('n', '<leader>hd', '<cmd>Gitsigns diffthis<CR>')
+        map('n', '<leader>hD', '<cmd>lua require"gitsigns".diffthis("~")<CR>')
+        map('n', '<leader>td', '<cmd>Gitsigns toggle_deleted<CR>')
+
+        -- Text object
+        map('o', 'ih', ':<C-U>Gitsigns select_hunk<CR>')
+        map('x', 'ih', ':<C-U>Gitsigns select_hunk<CR>')
       end
     }) end,
     requires = { 'nvim-lua/plenary.nvim' }
@@ -144,7 +191,7 @@ require('packer').startup({function()
     'nvim-treesitter/nvim-treesitter',
     'nvim-treesitter/nvim-treesitter-textobjects',
     event = 'BufRead',
-    run = ':TSUpdate'
+    run = function() vim.cmd("TSUpdate") end,
   }
   use { 'NTBBloodbath/rest.nvim', event = 'BufRead' }
   use { 
@@ -177,16 +224,12 @@ require('packer').startup({function()
     cmd = "Goyo"
   }
   use {
-    'folke/todo-comments.nvim',
-    requires = 'nvim-lua/plenary.nvim',
-    config = function()    require("todo-comments").setup()  end
-  }
-  use {
     'neovim/nvim-lspconfig', 
   }
   use {
     'jose-elias-alvarez/null-ls.nvim',
     'jose-elias-alvarez/nvim-lsp-ts-utils',
+    'JoosepAlviste/nvim-ts-context-commentstring',
     after = 'neovim/nvim-lspconfig',
     requires = {"nvim-lua/plenary.nvim", "neovim/nvim-lspconfig"}
   }
@@ -217,6 +260,11 @@ require('packer').startup({function()
 
   use {
     "hrsh7th/cmp-path",
+    after = "cmp-buffer",
+  }
+
+  use {
+    "hrsh7th/cmp-nvim-lsp-signature-help",
     after = "cmp-buffer",
   }
 
@@ -322,15 +370,20 @@ vim.o.autoread = true
 vim.o.termguicolors = true
 local term = os.getenv("TERMPURPOSE")
 if term == "console" then
-  vim.cmd [[colorscheme murphy]]
   vim.o.background = 'dark'
-  vim.cmd [[highlight Pmenu guibg=0]]
+  vim.cmd [[
+    colorscheme murphy
+    highlight Pmenu guibg=0 ctermbg=0
+    highlight SignColumn guibg=0 ctermbg=0
+  ]]
 elseif term == "editor" then
-  vim.cmd [[colorscheme yin]]
-  vim.cmd [[highlight EndOfBuffer guifg=#1c1c1c]]
+  vim.cmd [[
+    colorscheme yin
+    highlight EndOfBuffer guifg=#1c1c1c
+  ]]
 else
   vim.o.background = 'dark'
-  if term == "backend" then
+  if term == "api" then
     vim.g.sonokai_style = 'andromeda'
   else
     vim.g.sonokai_style = 'maia'
@@ -461,17 +514,22 @@ vim.api.nvim_set_keymap('n', '<leader>jt', '<Esc>:%!python -m json.tool<CR><Esc>
 vim.cmd [[
 augroup texting
   autocmd!
+  set spelllang=en
+
+  autocmd FileType markdown,text,taskpaper set autowriteall
+  autocmd TextChanged,TextChangedI scratch.md silent write  
 
   autocmd BufRead,BufNewFile todo.md set ft=taskpaper 
-  autocmd BufRead,BufNewFile */journal/**,todo.md set statusline=
   autocmd BufRead,BufNewFile todo.md :Goyo 80
+  autocmd BufRead,BufNewFile todo.md set statusline=
+  autocmd BufWritePost todo.md call timer_start(1000, {-> execute("echo ''", "")})
+  autocmd TextChanged,TextChangedI todo.md silent write  
+  autocmd VimEnter todo.md  setlocal complete=k/~/notes/journal/**/*
 
-  autocmd BufWritePost */journal/**,todo.md call timer_start(1000, {-> execute("echo ''", "")})
-  autocmd FileType markdown,text,taskpaper set autowriteall
-  autocmd FileType markdown,text,taskpaper set spell spelllang=en
-
-  autocmd TextChanged,TextChangedI */journal/**,*/scratch.md,todo.md silent write  
-  autocmd VimEnter */journal/**,todo.md  setlocal complete=k/~/notes/journal/**/*
+  autocmd BufRead,BufNewFile todo.md set statusline=
+  autocmd BufWritePost */journal/** call timer_start(1000, {-> execute("echo ''", "")})
+  autocmd TextChanged,TextChangedI */journal/** silent write  
+  autocmd VimEnter */journal/**  setlocal complete=k/~/notes/journal/**/*
 augroup END
 ]]
 
@@ -484,6 +542,7 @@ _G.JournalMode = function()
   vim.api.nvim_command('Goyo')
   vim.api.nvim_command('set statusline=')
   vim.api.nvim_command('set signcolumn=no')
+  vim.api.nvim_command('set spell!')
 end
 
 _G.ScratchPad = function()
@@ -512,11 +571,14 @@ lspstatus.config({
   indicator_info = signs['Info'],
   indicator_hint = signs['Hint'],
   indicator_ok = '',
+  status_symbol = '',
 })
-lspstatus.register_progress()
+if not isEditor() then
+  lspstatus.register_progress()
+end
 
 display_lsp_diagnostics = function()
-  if vim.tbl_isempty(vim.lsp.buf_get_clients(0)) then
+  if isEditor() or vim.tbl_isempty(vim.lsp.buf_get_clients(0)) then
     return ''
   end
   local status = lspstatus.status()
@@ -621,7 +683,7 @@ vim.api.nvim_exec([[
   augroup Statusline
   au!
   au WinEnter,BufEnter * setlocal statusline=%!v:lua.Statusline()
-  au WinEnter,BufEnter,FileType taskpaper,NvimTree,Terminal setlocal statusline=
+  au FileType taskpaper,NvimTree,Terminal set statusline=
   augroup END
 ]], false)
 
@@ -672,6 +734,7 @@ vim.api.nvim_set_keymap('n', '<leader>o', [[<cmd>lua require('telescope.builtin'
 vim.api.nvim_set_keymap('n', '<leader>k', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>/', [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>p', [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'z=', [[<cmd>lua require('telescope.builtin').spell_suggest()<CR>]], { noremap = true, silent = true })
 
 -- Treesitter 
 vim.o.foldmethod='expr'
@@ -697,36 +760,39 @@ require('nvim-treesitter.configs').setup {
   matchup = {
     enable = true,              -- mandatory, false will disable the whole extension
   },
+  context_commentstring = {
+    enable = true
+  },
   textobjects = {
     select = {
       enable = true,
       lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
       keymaps = {
-	-- You can use the capture groups defined in textobjects.scm
-	['af'] = '@function.outer',
-	['if'] = '@function.inner',
-	['ac'] = '@class.outer',
-	['ic'] = '@class.inner',
+        -- You can use the capture groups defined in textobjects.scm
+        ['af'] = '@function.outer',
+        ['if'] = '@function.inner',
+        ['ac'] = '@class.outer',
+        ['ic'] = '@class.inner',
       },
     },
     move = {
       enable = true,
       set_jumps = true, -- whether to set jumps in the jumplist
       goto_next_start = {
-	[']m'] = '@function.outer',
-	[']]'] = '@class.outer',
+        [']m'] = '@function.outer',
+        [']]'] = '@class.outer',
       },
       goto_next_end = {
-	[']M'] = '@function.outer',
-	[']['] = '@class.outer',
+        [']M'] = '@function.outer',
+        [']['] = '@class.outer',
       },
       goto_previous_start = {
-	['[m'] = '@function.outer',
-	['[['] = '@class.outer',
+        ['[m'] = '@function.outer',
+        ['[['] = '@class.outer',
       },
       goto_previous_end = {
-	['[M'] = '@function.outer',
-	['[]'] = '@class.outer',
+        ['[M'] = '@function.outer',
+        ['[]'] = '@class.outer',
       },
     },
   },
@@ -745,8 +811,8 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gR', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'ga', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'v', 'ga', '<cmd>lua vim.lsp.buf.range_code_action()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'ga', [[:Telescope lsp_code_actions<CR>]], opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'v', 'ga', '[[:Telescope lsp_range_code_action<CR>]]', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-]>', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
@@ -784,6 +850,7 @@ if isEditor() then
   null_ls.setup({
     sources = {
       -- completions
+      -- null_ls.builtins.completion.spell,
       null_ls.builtins.diagnostics.vale,
 
       -- formatting sources
@@ -806,7 +873,7 @@ else
       -- diagnostic sources
       -- null_ls.builtins.diagnostics.codespell, 
       -- null_ls.builtins.diagnostics.cppcheck, 
-      null_ls.builtins.diagnostics.eslint_d, 
+      -- null_ls.builtins.diagnostics.eslint_d, 
       -- null_ls.builtins.diagnostics.pylint, 
       null_ls.builtins.diagnostics.flake8, 
       -- null_ls.builtins.diagnostics.shellcheck, 
@@ -896,14 +963,16 @@ cmp.setup {
       end
     end, { "i", "s" }),
 
-    ['<CR>'] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false }),
+    ['<CR>'] =  cmp.mapping(cmp.mapping.confirm { select = true }),
   },
 
   sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = "luasnip" },
-    { name = 'buffer' },
-    { name = 'path' },
+    { name = 'nvim_lsp', priority=8, max_item_count = 25 },
+    { name = "luasnip", priority=6 },
+    { name = 'buffer', priority=7, keyword_length = 4},
+    { name = "nvim_lsp_signature_help" },
+    { name = 'path', priority=6, keyword_length = 4 },
+    { name = 'dictionary', priority=6, keyword_length = 5 },
   }),
 
   formatting = {
@@ -920,6 +989,18 @@ cmp.setup {
       return vim_item
     end
   },
+
+   sorting = {
+        comparators = {
+            cmp.config.compare.offset,
+            cmp.config.compare.exact,
+            cmp.config.compare.score,
+            cmp.config.compare.kind,
+            cmp.config.compare.sort_text,
+            cmp.config.compare.length,
+            cmp.config.compare.order,
+        },
+    },
 
   -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
   cmp.setup.cmdline('/', {
@@ -944,7 +1025,7 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 })
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver', 'html', 'jsonls', 'cssls', 'bashls', 'sqlls'  }
+local servers = { 'pyright', 'tsserver', 'eslint', 'html', 'jsonls', 'cssls', 'bashls', 'sqlls' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
@@ -978,8 +1059,8 @@ nvim_lsp.tsserver.setup {
       enable_import_on_completion = true,
 
       -- eslint
-      eslint_bin = "eslint_d",
-      eslint_enable_diagnostics = true,
+      --[[ eslint_bin = "eslint_d",
+      eslint_enable_diagnostics = true, ]]
 
       -- formatting
       enable_formatting = true,

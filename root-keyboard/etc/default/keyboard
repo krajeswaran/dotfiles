@@ -2,9 +2,7 @@
 
 # Consult the keyboard(5) manual page.
 
-XKBMODEL="pc105"
-XKBLAYOUT="us"
-XKBVARIANT=""
+XKBLAYOUT=us
 XKBOPTIONS="caps:escape"
 
 BACKSPACE="guess"

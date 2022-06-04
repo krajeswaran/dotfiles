@@ -4,6 +4,7 @@ fzf
 vale
 neovim
 golang
-nodejs
+node@14
 python
 yarn
+git-delta

@@ -1,5 +1,142 @@
 [$Version]
-update_info=spectacle_shortcuts.upd:spectacle-migrate-shortcuts
+update_info=spectacle_shortcuts.upd:spectacle-migrate-shortcuts,konsole_globalaccel.upd:konsole_globalaccel
+
+[Appmenu Style]
+Style[$d]
+
+[ColorEffects:Disabled]
+ChangeSelectionColor[$d]
+Color[$d]
+ColorAmount[$d]
+ColorEffect[$d]
+ContrastAmount[$d]
+ContrastEffect[$d]
+Enable[$d]
+IntensityAmount[$d]
+IntensityEffect[$d]
+
+[ColorEffects:Inactive]
+ChangeSelectionColor[$d]
+Color[$d]
+ColorAmount[$d]
+ColorEffect[$d]
+ContrastAmount[$d]
+ContrastEffect[$d]
+Enable[$d]
+IntensityAmount[$d]
+IntensityEffect[$d]
+
+[Colors:Button]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
+[Colors:Complementary]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
+[Colors:Header]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
+[Colors:Header][Inactive]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
+[Colors:Selection]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
+[Colors:Tooltip]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
+[Colors:View]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
+
+[Colors:Window]
+BackgroundAlternate[$d]
+BackgroundNormal[$d]
+DecorationFocus[$d]
+DecorationHover[$d]
+ForegroundActive[$d]
+ForegroundInactive[$d]
+ForegroundLink[$d]
+ForegroundNegative[$d]
+ForegroundNeutral[$d]
+ForegroundNormal[$d]
+ForegroundPositive[$d]
+ForegroundVisited[$d]
 
 [Data]
 DataCount=2
@@ -378,7 +515,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_2_8Actions0]
-CommandURL=kitty --class libreoffice-writer --config ~/.config/kitty/editor.conf zsh -l -c nvim
+CommandURL=kitty --class kwrite --config /home/kumaresan/.config/kitty/editor.conf zsh -l -c /home/linuxbrew/.linuxbrew/bin/nvim
 Type=COMMAND_URL
 
 [Data_2_8Conditions]
@@ -420,6 +557,40 @@ Key=Meta+B
 Type=SHORTCUT
 Uuid={b291028c-82ab-4d13-be96-c8681844eb40}
 
+[DesktopIcons]
+Size[$d]
+
+[DialogIcons]
+Size[$d]
+
+[DirSelect Dialog]
+DirSelectDialog Size[$d]
+History Items[$d]
+
+[Emoticons]
+emoticonsTheme[$d]
+parseMode[$d]
+
+[General]
+AccentColor[$d]
+BrowserApplication[$d]
+ColorScheme[$d]
+ColorSchemeHash[$d]
+Name[$d]
+TerminalApplication[$d]
+TerminalService[$d]
+XftAntialias[$d]
+XftHintStyle[$d]
+XftSubPixel[$d]
+dbfile[$d]
+fixed[$d]
+font[$d]
+menuFont[$d]
+shadeSortColumn[$d]
+smallestReadableFont[$d]
+toolBarFont[$d]
+widgetStyle[$d]
+
 [Gestures]
 Disabled=true
 MouseButton=2
@@ -429,10 +600,80 @@ Timeout=300
 Comment=
 WindowsCount=0
 
+[Icons]
+Theme[$d]
+
+[KDE]
+AnimationDurationFactor[$d]
+ColorScheme[$d]
+LookAndFeelPackage[$d]
+ScrollbarLeftClickNavigatesByPage[$d]
+ShowDeleteCommand[$d]
+ShowIconsInMenuItems[$d]
+ShowIconsOnPushButtons[$d]
+SingleClick[$d]
+contrast[$d]
+widgetStyle[$d]
+
+[KFileDialog Settings]
+Allow Expansion[$d]
+Automatically select filename extension[$d]
+Breadcrumb Navigation[$d]
+Decoration position[$d]
+LocationCombo Completionmode[$d]
+PathCombo Completionmode[$d]
+Show Bookmarks[$d]
+Show Full Path[$d]
+Show Inline Previews[$d]
+Show Preview[$d]
+Show Speedbar[$d]
+Show hidden files[$d]
+Sort by[$d]
+Sort directories first[$d]
+Sort reversed[$d]
+Speedbar Width[$d]
+View Style[$d]
+listViewIconSize[$d]
+
+[KShortcutsDialog Settings]
+Dialog Size[$d]
+
 [Main]
 AlreadyImported=defaults,kde32b1,konqueror_gestures_kde321,konsole
 Disabled=false
 Version=2
 
+[MainToolbarIcons]
+Size[$d]
+
+[PanelIcons]
+Size[$d]
+
+[PreviewSettings]
+MaximumRemoteSize[$d]
+
+[SmallIcons]
+Size[$d]
+
+[Toolbar style]
+ToolButtonStyle[$d]
+ToolButtonStyleOtherToolbars[$d]
+
+[ToolbarIcons]
+Size[$d]
+
+[Translations]
+LANGUAGE[$d]
+
 [Voice]
 Shortcut=
+
+[WM]
+FakeEntryToKeepThisGroup[$d]
+activeBackground[$d]
+activeBlend[$d]
+activeFont[$d]
+activeForeground[$d]
+inactiveBackground[$d]
+inactiveBlend[$d]
+inactiveForeground[$d]

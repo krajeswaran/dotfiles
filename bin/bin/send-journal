@@ -2,7 +2,7 @@
 
 echo got $1
 
-TO="nila.kumaresan.valliyoor@gmail.com"
+TO="nila.kumaresan.valliyoor@gmail.com,nila.kumaresan.2019@gmail.com"
 SUBJECT=$(basename "$1" .md)
 MSG=$(cat "$1")
 
