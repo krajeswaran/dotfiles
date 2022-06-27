@@ -22,14 +22,14 @@ wmclassmatch=1
 Description=FFDEV
 clientmachine=localhost
 clientmachinematch=0
-size=1716,969
+size=1859,1020
 sizerule=4
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 titlematch=0
 types=1
 wmclass=firefox-aurora
 wmclasscomplete=false
-wmclassmatch=1
+wmclassmatch=2
 
 [3]
 windowrole[$d]

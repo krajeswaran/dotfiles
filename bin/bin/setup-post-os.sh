@@ -43,11 +43,12 @@ echo "Here are things you might want to do:
     - setup google-drive-ocamlfuse + setup keepassxc
     - keyboard shortcuts
     - setup local firefox, ungoogled-chromium
-    - gtk/xfce/kde themes, kvantum engine etc
+    - gtk/xfce/kde themes: Layan theme, kvantum engine, cz-viator mouse cursor: https://store.kde.org/p/1229367/ etc
     - install android-studio, install android-sdk
     - postgres, redis
     - install proj stuff
     - syncthing setup
     - fonts fuckery: install nerd-fonts: Hack, Jetbrains, Fira Sans
-    - playx + instantmusic + musickube
+    - install ufw, enable syncthing, ssh, samba + local network
+    - ytmdl 
 "

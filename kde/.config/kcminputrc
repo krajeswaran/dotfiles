@@ -13,7 +13,7 @@ TapToClick=true
 [Mouse]
 XLbInptMiddleEmulation=false
 cursorSize=24
-cursorTheme=Breeze_Snow
+cursorTheme=cz-Viator-Black-Rotor
 
 [Tmp]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize

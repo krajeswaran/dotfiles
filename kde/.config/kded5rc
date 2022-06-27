@@ -35,7 +35,7 @@ autoload=true
 autoload=true
 
 [Module-khotkeys]
-autoload=false
+autoload=true
 
 [Module-kscreen]
 autoload=true
@@ -55,6 +55,15 @@ autoload=true
 [Module-networkstatus]
 autoload=true
 
+[Module-notificationhelper]
+autoload=true
+
+[Module-plasmavault]
+autoload=true
+
+[Module-printmanager]
+autoload=true
+
 [Module-proxyscout]
 autoload=true
 
@@ -71,4 +80,7 @@ autoload=true
 autoload=true
 
 [Module-touchpad]
+autoload=true
+
+[Module-wacomtablet]
 autoload=true

@@ -1025,7 +1025,7 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 })
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver', 'eslint', 'html', 'jsonls', 'cssls', 'bashls', 'sqlls' }
+local servers = { 'pyright', 'tsserver', 'eslint', 'html', 'cssls', 'bashls', 'sqlls' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
