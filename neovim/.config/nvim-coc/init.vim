@@ -286,7 +286,7 @@ set background=dark
 
 if has('termguicolors')
   set termguicolors " Use true colours
-  colorscheme iceberg
+  "colorscheme iceberg
 endif
 
 "----------------------------------------------
@@ -323,10 +323,6 @@ nmap <leader>jt <Esc>:%!python -m json.tool<CR><Esc>:set filetype=json<CR>
 " Status line
 "----------------------------------------------
 
-function! GitStatus()
-  return fugitive#head() != '' ? ' '.fugitive#head() : ''
-endfunction
-
 set statusline=
 set statusline+=%#LineNr#
 set statusline+=\ %f
@@ -335,7 +331,6 @@ set statusline+=%{&readonly?'\ ':''}
 set statusline+=%#LineNr#
 set statusline+=%=
 set statusline+=\ %{coc#status()}
-set statusline+=\ %{GitStatus()}
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\ %{&fileformat}
@@ -426,8 +421,8 @@ let g:CoolTotalMatches = 1
 "----------------------------------------------
 " Plugin: clap
 "----------------------------------------------
-nnoremap <unique> <leader>o  :Clap history<CR>
-nnoremap <unique> <leader>p  :Clap files<CR>
+nnoremap <unique> <leader>p  :Clap history<CR>
+nnoremap <unique> <leader>o  :Clap files<CR>
 nnoremap <unique> <leader>f  :Clap filer<CR>
 nnoremap <unique> <leader>/  :Clap grep<CR>
 

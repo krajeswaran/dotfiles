@@ -18,7 +18,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 "general
-Plug 'thesaneone/taskpaper.vim'
+Plug 'krajeswaran/taskpaper.vim'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'machakann/vim-sandwich'
@@ -34,7 +34,8 @@ Plug 'regedarek/ZoomWin'
 Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-rooter'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 "themes
 "Plug 'arcticicestudio/nord-vim'
@@ -288,7 +289,6 @@ if has('gui_running')
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
-    set guifont=Menlo:h13
     colorscheme hybrid
     set lines=30
     highlight EndOfBuffer guifg=#1d1f21 guibg=#1d1f21
@@ -425,10 +425,13 @@ nmap <unique> [l <Plug>(qf_qf_next)
 "----------------------------------------------
 " Plugin: clap
 "----------------------------------------------
-nnoremap <unique> <leader>o  :Clap history<CR>
-nnoremap <unique> <leader>p  :Clap files<CR>
-nnoremap <unique> <leader>f  :Clap filer<CR>
-nnoremap <unique> <leader>/  :Clap grep<CR>
+command! -bang -nargs=* Ag call fzf#vim#ag_interactive(<q-args>, fzf#vim#with_preview('right:50%:hidden', 'alt-h'))
+command! -bang -nargs=* Rg call fzf#vim#rg_interactive(<q-args>, fzf#vim#with_preview('right:50%:hidden', 'alt-h'))
+
+nnoremap <unique> <leader>o  :History<CR>
+nnoremap <unique> <leader>p  :Files<CR>
+nnoremap <unique> <leader>f  :GFiles<CR>
+nnoremap <unique> <leader>/  :Rg 
 
 "----------------------------------------------
 " Plugin: previm/previm
@@ -486,7 +489,7 @@ set omnifunc=syntaxcomplete#Complete
 " tmux config
 let g:tmuxcomplete#trigger = 'completefunc'
 
-autocmd FileType markdown,text setlocal spell spelllang=en_us complete+=k dictionary+=spell
+autocmd FileType markdown,text setlocal complete+=k dictionary+=spell
 
 imap <expr> <down> mucomplete#extend_fwd("\<down>")
 let g:mucomplete#chains = {
