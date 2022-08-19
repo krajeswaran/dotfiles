@@ -13,7 +13,11 @@ albert/.config/albert/Qt*
 ssh/.ssh/id_rsa*
 ssh/.ssh/known*
 ssh/.ssh/*eb*
+ssh/.ssh/ssh-*
+ssh/.ssh/ec*
 tmux/.tmux/resurrect/tmux_resurrect_*
 mpsyt/**cache**
 vim/.vim/thesaurus
 zsh/.zfunctions/_gh
+kde/**/UserFeedback*
+localapps/**/mimeinfo**

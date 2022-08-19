@@ -86,3 +86,4 @@ xclip
 yakuake
 hunspell
 ssmtp
+xournalpp

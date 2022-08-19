@@ -145,8 +145,8 @@ Size=48
 Size=32
 
 [DirSelect Dialog]
-DirSelectDialog Size=858,595
-History Items[$e]=file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
+DirSelectDialog Size=1303,633
+History Items[$e]=file:$HOME/videos/mnt/tv/Yellowjackets.S01.1080p.WEBRip.x265[eztv.re],file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
 
 [Emoticons]
 emoticonsTheme=GoogleEmojiComplete

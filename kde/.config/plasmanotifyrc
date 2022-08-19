@@ -7,6 +7,9 @@ ShowPopups=false
 [Applications][firefox]
 Seen=true
 
+[Applications][google-chrome]
+Seen=true
+
 [Applications][org.kde.ksysguard]
 ShowBadges=false
 ShowInHistory=false

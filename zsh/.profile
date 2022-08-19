@@ -28,10 +28,11 @@ alias kiv="kitty +kitten icat "
 #export GRADLE_HOME=${HOME}/src/gradle
 
 export ANDROID_HOME=${HOME}/src/android-sdk
+export ANDROID_SDK_ROOT=${HOME}/src/android-sdk
 export GOPATH=${HOME}/gopath
 export NODE_PATH=${HOME}/.node/lib/node_modules:$NODE_PATH
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH=/usr/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/emulator:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${GOPATH}/bin:${HOME}/.node/bin:${HOME}/.local/bin:${PATH}
+export PATH=/usr/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/emulator:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/cmdline-tools/latest/bin:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${GOPATH}/bin:${HOME}/.node/bin:${HOME}/.local/bin:${PATH}
 export MANPATH=${HOME}/.node/share/man:${MANPATH}
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -39,6 +40,7 @@ export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export USE_CCACHE=1
 export CCACHE_COMPRESS=1
+export LD_LIBRARY_PATH=${ANDROID_SDK_ROOT}/emulator/lib64:${ANDROID_SDK_ROOT}/emulator/lib64/qt/lib
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 
 xo() {
@@ -60,8 +62,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
 
 # for node 14
-export PATH="/home/linuxbrew/.linuxbrew/opt/node@14/bin:$PATH"
-export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@14/lib"
-export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@14/include"
+#export PATH="/home/linuxbrew/.linuxbrew/opt/node@14/bin:$PATH"
+#export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@14/lib"
+#export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@14/include"
 
-
+export NVM_DIR="$HOME/.nvm"
+[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion

@@ -27,7 +27,7 @@ run associated application=true
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][18]
-ItemGeometries-1920x1080=
+ItemGeometries-1920x1080=Applet-74:400,176,304,304,0;
 ItemGeometries-2560x1080=
 ItemGeometriesHorizontal=
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
@@ -86,7 +86,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][25][Configuration]
-PreloadWeight=100
+PreloadWeight=84
 
 [Containments][2][Applets][25][Configuration][ConfigDialog]
 DialogHeight=540
@@ -245,14 +245,14 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][11][Configuration]
-PreloadWeight=43
+PreloadWeight=52
 
 [Containments][7][Applets][12]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][12][Configuration]
-PreloadWeight=11
+PreloadWeight=0
 
 [Containments][7][Applets][13]
 immutability=1
@@ -273,7 +273,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=27
+PreloadWeight=21
 
 [Containments][7][Applets][16]
 immutability=1
@@ -298,7 +298,7 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][26][Configuration]
-PreloadWeight=93
+PreloadWeight=100
 
 [Containments][7][Applets][32]
 immutability=1
@@ -343,21 +343,21 @@ immutability=1
 plugin=org.kde.plasma.diskquota
 
 [Containments][7][Applets][69][Configuration]
-PreloadWeight=23
+PreloadWeight=7
 
 [Containments][7][Applets][70]
 immutability=1
 plugin=org.kde.plasma.printmanager
 
 [Containments][7][Applets][70][Configuration]
-PreloadWeight=42
+PreloadWeight=26
 
 [Containments][7][Applets][71]
 immutability=1
 plugin=org.kde.plasma.vault
 
 [Containments][7][Applets][71][Configuration]
-PreloadWeight=42
+PreloadWeight=26
 
 [Containments][7][ConfigDialog]
 DialogHeight=480

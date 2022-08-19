@@ -11,7 +11,6 @@ GLTextureFilter=1
 HiddenPreviews=6
 LatencyPolicy=Low
 OpenGLIsUnsafe=false
-WindowsBlockCompositing=true
 XRenderSmoothScale=false
 
 [Desktops]

@@ -2,11 +2,37 @@
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
 
 [1]
+Description=Window settings for systemsettings
+above=true
+clientmachine=localhost
+clientmachinematch=0
+screenrule=2
+size=450,940
+title=Audio — System Settings
+types=33
+windowrole=mainwindow#1
+windowrolematch=1
+wmclass=systemsettings
+wmclasscomplete=false
+wmclassmatch=1
+
+[2]
+Description=Application settings for systemsettings
+above=true
+clientmachine=localhost
+clientmachinematch=0
+screenrule=4
+size=450,940
+title=Android Emulator
+wmclass=systemsettings
+wmclasscomplete=false
+wmclassmatch=1
+
+[3]
 Description=Window settings for Android emulator
 above=true
 aboverule=2
 clientmachine=localhost
-clientmachinematch=0
 screen=1
 screenrule=2
 size=450,940
@@ -14,31 +40,51 @@ sizerule=2
 title=Android Emulator
 titlematch=2
 types=1
-wmclass=
-wmclasscomplete=false
+windowrole[$d]
+windowrolematch[$d]
 wmclassmatch=1
 
-[2]
-Description=FFDEV
+[3a6b977c-990b-42ba-bd63-5785f892b98d]
+Description=Application settings for
 clientmachine=localhost
-clientmachinematch=0
-size=1859,1020
-sizerule=4
-title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
-titlematch=0
-types=1
-wmclass=firefox-aurora
-wmclasscomplete=false
-wmclassmatch=2
-
-[3]
-windowrole[$d]
-windowrolematch[$d]
+wmclassmatch=1
 
 [4]
+Description=FFDEV
+clientmachine=localhost
+size=1770,1027
+sizerule=4
+title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
+types=1
 windowrole[$d]
 windowrolematch[$d]
+wmclass=firefox-aurora
+wmclassmatch=2
 
 [General]
-count=2
-rules=1,2
+count=4
+rules=1,2,3,4
+
+[ac2cbdff-e248-4238-a8b5-c129428b0486]
+Description=Application settings for
+clientmachine=localhost
+wmclassmatch=1
+
+[d0c185be-66ac-4708-ba21-3ac63deea812]
+Description=Window settings for systemsettings
+clientmachine=localhost
+screenrule=2
+title=Audio — System Settings
+types=33
+windowrole=mainwindow#1
+windowrolematch=1
+wmclass=systemsettings
+wmclassmatch=1
+
+[d95f4f25-1d28-4cd7-87a9-98301e19c760]
+Description=Application settings for systemsettings
+clientmachine=localhost
+screen=1
+screenrule=4
+wmclass=systemsettings
+wmclassmatch=1

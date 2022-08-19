@@ -85,11 +85,10 @@ require('packer').startup({function()
 
   use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
 
-  use 'gennaro-tedesco/nvim-peekup'
-  use 'nathom/filetype.nvim'
   use 'mg979/vim-visual-multi'
   use 'dyng/ctrlsf.vim'
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim', 'nvim-lua/popup.nvim' } }
+  use { 'nvim-telescope/telescope-ui-select.nvim' }
   use { "beauwilliams/focus.nvim", config = function() require("focus").setup({cursorline = false}) end }
 
   -- themes
@@ -190,6 +189,7 @@ require('packer').startup({function()
   use {
     'nvim-treesitter/nvim-treesitter',
     'nvim-treesitter/nvim-treesitter-textobjects',
+    'windwp/nvim-ts-autotag',
     event = 'BufRead',
     run = function() vim.cmd("TSUpdate") end,
   }
@@ -200,12 +200,12 @@ require('packer').startup({function()
     config = function() vim.g.neoterm_default_mod = ':vertical'  end,
   }
   use {
-    "ThePrimeagen/refactoring.nvim",
-    requires = {
-      {"nvim-lua/plenary.nvim"},
-      {"nvim-treesitter/nvim-treesitter"}
-    }
+    'lewis6991/spellsitter.nvim',
+    config = function()
+      require('spellsitter').setup()
+    end
   }
+
   use {
     'norcalli/nvim-colorizer.lua',
     event = "BufRead",
@@ -225,6 +225,7 @@ require('packer').startup({function()
   }
   use {
     'neovim/nvim-lspconfig', 
+    'nvim-lua/lsp-status.nvim',
   }
   use {
     'jose-elias-alvarez/null-ls.nvim',
@@ -274,10 +275,6 @@ require('packer').startup({function()
   }
 
   use {
-    'folke/trouble.nvim',
-    requires = 'kyazdani42/nvim-web-devicons',
-  }
-  use {
     'windwp/nvim-autopairs',
     after='nvim-cmp',
     config = function()  
@@ -288,10 +285,15 @@ require('packer').startup({function()
   }
   use {
     'kosayoda/nvim-lightbulb',
-    'ray-x/lsp_signature.nvim',
-    'nvim-lua/lsp-status.nvim',
+    requires = 'antoinemadec/FixCursorHold.nvim',
     after='nvim-cmp',
-    event='BufRead'
+    event='BufRead',
+    config = function()  
+      require('nvim-lightbulb').setup({
+        autocmd = {enabled = true},
+        ignore = {"null-ls"},
+      })
+    end
   }
   --[[ use {
     'mfussenegger/nvim-dap',
@@ -312,6 +314,10 @@ end,
     }
   }
 })
+
+--Filetypes opt in
+vim.g.do_filetype_lua = 1 -- Activate the Lua filetype detection mechanism
+vim.g.did_load_filetypes = 0 
 
 --Incremental live completion (note: this is now a default on master)
 vim.o.inccommand = 'nosplit'
@@ -729,6 +735,8 @@ require('telescope').setup {
   },
 }
 
+require("telescope").load_extension("ui-select")
+
 vim.api.nvim_set_keymap('n', '<leader>b', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>o', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>k', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true, silent = true })
@@ -761,7 +769,10 @@ require('nvim-treesitter.configs').setup {
     enable = true,              -- mandatory, false will disable the whole extension
   },
   context_commentstring = {
-    enable = true
+    enable = true,
+  },
+  autotag = {
+    enable = true,
   },
   textobjects = {
     select = {
@@ -811,8 +822,8 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gR', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'ga', [[:Telescope lsp_code_actions<CR>]], opts)
-  vim.api.nvim_buf_set_keymap(bufnr, 'v', 'ga', '[[:Telescope lsp_range_code_action<CR>]]', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', 'ga', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'v', 'ga', '<cmd>lua vim.lsp.buf.range_code_action()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-]>', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
@@ -851,12 +862,11 @@ if isEditor() then
     sources = {
       -- completions
       -- null_ls.builtins.completion.spell,
-      null_ls.builtins.diagnostics.vale,
+      --null_ls.builtins.diagnostics.vale,
 
       -- formatting sources
       null_ls.builtins.formatting.autopep8, 
       null_ls.builtins.formatting.black, 
-      null_ls.builtins.formatting.json_tool,
     },
     on_attach = on_attach
   }) 
@@ -865,7 +875,7 @@ else
     sources = { 
       -- code action sources
       -- null_ls.builtins.code_actions.gitsigns,
-      null_ls.builtins.code_actions.refactoring,
+      -- null_ls.builtins.code_actions.refactoring,
 
       -- completions
       -- null_ls.builtins.completion.spell,
@@ -882,7 +892,6 @@ else
       null_ls.builtins.formatting.autopep8, 
       null_ls.builtins.formatting.black, 
       -- null_ls.builtins.formatting.codespell, 
-      null_ls.builtins.formatting.json_tool,
       -- null_ls.builtins.formatting.lua_format,
       null_ls.builtins.formatting.prettierd, 
       -- null_ls.builtins.formatting.shfmt, 
@@ -1002,8 +1011,18 @@ cmp.setup {
         },
     },
 
+  -- Set configuration for specific filetype.
+  cmp.setup.filetype('gitcommit', {
+    sources = cmp.config.sources({
+      { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
+    }, {
+      { name = 'buffer' },
+    })
+  }),  
+  
   -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
   cmp.setup.cmdline('/', {
+    mapping = cmp.mapping.preset.cmdline(),
     sources = {
       { name = 'buffer' }
     }
@@ -1011,6 +1030,7 @@ cmp.setup {
 
   -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
   cmp.setup.cmdline(':', {
+    mapping = cmp.mapping.preset.cmdline(),
     sources = cmp.config.sources({
       { name = 'path' }
     }, {
@@ -1080,9 +1100,6 @@ nvim_lsp.tsserver.setup {
   end
 }
 
--- lightbulb
-vim.cmd [[autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()]]
-
 -- RestNvim
 vim.cmd [[
 nmap <leader>h <Plug>RestNvim<CR>
@@ -1092,40 +1109,3 @@ nmap <leader>h <Plug>RestNvim<CR>
 local dap_install = require("dap-install")
 dap_install.config("python", {})
 dap_install.config("chrome", {}) ]]
-
--- lsp signature
-require "lsp_signature".setup()
-
--- refactoring
-local refactor = require("refactoring")
-refactor.setup({})
-
--- telescope refactoring helper
-local function refactor(prompt_bufnr)
-    local content = require("telescope.actions.state").get_selected_entry(
-        prompt_bufnr
-    )
-    require("telescope.actions").close(prompt_bufnr)
-    require("refactoring").refactor(content.value)
-end
-
-_G.refactors = function()
-    local opts = require("telescope.themes").get_cursor() -- set personal telescope options
-    require("telescope.pickers").new(opts, {
-        prompt_title = "refactors",
-        finder = require("telescope.finders").new_table({
-            results = require("refactoring").get_refactors(),
-        }),
-        sorter = require("telescope.config").values.generic_sorter(opts),
-        attach_mappings = function(_, map)
-            map("i", "<CR>", refactor)
-            map("n", "<CR>", refactor)
-            return true
-        end
-    }):find()
-end
-
-vim.api.nvim_set_keymap("v", "<Leader>re", [[ <Esc><Cmd>lua require('refactoring').refactor('Extract Function')<CR>]], {noremap = true, silent = true, expr = false})
-vim.api.nvim_set_keymap("v", "<Leader>rf", [[ <Esc><Cmd>lua require('refactoring').refactor('Extract Function To File')<CR>]], {noremap = true, silent = true, expr = false})
-vim.api.nvim_set_keymap("v", "<Leader>rt", [[ <Esc><Cmd>lua M.refactors()<CR>]], {noremap = true, silent = true, expr = false})
-
