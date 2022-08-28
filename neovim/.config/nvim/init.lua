@@ -1,6 +1,5 @@
 -- pre-requisites
---yarn global add typescript bash-language-server sql-language-server @fsouza/prettierd typescript-language-server vscode-langservers-extracted
---pip install --user pyright flake8 black autopep8 pylint
+--Mason it or yarn global add typescript bash-language-server sql-language-server @fsouza/prettierd typescript-language-server vscode-langservers-extracted
 --do :TSInstall all to install all Treesitter parsers
 --TODO debug mode
 --TODO opttimize runtime?
@@ -64,7 +63,26 @@ require('packer').startup({function()
     'wbthomason/packer.nvim',
     event = "VimEnter",
   }
-  use 'machakann/vim-sandwich'
+  use { 
+    "williamboman/mason.nvim",
+    config = function()
+        require('mason').setup()
+    end,
+  }
+  use {'stevearc/dressing.nvim'}
+  use {
+    "kylechui/nvim-surround",
+    config = function()
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+        keymaps = {
+          normal = "sa",
+          delete = "sd",
+          change = "sr",
+        },
+      })
+    end
+  }
 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -83,13 +101,18 @@ require('packer').startup({function()
     }) end
   }
 
-  use { 'mbbill/undotree', cmd = 'UndotreeToggle' }
+  use { 'simnalamburt/vim-mundo', cmd = 'MundoToggle' }
 
   use 'mg979/vim-visual-multi'
   use 'dyng/ctrlsf.vim'
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim', 'nvim-lua/popup.nvim' } }
-  use { 'nvim-telescope/telescope-ui-select.nvim' }
-  use { "beauwilliams/focus.nvim", config = function() require("focus").setup({cursorline = false}) end }
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup {
+      }
+    end
+  }
 
   -- themes
   use { 'sainnhe/sonokai' }
@@ -190,15 +213,17 @@ require('packer').startup({function()
     'nvim-treesitter/nvim-treesitter',
     'nvim-treesitter/nvim-treesitter-textobjects',
     'windwp/nvim-ts-autotag',
-    event = 'BufRead',
-    run = function() vim.cmd("TSUpdate") end,
+     run = ':TSUpdate',
   }
   use { 'NTBBloodbath/rest.nvim', event = 'BufRead' }
-  use { 
-    'kassio/neoterm', 
-    cmd = 'Tnew',
-    config = function() vim.g.neoterm_default_mod = ':vertical'  end,
+
+  use {"akinsho/toggleterm.nvim", 
+    tag = 'v2.*', 
+    config = function()
+      require("toggleterm").setup()
+    end
   }
+  
   use {
     'lewis6991/spellsitter.nvim',
     config = function()
@@ -219,14 +244,17 @@ require('packer').startup({function()
       'typescriptreact';
     }) end
   }
+
   use {
     "junegunn/goyo.vim",
     cmd = "Goyo"
   }
+
   use {
     'neovim/nvim-lspconfig', 
     'nvim-lua/lsp-status.nvim',
   }
+
   use {
     'jose-elias-alvarez/null-ls.nvim',
     'jose-elias-alvarez/nvim-lsp-ts-utils',
@@ -284,26 +312,9 @@ require('packer').startup({function()
     end
   }
   use {
-    'kosayoda/nvim-lightbulb',
-    requires = 'antoinemadec/FixCursorHold.nvim',
-    after='nvim-cmp',
-    event='BufRead',
-    config = function()  
-      require('nvim-lightbulb').setup({
-        autocmd = {enabled = true},
-        ignore = {"null-ls"},
-      })
-    end
+    'theHamsta/nvim-dap-virtual-text',
+    requires = {'mfussenegger/nvim-dap'}
   }
-  --[[ use {
-    'mfussenegger/nvim-dap',
-  }
-  use {
-    -- 'Pocco81/DAPInstall.nvim',
-    -- 'rcarriga/nvim-dap-ui',
-    after = {'mfussenegger/nvim-dap'},
-    cmd = 'DebugOn'
-  } ]]
 end,
   config = {
     compile_path = util.join_paths(vim.fn.stdpath('data'), 'site/plugin', 'packer_compiled.lua'),
@@ -371,6 +382,9 @@ vim.o.updatetime = 100
 
 --autoread
 vim.o.autoread = true
+
+-- timeout length for whichkey
+vim.o.timeoutlen = 500
 
 --Set colorscheme 
 vim.o.termguicolors = true
@@ -696,9 +710,6 @@ vim.api.nvim_exec([[
 
 -- plugins --
 
--- replacer
-vim.api.nvim_set_keymap('n', '<Leader>r', ':lua require("replacer").run()<cr>', { silent = true })
-
 --project.nvim
 require("project_nvim").setup {
   patterns = { ".git", "venv/", "vendor/", ".hg", ".bzr", ".svn", "Makefile", "package.json", "README.md", "Readme.md" },
@@ -734,8 +745,6 @@ require('telescope').setup {
     },
   },
 }
-
-require("telescope").load_extension("ui-select")
 
 vim.api.nvim_set_keymap('n', '<leader>b', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>o', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], { noremap = true, silent = true })
@@ -1104,8 +1113,3 @@ nvim_lsp.tsserver.setup {
 vim.cmd [[
 nmap <leader>h <Plug>RestNvim<CR>
 ]]
-
---[[ -- DAP
-local dap_install = require("dap-install")
-dap_install.config("python", {})
-dap_install.config("chrome", {}) ]]

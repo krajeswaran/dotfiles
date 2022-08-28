@@ -86,7 +86,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][25][Configuration]
-PreloadWeight=84
+PreloadWeight=94
 
 [Containments][2][Applets][25][Configuration][ConfigDialog]
 DialogHeight=540
@@ -245,7 +245,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][11][Configuration]
-PreloadWeight=52
+PreloadWeight=57
 
 [Containments][7][Applets][12]
 immutability=1

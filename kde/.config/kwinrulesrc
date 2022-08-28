@@ -52,7 +52,7 @@ wmclassmatch=1
 [4]
 Description=FFDEV
 clientmachine=localhost
-size=1770,1027
+size=1783,1013
 sizerule=4
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 types=1

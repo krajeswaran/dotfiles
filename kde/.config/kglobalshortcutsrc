@@ -53,6 +53,7 @@ Decrease Opacity=none,,Decrease Opacity of Active Window by 5 %
 Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
 ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
+Exquisite=Ctrl+Alt+D,none,Exquisite
 FlipSwitchAll=none,none,Toggle Flip Switch (All desktops)
 FlipSwitchCurrent=none,none,Toggle Flip Switch (Current desktop)
 Increase Opacity=none,,Increase Opacity of Active Window by 5 %

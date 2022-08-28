@@ -60,7 +60,6 @@ smbclient
 socat
 sshfs
 stow
-subliminal
 tasksel
 tmux
 tmux-plugin-manager

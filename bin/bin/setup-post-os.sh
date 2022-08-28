@@ -50,5 +50,5 @@ echo "Here are things you might want to do:
     - syncthing setup
     - fonts fuckery: install nerd-fonts: Hack, Jetbrains, Fira Sans
     - install ufw, enable syncthing, ssh, samba + local network
-    - ytmdl 
+    - ytmdl, lizzy(front-end for mpv), OpensubtitlesDownloader.py
 "

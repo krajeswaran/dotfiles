@@ -1,112 +1,42 @@
 --=============================================================================
--->>    SUBLIMINAL PATH:
+-->>    subdownloader PATH:
 --=============================================================================
---          This script uses Subliminal to download subtitles,
---          so make sure to specify your system's Subliminal location below:
-local subliminal = '/home/linuxbrew/.linuxbrew/bin/subliminal'
+--          This script uses subdownloader to download subtitles,
+--          so make sure to specify your system's subdownloader location below:
+local subdownloader = '/home/kumaresan/.local/bin/OpenSubtitlesDownload.py'
 --=============================================================================
--->>    SUBTITLE LANGUAGE:
+-->>    SUBTITLE LANGUAGE: only used to set up mpv, actual subs downloaded from subdownloader
 --=============================================================================
---          Specify languages in this order:
---          { 'language name', 'ISO-639-1', 'ISO-639-2' } !
---          (See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 local languages = {
---          If subtitles are found for the first language,
---          other languages will NOT be downloaded,
---          so put your preferred language first:
-            { 'English', 'en', 'eng' },
-            -- { 'Dutch', 'nl', 'dut' },
---          { 'Spanish', 'es', 'spa' },
---          { 'French', 'fr', 'fre' },
---          { 'German', 'de', 'ger' },
---          { 'Italian', 'it', 'ita' },
---          { 'Portuguese', 'pt', 'por' },
---          { 'Polish', 'pl', 'pol' },
---          { 'Russian', 'ru', 'rus' },
---          { 'Chinese', 'zh', 'chi' },
---          { 'Arabic', 'ar', 'ara' },
+  { 'English', 'en', 'eng' },
 }
---=============================================================================
--->>    PROVIDER LOGINS:
---=============================================================================
---          These are completely optional and not required
---          for the functioning of the script!
---          If you use any of these services, simply uncomment it
---          and replace 'USERNAME' and 'PASSWORD' with your own:
-local logins = {
---          { '--addic7ed', 'USERNAME', 'PASSWORD' },
---          { '--legendastv', 'USERNAME', 'PASSWORD' },
-          { '--opensubtitles', 'buwayhid', 'Passw0rd!' },
---          { '--subscenter', 'USERNAME', 'PASSWORD' },
-}
---=============================================================================
--->>    ADDITIONAL OPTIONS:
---=============================================================================
 local bools = {
-    auto = true,   -- Automatically download subtitles, no hotkeys required
-    debug = false, -- Use `--debug` in subliminal command for debug output
-    force = true,  -- Force download; will overwrite existing subtitle files
-    utf8 = true,   -- Save all subtitle files as UTF-8
+  auto = true,
+  debug = false
 }
-local excludes = {
-    -- Movies with a path containing any of these strings/paths
-    -- will be excluded from auto-downloading subtitles.
-    -- Full paths are also allowed, e.g.:
-    -- '/home/david/Videos',
-    'no-subs-dl',
-}
-local includes = {
-    -- If anything is defined here, only the movies with a path
-    -- containing any of these strings/paths will auto-download subtitles.
-    -- Full paths are also allowed, e.g.:
-    -- '/home/david/Videos',
-}
---=============================================================================
-local utils = require 'mp.utils'
 
+--=============================================================================
+
+local utils = require 'mp.utils'
 
 -- Download function: download the best subtitles in most preferred language
 function download_subs(language)
     language = language or languages[1]
     log('Searching ' .. language[1] .. ' subtitles ...', 30)
 
-    -- Build the `subliminal` command, starting with the executable:
-    local table = { args = { subliminal } }
-    local a = table.args
+    -- Build the `subdownloader` command, starting with the executable:
+    local process = { args = { subdownloader } }
+    local a = process.args
 
-    for _, login in ipairs(logins) do
-        a[#a + 1] = login[1]
-        a[#a + 1] = login[2]
-        a[#a + 1] = login[3]
-    end
-    if bools.debug then
-        -- To see `--debug` output start MPV from the terminal!
-        a[#a + 1] = '--debug'
-    end
-
-    --[[ a[#a + 1] = '--omdb'
-    a[#a + 1] = '4a629473' ]]
-
-    a[#a + 1] = 'download'
-    if bools.force then
-        a[#a + 1] = '-f'
-    end
-    if bools.utf8 then
-        a[#a + 1] = '-e'
-        a[#a + 1] = 'utf-8'
-    end
-
-    a[#a + 1] = '-l'
-    a[#a + 1] = language[2]
-    a[#a + 1] = '-d'
+    a[#a + 1] = '--cli'
+    a[#a + 1] = '-a'  -- auto select sub
     a[#a + 1] = directory
-    a[#a + 1] = filename --> Subliminal command ends with the movie filename.
+    a[#a + 1] = filename --> subdownloader command ends with the movie filename.
+    print(table.concat(a," "))
 
+    local result = utils.subprocess(process)
 
-    print(table[0])
-    local result = utils.subprocess(table)
-
-    if string.find(result.stdout, 'Downloaded 1 subtitle') then
+    if string.find(result.stdout, '>> Downloading') then
         -- When multiple external files are present,
         -- always activate the most recently downloaded:
         mp.set_property('slang', language[2])
@@ -188,27 +118,6 @@ function autosub_allowed()
         for _, file_format in pairs(not_allowed) do
             if file_format == active_format then
                 mp.msg.warn('Automatic subtitle downloading is disabled for audio files')
-                return false
-            end
-        end
-
-        for _, exclude in pairs(excludes) do
-            local escaped_exclude = exclude:gsub('%W','%%%0')
-            local excluded = directory:find(escaped_exclude)
-
-            if excluded then
-                mp.msg.warn('This path is excluded from auto-downloading subs')
-                return false
-            end
-        end
-
-        for i, include in ipairs(includes) do
-            local escaped_include = include:gsub('%W','%%%0')
-            local included = directory:find(escaped_include)
-
-            if included then break
-            elseif i == #includes then
-                mp.msg.warn('This path is not included for auto-downloading subs')
                 return false
             end
         end

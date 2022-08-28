@@ -98,6 +98,20 @@ videowallEnabled=false
 windowgeometryEnabled=true
 zoomEnabled=false
 
+[Script-exquisite]
+hideOnFirstTile=true
+showHelpButton=false
+
+[Script-kdesnapassist]
+backdropColor=false
+cardColor=false
+delayBeforeShowingAssist=75
+hoveredCardColor=false
+showOtherDesktopsWindows=true
+showOtherScreensWindows=true
+textColor=false
+transitionDuration=50
+
 [TabBox]
 ActivitiesMode=0
 ApplicationsMode=0
