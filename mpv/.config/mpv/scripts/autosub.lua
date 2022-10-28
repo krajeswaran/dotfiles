@@ -50,11 +50,6 @@ function download_subs(language)
     end
 end
 
--- Manually download second language subs by pressing 'n':
-function download_subs2()
-    download_subs(languages[2])
-end
-
 -- Control function: only download if necessary
 function control_downloads()
     -- Make MPV accept external subtitle files with language specifier:
@@ -164,5 +159,4 @@ end
 
 
 mp.add_key_binding('b', 'download_subs', download_subs)
-mp.add_key_binding('n', 'download_subs2', download_subs2)
 mp.register_event('file-loaded', control_downloads)

@@ -2,7 +2,7 @@
 Categories=Application;Development;
 Comment[en_US]=APP
 Comment=APP
-Exec=kitty --class libreoffice-impress --title APP --config /home/kumaresan/.config/kitty/app.conf --start-as=maximized -d /home/kumaresan/src/tang-mobile-app
+Exec=kitty --class libreoffice-impress --title APP --config /home/kumaresan/.config/kitty/app.conf -d /home/kumaresan/src/tang-mobile-app
 GenericName[en_US]=APP
 GenericName=APP
 Icon=libreoffice-impress

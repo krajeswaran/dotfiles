@@ -40,7 +40,6 @@ local disabled_built_ins = {
   "spellfile_plugin",
   "vimball",
   "vimballPlugin",
-  "filetypes",
   "remote_plugins",
   "zip",
   "zipPlugin",
@@ -63,6 +62,7 @@ require('packer').startup({function()
     'wbthomason/packer.nvim',
     event = "VimEnter",
   }
+  use 'lewis6991/impatient.nvim'
   use { 
     "williamboman/mason.nvim",
     config = function()
@@ -70,6 +70,32 @@ require('packer').startup({function()
     end,
   }
   use {'stevearc/dressing.nvim'}
+  use({
+    "folke/noice.nvim",
+    event = "VimEnter",
+    config = function()
+      require("noice").setup({
+        routes = {
+          {
+            filter = { 
+              event = "msg_show", 
+              kind = "",
+              find = "written",
+            },
+            opts = { skip = true },
+          },
+          {
+            view = "split",
+            filter = { event = "msg_show", min_height = 20 },
+          },
+        },
+      })
+    end,
+    requires = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
+  })
   use {
     "kylechui/nvim-surround",
     config = function()
@@ -87,18 +113,6 @@ require('packer').startup({function()
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons',
-    cmd = {'NvimTreeFindFileToggle', 'NvimTree'},
-    config = function() require("nvim-tree").setup({
-      git = {
-        enable = true,
-        ignore = false,
-      },
-        update_cwd = true,
-        update_focused_file = {
-            enable = true,
-            update_cwd = true
-        }
-    }) end
   }
 
   use { 'simnalamburt/vim-mundo', cmd = 'MundoToggle' }
@@ -106,13 +120,13 @@ require('packer').startup({function()
   use 'mg979/vim-visual-multi'
   use 'dyng/ctrlsf.vim'
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim', 'nvim-lua/popup.nvim' } }
-  use {
-    "folke/which-key.nvim",
-    config = function()
-      require("which-key").setup {
-      }
-    end
-  }
+  -- use {
+  --   "folke/which-key.nvim",
+  --   config = function()
+  --     require("which-key").setup {
+  --     }
+  --   end
+  -- }
 
   -- themes
   use { 'sainnhe/sonokai' }
@@ -257,8 +271,9 @@ require('packer').startup({function()
 
   use {
     'jose-elias-alvarez/null-ls.nvim',
-    'jose-elias-alvarez/nvim-lsp-ts-utils',
+    'jose-elias-alvarez/typescript.nvim',
     'JoosepAlviste/nvim-ts-context-commentstring',
+    'williamboman/mason-lspconfig.nvim',
     after = 'neovim/nvim-lspconfig',
     requires = {"nvim-lua/plenary.nvim", "neovim/nvim-lspconfig"}
   }
@@ -326,9 +341,8 @@ end,
   }
 })
 
---Filetypes opt in
-vim.g.do_filetype_lua = 1 -- Activate the Lua filetype detection mechanism
-vim.g.did_load_filetypes = 0 
+-- should be first?
+require('impatient')
 
 --Incremental live completion (note: this is now a default on master)
 vim.o.inccommand = 'nosplit'
@@ -539,13 +553,14 @@ augroup texting
   autocmd FileType markdown,text,taskpaper set autowriteall
   autocmd TextChanged,TextChangedI scratch.md silent write  
 
-  autocmd BufRead,BufNewFile todo.md set ft=taskpaper 
   autocmd BufRead,BufNewFile todo.md :Goyo 80
+  autocmd BufRead,BufNewFile todo.md set ft=taskpaper 
   autocmd BufRead,BufNewFile todo.md set statusline=
   autocmd BufWritePost todo.md call timer_start(1000, {-> execute("echo ''", "")})
   autocmd TextChanged,TextChangedI todo.md silent write  
   autocmd VimEnter todo.md  setlocal complete=k/~/notes/journal/**/*
 
+  autocmd BufRead,BufNewFile todo.md set ft=taskpaper 
   autocmd BufRead,BufNewFile todo.md set statusline=
   autocmd BufWritePost */journal/** call timer_start(1000, {-> execute("echo ''", "")})
   autocmd TextChanged,TextChangedI */journal/** silent write  
@@ -716,8 +731,22 @@ require("project_nvim").setup {
 }
 
 --nvim-tree
-vim.g.nvim_tree_respect_buf_cwd = 1
 vim.api.nvim_set_keymap('n', 'ge', ':NvimTreeFindFileToggle<CR>', { noremap = true })
+require("nvim-tree").setup({
+  git = {
+    enable = true,
+    ignore = false,
+  },
+  open_on_setup = false,
+  disable_netrw = true,
+  hijack_netrw = true,
+  respect_buf_cwd = true,
+  update_cwd = true,
+  update_focused_file = {
+    enable = true,
+    update_cwd = true
+  }
+})
 
 -- Indent blankline
 vim.g.indent_blankline_char = '┊'
@@ -748,6 +777,7 @@ require('telescope').setup {
 
 vim.api.nvim_set_keymap('n', '<leader>b', [[<cmd>lua require('telescope.builtin').buffers()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>o', [[<cmd>lua require('telescope.builtin').find_files()<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>n', [[<cmd>lua require('telescope.builtin').find_files({cwd='~/notes'})<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>k', [[<cmd>lua require('telescope.builtin').help_tags()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>/', [[<cmd>lua require('telescope.builtin').live_grep()<CR>]], { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>p', [[<cmd>lua require('telescope.builtin').oldfiles()<CR>]], { noremap = true, silent = true })
@@ -846,7 +876,7 @@ local on_attach = function(_, bufnr)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
 
   -- save on formatting
-  vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+  vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.format()")
 end
 
 for type, icon in pairs(signs) do
@@ -902,7 +932,9 @@ else
       null_ls.builtins.formatting.black, 
       -- null_ls.builtins.formatting.codespell, 
       -- null_ls.builtins.formatting.lua_format,
-      null_ls.builtins.formatting.prettierd, 
+      null_ls.builtins.formatting.prettierd.with({
+        filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "scss", "less", "graphql", "handlebars" }
+      }), 
       -- null_ls.builtins.formatting.shfmt, 
       null_ls.builtins.formatting.sqlformat, 
       null_ls.builtins.formatting.terraform_fmt, 
@@ -1048,13 +1080,8 @@ cmp.setup {
   })
 }
 
--- nvim-cmp supports additional completion capabilities
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities(), {
-    snippetSupport = false,
-})
-
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver', 'eslint', 'html', 'cssls', 'bashls', 'sqlls' }
+local servers = { 'pyright', 'tsserver', 'eslint', 'jsonls', 'html', 'cssls', 'bashls', 'sqlls', 'gopls' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
@@ -1069,45 +1096,7 @@ require'lspconfig'.sqlls.setup{
 }
 
 -- tsserver override setup
-
--- make sure to only run this once!
-nvim_lsp.tsserver.setup {
-  -- Only needed for inlayHints. Merge this table with your settings or copy
-  -- it from the source if you want to add your own init_options.
-  init_options = require("nvim-lsp-ts-utils").init_options,
-
-  on_attach = function(client, bufnr)
-    -- disable tsserver formatting if you plan on formatting via null-ls
-    client.resolved_capabilities.document_formatting = false
-    client.resolved_capabilities.document_range_formatting = false
-
-    local ts_utils = require("nvim-lsp-ts-utils")
-
-    -- defaults
-    ts_utils.setup {
-      enable_import_on_completion = true,
-
-      -- eslint
-      --[[ eslint_bin = "eslint_d",
-      eslint_enable_diagnostics = true, ]]
-
-      -- formatting
-      enable_formatting = true,
-      formatter = "prettierd",
-
-      -- update imports on file move
-      update_imports_on_move = true,
-      require_confirmation_on_move = true,
-    }
-
-    -- required to fix code action ranges and filter diagnostics
-    ts_utils.setup_client(client)
-
-    -- no default maps, so you may want to define some here
-    local opts = { silent = true }
-    vim.cmd [[ command! OR execute ':TSLspOrganize' ]]
-  end
-}
+require("typescript").setup({})
 
 -- RestNvim
 vim.cmd [[

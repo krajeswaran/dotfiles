@@ -15,6 +15,7 @@ ssh/.ssh/known*
 ssh/.ssh/*eb*
 ssh/.ssh/ssh-*
 ssh/.ssh/ec*
+ssh/.ssh/authorized*
 tmux/.tmux/resurrect/tmux_resurrect_*
 mpsyt/**cache**
 vim/.vim/thesaurus

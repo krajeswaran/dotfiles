@@ -24,6 +24,7 @@ Favorites=
 listViewIconSize=0
 
 [Notification Messages]
+ShowPasteHugeTextWarning=false
 ShowPasteUnprintableWarning=false
 
 [Window]

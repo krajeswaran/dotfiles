@@ -35,8 +35,8 @@ detailViewIconSize=16
 [MainWindow]
 HDMI-A-0 eDP Height 2560x1080=680
 HDMI-A-0 eDP Width 2560x1080=1280
-HDMI-A-0 eDP XPosition 2560x1080=2560
-HDMI-A-0 eDP YPosition 2560x1080=224
+HDMI-A-0 eDP XPosition 2560x1080=3200
+HDMI-A-0 eDP YPosition 2560x1080=49
 Height 1080=680
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAQAAAAMAAASqAAAAbvwBAAAAAfsAAAASAEMAbwBsAG8AcgAgAEIAbwB4AQAAAFYAAASqAAACCQD///8AAASqAAAB7gAAAAQAAAAEAAAAAQAAAAL8AAAAAgAAAAAAAAABAAAAEABUAG8AbwBsACAAQgBvAHgDAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABYAdABlAHgAdABUAG8AbwBsAEIAYQByAAAAAYf/////AAAAAAAAAAA=
@@ -55,8 +55,10 @@ SaveInLossyMimeTypeDontAskAgain=false
 [Recent Files]
 File1[$e]=$HOME/src/docs/app/cicd.svg
 File2[$e]=$HOME/src/tang-mobile-app/assets/images/SidneySendMoney.svg
+File3[$e]=$HOME/src/kbps-logo.svg
 Name1[$e]=cicd.svg
 Name2[$e]=SidneySendMoney.svg
+Name3[$e]=kbps-logo.svg
 
 [Text Settings]
 Font Family=Comfortaa

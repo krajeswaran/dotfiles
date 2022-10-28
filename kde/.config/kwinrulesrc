@@ -29,20 +29,16 @@ wmclasscomplete=false
 wmclassmatch=1
 
 [3]
-Description=Window settings for Android emulator
-above=true
-aboverule=2
+Description=FFDEV
 clientmachine=localhost
-screen=1
-screenrule=2
-size=450,940
-sizerule=2
-title=Android Emulator
-titlematch=2
+size=1869,1050
+sizerule=4
+title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 types=1
 windowrole[$d]
 windowrolematch[$d]
-wmclassmatch=1
+wmclass=firefox-aurora
+wmclassmatch=2
 
 [3a6b977c-990b-42ba-bd63-5785f892b98d]
 Description=Application settings for
@@ -52,7 +48,7 @@ wmclassmatch=1
 [4]
 Description=FFDEV
 clientmachine=localhost
-size=1783,1013
+size=1057,345
 sizerule=4
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 types=1
@@ -62,8 +58,8 @@ wmclass=firefox-aurora
 wmclassmatch=2
 
 [General]
-count=4
-rules=1,2,3,4
+count=3
+rules=1,2,3
 
 [ac2cbdff-e248-4238-a8b5-c129428b0486]
 Description=Application settings for

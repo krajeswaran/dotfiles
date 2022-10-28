@@ -2,7 +2,7 @@
 Categories=Application;Development;
 Comment[en_US]=API
 Comment=API
-Exec=kitty --class libreoffice-math --title API --config /home/kumaresan/.config/kitty/api.conf --start-as=maximized -d /home/kumaresan/src/tange-server
+Exec=kitty --class libreoffice-math --title API --config /home/kumaresan/.config/kitty/api.conf -d /home/kumaresan/src/tange-server
 GenericName[en_US]=API
 GenericName=API
 Icon=libreoffice-math

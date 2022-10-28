@@ -20,6 +20,7 @@
 alias ejectusb="udisksctl power-off -b "
 alias kssh="kitty +kitten ssh"
 alias kiv="kitty +kitten icat "
+alias restart_kde="killall plasmashell; kwin --replace & kstart plasmashell & exit"
 
 ############ OS ENV ######################
 # export JAVA_HOME=/Library/Java/Home
