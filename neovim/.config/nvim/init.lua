@@ -1,8 +1,7 @@
 -- pre-requisites
+-- TODO hook eslint_d to null-ls
 --Mason it or yarn global add typescript bash-language-server sql-language-server @fsouza/prettierd typescript-language-server vscode-langservers-extracted
---do :TSInstall all to install all Treesitter parsers
 --TODO debug mode
---TODO opttimize runtime?
 
 -- Install packer
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
@@ -184,6 +183,7 @@ require('packer').startup({function()
   use { 
     'lewis6991/gitsigns.nvim', 
     event = 'BufRead',
+    cond = not isEditor(),
     config = function() require("gitsigns").setup({
       attach_to_untracked = true,
       on_attach = function(bufnr)
@@ -874,9 +874,6 @@ local on_attach = function(_, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'g=', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, 'v', 'g=', '<cmd>lua vim.lsp.buf.range_formatting()<CR>', opts)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
-
-  -- save on formatting
-  vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.format()")
 end
 
 for type, icon in pairs(signs) do
@@ -896,9 +893,10 @@ vim.lsp.handlers["workspace/symbol"] = telescope.lsp_workspace_symbols
 
 -- null-ls setup
 local null_ls = require('null-ls')
-if isEditor() then 
-  null_ls.setup({
-    sources = {
+
+getNullSources = function() 
+  if isEditor() then
+    src=  {
       -- completions
       -- null_ls.builtins.completion.spell,
       --null_ls.builtins.diagnostics.vale,
@@ -906,15 +904,13 @@ if isEditor() then
       -- formatting sources
       null_ls.builtins.formatting.autopep8, 
       null_ls.builtins.formatting.black, 
-    },
-    on_attach = on_attach
-  }) 
-else 
-  null_ls.setup({
-    sources = { 
+    } 
+  else 
+    src = {
       -- code action sources
       -- null_ls.builtins.code_actions.gitsigns,
       -- null_ls.builtins.code_actions.refactoring,
+      null_ls.builtins.code_actions.eslint_d,
 
       -- completions
       -- null_ls.builtins.completion.spell,
@@ -922,8 +918,8 @@ else
       -- diagnostic sources
       -- null_ls.builtins.diagnostics.codespell, 
       -- null_ls.builtins.diagnostics.cppcheck, 
-      -- null_ls.builtins.diagnostics.eslint_d, 
-      -- null_ls.builtins.diagnostics.pylint, 
+      null_ls.builtins.diagnostics.eslint_d, 
+      null_ls.builtins.diagnostics.pylint, 
       null_ls.builtins.diagnostics.flake8, 
       -- null_ls.builtins.diagnostics.shellcheck, 
 
@@ -932,6 +928,7 @@ else
       null_ls.builtins.formatting.black, 
       -- null_ls.builtins.formatting.codespell, 
       -- null_ls.builtins.formatting.lua_format,
+      null_ls.builtins.formatting.eslint_d,
       null_ls.builtins.formatting.prettierd.with({
         filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "scss", "less", "graphql", "handlebars" }
       }), 
@@ -939,10 +936,32 @@ else
       null_ls.builtins.formatting.sqlformat, 
       null_ls.builtins.formatting.terraform_fmt, 
       -- null_ls.builtins.formatting.uncrustify, 
-    },
-    on_attach = on_attach
-  })
+    }
+  end
+  return src
 end
+
+null_ls.setup({
+  sources = getNullSources(),
+  debug = false,
+  on_attach = function(client, bufnr)
+    if client.supports_method("textDocument/formatting") then
+      vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        group = augroup,
+        buffer = bufnr,
+        callback = function()
+          vim.lsp.buf.format({
+            filter = function(client)
+              return client.name == "null-ls"
+            end,
+            bufnr = bufnr,
+          })
+        end,
+      })
+    end
+  end,
+})
 
 -- nvim-cmp setup
 local LSP_KIND_SIGNS = {
@@ -1081,7 +1100,7 @@ cmp.setup {
 }
 
 -- Enable the following language servers
-local servers = { 'pyright', 'tsserver', 'eslint', 'jsonls', 'html', 'cssls', 'bashls', 'sqlls', 'gopls' }
+local servers = { 'pyright', 'tsserver', 'jsonls', 'html', 'cssls', 'bashls', 'sqlls', 'gopls' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,

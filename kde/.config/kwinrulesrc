@@ -2,36 +2,32 @@
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
 
 [1]
-Description=Window settings for systemsettings
-above=true
+Description=FFDEV
 clientmachine=localhost
-clientmachinematch=0
+size=2554,1050
+sizerule=4
+title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
+types=1
+wmclass=firefox-aurora
+wmclassmatch=2
+
+[10e78ba0-6e57-4ef0-af83-2de70281dd61]
+Description=virt-manager
 screenrule=2
-size=450,940
-title=Audio — System Settings
-types=33
-windowrole=mainwindow#1
-windowrolematch=1
-wmclass=systemsettings
-wmclasscomplete=false
+wmclass=virt-manager
 wmclassmatch=1
 
 [2]
-Description=Application settings for systemsettings
-above=true
-clientmachine=localhost
-clientmachinematch=0
-screenrule=4
-size=450,940
-title=Android Emulator
-wmclass=systemsettings
-wmclasscomplete=false
+Description=virt-manager
+screen=1
+screenrule=2
+wmclass=virt-manager
 wmclassmatch=1
 
 [3]
 Description=FFDEV
 clientmachine=localhost
-size=1869,1050
+size=796,1050
 sizerule=4
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 types=1
@@ -58,8 +54,8 @@ wmclass=firefox-aurora
 wmclassmatch=2
 
 [General]
-count=3
-rules=1,2,3
+count=2
+rules=1,2
 
 [ac2cbdff-e248-4238-a8b5-c129428b0486]
 Description=Application settings for

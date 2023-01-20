@@ -1,27 +1,27 @@
 updateInfoAdded=true
 
 [breezehighcontrasttobreezedark.upd]
-ctime=1666123436
+ctime=1669063186
 done=BreezeHighContrastToBreezeDark
 mtime=1665741425
 
 [breezetobreezeclassic.upd]
-ctime=1666123436
+ctime=1669063186
 done=BreezeToBreezeClassic
 mtime=1665741425
 
 [breezetobreezelight.upd]
-ctime=1666123436
+ctime=1669063186
 done=BreezeToBreezeLight
 mtime=1665741425
 
 [delete_cursor_old_default_size.upd]
-ctime=1666123433
+ctime=1669063183
 done=DeleteCursorOldDefaultSize
-mtime=1664363579
+mtime=1665746530
 
 [disable_kmix.upd]
-ctime=1666123444
+ctime=1669063197
 done=PlasmaVolume_DisableKMixAutostart
 mtime=1665743839
 
@@ -58,26 +58,26 @@ done=SideBar_StatusBar_Rename,ImageView_AlphaBackgroundMode_Update,DeleteThumbna
 mtime=1645985339
 
 [icons_remove_effects.upd]
-ctime=1666123433
+ctime=1669063183
 done=IconsRemoveEffects
-mtime=1664363579
+mtime=1665746530
 
 [kcalcrc.upd]
 ctime=1653818703
 mtime=1645985551
 
 [kcm_rename_plasma_desktop.upd]
-ctime=1666123436
+ctime=1669063186
 done=5.24PlasmaDesktopKCMRename
 mtime=1665743592
 
 [kcminputrc_fix_botched_5_21_0.upd]
-ctime=1666123436
+ctime=1669063186
 done=kcminputrc_fix_botched_5_21_0_pre,kcminputrc_fix_botched_5_21_0
 mtime=1665743592
 
 [kcminputrc_repeat.upd]
-ctime=1666123436
+ctime=1669063186
 done=kcminputrc_migrate_key_repeat
 mtime=1665743592
 
@@ -115,14 +115,14 @@ done=5.17KRunnerGlobalShortcuts
 mtime=1634661489
 
 [krunnerglobalshortcuts2.upd]
-ctime=1666123433
+ctime=1669063183
 done=5.22KRunnerGlobalShortcuts
-mtime=1664363579
+mtime=1665746530
 
 [krunnerhistory.upd]
-ctime=1666123433
+ctime=1669063183
 done=5.21KRunnerHistory
-mtime=1664363579
+mtime=1665746530
 
 [krunnerplugins.upd]
 ctime=1645612891
@@ -135,27 +135,27 @@ done=0.1-autolock
 mtime=1648552868
 
 [ksmserver_update_loginMode_value.upd]
-ctime=1666123436
+ctime=1669063186
 done=ksmserver_update_loginMode_value_default_enum
 mtime=1665743592
 
 [kwin.upd]
-ctime=1666123434
+ctime=1669063183
 done=replace-scalein-with-scale,port-minimizeanimation-effect-to-js,port-scale-effect-to-js,port-dimscreen-effect-to-js,auto-bordersize,animation-speed,desktop-grid-click-behavior,no-swap-encourage,make-translucency-effect-disabled-by-default,remove-flip-switch-effect,remove-cover-switch-effect,remove-cubeslide-effect,remove-xrender-backend,enable-scale-effect-by-default
 mtime=1665743365
 
 [kwinrules.upd]
-ctime=1666123434
+ctime=1669063183
 done=replace-placement-string-to-enum,use-virtual-desktop-ids
 mtime=1665743365
 
 [kxkb.upd]
-ctime=1666123436
+ctime=1669063186
 done=remove-empty-lists,add-back-resetoptions
 mtime=1665743592
 
 [kxkb_variants.upd]
-ctime=1666123436
+ctime=1669063186
 done=split-variants
 mtime=1665743592
 
@@ -194,9 +194,9 @@ done=spectacle-migrate-shortcuts
 mtime=1645985429
 
 [style_widgetstyle_default_breeze.upd]
-ctime=1666123433
+ctime=1669063183
 done=StyleWidgetStyleDefaultBreeze
-mtime=1664363579
+mtime=1665746530
 
 [webenginepart.upd]
 ctime=1653048374

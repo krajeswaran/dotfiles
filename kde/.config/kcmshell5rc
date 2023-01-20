@@ -22,3 +22,6 @@ History=sync,fire,rxv
 
 [PlasmaRunnerManager]
 LaunchCounts=
+
+[UiSettings]
+ColorScheme=

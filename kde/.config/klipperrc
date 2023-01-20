@@ -3,8 +3,13 @@ EnableMagicMimeActions=false
 StripWhiteSpace=false
 
 [General]
+AutoStart=true
 IgnoreImages=false
 IgnoreSelection=false
 MaxClipItems=30
+Number of Actions=0
 SyncClipboards=true
-Version=5.24.4
+Version=5.24.7
+
+[Notification Messages]
+StartAutomatically=true

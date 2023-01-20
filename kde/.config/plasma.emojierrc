@@ -1,9 +1,11 @@
 [Emojier]
-recent=🎞️,📽,📺,🍪,✅,🎹,🧸,🐼,🔔,🚊,🐝,🦁,🎧,📱,🎞,💻,🏔️,🏔,🍷,🍽️,🖼️,🌴,🌲,🏞️,🏞
-recentDescriptions=film frames,film projector,television,cookie,white heavy check mark,musical keyboard,E11.0 teddy bear,panda face,bell,tram,honeybee,lion face,headphone,mobile phone,film frames,laptop computer,snow-capped mountain,snow-capped mountain,wine glass,fork and knife with plate,framed picture,palm tree,evergreen tree,national park,national park
+recent=🛳️,🏖,🦫,🧸,🏦
+recentDescriptions=passenger ship,beach with umbrella,E13.0 beaver,E11.0 teddy bear,bank
 
 [Window]
 HDMI-A-0 eDP Height 2560x1080=1025
-HDMI-A-0 eDP Width 2560x1080=1274
+HDMI-A-0 eDP Width 2560x1080=2554
 Height 1080=450
 Width 1920=540
+eDP Height 1920x1080=1025
+eDP Width 1920x1080=954
