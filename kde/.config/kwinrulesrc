@@ -4,7 +4,7 @@ update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-vir
 [1]
 Description=FFDEV
 clientmachine=localhost
-size=2554,1050
+size=1274,522
 sizerule=4
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 types=1
