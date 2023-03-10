@@ -606,17 +606,17 @@ require('lazy').setup({
         delete_check_events = "TextChanged",
       },
       -- stylua: ignore
-      keys = {
-        {
-          "<tab>",
-          function()
-            return require("luasnip").jumpable(1) and "<Plug>luasnip-jump-next" or "<tab>"
-          end,
-          expr = true, silent = true, mode = "i",
-        },
-        { "<tab>", function() require("luasnip").jump(1) end, mode = "s" },
-        { "<s-tab>", function() require("luasnip").jump(-1) end, mode = { "i", "s" } },
-      },
+      -- keys = {
+      --   {
+      --     "<tab>",
+      --     function()
+      --       return require("luasnip").jumpable(1) and "<Plug>luasnip-jump-next" or "<tab>"
+      --     end,
+      --     expr = true, silent = true, mode = "i",
+      --   },
+      --   { "<tab>", function() require("luasnip").jump(1) end, mode = "s" },
+      --   { "<s-tab>", function() require("luasnip").jump(-1) end, mode = { "i", "s" } },
+      -- },
     },
 
     -- auto completion
@@ -634,6 +634,7 @@ require('lazy').setup({
       },
       opts = function()
         local cmp = require("cmp")
+        local luasnip = require("luasnip")
         local LSP_KIND_SIGNS = {
           Class = " ",
           Color = " ",
@@ -669,7 +670,7 @@ require('lazy').setup({
           },
           snippet = {
             expand = function(args)
-              require("luasnip").lsp_expand(args.body)
+              luasnip.lsp_expand(args.body)
             end,
           },
           mapping = {
@@ -1412,15 +1413,14 @@ local on_attach = function(_, bufnr)
     vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
   end
 
-  nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
-  nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
-
+  nmap('gR', vim.lsp.buf.rename, '[R]e[n]ame')
+  nmap('ga', vim.lsp.buf.code_action, '[C]ode [A]ction')
   nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
   nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
-  nmap('gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
-  nmap('<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
-  nmap('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
-  nmap('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+  nmap('gi', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
+  nmap('<C-]>', vim.lsp.buf.type_definition, 'Type [D]efinition')
+  nmap('gs', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+  nmap('g=', vim.lsp.buf.format, 'Format current buffer')
 
   -- See `:help K` for why this keymap
   nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
@@ -1428,6 +1428,7 @@ local on_attach = function(_, bufnr)
 
   -- Lesser used LSP functionality
   nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
+
   nmap('<leader>wa', vim.lsp.buf.add_workspace_folder, '[W]orkspace [A]dd Folder')
   nmap('<leader>wr', vim.lsp.buf.remove_workspace_folder, '[W]orkspace [R]emove Folder')
   nmap('<leader>wl', function()
