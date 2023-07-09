@@ -12,6 +12,7 @@ TapToClick=true
 
 [Mouse]
 XLbInptMiddleEmulation=false
+XLbInptNaturalScroll=false
 cursorSize=24
 cursorTheme=cz-Viator-Black-Rotor
 

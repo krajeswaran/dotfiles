@@ -10,6 +10,9 @@ Seen=true
 [Applications][google-chrome]
 Seen=true
 
+[Applications][org.gnome.DejaDup]
+Seen=true
+
 [Applications][org.kde.ksysguard]
 ShowBadges=false
 ShowInHistory=false
@@ -37,6 +40,9 @@ ShowPopupsInDndMode=true
 [Applications][vlc]
 ShowBadges=false
 ShowPopups=false
+
+[DoNotDisturb]
+WhenScreensMirrored=false
 
 [Jobs]
 PermanentPopups=false

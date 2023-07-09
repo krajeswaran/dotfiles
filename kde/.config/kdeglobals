@@ -172,7 +172,7 @@ toolBarFont=Fira Sans,11,-1,5,57,0,0,0,0,0,Medium
 widgetStyle=Breeze
 
 [Icons]
-Theme=Tela
+Theme=Tela-dark
 
 [KDE]
 AnimationDurationFactor=0.25
@@ -193,10 +193,11 @@ Breadcrumb Navigation=false
 Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
+Preview Width=154
 Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true
-Show Preview=false
+Show Preview=true
 Show Speedbar=true
 Show hidden files=true
 Sort by=Date

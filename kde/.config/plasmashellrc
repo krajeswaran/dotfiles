@@ -1,11 +1,13 @@
 [ActionsWidget]
-ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAawAAAACAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA+gAAAAEAAAAAAAAAsgAAAAEAAAAAAAAD6AAAAABk
+ColumnState=AAAA/wAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgMAAAACAQAAAQAAAAAAAAAAAAAAAGT/////AAAAgQAAAAAAAAACAAAA+gAAAAEAAAAAAAABCQAAAAEAAAAAAAAD6AAAAABk
 
 [ConfigDialog]
-HDMI-A-0 eDP Height 2560x1080=514
-HDMI-A-0 eDP Width 2560x1080=567
+HDMI-A-0 eDP Height 2560x1080=464
+HDMI-A-0 eDP Width 2560x1080=580
 Height 1080=561
 Width 1920=605
+eDP Height 1920x1080=556
+eDP Width 1920x1080=665
 eDP-1 HDMI-A-1 Height 2560x1080=514
 eDP-1 HDMI-A-1 Width 2560x1080=567
 
@@ -30,9 +32,6 @@ Width 1920=463
 LaunchCounts=2 services_kcm_style.desktop,1 services_fontinst.desktop,1 services_org.qbittorrent.qBittorrent.desktop,1 desktopsessions_1,1 services_keys.desktop,1 services_org.kde.yakuake.desktop,1 services_org.kde.dolphin.desktop,1 services_kwintabbox.desktop,1 services_autostart.desktop,1 services_slack.desktop,1 desktopsessions_4,1 services_systemsettings.desktop,1 services_kcm_keyboard.desktop,1 services_org.kde.kcalc.desktop,2 services_kwindecoration.desktop,1 services_kcm_pulseaudio.desktop,1 services_firefox.desktop,1 services_kwinscreenedges.desktop,3 services_org.kde.konsole.desktop,1 services_mouse.desktop,1 services_rxvt-unicode.desktop,1 services_powerdevilprofilesconfig.desktop,1 services_exec::plasma-discover --mode update,1 services_kcm_activities.desktop,1 services_powerdevilglobalconfig.desktop,1 services_componentchooser.desktop
 pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconverter
 
-[PlasmaTransientsConfig]
-PreloadWeight=2
-
 [PlasmaViews][Panel 2][Defaults]
 thickness=24
 
@@ -49,8 +48,8 @@ thickness=40
 thickness=40
 
 [ScreenConnectors]
-0=HDMI-A-0
-1=eDP
+0=eDP
+1=HDMI-A-0
 2=eDP-1
 
 [Updates]

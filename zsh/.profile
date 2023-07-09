@@ -20,7 +20,7 @@
 alias ejectusb="udisksctl power-off -b "
 alias kssh="kitty +kitten ssh"
 alias kiv="kitty +kitten icat "
-alias restart_kde="killall plasmashell; kwin --replace & kstart plasmashell & exit"
+alias restart_kde="export DISPLAY=:0; killall plasmashell; kwin --replace & kstart5 plasmashell & exit"
 
 ############ OS ENV ######################
 # export JAVA_HOME=/Library/Java/Home
@@ -41,7 +41,7 @@ export LANG=en_US.UTF-8
 export EDITOR='nvim'
 export USE_CCACHE=1
 export CCACHE_COMPRESS=1
-export LD_LIBRARY_PATH=${ANDROID_SDK_ROOT}/emulator/lib64:${ANDROID_SDK_ROOT}/emulator/lib64/qt/lib
+#export LD_LIBRARY_PATH=${ANDROID_SDK_ROOT}/emulator/lib64:${ANDROID_SDK_ROOT}/emulator/lib64/qt/lib
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 
 xo() {

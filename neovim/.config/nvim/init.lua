@@ -371,6 +371,11 @@ require('lazy').setup({
       end,
     },
 
+    {
+      'kevinhwang91/nvim-bqf',
+      event = { "VeryLazy"},
+    },
+
     -- indent guides for Neovim
     {
       "lukas-reineke/indent-blankline.nvim",
@@ -424,16 +429,13 @@ require('lazy').setup({
         },
         routes = {
           {
-            filter = { 
-              event = "msg_show", 
-              kind = "",
-              find = "written",
+            filter = {
+              event = "msg_show",
+              ["not"] = {
+                kind = { "confirm", "confirm_sub" },
+              },
             },
-            opts = { skip = true },
-          },
-          {
-            view = "split",
-            filter = { event = "msg_show", min_height = 20 },
+            opts = { view = true },
           },
         },
       },
@@ -485,10 +487,16 @@ require('lazy').setup({
         if isEditor() then
           src = {
             -- completions
-            -- null_ls.builtins.completion.spell,
+            nls.builtins.completion.spell,
             --null_ls.builtins.diagnostics.vale,
 
+            nls.builtins.diagnostics.eslint_d, 
+            nls.builtins.diagnostics.pylint, 
+            nls.builtins.diagnostics.flake8, 
+            nls.builtins.diagnostics.shellcheck, 
+
             -- formatting sources
+            nls.builtins.formatting.lua_format,
             nls.builtins.formatting.autopep8, 
             nls.builtins.formatting.black, 
           } 
@@ -508,21 +516,21 @@ require('lazy').setup({
             nls.builtins.diagnostics.eslint_d, 
             nls.builtins.diagnostics.pylint, 
             nls.builtins.diagnostics.flake8, 
-            -- nls.builtins.diagnostics.shellcheck, 
+            nls.builtins.diagnostics.shellcheck, 
 
             -- formatting sources
             nls.builtins.formatting.autopep8, 
             nls.builtins.formatting.black, 
             -- nls.builtins.formatting.codespell, 
-            -- nls.builtins.formatting.lua_format,
+            nls.builtins.formatting.lua_format,
             nls.builtins.formatting.eslint_d,
             nls.builtins.formatting.prettierd.with({
               filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "scss", "less", "graphql", "handlebars" }
             }), 
-            -- nls.builtins.formatting.shfmt, 
+            nls.builtins.formatting.shfmt, 
             nls.builtins.formatting.sqlformat, 
-            nls.builtins.formatting.terraform_fmt, 
-            -- nls.builtins.formatting.uncrustify, 
+            --nls.builtins.formatting.terraform_fmt, 
+            nls.builtins.formatting.uncrustify, 
           }
         end
 
@@ -992,7 +1000,7 @@ require('lazy').setup({
       lazy = true,
     },
     {
-      'NvChad/nvim-colorizer.lua',
+      "Pocco81/auto-save.nvim",
       lazy = true,
       event = { "BufReadPre", "BufNewFile" },
     },
@@ -1455,10 +1463,10 @@ local servers = {
   sqlls = {},
   jsonls = {
     -- lazy-load schemastore when needed
-    on_new_config = function(new_config)
-      new_config.settings.json.schemas = new_config.settings.json.schemas or {}
-      vim.list_extend(new_config.settings.json.schemas, require("schemastore").json.schemas())
-    end,
+    -- on_new_config = function(new_config)
+    --   new_config.settings.json.schemas = new_config.settings.json.schemas or {}
+    --   vim.list_extend(new_config.settings.json.schemas, require("schemastore").json.schemas())
+    -- end,
     settings = {
       json = {
         format = {

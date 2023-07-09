@@ -47,7 +47,7 @@ PreloadWeight=0
 
 [Containments][18][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=845
+ToolBoxButtonX=525
 ToolBoxButtonY=24
 
 [Containments][18][Wallpaper][org.kde.color][General]
@@ -139,7 +139,7 @@ DialogHeight=600
 DialogWidth=800
 
 [Containments][2][Applets][66][Configuration][General]
-launchers=preferred://filemanager,applications:start-librewolf.desktop,applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:firefox-dev.desktop
+launchers=preferred://filemanager,applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:firefox-dev.desktop,applications:librewolf.desktop
 maxStripes=1
 middleClickAction=Close
 showOnlyCurrentActivity=false
@@ -165,7 +165,7 @@ DialogWidth=800
 
 [Containments][2][ConfigDialog]
 DialogHeight=85
-DialogWidth=2560
+DialogWidth=1920
 
 [Containments][2][Configuration]
 PreloadWeight=0
@@ -178,6 +178,7 @@ ItemGeometries-1920x1080=Applet-74:1440,128,208,80,0;
 ItemGeometries-2560x1080=Applet-74:1440,128,208,80,0;
 ItemGeometries-640x480=Applet-74:1536,112,208,80,0;
 ItemGeometriesHorizontal=Applet-74:1440,128,208,80,0;
+ItemGeometriesVertical=Applet-74:1440,128,208,80,0;
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
 formfactor=0
 immutability=1
@@ -191,7 +192,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][28][Applets][74][Configuration]
-PreloadWeight=75
+PreloadWeight=67
 
 [Containments][28][Applets][74][Configuration][Appearance]
 customDateFormat=MMM d
@@ -261,6 +262,9 @@ PreloadWeight=100
 DialogHeight=1031
 DialogWidth=1920
 
+[Containments][7][Applets][10][Configuration][General]
+raiseMaximumVolume=true
+
 [Containments][7][Applets][11][Configuration]
 PreloadWeight=42
 
@@ -269,7 +273,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][7][Applets][12][Configuration]
-PreloadWeight=69
+PreloadWeight=100
 
 [Containments][7][Applets][13]
 immutability=1
@@ -290,14 +294,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=50
+PreloadWeight=100
 
 [Containments][7][Applets][16]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][7][Applets][16][Configuration]
-PreloadWeight=94
+PreloadWeight=100
 
 [Containments][7][Applets][17]
 immutability=1
@@ -334,12 +338,8 @@ PreloadWeight=0
 [Containments][7][Applets][56][Configuration]
 PreloadWeight=42
 
-[Containments][7][Applets][67]
-immutability=1
-plugin=org.kde.plasma.nightcolorcontrol
-
 [Containments][7][Applets][67][Configuration]
-PreloadWeight=0
+PreloadWeight=42
 
 [Containments][7][Applets][68]
 immutability=1
@@ -367,21 +367,32 @@ immutability=1
 plugin=org.kde.plasma.printmanager
 
 [Containments][7][Applets][70][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][7][Applets][71]
 immutability=1
 plugin=org.kde.plasma.vault
 
 [Containments][7][Applets][71][Configuration]
-PreloadWeight=10
+PreloadWeight=2
 
 [Containments][7][Applets][75]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][75][Configuration]
-PreloadWeight=55
+PreloadWeight=100
+
+[Containments][7][Applets][76]
+immutability=1
+plugin=fokus
+
+[Containments][7][Applets][76][Configuration][ConfigDialog]
+DialogHeight=600
+DialogWidth=800
+
+[Containments][7][Applets][77][Configuration]
+PreloadWeight=42
 
 [Containments][7][ConfigDialog]
 DialogHeight=480
@@ -391,8 +402,8 @@ DialogWidth=640
 PreloadWeight=0
 
 [Containments][7][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kdeconnect,touchpad,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.diskquota,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.clipboard
-hiddenItems=touchpad,org.kde.plasma.keyboardlayout,ibus-ui-gtk3
+extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,touchpad,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.diskquota,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.clipboard,fokus,org.kde.plasma.battery
+hiddenItems=touchpad,org.kde.plasma.keyboardlayout,ibus-ui-gtk3,KDE Daemon,fokus
 knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.vault
 scaleIconsToFit=true
 shownItems=org.kde.plasma.volume,Slack1,org.kde.plasma.clipboard

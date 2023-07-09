@@ -5,7 +5,7 @@ S1='d'
 S2='r'
 
 # Backup destination
-backdest=${HOME}/backups
+backdest=/home/backups
 mkdir -p "$backdest"
 
 # Labels for backup name
@@ -16,7 +16,7 @@ date=$(date "+%F")
 backupfile="$backdest/$pc-$distro-$distro_release-$date.tar.gz"
 
 # Exclude file location
-exclude_file="${HOME}/.config/backup-excludes.cfg"
+exclude_file="${HOME}/backup-excludes.cfg"
 
 #Check if run as root
 ROOT_UID="0"
@@ -91,7 +91,7 @@ fi
 
 # print possible backup file size and home dir size
 echo Calculating filesystem size........
-du -h -d 2 --exclude-from=$exclude_file /
+du -h -d 3 --exclude-from=$exclude_file /
 echo Does this look okay?
 proceed_yesorno
 [[ $REPLY != [yY] ]] && exit
