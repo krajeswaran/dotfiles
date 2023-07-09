@@ -23,7 +23,7 @@ export NODE_PATH=${HOME}/.node/lib/node_modules:$NODE_PATH
 #proxy_on # proxy on by default
 
 alias ls="lsd"
-alias vi="vim"
+alias vi="nvim"
 alias ejectusb="udisksctl power-off -b "
 alias fd="fdfind"
 export PATH=/usr/sbin:/usr/local/bin:${GRADLE_HOME}/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${GEM_PATH}/bin:${HOME}/bin:${GRAILS_HOME}/bin:${GOPATH}/bin:${HOME}/.node/bin:${HOME}/.local/bin:${PATH}

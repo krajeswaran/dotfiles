@@ -1,6 +1,5 @@
 java
-firefox
-Caskroom/cask/iterm2
 android-platform-tools
-macvim
-visual-studio-code
+neovim
+cocoapods
+python

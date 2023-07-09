@@ -24,7 +24,6 @@ cscope
 curl 
 wget 
 progress 
-vim --with-cscope --with-lua --with-ruby --with-python3 --with-client-server --with-feature=huge
 ack 
 p7zip 
 unrar 
@@ -41,4 +40,8 @@ socat
 openssl
 sshfs
 bat
-diff-so-fancy
+git-delta
+lsd
+samba
+yarn
+nvm

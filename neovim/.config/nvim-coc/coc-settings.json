@@ -34,7 +34,9 @@
     "default": "\uf29c"
   },
   //diagnostic
-  "diagnostic.signOffset": 9999999,
+  "diagnostic.virtualTextCurrentLineOnly": true,
+  "diagnostic.enableMessage": "jump",
+  "diagnostic.virtualText": true,
   "diagnostic.errorSign": "●",
   "diagnostic.warningSign": "●",
   "diagnostic.infoSign": "●",
@@ -42,22 +44,16 @@
   "diagnostic.refreshOnInsertMode": true,
   //Snippet
   "coc.preferences.snippetStatusText": "Ⓢ ",
-  //CocList
-  "list.source.files.defaultOptions": ["--auto-preview"],
-  "list.source.outline.defaultOptions": ["--auto-preview"],
-  "list.source.files.args": ["--hidden", "--files"],
   //prettier
-  //"coc.preferences.formatOnSaveFiletypes": [
-  //  "html",
-  //  "css",
-  //  "markdown",
-  //  "javascript",
-  //  "javascriptreact",
-  //  "typescript",
-  //  "typescriptreact",
-  //  "go",
-  //  "json"
-  //],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "html",
+    "css",
+    "javascript",
+    "javascriptreact",
+    "typescriptreact",
+    "go",
+    "json"
+  ],
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "prettier.statusItemText": "ⓟ ",
@@ -69,28 +65,17 @@
   "cursors.nextKey": "<C-n>",
   "cursors.previousKey": "<C-p>",
   "cursors.cancelKey": "<esc>",
-  //sessions
-  "session.directory": "~/.cache/vim/session",
   // coc-explorer
   "explorer.icon.expanded": "▾",
   "explorer.icon.collapsed": "▸",
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
-  "explorer.quitOnOpen": true,
-  "explorer.keyMappings": {
+  "explorer.quitOnOpen": false,
+  "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
   "explorer.openAction.strategy": "sourceWindow",
-  // eslint
-  "eslint.filetypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.autoFix": true,
+  "eslint.codeActionsOnSave.mode": "all",
   "eslint.autoFixOnSave": true
-  // coc-list
-  // coc-actions
 }
