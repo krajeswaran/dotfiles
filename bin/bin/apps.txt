@@ -3,3 +3,5 @@ android-platform-tools
 neovim
 cocoapods
 python
+go
+kitty

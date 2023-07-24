@@ -4,7 +4,7 @@
 [github.com]
     user = krajewaran
 [color]
-    ui = true
+	ui = true
 [credential]
     helper = cache --timeout 7200
 [help]
@@ -12,12 +12,37 @@
 [core]
     mergeoptions = --no-edit
     editor = nvim -f
+
 [init]
     templatedir = ~/.git_template
-[diff]
-    tool = vimdiff
-[difftool]
-    prompt = false
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[delta]
+    side-by-side = true
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+
+[interactive]
+    diffFilter = delta --color-only
 
 [merge]
 tool = vim_mergetool
