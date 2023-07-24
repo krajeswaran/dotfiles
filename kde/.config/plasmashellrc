@@ -48,8 +48,8 @@ thickness=40
 thickness=40
 
 [ScreenConnectors]
-0=eDP
-1=HDMI-A-0
+0=HDMI-A-0
+1=eDP
 2=eDP-1
 
 [Updates]
