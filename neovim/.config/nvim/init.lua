@@ -1,6 +1,6 @@
--- pre-requisites
--- Mason it or yarn global add typescript bash-language-server sql-language-server @fsouza/prettierd typescript-language-server vscode-langservers-extracted
+-- TODO path complition in isEditor, nullls crapping out, rome instead of eslintd, isEditor/markdown: use better hover/formatter/diagnostings from nullls instead of vale
 -- TODO debug mode
+
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)

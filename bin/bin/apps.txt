@@ -1,3 +1,4 @@
+xdotool
 android-tools-adb
 android-tools-fastboot
 aria2

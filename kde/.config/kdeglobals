@@ -154,7 +154,7 @@ parseMode=2
 
 [General]
 AccentColor=146,110,228
-BrowserApplication=userapp-Firefox Developer Edition-RNM4L1.desktop
+BrowserApplication=chromium.desktop
 ColorSchemeHash=625c32ae46f33771aca7694ab0deae5a44bbf41c
 Name=Arc Dark
 TerminalApplication=kitty
@@ -193,7 +193,7 @@ Breadcrumb Navigation=false
 Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
-Preview Width=154
+Preview Width=243
 Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true

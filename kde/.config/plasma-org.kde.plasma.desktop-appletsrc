@@ -139,7 +139,7 @@ DialogHeight=600
 DialogWidth=800
 
 [Containments][2][Applets][66][Configuration][General]
-launchers=preferred://filemanager,applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:firefox-dev.desktop,applications:librewolf.desktop
+launchers=preferred://filemanager,applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:firefox-dev.desktop,applications:librewolf.desktop,applications:chromium.desktop
 maxStripes=1
 middleClickAction=Close
 showOnlyCurrentActivity=false
