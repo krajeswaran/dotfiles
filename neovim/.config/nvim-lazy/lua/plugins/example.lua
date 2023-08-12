@@ -19,6 +19,15 @@ return {
   { "RRethy/vim-illuminate", enabled = false },
   { "SmiteshP/nvim-navic", enabled = false },
 
+  -- themes
+  { "pgdouyon/vim-yin-yang", enabled = isEditor() },
+
+  -- git signs not in editor mode
+  {
+    "lewis6991/gitsigns.nvim",
+    enabled = not isEditor(),
+  },
+
   -- status line
   {
     "nvim-lualine/lualine.nvim",
@@ -109,19 +118,7 @@ return {
   },
 
   -- undotree
-  {
-    "jiaoshijie/undotree",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    keys = {
-      -- add a keymap to browse plugin files
-      -- stylua: ignore
-      {
-        '<leader>U',
-        "<cmd>lua require('undotree').toggle()<CR>",
-        desc = "Undo tree"
-      },
-    },
-  },
+  { "simnalamburt/vim-mundo", cmd = "MundoToggle" },
 
   -- change some telescope options and a keymap to browse plugin files
   {
@@ -230,6 +227,7 @@ return {
     cmd = "Goyo",
     lazy = true,
     event = { "BufReadPre", "BufNewFile" },
+    enabled = isEditor(),
   },
   {
     "Wansmer/treesj",

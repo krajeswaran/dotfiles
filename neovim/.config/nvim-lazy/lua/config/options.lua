@@ -2,8 +2,6 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
--- TODO taskpaper/notes mode
-
 -- Save undo history
 vim.opt.undofile = true
 vim.opt.undodir = os.getenv("HOME") .. "/" .. ".nvimundo"
@@ -48,34 +46,6 @@ vim.api.nvim_exec(
   ]],
   false
 )
-
--- Set colorscheme
-local term = os.getenv("TERMPURPOSE")
-if term == "console" then
-  vim.opt.background = "dark"
-  vim.cmd([[
-    colorscheme murphy
-    highlight Pmenu guibg=0 ctermbg=0
-    highlight SignColumn guibg=0 ctermbg=0
-    ]])
-elseif term == "editor" then
-  vim.cmd([[
-    colorscheme yin
-    highlight EndOfBuffer guifg=#1c1c1c
-    ]])
-else
-  vim.opt.background = "dark"
-  if term == "api" then
-    vim.g.sonokai_style = "andromeda"
-  else
-    vim.g.sonokai_style = "maia"
-  end
-  vim.g.sonokai_enable_italic = 1
-  vim.g.sonokai_show_eob = 0
-  vim.g.sonokai_diagnostic_text_highlight = 1
-  vim.g.sonokai_better_performance = 1
-  vim.cmd([[colorscheme sonokai]])
-end
 
 -- set whichwrap
 vim.opt.whichwrap = "b,s,h,l,<,>,[,]"
