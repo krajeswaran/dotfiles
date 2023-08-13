@@ -62,3 +62,6 @@ vim.opt.diffopt = vim.o.diffopt .. ",vertical,indent-heuristic,iwhiteall,algorit
 
 -- tab / indent stuff
 vim.opt.softtabstop = 2
+
+-- dark bg
+vim.go.background = "dark"

@@ -5,12 +5,12 @@
 -- color fuckery
 local term = os.getenv("TERMPURPOSE")
 if term == "console" then
-  vim.o.background = "dark"
-  vim.cmd([[
-    colorscheme murphy
-    highlight Pmenu guibg=0 ctermbg=0
-    highlight SignColumn guibg=0 ctermbg=0
-    ]])
+  vim.cmd.colorscheme("tokyonight-night")
+  -- vim.cmd([[
+  --   colorscheme murphy
+  --   highlight Pmenu guibg=0 ctermbg=0
+  --   highlight SignColumn guibg=0 ctermbg=0
+  --   ]])
 elseif term == "editor" then
   vim.cmd([[
     colorscheme yin
