@@ -11,7 +11,7 @@ autoload=true
 autoload=false
 
 [Module-colorcorrectlocationupdater]
-autoload=true
+autoload=false
 
 [Module-device_automounter]
 autoload=false
@@ -47,7 +47,7 @@ autoload=true
 autoload=true
 
 [Module-kwrited]
-autoload=true
+autoload=false
 
 [Module-networkmanagement]
 autoload=true
@@ -83,4 +83,4 @@ autoload=true
 autoload=true
 
 [Module-wacomtablet]
-autoload=true
+autoload=false

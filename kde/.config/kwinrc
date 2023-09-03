@@ -14,8 +14,9 @@ XRenderSmoothScale=false
 
 [Desktops]
 Id_1=180d68a3-26ea-4434-95d0-eeb68d341a49
+Id_2=707fc1bb-a227-4325-9217-735155f4e98a
 Name_1=Workspace 1
-Number=1
+Number=2
 Rows=1
 
 [Effect-CoverSwitch]
@@ -106,7 +107,7 @@ enableQuarterLayout=true
 enableSpiralLayout=false
 enableSpreadLayout=false
 enableStairLayout=false
-floatingClass=slack,okular,librewolf-default,keepassxc,kwrite,dolphin,gwenview,systemsettings,mpv,bitwarden
+floatingClass=slack,okular,librewolf-default,keepassxc,kwrite,dolphin,gwenview,systemsettings,mpv,bitwarden,ark
 ignoreScreen=1
 keepFloatAbove=false
 layoutPerActivity=false

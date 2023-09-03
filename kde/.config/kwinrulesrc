@@ -11,7 +11,6 @@ title=Android Emulator - emu:5554
 titlematch=1
 types=1
 wmclasscomplete=true
-wmclassmatch=1
 
 [10e78ba0-6e57-4ef0-af83-2de70281dd61]
 Description=virt-manager
@@ -23,7 +22,7 @@ wmclassmatch=1
 Description=FFDEV
 clientmachine=localhost
 screen=1
-size=1274,1050
+size=2554,1050
 sizerule=4
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 types=1

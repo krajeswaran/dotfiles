@@ -3,7 +3,6 @@ _k_friendly_name=Activity Manager
 switch-to-activity-eaf11a9b-32d8-4c20-9ebc-233e522ba4e2=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
-Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
 Switch to Next Keyboard Layout=none,Ctrl+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
@@ -59,11 +58,11 @@ Reboot Without Confirmation=none,,Reboot Without Confirmation
 _k_friendly_name=Session Management
 
 [kwin]
-Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
+Activate Window Demanding Attention=none,Ctrl+Alt+A,Activate Window Demanding Attention
 Decrease Opacity=none,,Decrease Opacity of Active Window by 5 %
-Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
+Expose=none,Ctrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
-ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
+ExposeClass=Meta+`,Ctrl+F7,Toggle Present Windows (Window class)
 Exquisite=none,none,Exquisite
 FlipSwitchAll=none,none,Toggle Flip Switch (All desktops)
 FlipSwitchCurrent=none,none,Toggle Flip Switch (Current desktop)
@@ -209,7 +208,7 @@ Window to Screen 4=none,,Window to Screen 4
 Window to Screen 5=none,,Window to Screen 5
 Window to Screen 6=none,,Window to Screen 6
 Window to Screen 7=none,,Window to Screen 7
-WindowGeometry=Ctrl+Shift+F11,Ctrl+Shift+F11,Toggle window geometry display (effect only)
+WindowGeometry=none,Ctrl+Shift+F11,Toggle window geometry display (effect only)
 _k_friendly_name=KWin
 bismuth_decrease_master_size=none,none,Bismuth: Decrease Master Area Size
 bismuth_decrease_master_win_count=none,none,Bismuth: Decrease Master Area Window Count

@@ -18,6 +18,14 @@ return {
   { "dstein64/vim-startuptime", enabled = false },
   { "RRethy/vim-illuminate", enabled = false },
   { "SmiteshP/nvim-navic", enabled = false },
+  { "folke/flash.nvim", enabled = false },
+
+  -- project mainily for yarn workspaces
+  {
+    "ahmedkhalf/project.nvim",
+    lazy = true,
+    opts = { ignore_lsp = { "null-ls" } },
+  },
 
   -- themes
   { "pgdouyon/vim-yin-yang", enabled = isEditor() },
@@ -132,7 +140,7 @@ return {
         desc = "Search notes"
       },
       {
-        "<leader>c",
+        "<leader>C",
         "[[:e $MYVIMRC <CR>]]",
         desc = "Edit config",
       },
