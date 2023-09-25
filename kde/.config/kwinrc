@@ -1,5 +1,5 @@
 [$Version]
-update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered
 
 [Compositing]
 Backend=OpenGL
@@ -13,11 +13,19 @@ OpenGLIsUnsafe=false
 XRenderSmoothScale=false
 
 [Desktops]
+BorderActivate=9
+BorderActivateCylinder=9
+BorderActivateSphere=9
 Id_1=180d68a3-26ea-4434-95d0-eeb68d341a49
-Id_2=707fc1bb-a227-4325-9217-735155f4e98a
 Name_1=Workspace 1
-Number=2
+Number=1
+Reflection=false
 Rows=1
+TabBox=false
+TabBoxAlternative=false
+TouchBorderActivate=9
+TouchBorderActivateCylinder=9
+TouchBorderActivateSphere=9
 
 [Effect-CoverSwitch]
 Reflection=false
@@ -48,6 +56,22 @@ TouchBorderActivateAll=7
 TouchBorderActivateClass=9
 
 [Effect-Zoom]
+InitialZoom=1
+
+[Effect-desktopgrid]
+BorderActivate=9
+TabBox=false
+TabBoxAlternative=false
+TouchBorderActivate=9
+
+[Effect-presentwindows]
+BorderActivate=9
+BorderActivateClass=9
+TouchBorderActivate=9
+TouchBorderActivateAll=7
+TouchBorderActivateClass=9
+
+[Effect-zoom]
 InitialZoom=1
 
 [ElectricBorders]
@@ -157,12 +181,21 @@ ActivitiesMode=0
 ApplicationsMode=0
 DesktopMode=0
 HighlightWindows=true
-LayoutName=big_icons
+LayoutName=thumbnail_grid
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
 ShowTabBox=true
 SwitchingMode=0
+
+[Tiling]
+padding=4
+
+[Tiling][27175eeb-e0e0-5b8b-95e4-40b9c28e7f0f]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][bd455426-91b5-5aa4-b78c-9e21c3c810ab]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [TouchEdges]
 Bottom=None
@@ -203,6 +236,9 @@ ShadeHoverInterval=250
 SnapOnlyWhenOverlapping=false
 TitlebarDoubleClickCommand=Maximize
 WindowSnapZone=10
+
+[Xwayland]
+Scale=1
 
 [org.kde.kdecoration2]
 BorderSize=None

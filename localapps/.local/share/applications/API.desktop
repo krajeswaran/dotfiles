@@ -11,6 +11,7 @@ Name[en_US]=API
 Name=API
 Path=
 StartupNotify=true
+StartupWMClass=libreoffice-impress
 Terminal=false
 TerminalOptions=
 TryExec=kitty

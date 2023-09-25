@@ -77,6 +77,7 @@ Bold=true
 Color=52,146,37
 
 [General]
+ConfigVersion=1
 Description=terminal.sexy
 Opacity=1
 Wallpaper=
@@ -113,4 +114,4 @@ CloseTabButton=None
 TabBarVisibility=AlwaysHideTabBar
 
 [UiSettings]
-ColorScheme=Default
+ColorScheme=

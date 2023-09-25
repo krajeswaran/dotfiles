@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=WebStorm 2023.1.1
+Name=WebStorm 2023.2.2
 Icon=/home/kumaresan/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/.icon.svg
 StartupWMClass=jetbrains-webstorm
 Comment=A JavaScript IDE
-Exec="/home/kumaresan/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/231.8770.64/bin/webstorm.sh" %u
+Exec="/home/kumaresan/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/232.9921.42/bin/webstorm.sh" %u
 Version=1.0
 Type=Application
 Categories=Development;IDE;

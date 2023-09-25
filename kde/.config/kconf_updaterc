@@ -1,5 +1,10 @@
 updateInfoAdded=true
 
+[ark.upd]
+ctime=1695616857
+done=add-hamburgermenu-to-toolbar
+mtime=1677536372
+
 [breezehighcontrasttobreezedark.upd]
 ctime=1669063186
 done=BreezeHighContrastToBreezeDark
@@ -24,6 +29,11 @@ mtime=1665746530
 ctime=1669063197
 done=PlasmaVolume_DisableKMixAutostart
 mtime=1665743839
+
+[dolphin_detailsmodesettings.upd]
+ctime=1695616869
+done=rename-leading-padding
+mtime=1677470375
 
 [filepicker.upd]
 ctime=1653818677
@@ -62,6 +72,11 @@ ctime=1669063183
 done=IconsRemoveEffects
 mtime=1665746530
 
+[katesession_migration.upd]
+ctime=1695616896
+done=migrate_kate_sessions_applet_to_kdeplasma-addons
+mtime=1677470432
+
 [kcalcrc.upd]
 ctime=1653818703
 mtime=1645985551
@@ -91,9 +106,9 @@ ctime=1653818705
 mtime=1643892411
 
 [konsole_globalaccel.upd]
-ctime=1653048374
+ctime=1695616897
 done=konsole_globalaccel
-mtime=1652664883
+mtime=1677470553
 
 [konversation.upd]
 ctime=1653818713
@@ -141,7 +156,7 @@ mtime=1665743592
 
 [kwin.upd]
 ctime=1669063183
-done=replace-scalein-with-scale,port-minimizeanimation-effect-to-js,port-scale-effect-to-js,port-dimscreen-effect-to-js,auto-bordersize,animation-speed,desktop-grid-click-behavior,no-swap-encourage,make-translucency-effect-disabled-by-default,remove-flip-switch-effect,remove-cover-switch-effect,remove-cubeslide-effect,remove-xrender-backend,enable-scale-effect-by-default
+done=replace-scalein-with-scale,port-minimizeanimation-effect-to-js,port-scale-effect-to-js,port-dimscreen-effect-to-js,auto-bordersize,animation-speed,desktop-grid-click-behavior,no-swap-encourage,make-translucency-effect-disabled-by-default,remove-flip-switch-effect,remove-cover-switch-effect,remove-cubeslide-effect,remove-xrender-backend,enable-scale-effect-by-default,overview-group-plugin-id,animation-speed-cleanup,replace-cascaded-zerocornered
 mtime=1665743365
 
 [kwinrules.upd]
@@ -160,8 +175,8 @@ done=split-variants
 mtime=1665743592
 
 [languagetool_kmail.upd]
-ctime=1653040840
-mtime=1644323526
+ctime=1695616912
+mtime=1677382464
 
 [okular.upd]
 ctime=1653818732
@@ -172,6 +187,11 @@ mtime=1645985462
 ctime=1664531949
 done=bismuth-old-conf-ui
 mtime=1643219624
+
+[plasmashell-5.27-use-panel-thickness-in-default-group.upd]
+ctime=1695616900
+done=plasmashell-5.27-use-panel-thickness-in-default-group
+mtime=1694514764
 
 [spectacle_clipboard.upd]
 ctime=1653818703
@@ -199,11 +219,11 @@ done=StyleWidgetStyleDefaultBreeze
 mtime=1665746530
 
 [webenginepart.upd]
-ctime=1653048374
+ctime=1695616897
 done=MoveNonPasswordStorableSites
-mtime=1651282821
+mtime=1677301839
 
 [webengineurlinterceptoradblock.upd]
-ctime=1653040840
+ctime=1695616912
 done=webengineurlinterceptoradblock_move_settings
-mtime=1644323526
+mtime=1677382464

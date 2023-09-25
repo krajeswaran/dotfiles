@@ -50,27 +50,24 @@ augroup END
 
 _G.JournalMode = function()
   -- open journal file with date
-  local fname = util.join_paths(os.getenv("HOME"), "notes", "journal", os.date("%Y"), os.date("%d%b") .. ".md")
-  local skeleton = util.join_paths(os.getenv("HOME"), "notes", "journal", "journal.skeleton")
+  local fname =
+    vim.fn.resolve(os.getenv("HOME") .. "/notes/journal/" .. os.date("%Y") .. "/" .. os.date("%d%b") .. ".md")
+  local skeleton = vim.fn.resolve(os.getenv("HOME") .. "/notes/journal/" .. "journal.skeleton")
   vim.api.nvim_command("e " .. fname)
   vim.api.nvim_command("0r " .. skeleton)
-  vim.api.nvim_command("Goyo")
-  vim.api.nvim_command("set statusline=")
-  vim.api.nvim_command("set signcolumn=no")
+  vim.api.nvim_command("set autowriteall")
   vim.api.nvim_command("set spell!")
 end
 
 _G.ScratchPad = function()
   -- open journal file with date
-  local fname = util.join_paths(os.getenv("HOME"), "scratch.md")
+  local fname = vim.fn.resolve(os.getenv("HOME") .. "/" .. "scratch.md")
   vim.api.nvim_command("e " .. fname)
   vim.api.nvim_command("Goyo")
-  vim.api.nvim_command("set statusline=")
-  vim.api.nvim_command("set signcolumn=no")
   vim.api.nvim_command("set autowriteall")
 end
 
-vim.api.nvim_set_keymap("n", "<leader>j", ":lua JournalMode()<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>J", ":lua JournalMode()<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>je", ":!~/bin/send-journal %<CR>", { noremap = true })
 vim.cmd([[ command! Journal execute 'lua JournalMode()' ]])
 vim.cmd([[ command! Scratch execute 'lua ScratchPad()' ]])

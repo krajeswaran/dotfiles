@@ -11,6 +11,7 @@ Name[en_US]=APP
 Name=APP
 Path=
 StartupNotify=true
+StartupWMClass=libreoffice-math
 Terminal=false
 TerminalOptions=
 TryExec=kitty
