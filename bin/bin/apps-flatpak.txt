@@ -1,5 +1,0 @@
-firefox-devedition
-ungoogled-chromium
-slack-desktop
-signal-desktop
-vscode

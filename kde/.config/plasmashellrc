@@ -25,6 +25,8 @@ detailViewIconSize=0
 listViewIconSize=0
 
 [KPropertiesDialog]
+2 screens: Height=539
+2 screens: Width=450
 Height 1080=513
 Width 1920=463
 
@@ -36,6 +38,9 @@ pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconver
 thickness=24
 
 [PlasmaViews][Panel 2][Horizontal2560]
+thickness=24
+
+[PlasmaViews][Panel 2][Horizontal5760]
 thickness=24
 
 [PlasmaViews][Panel 37][Defaults]

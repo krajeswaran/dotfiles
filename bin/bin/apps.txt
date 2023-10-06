@@ -14,7 +14,6 @@ fd-find
 fonts-cabin
 fonts-comfortaa
 fonts-ebgaramond
-fonts-firacode
 fonts-font-awesome
 fonts-freefont-ttf
 fonts-go
@@ -29,7 +28,7 @@ gparted
 graphviz
 highlight
 htop
-httpie
+xh
 jq
 keepassxc
 kitty
@@ -38,7 +37,6 @@ lib32z1
 lib32z1-dev
 libbz2-dev
 libdrm2
-libguestfs-tools
 libncurses5-dev
 libncursesw5-dev
 libreadline-dev
@@ -48,14 +46,14 @@ linux-headers-generic
 linux-tools-generic
 lnav
 nmap
-default-jdk-headless
+openjdk-11-jdk-headless
 openssh-server
 p7zip-full
 pandoc
-qemu
 qpdfview
 remmina
 ripgrep
+libreoffice
 rsync
 smbclient
 socat
@@ -69,7 +67,6 @@ ttf-mscorefonts-installer
 uml-utilities
 units
 unrar
-virt-manager
 mpv
 vlc
 wakeonlan
@@ -87,3 +84,7 @@ yakuake
 hunspell
 ssmtp
 xournalpp
+extrepo
+python3-launchpadlib
+python3-pip
+flatpak

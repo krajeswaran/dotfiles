@@ -1,6 +1,5 @@
 thunderbird
 apport
-vim-tiny
 xfce4-verve-plugin
 xfce4-notes
 yelp
@@ -13,7 +12,6 @@ parole
 gmusicbrowser
 sane-utils
 simple-scan
-gnome-*
 sgml-base
 libgnome-games-support-common
 whoopsie

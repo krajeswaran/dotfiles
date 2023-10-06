@@ -7,6 +7,7 @@ migrated=true
 
 [Plugins]
 Kill RunnerEnabled=true
+LibvirtEnabled=false
 PowerDevilEnabled=true
 appstreamEnabled=false
 baloosearchEnabled=false

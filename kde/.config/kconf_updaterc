@@ -105,6 +105,9 @@ mtime=1634660482
 ctime=1653818705
 mtime=1643892411
 
+[konsole.upd]
+done=konsole_globalaccel
+
 [konsole_globalaccel.upd]
 ctime=1695616897
 done=konsole_globalaccel

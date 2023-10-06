@@ -1,5 +1,6 @@
 #!/bin/sh
 
+sudo mount -o rbind /home $1/home
 sudo mount -o rbind /boot/efi $1/boot/efi
 sudo mount -o rbind /proc $1/proc
 sudo mount -o rbind /dev $1/dev

@@ -184,7 +184,7 @@ ShowIconsInMenuItems=true
 ShowIconsOnPushButtons=false
 SingleClick=false
 contrast=4
-widgetStyle=kvantum-dark
+widgetStyle=kvantum
 
 [KFileDialog Settings]
 Allow Expansion=false
