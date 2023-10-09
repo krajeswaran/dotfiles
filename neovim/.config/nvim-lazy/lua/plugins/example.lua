@@ -19,6 +19,7 @@ return {
   { "RRethy/vim-illuminate", enabled = false },
   { "SmiteshP/nvim-navic", enabled = false },
   { "folke/flash.nvim", enabled = false },
+  { "ggandor/leap.nvim", enabled = false },
 
   -- project mainily for yarn workspaces
   {
@@ -320,6 +321,21 @@ return {
       require("treesj").setup({ --[[ your config ]]
       })
     end,
+  },
+
+  {
+    "echasnovski/mini.surround",
+    opts = {
+      mappings = {
+        add = "sa", -- Add surrounding in Normal and Visual modes
+        delete = "sd", -- Delete surrounding
+        find = "sf", -- Find surrounding (to the right)
+        find_left = "sF", -- Find surrounding (to the left)
+        highlight = "sh", -- Highlight surroundng
+        replace = "sr", -- Replace surroundng
+        update_n_lines = "sn", -- Update `n_lines`
+      },
+    },
   },
 
   {
