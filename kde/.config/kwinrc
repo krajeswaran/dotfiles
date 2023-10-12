@@ -1,7 +1,8 @@
 [$Version]
-update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered,bismuth_new_logger.upd:bismuth-new-logger
 
 [Compositing]
+AllowTearing=false
 Backend=OpenGL
 GLColorCorrection=false
 GLCore=true
@@ -115,9 +116,12 @@ enforcedecoEnabled=true
 flipswitchEnabled=true
 highlightwindowEnabled=true
 kdesnapassistEnabled=false
+kwin4_effect_frozenappEnabled=false
+kwin4_effect_maximizeEnabled=false
 kwin4_effect_scaleEnabled=true
 minimizeallEnabled=false
 overviewEnabled=true
+sheetEnabled=true
 snaphelperEnabled=true
 sticky-window-snappingEnabled=true
 synchronizeskipswitcherEnabled=true
@@ -131,6 +135,7 @@ enableQuarterLayout=true
 enableSpiralLayout=false
 enableSpreadLayout=false
 enableStairLayout=false
+enableThreeColumnLayout=false
 floatingClass=slack,okular,librewolf-default,keepassxc,kwrite,dolphin,gwenview,systemsettings,mpv,bitwarden,ark
 ignoreScreen=1
 keepFloatAbove=false
@@ -194,6 +199,12 @@ padding=4
 [Tiling][27175eeb-e0e0-5b8b-95e4-40b9c28e7f0f]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][4656e9c7-29d2-5198-aef7-e64495a298e9]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][72ad67cf-b4bc-5fde-92c9-1ee123acd6a5]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][bd455426-91b5-5aa4-b78c-9e21c3c810ab]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -247,4 +258,3 @@ ButtonsOnLeft=
 ButtonsOnRight=IX
 CloseOnDoubleClickOnMenu=false
 ShowToolTips=false
-theme=__aurorae__svg__Layan-solid

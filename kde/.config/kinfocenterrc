@@ -1,4 +1,6 @@
 [MainWindow]
+2 screens: Height=770
+2 screens: Width=1122
 HDMI-A-0 eDP Height 1920x1080=770
 HDMI-A-0 eDP Height 2560x1080=770
 HDMI-A-0 eDP Width 1920x1080=1122

@@ -88,3 +88,7 @@ extrepo
 python3-launchpadlib
 python3-pip
 flatpak
+wavemon
+kwin-bismuth
+materia-kde
+materia-gtk-theme

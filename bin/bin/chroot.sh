@@ -8,4 +8,4 @@ sudo mount -o rbind /dev/pts $1/dev/pts
 sudo mount -o rbind /sys $1/sys
 sudo mount -o rbind /run $1/run
 sudo cp /etc/resolv.conf $1/etc/resolv.conf
-sudo chroot $1 /bin/bash
+sudo chroot $1 /bin/zsh

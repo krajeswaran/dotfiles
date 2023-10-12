@@ -3,6 +3,7 @@ update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_valu
 
 [General]
 confirmLogout=false
+excludeApps=klipper
 loginMode=emptySession
 shutdownType=2
 

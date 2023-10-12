@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Application;Editor;
+Comment=Notes
+Exec=kitty --class kwrite --title Notes --config /home/kumaresan/.config/kitty/editor.conf -d /home/kumaresan/notes/ zsh -l -c /home/linuxbrew/.linuxbrew/bin/nvim
+GenericName=Notes
+Icon=kwrite
+Name=Notes
+StartupNotify=true
+StartupWMClass=kwrite
+TryExec=kitty
+Type=Application

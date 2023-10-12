@@ -11,10 +11,11 @@ RepeatRate=25
 TapToClick=true
 
 [Mouse]
+X11LibInputXAccelProfileFlat=false
 XLbInptMiddleEmulation=false
 XLbInptNaturalScroll=false
 cursorSize=24
-cursorTheme=cz-Viator-Black-Rotor
+cursorTheme=Adwaita
 
 [Tmp]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize
