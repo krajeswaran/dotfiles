@@ -27,30 +27,34 @@ if [ $? -eq 0 ]; then
 fi
 
 echo "Here are things you might want to do: 
-    - password, groups and sudoers
-    - setup zsh, chsh
+    x make sure fstab is hardlinked and updated
+    x password, groups and sudoers
+    x setup zsh, chsh
+    - swap fn key with ctrl
+    - fuck off with grub
+    - fix nvim startup
     - uninstall crap
     - install stuff in ~/sw
-    - setup extra repos: default sources, extrepo enable
-    - apt-repo: librewolf
-    - apt-repo: keepassxc
+    x firefox dev edition install
+    x setup firefox dev + ublock
+    x apt-repo: librewolf
+    x apt-repo: keepassxc
     - apt-repo: slack
-    - apt-repo: google-drive-ocamlfuse
+    x apt-repo: google-drive-ocamlfuse
     - apt-repo: postgres older versions
     - apt-repo: webstorm, intellij apps
     - apt-repo: android-studio
-    - apt-repo: ungoogled-chromium
     - bluetooth
+    - pipewire
     - wifi
     - homebrew install: xargs brew install < ~/bin/apps-brew.txt
     - python install: pip3 install -r ~/bin/apps-pip.txt
     - yarn install: xargs yarn global install  < ~/bin/apps-yarn.txt
-    - flatpak install:  xargs flatpak install < ~/bin/apps-flatpak.txt
-    - setup local ungoogled-chromium
+    - setup local chromium
     - setup neovim: checkhealth
-    - setup google-drive-ocamlfuse + setup keepassxc
-    - keyboard shortcuts
-    - gtk/xfce/kde themes: Layan theme, kvantum engine, cz-viator mouse cursor: https://store.kde.org/p/1229367/ etc
+    x setup google-drive-ocamlfuse + setup keepassxc
+    - keyboard shortcuts: handle fn/caps lock keys
+    - gtk/xfce/kde themes: Materia theme, kvantum engine, cz-viator mouse cursor: https://store.kde.org/p/1229367/ etc
     - install proj stuff
     - syncthing setup
     - fonts fuckery: install nerd-fonts: Hack, Jetbrains, Fira Sans

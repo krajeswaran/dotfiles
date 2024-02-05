@@ -7,6 +7,10 @@ NumLock=2
 RepeatDelay=600
 RepeatRate=25
 
+[Libinput][1739][52973][VEN_06CB:00 06CB:CEED Touchpad]
+ClickMethod=2
+TapToClick=true
+
 [Libinput][2][14][ETPS/2 Elantech Touchpad]
 TapToClick=true
 

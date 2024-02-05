@@ -92,3 +92,5 @@ wavemon
 kwin-bismuth
 materia-kde
 materia-gtk-theme
+chromium
+cmus

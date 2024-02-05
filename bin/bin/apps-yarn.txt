@@ -1,17 +1,8 @@
-@fsouza/prettierd
 bash-language-server
-create-react-app@4.0.0
-eslint_d
-expo-cli@4.4.3
-html
-jsonls
 mermaid-filter
 nb.sh
-prettier
 sharp-cli
 sql-language-server
 svgo
 typescript@4.4.4
-typescript-language-server
-vscode-langservers-extracted
 
