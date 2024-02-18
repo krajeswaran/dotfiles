@@ -15,4 +15,4 @@ helix
 dust
 fzf
 nvm
-yarn
+awscli

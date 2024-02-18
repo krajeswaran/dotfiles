@@ -2,6 +2,7 @@
 AntiAliasFonts=true
 BoldIntense=false
 ColorScheme=nkonsole
+EmojiFont=Noto Color Emoji,11,-1,5,50,0,0,0,0,0
 Font=Hack Nerd Font,14,-1,5,50,0,0,0,0,0
 UseFontLineChararacters=true
 

@@ -85,3 +85,4 @@ nmap <leader>f9 :set foldlevel=9<CR>
 nmap <silent> <leader>/ :nohlsearch<CR>
 
 
+set clipboard^=ideaput

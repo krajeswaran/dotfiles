@@ -25,8 +25,8 @@ vim.opt.autoread = true
 -- no tabline
 vim.opt.showtabline = 0
 
--- no SignColumn
-vim.opt.signcolumn = "auto"
+-- no Status column
+vim.opt.statuscolumn = ""
 
 -- open last mark
 vim.cmd([[

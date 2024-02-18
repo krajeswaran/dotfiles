@@ -145,8 +145,8 @@ Size=48
 Size=32
 
 [DirSelect Dialog]
-DirSelectDialog Size=849,574
-History Items[$e]=file:$HOME/videos/mnt/tv/Yellowjackets.S01.1080p.WEBRip.x265[eztv.re],file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
+DirSelectDialog Size=874,601
+History Items[$e]=file:$HOME/videos,file:$HOME/dumps,file:$HOME/videos/mnt/tv/Yellowjackets.S01.1080p.WEBRip.x265[eztv.re],file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
 
 [Emoticons]
 emoticonsTheme=GoogleEmojiComplete
@@ -190,17 +190,17 @@ Breadcrumb Navigation=false
 Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
-Preview Width=154
+Preview Width=242
 Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=true
 Show Speedbar=true
 Show hidden files=true
-Sort by=Date
+Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
-Sort reversed=true
+Sort reversed=false
 Speedbar Width=89
 View Style=Detail
 listViewIconSize=0

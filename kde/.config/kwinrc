@@ -172,7 +172,7 @@ BorderActivate=9
 BorderAlternativeActivate=9
 DesktopMode=0
 HighlightWindows=true
-LayoutName=present_windows
+LayoutName=thumbnail_grid
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
@@ -186,7 +186,6 @@ ActivitiesMode=0
 ApplicationsMode=0
 DesktopMode=0
 HighlightWindows=true
-LayoutName=thumbnail_grid
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
@@ -208,7 +207,16 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][4656e9c7-29d2-5198-aef7-e64495a298e9]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][5b7a5ba4-43cc-5910-8e98-f358f9d54b43]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][72ad67cf-b4bc-5fde-92c9-1ee123acd6a5]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][8309888d-c9d6-531b-84fb-9b873d2cf917]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][bbd12e85-9b4a-56e1-9c5d-51dbf6280a39]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][bd455426-91b5-5aa4-b78c-9e21c3c810ab]
