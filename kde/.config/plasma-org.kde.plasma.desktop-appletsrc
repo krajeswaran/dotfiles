@@ -27,7 +27,9 @@ run associated application=true
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][18]
+ItemGeometries-1536x960=
 ItemGeometries-1920x1080=
+ItemGeometries-1920x1200=
 ItemGeometries-2560x1080=
 ItemGeometriesHorizontal=
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
@@ -47,7 +49,7 @@ PreloadWeight=0
 
 [Containments][18][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=845
+ToolBoxButtonX=334
 ToolBoxButtonY=24
 
 [Containments][18][Wallpaper][org.kde.color][General]
@@ -88,7 +90,7 @@ plugin=org.kde.plasma.kickoff
 [Containments][2][Applets][25][Configuration]
 PreloadWeight=100
 popupHeight=544
-popupWidth=707
+popupWidth=709
 
 [Containments][2][Applets][25][Configuration][ConfigDialog]
 DialogHeight=540
@@ -103,6 +105,9 @@ useExtraRunners=false
 
 [Containments][2][Applets][25][Shortcuts]
 global=Meta+Esc
+
+[Containments][2][Applets][3][Configuration]
+popupWidth=659
 
 [Containments][2][Applets][6]
 immutability=1
@@ -153,6 +158,8 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][73][Configuration]
 PreloadWeight=100
+popupHeight=500
+popupWidth=900
 
 [Containments][2][Applets][73][Configuration][Appearance]
 customDateFormat=ddd d\s
@@ -176,10 +183,12 @@ PreloadWeight=0
 AppletOrder=25;66;62;65;6;73;21
 
 [Containments][28]
+ItemGeometries-0x0=Applet-74:1440,128,208,80,0;
 ItemGeometries-1920x1080=Applet-74:1440,128,208,80,0;Applet-78:1648,128,80,80,0;
 ItemGeometries-2560x1080=Applet-74:1440,128,208,80,0;
+ItemGeometries-3840x2160=Applet-74:1440,128,208,80,0;
 ItemGeometries-640x480=Applet-74:1536,112,208,80,0;
-ItemGeometriesHorizontal=Applet-74:1440,128,208,80,0;Applet-78:1648,128,80,80,0;
+ItemGeometriesHorizontal=Applet-74:1440,128,208,80,0;
 ItemGeometriesVertical=Applet-74:1440,128,208,80,0;
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
 formfactor=0
@@ -308,6 +317,9 @@ plugin=org.kde.plasma.battery
 [Containments][7][Applets][15][Configuration]
 PreloadWeight=100
 
+[Containments][7][Applets][15][Configuration][General]
+showPercentage=true
+
 [Containments][7][Applets][16]
 immutability=1
 plugin=org.kde.plasma.bluetooth
@@ -399,14 +411,19 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][77][Configuration]
-PreloadWeight=57
+PreloadWeight=97
 
 [Containments][7][Applets][79]
 immutability=1
 plugin=org.kde.kscreen
 
 [Containments][7][Applets][79][Configuration]
-PreloadWeight=60
+PreloadWeight=90
+passiveStates=
+preferIconsFromTheme=false
+selectedConfig=0
+showTabTexts=false
+size=25,25
 
 [Containments][7][ConfigDialog]
 DialogHeight=480
@@ -416,9 +433,9 @@ DialogWidth=640
 PreloadWeight=0
 
 [Containments][7][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,touchpad,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.diskquota,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.kscreen
+extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,touchpad,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.kscreen,martchus.syncthingplasmoid
 hiddenItems=touchpad,org.kde.plasma.keyboardlayout,ibus-ui-gtk3,KDE Daemon
-knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.printmanager,org.kde.plasma.vault,org.kde.kscreen
+knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.kscreen,martchus.syncthingplasmoid
 scaleIconsToFit=true
 shownItems=org.kde.plasma.volume,Slack1,org.kde.plasma.clipboard
 

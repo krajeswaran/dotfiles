@@ -54,3 +54,5 @@ trustExitCode = true
 [safe]
 	directory = /home/kumaresan/macsrc/tangapp
 	directory = /home/kumaresan/macsrc/tangapp
+[pull]
+	rebase = false

@@ -27,33 +27,46 @@ if [ $? -eq 0 ]; then
 fi
 
 echo "Here are things you might want to do: 
-    - password, groups and sudoers
-    - setup zsh, chsh
-    - uninstall crap
-    - install stuff in ~/sw
-    - setup extra repos: default sources, extrepo enable
-    - apt-repo: librewolf
-    - apt-repo: keepassxc
-    - apt-repo: slack
-    - apt-repo: google-drive-ocamlfuse
-    - apt-repo: postgres older versions
-    - apt-repo: webstorm, intellij apps
-    - apt-repo: android-studio
-    - apt-repo: ungoogled-chromium
-    - bluetooth
-    - wifi
-    - homebrew install: xargs brew install < ~/bin/apps-brew.txt
-    - python install: pip3 install -r ~/bin/apps-pip.txt
-    - yarn install: xargs yarn global install  < ~/bin/apps-yarn.txt
-    - flatpak install:  xargs flatpak install < ~/bin/apps-flatpak.txt
-    - setup local ungoogled-chromium
-    - setup neovim: checkhealth
-    - setup google-drive-ocamlfuse + setup keepassxc
-    - keyboard shortcuts
-    - gtk/xfce/kde themes: Layan theme, kvantum engine, cz-viator mouse cursor: https://store.kde.org/p/1229367/ etc
-    - install proj stuff
-    - syncthing setup
-    - fonts fuckery: install nerd-fonts: Hack, Jetbrains, Fira Sans
-    - install ufw, enable syncthing, ssh, samba + local network
     - OpensubtitlesDownloader.py
+    - awscli + eb setup
+    - bluetooth
+    - copy ~/dumps/ ~/sw/ etc from old
+    - firefoxpwa
+    - install proj stuff
+    - install ufw, enable syncthing, ssh, samba + local network
+    - keyboard shortcuts: handle fn/caps lock keys
+    - mozilla profiles from old
+    - pipewire
+    - setup neovim: checkhealth, fix startup errors
+    - sleep/hybrid sleep issue
+    - swap fn key with ctrl
+    - toolbox: webstorm, intellij apps
+    - whatsapp/TG
+    - zhistory/bash history from old 
+    x Setup wireguard/VPN
+    x apt-repo: google-drive-ocamlfuse
+    x apt-repo: keepassxc
+    x apt-repo: librewolf
+    x apt-repo: postgres older versions
+    x apt-repo: slack
+    x bitwarden
+    x firefox dev edition install
+    x fonts fuckery: install nerd-fonts: Hack, Jetbrains, Fira Sans
+    x fuck off with grub
+    x gtk/xfce/kde themes: Materia theme, kvantum engine, cz-viator mouse cursor: https://store.kde.org/p/1229367/ etc
+    x homebrew install: xargs brew install < ~/bin/apps-brew.txt
+    x install stuff in ~/sw
+    x make sure fstab is hardlinked and updated
+    x password, groups and sudoers
+    x python install: pip3 install -r ~/bin/apps-pip.txt
+    x setup firefox dev + ublock
+    x setup google-drive-ocamlfuse + setup keepassxc
+    x setup local chromium
+    x setup zsh, chsh
+    x syncthing setup + repos
+    x toolbox: android-studio
+    x tz fuckery
+    x uninstall crap
+    x wifi
+    x yarn install: xargs yarn global install  < ~/bin/apps-yarn.txt
 "

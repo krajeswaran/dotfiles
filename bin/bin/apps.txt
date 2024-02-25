@@ -92,3 +92,14 @@ wavemon
 kwin-bismuth
 materia-kde
 materia-gtk-theme
+chromium
+cmus
+syncthing
+syncthingtray-kde-plasma
+wireguard
+wireguard-tools
+network-manager-openvpn
+tlp
+pipewire-media-session-
+libspa-0.2-bluetooth
+wireplumber
