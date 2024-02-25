@@ -1,11 +1,13 @@
 [Emojier]
-recent=🏁
-recentDescriptions=chequered flag
+recent=🦶🏾,🦶🏿,🏁,⚽
+recentDescriptions=foot: medium-dark skin tone,foot: dark skin tone,chequered flag,soccer ball
 
 [Window]
 1920x1200 screen: Height=475
 1920x1200 screen: Width=549
 1920x1200 screen: Window-Maximized=true
+2 screens: Height=602
+2 screens: Width=549
 HDMI-A-0 eDP Height 2560x1080=1025
 HDMI-A-0 eDP Width 2560x1080=1274
 Height 1080=450

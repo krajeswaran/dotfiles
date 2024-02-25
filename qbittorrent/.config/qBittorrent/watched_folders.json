@@ -1,0 +1,22 @@
+{
+    "/home/kumaresan/dumps": {
+        "add_torrent_params": {
+            "category": "",
+            "content_layout": "NoSubfolder",
+            "download_limit": -1,
+            "download_path": "/home/thesaneone/temp",
+            "operating_mode": "AutoManaged",
+            "ratio_limit": -2,
+            "save_path": "/dumps",
+            "seeding_time_limit": -2,
+            "skip_checking": false,
+            "stopped": false,
+            "tags": [
+            ],
+            "upload_limit": -1,
+            "use_auto_tmm": false,
+            "use_download_path": true
+        },
+        "recursive": false
+    }
+}

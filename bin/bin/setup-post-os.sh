@@ -29,20 +29,15 @@ fi
 echo "Here are things you might want to do: 
     - OpensubtitlesDownloader.py
     - awscli + eb setup
-    - bluetooth
     - copy ~/dumps/ ~/sw/ etc from old
-    - firefoxpwa
-    - install proj stuff
+    - install proj stuff: copy postgres db
     - install ufw, enable syncthing, ssh, samba + local network
-    - keyboard shortcuts: handle fn/caps lock keys
     - mozilla profiles from old
-    - pipewire
-    - setup neovim: checkhealth, fix startup errors
-    - sleep/hybrid sleep issue
+    x sleep/hybrid sleep issue
     - swap fn key with ctrl
-    - toolbox: webstorm, intellij apps
-    - whatsapp/TG
     - zhistory/bash history from old 
+    x bluetooth
+    x keyboard shortcuts: handle caps lock <> esc
     x Setup wireguard/VPN
     x apt-repo: google-drive-ocamlfuse
     x apt-repo: keepassxc
@@ -50,7 +45,9 @@ echo "Here are things you might want to do:
     x apt-repo: postgres older versions
     x apt-repo: slack
     x bitwarden
+    x disable klipper showing twice in systray: disable it in systray
     x firefox dev edition install
+    x firefoxpwa + librewolf
     x fonts fuckery: install nerd-fonts: Hack, Jetbrains, Fira Sans
     x fuck off with grub
     x gtk/xfce/kde themes: Materia theme, kvantum engine, cz-viator mouse cursor: https://store.kde.org/p/1229367/ etc
@@ -58,15 +55,19 @@ echo "Here are things you might want to do:
     x install stuff in ~/sw
     x make sure fstab is hardlinked and updated
     x password, groups and sudoers
+    x pipewire
     x python install: pip3 install -r ~/bin/apps-pip.txt
     x setup firefox dev + ublock
     x setup google-drive-ocamlfuse + setup keepassxc
     x setup local chromium
+    x setup neovim: checkhealth, fix startup errors
     x setup zsh, chsh
     x syncthing setup + repos
     x toolbox: android-studio
+    x toolbox: webstorm, intellij apps
     x tz fuckery
     x uninstall crap
+    x whatsapp/TG
     x wifi
     x yarn install: xargs yarn global install  < ~/bin/apps-yarn.txt
 "
