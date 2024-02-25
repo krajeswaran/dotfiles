@@ -20,12 +20,30 @@ return {
   { "SmiteshP/nvim-navic", enabled = false },
   { "folke/flash.nvim", enabled = false },
   { "ggandor/leap.nvim", enabled = false },
+  { "nvim-neo-tree/neo-tree.nvim", enabled = false },
 
   -- project mainily for yarn workspaces
+  -- {
+  --   "ahmedkhalf/project.nvim",
+  --   lazy = true,
+  --   config = function()
+  --     require("project_nvim").setup({
+  --       patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json", "project.clj" },
+  --       ignore_lsp = { "tsserver", "eslint" },
+  --     })
+  --   end,
+  -- },
+
+  -- tsserver bullshit
   {
-    "ahmedkhalf/project.nvim",
-    lazy = true,
-    opts = { ignore_lsp = { "null-ls" } },
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        tsserver = {
+          root_dir = require("lspconfig").util.root_pattern(".git"),
+        },
+      },
+    },
   },
 
   -- themes
@@ -80,9 +98,6 @@ return {
           map("n", "<leader>gu", gs.undo_stage_hunk, { desc = "Undo stage hunk" })
           map("n", "<leader>gR", gs.reset_buffer, { desc = "Reset buffer" })
           map("n", "<leader>gp", gs.preview_hunk, { desc = "Preview hunk" })
-          map("n", "<leader>gb", function()
-            gs.blame_line({ full = true })
-          end, { desc = "Blame line" })
           map("n", "<leader>gb", gs.toggle_current_line_blame, { desc = "Toggle line blame" })
           map("n", "<leader>gd", gs.diffthis, { desc = "Diff this" })
           map("n", "<leader>gD", function()
@@ -235,6 +250,16 @@ return {
         "<cmd>lua require('telescope.builtin').spell_suggest()<CR>",
         desc = "Spelling suggestions",
       },
+      -- {
+      --   "<leader><space>",
+      --   "<cmd>Telescope find_files<CR>",
+      --   desc = "Quick find files",
+      -- },
+      {
+        "<leader>/",
+        "<cmd>Telescope live_grep<CR>",
+        desc = "Quick find files",
+      },
     },
   },
 
@@ -246,6 +271,7 @@ return {
       build = "make",
       config = function()
         require("telescope").load_extension("fzf")
+        -- require("telescope").load_extension("projects")
       end,
     },
   },

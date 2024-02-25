@@ -59,6 +59,15 @@ _G.JournalMode = function()
   vim.api.nvim_command("set spell!")
 end
 
+_G.JournalDeserveMode = function()
+  -- open journal file with date
+  local fname =
+    vim.fn.resolve(os.getenv("HOME") .. "/notes/deserve/" .. os.date("%Y") .. "/" .. os.date("%d%b") .. ".md")
+  vim.api.nvim_command("e " .. fname)
+  vim.api.nvim_command("set autowriteall")
+  vim.api.nvim_command("set spell!")
+end
+
 _G.ScratchPad = function()
   -- open journal file with date
   local fname = vim.fn.resolve(os.getenv("HOME") .. "/" .. "scratch.md")
@@ -68,6 +77,8 @@ _G.ScratchPad = function()
 end
 
 vim.api.nvim_set_keymap("n", "<leader>J", ":lua JournalMode()<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>JD", ":lua JournalDeserveMode()<CR>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>je", ":!~/bin/send-journal %<CR>", { noremap = true })
 vim.cmd([[ command! Journal execute 'lua JournalMode()' ]])
 vim.cmd([[ command! Scratch execute 'lua ScratchPad()' ]])
+vim.cmd([[ command! Deserve execute 'lua JournalDeserveMode()' ]])
