@@ -1,0 +1,149 @@
+[FileDialogSize]
+HDMI-A-0 eDP Height 2560x1080=633
+HDMI-A-0 eDP Width 2560x1080=1298
+
+[General Options]
+ShowMenuBar=true
+ShowPath=false
+ShowStatusBar=true
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[KTextEditor Document]
+Allow End of Line Detection=true
+Auto Detect Indent=true
+Auto Save=false
+Auto Save Interval=0
+Auto Save On Focus Out=false
+BOM=false
+Backup Local=false
+Backup Prefix=
+Backup Remote=false
+Backup Suffix=~
+Camel Cursor=true
+Encoding=UTF-8
+End of Line=0
+Indent On Backspace=true
+Indent On Tab=true
+Indent On Text Paste=false
+Indentation Mode=normal
+Indentation Width=4
+Keep Extra Spaces=false
+Line Length Limit=10000
+Newline at End of File=true
+On-The-Fly Spellcheck=false
+Overwrite Mode=false
+PageUp/PageDown Moves Cursor=false
+Remove Spaces=1
+ReplaceTabsDyn=true
+Show Spaces=0
+Show Tabs=true
+Smart Home=true
+Swap Directory=
+Swap File Mode=1
+Swap Sync Interval=15
+Tab Handling=2
+Tab Width=4
+Trailing Marker Size=1
+Word Wrap=false
+Word Wrap Column=80
+
+[KTextEditor Editor]
+Encoding Prober Type=1
+Fallback Encoding=ISO 8859-15
+
+[KTextEditor Renderer]
+Animate Bracket Matching=false
+Auto Color Theme Selection=true
+Color Theme=Breeze Dark
+Font=Hack Nerd Font Mono,64,-1,5,50,0,0,0,0,0
+Line Height Multiplier=1
+Show Indentation Lines=true
+Show Whole Bracket Expression=false
+Word Wrap Marker=false
+
+[KTextEditor View]
+Allow Mark Menu=true
+Auto Brackets=false
+Auto Center Lines=0
+Auto Completion=false
+Auto Completion Preselect First Entry=true
+Backspace Remove Composed Characters=false
+Bookmark Menu Sorting=0
+Bracket Match Preview=false
+Chars To Enclose Selection=<>(){}[]'"
+Default Mark Type=1
+Dynamic Word Wrap=true
+Dynamic Word Wrap Align Indent=80
+Dynamic Word Wrap At Static Marker=false
+Dynamic Word Wrap Indicators=1
+Dynamic Wrap not at word boundaries=false
+Fold First Line=false
+Folding Bar=false
+Folding Preview=false
+Icon Bar=false
+Input Mode=0
+Keyword Completion=false
+Line Modification=false
+Line Numbers=false
+Maximum Search History Size=100
+Mouse Paste At Cursor Position=false
+Multiple Cursor Modifier=134217728
+Persistent Selection=false
+Scroll Bar Marks=false
+Scroll Bar Mini Map All=true
+Scroll Bar Mini Map Width=60
+Scroll Bar MiniMap=false
+Scroll Bar Preview=false
+Scroll Past End=false
+Search/Replace Flags=140
+Show Documentation With Completion=false
+Show Focus Frame Around Editor=true
+Show Folding Icons On Hover Only=true
+Show Line Count=true
+Show Scrollbars=2
+Show Word Count=true
+Smart Copy Cut=true
+Text Drag And Drop=true
+User Sets Of Chars To Enclose Selection=
+Vi Input Mode Steal Keys=false
+Vi Relative Line Numbers=false
+Word Completion=false
+Word Completion Minimal Word Length=3
+Word Completion Remove Tail=true
+
+[MainWindow]
+HDMI-A-0 eDP Height 1920x1080=1080
+HDMI-A-0 eDP Height 2560x1080=679
+HDMI-A-0 eDP Width 1920x1080=1920
+HDMI-A-0 eDP Width 2560x1080=1706
+HDMI-A-0 eDP Window-Maximized 1920x1080=true
+HDMI-A-0 eDP Window-Maximized 2560x1080=true
+HDMI-A-0 eDP XPosition 2560x1080=2234
+HDMI-A-0 eDP YPosition 2560x1080=555
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAACgAAAAQgAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+eDP HDMI-A-0 Height 1920x1080=1080
+eDP HDMI-A-0 Width 1920x1080=1920
+eDP HDMI-A-0 XPosition 1920x1080=0
+eDP HDMI-A-0 YPosition 1920x1080=0
+
+[Recent Files]
+File1[$e]=/usr/share/plasma/plasmoids/org.kde.plasma.panelspacer/contents/ui/main.qml
+File2[$e]=$HOME/docs/chennai_house_renting/rent.md
+File3[$e]=$HOME/dumps/xcodebuild-archive (2).log
+File4[$e]=$HOME/dumps/apps_4e9fa106f3a3a410_e7c31cf4-95a3-4897-a78e-a65679228660-full.txt
+File5[$e]=$HOME/dumps/Xiaomi_23021RAA2Y_[Uninstalled]_2023-07-14_20_41_48.txt
+File6[$e]=$HOME/dumps/github-recovery-codes.txt
+File7[$e]=$HOME/src/tange-server/src/fundinginstrument/fi.service.ts
+File8[$e]=$HOME/dumps/Packages
+Name1[$e]=main.qml
+Name2[$e]=rent.md
+Name3[$e]=xcodebuild-archive (2).log
+Name4[$e]=apps_4e9fa106f3a3a410_e7c31cf4-95a3-4897-a78e-a65679228660-full.txt
+Name5[$e]=Xiaomi_23021RAA2Y_[Uninstalled]_2023-07-14_20_41_48.txt
+Name6[$e]=github-recovery-codes.txt
+Name7[$e]=fi.service.ts
+Name8[$e]=Packages
