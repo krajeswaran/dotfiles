@@ -1,0 +1,63 @@
+set confirm_run=false
+update-cache 
+add ~/music/
+q
+filter metal
+fset metal=genre="*ock"
+filter 
+fset metal=genre="*etal*"
+fset metal=genre="Heavy*"
+filter thrash
+fset metal=genre="Metal"
+fset thrash=genre="Thrash"
+fset metak=genre="Metal"
+fset fave=artist="Metallica"
+filter artist=Megadeth
+filter
+filter rock
+fset fave=(artist="Metallica")
+fset rock=genre="Rock"
+filter missing-tag
+fset missing-tag=!stream&(artist=""|album=""|title=""|tracknumber=-1|date=-1)
+add Dead For A Dollar (2022) [720p] [WEBRip] [YTS.MX]/
+a
+fset ogg-or-mp3=ogg|mp3
+fset
+fset classical=genre="Classical"
+fset unheard=play_count=0
+fset ogg=filename="*.ogg"
+fset mp3=filename="*.mp3"
+1
+cl
+c
+pl-create focus
+clear
+ck
+clear 
+pl-rename
+pl-rename rock
+quit
+set start_view=1
+set start_view=7
+set start_view=6
+set start_view=5
+set start_view=4
+set start_view=3
+set start_view=2
+set start_view=0
+set mouse=true
+set start_view=library
+set start_view=
+set show_hidden=true
+set shuffle=tracks
+set follow=true
+set shuffle=4
+save 
+colorscheme green-mono-88
+he
+set shuffle=3
+set shuffle=on
+set shuffle
+help add
+help
+themes
