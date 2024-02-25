@@ -136,7 +136,7 @@ enableSpiralLayout=false
 enableSpreadLayout=false
 enableStairLayout=false
 enableThreeColumnLayout=false
-floatingClass=slack,okular,librewolf-default,keepassxc,kwrite,dolphin,gwenview,systemsettings,mpv,bitwarden,ark
+floatingClass=slack,okular,librewolf-default,keepassxc,kwrite,dolphin,gwenview,systemsettings,mpv,bitwarden,ark,plasma.emojier
 ignoreScreen=1
 keepFloatAbove=false
 layoutPerActivity=false
@@ -196,6 +196,9 @@ SwitchingMode=0
 padding=4
 
 [Tiling][02e1bb16-c489-5e47-9094-7c95ec70efe1]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][0c766821-b07c-5051-9ca1-901465f4049a]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][0e4c2644-9a0c-5555-8ec2-4708b4aaa14d]
