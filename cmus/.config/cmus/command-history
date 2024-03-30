@@ -1,3 +1,4 @@
+shell 
 add ~/music/
 set confirm_run=false
 update-cache 

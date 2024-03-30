@@ -5,7 +5,6 @@ StripWhiteSpace=false
 [General]
 AutoStart=true
 IgnoreImages=false
-IgnoreSelection=false
 MaxClipItems=30
 Number of Actions=0
 SyncClipboards=true

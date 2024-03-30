@@ -72,6 +72,9 @@ TouchBorderActivate=9
 TouchBorderActivateAll=7
 TouchBorderActivateClass=9
 
+[Effect-windowview]
+TouchBorderActivateAll=0
+
 [Effect-zoom]
 InitialZoom=1
 
@@ -111,7 +114,7 @@ bismuthEnabled=true
 blurEnabled=true
 contrastEnabled=true
 coverswitchEnabled=true
-desktopchangeosdEnabled=false
+desktopchangeosdEnabled=true
 enforcedecoEnabled=true
 flipswitchEnabled=true
 highlightwindowEnabled=true
@@ -233,9 +236,8 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [TouchEdges]
 Bottom=None
-Left=KRunner
+Left=ApplicationLauncher
 Right=None
-Top=KRunner
 
 [Windows]
 ActiveMouseScreen=true
@@ -264,6 +266,7 @@ MaximizeButtonMiddleClickCommand=Maximize (horizontal only)
 MaximizeButtonRightClickCommand=Maximize (horizontal only)
 NextFocusPrefersMouse=false
 Placement=Smart
+RollOverDesktops=true
 SeparateScreenFocus=true
 ShadeHover=false
 ShadeHoverInterval=250

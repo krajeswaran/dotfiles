@@ -146,7 +146,7 @@ DialogHeight=600
 DialogWidth=800
 
 [Containments][2][Applets][66][Configuration][General]
-launchers=preferred://filemanager,applications:firefox-dev.desktop,applications:librewolf.desktop,applications:chromium.desktop
+launchers=preferred://filemanager,applications:firefox-dev.desktop,applications:librewolf.desktop,applications:chromium.desktop,applications:jetbrains-webstorm-c35fc704-1db9-4c67-8efa-0ee467d11ed1.desktop
 maxStripes=1
 middleClickAction=Close
 showOnlyCurrentActivity=false
@@ -180,16 +180,16 @@ DialogWidth=2560
 PreloadWeight=0
 
 [Containments][2][General]
-AppletOrder=25;66;62;65;6;73;;21
+AppletOrder=25;66;62;65;6;73;21
 
 [Containments][28]
-ItemGeometries-0x0=Applet-74:1440,128,208,80,0;
+ItemGeometries-0x0=Applet-74:1440,128,208,80,0;Applet-81:1424,240,288,256,0;
 ItemGeometries-1920x1080=Applet-74:1440,128,208,80,0;Applet-78:1648,128,80,80,0;
-ItemGeometries-1920x1200=Applet-74:1456,144,208,80,0;
+ItemGeometries-1920x1200=Applet-74:1456,144,208,80,0;Applet-81:1424,240,288,256,0;
 ItemGeometries-2560x1080=Applet-74:1440,128,208,80,0;
 ItemGeometries-3840x2160=Applet-74:1440,128,208,80,0;
 ItemGeometries-640x480=Applet-74:1536,112,208,80,0;
-ItemGeometriesHorizontal=Applet-74:1456,144,208,80,0;
+ItemGeometriesHorizontal=Applet-74:1440,128,208,80,0;Applet-81:1424,240,288,256,0;
 ItemGeometriesVertical=Applet-74:1440,128,208,80,0;
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
 formfactor=0
@@ -223,6 +223,17 @@ plugin=fokus
 
 [Containments][28][Applets][78][Configuration]
 PreloadWeight=85
+
+[Containments][28][Applets][81]
+immutability=1
+plugin=fokus
+
+[Containments][28][Applets][81][Configuration][ConfigDialog]
+DialogHeight=570
+DialogWidth=760
+
+[Containments][28][Applets][81][Configuration][General]
+autostart=true
 
 [Containments][28][ConfigDialog]
 DialogHeight=540
@@ -421,7 +432,7 @@ immutability=1
 plugin=org.kde.kscreen
 
 [Containments][7][Applets][79][Configuration]
-PreloadWeight=90
+PreloadWeight=100
 passiveStates=
 preferIconsFromTheme=false
 selectedConfig=0
@@ -436,8 +447,8 @@ DialogWidth=640
 PreloadWeight=0
 
 [Containments][7][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,touchpad,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.clipboard,org.kde.kscreen,martchus.syncthingplasmoid
-hiddenItems=touchpad,org.kde.plasma.keyboardlayout,ibus-ui-gtk3,KDE Daemon,Klipper
+extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,touchpad,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.clipboard,martchus.syncthingplasmoid,org.kde.kscreen
+hiddenItems=touchpad,org.kde.plasma.keyboardlayout,ibus-ui-gtk3,KDE Daemon,Klipper,org.kde.kscreen
 knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.kscreen,martchus.syncthingplasmoid
 scaleIconsToFit=true
 shownItems=org.kde.plasma.volume,Slack1,org.kde.plasma.clipboard,org.kde.plasma.bluetooth

@@ -78,7 +78,7 @@ done=gtk_theme,dont_use_gtk_css_for_window_decorations,remove_deprecated_gtk4_op
 mtime=1683632190
 
 [gwenview.upd]
-ctime=1697011906
+ctime=1710232259
 done=SideBar_StatusBar_Rename,ImageView_AlphaBackgroundMode_Update,DeleteThumbnailSetting_Rename
 mtime=1677300904
 
@@ -212,22 +212,22 @@ done=plasmashell-5.27-use-panel-thickness-in-default-group
 mtime=1683632330
 
 [spectacle_clipboard.upd]
-ctime=1697011758
+ctime=1710396430
 done=clipboard-settings-change
 mtime=1677302653
 
 [spectacle_newConfig.upd]
-ctime=1697011758
+ctime=1710396430
 done=spectacle-new-config
 mtime=1677302653
 
 [spectacle_rememberregion.upd]
-ctime=1697011758
+ctime=1710396430
 done=spectacle-migrate-rememberregion
 mtime=1677302653
 
 [spectacle_shortcuts.upd]
-ctime=1697011758
+ctime=1710396430
 done=spectacle-migrate-shortcuts
 mtime=1677302653
 

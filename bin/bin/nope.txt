@@ -1,3 +1,6 @@
+kde-style-oxygen-qt5
+libgnome*
+gnome*
 thunderbird
 apport
 xfce4-verve-plugin

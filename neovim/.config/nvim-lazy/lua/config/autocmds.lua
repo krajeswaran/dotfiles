@@ -18,9 +18,9 @@ elseif term == "editor" then
     ]])
 else
   if term == "api" then
-    vim.cmd([[colorscheme catppuccin]])
-  else
     vim.cmd([[colorscheme tokyonight-night]])
+  else
+    vim.cmd([[colorscheme tokyonight-storm]])
   end
 end
 

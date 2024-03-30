@@ -20,6 +20,8 @@ alias ejectusb="udisksctl power-off -b "
 alias kssh="kitty +kitten ssh"
 alias kiv="kitty +kitten icat "
 alias restart_kde="export DISPLAY=:0; killall plasmashell; kwin --replace & kstart5 plasmashell & exit"
+alias vi='NVIM_APPNAME="nvim-lazy" nvim'
+alias vik='NVIM_APPNAME="nvim-kickstart" nvim'
 
 ############ OS ENV ######################
 # export JAVA_HOME=/Library/Java/Home
@@ -37,7 +39,7 @@ export MANPATH=${HOME}/.node/share/man:${MANPATH}
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 # Preferred editor for local and remote sessions
-export EDITOR='nvim'
+export EDITOR='vi'
 export USE_CCACHE=1
 export CCACHE_COMPRESS=1
 #export LD_LIBRARY_PATH=${ANDROID_SDK_ROOT}/emulator/lib64:${ANDROID_SDK_ROOT}/emulator/lib64/qt/lib

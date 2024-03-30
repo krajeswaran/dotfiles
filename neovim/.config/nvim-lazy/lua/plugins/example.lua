@@ -20,6 +20,7 @@ return {
   { "SmiteshP/nvim-navic", enabled = false },
   { "folke/flash.nvim", enabled = false },
   { "ggandor/leap.nvim", enabled = false },
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
 
   -- project mainily for yarn workspaces
@@ -40,6 +41,7 @@ return {
     opts = {
       servers = {
         tsserver = {
+          enabled = false,
           root_dir = require("lspconfig").util.root_pattern(".git"),
         },
       },
@@ -267,19 +269,6 @@ return {
     },
   },
 
-  -- add telescope-fzf-native
-  {
-    "telescope.nvim",
-    dependencies = {
-      "nvim-telescope/telescope-fzf-native.nvim",
-      build = "make",
-      config = function()
-        require("telescope").load_extension("fzf")
-        -- require("telescope").load_extension("projects")
-      end,
-    },
-  },
-
   -- add any tools you want to have installed below
   {
     "williamboman/mason.nvim",
@@ -290,7 +279,7 @@ return {
         "shfmt",
         "flake8",
         "prettierd",
-        "eslint_d",
+        "eslint-lsp",
         "autopep8",
         "black",
         "fixjson",
@@ -304,18 +293,12 @@ return {
         "dockerfile-language-server",
         "golangci-lint-langserver",
         "gopls",
-        "grammarly-languageserver",
         "html-lsp",
         "json-lsp",
         "marksman",
         "pyright",
-        "sqlls",
         "svelte-language-server",
-        "typescript-language-server",
-        "chrome-debug-adapter",
-        "delve",
         "json-to-struct",
-        "go-debug-adapter",
       },
     },
   },
@@ -326,13 +309,152 @@ return {
     cmd = { "DiffviewFileHistory", "DiffviewOpen" },
     lazy = true,
   },
+  -- Mason-nvim-dap
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    dependencies = "mason.nvim",
+    cmd = { "DapInstall", "DapUninstall" },
+    opts = {
+      ensure_installed = {
+        "python",
+        "delve",
+        "js",
+      },
+    },
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+      handlers = {
+        function(server_name)
+          if server_name == "tsserver" then
+            return
+          end
+        end,
+      },
+    },
+  },
+  { "mxsdev/nvim-dap-vscode-js", dependencies = { "mfussenegger/nvim-dap" } },
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      {
+        "williamboman/mason.nvim",
+        opts = function(_, opts)
+          opts.ensure_installed = opts.ensure_installed or {}
+          table.insert(opts.ensure_installed, "js-debug-adapter")
+        end,
+      },
+    },
+    config = function()
+      local dap = require("dap")
+      dap.adapters["pwa-node"] = {
+        type = "server",
+        host = "localhost",
+        port = "${port}",
+        executable = {
+          command = "js-debug-adapter",
+          args = { "${port}" },
+        },
+      }
+      dap.adapters["pwa-chrome"] = {
+        type = "server",
+        host = "localhost",
+        port = "${port}",
+        executable = {
+          command = "js-debug-adapter",
+          args = { "${port}" },
+        },
+      }
+
+      for _, language in ipairs({ "typescript", "javascript", "typescriptreact", "javascriptreact" }) do
+        dap.configurations[language] = {
+          {
+            type = "pwa-node",
+            request = "launch",
+            name = "Launch file",
+            program = "${file}",
+            cwd = "${workspaceFolder}",
+            runtimeExecutable = "tsx",
+            args = { "${file}" },
+            sourceMaps = true,
+            protocol = "inspector",
+            skipFiles = { "<node_internals>/**", "node_modules/**" },
+            resolveSourceMapLocations = {
+              "${workspaceFolder}/**",
+              "!**/node_modules/**",
+            },
+          },
+          {
+            type = "pwa-node",
+            request = "attach",
+            name = "Attach",
+            processId = require("dap.utils").pick_process,
+            cwd = "${workspaceFolder}",
+            skipFiles = { "<node_internals>/**", "node_modules/**" },
+            resolveSourceMapLocations = {
+              "${workspaceFolder}/**",
+              "!**/node_modules/**",
+            },
+          },
+          {
+            type = "pwa-chrome",
+            request = "launch",
+            name = "Start Chrome on port",
+            url = function()
+              local port = vim.fn.input({
+                prompt = "Port ",
+                completion = "file",
+              })
+              return "http://localhost:3000" .. port
+            end,
+            webRoot = "${workspaceFolder}",
+            userDataDir = "${workspaceFolder}/.vscode/vscode-chrome-debug-userdatadir",
+            skipFiles = { "<node_internals>/**", "node_modules/**" },
+            resolveSourceMapLocations = {
+              "${workspaceFolder}/**",
+              "!**/node_modules/**",
+            },
+          },
+        }
+      end
+    end,
+  },
   {
     "rest-nvim/rest.nvim",
+    ft = "http",
+    tag = "v1.2.1",
+    pin = true,
+    dependencies = { "luarocks.nvim" },
     lazy = true,
-    event = { "BufReadPre", "BufNewFile" },
     config = function()
       vim.keymap.set("n", "<Leader>ht", "<Plug>RestNvim<CR>", { desc = "Execute RestNvim" })
     end,
+  },
+  {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    opts = {},
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        -- Also need to install @prettier/plugin-xml in project:
+        -- https://github.com/prettier/plugin-xml
+        javascript = { "prettierd" },
+        javascriptreact = { "prettierd" },
+        typescript = { "prettierd" },
+        typescriptreact = { "prettierd" },
+      },
+    },
+  },
+  {
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
   },
   { "samoshkin/vim-mergetool" },
   {
