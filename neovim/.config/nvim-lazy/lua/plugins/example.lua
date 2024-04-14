@@ -324,6 +324,7 @@ return {
   },
   {
     "williamboman/mason-lspconfig.nvim",
+    lazy = true,
     opts = {
       handlers = {
         function(server_name)
@@ -334,9 +335,20 @@ return {
       },
     },
   },
-  { "mxsdev/nvim-dap-vscode-js", dependencies = { "mfussenegger/nvim-dap" } },
+  {
+    "mxsdev/nvim-dap-vscode-js",
+    lazy = true,
+    opts = {
+      debugger_path = "~/.local/share/nvim/mason/packages/js-debug-adapter",
+      debugger_cmd = { "js-debug-adapter" },
+      adapters = { "pwa-node", "pwa-chrome" },
+    },
+    dependencies = { "mfussenegger/nvim-dap" },
+  },
   {
     "mfussenegger/nvim-dap",
+    lazy = true,
+    cmd = { "DapContinue", "DapLoadLaunchJSON" },
     dependencies = {
       {
         "williamboman/mason.nvim",
@@ -344,6 +356,10 @@ return {
           opts.ensure_installed = opts.ensure_installed or {}
           table.insert(opts.ensure_installed, "js-debug-adapter")
         end,
+      },
+      {
+        "microsoft/vscode-js-debug",
+        build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
       },
     },
     config = function()
@@ -374,14 +390,14 @@ return {
             request = "launch",
             name = "Launch file",
             program = "${file}",
-            cwd = "${workspaceFolder}",
             runtimeExecutable = "tsx",
             args = { "${file}" },
             sourceMaps = true,
+            cwd = "${workspaceFolder}/src",
             protocol = "inspector",
             skipFiles = { "<node_internals>/**", "node_modules/**" },
             resolveSourceMapLocations = {
-              "${workspaceFolder}/**",
+              "${workspaceFolder}/src/**",
               "!**/node_modules/**",
             },
           },
@@ -390,10 +406,15 @@ return {
             request = "attach",
             name = "Attach",
             processId = require("dap.utils").pick_process,
-            cwd = "${workspaceFolder}",
             skipFiles = { "<node_internals>/**", "node_modules/**" },
+            sourceMaps = true,
+            cwd = "${workspaceFolder}/src",
+            protocol = "inspector",
+            localRoot = "${workspaceFolder}/src",
+            remoteRoot = "/home/kumaresan/src/tange-server/",
+            outFiles = { "${workspaceFolder}/dist/**/**/*", "!**/node_modules/**" },
             resolveSourceMapLocations = {
-              "${workspaceFolder}/**",
+              "${workspaceFolder}/src/**",
               "!**/node_modules/**",
             },
           },
@@ -408,11 +429,14 @@ return {
               })
               return "http://localhost:3000" .. port
             end,
-            webRoot = "${workspaceFolder}",
-            userDataDir = "${workspaceFolder}/.vscode/vscode-chrome-debug-userdatadir",
+            protocol = "inspector",
+            port = 9222,
+            webRoot = "${workspaceFolder}/src",
             skipFiles = { "<node_internals>/**", "node_modules/**" },
+            sourceMaps = true,
+            cwd = "${workspaceFolder}/src",
             resolveSourceMapLocations = {
-              "${workspaceFolder}/**",
+              "${workspaceFolder}/src/**",
               "!**/node_modules/**",
             },
           },
@@ -434,6 +458,7 @@ return {
   {
     "pmizio/typescript-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    ft = { "typescript", "typescriptreact", "javascript", "javascriptreact", "angular", "svelte" },
     opts = {},
   },
   {
@@ -451,12 +476,13 @@ return {
   },
   {
     "ThePrimeagen/refactoring.nvim",
+    ft = { "python", "golang", "typescript", "typescriptreact", "javascript", "javascriptreact", "angular", "svelte" },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
     },
   },
-  { "samoshkin/vim-mergetool" },
+  { "samoshkin/vim-mergetool", cmd = "MergetoolStart" },
   {
     "junegunn/goyo.vim",
     cmd = "Goyo",

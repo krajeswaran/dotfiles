@@ -1,7 +1,7 @@
 [Desktop Entry]
 Categories=Application;Editor;
 Comment=Notes
-Exec=kitty --class kwrite --title Notes --config /home/kumaresan/.config/kitty/editor.conf -d /home/kumaresan/notes/ zsh -l -c /home/linuxbrew/.linuxbrew/bin/nvim
+Exec=kitty --class kwrite --title Notes --config /home/kumaresan/.config/kitty/editor.conf -d /home/kumaresan/notes/ zsh -l -c /home/linuxbrew/.linuxbrew/bin/nvim %U
 GenericName=Notes
 Icon=kwrite
 Name=Notes

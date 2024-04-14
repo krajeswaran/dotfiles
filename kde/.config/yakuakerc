@@ -19,7 +19,12 @@ Width 1920=700
 [Favorite Profiles]
 Favorites=
 
+[FileDialogSize]
+2 screens: Height=625
+2 screens: Width=1298
+
 [KFileDialog Settings]
+detailViewIconSize=16
 listViewIconSize=0
 
 [Notification Messages]
