@@ -146,7 +146,7 @@ Size=32
 
 [DirSelect Dialog]
 DirSelectDialog Size=874,601
-History Items[$e]=file:$HOME/dumps,file:$HOME/videos,file:$HOME/dumps,file:$HOME/videos/mnt/tv/Yellowjackets.S01.1080p.WEBRip.x265[eztv.re],file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
+History Items[$e]=file:$HOME/photos,file:$HOME/dumps,file:$HOME/videos,file:$HOME/dumps,file:$HOME/videos/mnt/tv/Yellowjackets.S01.1080p.WEBRip.x265[eztv.re],file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
 
 [Emoticons]
 emoticonsTheme=GoogleEmojiComplete
@@ -159,6 +159,7 @@ ColorSchemeHash=3b17c5d56f8f372f0b0b9f709c4579c23e51fe6a
 Name=Arc Dark
 TerminalApplication=kitty
 TerminalService=kitty.desktop
+UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintnone
 XftSubPixel=rgb
@@ -194,7 +195,7 @@ Preview Width=242
 Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true
-Show Preview=true
+Show Preview=false
 Show Speedbar=true
 Show hidden files=true
 Sort by=Date

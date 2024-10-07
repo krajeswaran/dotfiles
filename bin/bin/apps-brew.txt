@@ -16,3 +16,4 @@ dust
 fzf
 nvm
 awscli
+cw

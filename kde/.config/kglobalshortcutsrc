@@ -70,7 +70,6 @@ _k_friendly_name=Custom Shortcuts Service
 {43b12498-8852-4f48-bcb3-6d8abb8f4e83}=Meta+E,none,Run filemanager
 {b291028c-82ab-4d13-be96-c8681844eb40}=Meta+B,none,Run Browser
 {b332be0d-d4bd-413d-906b-545108f27748}=Meta+C,none,Run chat
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Search
 
 [klipper]
 _k_friendly_name=Klipper
@@ -272,12 +271,12 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 _k_friendly_name=Media Controller
 mediavolumedown=none,none,Media volume down
 mediavolumeup=none,none,Media volume up
-nextmedia=Media Next,Media Next,Media playback next
+nextmedia=none,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
 playmedia=none,none,Play media playback
-playpausemedia=Media Play,Media Play,Play/Pause media playback
-previousmedia=Media Previous,Media Previous,Media playback previous
-stopmedia=Media Stop,Media Stop,Stop media playback
+playpausemedia=none,Media Play,Play/Pause media playback
+previousmedia=none,Media Previous,Media playback previous
+stopmedia=none,Media Stop,Stop media playback
 
 [org.kde.dolphin.desktop]
 _k_friendly_name=Dolphin
@@ -340,7 +339,7 @@ activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 15=none,none,Activate Icons-only Task Manager Widget
 activate widget 25=Meta+Esc,none,Activate Application Launcher Widget
 activate widget 57=none,none,Activate Icons-only Task Manager Widget
-activate widget 7=,none,Activate System Tray Widget
+activate widget 7=none,none,Activate System Tray Widget
 activate widget 73=none,none,Activate Digital Clock Widget
 activate widget 79=none,none,Activate Syncthing Widget
 clear-history=none,,Clear Clipboard History
@@ -360,6 +359,22 @@ stop current activity=none,Meta+S,Stop Current Activity
 switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
+
+[playerctl-2.desktop]
+_k_friendly_name=playerctl stop
+_launch=Media Stop,none,playerctl stop
+
+[playerctl-3.desktop]
+_k_friendly_name=playerctl next
+_launch=Media Next,none,playerctl next
+
+[playerctl-4.desktop]
+_k_friendly_name=playerctl previous
+_launch=Media Previous,none,playerctl previous
+
+[playerctl.desktop]
+_k_friendly_name=playerctl play
+_launch=Media Play,none,playerctl play
 
 [systemsettings.desktop]
 _k_friendly_name=System Settings

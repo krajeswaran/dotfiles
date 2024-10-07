@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.4
+Name=Telegram
+Comment=Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.
+Keywords=;
+Categories=GTK;WebApps;Chat;Network;
+Icon=FFPWA-01HQ11NNC8B04H1YQKCXE6CFFM
+Exec=/usr/bin/firefoxpwa site launch 01HQ11NNC8B04H1YQKCXE6CFFM --protocol %u
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
+StartupWMClass=FFPWA-01HQ11NNC8B04H1YQKCXE6CFFM

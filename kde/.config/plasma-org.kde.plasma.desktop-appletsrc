@@ -98,9 +98,10 @@ DialogWidth=720
 
 [Containments][2][Applets][25][Configuration][General]
 favoritesPortedToKAstats=true
-icon=emblem-debian-white
+icon=start-here-debian
 menuItems=oftenUsed:t,application:t,computer:t,used:t,leave:t,bookmark:f
 systemApplications=systemsettings.desktop,org.kde.kinfocenter.desktop
+systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 useExtraRunners=false
 
 [Containments][2][Applets][25][Shortcuts]
@@ -146,7 +147,9 @@ DialogHeight=600
 DialogWidth=800
 
 [Containments][2][Applets][66][Configuration][General]
-launchers=preferred://filemanager,applications:firefox-dev.desktop,applications:librewolf.desktop,applications:chromium.desktop,applications:jetbrains-webstorm-c35fc704-1db9-4c67-8efa-0ee467d11ed1.desktop,applications:FFPWA-01HV7CMC0M9RS58VKJKEKM6KYY.desktop
+groupingAppIdBlacklist=org.kde.krdc.desktop
+groupingLauncherUrlBlacklist=applications:org.kde.krdc.desktop
+launchers=preferred://filemanager,applications:firefox-dev.desktop,applications:librewolf.desktop,applications:chromium.desktop,applications:jetbrains-webstorm-c35fc704-1db9-4c67-8efa-0ee467d11ed1.desktop,applications:FFPWA-01HV7CMC0M9RS58VKJKEKM6KYY.desktop,applications:FFPWA-01HY7A1WHV2YHHW1BM3ZVGYF1D.desktop
 maxStripes=1
 middleClickAction=Close
 showOnlyCurrentActivity=false
@@ -183,13 +186,14 @@ PreloadWeight=0
 AppletOrder=25;66;62;65;6;73;21
 
 [Containments][28]
-ItemGeometries-0x0=Applet-74:1440,128,208,80,0;Applet-81:1424,240,288,256,0;
+ItemGeometries-0x0=Applet-74:1440,128,208,80,0;Applet-83:1408,624,320,112,0;Applet-81:1424,240,288,256,0;
 ItemGeometries-1920x1080=Applet-74:1440,128,208,80,0;Applet-78:1648,128,80,80,0;
-ItemGeometries-1920x1200=Applet-74:1456,144,208,80,0;Applet-81:1424,240,288,256,0;
-ItemGeometries-2560x1080=Applet-74:1440,128,208,80,0;
+ItemGeometries-1920x1200=Applet-74:1456,144,208,80,0;Applet-83:1408,624,320,112,0;Applet-81:1424,240,288,256,0;
+ItemGeometries-2560x1080=Applet-74:1440,128,208,80,0;Applet-83:1408,624,320,112,0;Applet-81:2064,176,288,256,0;
+ItemGeometries-2560x1440=Applet-83:1408,800,320,112,0;Applet-74:1440,128,208,80,0;Applet-81:2064,176,288,256,0;
 ItemGeometries-3840x2160=Applet-74:1440,128,208,80,0;
 ItemGeometries-640x480=Applet-74:1536,112,208,80,0;
-ItemGeometriesHorizontal=Applet-74:1440,128,208,80,0;Applet-81:1424,240,288,256,0;
+ItemGeometriesHorizontal=Applet-83:1408,800,320,112,0;Applet-74:1440,128,208,80,0;Applet-81:2064,176,288,256,0;
 ItemGeometriesVertical=Applet-74:1440,128,208,80,0;
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
 formfactor=0
@@ -204,7 +208,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][28][Applets][74][Configuration]
-PreloadWeight=72
+PreloadWeight=77
 popupHeight=500
 popupWidth=440
 
@@ -217,13 +221,6 @@ dateFormat=custom
 DialogHeight=600
 DialogWidth=800
 
-[Containments][28][Applets][78]
-immutability=1
-plugin=fokus
-
-[Containments][28][Applets][78][Configuration]
-PreloadWeight=85
-
 [Containments][28][Applets][81]
 immutability=1
 plugin=fokus
@@ -234,6 +231,15 @@ DialogWidth=760
 
 [Containments][28][Applets][81][Configuration][General]
 autostart=true
+
+[Containments][28][Applets][83]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][28][Applets][83][Configuration]
+PreloadWeight=80
+popupHeight=400
+popupWidth=400
 
 [Containments][28][ConfigDialog]
 DialogHeight=540
@@ -315,7 +321,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][13][Configuration]
-PreloadWeight=0
+PreloadWeight=10
 
 [Containments][7][Applets][14]
 immutability=1
@@ -364,7 +370,11 @@ immutability=1
 plugin=touchpad
 
 [Containments][7][Applets][32][Configuration]
-PreloadWeight=0
+PreloadWeight=10
+
+[Containments][7][Applets][32][Configuration][ConfigDialog]
+DialogHeight=570
+DialogWidth=760
 
 [Containments][7][Applets][55]
 immutability=1
@@ -438,6 +448,14 @@ preferIconsFromTheme=false
 selectedConfig=0
 showTabTexts=false
 size=25,25
+
+[Containments][7][Applets][82]
+immutability=1
+plugin=martchus.syncthingplasmoid
+
+[Containments][7][Applets][82][Configuration]
+PreloadWeight=60
+selectedConfig=0
 
 [Containments][7][ConfigDialog]
 DialogHeight=480

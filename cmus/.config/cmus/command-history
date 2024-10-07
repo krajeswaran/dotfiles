@@ -1,8 +1,9 @@
-shell 
 add ~/music/
+save
+q
+shell 
 set confirm_run=false
 update-cache 
-q
 filter metal
 fset metal=genre="*ock"
 filter 

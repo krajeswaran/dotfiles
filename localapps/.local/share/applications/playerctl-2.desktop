@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=playerctl stop
+Name=playerctl stop
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true
