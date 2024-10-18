@@ -100,3 +100,5 @@ fi
 if [ -f ~/.bashrc_os ]; then
     source ~/.bashrc_os
 fi
+
+source /home/kumaresan/.config/broot/launcher/bash/br

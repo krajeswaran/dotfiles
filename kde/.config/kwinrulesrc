@@ -30,7 +30,7 @@ wmclass=firefox-aurora
 wmclassmatch=2
 
 [3]
-Description=virt-manager
+Description=KRDC
 clientmachine=localhost
 screen=1
 screenrule=3
@@ -38,7 +38,8 @@ size=796,1050
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 windowrole[$d]
 windowrolematch[$d]
-wmclass=virt-manager
+wmclass=KRDC
+wmclasscomplete=true
 wmclassmatch=1
 
 [3a6b977c-990b-42ba-bd63-5785f892b98d]

@@ -2,6 +2,5 @@ virtualenv
 ipython
 psycopg2-binary
 pgcli
-awslogs
 awsebcli
 neovim

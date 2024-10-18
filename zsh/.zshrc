@@ -346,9 +346,22 @@ promptinit
 prompt purity
 
 #------------------------------
+# completions
+#------------------------------
+# initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit
+
+#------------------------------
+# edit command line
+#------------------------------
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+
+#------------------------------
 # custom stuf
 #------------------------------
 if [[ -s "${ZDOTDIR:-$HOME}/.zshrc_common" ]]; then
   source "${ZDOTDIR:-$HOME}/.zshrc_common"
 fi
-export PATH=$PATH:$HOME/.maestro/bin

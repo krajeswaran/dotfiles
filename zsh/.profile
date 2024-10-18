@@ -20,8 +20,8 @@ alias ejectusb="udisksctl power-off -b "
 alias kssh="kitty +kitten ssh"
 alias kiv="kitty +kitten icat "
 alias restart_kde="export DISPLAY=:0; killall plasmashell; kwin --replace & kstart5 plasmashell & exit"
-alias vi='NVIM_APPNAME="nvim-lazy" nvim'
-alias vik='NVIM_APPNAME="nvim-kickstart" nvim'
+alias vi='nvim'
+alias vik='NVIM_APPNAME="nvim-ks" nvim'
 
 ############ OS ENV ######################
 # export JAVA_HOME=/Library/Java/Home

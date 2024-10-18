@@ -370,6 +370,19 @@ return {
     dependencies = { "mfussenegger/nvim-dap" },
   },
   {
+    "folke/todo-comments.nvim",
+    lazy = true,
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      highlight = {
+        pattern = [[.*<(KEYWORDS)\s*]],
+      },
+      search = {
+        pattern = [[\b(KEYWORDS)\b]],
+      },
+    },
+  },
+  {
     "mfussenegger/nvim-dap",
     lazy = true,
     cmd = { "DapContinue", "DapLoadLaunchJSON" },

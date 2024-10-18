@@ -12,10 +12,9 @@ dconf-cli
 deborphan
 fd-find
 kde-spectacle
-fonts-font-awesome
-fonts-freefont-ttf
+fonts-crosextra-caladea
+fonts-crosextra-carlito
 fonts-go
-fonts-ibm-plex
 fonts-noto
 fonts-noto-color-emoji
 git
@@ -25,6 +24,8 @@ gparted
 graphviz
 highlight
 htop
+btop
+powertop
 xh
 jq
 keepassxc
@@ -95,6 +96,7 @@ materia-kde
 materia-gtk-theme
 chromium
 cmus
+playerctl
 syncthing
 syncthingtray-kde-plasma
 wireguard
