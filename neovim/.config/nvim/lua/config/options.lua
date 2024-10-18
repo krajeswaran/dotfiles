@@ -55,7 +55,7 @@ vim.bo.formatoptions = vim.bo.formatoptions:gsub("r", "")
 vim.bo.formatoptions = vim.bo.formatoptions:gsub("o", "")
 
 -- set paste
-vim.opt.pastetoggle = "<F2>"
+-- vim.opt.pastetoggle = "<F2>"
 
 -- diff options
 vim.opt.diffopt = vim.o.diffopt .. ",vertical,indent-heuristic,iwhiteall,algorithm:patience"

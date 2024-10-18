@@ -293,6 +293,7 @@
 /home/kumaresan/music/mnt/Shiva ｜ Navarasam - Thaikkudam Bridge - Live Sessions - Kappa TV [1le3GsG_abc].m4a
 /home/kumaresan/music/mnt/Shiva - Thaikkudam Bridge - Music Mojo - Kappa TV [jiXDD5umWvw].m4a
 /home/kumaresan/music/mnt/SHRI VENKATESA SUPRABHATHAM.mp3
+/home/kumaresan/music/mnt/Smash Mouth - All Star (Official Music Video) [L_jWHffIx5E].m4a
 /home/kumaresan/music/mnt/Snoop_Dogg_Gangsta_Luv_DIRTY_LYRICS_2009.m4a
 /home/kumaresan/music/mnt/Snoop_Dogg_I_Wanna_Rock_Explicit_.m4a
 /home/kumaresan/music/mnt/Snoop_Dogg_Sensual_Seduction.m4a

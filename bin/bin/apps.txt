@@ -96,6 +96,7 @@ materia-kde
 materia-gtk-theme
 chromium
 cmus
+playerctl
 syncthing
 syncthingtray-kde-plasma
 wireguard

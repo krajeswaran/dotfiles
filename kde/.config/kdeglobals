@@ -146,7 +146,7 @@ Size=32
 
 [DirSelect Dialog]
 DirSelectDialog Size=874,601
-History Items[$e]=file:$HOME/dumps,file:$HOME/videos,file:$HOME/dumps,file:$HOME/videos/mnt/tv/Yellowjackets.S01.1080p.WEBRip.x265[eztv.re],file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
+History Items[$e]=file:$HOME/photos,file:$HOME/dumps,file:$HOME/videos,file:$HOME/dumps,file:$HOME/videos/mnt/tv/Yellowjackets.S01.1080p.WEBRip.x265[eztv.re],file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
 
 [Emoticons]
 emoticonsTheme=GoogleEmojiComplete
@@ -159,9 +159,10 @@ ColorSchemeHash=3b17c5d56f8f372f0b0b9f709c4579c23e51fe6a
 Name=Arc Dark
 TerminalApplication=kitty
 TerminalService=kitty.desktop
+UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintnone
-XftSubPixel=rgb
+XftSubPixel=none
 dbfile=/home/kumaresan/.mozilla/firefox/w1fds1yk.default-release/places.sqlite
 fixed=Hack Nerd Font Mono,11,-1,5,50,0,0,0,0,0
 font=Fira Sans,11,-1,5,57,0,0,0,0,0,Medium
@@ -194,7 +195,7 @@ Preview Width=242
 Show Bookmarks=false
 Show Full Path=false
 Show Inline Previews=true
-Show Preview=true
+Show Preview=false
 Show Speedbar=true
 Show hidden files=true
 Sort by=Date
@@ -204,6 +205,10 @@ Sort reversed=true
 Speedbar Width=89
 View Style=Detail
 listViewIconSize=0
+
+[KScreen]
+ScaleFactor=1
+ScreenScaleFactors=eDP=1;HDMI-A-0=1;DisplayPort-0=1;
 
 [KShortcutsDialog Settings]
 Dialog Size=600,480

@@ -3,21 +3,6 @@
 export BINPATH=${HOME}/dotfiles/bin/bin
 source ${BINPATH}/common-lib.sh
 
-echo "---------------- link home dirs -------------------------"
-proceed
-if [ $? -eq 0 ]; then
-  # update user favs
-  xdg-user-dirs-update
-
-  # link dirs for root user
-  sudo su
-  ln -s ~${USER}/.config/nvim* .
-  ln -s ~${USER}/.vim* .
-  ln -s ~${USER}/.zsh* .
-  ln -s ~${USER}/.zfun* .
-  ln -s ~${USER}/.fzf* .
-fi
-
 echo "Here are things you might want to do: 
     x copy stuff from old home folder
     - OpensubtitlesDownloader.py

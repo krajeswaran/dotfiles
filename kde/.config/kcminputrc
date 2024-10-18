@@ -16,9 +16,10 @@ TapToClick=true
 
 [Mouse]
 X11LibInputXAccelProfileFlat=false
+XLbInptAccelProfileFlat=false
 XLbInptMiddleEmulation=false
 XLbInptNaturalScroll=false
-XLbInptPointerAcceleration=0.6
+XLbInptPointerAcceleration=1
 cursorSize=24
 cursorTheme=Adwaita
 

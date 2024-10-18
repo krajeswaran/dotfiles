@@ -1,5 +1,13 @@
+[Applications][@other]
+ShowInHistory=true
+ShowPopups=false
+
+[Applications][bleachbit-root]
+ShowPopups=false
+
 [Applications][chromium]
 Seen=true
+ShowPopups=false
 
 [Applications][com.uploadedlobster.peek]
 Seen=true
@@ -12,6 +20,9 @@ Seen=true
 
 [Applications][google-chrome]
 Seen=true
+
+[Applications][org.bleachbit.BleachBit]
+ShowPopups=false
 
 [Applications][org.gnome.DejaDup]
 Seen=true

@@ -20,46 +20,46 @@ exclude_file="${HOME}/backup-excludes.cfg"
 
 #Check if run as root
 ROOT_UID="0"
-if [ "$UID" -ne "$ROOT_UID" ] ; then
-    echo "You must be root run this!"
-    exit 1
+if [ "$UID" -ne "$ROOT_UID" ]; then
+	echo "You must be root run this!"
+	exit 1
 fi
 
 proceed_yesorno() {
-    # check daemon mode
-    [[ "$1" = "$S1" ]] && REPLY='y' && return
-    read -n1 -p "(y/n/q)? -- " 
-    echo
-    [[ $REPLY = [qQ] ]] && echo "Terminating..." && exit -1
+	# check daemon mode
+	[[ "$1" = "$S1" ]] && REPLY='y' && return
+	read -n1 -p "(y/n/q)? -- "
+	echo
+	[[ $REPLY = [qQ] ]] && echo "Terminating..." && exit -1
 }
 
 if [ "$1" = "$S2" ]; then
-    echo "WARNING: This will wreak hell and havoc upon thy drive."
-    proceed_yesorno
-    echo "Just sit back and watch the fireworks.This might take a while. When it is done, you have a fully restored system!"
-    tar xzvpf "$2" -C "$3"/
+	echo "WARNING: This will wreak hell and havoc upon thy drive."
+	proceed_yesorno
+	echo "Just sit back and watch the fireworks.This might take a while. When it is done, you have a fully restored system!"
+	tar xzvpf "$2" -C "$3"/
 
-    #Just to make sure that all excluded directories are re-created
-    echo "Creating excluded directories"    
-    mkdir "$3"/proc
-    mkdir "$3"/lost+found
-    mkdir "$3"/mnt
-    mkdir "$3"/sys
-    mkdir "$3"/dev
-    mkdir "$3"/tmp
-    mkdir "$3"/run
-    mkdir "$3"/media
-    mkdir "$3"/var/log
-    mkdir "$3"/var/cache
-    mkdir "$3"/var/tmp
-    mkdir "$3"/var/crash
-    chmod 777 "$3"/tmp
-    ln -s "$3"/run "$3"/var/run
-    ln -s "$3"/run/lock "$3"/var/run/lock
-    echo "Remember to edit /etc/fstab and /boot files !!!"
-    echo "-----------------#-----*----------#@****** ALL DONE! HAVE FUN! OR NOT! -----------##########--------------------------"
-    exit 
-fi     
+	#Just to make sure that all excluded directories are re-created
+	echo "Creating excluded directories"
+	mkdir "$3"/proc
+	mkdir "$3"/lost+found
+	mkdir "$3"/mnt
+	mkdir "$3"/sys
+	mkdir "$3"/dev
+	mkdir "$3"/tmp
+	mkdir "$3"/run
+	mkdir "$3"/media
+	mkdir "$3"/var/log
+	mkdir "$3"/var/cache
+	mkdir "$3"/var/tmp
+	mkdir "$3"/var/crash
+	chmod 777 "$3"/tmp
+	ln -s "$3"/run "$3"/var/run
+	ln -s "$3"/run/lock "$3"/var/run/lock
+	echo "Remember to edit /etc/fstab and /boot files !!!"
+	echo "-----------------#-----*----------#@****** ALL DONE! HAVE FUN! OR NOT! -----------##########--------------------------"
+	exit
+fi
 
 # bleachbit commandline stuff
 echo Bleachbit your dirty bits.......
@@ -69,6 +69,10 @@ proceed_yesorno
 echo Optimizing apt.......
 proceed_yesorno
 [[ $REPLY = [yY] ]] && apt autoremove --purge && apt autoclean
+
+echo Brew cleanup.......
+proceed_yesorno
+[[ $REPLY = [yY] ]] && brew cleanup
 
 echo Purging journalctl.......
 proceed_yesorno
@@ -84,9 +88,9 @@ proceed_yesorno
 
 # Check if exclude file exists
 if [ ! -f $exclude_file ]; then
-    echo "Excludes file is missing, so everything will be backed up. This is BAD. Continue..." 
-    proceed_yesorno
-    [[ $REPLY != [yY] ]] && exit
+	echo "Excludes file is missing, so everything will be backed up. This is BAD. Continue..."
+	proceed_yesorno
+	[[ $REPLY != [yY] ]] && exit
 fi
 
 # print possible backup file size and home dir size
@@ -101,4 +105,3 @@ cd /
 echo "Backing up to $backupfile"
 
 tar --exclude-from=$exclude_file -czpvf $backupfile /
-

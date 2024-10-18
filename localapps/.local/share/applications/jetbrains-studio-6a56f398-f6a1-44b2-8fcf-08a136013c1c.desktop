@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Android Studio Hedgehog 2023.1.1 Patch 2
+Exec="/home/kumaresan/.local/share/JetBrains/Toolbox/apps/android-studio/bin/studio.sh" %u
+Version=1.0
+Type=Application
+Categories=Development;IDE;
+Terminal=false
+Icon=/home/kumaresan/.local/share/JetBrains/Toolbox/apps/android-studio/bin/studio.svg
+Comment=An IDE for Android app development
+StartupWMClass=jetbrains-studio
+StartupNotify=true

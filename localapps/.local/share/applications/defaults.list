@@ -1,0 +1,3 @@
+[Default Applications]
+application/x-keepass2=keepassxc.desktop
+x-scheme-handler/bitwarden=bitwarden.desktop

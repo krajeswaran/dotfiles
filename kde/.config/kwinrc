@@ -189,6 +189,7 @@ ActivitiesMode=0
 ApplicationsMode=0
 DesktopMode=0
 HighlightWindows=true
+LayoutName=thumbnail_grid
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
@@ -278,7 +279,7 @@ WindowSnapZone=10
 Scale=1.25
 
 [org.kde.kdecoration2]
-BorderSize=None
+BorderSize=Tiny
 BorderSizeAuto=false
 ButtonsOnLeft=
 ButtonsOnRight=IX
