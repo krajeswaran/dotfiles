@@ -3,72 +3,65 @@
 export BINPATH=${HOME}/dotfiles/bin/bin
 source ${BINPATH}/common-lib.sh
 
-echo "---------------- Updating Vim -------------------------"
-proceed
-if [ $? -eq 0 ]; then
-	mkdir ${HOME}/.vimviews ${HOME}/.vimbackup ${HOME}/.vimswap
-	vim +PlugInstall +qall
-fi
-
 echo "---------------- link home dirs -------------------------"
 proceed
 if [ $? -eq 0 ]; then
-	# update user favs
-	xdg-user-dirs-update
+  # update user favs
+  xdg-user-dirs-update
 
-	# link dirs for root user
-	sudo su
-	mkdir ${HOME}/.vimviews ${HOME}/.vimbackup ${HOME}/.vimswap
-	ln -s ~${USER}/.config/nvim* .
-	ln -s ~${USER}/.vim* .
-	ln -s ~${USER}/.zsh* .
-	ln -s ~${USER}/.zfun* .
-	ln -s ~${USER}/.fzf* .
+  # link dirs for root user
+  sudo su
+  ln -s ~${USER}/.config/nvim* .
+  ln -s ~${USER}/.vim* .
+  ln -s ~${USER}/.zsh* .
+  ln -s ~${USER}/.zfun* .
+  ln -s ~${USER}/.fzf* .
 fi
 
 echo "Here are things you might want to do: 
+    x copy stuff from old home folder
+    - OpensubtitlesDownloader.py
+    - Setup wireguard/VPN
+    - apt-repo: postgres older versions
+    x awscli + eb setup
+    - bitwarden
+    - bluetooth devices connect
+    - copy ~/dumps/ ~/src ~/videos ~/photos/ ~/.local/bin/ ~/music etc from old
+    - disable klipper showing twice in systray: disable it in systray
+    - dotfile syncup
+    - firefoxpwa
+    - fuck off with grub
+    - hibernate stuff
+    - homebrew install: xargs brew install < ~/bin/apps-brew.txt
     - install proj stuff: copy postgres db
-    x install ufw, enable syncthing, ssh, samba + local network
+    - install ufw, enable syncthing, ssh, samba + local network
+    - pipewire
+    - python install: pip3 install -r ~/bin/apps-pip.txt
     - setup backup cron/system
-    - swap fn key with ctrl
-    x OpensubtitlesDownloader.py
-    x Setup wireguard/VPN
+    - setup firefox dev + ublock
+    - setup google-drive-ocamlfuse + setup keepassxc
+    - setup local chromium
+    - setup neovim: checkhealth, fix startup errors
+    - syncthing setup + repos
+    - toolbox: android-studio
+    - toolbox: webstorm, intellij apps
+    - touchpad not working
+    - whatsapp/TG
+    - yarn install: xargs yarn global install  < ~/bin/apps-yarn.txt
     x apt-repo: google-drive-ocamlfuse
     x apt-repo: keepassxc
     x apt-repo: librewolf
-    x apt-repo: postgres older versions
     x apt-repo: slack
-    x awscli + eb setup
-    x bitwarden
-    x bluetooth
-    x copy ~/dumps/ ~/src ~/videos ~/photos/ ~/.local/bin/ ~/music etc from old
-    x disable klipper showing twice in systray: disable it in systray
     x firefox dev edition install
-    x firefoxpwa + librewolf
+    x firefox/librewolf profile copy
     x fonts fuckery: install nerd-fonts: Hack, Jetbrains, Fira Sans
-    x fuck off with grub
-    x gtk/xfce/kde themes: Materia theme, kvantum engine, cz-viator mouse cursor: https://store.kde.org/p/1229367/ etc
-    x homebrew install: xargs brew install < ~/bin/apps-brew.txt
     x install stuff in ~/sw
     x keyboard shortcuts: handle caps lock <> esc
     x make sure fstab is hardlinked and updated
-    x mozilla profiles from old
     x password, groups and sudoers
-    x pipewire
-    x python install: pip3 install -r ~/bin/apps-pip.txt
-    x setup firefox dev + ublock
-    x setup google-drive-ocamlfuse + setup keepassxc
-    x setup local chromium
-    x setup neovim: checkhealth, fix startup errors
     x setup zsh, chsh
-    x sleep/hybrid sleep issue
-    x syncthing setup + repos
-    x toolbox: android-studio
-    x toolbox: webstorm, intellij apps
-    x tz fuckery
+    x swap fn key with ctrl
     x uninstall crap
-    x whatsapp/TG
     x wifi
-    x yarn install: xargs yarn global install  < ~/bin/apps-yarn.txt
     x zhistory/root file history/sshkeys from old 
 "

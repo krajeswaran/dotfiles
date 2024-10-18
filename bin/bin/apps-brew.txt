@@ -14,5 +14,4 @@ lazygit
 helix
 dust
 fzf
-nvm
 awscli

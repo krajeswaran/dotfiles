@@ -70,17 +70,16 @@ _k_friendly_name=Custom Shortcuts Service
 {43b12498-8852-4f48-bcb3-6d8abb8f4e83}=Meta+E,none,Run filemanager
 {b291028c-82ab-4d13-be96-c8681844eb40}=Meta+B,none,Run Browser
 {b332be0d-d4bd-413d-906b-545108f27748}=Meta+C,none,Run chat
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Search
 
 [klipper]
 _k_friendly_name=Klipper
-clear-history=none,,Clear Clipboard History
+clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Meta+Ctrl+X,Automatic Action Popup Menu
-cycleNextAction=none,,Next History Item
-cyclePrevAction=none,,Previous History Item
-edit_clipboard=none,,Edit Contents…
+cycleNextAction=none,none,Next History Item
+cyclePrevAction=none,none,Previous History Item
+edit_clipboard=none,none,Edit Contents…
 repeat_action=Ctrl+Alt+R,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard
-show-barcode=none,,Show Barcode…
+show-barcode=none,none,Show Barcode…
 show-on-mouse-pos=none,Meta+V,Show Items at Mouse Position
 
 [kmix]
@@ -340,7 +339,7 @@ activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 15=none,none,Activate Icons-only Task Manager Widget
 activate widget 25=Meta+Esc,none,Activate Application Launcher Widget
 activate widget 57=none,none,Activate Icons-only Task Manager Widget
-activate widget 7=,none,Activate System Tray Widget
+activate widget 7=none,none,Activate System Tray Widget
 activate widget 73=none,none,Activate Digital Clock Widget
 activate widget 79=none,none,Activate Syncthing Widget
 clear-history=none,,Clear Clipboard History

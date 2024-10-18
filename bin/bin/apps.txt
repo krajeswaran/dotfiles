@@ -12,6 +12,7 @@ dconf-cli
 deborphan
 fd-find
 kde-spectacle
+etckeeper
 fonts-font-awesome
 fonts-freefont-ttf
 fonts-go
@@ -106,3 +107,6 @@ libspa-0.2-bluetooth
 wireplumber
 telnet
 ffmpeg
+xserver-xorg-input-libinput
+xserver-xorg-input-mouse
+xserver-xorg-input-evdev

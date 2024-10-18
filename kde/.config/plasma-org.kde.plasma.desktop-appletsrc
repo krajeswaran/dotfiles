@@ -146,7 +146,7 @@ DialogHeight=600
 DialogWidth=800
 
 [Containments][2][Applets][66][Configuration][General]
-launchers=preferred://filemanager,applications:firefox-dev.desktop,applications:librewolf.desktop,applications:chromium.desktop,applications:jetbrains-webstorm-c35fc704-1db9-4c67-8efa-0ee467d11ed1.desktop,applications:FFPWA-01HV7CMC0M9RS58VKJKEKM6KYY.desktop
+launchers=applications:librewolf.desktop,applications:chromium.desktop,applications:firefox-devedition.desktop
 maxStripes=1
 middleClickAction=Close
 showOnlyCurrentActivity=false
@@ -438,6 +438,14 @@ preferIconsFromTheme=false
 selectedConfig=0
 showTabTexts=false
 size=25,25
+
+[Containments][7][Applets][82]
+immutability=1
+plugin=martchus.syncthingplasmoid
+
+[Containments][7][Applets][82][Configuration]
+PreloadWeight=80
+selectedConfig=0
 
 [Containments][7][ConfigDialog]
 DialogHeight=480
