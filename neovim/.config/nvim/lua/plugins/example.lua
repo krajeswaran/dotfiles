@@ -40,7 +40,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        tsserver = {
+        ts_ls = {
           enabled = false,
           root_dir = require("lspconfig").util.root_pattern(".git"),
         },
@@ -156,24 +156,24 @@ return {
               cond = function()
                 return package.loaded["noice"] and require("noice").api.status.command.has()
               end,
-              color = Util.ui.fg("Statement"),
+              color = LazyVim.ui.fg("Statement"),
             },
             -- stylua: ignore
             {
               function() return require("noice").api.status.mode.get() end,
               cond = function() return package.loaded["noice"] and require("noice").api.status.mode.has() end,
-              color = Util.ui.fg("Constant"),
+              color = LazyVim.ui.fg("Constant"),
             },
             -- stylua: ignore
             {
               function() return "  " .. require("dap").status() end,
               cond = function () return package.loaded["dap"] and require("dap").status() ~= "" end,
-              color = Util.ui.fg("Debug"),
+              color = LazyVim.ui.fg("Debug"),
             },
             {
               require("lazy.status").updates,
               cond = require("lazy.status").has_updates,
-              color = Util.ui.fg("Special"),
+              color = LazyVim.ui.fg("Special"),
             },
             {
               "diff",
@@ -211,12 +211,36 @@ return {
     "folke/noice.nvim",
     opts = {
       routes = {
+        -- {
+        --   filter = {
+        --     event = "msg_show",
+        --     ["not"] = { kind = { "confirm", "confirm_sub" } },
+        --   },
+        --   opts = { view = true },
+        -- },
         {
+          -- Disable messages
+          opts = { skip = true },
           filter = {
-            event = "msg_show",
-            ["not"] = { kind = { "confirm", "confirm_sub" } },
+            any = {
+              { event = "msg_show", find = "%d+B written$" },
+              { event = "msg_show", find = "%-%-No lines in buffer%-%-" },
+              { event = "msg_show", find = "No more valid diagnostics to move to" },
+              { event = "msg_show", find = "^%[nvim%-treesitter%]" },
+              { event = "msg_show", find = "fewer lines$" },
+              { event = "notify", find = "^Codeium*completion" },
+              { event = "notify", find = "^codeium/codeium.log*" },
+              { event = "notify", find = "All parsers are up%-to%-date" },
+              { event = "msg_show", find = "%d+ lines, %d+ bytes" },
+              { event = "msg_show", find = "%d+L, %d+B" },
+              { event = "msg_show", find = "^Hunk %d+ of %d" },
+              { event = "msg_show", find = "%d+ change" },
+              { event = "msg_show", find = "%d+ line" },
+              { event = "msg_show", find = "%d+ more line" },
+              { event = "notify", find = "completion request failed" }, -- Codeium
+              { event = "notify", find = "No information available" }, -- Hover doc
+            },
           },
-          opts = { view = true },
         },
       },
     },
@@ -328,7 +352,7 @@ return {
     opts = {
       handlers = {
         function(server_name)
-          if server_name == "tsserver" then
+          if server_name == "ts_ls" then
             return
           end
         end,
@@ -444,17 +468,17 @@ return {
       end
     end,
   },
-  {
-    "rest-nvim/rest.nvim",
-    ft = "http",
-    tag = "v1.2.1",
-    pin = true,
-    dependencies = { "luarocks.nvim" },
-    lazy = true,
-    config = function()
-      vim.keymap.set("n", "<Leader>ht", "<Plug>RestNvim<CR>", { desc = "Execute RestNvim" })
-    end,
-  },
+  -- {
+  --   "rest-nvim/rest.nvim",
+  --   ft = "http",
+  --   tag = "v1.2.1",
+  --   pin = true,
+  --   dependencies = { "luarocks.nvim" },
+  --   lazy = true,
+  --   config = function()
+  --     vim.keymap.set("n", "<Leader>ht", "<Plug>RestNvim<CR>", { desc = "Execute RestNvim" })
+  --   end,
+  -- },
   {
     "pmizio/typescript-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
@@ -474,21 +498,53 @@ return {
       },
     },
   },
-  {
-    "ThePrimeagen/refactoring.nvim",
-    ft = { "python", "golang", "typescript", "typescriptreact", "javascript", "javascriptreact", "angular", "svelte" },
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-treesitter/nvim-treesitter",
-    },
-  },
+  -- {
+  --   "ThePrimeagen/refactoring.nvim",
+  --   ft = { "python", "golang", "typescript", "typescriptreact", "javascript", "javascriptreact", "angular", "svelte" },
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-treesitter/nvim-treesitter",
+  --   },
+  -- },
   { "samoshkin/vim-mergetool", cmd = "MergetoolStart" },
   {
-    "junegunn/goyo.vim",
-    cmd = "Goyo",
-    lazy = true,
-    event = { "BufReadPre", "BufNewFile" },
-    enabled = isEditor(),
+    "folke/zen-mode.nvim",
+    -- lazy = true,
+    -- event = { "BufReadPre", "BufNewFile" },
+    -- enabled = isEditor(),
+    opts = {
+      window = {
+        backdrop = 1, -- shade the backdrop of the Zen window. Set to 1 to keep the same as Normal
+        -- height and width can be:
+        -- * an absolute number of cells when > 1
+        -- * a percentage of the width / height of the editor when <= 1
+        -- * a function that returns the width or the height
+        width = 75, -- width of the Zen window
+        height = 0.9, -- height of the Zen window
+        options = {
+          signcolumn = "no", -- disable signcolumn
+          number = false, -- disable number column
+          relativenumber = false, -- disable relative numbers
+          cursorline = false, -- disable cursorline
+          cursorcolumn = false, -- disable cursor column
+          foldcolumn = "0", -- disable fold column
+          list = false, -- disable whitespace characters
+        },
+      },
+      plugins = {
+        -- disable some global vim options (vim.o...)
+        -- comment the lines to not apply the options
+        options = {
+          enabled = true,
+          ruler = false, -- disables the ruler text in the cmd line area
+          showcmd = false, -- disables the command in the last line of the screen
+          -- you may turn on/off statusline in zen mode by setting 'laststatus'
+          -- statusline will be shown only if 'laststatus' == 3
+          laststatus = 0, -- turn off the statusline in zen mode
+        },
+        gitsigns = { enabled = false }, -- disables git signs
+      },
+    },
   },
   {
     "Wansmer/treesj",

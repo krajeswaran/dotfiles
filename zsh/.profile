@@ -46,7 +46,7 @@ export CCACHE_COMPRESS=1
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 
 xo() {
-	xdg-open "$@" 2>/dev/null
+  xdg-open "$@" 2>/dev/null
 }
 
 # replace caps with escape
@@ -63,11 +63,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 command -v lsd >/dev/null 2>&1 && alias ls="lsd"
 
-# for node 14
-#export PATH="/home/linuxbrew/.linuxbrew/opt/node@14/bin:$PATH"
-#export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@14/lib"
-#export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@14/include"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"                                       # This loads nvm
-[ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+# for node 18
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@18/bin:$PATH"
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@18/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@18/include"

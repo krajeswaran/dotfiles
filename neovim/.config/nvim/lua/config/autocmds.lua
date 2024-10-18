@@ -33,9 +33,9 @@ set spelllang=en
 autocmd FileType markdown,text,taskpaper set autowriteall
 autocmd TextChanged,TextChangedI scratch.md silent write  
 
-autocmd BufRead,BufNewFile todo.md :Goyo 80
-autocmd BufRead,BufNewFile todo.md set ft=taskpaper 
-autocmd BufRead,BufNewFile todo.md set statusline=
+autocmd BufRead,BufNewFile todo.md :ZenMode
+autocmd BufRead,BufNewFile todo.md set ft=taskpaper
+autocmd BufRead,BufNewFile todo.md set laststatus=0
 autocmd BufWritePost todo.md call timer_start(1000, {-> execute("echo ''", "")})
 autocmd TextChanged,TextChangedI todo.md silent write  
 autocmd VimEnter todo.md  setlocal complete=k/~/notes/journal/**/*
@@ -72,7 +72,7 @@ _G.ScratchPad = function()
   -- open journal file with date
   local fname = vim.fn.resolve(os.getenv("HOME") .. "/" .. "scratch.md")
   vim.api.nvim_command("e " .. fname)
-  vim.api.nvim_command("Goyo")
+  vim.api.nvim_command("ZenMode")
   vim.api.nvim_command("set autowriteall")
 end
 

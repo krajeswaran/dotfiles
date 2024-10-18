@@ -161,7 +161,7 @@ TerminalApplication=kitty
 TerminalService=kitty.desktop
 XftAntialias=true
 XftHintStyle=hintnone
-XftSubPixel=rgb
+XftSubPixel=none
 dbfile=/home/kumaresan/.mozilla/firefox/w1fds1yk.default-release/places.sqlite
 fixed=Hack Nerd Font Mono,11,-1,5,50,0,0,0,0,0
 font=Fira Sans,11,-1,5,57,0,0,0,0,0,Medium
@@ -204,6 +204,10 @@ Sort reversed=true
 Speedbar Width=89
 View Style=Detail
 listViewIconSize=0
+
+[KScreen]
+ScaleFactor=1
+ScreenScaleFactors=eDP=1;HDMI-A-0=1;DisplayPort-0=1;
 
 [KShortcutsDialog Settings]
 Dialog Size=600,480

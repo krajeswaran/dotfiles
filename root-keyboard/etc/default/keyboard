@@ -1,8 +1,0 @@
-# KEYBOARD CONFIGURATION FILE
-
-# Consult the keyboard(5) manual page.
-
-XKBLAYOUT=us
-XKBOPTIONS="caps:escape"
-
-BACKSPACE="guess"

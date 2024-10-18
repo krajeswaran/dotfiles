@@ -611,6 +611,10 @@ Speedbar Width[$d]
 View Style[$d]
 listViewIconSize[$d]
 
+[KScreen]
+ScaleFactor[$d]
+ScreenScaleFactors[$d]
+
 [KShortcutsDialog Settings]
 Dialog Size[$d]
 

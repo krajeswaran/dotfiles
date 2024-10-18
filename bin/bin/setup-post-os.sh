@@ -3,29 +3,6 @@
 export BINPATH=${HOME}/dotfiles/bin/bin
 source ${BINPATH}/common-lib.sh
 
-echo "---------------- Updating Vim -------------------------"
-proceed
-if [ $? -eq 0 ]; then
-	mkdir ${HOME}/.vimviews ${HOME}/.vimbackup ${HOME}/.vimswap
-	vim +PlugInstall +qall
-fi
-
-echo "---------------- link home dirs -------------------------"
-proceed
-if [ $? -eq 0 ]; then
-	# update user favs
-	xdg-user-dirs-update
-
-	# link dirs for root user
-	sudo su
-	mkdir ${HOME}/.vimviews ${HOME}/.vimbackup ${HOME}/.vimswap
-	ln -s ~${USER}/.config/nvim* .
-	ln -s ~${USER}/.vim* .
-	ln -s ~${USER}/.zsh* .
-	ln -s ~${USER}/.zfun* .
-	ln -s ~${USER}/.fzf* .
-fi
-
 echo "Here are things you might want to do: 
     - install proj stuff: copy postgres db
     x install ufw, enable syncthing, ssh, samba + local network
