@@ -639,289 +639,6 @@
 /home/kumaresan/music/mnt/Yogi_B_Natchatraz_Vaa_Vaa.m4a
 /home/kumaresan/music/mnt/You_Shook_Me_All_Night_Long.ogg
 /home/kumaresan/music/mnt/അപ്പൊഴേ പറഞ്ഞതാ... ൈതക്കുടം ബ്രിഡ്ജ്ജിലെ അച്ഛൻ എന്നാ എനർജിയാന്നേ Vanitha Film Awards 2019 Part 9 [nKM-0REXGT4].m4a
-/home/kumaresan/music/Music/2Pac_Escape_To_Heaven_Lyrics_.m4a
-/home/kumaresan/music/Music/2Pac - Hit _Em Up (Dirty) (Official Video) HD.m4a
-/home/kumaresan/music/Music/3_Doors_Down_Here_Without_You.m4a
-/home/kumaresan/music/Music/Aces_High_Iron_Maiden.m4a
-/home/kumaresan/music/Music/Ain_t_No_Mountain_High_Enough.m4a
-/home/kumaresan/music/Music/America_A_Horse_With_No_Name_Lyrics.m4a
-/home/kumaresan/music/Music/Animals_The_House_Of_The_Rising_Sun_lyrics_.m4a
-/home/kumaresan/music/Music/Another_One_Bites_the_Dust_Remastered_2011_.m4a
-/home/kumaresan/music/Music/Beach_Boys_Wouldn_t_It_Be_Nice.m4a
-/home/kumaresan/music/Music/Bee_Gees_How_Deep_Is_Your_Love_1977_.m4a
-/home/kumaresan/music/Music/Bee_Gees_Stayin_Alive_1977_.m4a
-/home/kumaresan/music/Music/Bella Ciao - ORIGINALE.m4a
-/home/kumaresan/music/Music/Bicameral Mind (Westworld Soundtrack).m4a
-/home/kumaresan/music/Music/BIRD_FLU_M_I_A.m4a
-/home/kumaresan/music/Music/Black_Dog_Led_Zeppelin_Lyrics.m4a
-/home/kumaresan/music/Music/Black_Night_complete_Deep_Purple.ogg
-/home/kumaresan/music/Music/Black_Sabbath_Children_Of_The_Grave_Embryo.m4a
-/home/kumaresan/music/Music/BLACK_SABBATH_CHILDREN_OF_THE_SEA.m4a
-/home/kumaresan/music/Music/Black Sabbath - End of the Beginning.m4a
-/home/kumaresan/music/Music/Black_Sabbath_God_Is_Dead_.m4a
-/home/kumaresan/music/Music/Black_Sabbath_N_I_B_HQ_Audio_On_screen_Lyrics_.m4a
-/home/kumaresan/music/Music/Black Sabbath ~ War Pigs.m4a
-/home/kumaresan/music/Music/Boga- Nowhere to run ( Baby Driver trailer soundtrack).m4a
-/home/kumaresan/music/Music/Bohemian_Rhapsody_Remastered_2011_.m4a
-/home/kumaresan/music/Music/Bruce_Springsteen_Secret_Garden_lyrics_.ogg
-/home/kumaresan/music/Music/Bruce_Springsteen_The_River.ogg
-/home/kumaresan/music/Music/Bryan_Adams_Summer_of_69.m4a
-/home/kumaresan/music/Music/Crazy_Little_Thing_Called_Love_Remastered_2011_.m4a
-/home/kumaresan/music/Music/Creedence_Clearwater_Revival_Green_River_Official_Lyric_Video_.ogg
-/home/kumaresan/music/Music/Creedence_Clearwater_Revival_Have_You_Ever_Seen_The_Rain_.m4a
-/home/kumaresan/music/Music/Creedence_Clearwater_Revival_Proud_Mary_Lyric_Video_.m4a
-/home/kumaresan/music/Music/Deep_Purple_Burn.ogg
-/home/kumaresan/music/Music/Deep_Purple_Child_in_Time.ogg
-/home/kumaresan/music/Music/Deep_Purple_Fireball.ogg
-/home/kumaresan/music/Music/Deep_Purple_Highway_Star.ogg
-/home/kumaresan/music/Music/Deep_Purple_Hush.ogg
-/home/kumaresan/music/Music/Deep_Purple_Lalena.ogg
-/home/kumaresan/music/Music/Deep_Purple_Perfect_Strangers_Official_Video_.ogg
-/home/kumaresan/music/Music/Deep_Purple_Smoke_on_the_Water.ogg
-/home/kumaresan/music/Music/Deep_Purple_Soldier_Of_Fortune_HD_.ogg
-/home/kumaresan/music/Music/Deep_Purple_Sometimes_I_Feel_Like_Screaming.ogg
-/home/kumaresan/music/Music/Deep_Purple_Stormbringer.ogg
-/home/kumaresan/music/Music/Deep_Purple_Strange_Kind_Of_Woman.ogg
-/home/kumaresan/music/Music/Deep_Purple_Wasted_Sunsets.ogg
-/home/kumaresan/music/Music/Deep_Purple_Woman_from_Tokyo.ogg
-/home/kumaresan/music/Music/Dharmadurai - Makka Kalanguthappa _ Lyric Video _ Vijay Sethupathi, Tamannaah _ Yuvan Shankar Raja.m4a
-/home/kumaresan/music/Music/Dharmadurai_Makka_Kalanguthappa_Lyric_Video_Vijay_Sethupathi_Tamannaah_Yuvan_Shankar_Raja.m4a
-/home/kumaresan/music/Music/Dharmadurai - Makka Kalanguthappa _ Lyric Video _ Vijay Sethupathi, Tamannaah _ Yuvan Shankar Raja.ogg
-/home/kumaresan/music/Music/Dhee ft. Arivu - Enjoy Enjaami (Prod. Santhosh Narayanan).m4a
-/home/kumaresan/music/Music/Dire_Straits_Brothers_In_Arms_Official_Video_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Calling_Elvis_Official_Video_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Down_To_The_Waterline_HQ_Audio_LYRICS.ogg
-/home/kumaresan/music/Music/Dire_Straits_Expresso_Love.ogg
-/home/kumaresan/music/Music/Dire_Straits_Fade_to_Black.ogg
-/home/kumaresan/music/Music/Dire_Straits_Heavy_Fuel_Official_Music_Video_.ogg
-/home/kumaresan/music/Music/Dire_Straits_How_Long.ogg
-/home/kumaresan/music/Music/Dire_Straits_Lady_Writer_Official_Video_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Money_For_Nothing.ogg
-/home/kumaresan/music/Music/Dire_Straits_Once_Upon_A_Time_In_The_West_1979_Remaster_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Once_Upon_A_Time_In_The_West_lyrics_HQ.ogg
-/home/kumaresan/music/Music/Dire_Straits_On_Every_Street.ogg
-/home/kumaresan/music/Music/Dire_Straits_Planet_of_New_Orleans.ogg
-/home/kumaresan/music/Music/Dire_Straits_Private_Investigations_Full_Album_Version_1982.ogg
-/home/kumaresan/music/Music/Dire_Straits_Romeo_And_Juliet.ogg
-/home/kumaresan/music/Music/Dire_Straits_So_Far_Away.ogg
-/home/kumaresan/music/Music/Dire_Straits_Solid_Rock_Live_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Sultans_Of_Swing.ogg
-/home/kumaresan/music/Music/Dire_Straits_Telegraph_Road_Vinyl_Thorens_TD_160_Super_AT440MLa.ogg
-/home/kumaresan/music/Music/Dire_Straits_Ticket_to_heaven.ogg
-/home/kumaresan/music/Music/Dire_Straits_Tunnel_Of_Love_Official_Video_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Twisting_By_The_Pool_Official_Video_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Two_Young_Lovers_Live_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Walk_Of_Life_Official_Music_Video_.ogg
-/home/kumaresan/music/Music/Dire_Straits_What_It_Is.ogg
-/home/kumaresan/music/Music/Dire_Straits_When_it_comes_to_you_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Where_Do_You_Think_You_re_Going_HQ_audio_.ogg
-/home/kumaresan/music/Music/Dire_Straits_Why_Worry.ogg
-/home/kumaresan/music/Music/Dire_Straits_Wild_West_End_Official_Video_.ogg
-/home/kumaresan/music/Music/Dire_Straits_You_and_your_friend.ogg
-/home/kumaresan/music/Music/Dire_Straits_Your_Latest_Trick_Official_Music_Video_.ogg
-/home/kumaresan/music/Music/Don_t_Go_Breaking_My_Heart.m4a
-/home/kumaresan/music/Music/Dr_Dre_Nuthin_But_A_G_Thang_HQ_.m4a
-/home/kumaresan/music/Music/Eagles_Hotel_California_Lyrics_.m4a
-/home/kumaresan/music/Music/Eagles_I_Can_t_Tell_You_Why_w_lyrics_.m4a
-/home/kumaresan/music/Music/Eazy_E_Real_Mothafuckin_G_s_ft_Dresta_B_G_Knock_Out_Lyrics_.m4a
-/home/kumaresan/music/Music/Ennio_Morricone_For_A_Few_Dollars_More_HQ_.ogg
-/home/kumaresan/music/Music/Geto Boys - Damn It Feels Good To Be A Gangsta [Explicit].m4a
-/home/kumaresan/music/Music/Guns_N_Roses_Don_t_Cry.m4a
-/home/kumaresan/music/Music/Guns_N_Roses_Estranged.m4a
-/home/kumaresan/music/Music/Guns_N_Roses_November_Rain.m4a
-/home/kumaresan/music/Music/Guns_N_Roses_Paradise_City.m4a
-/home/kumaresan/music/Music/Guns_N_Roses_Sweet_Child_O_Mine.m4a
-/home/kumaresan/music/Music/Guns_N_Roses_Welcome_To_The_Jungle.m4a
-/home/kumaresan/music/Music/Heaven_and_Hell_Black_Sabbath_lyrics.ogg
-/home/kumaresan/music/Music/IceCube_Check_Yo_Self.m4a
-/home/kumaresan/music/Music/Ice_Cube_It_Was_Good_Day_Lyrics_.m4a
-/home/kumaresan/music/Music/Ice Cube - No Vaseline (N.W.A Diss).m4a
-/home/kumaresan/music/Music/Ilaya Nila BGM.m4a
-/home/kumaresan/music/Music/Indraikku_Yen_Indha.ogg
-/home/kumaresan/music/Music/In_My_Darkest_Hour_Megadeth.ogg
-/home/kumaresan/music/Music/Iron_Maiden_2_Minutes_To_Midnight.m4a
-/home/kumaresan/music/Music/Iron_Maiden_Alexander_The_Great_with_lyrics_.m4a
-/home/kumaresan/music/Music/Iron_maiden_Brave_new_world_studio_version.m4a
-/home/kumaresan/music/Music/Iron_Maiden_Fear_of_The_Dark_HQ_.m4a
-/home/kumaresan/music/Music/Iron Maiden - Fear Of The Dark (lyrics).m4a
-/home/kumaresan/music/Music/Iron_Maiden_Hallowed_Be_Thy_Name_Studio_Version_.m4a
-/home/kumaresan/music/Music/Iron_Maiden_Hallowed_Be_Thy_Name_Studio_Version_.ogg
-/home/kumaresan/music/Music/Iron_Maiden_Mother_Russia.m4a
-/home/kumaresan/music/Music/Iron_Maiden_Out_of_The_Silent_Planet.m4a
-/home/kumaresan/music/Music/Iron_Maiden_Phantom_Of_The_Opera.m4a
-/home/kumaresan/music/Music/Iron_Maiden_The_Trooper_HQ_.m4a
-/home/kumaresan/music/Music/Iron Maiden - The Trooper (Official Video).m4a
-/home/kumaresan/music/Music/Iron_Maiden_The_Wicker_Man.m4a
-/home/kumaresan/music/Music/I_Will_Survive.m4a
-/home/kumaresan/music/Music/JAY Z, Kanye West - Otis ft. Otis Redding.m4a
-/home/kumaresan/music/Music/Joan_Jett_I_Love_Rock_n_Roll.m4a
-/home/kumaresan/music/Music/John_Denver_Take_Me_Home_Country_Roads_Official_Audio_.m4a
-/home/kumaresan/music/Music/Kabali_Songs___Neruppu_Da_Song_with_Lyrics___Rajinikanth___Pa_Ranjith___Santhosh_Narayanan.m4a
-/home/kumaresan/music/Music/Kabali_Songs___Ulagam_Oruvanukka_Song_with_Lyrics___Rajinikanth___Pa_Ranjith___Santhosh_Narayanan.m4a
-/home/kumaresan/music/Music/Kadhalin_Deepam_Ondru.ogg
-/home/kumaresan/music/Music/_Kalinka_ - Yevgeny Belyaev & the Alexandrov Red Army Choir (1965).m4a
-/home/kumaresan/music/Music/Kallamouni - Arivu x ofRo _ Therukural _ The Casteless Collective _ Pa Ranjith _ ENGLISH SUBTITLES.m4a
-/home/kumaresan/music/Music/Kannukul Nooru Nilavu _ Lyrical _ Vedham Pudhithu _ _ Amala, Raja _ Superhit Romantic Song.m4a
-/home/kumaresan/music/Music/Kanye West - Good Morning.mp3
-/home/kumaresan/music/Music/Karuppu_Vellai_Official_full_song_Vikram_Vedha.m4a
-/home/kumaresan/music/Music/Kashmir_Led_Zeppelin.m4a
-/home/kumaresan/music/Music/Katyusha.m4a
-/home/kumaresan/music/Music/Kavithai_Gundar_Emcee_jesz_Feat_Masta_k_vel_vel.m4a
-/home/kumaresan/music/Music/Killer_Queen_Remastered_2011_.m4a
-/home/kumaresan/music/Music/Lazy_Deep_Purple.ogg
-/home/kumaresan/music/Music/Lean_on_Me.m4a
-/home/kumaresan/music/Music/Led_Zeppein_Babe_im_gonna_leave_you.ogg
-/home/kumaresan/music/Music/Led_Zeppelin_All_of_My_Love.m4a
-/home/kumaresan/music/Music/Led_Zeppelin_Babe_I_m_Gonna_Leave_You_Danmarks_Radio_1969_.m4a
-/home/kumaresan/music/Music/Led_Zeppelin_Dazed_and_Confused_Supershow_1969_.m4a
-/home/kumaresan/music/Music/Led_Zeppelin_How_Many_More_Times_Danmarks_Radio_1969_.m4a
-/home/kumaresan/music/Music/Led_Zeppelin_Immigrant_Song_Live_1972_Official_Video_.m4a
-/home/kumaresan/music/Music/Led_Zeppelin_Rock_and_Roll_HQ.ogg
-/home/kumaresan/music/Music/Led_Zeppelin_Stairway_To_Heaven_ᴴᴰ_Legendado_Tradução_PTBR_.m4a
-/home/kumaresan/music/Music/Led_Zeppelin_Whole_Lotta_Love_Official_Music_Video_.m4a
-/home/kumaresan/music/Music/Livin_On_A_Prayer.m4a
-/home/kumaresan/music/Music/Lynyrd_Skynyrd_Free_Bird.ogg
-/home/kumaresan/music/Music/Lyrics_Black_Sabbath_Heaven_And_Hell.m4a
-/home/kumaresan/music/Music/Madai_thiranthu_Tamil_Rap.m4a
-/home/kumaresan/music/Music/Madurai Souljour - _Yeppadi Padinaro_ Unofficial Street Jam In Thiruvizha.m4a
-/home/kumaresan/music/Music/Marvin_Gaye_Inner_City_Blues_Make_Me_Wanna_Holler_.m4a
-/home/kumaresan/music/Music/Marvin_Gaye_Sexual_Healing_Video_.m4a
-/home/kumaresan/music/Music/Massive_Attack_feat_Mos_Def_I_Against_I.m4a
-/home/kumaresan/music/Music/Mersal - Aalaporaan Thamizhan Tamil Lyric Video _ Vijay _ A R Rahman _ Atlee.m4a
-/home/kumaresan/music/Music/Metallica_Fade_to_Black.m4a
-/home/kumaresan/music/Music/Metallica_For_Whom_The_Bell_Tolls_HQ_.m4a
-/home/kumaresan/music/Music/Metallica_Master_Of_Puppets_Lyrics_.m4a
-/home/kumaresan/music/Music/Metallica_Nothing_Else_Matters_Official_Music_Video_.ogg
-/home/kumaresan/music/Music/Metallica_The_Unforgiven_Video_.m4a
-/home/kumaresan/music/Music/Metallica_Turn_The_Page_Song_And_Lyrics_.m4a
-/home/kumaresan/music/Music/MF_DOOM_Doomsday_HD_.m4a
-/home/kumaresan/music/Music/MF_DOOM_feat_RZA_Books_of_War.m4a
-/home/kumaresan/music/Music/MF_DOOM_Rhymes_Like_Dimes_HD_.m4a
-/home/kumaresan/music/Music/M_I_A_10_Dollar.m4a
-/home/kumaresan/music/Music/M.I.A. - Bad Girls.m4a
-/home/kumaresan/music/Music/MIA_BIRDFLU.m4a
-/home/kumaresan/music/Music/M.I.A. - Borders.m4a
-/home/kumaresan/music/Music/M.I.A. - Galang.m4a
-/home/kumaresan/music/Music/M_I_A_Paper_Planes.m4a
-/home/kumaresan/music/Music/M_I_A_Sunshowers_.m4a
-/home/kumaresan/music/Music/Michael_Jackson_Billie_Jean_Official_Music_Video_.m4a
-/home/kumaresan/music/Music/Mohan hits/i want to be a rich man.mp3
-/home/kumaresan/music/Music/Mohan hits/kaiyale unai thoddal pothum.mp3
-/home/kumaresan/music/Music/Mohan hits/kavithaikal viriyum vilijile.mp3
-/home/kumaresan/music/Music/Mohan hits/ododi vilaiyadu.mp3
-/home/kumaresan/music/Music/Mohan hits/panneeril nanaintha pookal mella sivakka.mp3
-/home/kumaresan/music/Music/Mos Def -1998 -Mos Def & Talib Kweli - Definition.m4a
-/home/kumaresan/music/Music/Mos_Def_Do_It_Now.m4a
-/home/kumaresan/music/Music/Mos_Def_Fear_Not_Of_Man.m4a
-/home/kumaresan/music/Music/Mos_def_Foundation.m4a
-/home/kumaresan/music/Music/Mos_Def_Kalifornia.m4a
-/home/kumaresan/music/Music/Mos_Def_Mathematics.m4a
-/home/kumaresan/music/Music/Mos_Def_Sunshine.m4a
-/home/kumaresan/music/Music/Mos_Def_Travellin_Man_HQ_Audio_.m4a
-/home/kumaresan/music/Music/Mötley Crüe - Home Sweet Home (Official Music Video).m4a
-/home/kumaresan/music/Music/Motorhead_Born_to_Raise_Hell.m4a
-/home/kumaresan/music/Music/_Motörhead_Rock_n_Roll.m4a
-/home/kumaresan/music/Music/Munbe_Vaa_song_Sillunu_Oru_Kaadhal.ogg
-/home/kumaresan/music/Music/My_Girl.m4a
-/home/kumaresan/music/Music/Naduvan_Dr_Burn.m4a
-/home/kumaresan/music/Music/N_I_B_Black_Sabbath_Subtitulado.ogg
-/home/kumaresan/music/Music/Nirvana_All_Apologies_MTV_Unplugged_.m4a
-/home/kumaresan/music/Music/Nirvana_Come_As_You_Are.m4a
-/home/kumaresan/music/Music/Nirvana_Heart_Shaped_Box.m4a
-/home/kumaresan/music/Music/Nirvana_In_Bloom.m4a
-/home/kumaresan/music/Music/Nirvana_Lithium.m4a
-/home/kumaresan/music/Music/Nirvana_Smells_Like_Teen_Spirit.m4a
-/home/kumaresan/music/Music/Nirvana_The_Man_Who_Sold_The_World_MTV_Unplugged_.m4a
-/home/kumaresan/music/Music/Nirvana_Where_did_you_sleep_last_night_HD_Unplugged_in_new_york_Best_Sound_Quality_.m4a
-/home/kumaresan/music/Music/No_Quarter_Led_Zeppelin_HD_with_lyrics_.m4a
-/home/kumaresan/music/Music/Numb_Official_Video_Linkin_Park.m4a
-/home/kumaresan/music/Music/OFFICIAL - Westworld Soundtrack - Black Hole Sun - Ramin Djawadi.m4a
-/home/kumaresan/music/Music/OFFICIAL - Westworld Soundtrack - Main Title Theme - Ramin Djawadi.m4a
-/home/kumaresan/music/Music/OFFICIAL - Westworld Soundtrack - No Surprises - Ramin Djawadi.m4a
-/home/kumaresan/music/Music/OFFICIAL - Westworld Soundtrack - Paint It, Black - Ramin Djawadi.m4a
-/home/kumaresan/music/Music/Oh_Pretty_Woman.m4a
-/home/kumaresan/music/Music/Om Sivoham Offical HD Video Song _ 4K HD Video Song _ Naan Kadavul _ Arya _ Pooja _ Ilaiyaraaja Bala.m4a
-/home/kumaresan/music/Music/Paruthiveeran_Oorora_Puliyamaram_Song_Karthi_Priyamani_Yuvan_Shankar_Raja.m4a
-/home/kumaresan/music/Music/Premam Malare.m4a
-/home/kumaresan/music/Music/Premam_Malare.ogg
-/home/kumaresan/music/Music/Putham Puthu Kaalai - Alaigal Oyvathillai.ogg
-/home/kumaresan/music/Music/Queen_All_Dead_All_Dead_At_Last_the_Video_.m4a
-/home/kumaresan/music/Music/Queen_Another_One_Bites_the_Dust_Official_Video_.m4a
-/home/kumaresan/music/Music/Queen_Another_One_Bites_the_Dust_Official_Video_.ogg
-/home/kumaresan/music/Music/Queen_Brighton_Rock_Official_Lyric_Video_.m4a
-/home/kumaresan/music/Music/Queen_Death_on_Two_Legs_Official_Lyric_Video_.m4a
-/home/kumaresan/music/Music/Queen_Don_t_Stop_Me_Now_Official_Video_.m4a
-/home/kumaresan/music/Music/Queen_Killer_Queen_Top_Of_The_Pops_1974_.m4a
-/home/kumaresan/music/Music/Queen_Play_The_Game_Official_Video_.m4a
-/home/kumaresan/music/Music/Queen_Save_Me_Official_Video_.m4a
-/home/kumaresan/music/Music/Queen_The_Prophets_Song_Official_Lyric_Video_.m4a
-/home/kumaresan/music/Music/Queen_You_re_My_Best_Friend_Official_Video_.m4a
-/home/kumaresan/music/Music/Ramble_On_Led_Zeppelin.m4a
-/home/kumaresan/music/Music/Recordings/2023_02_04_22_04_09.m4a
-/home/kumaresan/music/Music/Recordings/2023_02_04_23_03_30.m4a
-/home/kumaresan/music/Music/Recordings/nila_sleeping_alaparaigal.m4a
-/home/kumaresan/music/Music/Red Army Choir_ Bella Ciao..m4a
-/home/kumaresan/music/Music/Red Army Choir Katusha.m4a
-/home/kumaresan/music/Music/Runaway (Explicit)-Kanye West.m4a
-/home/kumaresan/music/Music/santana_black_magic_woman.m4a
-/home/kumaresan/music/Music/Scarface - I Seen A Man Die [Explicit].m4a
-/home/kumaresan/music/Music/Scorpions_holiday.ogg
-/home/kumaresan/music/Music/SHRI VENKATESA SUPRABHATHAM.mp3
-/home/kumaresan/music/Music/Snoop_Dogg_Gangsta_Luv_DIRTY_LYRICS_2009.m4a
-/home/kumaresan/music/Music/Snoop_Dogg_I_Wanna_Rock_Explicit_.m4a
-/home/kumaresan/music/Music/Snoop_Dogg_Sensual_Seduction.m4a
-/home/kumaresan/music/Music/Snoop_Dogg_Wiz_Khalifa_Young_Wild_and_Free_ft_Bruno_Mars_Official_Video_.m4a
-/home/kumaresan/music/Music/Soldier_of_Fortune_Deep_Purple_Sub_Español_.ogg
-/home/kumaresan/music/Music/Somebody_to_Love_Remastered_2011_.m4a
-/home/kumaresan/music/Music/Soviet Anthem Instrumental (OFFICIAL VERSION).ogg
-/home/kumaresan/music/Music/SRI SASHTI.mp3
-/home/kumaresan/music/Music/SRI SKANDA GURU.mp3
-/home/kumaresan/music/Music/Stand_By_Me_Ben_E_King_1961.m4a
-/home/kumaresan/music/Music/Steppenwolf_Born_To_Be_Wild.ogg
-/home/kumaresan/music/Music/Subramaniapuram - Kangal Irandal Video _ James _ Jai.m4a
-/home/kumaresan/music/Music/Subramaniapuram_Kangal_Irandal_Video_James_Jai.ogg
-/home/kumaresan/music/Music/Subramaniapuram_Madura_Kulunga_Video_James_Jai.m4a
-/home/kumaresan/music/Music/Thaanaa Serndha Koottam - Sodakku Tamil Lyric _ Suriya _ Anirudh l Vignesh ShivN.m4a
-/home/kumaresan/music/Music/Thaniye_Feat_Neha_Bhasin_Emcee_Jesz_HQ_Video_Song_Sing_Along.m4a
-/home/kumaresan/music/Music/Tharai Thappattai Tamil Movie _ Scenes _ Vathana Vathana vadivelan song _ Varalaxmi _ Sasikumar.m4a
-/home/kumaresan/music/Music/The_Beach_Boys_Don_t_Worry_Baby.m4a
-/home/kumaresan/music/Music/The_Beach_Boys_Good_Vibrations.m4a
-/home/kumaresan/music/Music/The_Beach_Boys_I_Get_Around.m4a
-/home/kumaresan/music/Music/The_Doors_Gloria_dirty_version_lyrics_.ogg
-/home/kumaresan/music/Music/The_Doors_Love_Me_Two_Times.ogg
-/home/kumaresan/music/Music/The_Doors_Riders_On_The_Storm_HQ_.ogg
-/home/kumaresan/music/Music/The_Doors_Roadhouse_Blues.m4a
-/home/kumaresan/music/Music/The_Doors_Roadhouse_Blues.ogg
-/home/kumaresan/music/Music/The_Doors_The_End_original_.ogg
-/home/kumaresan/music/Music/The_Doors_When_the_Music_s_Over_with_Lyrics_.ogg
-/home/kumaresan/music/Music/The_Eagles_DESPERADO_HD.m4a
-/home/kumaresan/music/Music/The_Egles_Lyin_Eyes.m4a
-/home/kumaresan/music/Music/The_Egles_New_Kid_In_Town.m4a
-/home/kumaresan/music/Music/The Hobbit Soundtrack 18 Over Hill.mp3
-/home/kumaresan/music/Music/The Internationale _Интернационал_ - Russian Version.m4a
-/home/kumaresan/music/Music/The_Jimi_Hendrix_Experience_All_Along_The_Watchtower_Official_Audio_.m4a
-/home/kumaresan/music/Music/The_Kinks_You_Really_Got_Me_Official_Audio_.m4a
-/home/kumaresan/music/Music/The_Mamas_the_Papas_California_Dreamin_.m4a
-/home/kumaresan/music/Music/The Maze (Westworld Soundtrack).m4a
-/home/kumaresan/music/Music/Tie_Your_Mother_Down_Remastered_2011_.m4a
-/home/kumaresan/music/Music/Vaaranam_Aayiram_Mundhinam_Video_Harris_Jayaraj_Suriya.ogg
-/home/kumaresan/music/Music/Vaaranam Aayiram - Nenjukkul Peidhidum Video _ Harris Jayaraj _ Suriya.m4a
-/home/kumaresan/music/Music/Vaaranam_Aayiram_Nenjukkul_Peidhidum_Video_Harris_Jayaraj_Suriya.ogg
-/home/kumaresan/music/Music/Vedalam - Aaluma Doluma Video _ Ajith _ Anirudh Ravichander.m4a
-/home/kumaresan/music/Music/Vikram_Vedha_Songs___Pogatha_Yennavittu_Song_with_Lyrics___R.Madhavan__Vijay_Sethupathi___Sam_C.S.m4a
-/home/kumaresan/music/Music/Vikram_Vedha_Songs___Yaanji_Song_with_Lyrics___R.Madhavan__Vijay_Sethupathi___Sam_C.S___Anirudh.m4a
-/home/kumaresan/music/Music/Vinnaithaandi_Varuvaayaa_Hosanna_Video_Rahman_STR_Trisha.ogg
-/home/kumaresan/music/Music/Violent Delights (Westworld Soundtrack).m4a
-/home/kumaresan/music/Music/Vivegam_Surviva_Tamil_Lyric_Anirudh_Feat_Yogi_B_Mali_Manoj_Ajith_Kumar_Siva.m4a
-/home/kumaresan/music/Music/Vuroram Puliamaram Video Song _ Paruthiveeran Tamil Movie _ Karthi _ Priyamani _ Yuvan Shankar Raja.m4a
-/home/kumaresan/music/Music/Westworld OST - Sweetwater - Ramin Djawadi (Train Theme).m4a
-/home/kumaresan/music/Music/Westworld Season 2 - Heart-Shaped Box - Ramin Djawadi (OFFICIAL).m4a
-/home/kumaresan/music/Music/Westworld_ Season 2 Soundtrack - Where You Go I Follow (EP 01 Maeve & Hektor reunion).m4a
-/home/kumaresan/music/Music/Westworld Soundtrack Violent Delights Have Violent Ends.m4a
-/home/kumaresan/music/Music/YOGI_B_and_Natchatra_s_Madai_Thiranthu.m4a
-/home/kumaresan/music/Music/Yogi_B_Natchatra_Kadhal_Yengge.m4a
-/home/kumaresan/music/Music/Yogi_B_Natchatraz_Vaa_Vaa.m4a
-/home/kumaresan/music/Music/You_Shook_Me_All_Night_Long.ogg
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/02. Solid rock.wma
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/03. Expresso love.wma
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/04. Telegraph Road.wma
@@ -931,7 +648,6 @@
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/11. Going home.wma
 /home/kumaresan/music/mnt/Songs/Devotional Songs/SANTHANA KUGUMAM/05 VEERAMANI THASAN/KANNI_MARGAlAE.mp3
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Aalapol Velapol.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Aalapol Velapol.m4a
 /home/kumaresan/music/mnt/Songs/Devotional Songs/Carnatic/amrithavarshini.mp3
 /home/kumaresan/music/mnt/Songs/Devotional Songs/Carnatic/mamata_varijashe.mp3
 /home/kumaresan/music/mnt/Songs/Devotional Songs/Carnatic/vathapi_mss_amma.mp3
@@ -945,36 +661,23 @@
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/DYME-A-DUZIN Swank Sinatra (feat. Joey BadA$$, Capital STEEZ & CJ Fly) Official Video.m4a
 /home/kumaresan/music/mnt/Songs/Devotional Songs/Vol 2/Edakelathavu.mp3
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/En Kanmani.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/En Kanmani.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Ennuyir Neethaane.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Ennuyir Neethaane.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/En Vaanile.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/En Vaanile.m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Eye To Eye Scorpions Traducida Español Letra.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Hey Paadal Onru.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Hey Paadal Onru.m4a
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/HOW LONG.wma
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Joey Bada$$ and CJ Fly - Hardknock - Decoded.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Kaatril Enthan Geetham.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Kaatril Enthan Geetham.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Kanmani Nee Vara Kathirunthen.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Kanmani Nee Vara Kathirunthen.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Keeravani Iravile.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Keeravani Iravile.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Konji Konji Song  Veera Tamil Movie  Rajinikanth  Ilaiyaraaja Official.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Konji Konji Song  Veera Tamil Movie  Rajinikanth  Ilaiyaraaja Official.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Madhura Marikozhunthu Vaasam.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Madhura Marikozhunthu Vaasam.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Manjolai Kilithano.m4a
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/Metallica - Motorbreath.mp3
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Muthumani Maalai.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Muthumani Maalai.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Nanda Nee En Nila.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Nanda Nee En Nila.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Neethane Enthan Pon Vasantham.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Neethane Enthan Pon Vasantham.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Nilavondru Kanden.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Nilavondru Kanden.m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/Opeth face in the snow guitar cover.m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/OPETH- Harlequin Forest at the Royal Albert Hall High Def!.m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/Opeth Karma (subtitulado al español).m4a
@@ -984,32 +687,19 @@
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/Opeth-The Seventh Sojourn.m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/Opeth-The Twilight is my Robe.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Oru Kili Urugudhu.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Oru Kili Urugudhu.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Pachamala Poovu.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Pachamala Poovu.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Pani Vizhum Malarvanam.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Pani Vizhum Malarvanam.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Paruvame.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Paruvame.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Pon Maane Kobam Yeno.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Pon Maane Kobam Yeno.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Poomaalai vaangi vanthan - SINDHU BAIRAVI - ILAYARAJA SUPER HIT SONG.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Poomaalai vaangi vanthan - SINDHU BAIRAVI - ILAYARAJA SUPER HIT SONG.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Poongathave.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Poongathave.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Poovadai Kaatru.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Poovadai Kaatru.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Poove Sempoove.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Poove Sempoove.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Poovile Medai.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Poovile Medai.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Pothi Vacha Malliga Mottu.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Pothi Vacha Malliga Mottu.m4a
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/PRO ERA PRESENTS Summer Knights (S3 Erasode 2) Alowha.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Putham Pudhu Kaalai.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Putham Pudhu Kaalai.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Samakozhi Ye Koovuthamma (Ponnu Oorukku Pudhusu).m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Samakozhi Ye Koovuthamma (Ponnu Oorukku Pudhusu).m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/SCORPIONS - DOES ANYONE KNOW - TRADUÇÃO.m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Scorpions- Dust In The Wind (Acoustic version).m4a
 /home/kumaresan/music/mnt/webmcrap/Scorpions- Dust In The Wind (Acoustic version).webm
@@ -1031,28 +721,18 @@
 /home/kumaresan/music/mnt/webmcrap/Scorpions When you came into my life-Subtitulos Español-Cuando entraste en mi vida..webm
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Scorpions You and I with lyrics.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Solai Poovil  Vellai RojaS.P.BIlayaraja.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Solai Poovil  Vellai RojaS.P.BIlayaraja.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Sriranga Ranganathanin.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Sriranga Ranganathanin.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Thalaiyai Kuniyum Thamaraiye.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Thalaiyai Kuniyum Thamaraiye.m4a
 /home/kumaresan/music/mnt/The Frozen Heart (Ice Worker's Song) from FROZEN by Disney.ogg
-/home/kumaresan/music/Music/The Frozen Heart (Ice Worker's Song) from FROZEN by Disney.ogg
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Thendral Vandhu Ennai Thodu.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Thendral Vandhu Ennai Thodu.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Thendral Vandhu Theendum (Avatharam) -Ilayaraja Duet.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Thendral Vandhu Theendum (Avatharam) -Ilayaraja Duet.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Thoongatha Vizhikal Rendu.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Thoongatha Vizhikal Rendu.m4a
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/TICKET TO HEAVEN.wma
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Top 15 Joey Bada$$ Verses (READ DESCRIPTION).m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Vaa Vaa Anbe Anbe.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Vaa Vaa Anbe Anbe.m4a
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Vaigai Karai Kaatre Nillu.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Vaigai Karai Kaatre Nillu.m4a
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/WHY  WORRY.wma
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/yarum.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/yarum.m4a
 /home/kumaresan/music/mnt/webmcrap/You and I by scorpions.webm
 /home/kumaresan/music/mnt/Songs/Devotional Songs/DEIVIGA RAGAM/01M S SUBULAKSUMI/01venkata subu.MP3
 /home/kumaresan/music/mnt/Songs/Devotional Songs/DEIVIGA RAGAM/05Thayekarumari/Thyae Karumari Engal Thaye Karumari.mp3
@@ -1487,45 +1167,31 @@
 /home/kumaresan/music/mnt/www.musicfolks.in/www.musicfolks.in/1 - www.musicfolks.in.mp3
 /home/kumaresan/music/mnt/80's Melodies/Aayiram Thamarai.mp3
 /home/kumaresan/music/mnt/aerosmith/Unknown Album/Aerosmith - Don't Wanna Miss A.mp3
-/home/kumaresan/music/Music/aerosmith/Unknown Album/Aerosmith - Don't Wanna Miss A.mp3
 /home/kumaresan/music/mnt/aerosmith/Unknown Album/aerosmith-love_in_an_elevator.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alaipayudhey/Tamilmp3world.Com - alaipayudhey.mp3
 /home/kumaresan/music/mnt/Blink 182/Enema of the State/All the Small Things.mp3
-/home/kumaresan/music/Music/Blink 182/Enema of the State/All the Small Things.mp3
 /home/kumaresan/music/mnt/Minsara Kanavu/Unknown Album/tamilmp3world.com%20-%20anbendra_mazhaiyile.mp3
 /home/kumaresan/music/mnt/Afro Man/Unknown Album/Because I Got High.mp3
-/home/kumaresan/music/Music/Afro Man/Unknown Album/Because I Got High.mp3
 /home/kumaresan/music/mnt/Metallica/Reload/Carpe Diem Baby.mp3
-/home/kumaresan/music/Music/Metallica/Reload/Carpe Diem Baby.mp3
 /home/kumaresan/music/mnt/Tupac Shakur/Unknown Album/changes.mp3
-/home/kumaresan/music/Music/Tupac Shakur/Unknown Album/changes.mp3
 /home/kumaresan/music/mnt/Www.Sukravathanee.Tk/Senthoora Poove/Chinna Kannan Thottatu.mp3
 /home/kumaresan/music/mnt/aerosmith/Big ones/Cryin'.mp3
-/home/kumaresan/music/Music/aerosmith/Big ones/Cryin'.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_07_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/Train/Unknown Album/Drops of Jupiter.mp3
-/home/kumaresan/music/Music/Train/Unknown Album/Drops of Jupiter.mp3
 /home/kumaresan/music/mnt/aerosmith/Unknown Album/dude looks like a lady.mp3
-/home/kumaresan/music/Music/aerosmith/Unknown Album/dude looks like a lady.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alaipayudhey/Tamilmp3world.Com - enenendrumpunnagai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Amarkalam/Tamilmp3world.Com - EnnSeithayoVidhiye.mp3
 /home/kumaresan/music/mnt/Metallica/Unknown Album/Enter Sandman.mp3
-/home/kumaresan/music/Music/Metallica/Unknown Album/Enter Sandman.mp3
 /home/kumaresan/music/mnt/GNR/Estranged/Estranged.mp3
-/home/kumaresan/music/Music/GNR/Estranged/Estranged.mp3
 /home/kumaresan/music/mnt/www.Tamilmaalai.com/UNNIDATHIL  ENNAI  KODUTHEAN/Etho Oru Paattu (HARI).mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alaipayudhey/Tamilmp3world.Com - evanooruvan.mp3
 /home/kumaresan/music/mnt/aerosmith/Unknown Album/falling_in_love_is_hard_on_the_knees_by_aerosmith.mp3
-/home/kumaresan/music/Music/aerosmith/Unknown Album/falling_in_love_is_hard_on_the_knees_by_aerosmith.mp3
 /home/kumaresan/music/mnt/Tamilcore.com/Ullasa Paravaigal/Germanyin Senthen.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_04_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/Metallica/Unknown Album/I Dissapear.mp3
-/home/kumaresan/music/Music/Metallica/Unknown Album/I Dissapear.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New Folder/Tamilmp3world.Com - Jana_Gana.mp3
 /home/kumaresan/music/mnt/aerosmith/Unknown Album/Janie's Got A Gun.mp3
-/home/kumaresan/music/Music/aerosmith/Unknown Album/Janie's Got A Gun.mp3
 /home/kumaresan/music/mnt/van halen/Unknown Album/Jump.mp3
-/home/kumaresan/music/Music/van halen/Unknown Album/Jump.mp3
 /home/kumaresan/music/mnt/www.RajaEcho.tripod.com/Amman Kovil Kizhakayile/Kada Veethi.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alaipayudhey/Tamilmp3world.Com - kadhalsadugudu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dasavatharam/Tamilmp3world.Com - Kallai Mattum Kandal.mp3
@@ -1538,19 +1204,16 @@
 /home/kumaresan/music/mnt/www.Tamilmaalai.com/Ilayarajai 80s/tamilmaalai_com_maniyea_manikuile.mp3.mp3
 /home/kumaresan/music/mnt/www.tamilmasala.net/Thathuva Paadalkal/Mayakkama Kalakkama.mp3
 /home/kumaresan/music/mnt/Amarkkalam/Amarkkalam/Mehangal Ennai.mp3
-/home/kumaresan/music/Music/Amarkkalam/Amarkkalam/Mehangal Ennai.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/10Muruganai%20Koopittu!!s.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_12_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New Folder/Tamilmp3world.Com - Nenjam_Ellam.mp3
 /home/kumaresan/music/mnt/ugly kid joe/Nativity In Black/N.I.B.mp3
-/home/kumaresan/music/Music/ugly kid joe/Nativity In Black/N.I.B.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/metallica - nothing else matters.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/guns and roses - november rain.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_10_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/www.Tamilmaalai.com/Ilayarajai 80s/tamilmaalai_com_oh_vasantha_raja.mp3.mp3
 /home/kumaresan/music/mnt/Alzagi/Alzagi/Oliyilae_therivathu.mp3
 /home/kumaresan/music/mnt/Metallica/Black/one.mp3
-/home/kumaresan/music/Music/Metallica/Black/one.mp3
 /home/kumaresan/music/mnt/80's Melodies/Ore Naal Unai.mp3
 /home/kumaresan/music/mnt/www.Tamilmaalai.com/Ilayarajai 80s/tamilmaalai_com_oru_thanga.mp3.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alaipayudhey/Tamilmp3world.Com - PachchaiNiramae.mp3
@@ -1565,18 +1228,13 @@
 /home/kumaresan/music/mnt/Songs/Devotional Songs/DEIVIGA RAGAM/Kanda_sasti_kavasam/02 kanthasashti.MP3
 /home/kumaresan/music/mnt/-/Patricio Manns-Patricio Manns-Patricio Manns/Su nombre ardio como un pajar.mp3
 /home/kumaresan/music/mnt/aerosmith/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Sweet Emotion.mp3
-/home/kumaresan/music/Music/aerosmith/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Sweet Emotion.mp3
 /home/kumaresan/music/mnt/Arinthum Ariyamalum/Arinthum Ariyamalum/Theepidikka.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_11_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/Metallica/Reload/The Memory Remains.mp3
-/home/kumaresan/music/Music/Metallica/Reload/The Memory Remains.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_13_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/Metallica/Reload/The Unforgiven II-1.mp3
 /home/kumaresan/music/mnt/Metallica/Reload/The Unforgiven II.mp3
-/home/kumaresan/music/Music/Metallica/Reload/The Unforgiven II-1.mp3
-/home/kumaresan/music/Music/Metallica/Reload/The Unforgiven II.mp3
 /home/kumaresan/music/mnt/Metallica/St.Anger/The Unnamed Feeling.mp3
-/home/kumaresan/music/Music/Metallica/St.Anger/The Unnamed Feeling.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/Dheivam - Thiruchendhoorin Kadalorathil.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_08_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/www.tamilmasala.net/Thathuva Paadalkal/Ullam Enbathu Aamai.mp3
@@ -1586,17 +1244,13 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Bombay/Tamilmp3world.Com - uyire.mp3
 /home/kumaresan/music/mnt/Www.Sukravathanee.Tk/Deiva Vakku/Valli Valli.mp3
 /home/kumaresan/music/mnt/aerosmith/Unknown Album/walk on water.mp3
-/home/kumaresan/music/Music/aerosmith/Unknown Album/walk on water.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Unknown Album/What It Is November 4 2000.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Unknown Album/What It Is November 4 2000.mp3
 /home/kumaresan/music/mnt/Blink 182/What's My Age Again -- P.S/What's My Age Again.mp3
-/home/kumaresan/music/Music/Blink 182/What's My Age Again -- P.S/What's My Age Again.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_06_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/U2/The Rolling Stone Magazines 500 Greatest Songs Of All Time/With Or Without You.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New Folder/Tamilmp3world.Com - Yakkai_Thiru.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alaipayudhey/Tamilmp3world.Com - yaroyarodi.mp3
 /home/kumaresan/music/mnt/aerosmith/Unknown Album/1 - aerosmith - crazy.mp3
-/home/kumaresan/music/Music/aerosmith/Unknown Album/1 - aerosmith - crazy.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/ADHA VEETUKKU.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/ANDHA NILAAVA.mp3
 /home/kumaresan/music/mnt/artist/Album/1 - Track 1-1.mp3
@@ -1604,7 +1258,6 @@
 /home/kumaresan/music/mnt/Songs/Devotional Songs/DEIVIGA RAGAM/11vinyagar murugan/Ganapathiye.MP3
 /home/kumaresan/music/mnt/Arasu/7G Rainbow Colony/1 - Idhu Porkalama.mp3
 /home/kumaresan/music/mnt/Albert King/I'll Play the Blues for You [Stax]/1 - I'll Play the Blues for You.mp3
-/home/kumaresan/music/Music/Albert King/I'll Play the Blues for You [Stax]/1 - I'll Play the Blues for You.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Unnaale Unnaale/Tamilmp3world.Com - JunePona.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/KANNAMMA.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/KANNU PADA.mp3
@@ -1616,44 +1269,32 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/NALLA.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/NILA ADHU.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 2)/01. Nothing Else Matters.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 2)/01. Nothing Else Matters.mp3
 /home/kumaresan/music/mnt/A.R. Rahman, M.I.A/Slumdog Millionaire/1 - O...Saya.mp3
-/home/kumaresan/music/Music/A.R. Rahman, M.I.A/Slumdog Millionaire/1 - O...Saya.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dhaam Dhoom/Dhaam Dhoom/Tamilmp3world.Com -  Pudhu Pudhu.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Rock N Roll Train.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Rock N Roll Train.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/01. That Was Just Your Life.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/01. That Was Just Your Life.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/01. The Ecstacy Of Gold.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/01. The Ecstacy Of Gold.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alzagi/Tamilmp3world.Com - DAMAKKU_DAMAKKU.MP3
 /home/kumaresan/music/mnt/Uyire/Uyire/2 - Nenjinile Nenjinile.mp3
-/home/kumaresan/music/Music/Uyire/Uyire/2 - Nenjinile Nenjinile.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New Folder/Tamilmp3world.Com - Paakaatha.mp3
 /home/kumaresan/music/mnt/Tippu & Chorus/Imsai Arasan 23am Pulikecei/2 - Pootiya Siraienai.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/2 - Track 2-3.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dhaam Dhoom/Dhaam Dhoom/Tamilmp3world.Com -  Sakiyae.mp3
 /home/kumaresan/music/mnt/www.tamilmasala.net/Poonthota Kavalkaran/2 - Sindhiya Venmani.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/02. The End of the Line.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/02. The End of the Line.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/THENPANDI.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alzagi/Tamilmp3world.Com - Un_kuthama.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/VALLI.mp3
 /home/kumaresan/music/mnt/Kamal Hassan/Anbe Sivam/03. Anbe Sivam.mp3
-/home/kumaresan/music/Music/Kamal Hassan/Anbe Sivam/03. Anbe Sivam.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Big Jack.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Big Jack.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/03. Broken, Beat & Scarred.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/03. Broken, Beat & Scarred.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/3 - Track 3-3-1.mp3
 /home/kumaresan/music/mnt/Metallica/Reload/03. Devils_Dance.mp3
-/home/kumaresan/music/Music/Metallica/Reload/03. Devils_Dance.mp3
 /home/kumaresan/music/mnt/03  Velvet Revolver/Libertad/3 - Get Out The Door.mp3
 /home/kumaresan/music/mnt/Tamilmp3world.Com/Uyire/3 - Iru Pookal.mp3
 /home/kumaresan/music/mnt/www.tamilmasala.net/Poonthotta Kavalkaran/3 - Paramal Paartha Nenjam.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/3 - Track 3-3.mp3
 /home/kumaresan/music/mnt/Jay-z/T.I Singles/03. Swagger Like Us ft. Kanye West, Jay-Z & Lil Wayne.mp3
-/home/kumaresan/music/Music/Jay-z/T.I Singles/03. Swagger Like Us ft. Kanye West, Jay-Z & Lil Wayne.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/TAKIDATHATHOM.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/VAARTHAI.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/VANAMPARTHA.mp3
@@ -1668,17 +1309,13 @@
 /home/kumaresan/music/mnt/A.R. Rahman/Slumdog Millionaire/04. Paper Planes.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/PATTALEY.mp3
 /home/kumaresan/music/mnt/Uyire/Uyire/4 - Poongaatrilae.mp3
-/home/kumaresan/music/Music/Uyire/Uyire/4 - Poongaatrilae.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/04. The Day That Never Comes.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/04. The Day That Never Comes.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/4 - Track 4-4.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/YAI KILIYIRUKKU.mp3
 /home/kumaresan/music/mnt/Songs/Devotional Songs/Carnatic/Arthika.Net - Alaipayuthe Kanna.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/05. All Nightmare Long.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/05. All Nightmare Long.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/ENGIRUNTHO.mp3
 /home/kumaresan/music/mnt/Soggy Bottom Boys/O Brother, Where Art Thou/I Am A Man Of Constant Sorrow (Radio Station Version).mp3
-/home/kumaresan/music/Music/Soggy Bottom Boys/O Brother, Where Art Thou/I Am A Man Of Constant Sorrow (Radio Station Version).mp3
 /home/kumaresan/music/mnt/artist/Album/5 - Track 5.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/NAGORE.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/NANE THEDUM.mp3
@@ -1689,10 +1326,8 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/ANTHA VANATHA.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dhaam Dhoom/Dhaam Dhoom/Tamilmp3world.Com -  Azhiyilae.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/06. Cyanide.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/06. Cyanide.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/ENNAI THALATA.mp3
 /home/kumaresan/music/mnt/Uyire/Uyire/06. Ennuyire Ennuyire.mp3
-/home/kumaresan/music/Music/Uyire/Uyire/06. Ennuyire Ennuyire.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/KOVUNGAL.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/NETHU ORUTHARA.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alzagi/Tamilmp3world.Com - pattu_solli.mp3
@@ -1700,63 +1335,51 @@
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/6 - Track 6-4.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/SIRUPOONMANI.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Smash N Grab.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Smash N Grab.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Unnaale Unnaale/Tamilmp3world.Com - UnnaaleUnnaale.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/YENGAEYEN.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/AYYA VEEDU.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/JANANI.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Spoilin' For A Fight.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Spoilin' For A Fight.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/THENDRAL.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/07. The Unforgiven III.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/07. The Unforgiven III.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/Unknown Title.mp3
 /home/kumaresan/music/mnt/Tamilmp3world.Com/Kaakha Kaakha/7 - Uyire Uyirea Nathiyin.mp3
 /home/kumaresan/music/mnt/artist/Album/7 - Track 7.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/ADI AATTHAADI.mp3
 /home/kumaresan/music/mnt/Thorsten Koehne/Unknown Album/8 - Escape From The Darkside.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/08. No Leaf Clover.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/08. No Leaf Clover.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/PENN MANASU.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/POONGATRE.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/RAJA RAJATHE.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New Folder/Sevvanam_Selaikatti_SMK.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/08. The Judas Kiss.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/08. The Judas Kiss.mp3
 /home/kumaresan/music/mnt/artist/Album/8 - Track 8.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Wheels.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Wheels.mp3
 /home/kumaresan/music/mnt/Sonu Nigam, Mahalakshmi Iyer, Alisha Chinai/Slumdog Millionaire/9 - Aaj Ki Raat.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/ENGAESELLUM.mp3
 /home/kumaresan/music/mnt/09  Velvet Revolver/Libertad/9 - Just Sixteen.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/NALATHORVENAI.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/POTRIPADADI.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/09. Suicide & Redemption.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/09. Suicide & Redemption.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/SWOLA PASUNKILIYAE.mp3
 /home/kumaresan/music/mnt/artist/Album/9 - Track 9-1.mp3
 /home/kumaresan/music/mnt/artist/Album/9 - Track 9.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/9 - Track 9-3.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/Unknown Title-2.mp3
 /home/kumaresan/music/mnt/Metallica/Garage_Inc_Disc_I/09. Whiskey_In_The_Jar.mp3
-/home/kumaresan/music/Music/Metallica/Garage_Inc_Disc_I/09. Whiskey_In_The_Jar.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/APRIL MAYELE.mp3
 /home/kumaresan/music/mnt/10 Velvet Revolver/Libertad/10 - Can't Get It Out Of My Head.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/EDUTHU NAAN.mp3
 /home/kumaresan/music/mnt/Metallica/Death Magnetic/10. My Apocalypse.mp3
-/home/kumaresan/music/Music/Metallica/Death Magnetic/10. My Apocalypse.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/NINNAI SARAN.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Stormy May Day.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Stormy May Day.mp3
 /home/kumaresan/music/mnt/artist/Album/10 - Track 10.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/10 - Track 10-2-1.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/10 - Track 10-2.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/KANNE.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/kathal.mp3
 /home/kumaresan/music/mnt/Metallica/Reload/11. Low_Mans_Lyric.mp3
-/home/kumaresan/music/Music/Metallica/Reload/11. Low_Mans_Lyric.mp3
 /home/kumaresan/music/mnt/Metallica/Load/11. Mama_Said.mp3
-/home/kumaresan/music/Music/Metallica/Load/11. Mama_Said.mp3
 /home/kumaresan/music/mnt/artist/Album/11 - Track 11.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/11 - Track 11-4-1.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/11 - Track 11-4.mp3
@@ -1775,7 +1398,6 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/MAINA MAINA.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/AALOLAM.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Rock N Roll Dream.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Rock N Roll Dream.mp3
 /home/kumaresan/music/mnt/artist/Album/13 - Track 13.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/13 - Track 13-1.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/AATHADIPAAVADAI.mp3
@@ -1786,10 +1408,8 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/VELUTHU.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/AARUM.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Black Ice.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Black Ice.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/KADALILM.mp3
 /home/kumaresan/music/mnt/Chandrababu/Unknown Album/15 - Ninaipathellam.mp3
-/home/kumaresan/music/Music/Chandrababu/Unknown Album/15 - Ninaipathellam.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/ORU JEEVAN.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/ORUSANDHANA.mp3
 /home/kumaresan/music/mnt/artist/Album/15 - Track 15.mp3
@@ -1808,57 +1428,35 @@
 /home/kumaresan/music/mnt/U2/The Rolling Stone Magazines 500 Greatest Songs Of All Time/36 - One.mp3
 /home/kumaresan/music/mnt/Sex Pistols/The Rolling Stone Magazines 500 Greatest Songs Of All Time/53. Anarchy In The U.K.mp3
 /home/kumaresan/music/mnt/Al Green/The Rolling Stone Magazines 500 Greatest Songs Of All Time/60 - Let's Stay Together.mp3
-/home/kumaresan/music/Music/Al Green/The Rolling Stone Magazines 500 Greatest Songs Of All Time/60 - Let's Stay Together.mp3
 /home/kumaresan/music/mnt/Bob Marley And The Wailers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/66 - Redemption Song.mp3
-/home/kumaresan/music/Music/Bob Marley And The Wailers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/66 - Redemption Song.mp3
 /home/kumaresan/music/mnt/The Police/The Rolling Stone Magazines 500 Greatest Songs Of All Time/84 - Every Breath You Take.mp3
 /home/kumaresan/music/mnt/U2/The Rolling Stone Magazines 500 Greatest Songs Of All Time/93 - I Still Haven't Found What I'm Looking For.mp3
 /home/kumaresan/music/mnt/Al Green/The Rolling Stone Magazines 500 Greatest Songs Of All Time/98 - Love And Happiness.mp3
-/home/kumaresan/music/Music/Al Green/The Rolling Stone Magazines 500 Greatest Songs Of All Time/98 - Love And Happiness.mp3
 /home/kumaresan/music/mnt/Al Green/The Rolling Stone Magazines 500 Greatest Songs Of All Time/117 - Take Me To The River.mp3
-/home/kumaresan/music/Music/Al Green/The Rolling Stone Magazines 500 Greatest Songs Of All Time/117 - Take Me To The River.mp3
 /home/kumaresan/music/mnt/The Animals/The Rolling Stone Magazines 500 Greatest Songs Of All Time/122 - House Of The Rising Sun.mp3
 /home/kumaresan/music/mnt/The Velvet Underground/The Rolling Stone Magazines 500 Greatest Songs Of All Time/159 - I'm Waiting For The Man.mp3
-/home/kumaresan/music/Music/The Velvet Underground/The Rolling Stone Magazines 500 Greatest Songs Of All Time/159 - I'm Waiting For The Man.mp3
 /home/kumaresan/music/mnt/aerosmith/The Rolling Stone Magazines 500 Greatest Songs Of All Time/172 - Dream On.mp3
-/home/kumaresan/music/Music/aerosmith/The Rolling Stone Magazines 500 Greatest Songs Of All Time/172 - Dream On.mp3
 /home/kumaresan/music/mnt/AC DC/The Rolling Stone Magazines 500 Greatest Songs Of All Time/187 - Back In Black.mp3
-/home/kumaresan/music/Music/AC DC/The Rolling Stone Magazines 500 Greatest Songs Of All Time/187 - Back In Black.mp3
 /home/kumaresan/music/mnt/Guns N' Roses/The Rolling Stone Magazines 500 Greatest Songs Of All Time/196. Sweet Child O' Mine.mp3
-/home/kumaresan/music/Music/Guns N' Roses/The Rolling Stone Magazines 500 Greatest Songs Of All Time/196. Sweet Child O' Mine.mp3
 /home/kumaresan/music/mnt/The Animals/The Rolling Stone Magazines 500 Greatest Songs Of All Time/233 - We Gotta Get Out Of This Place.mp3
 /home/kumaresan/music/mnt/Black Sabbath/The Rolling Stone Magazines 500 Greatest Songs Of All Time/250 - Paranoid.mp3
-/home/kumaresan/music/Music/Black Sabbath/The Rolling Stone Magazines 500 Greatest Songs Of All Time/250 - Paranoid.mp3
 /home/kumaresan/music/mnt/AC DC/The Rolling Stone Magazines 500 Greatest Songs Of All Time/254 - Highway To Hell.mp3
-/home/kumaresan/music/Music/AC DC/The Rolling Stone Magazines 500 Greatest Songs Of All Time/254 - Highway To Hell.mp3
 /home/kumaresan/music/mnt/U2/The Rolling Stone Magazines 500 Greatest Songs Of All Time/268 - Sunday Bloody Sunday.mp3
 /home/kumaresan/music/mnt/Al Green/The Rolling Stone Magazines 500 Greatest Songs Of All Time/293 - Tired Of Being Alone.mp3
-/home/kumaresan/music/Music/Al Green/The Rolling Stone Magazines 500 Greatest Songs Of All Time/293 - Tired Of Being Alone.mp3
 /home/kumaresan/music/mnt/Black Sabbath/The Rolling Stone Magazines 500 Greatest Songs Of All Time/310 - Iron Man.mp3
-/home/kumaresan/music/Music/Black Sabbath/The Rolling Stone Magazines 500 Greatest Songs Of All Time/310 - Iron Man.mp3
 /home/kumaresan/music/mnt/The Velvet Underground/The Rolling Stone Magazines 500 Greatest Songs Of All Time/335 - Sweet Jane.mp3
-/home/kumaresan/music/Music/The Velvet Underground/The Rolling Stone Magazines 500 Greatest Songs Of All Time/335 - Sweet Jane.mp3
 /home/kumaresan/music/mnt/aerosmith/The Rolling Stone Magazines 500 Greatest Songs Of All Time/336 - Walk This Way.mp3
-/home/kumaresan/music/Music/aerosmith/The Rolling Stone Magazines 500 Greatest Songs Of All Time/336 - Walk This Way.mp3
 /home/kumaresan/music/mnt/U2/The Rolling Stone Magazines 500 Greatest Songs Of All Time/378 - Pride (In The Name Of Love).mp3
 /home/kumaresan/music/mnt/U2/The Rolling Stone Magazines 500 Greatest Songs Of All Time/427 - New Year's Day.mp3
 /home/kumaresan/music/mnt/The Velvet Underground/The Rolling Stone Magazines 500 Greatest Songs Of All Time/448 - Heroin.mp3
-/home/kumaresan/music/Music/The Velvet Underground/The Rolling Stone Magazines 500 Greatest Songs Of All Time/448 - Heroin.mp3
 /home/kumaresan/music/mnt/Guns N' Roses/The Rolling Stone Magazines 500 Greatest Songs Of All Time/453. Paradise City.mp3
-/home/kumaresan/music/Music/Guns N' Roses/The Rolling Stone Magazines 500 Greatest Songs Of All Time/453. Paradise City.mp3
 /home/kumaresan/music/mnt/Guns N' Roses/The Rolling Stone Magazines 500 Greatest Songs Of All Time/467. Welcome To The Jungle.mp3
-/home/kumaresan/music/Music/Guns N' Roses/The Rolling Stone Magazines 500 Greatest Songs Of All Time/467. Welcome To The Jungle.mp3
 /home/kumaresan/music/mnt/Carole King/The Rolling Stone Magazines 500 Greatest Songs Of All Time/469 - It's Too Late.mp3
-/home/kumaresan/music/Music/Carole King/The Rolling Stone Magazines 500 Greatest Songs Of All Time/469 - It's Too Late.mp3
 /home/kumaresan/music/mnt/Rick James/The Rolling Stone Magazines 500 Greatest Songs Of All Time/477. Super Freak.mp3
 /home/kumaresan/music/mnt/Joan Jett & The Blackhearts/The Rolling Stone Magazines 500 Greatest Songs Of All Time/484. I Love Rock 'n Roll.mp3
-/home/kumaresan/music/Music/Joan Jett & The Blackhearts/The Rolling Stone Magazines 500 Greatest Songs Of All Time/484. I Love Rock 'n Roll.mp3
 /home/kumaresan/music/mnt/3 Doors Down/Away From The Sun/32 - Here without you.mp3
-/home/kumaresan/music/Music/3 Doors Down/Away From The Sun/32 - Here without you.mp3
 /home/kumaresan/music/mnt/antonio banderas/Desperado/Cancion del Mariachi.mp3
-/home/kumaresan/music/Music/antonio banderas/Desperado/Cancion del Mariachi.mp3
 /home/kumaresan/music/mnt/aerosmith/Unknown Album/1 - aerosmith - living on the edge.mp3
-/home/kumaresan/music/Music/aerosmith/Unknown Album/1 - aerosmith - living on the edge.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/Ilaya Own Voice/KATHAL OVIYAM.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Vaaranam Aayiram/Tamilmp3world.Com - Nenjukkul Peidhidum.mp3
 /home/kumaresan/music/mnt/02  Velvet Revolver/Libertad/02. She Mine.mp3
@@ -1870,24 +1468,15 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New Folder/Tamilmp3world.Com - Freeya_Vudu.mp3
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Veera/Aathilae Annakili - Arunmozhi .mp3
 /home/kumaresan/music/mnt/Abba - Dancing Queen (Official Video).ogg
-/home/kumaresan/music/Music/Abba - Dancing Queen (Official Video).ogg
 /home/kumaresan/music/mnt/ACDC/Black Ice/Skies On Fire.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Skies On Fire.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Anything Goes.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Anything Goes.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/War Machine.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/War Machine.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Decibel.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Decibel.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/She Likes Rock N Roll.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/She Likes Rock N Roll.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Money Made.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Money Made.mp3
 /home/kumaresan/music/mnt/ACDC/Black Ice/Rocking All The Way.mp3
-/home/kumaresan/music/Music/ACDC/Black Ice/Rocking All The Way.mp3
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Veera/Adi Panthalilae - Mano & Chorus.mp3
 /home/kumaresan/music/mnt/aerosmith/Unknown Album/1 - dream on.mp3
-/home/kumaresan/music/Music/aerosmith/Unknown Album/1 - dream on.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ayutha Ezhuthu/Tamilmp3world.Com - Hey_Good.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ayutha Ezhuthu/Tamilmp3world.Com - Jana_Gana.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ayutha Ezhuthu/Tamilmp3world.Com - Nenjam_Ellam.mp3
@@ -1901,35 +1490,24 @@
 /home/kumaresan/music/mnt/Alaipayudhey/Unknown Album/Sakthi Exam[BGM.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Alaipayudhey/Tamilmp3world.Com - [BGM3].mp3
 /home/kumaresan/music/mnt/Alice Cooper Alice Cooper/The Rolling Stone Magazines 500 Greatest Songs Of All Time/482 - I'm Eighteen.mp3
-/home/kumaresan/music/Music/Alice Cooper Alice Cooper/The Rolling Stone Magazines 500 Greatest Songs Of All Time/482 - I'm Eighteen.mp3
 /home/kumaresan/music/mnt/Alzagi/Unknown Album/2 - Un_kuthama.mp3
 /home/kumaresan/music/mnt/Alzagi/Unknown Album/6 - pattu_solli.mp3
 /home/kumaresan/music/mnt/Amarkkalam/Amarkkalam/Enn Seithaayo.mp3
-/home/kumaresan/music/Music/Amarkkalam/Amarkkalam/Enn Seithaayo.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Amarkalam/Tamilmp3world.Com - MehangalEnnaiThottu.mp3
 /home/kumaresan/music/mnt/Amarkkalam/Amarkkalam/Satham Illaatha.mp3
-/home/kumaresan/music/Music/Amarkkalam/Amarkkalam/Satham Illaatha.mp3
 /home/kumaresan/music/mnt/Amarkkalam/Amarkkalam/Thodatha.mp3
-/home/kumaresan/music/Music/Amarkkalam/Amarkkalam/Thodatha.mp3
 /home/kumaresan/music/mnt/Amarkkalam/Amarkkalam/Unnodu Naan Vaazhndha.mp3
 /home/kumaresan/music/mnt/Varaha_Roopam.mp3
 /home/kumaresan/music/mnt/Vikram.mp3
-/home/kumaresan/music/Music/Vikram.mp3
 /home/kumaresan/music/mnt/Pathala Pathala.mp3
-/home/kumaresan/music/Music/Pathala Pathala.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Thimiru/TamilNapster.com_Thimiru_ThiThikkara Vayasu.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Kalvanin Kaadhali/Kudakkooli Koduthachu.mp3
 /home/kumaresan/music/mnt/Archie Bell & The Drells/The Rolling Stone Magazines 500 Greatest Songs Of All Time/265 - Tighten Up.mp3
 /home/kumaresan/music/mnt/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/04. Whats Going On.mp3
-/home/kumaresan/music/Music/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/04. Whats Going On.mp3
 /home/kumaresan/music/mnt/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/5 - Respect.mp3
-/home/kumaresan/music/Music/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/5 - Respect.mp3
 /home/kumaresan/music/mnt/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/186 - I Never Loved A Man (The Way I Love You).mp3
-/home/kumaresan/music/Music/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/186 - I Never Loved A Man (The Way I Love You).mp3
 /home/kumaresan/music/mnt/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/249 - Chain Of Fools.mp3
-/home/kumaresan/music/Music/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/249 - Chain Of Fools.mp3
 /home/kumaresan/music/mnt/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/473 - Do Right Woman, Do Right Man.mp3
-/home/kumaresan/music/Music/Aretha Franklin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/473 - Do Right Woman, Do Right Man.mp3
 /home/kumaresan/music/mnt/Arinthum Ariyamalum/Arinthum Ariyamalum/Yen Kannodu.mp3
 /home/kumaresan/music/mnt/Snowlin.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New Folder/Tamilmp3world.Com - Dol_Dol.mp3
@@ -2080,7 +1658,6 @@
 /home/kumaresan/music/mnt/Azhgiya Theeyae/Unknown Album/Vilihalin arunil vaanam.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Azhagiya Theeye/Tamilmp3world.Com - Bit Song....mp3
 /home/kumaresan/music/mnt/ba/the best of me/12 - when u r gone.mp3
-/home/kumaresan/music/Music/ba/the best of me/12 - when u r gone.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Baba/Tamilmp3world.Com - ThemeMusic.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Baba/Tamilmp3world.Com - DippuDippu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Baba/Tamilmp3world.Com - BabaKichuKichuthaa.mp3
@@ -2089,7 +1666,6 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Baba/Tamilmp3world.Com - RaajiyamaIllai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Baba/Tamilmp3world.Com - ShakthiKodu.mp3
 /home/kumaresan/music/mnt/Bad Company/Unknown Album/Ready For Love.mp3
-/home/kumaresan/music/Music/Bad Company/Unknown Album/Ready For Love.mp3
 /home/kumaresan/music/mnt/Tamilcore.com/Trax/7 - Track 07.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Bala/Tamilmp3world.Com - EnnKannaiPudungividu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Bala/Tamilmp3world.Com - PooPoovai.mp3
@@ -2098,83 +1674,44 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Bala/Tamilmp3world.Com - VannathuPoochi.mp3
 /home/kumaresan/music/mnt/Bharathiyar Songs/Bharathiyar Paadalgal - Senthamizh Naadenum (M).mp3
 /home/kumaresan/music/mnt/Band Of Gold/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Freda Payne.mp3
-/home/kumaresan/music/Music/Band Of Gold/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Freda Payne.mp3
 /home/kumaresan/music/mnt/Baz Luhrman/Unknown Album/Everybody's free 2 wear Sunscreen.mp3
-/home/kumaresan/music/Music/Baz Luhrman/Unknown Album/Everybody's free 2 wear Sunscreen.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/The Thrill is Gone.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/The Thrill is Gone.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Ain't Nobody Home.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Ain't Nobody Home.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Let the Good Times Roll.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Let the Good Times Roll.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Guess Who.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Guess Who.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/I Like to Live the Love.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/I Like to Live the Love.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Don't Answer the Door.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Don't Answer the Door.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Sweet Sixteen.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Sweet Sixteen.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Paying the Cost to Be the Boss.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Paying the Cost to Be the Boss.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/I Got Some Help I Don't Need.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/I Got Some Help I Don't Need.mp3
 /home/kumaresan/music/mnt/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Into the Night.mp3
-/home/kumaresan/music/Music/B.B. King/20th Century Masters The Millennium Collection The Best of B.B. King/Into the Night.mp3
 /home/kumaresan/music/mnt/Beastie Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/475 - Sabotage.mp3
-/home/kumaresan/music/Music/Beastie Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/475 - Sabotage.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/A Hard Day's Is Love.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/A Hard Day's Is Love.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/All You Need Is Love.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/All You Need Is Love.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/And I Love Her.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/And I Love Her.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Boy Tripper.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Boy Tripper.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Cant Buy My Love.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Cant Buy My Love.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Come Together.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Come Together.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Do You Want To Know A Secret.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Do You Want To Know A Secret.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/From Me To You.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/From Me To You.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Get Back.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Get Back.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Hello Goodbye.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Hello Goodbye.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Help.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Help.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/I Feel Fine.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/I Feel Fine.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/I Saw Her Standing There.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/I Saw Her Standing There.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/I Should Have Known Better.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/I Should Have Known Better.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/I Wanna Hold Your Hand.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/I Wanna Hold Your Hand.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Let It Be.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Let It Be.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Long And Winding Road.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Long And Winding Road.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Love Me Do.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Love Me Do.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/She Loves You.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/She Loves You.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Something.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Something.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Ticket To Ride.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Ticket To Ride.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/We Can Work It Out.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/We Can Work It Out.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Yellow Submarine.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Yellow Submarine.mp3
 /home/kumaresan/music/mnt/Beatles/Best Of The 10 Years/Yesterday.mp3
-/home/kumaresan/music/Music/Beatles/Best Of The 10 Years/Yesterday.mp3
 /home/kumaresan/music/mnt/Beck/The Rolling Stone Magazines 500 Greatest Songs Of All Time/200 - Loser.mp3
-/home/kumaresan/music/Music/Beck/The Rolling Stone Magazines 500 Greatest Songs Of All Time/200 - Loser.mp3
 /home/kumaresan/music/mnt/Beck/Midnite Vultures/Beautiful Way.mp3
-/home/kumaresan/music/Music/Beck/Midnite Vultures/Beautiful Way.mp3
 /home/kumaresan/music/mnt/Beethoven - The Very Best Of Beethoven (2005) [FLAC] dussin/101_Beethoven_-_Symphony_No_5_in_C_minor_Op_67_I_Allegro_con_brio.flac
 /home/kumaresan/music/mnt/Beethoven - The Very Best Of Beethoven (2005) [FLAC] dussin/102_Beethoven_-_Egmont_Op_84_Overture.flac
 /home/kumaresan/music/mnt/Beethoven - The Very Best Of Beethoven (2005) [FLAC] dussin/103_Beethoven_-_Piano_Sonata_No_14_in_C_sharp_minor_Op_27_No_2_Moonlight_I_Adagio_sostenuto.flac
@@ -2195,9 +1732,7 @@
 /home/kumaresan/music/mnt/Beethoven - The Very Best Of Beethoven (2005) [FLAC] dussin/209_Beethoven_-_Cello_Sonata_No_3_in_A_major_Op_69_III_Adagio_cantabile_-_Allegro_vivace.flac
 /home/kumaresan/music/mnt/Beethoven - The Very Best Of Beethoven (2005) [FLAC] dussin/210_Beethoven_-_Symphony_No_9_in_D_minor_Op_125_Choral_IV_Finale_Presto_-_Allegro_assai_(excerpt).flac
 /home/kumaresan/music/mnt/Ben E. King/The Rolling Stone Magazines 500 Greatest Songs Of All Time/349 - Spanish Harlem.mp3
-/home/kumaresan/music/Music/Ben E. King/The Rolling Stone Magazines 500 Greatest Songs Of All Time/349 - Spanish Harlem.mp3
 /home/kumaresan/music/mnt/Ben E. King/The Rolling Stone Magazines 500 Greatest Songs Of All Time/121 - Stand By Me.mp3
-/home/kumaresan/music/Music/Ben E. King/The Rolling Stone Magazines 500 Greatest Songs Of All Time/121 - Stand By Me.mp3
 /home/kumaresan/music/mnt/bhama/Unknown Album/Pulveli Pulveli.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Amarkalam/Tamilmp3world.Com - KaalamKaliKaalam.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Amarkalam/Tamilmp3world.Com - Thodatha.mp3
@@ -2233,157 +1768,84 @@
 /home/kumaresan/music/mnt/Bill Withers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/280 - Ain't No Sunshine.mp3
 /home/kumaresan/music/mnt/Bill Withers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/205 - Lean On Me.mp3
 /home/kumaresan/music/mnt/Billy Joel/Unknown Album/We Didn't Start the Fire.mp3
-/home/kumaresan/music/Music/Billy Joel/Unknown Album/We Didn't Start the Fire.mp3
 /home/kumaresan/music/mnt/webmcrap/Birth Control - The Work Is Done.webm
 /home/kumaresan/music/mnt/Blaaze, Naresh Iyer & Raqueeb Alam/Sivaji - The Boss/6 - The Boss.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Sivaji/TheBoss.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/01 Black Sabbath.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/01 Black Sabbath.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/02 N.I.B..mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/02 N.I.B..mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/03 The Wizard.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/03 The Wizard.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/04 War Pigs.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/04 War Pigs.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/05 Paranoid.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/05 Paranoid.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/06 Iron Man.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/06 Iron Man.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/07 Sweet Leaf.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/07 Sweet Leaf.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/08 Children Of The Grave.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/08 Children Of The Grave.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/09 Changes.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/09 Changes.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/10 Snowblind.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/10 Snowblind.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/11 Supernaut.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/11 Supernaut.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/12 Sabbath Bloody Sabbath.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/12 Sabbath Bloody Sabbath.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/13 Hole In The Sky.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/13 Hole In The Sky.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/14 Rock 'N' Roll Doctor.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/14 Rock 'N' Roll Doctor.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/16 Dirty Women.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/16 Dirty Women.mp3
 /home/kumaresan/music/mnt/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/15 Never Say Die.mp3
-/home/kumaresan/music/Music/Black Sabbath - Greatest Hits [1970-1978] 2006 only1joe 320MP3/Greatest Hits 1970-1978 mp3/15 Never Say Die.mp3
 /home/kumaresan/music/mnt/Blondie/The Rolling Stone Magazines 500 Greatest Songs Of All Time/255 - Heart Of Glass.mp3
 /home/kumaresan/music/mnt/Blondie/The Rolling Stone Magazines 500 Greatest Songs Of All Time/298 - One Way Or Another.mp3
 /home/kumaresan/music/mnt/Blondie/The Rolling Stone Magazines 500 Greatest Songs Of All Time/283 - Call Me.mp3
 /home/kumaresan/music/mnt/Blue Oyster Cult/The Rolling Stone Magazines 500 Greatest Songs Of All Time/(Dont Fear) The Reaper.mp3
-/home/kumaresan/music/Music/Blue Oyster Cult/The Rolling Stone Magazines 500 Greatest Songs Of All Time/(Dont Fear) The Reaper.mp3
 /home/kumaresan/music/mnt/Blur/Unknown Album/Tender.mp3
-/home/kumaresan/music/Music/Blur/Unknown Album/Tender.mp3
 /home/kumaresan/music/mnt/Bobby Fuller Four/The Rolling Stone Magazines 500 Greatest Songs Of All Time/175 - I Fought The Law.mp3
-/home/kumaresan/music/Music/Bobby Fuller Four/The Rolling Stone Magazines 500 Greatest Songs Of All Time/175 - I Fought The Law.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/14 - Blowin' In The Wind.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/14 - Blowin' In The Wind.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/59 - The Times They Are A-Changin'.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/59 - The Times They Are A-Changin'.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/1 - Like A Rolling Stone.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/1 - Like A Rolling Stone.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/106 - Mr. Tambourine Man.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/106 - Mr. Tambourine Man.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/185 - Desolation Row.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/185 - Desolation Row.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/203 - Positively 4Th Street.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/203 - Positively 4Th Street.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/332 - Subterranean Homesick Blues.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/332 - Subterranean Homesick Blues.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/364 - Highway 61 Revisited.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/364 - Highway 61 Revisited.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/230 - Just Like A Woman.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/230 - Just Like A Woman.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Visions Of Johanna.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Visions Of Johanna.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/190 - Knockin On Heavens Door.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/190 - Knockin On Heavens Door.mp3
 /home/kumaresan/music/mnt/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/68 - Tangled Up In Blue.mp3
-/home/kumaresan/music/Music/Bob Dylan/The Rolling Stone Magazines 500 Greatest Songs Of All Time/68 - Tangled Up In Blue.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/19. Bad Boys.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/19. Bad Boys.mp3
 /home/kumaresan/music/mnt/Bob Marley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/443 - I Shot The Sheriff.mp3
-/home/kumaresan/music/Music/Bob Marley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/443 - I Shot The Sheriff.mp3
 /home/kumaresan/music/mnt/Bob Marley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/37 - No Woman No Cry.mp3
-/home/kumaresan/music/Music/Bob Marley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/37 - No Woman No Cry.mp3
 /home/kumaresan/music/mnt/Bob Marley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/296 - Get Up Stand Up.mp3
-/home/kumaresan/music/Music/Bob Marley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/296 - Get Up Stand Up.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/01. Positive Vibration.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/01. Positive Vibration.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/02. Survival.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/02. Survival.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/03. Kaya.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/03. Kaya.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/04. Keep On Moving.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/04. Keep On Moving.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/05. Lively Up Yourself.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/05. Lively Up Yourself.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/06. Concrete Jungle.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/06. Concrete Jungle.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/07. Africa Unite.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/07. Africa Unite.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/08. Easy Skanking.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/08. Easy Skanking.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/09. Chant Down Babylon.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/09. Chant Down Babylon.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/10. Kinky Regae.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/10. Kinky Regae.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/11. Natural Music.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/11. Natural Music.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/12. Put It On.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/12. Put It On.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/13. Ride Natty Ride.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/13. Ride Natty Ride.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/14. Them Belly Full (But We Hungry).mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/14. Them Belly Full (But We Hungry).mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/15. Zion Train.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/15. Zion Train.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/16. One Drop.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/16. One Drop.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/17. Duppy Conqueror.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/17. Duppy Conqueror.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/18. Rebel Music (3 O'Clock Road Block).mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/18. Rebel Music (3 O'Clock Road Block).mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD2/19. Zimbabwe.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD2/19. Zimbabwe.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/01. Iron Lion Zion.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/01. Iron Lion Zion.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/02. Could You Be Loved.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/02. Could You Be Loved.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/03. Is This Love.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/03. Is This Love.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/04. I Shot The Sheriff.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/04. I Shot The Sheriff.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/05. Jamming.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/05. Jamming.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/06. One Love.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/06. One Love.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/07. No Woman, No Cry.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/07. No Woman, No Cry.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/08. Get Up Stand Up.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/08. Get Up Stand Up.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/09. Buffalo Soldier.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/09. Buffalo Soldier.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/10. Exodus.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/10. Exodus.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/11. Sun Is Shining.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/11. Sun Is Shining.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/12. Roots Rock Reggae.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/12. Roots Rock Reggae.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/13. So Much Trouble in The World.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/13. So Much Trouble in The World.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/14. Waiting In Vain.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/14. Waiting In Vain.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/15. Three Little Birds.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/15. Three Little Birds.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/16. Stir It Up.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/16. Stir It Up.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/17. Satisfy My Soul.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/17. Satisfy My Soul.mp3
 /home/kumaresan/music/mnt/Bob Marley - Greatest Hits/CD1/18. Punky Reggae Party.mp3
-/home/kumaresan/music/Music/Bob Marley - Greatest Hits/CD1/18. Punky Reggae Party.mp3
 /home/kumaresan/music/mnt/Bo Diddley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/62 - Bo Diddley.mp3
 /home/kumaresan/music/mnt/Bo Diddley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/369 - I'm A Man.mp3
 /home/kumaresan/music/mnt/Bo Diddley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Who Do You Love.mp3
@@ -2400,15 +1862,10 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Bombay/Tamilmp3world.Com - poovukku enna poottu.mp3
 /home/kumaresan/music/mnt/Bombay/Unknown Album/Uyire Uyire.mp3
 /home/kumaresan/music/mnt/Bon Jovi/Unknown Album/Bed Of Roses.mp3
-/home/kumaresan/music/Music/Bon Jovi/Unknown Album/Bed Of Roses.mp3
 /home/kumaresan/music/mnt/Bon Jovi/Unknown Album/Livin' On A Prayer.mp3
-/home/kumaresan/music/Music/Bon Jovi/Unknown Album/Livin' On A Prayer.mp3
 /home/kumaresan/music/mnt/Bon Jovi/Unknown Album/Wanted Dead Or Alive.mp3
-/home/kumaresan/music/Music/Bon Jovi/Unknown Album/Wanted Dead Or Alive.mp3
 /home/kumaresan/music/mnt/Bon Jovi/Unknown Album/1 - Run away.mp3
-/home/kumaresan/music/Music/Bon Jovi/Unknown Album/1 - Run away.mp3
 /home/kumaresan/music/mnt/Bon Jovi/Cross Road/Blaze of Glory.mp3
-/home/kumaresan/music/Music/Bon Jovi/Cross Road/Blaze of Glory.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Boys/Tamilmp3world.Com - Ale_Ale.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Boys/Tamilmp3world.Com - Boom_Boom.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Boys/Tamilmp3world.Com - Break_The_Rules.mp3
@@ -2419,176 +1876,91 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Boys/Tamilmp3world.Com - Boys_Theme.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/28 - bruce springsteen - i'm on fire.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/The Wrestler OST/The Wrestler.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/The Wrestler OST/The Wrestler.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/21 - Born To Run.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/21 - Born To Run.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/86 - Thunder Road.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/86 - Thunder Road.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/275 - Born In The U.S.A.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/275 - Born In The U.S.A.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/01 - Blinded By The Light.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/01 - Blinded By The Light.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/02 - For You.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/02 - For You.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/03 - Spirit In The Night.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/03 - Spirit In The Night.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/04 - 4th Of July, Asbury Park (Sandy).mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/04 - 4th Of July, Asbury Park (Sandy).mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/05 - Rosalita (Come Out Tonight).mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/05 - Rosalita (Come Out Tonight).mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/06 - Thunder Road.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/06 - Thunder Road.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/07 - Born To Run.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/07 - Born To Run.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/08 - Jungleland.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/08 - Jungleland.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/09 - Badlands.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/09 - Badlands.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/10 - Darkness On The Edge Of Town.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/10 - Darkness On The Edge Of Town.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/11 - The Promised Land.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/11 - The Promised Land.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/12 - The River.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/12 - The River.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/13 - Hungry Heart.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/13 - Hungry Heart.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/14 - Nebraska.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/14 - Nebraska.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/15 - Atlantic City.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD1/15 - Atlantic City.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/01 - Born In The U.S.A..mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/01 - Born In The U.S.A..mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/02 - Glory Days.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/02 - Glory Days.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/03 - Dancing In The Dark.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/03 - Dancing In The Dark.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/04 - Tunnel Of Love.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/04 - Tunnel Of Love.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/05 - Brilliant Disguise.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/05 - Brilliant Disguise.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/06 - Human Touch.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/06 - Human Touch.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/07 - Living Proof.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/07 - Living Proof.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/08 - Lucky Town.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/08 - Lucky Town.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/09 - Streets Of Philadelphia.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/09 - Streets Of Philadelphia.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/10 - The Ghost Of Tom Joad.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/10 - The Ghost Of Tom Joad.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/11 - The Rising.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/11 - The Rising.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/12 - Mary's Place.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/12 - Mary's Place.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/13 - Lonesome Day.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/13 - Lonesome Day.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/14 - American Skin (41Shots) [Live].mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/14 - American Skin (41Shots) [Live].mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/15 - Land Of Hope And Dreams [Live].mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD2/15 - Land Of Hope And Dreams [Live].mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/01 - From Small Things (Big Things One Day Come).mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/01 - From Small Things (Big Things One Day Come).mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/02 - The Big Payback.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/02 - The Big Payback.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/03 - Held Up Without A Gun [Live].mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/03 - Held Up Without A Gun [Live].mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/04 - Trapped [Live].mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/04 - Trapped [Live].mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/05 - None But The Brave.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/05 - None But The Brave.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/06 - Missing.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/06 - Missing.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/07 - Lift Me Up.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/07 - Lift Me Up.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/08 - Viva Las Vegas.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/08 - Viva Las Vegas.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/09 - County Fair.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/09 - County Fair.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/10 - Code Of Silence [Live].mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/10 - Code Of Silence [Live].mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/11 - Dead Man Walkin'.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/11 - Dead Man Walkin'.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/12 - Countin' On A Miracle (Acoustic).mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/12 - Countin' On A Miracle (Acoustic).mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/13 - Pink Cadillac.mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/13 - Pink Cadillac.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/14 - Santa Claus Is Coming To Town [Live].mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/14 - Santa Claus Is Coming To Town [Live].mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/15 - Dancing In The Dark [Extended Remix].mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/15 - Dancing In The Dark [Extended Remix].mp3
 /home/kumaresan/music/mnt/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/16 - Born In The USA [Freedom Mix].mp3
-/home/kumaresan/music/Music/Bruce Springsteen - Greatest Hits Essentials 3CD [Bubanee]/CD3/16 - Born In The USA [Freedom Mix].mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/1 - Radio Nowhere.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/1 - Radio Nowhere.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/2 - You'll Be Comin' Down.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/2 - You'll Be Comin' Down.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/3 - Livin' In The Future.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/3 - Livin' In The Future.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/4 - Your Own Worst Enemy.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/4 - Your Own Worst Enemy.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/5 - Gypsy Biker.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/5 - Gypsy Biker.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/6 - Girls In Their Summer Clothes.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/6 - Girls In Their Summer Clothes.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/7 - I'll Work For Your Love.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/7 - I'll Work For Your Love.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/8 - Magic.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/8 - Magic.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/9 - Last to Die.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/9 - Last to Die.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/10 - Long Walk Home.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/10 - Long Walk Home.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/11 - Devil's Arcade.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/11 - Devil's Arcade.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Magic/12 - Terry's Song.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Magic/12 - Terry's Song.mp3
 /home/kumaresan/music/mnt/Bruce Springsteen/Working on a Dream/3 - Working On A Dream.mp3
-/home/kumaresan/music/Music/Bruce Springsteen/Working on a Dream/3 - Working On A Dream.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/bryan%20adams%20-%20i%20wanna%20be%20ur%20underwear.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/bryan%20adams%20-%20i%20wanna%20be%20ur%20underwear.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/bryan adams - 18 till i die.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/bryan adams - 18 till i die.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/bryan adams - lets make a nite 2 remember.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/bryan adams, rod stewart & sting - all for love.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/bryan adams, rod stewart & sting - all for love.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/bryan_still beautiful to me.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/bryan_still beautiful to me.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/bryan_think about you.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/bryan_think about you.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/bryan_we need a party.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/bryan_we need a party.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/bryan_we're gonna win.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/bryan_we're gonna win.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/Heaven.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/Heaven.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/On a Day like today.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/On a Day like today.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/16 - Please Forgive Me.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/16 - Please Forgive Me.mp3
 /home/kumaresan/music/mnt/bryan adams/Unknown Album/11 - Have you ever really loved a woman.mp3
-/home/kumaresan/music/Music/bryan adams/Unknown Album/11 - Have you ever really loved a woman.mp3
 /home/kumaresan/music/mnt/Buddy Holly/The Rolling Stone Magazines 500 Greatest Songs Of All Time/194 - Peggy Sue.mp3
-/home/kumaresan/music/Music/Buddy Holly/The Rolling Stone Magazines 500 Greatest Songs Of All Time/194 - Peggy Sue.mp3
 /home/kumaresan/music/mnt/Buddy Holly/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Rave On.mp3
-/home/kumaresan/music/Music/Buddy Holly/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Rave On.mp3
 /home/kumaresan/music/mnt/Buddy Holly And The Crickets/The Rolling Stone Magazines 500 Greatest Songs Of All Time/39 - That'll Be The Day.mp3
-/home/kumaresan/music/Music/Buddy Holly And The Crickets/The Rolling Stone Magazines 500 Greatest Songs Of All Time/39 - That'll Be The Day.mp3
 /home/kumaresan/music/mnt/Buddy Holly And The Crickets/The Rolling Stone Magazines 500 Greatest Songs Of All Time/107 - Not Fade Away.mp3
-/home/kumaresan/music/Music/Buddy Holly And The Crickets/The Rolling Stone Magazines 500 Greatest Songs Of All Time/107 - Not Fade Away.mp3
 /home/kumaresan/music/mnt/Buddy Holly And The Crickets/The Rolling Stone Magazines 500 Greatest Songs Of All Time/236 - Everyday.mp3
-/home/kumaresan/music/Music/Buddy Holly And The Crickets/The Rolling Stone Magazines 500 Greatest Songs Of All Time/236 - Everyday.mp3
 /home/kumaresan/music/mnt/Buffalo Springfield/Singers and Songwriters/1 - For What It's Worth.mp3
-/home/kumaresan/music/Music/Buffalo Springfield/Singers and Songwriters/1 - For What It's Worth.mp3
 /home/kumaresan/music/mnt/Buffalo Springfield/The Rolling Stone Magazines 500 Greatest Songs Of All Time/63 - For What It's Worth.mp3
-/home/kumaresan/music/Music/Buffalo Springfield/The Rolling Stone Magazines 500 Greatest Songs Of All Time/63 - For What It's Worth.mp3
 /home/kumaresan/music/mnt/Cardigans/Unknown Album/My_Favorite_Game.mp3
-/home/kumaresan/music/Music/Cardigans/Unknown Album/My_Favorite_Game.mp3
 /home/kumaresan/music/mnt/Chandrababu/BAMBARA KANNALEA.mp3
-/home/kumaresan/music/Music/Chandrababu/BAMBARA KANNALEA.mp3
 /home/kumaresan/music/mnt/Chandrababu/MANAI PALIKKUM.MP3
-/home/kumaresan/music/Music/Chandrababu/MANAI PALIKKUM.MP3
 /home/kumaresan/music/mnt/Chandrababu/THANGATHAMMA.MP3
-/home/kumaresan/music/Music/Chandrababu/THANGATHAMMA.MP3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Chennai 600028/Tamilmp3world.Com - UllaVaa.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Chennai 600028/Tamilmp3world.Com - UnParvai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Chennai 600028/Tamilmp3world.Com - Yaaro(Love).mp3
@@ -2624,58 +1996,37 @@
 /home/kumaresan/music/mnt/Chopin - The Very Best Of Chopin (naxos 2005) ALAC/Berceuse in D flat major.m4a
 /home/kumaresan/music/mnt/Chopin - The Very Best Of Chopin (naxos 2005) ALAC/Piano Concerto No.1 - Romanza-Larghetto.m4a
 /home/kumaresan/music/mnt/Chris de Burgh/Unknown Album/The lady in red.mp3
-/home/kumaresan/music/Music/Chris de Burgh/Unknown Album/The lady in red.mp3
 /home/kumaresan/music/mnt/Chubby Checker/The Rolling Stone Magazines 500 Greatest Songs Of All Time/451 - The Twist.mp3
 /home/kumaresan/music/mnt/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/18 - Maybellene.mp3
-/home/kumaresan/music/Music/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/18 - Maybellene.mp3
 /home/kumaresan/music/mnt/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/97 - Roll Over Beethoven.mp3
-/home/kumaresan/music/Music/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/97 - Roll Over Beethoven.mp3
 /home/kumaresan/music/mnt/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/374 - Brown Eyed Handsome Man.mp3
-/home/kumaresan/music/Music/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/374 - Brown Eyed Handsome Man.mp3
 /home/kumaresan/music/mnt/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Rock And Roll Music.mp3
-/home/kumaresan/music/Music/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Rock And Roll Music.mp3
 /home/kumaresan/music/mnt/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/7 - Johnny B. Goode.mp3
-/home/kumaresan/music/Music/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/7 - Johnny B. Goode.mp3
 /home/kumaresan/music/mnt/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/272 - Sweet Little Sixteen.mp3
-/home/kumaresan/music/Music/Chuck Berry/The Rolling Stone Magazines 500 Greatest Songs Of All Time/272 - Sweet Little Sixteen.mp3
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/CJ Fly f- Joey Bada$$ - Sup Preme Official Music Video Premiere  First Look On Complex.m4a
 /home/kumaresan/music/mnt/Clash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/15 - London Calling.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Happy/Chal Chal Re.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Kalvanin Kaadhali/Ivan Kattil Nattu Mannan Than.mp3
 /home/kumaresan/music/mnt/Coldplay/A Rush Of Blood To The Head/4 - The Scientist.mp3
-/home/kumaresan/music/Music/Coldplay/A Rush Of Blood To The Head/4 - The Scientist.mp3
 /home/kumaresan/music/mnt/Coldplay/Viva La Vida or Death And All His Friends/7 - Viva La Vida.mp3
-/home/kumaresan/music/Music/Coldplay/Viva La Vida or Death And All His Friends/7 - Viva La Vida.mp3
 /home/kumaresan/music/mnt/Collective Soul/Unknown Album/The World I Know.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/cranberries___ode_to_my_fam.mp3
 /home/kumaresan/music/mnt/Cranberries/Animal Instinct/1 - Loud And Clear.mp3
-/home/kumaresan/music/Music/Cranberries/Animal Instinct/1 - Loud And Clear.mp3
 /home/kumaresan/music/mnt/crash test dummies/Unknown Album/crash test dummies-mmm.mp3
 /home/kumaresan/music/mnt/Cream/The Rolling Stone Magazines 500 Greatest Songs Of All Time/65 - Sunshine Of Your Love.mp3
-/home/kumaresan/music/Music/Cream/The Rolling Stone Magazines 500 Greatest Songs Of All Time/65 - Sunshine Of Your Love.mp3
 /home/kumaresan/music/mnt/Cream/The Rolling Stone Magazines 500 Greatest Songs Of All Time/367 - White Room.mp3
-/home/kumaresan/music/Music/Cream/The Rolling Stone Magazines 500 Greatest Songs Of All Time/367 - White Room.mp3
 /home/kumaresan/music/mnt/Cream/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Crossroads.mp3
-/home/kumaresan/music/Music/Cream/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Crossroads.mp3
 /home/kumaresan/music/mnt/Creedence Clearwater Revival/The Rolling Stone Magazines 500 Greatest Songs Of All Time/99 - Fortunate Son.mp3
-/home/kumaresan/music/Music/Creedence Clearwater Revival/The Rolling Stone Magazines 500 Greatest Songs Of All Time/99 - Fortunate Son.mp3
 /home/kumaresan/music/mnt/Creedence Clearwater Revival/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Proud Mary.mp3
-/home/kumaresan/music/Music/Creedence Clearwater Revival/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Proud Mary.mp3
 /home/kumaresan/music/mnt/Creedence Clearwater Revival/The Rolling Stone Magazines 500 Greatest Songs Of All Time/355 - Bad Moon Rising.mp3
-/home/kumaresan/music/Music/Creedence Clearwater Revival/The Rolling Stone Magazines 500 Greatest Songs Of All Time/355 - Bad Moon Rising.mp3
 /home/kumaresan/music/mnt/Creedence Clearwater Revival/The Rolling Stone Magazines 500 Greatest Songs Of All Time/188 - Who'll Stop The Rain.mp3
-/home/kumaresan/music/Music/Creedence Clearwater Revival/The Rolling Stone Magazines 500 Greatest Songs Of All Time/188 - Who'll Stop The Rain.mp3
 /home/kumaresan/music/mnt/Crosby Stills And Nash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/418 - Suite Judy Blue Eyes.mp3
-/home/kumaresan/music/Music/Crosby Stills And Nash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/418 - Suite Judy Blue Eyes.mp3
 /home/kumaresan/music/mnt/Crosby Stills Nash And Young/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Ohio.mp3
-/home/kumaresan/music/Music/Crosby Stills Nash And Young/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Ohio.mp3
 /home/kumaresan/music/mnt/little_things.mp3
-/home/kumaresan/music/Music/little_things.mp3
 /home/kumaresan/music/mnt/david byrne/Unknown Album/Like humans do.mp3
 /home/kumaresan/music/mnt/David Halliday/un paradis,un enfer/Pour Toi.mp3
 /home/kumaresan/music/mnt/David Harrison/Junior Recital/Beethoven - Piano Sonata No. 26 in E-flat Major, Op. 81a,  II  Abwesenheit.mp3
 /home/kumaresan/music/mnt/Deep Blue Something/Unknown Album/Breakfast At Tiffanys.mp3
-/home/kumaresan/music/Music/Deep Blue Something/Unknown Album/Breakfast At Tiffanys.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/deep purple - greatest hits - 01 - soldier of fortune.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/deep purple - greatest hits - 02 - smoke on the water.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/deep purple - greatest hits - 03 - when a blind man cries.mp3
@@ -2746,19 +2097,12 @@
 /home/kumaresan/music/mnt/Dion/The Rolling Stone Magazines 500 Greatest Songs Of All Time/342 - Runaround Sue.mp3
 /home/kumaresan/music/mnt/Teddy Bear Turn Around.mp3
 /home/kumaresan/music/mnt/dire straits/Unknown Album/01 - down to the waterline.mp3
-/home/kumaresan/music/Music/dire straits/Unknown Album/01 - down to the waterline.mp3
 /home/kumaresan/music/mnt/dire straits/Unknown Album/01 - once upon a time in the west.mp3
-/home/kumaresan/music/Music/dire straits/Unknown Album/01 - once upon a time in the west.mp3
 /home/kumaresan/music/mnt/dire straits/Unknown Album/04 - communique.mp3
-/home/kumaresan/music/Music/dire straits/Unknown Album/04 - communique.mp3
 /home/kumaresan/music/mnt/dire straits/Unknown Album/05 - lady writer.mp3
-/home/kumaresan/music/Music/dire straits/Unknown Album/05 - lady writer.mp3
 /home/kumaresan/music/mnt/dire straits/Unknown Album/dire straits - brothers in arms.mp3
-/home/kumaresan/music/Music/dire straits/Unknown Album/dire straits - brothers in arms.mp3
 /home/kumaresan/music/mnt/dire straits/Unknown Album/dire straits - sultans of swing.mp3
-/home/kumaresan/music/Music/dire straits/Unknown Album/dire straits - sultans of swing.mp3
 /home/kumaresan/music/mnt/dire straits/On Every Street/Heavy Fuel.mp3
-/home/kumaresan/music/Music/dire straits/On Every Street/Heavy Fuel.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dishoom/Tamilmp3world.Com - Dailamo Dailamo.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dishoom/Tamilmp3world.Com - Nenjagootil Nee.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dishoom/Tamilmp3world.Com - Boomiku Velicha.mp3
@@ -2776,7 +2120,6 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Doubles/Tamilmp3world.Com - rama rama.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Doubles/Tamilmp3world.Com - Colourful Nilavu.mp3
 /home/kumaresan/music/mnt/Dr. Dre/The Rolling Stone Magazines 500 Greatest Songs Of All Time/419 - Nuthin' But A G Thang.mp3
-/home/kumaresan/music/Music/Dr. Dre/The Rolling Stone Magazines 500 Greatest Songs Of All Time/419 - Nuthin' But A G Thang.mp3
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/(Drum Cover) Opeth - Baying of the Hounds.m4a
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Duet/Tamilmp3world.Com - AnjaliAnjali.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Duet/Tamilmp3world.Com - MettuPodu.mp3
@@ -2798,33 +2141,22 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dum dum dum/Tamilmp3world.Com - SutrumBoomi.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dum dum dum/Tamilmp3world.Com - UnperSonnaale.mp3
 /home/kumaresan/music/mnt/Duran Duran/Pop Trash/Someone Else Not Me.mp3
-/home/kumaresan/music/Music/Duran Duran/Pop Trash/Someone Else Not Me.mp3
 /home/kumaresan/music/mnt/Dusty Springfield/The Rolling Stone Magazines 500 Greatest Songs Of All Time/491 - You Don't Have To Say You Love Me.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/eagles - hotel california (unplugged).mp3
 /home/kumaresan/music/mnt/Hotel California.mp3
 /home/kumaresan/music/mnt/Eagles/The Very Best of the Eagles/02. Wasted Time.mp3
-/home/kumaresan/music/Music/Eagles/The Very Best of the Eagles/02. Wasted Time.mp3
 /home/kumaresan/music/mnt/Eagles/The Very Best of the Eagles/03. Peaceful Easy Feeling.mp3
-/home/kumaresan/music/Music/Eagles/The Very Best of the Eagles/03. Peaceful Easy Feeling.mp3
 /home/kumaresan/music/mnt/Eagles/The Very Best of the Eagles/03. Victim of Love.mp3
-/home/kumaresan/music/Music/Eagles/The Very Best of the Eagles/03. Victim of Love.mp3
 /home/kumaresan/music/mnt/Eagles/The Very Best of the Eagles/04. Desperado.mp3
-/home/kumaresan/music/Music/Eagles/The Very Best of the Eagles/04. Desperado.mp3
 /home/kumaresan/music/mnt/Eagles/The Very Best of the Eagles/05. New Kid in Town.mp3
-/home/kumaresan/music/Music/Eagles/The Very Best of the Eagles/05. New Kid in Town.mp3
 /home/kumaresan/music/mnt/Eagles/The Very Best of the Eagles/06. Doolin-Dalton.mp3
-/home/kumaresan/music/Music/Eagles/The Very Best of the Eagles/06. Doolin-Dalton.mp3
 /home/kumaresan/music/mnt/Eagles/The Very Best of the Eagles/08. Best of My Love.mp3
-/home/kumaresan/music/Music/Eagles/The Very Best of the Eagles/08. Best of My Love.mp3
 /home/kumaresan/music/mnt/Eagles/The Very Best of the Eagles/09. James Dean.mp3
-/home/kumaresan/music/Music/Eagles/The Very Best of the Eagles/09. James Dean.mp3
 /home/kumaresan/music/mnt/Eagles/The Very Best of the Eagles/17. Hotel California.mp3
-/home/kumaresan/music/Music/Eagles/The Very Best of the Eagles/17. Hotel California.mp3
 /home/kumaresan/music/mnt/Earth Wind & Fire/The Rolling Stone Magazines 500 Greatest Songs Of All Time/329. That's The Way Of The World.mp3
 /home/kumaresan/music/mnt/Eddie Cochran/The Rolling Stone Magazines 500 Greatest Songs Of All Time/73. Summertime Blues.mp3
 /home/kumaresan/music/mnt/Eddie Cochran/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Cmon Everybody.mp3
 /home/kumaresan/music/mnt/El Tuyo.mp3
-/home/kumaresan/music/Music/El Tuyo.mp3
 /home/kumaresan/music/mnt/Elliot Goldenthal & VA/Frida Soundtrack/19. Viva La Vida.mp3
 /home/kumaresan/music/mnt/Elton John/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Your Song.mp3
 /home/kumaresan/music/mnt/Elton John/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Tiny Dancer.mp3
@@ -2847,15 +2179,10 @@
 /home/kumaresan/music/mnt/Elvis Presley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/91. Suspicious Minds.mp3
 /home/kumaresan/music/mnt/Elvis Vs JXL/Unknown Album/A Little Less Conversation.mp3
 /home/kumaresan/music/mnt/Eminem/Unknown Album/01. Just Lose It (Dirty).mp3
-/home/kumaresan/music/Music/Eminem/Unknown Album/01. Just Lose It (Dirty).mp3
 /home/kumaresan/music/mnt/Eminem/The Rolling Stone Magazines 500 Greatest Songs Of All Time/290. Stan.mp3
-/home/kumaresan/music/Music/Eminem/The Rolling Stone Magazines 500 Greatest Songs Of All Time/290. Stan.mp3
 /home/kumaresan/music/mnt/Eminem/Lose Yourself (CDS)/02. Lose Yourself (Album).mp3
-/home/kumaresan/music/Music/Eminem/Lose Yourself (CDS)/02. Lose Yourself (Album).mp3
 /home/kumaresan/music/mnt/Eminem/The Eminem Show/12. Sing For The Moment.mp3
-/home/kumaresan/music/Music/Eminem/The Eminem Show/12. Sing For The Moment.mp3
 /home/kumaresan/music/mnt/Eminem/The Rolling Stone Magazines 500 Greatest Songs Of All Time/166. Lose Yourself.mp3
-/home/kumaresan/music/Music/Eminem/The Rolling Stone Magazines 500 Greatest Songs Of All Time/166. Lose Yourself.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ennaku 20 Unakku 18/Tamilmp3world.Com - Asathura.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ennaku 20 Unakku 18/Tamilmp3world.Com - Azhahinna_Azhahi.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ennaku 20 Unakku 18/Tamilmp3world.Com - Kama_Kama.mp3
@@ -2864,7 +2191,6 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ennaku 20 Unakku 18/Tamilmp3world.Com - Theme_Music_1.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ennaku 20 Unakku 18/Tamilmp3world.Com - Yedo_Yedo.mp3
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Enna Satham - Punnagai Mannan.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Enna Satham - Punnagai Mannan.m4a
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/En Swasa Katre/Tamilmp3world.Com - Oruu_thuli.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/En Swasa Katre/Tamilmp3world.Com - Teendai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/En Swasa Katre/Tamilmp3world.Com - Thirakatha.mp3
@@ -2872,105 +2198,55 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/En Swasa Katre/Tamilmp3world.Com - Jumbalakka.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/En Swasa Katre/Tamilmp3world.Com - Nayakara.mp3
 /home/kumaresan/music/mnt/Eric B And Rakim/The Rolling Stone Magazines 500 Greatest Songs Of All Time/I Know You Got Soul.mp3
-/home/kumaresan/music/Music/Eric B And Rakim/The Rolling Stone Magazines 500 Greatest Songs Of All Time/I Know You Got Soul.mp3
 /home/kumaresan/music/mnt/Eric Clapton/The Rolling Stone Magazines 500 Greatest Songs Of All Time/353. Tears In Heaven.mp3
-/home/kumaresan/music/Music/Eric Clapton/The Rolling Stone Magazines 500 Greatest Songs Of All Time/353. Tears In Heaven.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/01. I Feel Free.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/01. I Feel Free.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/01. I've Got A Rock 'N' Roll Heart.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/01. I've Got A Rock 'N' Roll Heart.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/02. She's Waiting.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/02. She's Waiting.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/02. Sunshine Of Your Love.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/02. Sunshine Of Your Love.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/03. Forever Man.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/03. Forever Man.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/03. White Room.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/03. White Room.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/04. Crossroads (Live At Winterland).mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/04. Crossroads (Live At Winterland).mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/04. It's In The Way That You Use It.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/04. It's In The Way That You Use It.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/05. Badge.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/05. Badge.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/05. Miss You.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/05. Miss You.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/06. Presence Of The Lord.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/06. Presence Of The Lord.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/06. Pretending.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/06. Pretending.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/07. After Midnight.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/07. After Midnight.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/07. Bad Love.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/07. Bad Love.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/08. Let It Rain.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/08. Let It Rain.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/08. Tears In Heaven.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/08. Tears In Heaven.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/09. Bell Bottom Blues.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/09. Bell Bottom Blues.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/09. Layla (Unplugged).mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/09. Layla (Unplugged).mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/10. Layla.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/10. Layla.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/10. Running On Faith (Unplugged).mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/10. Running On Faith (Unplugged).mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/11. Let It Grow.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/11. Let It Grow.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/11. Motherless Child.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/11. Motherless Child.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/12. Change The World.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/12. Change The World.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/12. I Shot The Sheriff.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/12. I Shot The Sheriff.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/13. Knockin' On Heaven's Door.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/13. Knockin' On Heaven's Door.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/13. My Father's Eyes.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/13. My Father's Eyes.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/14. Hello Old Friend.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/14. Hello Old Friend.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/14. Riding With The King (With B.B. King).mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/14. Riding With The King (With B.B. King).mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/15. Cocaine.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/15. Cocaine.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/15. Sweet Home Chicago.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/15. Sweet Home Chicago.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/16. If I Had Possession Of Judgement Day.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/16. If I Had Possession Of Judgement Day.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/16. Lay Down Sally.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/16. Lay Down Sally.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/17. Ride The River (With J.J. Cale).mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/17. Ride The River (With J.J. Cale).mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/17. Wonderful Tonight.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/17. Wonderful Tonight.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/18. Promises.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/18. Promises.mp3
 /home/kumaresan/music/mnt/Eric Clapton/Complete Clapton/19. I Can't Stand It.mp3
-/home/kumaresan/music/Music/Eric Clapton/Complete Clapton/19. I Can't Stand It.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/01. Riding With The King.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/01. Riding With The King.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/02. Ten Long Years.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/02. Ten Long Years.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/03. Key To The Highway.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/03. Key To The Highway.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/04. Marry You.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/04. Marry You.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/05. Three O'Clock Blues.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/05. Three O'Clock Blues.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/06. Help The Poor.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/06. Help The Poor.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/07. I Wanna Be.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/07. I Wanna Be.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/08. Worried Life Blues.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/08. Worried Life Blues.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/09. Days Of Old.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/09. Days Of Old.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/10. When My Heart Beats Like A Hammer.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/10. When My Heart Beats Like A Hammer.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/11. Hold On! I'm Coming.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/11. Hold On! I'm Coming.mp3
 /home/kumaresan/music/mnt/Eric Clapton & B.B. King/Riding With The King/12. Come Rain Or Come Shine.mp3
-/home/kumaresan/music/Music/Eric Clapton & B.B. King/Riding With The King/12. Come Rain Or Come Shine.mp3
 /home/kumaresan/music/mnt/Eurythmics/The Rolling Stone Magazines 500 Greatest Songs Of All Time/356. Sweet Dreams (Are Made Of This).mp3
 /home/kumaresan/music/mnt/The Everly Brothers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Cathy's Clown.mp3
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/PuduPudu Arthangal/EDUTHU NAN.mp3
@@ -3167,47 +2443,28 @@
 /home/kumaresan/music/mnt/FIVE STARFIVE STAR BEST OF 70'S TO 80'S HITS OF 70'S TO 80'S/PONNU ORUKKU PUTHUSU/42. 158 SAMAKKOLI.mp3
 /home/kumaresan/music/mnt/FIVE STARFIVE STAR BEST OF 70'S TO 80'S HITS OF 70'S TO 80'S/PONNU ORUKKU PUTHUSU/42. 159 SOLAI KUIL.mp3
 /home/kumaresan/music/mnt/Fleetwood Mac/The Rolling Stone Magazines 500 Greatest Songs Of All Time/488. Rhiannon.mp3
-/home/kumaresan/music/Music/Fleetwood Mac/The Rolling Stone Magazines 500 Greatest Songs Of All Time/488. Rhiannon.mp3
 /home/kumaresan/music/mnt/Fleetwood Mac/The Rolling Stone Magazines 500 Greatest Songs Of All Time/119. Go Your Own Way.mp3
-/home/kumaresan/music/Music/Fleetwood Mac/The Rolling Stone Magazines 500 Greatest Songs Of All Time/119. Go Your Own Way.mp3
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/fly to the rainbow - Scorpions.m4a
 /home/kumaresan/music/mnt/webmcrap/fly to the rainbow - Scorpions.webm
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Vallavan/Success Of Love.mp3
 /home/kumaresan/music/mnt/Foo Fighters/Learn To Fly Promo/Learn To Fly.mp3
-/home/kumaresan/music/Music/Foo Fighters/Learn To Fly Promo/Learn To Fly.mp3
 /home/kumaresan/music/mnt/Foreigner/The Rolling Stone Magazines 500 Greatest Songs Of All Time/476. I Want To Know What Love Is.mp3
-/home/kumaresan/music/Music/Foreigner/The Rolling Stone Magazines 500 Greatest Songs Of All Time/476. I Want To Know What Love Is.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/for_you.mp3
 /home/kumaresan/music/mnt/Frankie Lymon & The Teenagers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/307. Why Do Fools Fall In Love.mp3
-/home/kumaresan/music/Music/Frankie Lymon & The Teenagers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/307. Why Do Fools Fall In Love.mp3
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(01) [Freddie King] Play It Cool.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(01) [Freddie King] Play It Cool.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(02) [Freddie King] That Will Never Do.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(02) [Freddie King] That Will Never Do.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(03) [Freddie King] It's Too Late, She's Gone.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(03) [Freddie King] It's Too Late, She's Gone.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(04) [Freddie King] Blue Shadows.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(04) [Freddie King] Blue Shadows.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(05) [Freddie King] Today I Sing The Blues.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(05) [Freddie King] Today I Sing The Blues.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(06) [Freddie King] Get Out Of My Life Woman.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(06) [Freddie King] Get Out Of My Life Woman.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(07) [Freddie King] Hideaway.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(07) [Freddie King] Hideaway.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(08) [Freddie King] Funky.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(08) [Freddie King] Funky.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(09) [Freddie King] Hot Tomato.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(09) [Freddie King] Hot Tomato.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(10) [Freddie King] Wide Open.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(10) [Freddie King] Wide Open.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(11) [Freddie King] Sweet Thing.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(11) [Freddie King] Sweet Thing.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(12) [Freddie King] Let Me Down Easy.flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(12) [Freddie King] Let Me Down Easy.flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(13) [Freddie King] Play It Cool (rare Mono A-Side).flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(13) [Freddie King] Play It Cool (rare Mono A-Side).flac
 /home/kumaresan/music/mnt/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(14) [Freddie King] Funky (rare Mono B-Side).flac
-/home/kumaresan/music/Music/Freddie King - Freddie King Is A Blues Master  Deluxe Edition (1969; 2014) [FLAC]/(14) [Freddie King] Funky (rare Mono B-Side).flac
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Thimiru/TamilNapster.com_Thimiru_OppuraneOppurane.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Puthiya Geethai/rose4you+Geethai_05.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Puthiya Geethai/rose4you+Geethai_03.mp3
@@ -3300,11 +2557,8 @@
 /home/kumaresan/music/mnt/Glen Hansard and Marketa Irglova/Once (Original Soundtrack)/13. Say It to Me.mp3
 /home/kumaresan/music/mnt/Gloria Gaynor/The Rolling Stone Magazines 500 Greatest Songs Of All Time/489. I Will Survive.mp3
 /home/kumaresan/music/mnt/GNR/Unknown Album/guns%20n%20roses%20-%20paradise.mp3
-/home/kumaresan/music/Music/GNR/Unknown Album/guns%20n%20roses%20-%20paradise.mp3
 /home/kumaresan/music/mnt/GNR/Unknown Album/05. Shooting Star.mp3
-/home/kumaresan/music/Music/GNR/Unknown Album/05. Shooting Star.mp3
 /home/kumaresan/music/mnt/GNR/Unknown Album/08. Sweet Child of Mine.mp3
-/home/kumaresan/music/Music/GNR/Unknown Album/08. Sweet Child of Mine.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Godfather/Tamilmp3world.Com - Ilamai(Remix).mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Godfather/Tamilmp3world.Com - KammaKarayil.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Godfather/Tamilmp3world.Com - KatrilOruVaarthai.mp3
@@ -3316,7 +2570,6 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Godfather/Tamilmp3world.Com - Innisai(Remix)2.mp3
 /home/kumaresan/music/mnt/Grandmaster Flash And The Furious Five/The Rolling Stone Magazines 500 Greatest Songs Of All Time/51. The Message.mp3
 /home/kumaresan/music/mnt/Guns N Roses/Appetite for Destruction/01. Welcome to the Jungle.mp3
-/home/kumaresan/music/Music/Guns N Roses/Appetite for Destruction/01. Welcome to the Jungle.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Guru/Tamilmp3world.Com - Nannare.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Guru/Tamilmp3world.Com - Aaruyire.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Guru/Tamilmp3world.Com - JodiJodi.mp3
@@ -3333,33 +2586,19 @@
 /home/kumaresan/music/mnt/Hank Williams/The Rolling Stone Magazines 500 Greatest Songs Of All Time/111. I'm So Lonesome I Could Cry.mp3
 /home/kumaresan/music/mnt/Hank Williams, Sr/The Rolling Stone Magazines 500 Greatest Songs Of All Time/213. Your Cheatin' Heart.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/01. Why So Serious.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/01. Why So Serious.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/02. I'm Not A Hero.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/02. I'm Not A Hero.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/03. Harvey Two-Face.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/03. Harvey Two-Face.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/04. Aggressive Expansion.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/04. Aggressive Expansion.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/05. Always A Catch.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/05. Always A Catch.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/06. Blood On My Hands.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/06. Blood On My Hands.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/07. A Little Push.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/07. A Little Push.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/08. Like A Dog Chasing Cars.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/08. Like A Dog Chasing Cars.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/09. I Am The Batman.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/09. I Am The Batman.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/10. And I Thought My Jokes Were Bad.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/10. And I Thought My Jokes Were Bad.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/11. Agent Of Chaos.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/11. Agent Of Chaos.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/12. Introduce A Little Anarchy.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/12. Introduce A Little Anarchy.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/13. Watch The World Burn.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/13. Watch The World Burn.mp3
 /home/kumaresan/music/mnt/Hans Zimmer and James Newton Howard/The Dark Knight/14. A Dark Knight.mp3
-/home/kumaresan/music/Music/Hans Zimmer and James Newton Howard/The Dark Knight/14. A Dark Knight.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Ram/Nuvena.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Pattiyal/Poga Poga.mp3
 /home/kumaresan/music/mnt/Hariharan, Madhusree & Chorus/Sivaji - The Boss/02. Vaaji Vaaji.mp3
@@ -3534,36 +2773,22 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dasavatharam/Tamilmp3world.Com - Oh Oh Sanam.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dasavatharam/Tamilmp3world.Com - Ulaga Nayagan.mp3
 /home/kumaresan/music/mnt/Hootie & The Blowfish/Unknown Album/I Will Wait.mp3
-/home/kumaresan/music/Music/Hootie & The Blowfish/Unknown Album/I Will Wait.mp3
 /home/kumaresan/music/mnt/Howlin' Wolf/The Rolling Stone Magazines 500 Greatest Songs Of All Time/285. Smokestack Lightnin'.mp3
 /home/kumaresan/music/mnt/Howlin' Wolf/The Rolling Stone Magazines 500 Greatest Songs Of All Time/219. Spoonful.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/Papercut.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/Papercut.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/One Step Closer.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/One Step Closer.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/With You.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/With You.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/Points of Authority.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/Points of Authority.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/Crawling.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/Crawling.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/Runaway.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/Runaway.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/By Myself.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/By Myself.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/In the End.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/In the End.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/Place for My Head.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/Place for My Head.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/Forgotten.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/Forgotten.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/Cure for the Itch.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/Cure for the Itch.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/Pushing Me Away.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/Pushing Me Away.mp3
 /home/kumaresan/music/mnt/Idhayam/Unknown Album/April Mayee.Mp3.mp3
 /home/kumaresan/music/mnt/Idina Menzel - Let It Go (from Frozen) (Official Video).ogg
-/home/kumaresan/music/Music/Idina Menzel - Let It Go (from Frozen) (Official Video).ogg
 /home/kumaresan/music/mnt/Iggy Pop/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Lust For Life.mp3
 /home/kumaresan/music/mnt/Ike And Tina Turner/The Rolling Stone Magazines 500 Greatest Songs Of All Time/33. River Deep Mountain High.mp3
 /home/kumaresan/music/mnt/Ilaiyaraaja/Jak Coll/02. Ilaiyaraaja's How to name it HOW TO NAME IT.mp3
@@ -4608,17 +3833,11 @@
 /home/kumaresan/music/mnt/Ilaiyaraja Discography/Unakkaagave Vaazhgiren/Unakkaagave Vaazhgiren - ilanjolai.mp3
 /home/kumaresan/music/mnt/Ilaiyaraja Discography/Vidinja Kalyanam/Vidinja Kalyanam - Kaalam Ilavenil.mp3
 /home/kumaresan/music/mnt/Vikram/Vikram - Chippikkul oru.mp3
-/home/kumaresan/music/Music/Vikram/Vikram - Chippikkul oru.mp3
 /home/kumaresan/music/mnt/Vikram/Vikram - Enjoodi manjal.mp3
-/home/kumaresan/music/Music/Vikram/Vikram - Enjoodi manjal.mp3
 /home/kumaresan/music/mnt/Vikram/Vikram - Meendum Meendum Va (theme).mp3
-/home/kumaresan/music/Music/Vikram/Vikram - Meendum Meendum Va (theme).mp3
 /home/kumaresan/music/mnt/Vikram/Vikram - Meendum Meendum Va.mp3
-/home/kumaresan/music/Music/Vikram/Vikram - Meendum Meendum Va.mp3
 /home/kumaresan/music/mnt/Vikram/Vikram - Vanitha Mani Vana Mohini.mp3
-/home/kumaresan/music/Music/Vikram/Vikram - Vanitha Mani Vana Mohini.mp3
 /home/kumaresan/music/mnt/Vikram/Vikram - Naan Vetri Pettravan.mp3
-/home/kumaresan/music/Music/Vikram/Vikram - Naan Vetri Pettravan.mp3
 /home/kumaresan/music/mnt/Ilaiyaraja Discography/Aala Piranthavan/Aala Prinanthavan - Unnaiyum Ennaiyum.mp3
 /home/kumaresan/music/mnt/Ilaiyaraja Discography/Aala Piranthavan/Aala Prinanthavan - Yeathi Vaitha.mp3
 /home/kumaresan/music/mnt/Ilaiyaraja Discography/Aanand/Anand - Poovukku.mp3
@@ -6573,7 +5792,6 @@
 /home/kumaresan/music/mnt/Ilaiyaraja Discography/Maayak Kannadi/Maayak Kannadi - Kaathal Indru Ippothu Oru Visiyamillada Melil Thatti Vidum Oru Thoosuda.mp3
 /home/kumaresan/music/mnt/Ilaiyaraja Discography/Maayak Kannadi/Maayak Kannadi - Ulagilea Azhaki Neethan Enakkuthan Enakkuthan Unakku Naan Azhana Soll.mp3
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Ilankaathu Veesuthe - Pithamagan.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Ilankaathu Veesuthe - Pithamagan.m4a
 /home/kumaresan/music/mnt/Ilayaraaja/Marupadiyum/10. Nalam Vazha.mp3
 /home/kumaresan/music/mnt/Ilayaraaja/Thendrale Ennai Thodu/01. Kanmani.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Kamal/Ilamai Oonjaladukirathu/ENNADI MEENATCHI-SPB-ILAMAI OONJALADUHIRADHU.mp3
@@ -6599,19 +5817,12 @@
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/dass dass.mp3
 /home/kumaresan/music/mnt/Illayaraja/Kadhal Mannan/ENNA SATHAM.mp3
 /home/kumaresan/music/mnt/Kadhal oviyam/Kaathal_Oviyam_-_Kuyilae_Kuilae.mp3
-/home/kumaresan/music/Music/Kadhal oviyam/Kaathal_Oviyam_-_Kuyilae_Kuilae.mp3
 /home/kumaresan/music/mnt/Kadhal oviyam/Kaathal_Oviyam_-_Naatham_En_Jeevanae.mp3
-/home/kumaresan/music/Music/Kadhal oviyam/Kaathal_Oviyam_-_Naatham_En_Jeevanae.mp3
 /home/kumaresan/music/mnt/Kadhal oviyam/Kaathal_Oviyam_-_Nathiyilaadum.mp3
-/home/kumaresan/music/Music/Kadhal oviyam/Kaathal_Oviyam_-_Nathiyilaadum.mp3
 /home/kumaresan/music/mnt/Kadhal oviyam/Kaathal_Oviyam_-_Poojaikaga_Vaazhum.mp3
-/home/kumaresan/music/Music/Kadhal oviyam/Kaathal_Oviyam_-_Poojaikaga_Vaazhum.mp3
 /home/kumaresan/music/mnt/Kadhal oviyam/Kaathal_Oviyam_-_Poovil_Vandu.mp3
-/home/kumaresan/music/Music/Kadhal oviyam/Kaathal_Oviyam_-_Poovil_Vandu.mp3
 /home/kumaresan/music/mnt/Kadhal oviyam/Kaathal_Oviyam_-_Velli_Salangaigal.mp3
-/home/kumaresan/music/Music/Kadhal oviyam/Kaathal_Oviyam_-_Velli_Salangaigal.mp3
 /home/kumaresan/music/mnt/Kadhal oviyam/Kaathal_Oviyam_-_Amma_Azhagea.mp3
-/home/kumaresan/music/Music/Kadhal oviyam/Kaathal_Oviyam_-_Amma_Azhagea.mp3
 /home/kumaresan/music/mnt/Illayaraja/Mohan/08. Sangeetha megham.mp3
 /home/kumaresan/music/mnt/Illayaraja/Murattu kalai/07. Podhuvaga en manasu thangam.mp3
 /home/kumaresan/music/mnt/artist/Album/2 - Track 2.mp3
@@ -6622,28 +5833,20 @@
 /home/kumaresan/music/mnt/Illayaraja/Payanangal mudivathillai/01. Illaya Nila.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thalapathi/Tamilmp3world.Com - Chinna Thayaval.MP3
 /home/kumaresan/music/mnt/Thalapathi/Dalapathi/Chinna Thayaval.mp3
-/home/kumaresan/music/Music/Thalapathi/Dalapathi/Chinna Thayaval.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thalapathi/Tamilmp3world.Com - Kattukuyilu.MP3
 /home/kumaresan/music/mnt/Thalapathi/Dalapathi/Kattukuyilu.mp3
-/home/kumaresan/music/Music/Thalapathi/Dalapathi/Kattukuyilu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thalapathi/Tamilmp3world.Com - Maargalithan.MP3
 /home/kumaresan/music/mnt/Thalapathi/Dalapathi/Maargalithan.mp3
-/home/kumaresan/music/Music/Thalapathi/Dalapathi/Maargalithan.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thalapathi/Tamilmp3world.Com - Putham Puthu.MP3
 /home/kumaresan/music/mnt/Thalapathi/Dalapathi/Putham Puthu.mp3
-/home/kumaresan/music/Music/Thalapathi/Dalapathi/Putham Puthu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thalapathi/Tamilmp3world.Com - Rakkamma.MP3
 /home/kumaresan/music/mnt/Thalapathi/Dalapathi/Rakkamma.mp3
-/home/kumaresan/music/Music/Thalapathi/Dalapathi/Rakkamma.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thalapathi/Tamilmp3world.Com - Sundari.MP3
 /home/kumaresan/music/mnt/Thalapathi/Dalapathi/Sundari.mp3
-/home/kumaresan/music/Music/Thalapathi/Dalapathi/Sundari.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thalapathi/Tamilmp3world.Com - Yamunai Aatrile.MP3
 /home/kumaresan/music/mnt/Thalapathi/Dalapathi/Yamunai Aatrile.mp3
-/home/kumaresan/music/Music/Thalapathi/Dalapathi/Yamunai Aatrile.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thalapathi/Tamilmp3world.Com - Yamunai Aatrile (sad).MP3
 /home/kumaresan/music/mnt/Thalapathi/Dalapathi/Yamunai Aatrile (solo).mp3
-/home/kumaresan/music/Music/Thalapathi/Dalapathi/Yamunai Aatrile (solo).mp3
 /home/kumaresan/music/mnt/Illayaraja/Unnai Ninaichen Paattu Padichen/Unnai Ninaichen Paattu Padichen - Ennai Thottu Alli Konda.mp3
 /home/kumaresan/music/mnt/Illayaraja/VARUSAM 16/GANGAI KARAI.mp3
 /home/kumaresan/music/mnt/Illayaraja/VARUSAM 16/PAZHAMUTHIR CHOLAI.mp3
@@ -6771,61 +5974,36 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Indian/Tamilmp3world.Com - Maya Machindra.mp3
 /home/kumaresan/music/mnt/Indira/Indira/Nila Kayuthu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Indira/Tamilmp3world.Com - Nila_Kagiradhu_Male.mp3
-/home/kumaresan/music/Music/Indira/Indira/Nila Kayuthu.mp3
 /home/kumaresan/music/mnt/Indira/Tamilmp3world.Com/Acham Illai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Indira/Tamilmp3world.Com - Acham_Illai.mp3
-/home/kumaresan/music/Music/Indira/Tamilmp3world.Com/Acham Illai.mp3
 /home/kumaresan/music/mnt/Indira/Tamilmp3world.Com/Mannueru Dhan.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Indira/Tamilmp3world.Com - Munneru_Dhaan.mp3
-/home/kumaresan/music/Music/Indira/Tamilmp3world.Com/Mannueru Dhan.mp3
 /home/kumaresan/music/mnt/Indira/Tamilmp3world.Com/Nila Kaaigirathu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Indira/Tamilmp3world.Com - Nila_Kaaigirathu.mp3
-/home/kumaresan/music/Music/Indira/Tamilmp3world.Com/Nila Kaaigirathu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Indira/Tamilmp3world.Com - Odakara.mp3
 /home/kumaresan/music/mnt/Indira/Tamilmp3world.Com/Thoda Thoda.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Indira/Tamilmp3world.Com - Thoda_Thoda.mp3
-/home/kumaresan/music/Music/Indira/Tamilmp3world.Com/Thoda Thoda.mp3
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Singara Velan/INNUM ANNAI.mp3
 /home/kumaresan/music/mnt/Inxs/Unknown Album/Elegantly Wasted.mp3
-/home/kumaresan/music/Music/Inxs/Unknown Album/Elegantly Wasted.mp3
-/home/kumaresan/music/Music/Irina Klyuev/http_pianosociety.com/Beethoven - Sonata _Appassionata_ in F minor Op.57 No.23.mp3
 /home/kumaresan/music/mnt/Irina Klyuev/http_pianosociety.com/Beethoven - Sonata _Appassionata_ in F minor Op.57 No.23.mp3
 /home/kumaresan/music/mnt/iron maiden/Unknown Album/Como estais amigos.mp3
-/home/kumaresan/music/Music/iron maiden/Unknown Album/Como estais amigos.mp3
 /home/kumaresan/music/mnt/iron maiden/Unknown Album/Don't look to the eyes of a s.mp3
-/home/kumaresan/music/Music/iron maiden/Unknown Album/Don't look to the eyes of a s.mp3
 /home/kumaresan/music/mnt/iron maiden/Unknown Album/Futureal.mp3
-/home/kumaresan/music/Music/iron maiden/Unknown Album/Futureal.mp3
 /home/kumaresan/music/mnt/iron maiden/Unknown Album/Lightning strikes twice.mp3
-/home/kumaresan/music/Music/iron maiden/Unknown Album/Lightning strikes twice.mp3
 /home/kumaresan/music/mnt/iron maiden/Unknown Album/The angel and the Gambler.mp3
-/home/kumaresan/music/Music/iron maiden/Unknown Album/The angel and the Gambler.mp3
 /home/kumaresan/music/mnt/iron maiden/Unknown Album/The clansman.mp3
-/home/kumaresan/music/Music/iron maiden/Unknown Album/The clansman.mp3
 /home/kumaresan/music/mnt/iron maiden/Unknown Album/The educated fool.mp3
-/home/kumaresan/music/Music/iron maiden/Unknown Album/The educated fool.mp3
 /home/kumaresan/music/mnt/iron maiden/Unknown Album/The Trooper.mp3
-/home/kumaresan/music/Music/iron maiden/Unknown Album/The Trooper.mp3
 /home/kumaresan/music/mnt/iron maiden/Unknown Album/When two worlds collide.mp3
-/home/kumaresan/music/Music/iron maiden/Unknown Album/When two worlds collide.mp3
 /home/kumaresan/music/mnt/iron maiden/SOMEWHERE IN TIME/Wasted Years.mp3
-/home/kumaresan/music/Music/iron maiden/SOMEWHERE IN TIME/Wasted Years.mp3
 /home/kumaresan/music/mnt/Iruvar/Unknown Album/tamilmp3world.com%20-%20ayirathil_nan_ooruvan.mp3
-/home/kumaresan/music/Music/Iruvar/Unknown Album/tamilmp3world.com%20-%20ayirathil_nan_ooruvan.mp3
 /home/kumaresan/music/mnt/Iruvar/Unknown Album/tamilmp3world.com%20-%20hello_mr_ethirkatchi.mp3
-/home/kumaresan/music/Music/Iruvar/Unknown Album/tamilmp3world.com%20-%20hello_mr_ethirkatchi.mp3
 /home/kumaresan/music/mnt/Iruvar/Unknown Album/tamilmp3world.com%20-%20kannai_katti_kollathe.mp3
-/home/kumaresan/music/Music/Iruvar/Unknown Album/tamilmp3world.com%20-%20kannai_katti_kollathe.mp3
 /home/kumaresan/music/mnt/Iruvar/Unknown Album/tamilmp3world.com%20-%20narumukaiyea_narum.mp3
-/home/kumaresan/music/Music/Iruvar/Unknown Album/tamilmp3world.com%20-%20narumukaiyea_narum.mp3
 /home/kumaresan/music/mnt/Iruvar/Unknown Album/tamilmp3world.com%20-%20pookodiyin_punnakai.mp3
-/home/kumaresan/music/Music/Iruvar/Unknown Album/tamilmp3world.com%20-%20pookodiyin_punnakai.mp3
 /home/kumaresan/music/mnt/Iruvar/Unknown Album/tamilmp3world.com%20-%20udal_mannukku_uyir.mp3
-/home/kumaresan/music/Music/Iruvar/Unknown Album/tamilmp3world.com%20-%20udal_mannukku_uyir.mp3
 /home/kumaresan/music/mnt/Iruvar/Unknown Album/tamilmp3world.com%20-%20unnodu_nan_irundha.mp3
-/home/kumaresan/music/Music/Iruvar/Unknown Album/tamilmp3world.com%20-%20unnodu_nan_irundha.mp3
 /home/kumaresan/music/mnt/Iruvar/Unknown Album/tamilmp3world.com%20-%20vennila_vennila_venni.mp3
-/home/kumaresan/music/Music/Iruvar/Unknown Album/tamilmp3world.com%20-%20vennila_vennila_venni.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Iruvar/Tamilmp3world.Com - Ayirathil_Nan_Ooruvan.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Iruvar/Tamilmp3world.Com - Hello_Mr_Ethirkatchi.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Iruvar/Tamilmp3world.Com - Kannai_Katti_Kollathe.mp3
@@ -6848,65 +6026,39 @@
 /home/kumaresan/music/mnt/Jackie Wilson/The Rolling Stone Magazines 500 Greatest Songs Of All Time/308. Lonely Teardrops.mp3
 /home/kumaresan/music/mnt/Jackie Wilson/The Rolling Stone Magazines 500 Greatest Songs Of All Time/246. (Your Love Keeps Lifting Me) Higher And Higher.mp3
 /home/kumaresan/music/mnt/Jackson Browne/The Rolling Stone Magazines 500 Greatest Songs Of All Time/492. Running On Empty.mp3
-/home/kumaresan/music/Music/Jackson Browne/The Rolling Stone Magazines 500 Greatest Songs Of All Time/492. Running On Empty.mp3
 /home/kumaresan/music/mnt/James Blunt/musiccool.yculblog.com/02. You're Beautiful.mp3
-/home/kumaresan/music/Music/James Blunt/musiccool.yculblog.com/02. You're Beautiful.mp3
 /home/kumaresan/music/mnt/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Please Please Please.mp3
-/home/kumaresan/music/Music/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Please Please Please.mp3
 /home/kumaresan/music/mnt/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/78. I Got You (I Feel Good).mp3
-/home/kumaresan/music/Music/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/78. I Got You (I Feel Good).mp3
 /home/kumaresan/music/mnt/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/72. Papa's Got A Brand New Bag.mp3
-/home/kumaresan/music/Music/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/72. Papa's Got A Brand New Bag.mp3
 /home/kumaresan/music/mnt/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/123. It's A Man's, Man's, Man's World.mp3
-/home/kumaresan/music/Music/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/123. It's A Man's, Man's, Man's World.mp3
 /home/kumaresan/music/mnt/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/305. Say It Loud (I'm Black And I'm Proud).mp3
-/home/kumaresan/music/Music/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/305. Say It Loud (I'm Black And I'm Proud).mp3
 /home/kumaresan/music/mnt/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/326. Get Up (I Feel Like Being A) Sex Machine.mp3
-/home/kumaresan/music/Music/James Brown/The Rolling Stone Magazines 500 Greatest Songs Of All Time/326. Get Up (I Feel Like Being A) Sex Machine.mp3
 /home/kumaresan/music/mnt/James Taylor/The Rolling Stone Magazines 500 Greatest Songs Of All Time/227. Fire And Rain.mp3
 /home/kumaresan/music/mnt/Janis Joplin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Me And Bobby Mcgee.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Sandakozhi/Ketta Kodukkira Boomi.mp3
 /home/kumaresan/music/mnt/Linkin Park/Collision Course/Dirt Off Your Shoulder Lying From You.mp3
-/home/kumaresan/music/Music/Linkin Park/Collision Course/Dirt Off Your Shoulder Lying From You.mp3
 /home/kumaresan/music/mnt/Linkin Park/Collision Course/Big Pimpin'-Papercut.mp3
-/home/kumaresan/music/Music/Linkin Park/Collision Course/Big Pimpin'-Papercut.mp3
 /home/kumaresan/music/mnt/Linkin Park/Collision Course/Jigga What-Faint.mp3
-/home/kumaresan/music/Music/Linkin Park/Collision Course/Jigga What-Faint.mp3
 /home/kumaresan/music/mnt/Linkin Park/Collision Course/Numb-Encore.mp3
-/home/kumaresan/music/Music/Linkin Park/Collision Course/Numb-Encore.mp3
 /home/kumaresan/music/mnt/Linkin Park/Collision Course/Izzo-In the End.mp3
-/home/kumaresan/music/Music/Linkin Park/Collision Course/Izzo-In the End.mp3
 /home/kumaresan/music/mnt/Linkin Park/Collision Course/99 Problems-One Step Closer.mp3
-/home/kumaresan/music/Music/Linkin Park/Collision Course/99 Problems-One Step Closer.mp3
 /home/kumaresan/music/mnt/Jay-Z & Linkin Park/German Top100 Single Charts/Numb Encore.mp3
-/home/kumaresan/music/Music/Jay-Z & Linkin Park/German Top100 Single Charts/Numb Encore.mp3
 /home/kumaresan/music/mnt/Jeff Buckley/The Rolling Stone Magazines 500 Greatest Songs Of All Time/259. Hallelujah.mp3
 /home/kumaresan/music/mnt/Jerry Lee Lewis/The Rolling Stone Magazines 500 Greatest Songs Of All Time/61. Whole Lotta Shakinâ´ Goingâ´ On.mp3
 /home/kumaresan/music/mnt/Jerry Lee Lewis/The Rolling Stone Magazines 500 Greatest Songs Of All Time/96. Great Balls Of Fire.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Kedi/Unna Petha Aatha.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Happy/Ossa.mp3
 /home/kumaresan/music/mnt/Mozart/Adieu Autumn.mp3
-/home/kumaresan/music/Music/Mozart/Adieu Autumn.mp3
 /home/kumaresan/music/mnt/Mozart/Ntstuc Neabderubgs.mp3
-/home/kumaresan/music/Music/Mozart/Ntstuc Neabderubgs.mp3
 /home/kumaresan/music/mnt/Mozart/Yathum Oore.mp3
-/home/kumaresan/music/Music/Mozart/Yathum Oore.mp3
 /home/kumaresan/music/mnt/Mozart/Hymn of Silence.mp3
-/home/kumaresan/music/Music/Mozart/Hymn of Silence.mp3
 /home/kumaresan/music/mnt/Mozart/Mozart Meets India.mp3
-/home/kumaresan/music/Music/Mozart/Mozart Meets India.mp3
 /home/kumaresan/music/mnt/Mozart/Smile of the Lotus.mp3
-/home/kumaresan/music/Music/Mozart/Smile of the Lotus.mp3
 /home/kumaresan/music/mnt/Jim Carrey/Unknown Album/Don't You Want Somebody to Love.mp3
-/home/kumaresan/music/Music/Jim Carrey/Unknown Album/Don't You Want Somebody to Love.mp3
 /home/kumaresan/music/mnt/Jimi Hendrix/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Foxey Lady.mp3
-/home/kumaresan/music/Music/Jimi Hendrix/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Foxey Lady.mp3
 /home/kumaresan/music/mnt/Jimi Hendrix/The Rolling Stone Magazines 500 Greatest Songs Of All Time/17. Purple Haze.mp3
-/home/kumaresan/music/Music/Jimi Hendrix/The Rolling Stone Magazines 500 Greatest Songs Of All Time/17. Purple Haze.mp3
 /home/kumaresan/music/mnt/Jimi Hendrix/The Rolling Stone Magazines 500 Greatest Songs Of All Time/370. The Wind Cries Mary.mp3
-/home/kumaresan/music/Music/Jimi Hendrix/The Rolling Stone Magazines 500 Greatest Songs Of All Time/370. The Wind Cries Mary.mp3
 /home/kumaresan/music/mnt/Jimi Hendrix/The Rolling Stone Magazines 500 Greatest Songs Of All Time/357. Little Wing.mp3
-/home/kumaresan/music/Music/Jimi Hendrix/The Rolling Stone Magazines 500 Greatest Songs Of All Time/357. Little Wing.mp3
 /home/kumaresan/music/mnt/Jimmy Cliff/The Rolling Stone Magazines 500 Greatest Songs Of All Time/317. Many Rivers To Cross.mp3
 /home/kumaresan/music/mnt/Jimmy Cliff/The Rolling Stone Magazines 500 Greatest Songs Of All Time/341. The Harder They Come.mp3
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Joey Bada$$ - 95 Til Infinity (Official Music Video).m4a
@@ -6921,7 +6073,6 @@
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Joey Bada$$ (feat. Chuck Strangers) - Fromdatomb$ (Official Video).m4a
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Joey Bada$$ ft. Dessy Hings & T Nah Apex - Sit N Prey (Summer Knights) (New Music August 2013).m4a
 /home/kumaresan/music/mnt/John Denver/Best Of John Denver/Take Me Home, Country Roads.mp3
-/home/kumaresan/music/Music/John Denver/Best Of John Denver/Take Me Home, Country Roads.mp3
 /home/kumaresan/music/mnt/John H. Clarke/Acoustik Guitar/01 Intro to the Most Evolved.mp3
 /home/kumaresan/music/mnt/John H. Clarke/Acoustik Guitar/02 The Most Evolved.mp3
 /home/kumaresan/music/mnt/John H. Clarke/Acoustik Guitar/03 Intro to Aguila Cosmica.mp3
@@ -6957,11 +6108,8 @@
 /home/kumaresan/music/mnt/John Lennon/The Rolling Stone Magazines 500 Greatest Songs Of All Time/03. Imagine.mp3
 /home/kumaresan/music/mnt/John Mellencamp/The Rolling Stone Magazines 500 Greatest Songs Of All Time/439. Pink Houses.mp3
 /home/kumaresan/music/mnt/Johnny Cash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/30. I Walk The Line.mp3
-/home/kumaresan/music/Music/Johnny Cash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/30. I Walk The Line.mp3
 /home/kumaresan/music/mnt/Johnny Cash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/164. Folsom Prison Blues.mp3
-/home/kumaresan/music/Music/Johnny Cash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/164. Folsom Prison Blues.mp3
 /home/kumaresan/music/mnt/Johnny Cash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/87. Ring Of Fire.mp3
-/home/kumaresan/music/Music/Johnny Cash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/87. Ring Of Fire.mp3
 /home/kumaresan/music/mnt/Joni Mitchell/The Rolling Stone Magazines 500 Greatest Songs Of All Time/170. Both Sides Now.mp3
 /home/kumaresan/music/mnt/Joni Mitchell/The Rolling Stone Magazines 500 Greatest Songs Of All Time/282. Help Me.mp3
 /home/kumaresan/music/mnt/Joni Mitchell/The Rolling Stone Magazines 500 Greatest Songs Of All Time/470. Free Man In Paris.mp3
@@ -7015,9 +6163,7 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Kalvanin Kadhali/Tamilmp3world.Com - TajmahalOviyakkadhal.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Kalvanin Kadhali/Tamilmp3world.Com - UyirPriyumValiyai.mp3
 /home/kumaresan/music/mnt/Ilayaraja_hd_audio/Kalyana Maalai Kondaadum Penne with lyrics - Puthu Puthu Arthangal.m4a
-/home/kumaresan/music/Music/Ilayaraja_hd_audio/Kalyana Maalai Kondaadum Penne with lyrics - Puthu Puthu Arthangal.m4a
 /home/kumaresan/music/mnt/Vikram Vikram.mp3
-/home/kumaresan/music/Music/Vikram Vikram.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Anbe Sivam/Tamilmp3world.Com - Anbe_Sivam.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Pudhupettai/Peek In To Assasin's Life - Nerrupu Vayinil.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/The Blast/Chippikule Muthu Pookkal.mp3
@@ -7138,7 +6284,6 @@
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Veera/Konji Konji - S.P.Bala.mp3
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Veera/Konji KOnji - Chitra.mp3
 /home/kumaresan/music/mnt/KoRn/Follow The Leader/Freak on a leash.mp3
-/home/kumaresan/music/Music/KoRn/Follow The Leader/Freak on a leash.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Kovil/Tamilmp3world.Com - Arali vedaiyl.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Kovil/Tamilmp3world.Com - Collegiku.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Kovil/Tamilmp3world.Com - Kadhal-Panna.mp3
@@ -7146,9 +6291,7 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Kovil/Tamilmp3world.Com - Puyalae.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Kovil/Tamilmp3world.Com - Silu Silu.mp3
 /home/kumaresan/music/mnt/Kula Shaker/Unknown Album/Govinda.mp3
-/home/kumaresan/music/Music/Kula Shaker/Unknown Album/Govinda.mp3
 /home/kumaresan/music/mnt/KulaShaker/Unknown Album/Hush.mp3
-/home/kumaresan/music/Music/KulaShaker/Unknown Album/Hush.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Thimiru/TamilNapster.com_Thimiru_Kattikko RappaRappa.mp3
 /home/kumaresan/music/mnt/Bharathiyar Songs/Bharathiyar Paadalgal - Odi Vilaiyaadu (Oldies).mp3
 /home/kumaresan/music/mnt/Bharathiyar Songs/Bharathiyar Paadalgal - Vellai Nirathoru (Oldies).mp3
@@ -7163,17 +6306,11 @@
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Sokkathangam/ENNA NENACHA.mp3
 /home/kumaresan/music/mnt/Lavern Baker/The Rolling Stone Magazines 500 Greatest Songs Of All Time/343. Jim Dandy.mp3
 /home/kumaresan/music/mnt/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/75. Whole Lotta Love.mp3
-/home/kumaresan/music/Music/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/75. Whole Lotta Love.mp3
 /home/kumaresan/music/mnt/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/320. Heartbreaker.mp3
-/home/kumaresan/music/Music/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/320. Heartbreaker.mp3
 /home/kumaresan/music/mnt/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/433. Ramble On.mp3
-/home/kumaresan/music/Music/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/433. Ramble On.mp3
 /home/kumaresan/music/mnt/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/31. Stairway To Heaven.mp3
-/home/kumaresan/music/Music/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/31. Stairway To Heaven.mp3
 /home/kumaresan/music/mnt/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/294. Black Dog.mp3
-/home/kumaresan/music/Music/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/294. Black Dog.mp3
 /home/kumaresan/music/mnt/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Kashmir.mp3
-/home/kumaresan/music/Music/Led Zeppelin/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Kashmir.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Leysa Leysa/Tamilmp3world.Com - AvalUlagaAzhaghi.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Leysa Leysa/Tamilmp3world.Com - IlamaiInimai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Leysa Leysa/Tamilmp3world.Com - LaysaLaysa2.mp3
@@ -7182,86 +6319,48 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Leysa Leysa/Tamilmp3world.Com - MudhalMudhalai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Leysa Leysa/Tamilmp3world.Com - YedhoOndru.mp3
 /home/kumaresan/music/mnt/Linkin Park/Unknown Album/Breaking the habit.mp3
-/home/kumaresan/music/Music/Linkin Park/Unknown Album/Breaking the habit.mp3
 /home/kumaresan/music/mnt/Linkin Park/Hybrid Theory/05. Crawling.mp3
-/home/kumaresan/music/Music/Linkin Park/Hybrid Theory/05. Crawling.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/The Requiem.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/The Requiem.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/The Radiance.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/The Radiance.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Burning In The Skies.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Burning In The Skies.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Empty Spaces.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Empty Spaces.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/When They Come For Me.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/When They Come For Me.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Robot Boy.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Robot Boy.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Jornada Del Muerto.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Jornada Del Muerto.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Waiting For The End.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Waiting For The End.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Blackout.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Blackout.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Wrectches And Kings.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Wrectches And Kings.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Wisdom Justice And Love.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Wisdom Justice And Love.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Iridescent.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Iridescent.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/Fallout.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/Fallout.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/The Catalyst.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/The Catalyst.mp3
 /home/kumaresan/music/mnt/Linkin Park/A Thousand Suns/The Messenger.mp3
-/home/kumaresan/music/Music/Linkin Park/A Thousand Suns/The Messenger.mp3
 /home/kumaresan/music/mnt/Lisa Hannigan/Sea Sew/05. I Don't Know.mp3
-/home/kumaresan/music/Music/Lisa Hannigan/Sea Sew/05. I Don't Know.mp3
 /home/kumaresan/music/mnt/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/43. Tutti Frutti.mp3
-/home/kumaresan/music/Music/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/43. Tutti Frutti.mp3
 /home/kumaresan/music/mnt/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/56. Long Tall Sally.mp3
-/home/kumaresan/music/Music/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/56. Long Tall Sally.mp3
 /home/kumaresan/music/mnt/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/413. The Girl Can't Help It.mp3
-/home/kumaresan/music/Music/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/413. The Girl Can't Help It.mp3
 /home/kumaresan/music/mnt/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/442. Keep A Knockin'.mp3
-/home/kumaresan/music/Music/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/442. Keep A Knockin'.mp3
 /home/kumaresan/music/mnt/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/94. Good Golly Miss Molly.mp3
-/home/kumaresan/music/Music/Little Richard/The Rolling Stone Magazines 500 Greatest Songs Of All Time/94. Good Golly Miss Molly.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/Somewhere I belong.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/Somewhere I belong.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/Lying from you.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/Lying from you.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/Papercut.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/Papercut.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/Points of Authority.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/Points of Authority.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/Runaway.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/Runaway.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/Faint.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/Faint.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/From the Inside.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/From the Inside.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/Pushing me Away.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/Pushing me Away.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/Numb.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/Numb.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/Crawling.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/Crawling.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/In the end.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/In the end.mp3
 /home/kumaresan/music/mnt/Linkin Park/Live In Texas/One Step Closer.mp3
-/home/kumaresan/music/Music/Linkin Park/Live In Texas/One Step Closer.mp3
 /home/kumaresan/music/mnt/Lloyd Price/The Rolling Stone Magazines 500 Greatest Songs Of All Time/456. Stagger Lee.mp3
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Lorelei - Scorpions (With Lyrics).m4a
 /home/kumaresan/music/mnt/webmcrap/Lorelei - Scorpions (With Lyrics).webm
 /home/kumaresan/music/mnt/Lou Reed/The Rolling Stone Magazines 500 Greatest Songs Of All Time/221. Walk On The Wild Side.mp3
-/home/kumaresan/music/Music/Lou Reed/The Rolling Stone Magazines 500 Greatest Songs Of All Time/221. Walk On The Wild Side.mp3
 /home/kumaresan/music/mnt/Love/The Rolling Stone Magazines 500 Greatest Songs Of All Time/436. Alone Again Or.mp3
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Love of my life - Scorpions (V.O. Queen).m4a
 /home/kumaresan/music/mnt/Lynyrd Skynyrd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/191. Free Bird.mp3
-/home/kumaresan/music/Music/Lynyrd Skynyrd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/191. Free Bird.mp3
 /home/kumaresan/music/mnt/Lynyrd Skynyrd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Sweet Home Alabama.mp3
-/home/kumaresan/music/Music/Lynyrd Skynyrd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Sweet Home Alabama.mp3
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Mac Miller - America (Ft. Casey Veggies & Joey Badass).m4a
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Veera/Madathilae Kani - S.P.Bala & Swarna.mp3
 /home/kumaresan/music/mnt/Madonna/Unknown Album/Beautiful stranger.mp3
@@ -7292,35 +6391,21 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Manmathan/Tamilmp3world.Com - Vaanamenna_Uyaram_Kaattum.mp3
 /home/kumaresan/music/mnt/Manu Chao/Napster/King of Bongo Bong.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/01. True Love Will Never Fade.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/01. True Love Will Never Fade.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/02. The Scaffolder's Wife.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/02. The Scaffolder's Wife.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/03. The Fizzy And The Still.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/03. The Fizzy And The Still.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/04. Heart Full Of Holes.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/04. Heart Full Of Holes.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/05. We Can Get Wild.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/05. We Can Get Wild.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/06. Secondary Waltz.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/06. Secondary Waltz.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/07. Punish The Monkey.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/07. Punish The Monkey.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/08. Let It All Go.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/08. Let It All Go.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/09. Behind With The Rent.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/09. Behind With The Rent.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/10. The Fish And The Bird.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/10. The Fish And The Bird.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/11. Madame Geneva's.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/11. Madame Geneva's.mp3
 /home/kumaresan/music/mnt/Mark Knopfler/Kill To Get Crimson/12. In The Sky.mp3
-/home/kumaresan/music/Music/Mark Knopfler/Kill To Get Crimson/12. In The Sky.mp3
 /home/kumaresan/music/mnt/Martha And The Vandella/The Rolling Stone Magazines 500 Greatest Songs Of All Time/40. Dancing In The Streets.mp3
 /home/kumaresan/music/mnt/Martha Reeves And The Vandellas/The Rolling Stone Magazines 500 Greatest Songs Of All Time/358. Nowhere To Run.mp3
 /home/kumaresan/music/mnt/Marvin Gaye/The Rolling Stone Magazines 500 Greatest Songs Of All Time/80. I Heard It Through The Grapevine.mp3
-/home/kumaresan/music/Music/Marvin Gaye/The Rolling Stone Magazines 500 Greatest Songs Of All Time/80. I Heard It Through The Grapevine.mp3
 /home/kumaresan/music/mnt/Marvin Gaye/The Rolling Stone Magazines 500 Greatest Songs Of All Time/167. Lets Get It On.mp3
-/home/kumaresan/music/Music/Marvin Gaye/The Rolling Stone Magazines 500 Greatest Songs Of All Time/167. Lets Get It On.mp3
 /home/kumaresan/music/mnt/Matrix Reloaded/Matrix II/Matrix Reloaded - Rob Zombie.mp3
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Maybe I Maybe You - Scorpions.m4a
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/May Madham/Tamilmp3world.Com - Aadi_Paadu.mp3
@@ -7332,52 +6417,29 @@
 /home/kumaresan/music/mnt/Ilaiyaraja Discography/Makkal Aatchi/Makkal Aatchi - Melluru Maaman.mp3
 /home/kumaresan/music/mnt/Meredth Brooks/Unknown Album/Bitch.mp3
 /home/kumaresan/music/mnt/Metallica/Unknown Album/Sanatarium.mp3
-/home/kumaresan/music/Music/Metallica/Unknown Album/Sanatarium.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_03_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/02. The Call Of The Ktulu.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/02. The Call Of The Ktulu.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/03. Master Of Puppets.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/03. Master Of Puppets.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/04. Of Wolf And Man.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/04. Of Wolf And Man.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/05. The Thing That Should Not Be.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/05. The Thing That Should Not Be.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/06. Fuel.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/06. Fuel.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/07. The Memory Remains.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/07. The Memory Remains.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/09. Hero Of The Day.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/09. Hero Of The Day.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/10. Devil's Dance.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/10. Devil's Dance.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 1)/11. Bleeding Me.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 1)/11. Bleeding Me.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 2)/02. Until It Sleeps.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 2)/02. Until It Sleeps.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 2)/03. For Whom the Bell Tolls.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 2)/03. For Whom the Bell Tolls.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 2)/04. - Human.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 2)/04. - Human.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 2)/06. Outlaw Torn.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 2)/06. Outlaw Torn.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 2)/07. Sad But True.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 2)/07. Sad But True.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 2)/08. One.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 2)/08. One.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 2)/09. Enter Sandman.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 2)/09. Enter Sandman.mp3
 /home/kumaresan/music/mnt/Metallica/S&M (Disc 2)/10. Battery.mp3
-/home/kumaresan/music/Music/Metallica/S&M (Disc 2)/10. Battery.mp3
 /home/kumaresan/music/mnt/Metallica/St.Anger/Frantic.mp3
-/home/kumaresan/music/Music/Metallica/St.Anger/Frantic.mp3
 /home/kumaresan/music/mnt/Metallica/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Enter Sandman.mp3
-/home/kumaresan/music/Music/Metallica/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Enter Sandman.mp3
 /home/kumaresan/music/mnt/Metallica/Reload/01. Fuel.mp3
-/home/kumaresan/music/Music/Metallica/Reload/01. Fuel.mp3
 /home/kumaresan/music/mnt/Michael Jackson/The Rolling Stone Magazines 500 Greatest Songs Of All Time/337. Beat It.mp3
-/home/kumaresan/music/Music/Michael Jackson/The Rolling Stone Magazines 500 Greatest Songs Of All Time/337. Beat It.mp3
 /home/kumaresan/music/mnt/Michael Jackson/The Rolling Stone Magazines 500 Greatest Songs Of All Time/58. Billie Jean.mp3
-/home/kumaresan/music/Music/Michael Jackson/The Rolling Stone Magazines 500 Greatest Songs Of All Time/58. Billie Jean.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Minnale/Tamilmp3world.Com - VenmathiVenmathiNillu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Minnale/Tamilmp3world.Com - HeyAzhagiyaTheeye.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Minnale/Tamilmp3world.Com - IruVizhiUnathu.mp3
@@ -7413,7 +6475,6 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/M.Kumaran/Tamilmp3world.Com - Yaaru Yaaru Inavo.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New Folder/Un_Parvai.mp3
 /home/kumaresan/music/mnt/motley crue/Unknown Album/kickstart my heart.mp3
-/home/kumaresan/music/Music/motley crue/Unknown Album/kickstart my heart.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Mounam Pesiyade/Tamilmp3world.Com - 60Ayiduchu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Mounam Pesiyade/Tamilmp3world.Com - AadaathaAttam.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Mounam Pesiyade/Tamilmp3world.Com - ChinnaChinnathaai.mp3
@@ -7440,13 +6501,9 @@
 /home/kumaresan/music/mnt/Songs/Devotional Songs/Carnatic/gajavadhanA-MS.mp3
 /home/kumaresan/music/mnt/artist/Album/1 - Track 1.mp3
 /home/kumaresan/music/mnt/Muddy Waters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/459. Rollin' Stone.mp3
-/home/kumaresan/music/Music/Muddy Waters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/459. Rollin' Stone.mp3
 /home/kumaresan/music/mnt/Muddy Waters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/225. Hoochie Coochie Man.mp3
-/home/kumaresan/music/Music/Muddy Waters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/225. Hoochie Coochie Man.mp3
 /home/kumaresan/music/mnt/Muddy Waters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/229. Mannish Boy.mp3
-/home/kumaresan/music/Music/Muddy Waters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/229. Mannish Boy.mp3
 /home/kumaresan/music/mnt/Muddy Waters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/359. Got My Mojo Working.mp3
-/home/kumaresan/music/Music/Muddy Waters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/359. Got My Mojo Working.mp3
 /home/kumaresan/music/mnt/Muddy Waters - Anthology (2014) MP3@320kbps Beolab1700/01 - I Just Want To Make Love To You.mp3
 /home/kumaresan/music/mnt/Muddy Waters - Anthology (2014) MP3@320kbps Beolab1700/02 - (I'm Your) Hoochie Coochie Man.mp3
 /home/kumaresan/music/mnt/Muddy Waters - Anthology (2014) MP3@320kbps Beolab1700/03 - I'm Ready.mp3
@@ -7531,11 +6588,8 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Nandha/Tamilmp3world.Com - Or Aayiram Yaanai Konda.mp3
 /home/kumaresan/music/mnt/Naresh Iyer & Kalyani/Imsai Arasan 23am Pulikecei/04. Aasai Kanave.mp3
 /home/kumaresan/music/mnt/Neil Young/The Rolling Stone Magazines 500 Greatest Songs Of All Time/297. Heart Of Gold.mp3
-/home/kumaresan/music/Music/Neil Young/The Rolling Stone Magazines 500 Greatest Songs Of All Time/297. Heart Of Gold.mp3
 /home/kumaresan/music/mnt/Neil Young/The Rolling Stone Magazines 500 Greatest Songs Of All Time/321. Cortez The Killer.mp3
-/home/kumaresan/music/Music/Neil Young/The Rolling Stone Magazines 500 Greatest Songs Of All Time/321. Cortez The Killer.mp3
 /home/kumaresan/music/mnt/Neil Young/The Rolling Stone Magazines 500 Greatest Songs Of All Time/214. Rockin' In The Free World.mp3
-/home/kumaresan/music/Music/Neil Young/The Rolling Stone Magazines 500 Greatest Songs Of All Time/214. Rockin' In The Free World.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New/Tamilmp3world.Com - Eani_Vaarum.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New/Tamilmp3world.Com - Konchaneram.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New/Tamilmp3world.Com - Markendeya.mp3
@@ -7545,7 +6599,6 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New/Tamilmp3world.Com - KalaiDhinamum.mp3
 /home/kumaresan/music/mnt/New Artist/New Title/01. ANTHI POOVE NEE (S.P.B) OSAI.mp3
 /home/kumaresan/music/mnt/New York Dolls/The Rolling Stone Magazines 500 Greatest Songs Of All Time/267. Personality Crisis.mp3
-/home/kumaresan/music/Music/New York Dolls/The Rolling Stone Magazines 500 Greatest Songs Of All Time/267. Personality Crisis.mp3
 /home/kumaresan/music/mnt/Nine Inch Nails - The Definitive NIN Complete Collection/The Definitive NIN - The Remixes/08 Head Like A Hole (Opal).mp3
 /home/kumaresan/music/mnt/Nine Inch Nails - The Definitive NIN Complete Collection/The Definitive NIN - Deep Cuts (Seed 03)/02 Heresy.mp3
 /home/kumaresan/music/mnt/Nine Inch Nails - The Definitive NIN Complete Collection/The Definitive NIN - Deep Cuts (Seed 03)/01 Sunspots.mp3
@@ -7625,22 +6678,16 @@
 /home/kumaresan/music/mnt/Nine Inch Nails - The Definitive NIN Complete Collection/The Definitive NIN - The Singles (Seed 02)/19 Only.mp3
 /home/kumaresan/music/mnt/Nine Inch Nails - The Definitive NIN Complete Collection/The Definitive NIN - The Singles (Seed 02)/20 Every Day Is Exactly The Same.mp3
 /home/kumaresan/music/mnt/Nirvana/The Rolling Stone Magazines 500 Greatest Songs Of All Time/09. Smells Like Teen Spirit.mp3
-/home/kumaresan/music/Music/Nirvana/The Rolling Stone Magazines 500 Greatest Songs Of All Time/09. Smells Like Teen Spirit.mp3
 /home/kumaresan/music/mnt/Nirvana/The Rolling Stone Magazines 500 Greatest Songs Of All Time/In Bloom.mp3
-/home/kumaresan/music/Music/Nirvana/The Rolling Stone Magazines 500 Greatest Songs Of All Time/In Bloom.mp3
 /home/kumaresan/music/mnt/Nirvana/The Rolling Stone Magazines 500 Greatest Songs Of All Time/445. Come As You Are.mp3
-/home/kumaresan/music/Music/Nirvana/The Rolling Stone Magazines 500 Greatest Songs Of All Time/445. Come As You Are.mp3
 /home/kumaresan/music/mnt/Nirvana/The Rolling Stone Magazines 500 Greatest Songs Of All Time/455. All Apologies.mp3
-/home/kumaresan/music/Music/Nirvana/The Rolling Stone Magazines 500 Greatest Songs Of All Time/455. All Apologies.mp3
 /home/kumaresan/music/mnt/Songs/Devotional Songs/KJJ/Aa Divya Namam.mp3
 /home/kumaresan/music/mnt/Songs/Devotional Songs/KJJ/Aana Kera Mala.mp3
 /home/kumaresan/music/mnt/Norman Blake/O Brother, Where Art Thou_/03. You Are My Sunshine.mp3
 /home/kumaresan/music/mnt/Norman Greenbaum/Unknown Album/Spirit in the Sky.mp3
 /home/kumaresan/music/mnt/Norman Greenbaum/The Rolling Stone Magazines 500 Greatest Songs Of All Time/333. Spirit In The Sky.mp3
 /home/kumaresan/music/mnt/N.W.A/The Rolling Stone Magazines 500 Greatest Songs Of All Time/417. Fuck The Police.mp3
-/home/kumaresan/music/Music/N.W.A/The Rolling Stone Magazines 500 Greatest Songs Of All Time/417. Fuck The Police.mp3
 /home/kumaresan/music/mnt/Offspring/Unknown Album/Why Don't You Get a Job.mp3
-/home/kumaresan/music/Music/Offspring/Unknown Album/Why Don't You Get a Job.mp3
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/Opeth - Advent.m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/Opeth - A Fair Judgement (Deliverance).m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/Opeth - A Fleeting Glance.m4a
@@ -7741,32 +6788,26 @@
 /home/kumaresan/music/mnt/Tick Tick Tick/Tham Tharikida Thrikida Thom - Jesudass & Jency.mp3
 /home/kumaresan/music/mnt/Mohan hits/OORENGUM.mp3
 /home/kumaresan/music/mnt/Mohan hits/VAADI SAMANJA.mp3
-/home/kumaresan/music/Music/Mohan hits/VAADI SAMANJA.mp3
 /home/kumaresan/music/mnt/Mohan hits/PUDICHLUM.mp3
-/home/kumaresan/music/Music/Mohan hits/PUDICHLUM.mp3
 /home/kumaresan/music/mnt/Mohan hits/EN PURUSHAN.mp3
 /home/kumaresan/music/mnt/MGR/01 ATHO ANTHA PARAVAI.mp3
 /home/kumaresan/music/mnt/MGR/M G R URRAI.mp3
 /home/kumaresan/music/mnt/Chandrababu/01 YANN ENDRA KALVAI.mp3
-/home/kumaresan/music/Music/Chandrababu/01 YANN ENDRA KALVAI.mp3
 /home/kumaresan/music/mnt/MGR/ANDRU VANTHATHU (PERIYA IDATHU PENN).mp3
 /home/kumaresan/music/mnt/MGR/KUNGAMA POTTIN (KUDIYIRANTHA KOIL).mp3
 /home/kumaresan/music/mnt/MGR/02 KANCHIYLE NAAN.mp3
 /home/kumaresan/music/mnt/MGR/03  NENJAM UNDU.mp3
 /home/kumaresan/music/mnt/MGR/PUTHAAUR ULLGAM.mp3
 /home/kumaresan/music/mnt/Chandrababu/02 YAMARATHEAEA.mp3
-/home/kumaresan/music/Music/Chandrababu/02 YAMARATHEAEA.mp3
 /home/kumaresan/music/mnt/MGR/CHINNAVALAI (PUDIYA BOOMI).mp3
 /home/kumaresan/music/mnt/MGR/MOODI THIRANTHU ((THAYA KATHU THANAYAN).mp3
 /home/kumaresan/music/mnt/Chandrababu/03 ANGA SRIPPVARGAL.mp3
-/home/kumaresan/music/Music/Chandrababu/03 ANGA SRIPPVARGAL.mp3
 /home/kumaresan/music/mnt/MGR/CHARRTIU VALLAM.mp3
 /home/kumaresan/music/mnt/MGR/03 CHINNAPPAYALE.mp3
 /home/kumaresan/music/mnt/MGR/03 POYUM POYUM.mp3
 /home/kumaresan/music/mnt/MGR/KAVERI KARAI IRAKU (THAYA KAATHU THANYAN).mp3
 /home/kumaresan/music/mnt/Chandrababu/NAANMO (AAYIRTHIL ORUVAN).mp3
 /home/kumaresan/music/mnt/MGR/NAANMO (AAYIRTHIL ORUVAN).mp3
-/home/kumaresan/music/Music/Chandrababu/NAANMO (AAYIRTHIL ORUVAN).mp3
 /home/kumaresan/music/mnt/MGR/04 THAI MEL ANNAI.mp3
 /home/kumaresan/music/mnt/MGR/04 THOONGATHE THAMBI.mp3
 /home/kumaresan/music/mnt/MGR/YAMARAYA.mp3
@@ -7774,13 +6815,11 @@
 /home/kumaresan/music/mnt/MGR/HELLO SUGAMO (DHARAMAM THALAI KAKUM).mp3
 /home/kumaresan/music/mnt/MGR/05 NAALORU MEDAI.mp3
 /home/kumaresan/music/mnt/Chandrababu/05 NALLA PARAI.mp3
-/home/kumaresan/music/Music/Chandrababu/05 NALLA PARAI.mp3
 /home/kumaresan/music/mnt/MGR/PUTHAN YASSU KANATHTU.mp3
 /home/kumaresan/music/mnt/MGR/05 THIRUDATHE PAAPAA.mp3
 /home/kumaresan/music/mnt/MGR/MAYANGUM VAYATHU (KANAVAN).mp3
 /home/kumaresan/music/mnt/MGR/MOODU PANI (DHARAMAM THALAI KAKUM).mp3
 /home/kumaresan/music/mnt/Chandrababu/06 DARMAM TALAI KAGAM.mp3
-/home/kumaresan/music/Music/Chandrababu/06 DARMAM TALAI KAGAM.mp3
 /home/kumaresan/music/mnt/MGR/06 KANNAI NAMVATHE.mp3
 /home/kumaresan/music/mnt/MGR/06 NALLA NALLA PILLAI.mp3
 /home/kumaresan/music/mnt/MGR/NATHU ATHI NATY.mp3
@@ -7789,7 +6828,6 @@
 /home/kumaresan/music/mnt/TMS/KAAVERI KARAI IRUKU (THAAYAI KAATHU THANYAN).mp3
 /home/kumaresan/music/mnt/MGR/THOTTU VIDU (DHARAM THALAI KAKUM).mp3
 /home/kumaresan/music/mnt/Chandrababu/07 AVANUENNA.mp3
-/home/kumaresan/music/Music/Chandrababu/07 AVANUENNA.mp3
 /home/kumaresan/music/mnt/MGR/KANPONAPOKALA.mp3
 /home/kumaresan/music/mnt/MGR/07 NAALAM NAMATJAE.mp3
 /home/kumaresan/music/mnt/MGR/07 ORU THAI.mp3
@@ -7802,9 +6840,7 @@
 /home/kumaresan/music/mnt/MGR/ONDRU ENGAL.mp3
 /home/kumaresan/music/mnt/MGR/INTHA PUNNAGAI (DEIVA THAAI).mp3
 /home/kumaresan/music/mnt/Chandrababu/NERAM NALLA NERAM (THANIPIRAVI).mp3
-/home/kumaresan/music/Music/Chandrababu/NERAM NALLA NERAM (THANIPIRAVI).mp3
 /home/kumaresan/music/mnt/Chandrababu/09 ANNAPU NAAN ADAMAIO.mp3
-/home/kumaresan/music/Music/Chandrababu/09 ANNAPU NAAN ADAMAIO.mp3
 /home/kumaresan/music/mnt/MGR/09 ENGE POIVIDUM.mp3
 /home/kumaresan/music/mnt/MGR/NANN YEAN PERANAN.mp3
 /home/kumaresan/music/mnt/MGR/09 THAAYAKATHTHIN.mp3
@@ -7814,7 +6850,6 @@
 /home/kumaresan/music/mnt/MGR/10 NAAN UNGAL VATHU.mp3
 /home/kumaresan/music/mnt/MGR/10 NAAN YEAN PIRANTHAN.mp3
 /home/kumaresan/music/mnt/Chandrababu/10 TAARMA SUALL.mp3
-/home/kumaresan/music/Music/Chandrababu/10 TAARMA SUALL.mp3
 /home/kumaresan/music/mnt/MGR/YEAN YENDRA .mp3
 /home/kumaresan/music/mnt/MGR/ENNAI KAATHULITHAL (ASAIMUGAM).mp3
 /home/kumaresan/music/mnt/MGR/THOTTAL ENGUM (NALLA NERAM).mp3
@@ -7829,32 +6864,26 @@
 /home/kumaresan/music/mnt/MGR/DHARBAM THALAI.mp3
 /home/kumaresan/music/mnt/MGR/12 NAALAI ULAHGAI .mp3
 /home/kumaresan/music/mnt/Chandrababu/KALYANA NAAL PAARKA (PARAKUM PAAVAI).mp3
-/home/kumaresan/music/Music/Chandrababu/KALYANA NAAL PAARKA (PARAKUM PAAVAI).mp3
 /home/kumaresan/music/mnt/MGR/PESUVATHU KILIYE (PANATHOTTAM).mp3
 /home/kumaresan/music/mnt/Chandrababu/13  KOTHULAM KOTHAN.mp3
-/home/kumaresan/music/Music/Chandrababu/13  KOTHULAM KOTHAN.mp3
 /home/kumaresan/music/mnt/MGR/03 UZHAIKKUM KAIGAEY.mp3
 /home/kumaresan/music/mnt/MGR/13 THAMBIKKU ORU.mp3
 /home/kumaresan/music/mnt/MGR/ULLKU KAIGAI.mp3
 /home/kumaresan/music/mnt/MGR/JAVATHU MEDAI (PANATHOTTAM).mp3
 /home/kumaresan/music/mnt/Chandrababu/KUMARI PENNIN (ENGU VEETU PILLAI ).mp3
 /home/kumaresan/music/mnt/MGR/KUMARI PENNIN (ENGU VEETU PILLAI ).mp3
-/home/kumaresan/music/Music/Chandrababu/KUMARI PENNIN (ENGU VEETU PILLAI ).mp3
 /home/kumaresan/music/mnt/Chandrababu/14 EATH KOLAM.mp3
-/home/kumaresan/music/Music/Chandrababu/14 EATH KOLAM.mp3
 /home/kumaresan/music/mnt/MGR/14 ODI ODI UZHAIKUNAM.mp3
 /home/kumaresan/music/mnt/MGR/14 ULGAM PIRNTHU.mp3
 /home/kumaresan/music/mnt/MGR/PANI ILLATHA (AANANTHAJOTHI).mp3
 /home/kumaresan/music/mnt/MGR/YAARTHU YAARTHU (EN KADAMAI).mp3
 /home/kumaresan/music/mnt/Chandrababu/15  NALLU PORIKU.mp3
-/home/kumaresan/music/Music/Chandrababu/15  NALLU PORIKU.mp3
 /home/kumaresan/music/mnt/MGR/ODDU OODU .mp3
 /home/kumaresan/music/mnt/MGR/15 ONDRU ENGAL JAATHIYE.mp3
 /home/kumaresan/music/mnt/MGR/UNNAI ARINTHAL.mp3
 /home/kumaresan/music/mnt/MGR/ENNAMA SINGARA (VIVASAYI).mp3
 /home/kumaresan/music/mnt/MGR/THULLI ODUM (PERIYA IDATHU PENN).mp3
 /home/kumaresan/music/mnt/Chandrababu/16  KADUVAL YAN.mp3
-/home/kumaresan/music/Music/Chandrababu/16  KADUVAL YAN.mp3
 /home/kumaresan/music/mnt/MGR/16 MOONDREHUTHIL EN.mp3
 /home/kumaresan/music/mnt/MGR/ETHO ETHO ORU (KUDUMBA THALAIVAN).mp3
 /home/kumaresan/music/mnt/MGR/THOTTAL POO MALARUM (PADAKOTTI).mp3
@@ -7866,7 +6895,6 @@
 /home/kumaresan/music/mnt/MGR/PONNELIL POOTHATHU (KALANGARAI VILLAKAM).mp3
 /home/kumaresan/music/mnt/MGR/RAJAVIN PAARVAIL (ANBE VAA).mp3
 /home/kumaresan/music/mnt/Chandrababu/YAARATHU (EN KADAMAI).mp3
-/home/kumaresan/music/Music/Chandrababu/YAARATHU (EN KADAMAI).mp3
 /home/kumaresan/music/mnt/TMS/adum mayile atam.mp3
 /home/kumaresan/music/mnt/TMS/anaiyin madiyele.mp3
 /home/kumaresan/music/mnt/TMS/andavan mugathai parkanum.mp3
@@ -7890,32 +6918,19 @@
 /home/kumaresan/music/mnt/TMS/vilak yeriginderath.mp3
 /home/kumaresan/music/mnt/TMS/yark nana theeng saiden.mp3
 /home/kumaresan/music/mnt/Chandrababu/KAVALI EELLATHA.MP3
-/home/kumaresan/music/Music/Chandrababu/KAVALI EELLATHA.MP3
 /home/kumaresan/music/mnt/Chandrababu/KUNGUMA POOVEA.MP3
-/home/kumaresan/music/Music/Chandrababu/KUNGUMA POOVEA.MP3
 /home/kumaresan/music/mnt/Chandrababu/MOODINALUM.MP3
-/home/kumaresan/music/Music/Chandrababu/MOODINALUM.MP3
 /home/kumaresan/music/mnt/Chandrababu/NEEAA.MP3
-/home/kumaresan/music/Music/Chandrababu/NEEAA.MP3
 /home/kumaresan/music/mnt/Chandrababu/ONNUMEA PURIYALEA.MP3
-/home/kumaresan/music/Music/Chandrababu/ONNUMEA PURIYALEA.MP3
 /home/kumaresan/music/mnt/Chandrababu/PIRAKOOM POTHOOM.MP3
-/home/kumaresan/music/Music/Chandrababu/PIRAKOOM POTHOOM.MP3
 /home/kumaresan/music/mnt/Chandrababu/PONAMANA YAANAI.MP3
-/home/kumaresan/music/Music/Chandrababu/PONAMANA YAANAI.MP3
 /home/kumaresan/music/mnt/Chandrababu/PORANTHALUM.MP3
-/home/kumaresan/music/Music/Chandrababu/PORANTHALUM.MP3
 /home/kumaresan/music/mnt/Chandrababu/PUTHI.MP3
-/home/kumaresan/music/Music/Chandrababu/PUTHI.MP3
 /home/kumaresan/music/mnt/Chandrababu/SIRIPOO.MP3
-/home/kumaresan/music/Music/Chandrababu/SIRIPOO.MP3
 /home/kumaresan/music/mnt/Chandrababu/SOLARATHA.MP3
-/home/kumaresan/music/Music/Chandrababu/SOLARATHA.MP3
 /home/kumaresan/music/mnt/Chandrababu/THANI.MP3
-/home/kumaresan/music/Music/Chandrababu/THANI.MP3
 /home/kumaresan/music/mnt/Chandrababu/PAS PAS.mp3
 /home/kumaresan/music/mnt/Chandrababu/Naan oru mutaalu.mp3
-/home/kumaresan/music/Music/Chandrababu/Naan oru mutaalu.mp3
 /home/kumaresan/music/mnt/Vaaranam Ayiram/Annul_Maelae.mp3
 /home/kumaresan/music/mnt/Vaaranam Ayiram/Ava_Enna.mp3
 /home/kumaresan/music/mnt/Vaaranam Ayiram/Mundhinam.mp3
@@ -8101,11 +7116,8 @@
 /home/kumaresan/music/mnt/OSAI MP3 (077-310709)/Ninaivellam Nithya/Tholin Mela Param (S.P.Bala,S.Janagi).mp3
 /home/kumaresan/music/mnt/OSAI MP3 (077-310709)/Varumayin Niram Sivappu/Chippi Irukkuthu (S.P.Bala,S.Janagi).mp3
 /home/kumaresan/music/mnt/Otis Redding/The Rolling Stone Magazines 500 Greatest Songs Of All Time/110. I've Been Loving You Too Long.mp3
-/home/kumaresan/music/Music/Otis Redding/The Rolling Stone Magazines 500 Greatest Songs Of All Time/110. I've Been Loving You Too Long.mp3
 /home/kumaresan/music/mnt/Otis Redding/The Rolling Stone Magazines 500 Greatest Songs Of All Time/204. Try A Little Tenderness.mp3
-/home/kumaresan/music/Music/Otis Redding/The Rolling Stone Magazines 500 Greatest Songs Of All Time/204. Try A Little Tenderness.mp3
 /home/kumaresan/music/mnt/Otis Redding/The Rolling Stone Magazines 500 Greatest Songs Of All Time/28. (Sittin' On) The Dock Of The Bay.mp3
-/home/kumaresan/music/Music/Otis Redding/The Rolling Stone Magazines 500 Greatest Songs Of All Time/28. (Sittin' On) The Dock Of The Bay.mp3
 /home/kumaresan/music/mnt/Otis Redding – The Platinum Collection (MP3@320) [FrankFoo]/CD/01. (Sittin' On) The Dock Of The Bay.mp3
 /home/kumaresan/music/mnt/Otis Redding – The Platinum Collection (MP3@320) [FrankFoo]/CD/02. Mr. Pitiful.mp3
 /home/kumaresan/music/mnt/Otis Redding – The Platinum Collection (MP3@320) [FrankFoo]/CD/03. I Can't Turn You Loose.mp3
@@ -8162,19 +7174,14 @@
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Veera/Pattu Poo Poo - Chitra.mp3
 /home/kumaresan/music/mnt/Paul Mccartney/The Rolling Stone Magazines 500 Greatest Songs Of All Time/338. Maybe I'm Amazed.mp3
 /home/kumaresan/music/mnt/Paul Simon/The Rolling Stone Magazines 500 Greatest Songs Of All Time/485. Graceland.mp3
-/home/kumaresan/music/Music/Paul Simon/The Rolling Stone Magazines 500 Greatest Songs Of All Time/485. Graceland.mp3
 /home/kumaresan/music/mnt/Pavement/The Rolling Stone Magazines 500 Greatest Songs Of All Time/286. Summer Babe (Winter Version).mp3
 /home/kumaresan/music/mnt/Songs/Devotional Songs/Carnatic/Bhaja_Govindham.mp3
 /home/kumaresan/music/mnt/Percy Sledge/The Rolling Stone Magazines 500 Greatest Songs Of All Time/54. When A Man Loves A Woman.mp3
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/Persephone - Οpeth.m4a
 /home/kumaresan/music/mnt/Phil Colins/Unknown Album/Antoher Day In Paradise.mp3
-/home/kumaresan/music/Music/Phil Colins/Unknown Album/Antoher Day In Paradise.mp3
 /home/kumaresan/music/mnt/Pink Floyd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/316. Wish You Were Here.mp3
-/home/kumaresan/music/Music/Pink Floyd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/316. Wish You Were Here.mp3
 /home/kumaresan/music/mnt/Pink Floyd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/314. Comfortably Numb.mp3
-/home/kumaresan/music/Music/Pink Floyd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/314. Comfortably Numb.mp3
 /home/kumaresan/music/mnt/Pink Floyd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/375. Another Brick In The Wall Part 2.mp3
-/home/kumaresan/music/Music/Pink Floyd/The Rolling Stone Magazines 500 Greatest Songs Of All Time/375. Another Brick In The Wall Part 2.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Pithamagan/Tamilmp3world.Com - AdadaAhangara.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Pithamagan/Tamilmp3world.Com - ArunaRunaam.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Pithamagan/Tamilmp3world.Com - IlangaathuVeesudhe2.mp3
@@ -8205,29 +7212,20 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Poovellam Un Vaasam/Tamilmp3world.Com - Thirumana Malargal.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Poovellam Un Vaasam/Tamilmp3world.Com - Yukthamukhi.mp3
 /home/kumaresan/music/mnt/Portishead/Unknown Album/Glory Box.mp3
-/home/kumaresan/music/Music/Portishead/Unknown Album/Glory Box.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Pudhupettai/Night Life - Varriya.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Azhagai Irukkirai Bayamai Irukkirathu/Orampo Naina.mp3
 /home/kumaresan/music/mnt/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/212. 1999.mp3
-/home/kumaresan/music/Music/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/212. 1999.mp3
 /home/kumaresan/music/mnt/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/108. Little Red Corvette.mp3
-/home/kumaresan/music/Music/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/108. Little Red Corvette.mp3
 /home/kumaresan/music/mnt/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/52. When Doves Cry.mp3
-/home/kumaresan/music/Music/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/52. When Doves Cry.mp3
 /home/kumaresan/music/mnt/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Purple Rain.mp3
-/home/kumaresan/music/Music/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Purple Rain.mp3
 /home/kumaresan/music/mnt/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/461. Kiss.mp3
-/home/kumaresan/music/Music/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/461. Kiss.mp3
 /home/kumaresan/music/mnt/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/299. Sign 'o' The Times.mp3
-/home/kumaresan/music/Music/Prince/The Rolling Stone Magazines 500 Greatest Songs Of All Time/299. Sign 'o' The Times.mp3
 /home/kumaresan/music/mnt/Procol Harum/The Rolling Stone Magazines 500 Greatest Songs Of All Time/57. A Whiter Shade Of Pale.mp3
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Pro Era - Like Water (Capital STEEZ, Joey Bada$$ & CJ Fly).m4a
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/PRO ERA - School High (Joey Bada$$, Dyemond Lewis, Kirk Knight & Nyck Caution).m4a
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Pro Era - Sol Luna (Feat. Joey Bada$$, Dyemond Lewis & A La $ole).m4a
 /home/kumaresan/music/mnt/Public Enemy/The Rolling Stone Magazines 500 Greatest Songs Of All Time/160. Bring The Noise.mp3
-/home/kumaresan/music/Music/Public Enemy/The Rolling Stone Magazines 500 Greatest Songs Of All Time/160. Bring The Noise.mp3
 /home/kumaresan/music/mnt/Public Enemy/The Rolling Stone Magazines 500 Greatest Songs Of All Time/322. Fight The Power.mp3
-/home/kumaresan/music/Music/Public Enemy/The Rolling Stone Magazines 500 Greatest Songs Of All Time/322. Fight The Power.mp3
 /home/kumaresan/music/mnt/Pudhiya Mugam/Pudhiya Mugam/05. Sambo Sambo.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Pudhiya Mugam/Tamilmp3world.Com - Sambo_Sambo.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Pudhiya Mugam/Tamilmp3world.Com - NetruIllatha_Matram.mp3
@@ -8241,37 +7239,21 @@
 /home/kumaresan/music/mnt/Pudhiya Mugam/Pudhiya Mugam/04. Kannukku Mai Azhagu 1.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Pudhiya Mugam/Tamilmp3world.Com - Kannukku_Mai_1.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/01. Death on Two Legs (Dedicated to...).mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/01. Death on Two Legs (Dedicated to...).mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/02. Lazing on a Sunday Afternoon.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/02. Lazing on a Sunday Afternoon.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/03. I'm in Love With My Car.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/03. I'm in Love With My Car.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/04. You're My Best Friend.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/04. You're My Best Friend.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/05. '39.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/05. '39.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/06. Sweet Lady.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/06. Sweet Lady.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/07. Seaside Rendezvous.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/07. Seaside Rendezvous.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/08. The Prophet's Song.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/08. The Prophet's Song.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/09. Love of My Life.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/09. Love of My Life.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/10. Good Company.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/10. Good Company.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/12. God Save the Queen.mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/12. God Save the Queen.mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/13. I'm In Love With My Car (1991 Bonus Remix By Mike Shipley).mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/13. I'm In Love With My Car (1991 Bonus Remix By Mike Shipley).mp3
 /home/kumaresan/music/mnt/Queen/A Night At The Opera/14. You're My Best Friend (1991 Bonus Remix By Matt Wallace).mp3
-/home/kumaresan/music/Music/Queen/A Night At The Opera/14. You're My Best Friend (1991 Bonus Remix By Matt Wallace).mp3
 /home/kumaresan/music/mnt/Queen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/163. Bohemian Rhapsody.mp3
-/home/kumaresan/music/Music/Queen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/163. Bohemian Rhapsody.mp3
 /home/kumaresan/music/mnt/Queen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/330. We Will Rock You.mp3
-/home/kumaresan/music/Music/Queen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/330. We Will Rock You.mp3
 /home/kumaresan/music/mnt/Queen/Forever Gold CD 1/The Show Must Go On.mp3
-/home/kumaresan/music/Music/Queen/Forever Gold CD 1/The Show Must Go On.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Raam/Tamilmp3world.Com - Aarariraro.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Raam/Tamilmp3world.Com - Boom_Boom.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Raam/Tamilmp3world.Com - Manidhan_Solkindra.mp3
@@ -8280,24 +7262,15 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Raam/Tamilmp3world.Com - Yaro_Arivaal.mp3
 /home/kumaresan/music/mnt/Radio Filharmonisch Orkest Holland/Unknown Album/03. Die Walkure.mp3
 /home/kumaresan/music/mnt/Radiohead/The Rolling Stone Magazines 500 Greatest Songs Of All Time/376. Fake Plastic Trees.mp3
-/home/kumaresan/music/Music/Radiohead/The Rolling Stone Magazines 500 Greatest Songs Of All Time/376. Fake Plastic Trees.mp3
 /home/kumaresan/music/mnt/Radiohead/The Rolling Stone Magazines 500 Greatest Songs Of All Time/256. Paranoid Android.mp3
-/home/kumaresan/music/Music/Radiohead/The Rolling Stone Magazines 500 Greatest Songs Of All Time/256. Paranoid Android.mp3
 /home/kumaresan/music/mnt/Rage Against The Machine - Bulls On Parade (Official Music Video).ogg
-/home/kumaresan/music/Music/Rage Against The Machine - Bulls On Parade (Official Music Video).ogg
 /home/kumaresan/music/mnt/Rage Against The Machine - Guerrilla Radio (Official Music Video).ogg
-/home/kumaresan/music/Music/Rage Against The Machine - Guerrilla Radio (Official Music Video).ogg
 /home/kumaresan/music/mnt/Rage Against The Machine - Killing In the Name (Official Music Video).ogg
-/home/kumaresan/music/Music/Rage Against The Machine - Killing In the Name (Official Music Video).ogg
 /home/kumaresan/music/mnt/Rage Against The Machine - Sleep Now in the Fire (Official Music Video).ogg
-/home/kumaresan/music/Music/Rage Against The Machine - Sleep Now in the Fire (Official Music Video).ogg
 /home/kumaresan/music/mnt/Rage Against The Machine - Testify (Official Music Video).ogg
-/home/kumaresan/music/Music/Rage Against The Machine - Testify (Official Music Video).ogg
 /home/kumaresan/music/mnt/Rage Against The Machine/Matrix Reloaded/Calm Like A Bomb.mp3
-/home/kumaresan/music/Music/Rage Against The Machine/Matrix Reloaded/Calm Like A Bomb.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Sivaji/Style.mp3
 /home/kumaresan/music/mnt/rains of castamere.mp3
-/home/kumaresan/music/Music/rains of castamere.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Kalvanin Kaadhali/Uyir Priyum Valiyai.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Kedi/Kunguma Poovae.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Kedi/Aadhivasi Naane.mp3
@@ -8311,111 +7284,59 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ratchagan/Tamilmp3world.Com - PogumVazhiyellam.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Ratchagan/Tamilmp3world.Com - KaiyilMithakkum.mp3
 /home/kumaresan/music/mnt/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/235. I Got A Woman.mp3
-/home/kumaresan/music/Music/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/235. I Got A Woman.mp3
 /home/kumaresan/music/mnt/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/10. What'd I Say Parts I & Ii.mp3
-/home/kumaresan/music/Music/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/10. What'd I Say Parts I & Ii.mp3
 /home/kumaresan/music/mnt/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/44. Georgia On My Mind.mp3
-/home/kumaresan/music/Music/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/44. Georgia On My Mind.mp3
 /home/kumaresan/music/mnt/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/337. Hit The Road Jack.mp3
-/home/kumaresan/music/Music/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/337. Hit The Road Jack.mp3
 /home/kumaresan/music/mnt/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/161. I Can't Stop Loving You.mp3
-/home/kumaresan/music/Music/Ray Charles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/161. I Can't Stop Loving You.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/01. Someday.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/01. Someday.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/02. The Sun's Gonna Shine Again.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/02. The Sun's Gonna Shine Again.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/03. The Midnight Hour.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/03. The Midnight Hour.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/04. Worried Life Blues.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/04. Worried Life Blues.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/05. Low Society.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/05. Low Society.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/06. Losing Hand.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/06. Losing Hand.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/07. Sinner's Prayer.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/07. Sinner's Prayer.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/08. Funny (But I Still Love You).mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/08. Funny (But I Still Love You).mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/09. Feelin' Sad.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/09. Feelin' Sad.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/10. I Wonder Who.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/10. I Wonder Who.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/11. Nobody Cares.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/11. Nobody Cares.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/12. Ray's Blues.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/12. Ray's Blues.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/13. Mr. Charles' Blues.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/13. Mr. Charles' Blues.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/14. Blackjack.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/14. Blackjack.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/15. Come Back.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/15. Come Back.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/16. A Fool For You.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/16. A Fool For You.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/17. Hard Times (Nobody Knows Better Than I).mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/17. Hard Times (Nobody Knows Better Than I).mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/18. Drown In My Own Tears.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/18. Drown In My Own Tears.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/19. What Would I Do Without You.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/19. What Would I Do Without You.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/20. I Want a Little Girl.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/20. I Want a Little Girl.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/21. Early in the Mornin'.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/21. Early in the Mornin'.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/22. (Night Time Is) The Right Time).mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/22. (Night Time Is) The Right Time).mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/23. Two Years of Torture.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/23. Two Years of Torture.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 1]/24. I Believe to My Soul.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 1]/24. I Believe to My Soul.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/01. The Man I Love.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/01. The Man I Love.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/02. Music, Music, Music.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/02. Music, Music, Music.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/03. I Surrender Dear.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/03. I Surrender Dear.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/04. Hornful Soul.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/04. Hornful Soul.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/05. Ain't Misbehavin'.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/05. Ain't Misbehavin'.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/06. Doodlin'.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/06. Doodlin'.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/07. Sweet Sixteen Bars.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/07. Sweet Sixteen Bars.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/08. Undecided.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/08. Undecided.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/09. Rockhouse, Parts 1 & 2.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/09. Rockhouse, Parts 1 & 2.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/10. Ray Charles & Milt Jackson _ X-Ray Blues.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/10. Ray Charles & Milt Jackson _ X-Ray Blues.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/11. Ray Charles & Milt Jackson _ Love On My Mind.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/11. Ray Charles & Milt Jackson _ Love On My Mind.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/12. David Newman _ Fathead.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/12. David Newman _ Fathead.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/13. David Newman _ Bill For Bennie.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/13. David Newman _ Bill For Bennie.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/14. David Newman _ Hard Times.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/14. David Newman _ Hard Times.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/15. David Newman _ Willow Weep For Me.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/15. David Newman _ Willow Weep For Me.mp3
 /home/kumaresan/music/mnt/Ray Charles/Blues + Jazz [Disc 2]/16. The Spirit-Feel.mp3
-/home/kumaresan/music/Music/Ray Charles/Blues + Jazz [Disc 2]/16. The Spirit-Feel.mp3
 /home/kumaresan/music/mnt/Red hot chilli peppers/Unknown Album/02. Give It Away.mp3
-/home/kumaresan/music/Music/Red hot chilli peppers/Unknown Album/02. Give It Away.mp3
 /home/kumaresan/music/mnt/Red hot chilli peppers/Californication/Californication.mp3
-/home/kumaresan/music/Music/Red hot chilli peppers/Californication/Californication.mp3
 /home/kumaresan/music/mnt/Red hot chilli peppers/Californication/Otherside.mp3
-/home/kumaresan/music/Music/Red hot chilli peppers/Californication/Otherside.mp3
 /home/kumaresan/music/mnt/Red hot chilli peppers/Californication/Scar Tissue.mp3
-/home/kumaresan/music/Music/Red hot chilli peppers/Californication/Scar Tissue.mp3
 /home/kumaresan/music/mnt/R.E.M/The Rolling Stone Magazines 500 Greatest Songs Of All Time/379. Radio Free Europe.mp3
 /home/kumaresan/music/mnt/R.E.M/The Rolling Stone Magazines 500 Greatest Songs Of All Time/169. Losing My Religion.mp3
 /home/kumaresan/music/mnt/Reo Speedwagon/Unknown Album/reo_speedwagon-can't_fight_this_feeling.mp3
-/home/kumaresan/music/Music/Reo Speedwagon/Unknown Album/reo_speedwagon-can't_fight_this_feeling.mp3
 /home/kumaresan/music/mnt/Reo Speedwagon/Unknown Album/(reo_speedwagon)_-_keep_on_lovin_you.mp3
-/home/kumaresan/music/Music/Reo Speedwagon/Unknown Album/(reo_speedwagon)_-_keep_on_lovin_you.mp3
 /home/kumaresan/music/mnt/Misty Mountains Over Hill Richard Armitage The Dwarf Cast The Hobbit OST 2012.mp3
-/home/kumaresan/music/Music/Misty Mountains Over Hill Richard Armitage The Dwarf Cast The Hobbit OST 2012.mp3
 /home/kumaresan/music/mnt/Ritchie Valens/The Rolling Stone Magazines 500 Greatest Songs Of All Time/345. La Bamba.mp3
 /home/kumaresan/music/mnt/Rod Stewart/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Maggie May.mp3
 /home/kumaresan/music/mnt/Rod Stewart/The Rolling Stone Magazines 500 Greatest Songs Of All Time/301. Da Ya Think I'm Sexy_.mp3
@@ -8436,15 +7357,10 @@
 /home/kumaresan/music/mnt/Roja/Unknown Album/thamizhathamizha.mp3
 /home/kumaresan/music/mnt/rolling stones/Unknown Album/rolling stones - satisfaction.mp3
 /home/kumaresan/music/mnt/Mohan hits/Izhaiya Nila Pozhikirathe.mp3
-/home/kumaresan/music/Music/Mohan hits/Izhaiya Nila Pozhikirathe.mp3
 /home/kumaresan/music/mnt/Roy Orbison/The Rolling Stone Magazines 500 Greatest Songs Of All Time/232. Only The Lonely.mp3
-/home/kumaresan/music/Music/Roy Orbison/The Rolling Stone Magazines 500 Greatest Songs Of All Time/232. Only The Lonely.mp3
 /home/kumaresan/music/mnt/Roy Orbison/The Rolling Stone Magazines 500 Greatest Songs Of All Time/69. Crying.mp3
-/home/kumaresan/music/Music/Roy Orbison/The Rolling Stone Magazines 500 Greatest Songs Of All Time/69. Crying.mp3
 /home/kumaresan/music/mnt/Roy Orbison/The Rolling Stone Magazines 500 Greatest Songs Of All Time/312. In Dreams.mp3
-/home/kumaresan/music/Music/Roy Orbison/The Rolling Stone Magazines 500 Greatest Songs Of All Time/312. In Dreams.mp3
 /home/kumaresan/music/mnt/Roy Orbison/The Rolling Stone Magazines 500 Greatest Songs Of All Time/222. Oh Pretty Woman.mp3
-/home/kumaresan/music/Music/Roy Orbison/The Rolling Stone Magazines 500 Greatest Songs Of All Time/222. Oh Pretty Woman.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Run/Tamilmp3world.Com - panikattre.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Run/Tamilmp3world.Com - kadhalpisasu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Run/Tamilmp3world.Com - Azhagiya_Thimirudan.mp3
@@ -8454,7 +7370,6 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Run/Tamilmp3world.Com - Priya_Oh_O_Priya.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Run/Tamilmp3world.Com - theredividhiyil.mp3
 /home/kumaresan/music/mnt/Run Dmc/The Rolling Stone Magazines 500 Greatest Songs Of All Time/287. Walk This Way.mp3
-/home/kumaresan/music/Music/Run Dmc/The Rolling Stone Magazines 500 Greatest Songs Of All Time/287. Walk This Way.mp3
 /home/kumaresan/music/mnt/webmcrap/Russian Army Choir - Maybe I, Maybe You.webm
 /home/kumaresan/music/mnt/Rytham/Unknown Album/tamilmp3world.com%20-%20aiyo_pathikichu.mp3
 /home/kumaresan/music/mnt/Rytham/Unknown Album/tamilmp3world.com%20-%20anbu_ithu.mp3
@@ -8500,48 +7415,27 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Sangamam/Tamilmp3world.Com - Varadha_Nadhikarai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Sangamam/Tamilmp3world.Com - MudhalMurai.mp3
 /home/kumaresan/music/mnt/Savage Garden/Unknown Album/To the Moon & Back.mp3
-/home/kumaresan/music/Music/Savage Garden/Unknown Album/To the Moon & Back.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Dhaam Dhoom/Dhaam Dhoom/Tamilmp3world.Com -  Thikku Thikku.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/another piece of meat.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/another piece of meat.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Coast To Coast.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Coast To Coast.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Coming Home.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Coming Home.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Dynamite.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Dynamite.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/He's A Women-She's A Man.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/He's A Women-She's A Man.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/LoveDrive.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/LoveDrive.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Polar Nights.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Polar Nights.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Rhythm Of Love.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Rhythm Of Love.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Robot Man.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Robot Man.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Rock You Like a Hurricane.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Rock You Like a Hurricane.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/scorpions-holiday.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/scorpions-holiday.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/scorpions - rock you like a hurricane.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/scorpions - rock you like a hurricane.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/speedy's coming.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/speedy's coming.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Still Loving You.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Still Loving You.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/the zoo.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/the zoo.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/we'll burn the sky.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/we'll burn the sky.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/when the smoke is going down.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/when the smoke is going down.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Winds of Changes.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Winds of Changes.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/Steamrock Fever.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/Steamrock Fever.mp3
 /home/kumaresan/music/mnt/scorpion/Unknown Album/YOU AND ME - Rainmanz.mp3
-/home/kumaresan/music/Music/scorpion/Unknown Album/YOU AND ME - Rainmanz.mp3
 /home/kumaresan/music/mnt/webmcrap/Scorpions - Across the Universe.webm
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Scorpions - Across the Universe (Videoclip).m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Scorpions - Alien Nation.m4a
@@ -8623,63 +7517,34 @@
 /home/kumaresan/music/mnt/webmcrap/Scorpions - Woman.webm
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Scorpions - You Give Me All I Need (lyrics).m4a
 /home/kumaresan/music/mnt/Scorpions/Unknown Album/always somewhere.mp3
-/home/kumaresan/music/Music/Scorpions/Unknown Album/always somewhere.mp3
 /home/kumaresan/music/mnt/Scorpions/Unknown Album/In Trance.mp3
-/home/kumaresan/music/Music/Scorpions/Unknown Album/In Trance.mp3
 /home/kumaresan/music/mnt/Scorpions/Unknown Album/Send Me An Angel.mp3
-/home/kumaresan/music/Music/Scorpions/Unknown Album/Send Me An Angel.mp3
 /home/kumaresan/music/mnt/Scorpions/Unknown Album/32. The House of The Rising Sun.mp3
-/home/kumaresan/music/Music/Scorpions/Unknown Album/32. The House of The Rising Sun.mp3
 /home/kumaresan/music/mnt/Scorpions/Lonesome Crow/01. I'm Goin' Mad.mp3
 /home/kumaresan/music/mnt/Scorpions/Lonesome Crow/1 - I'm Goin' Mad.mp3
-/home/kumaresan/music/Music/Scorpions/Lonesome Crow/01. I'm Goin' Mad.mp3
-/home/kumaresan/music/Music/Scorpions/Lonesome Crow/1 - I'm Goin' Mad.mp3
 /home/kumaresan/music/mnt/Scorpions/Lonesome Crow/02. It All Depends.mp3
-/home/kumaresan/music/Music/Scorpions/Lonesome Crow/02. It All Depends.mp3
 /home/kumaresan/music/mnt/Scorpions/Lonesome Crow/3 - Leave Me.mp3
-/home/kumaresan/music/Music/Scorpions/Lonesome Crow/3 - Leave Me.mp3
 /home/kumaresan/music/mnt/Scorpions/Lonesome Crow/4 - In Search of the Peace of Mind.mp3
-/home/kumaresan/music/Music/Scorpions/Lonesome Crow/4 - In Search of the Peace of Mind.mp3
 /home/kumaresan/music/mnt/Scorpions/Lonesome Crow/05. Inheritance.mp3
-/home/kumaresan/music/Music/Scorpions/Lonesome Crow/05. Inheritance.mp3
 /home/kumaresan/music/mnt/Scorpions/Lonesome Crow/06. Action.mp3
-/home/kumaresan/music/Music/Scorpions/Lonesome Crow/06. Action.mp3
 /home/kumaresan/music/mnt/Scorpions/Lonesome Crow/07. Lonesome Crow.mp3
-/home/kumaresan/music/Music/Scorpions/Lonesome Crow/07. Lonesome Crow.mp3
 /home/kumaresan/music/mnt/Scorpions/In Trance/1 - Dark Lady.mp3
-/home/kumaresan/music/Music/Scorpions/In Trance/1 - Dark Lady.mp3
 /home/kumaresan/music/mnt/Scorpions/In Trance/02. In Trance.mp3
-/home/kumaresan/music/Music/Scorpions/In Trance/02. In Trance.mp3
 /home/kumaresan/music/mnt/Scorpions/In Trance/3 - Life's Like A River.mp3
-/home/kumaresan/music/Music/Scorpions/In Trance/3 - Life's Like A River.mp3
 /home/kumaresan/music/mnt/Scorpions/In Trance/04. Top Of The Bill.mp3
 /home/kumaresan/music/mnt/Scorpions/In Trance/4 - Top Of The Bill.mp3
-/home/kumaresan/music/Music/Scorpions/In Trance/04. Top Of The Bill.mp3
-/home/kumaresan/music/Music/Scorpions/In Trance/4 - Top Of The Bill.mp3
 /home/kumaresan/music/mnt/Scorpions/In Trance/5 - Living And Dying.mp3
-/home/kumaresan/music/Music/Scorpions/In Trance/5 - Living And Dying.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/01. Speedy's Coming.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/1 - Speedy's Coming.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/01. Speedy's Coming.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/1 - Speedy's Coming.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/02. They Need A Million.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/02. They Need A Million.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/3 - Drifting Sun.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/3 - Drifting Sun.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/04. Fly People Fly.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/4 - Fly People Fly.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/04. Fly People Fly.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/4 - Fly People Fly.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/05. This Is My Song.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/05. This Is My Song.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/06. Far Away.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/06. Far Away.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/07. Fly To The Rainbow.mp3
 /home/kumaresan/music/mnt/Scorpions/Fly to the Rainbow/7 - Fly To The Rainbow.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/07. Fly To The Rainbow.mp3
-/home/kumaresan/music/Music/Scorpions/Fly to the Rainbow/7 - Fly To The Rainbow.mp3
 /home/kumaresan/music/mnt/Scorpions/Unbreakable/12. She Said.mp3
-/home/kumaresan/music/Music/Scorpions/Unbreakable/12. She Said.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Sethu/Tamilmp3world.Com - Nanachu.mp3
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Sethu/Ninachu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Sethu/Tamilmp3world.Com - vidiya vidiya.mp3
@@ -8722,26 +7587,18 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/SillunnuOruKathal/Tamilmp3world.Com - JillendruOruKadhal.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/SillunnuOruKathal/Tamilmp3world.Com - Maricham.mp3
 /home/kumaresan/music/mnt/Simon And Garfunkel/The Rolling Stone Magazines 500 Greatest Songs Of All Time/47. Bridge Over Troubled Water.mp3
-/home/kumaresan/music/Music/Simon And Garfunkel/The Rolling Stone Magazines 500 Greatest Songs Of All Time/47. Bridge Over Troubled Water.mp3
 /home/kumaresan/music/mnt/Simon & Garfunkel/The Rolling Stone Magazines 500 Greatest Songs Of All Time/The Sounds Of Silence.mp3
-/home/kumaresan/music/Music/Simon & Garfunkel/The Rolling Stone Magazines 500 Greatest Songs Of All Time/The Sounds Of Silence.mp3
 /home/kumaresan/music/mnt/Simon & Garfunkel/The Rolling Stone Magazines 500 Greatest Songs Of All Time/105. The Boxer.mp3
-/home/kumaresan/music/Music/Simon & Garfunkel/The Rolling Stone Magazines 500 Greatest Songs Of All Time/105. The Boxer.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Siraichalai/Tamilmp3world.Com - Alolam Kili Thopile.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Siraichalai/Tamilmp3world.Com - Mannam Kurai Selai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Siraichalai/Tamilmp3world.Com - Sempoove Poove Un.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Siraichalai/Tamilmp3world.Com - Suthum Sudar Vizhi.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Aandavan Kattalai/01. Amaidhiyana.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Aandavan Kattalai/01. Amaidhiyana.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Aandavan Kattalai/02. Azhage Vaa.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Aandavan Kattalai/03. Thennai Ilang.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Aandavan Kattalai/03. Thennai Ilang.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Aandavan Kattalai/04. Siripu Varudhu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Aandavan Kattalai/04. Siripu Varudhu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Aandavan Kattalai/05. Aarumanamae Aaru.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Aandavan Kattalai/05. Aarumanamae Aaru.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Aandavan Kattalai/06. Kannirendum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Aandavan Kattalai/06. Kannirendum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Alayamani/Kallellam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Alayamani/Kannana Kannanukku.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Alayamani/Maanaattam.mp3
@@ -8749,161 +7606,86 @@
 /home/kumaresan/music/mnt/Sivaji Hits/Alayamani/Satti Suttadada.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Alayamani/Thookkam Un Kangalai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ambikapathy/Amaravatye en.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ambikapathy/Amaravatye en.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ambikapathy/Kanda Kananvum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ambikapathy/Kanda Kananvum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ambikapathy/Kane Unai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ambikapathy/Kane Unai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ambikapathy/Kanile Irrupathen.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ambikapathy/Kanile Irrupathen.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ambikapathy/Mansila Nilve.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ambikapathy/Mansila Nilve.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ambikapathy/Senthenasei Maname.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ambikapathy/Senthenasei Maname.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ambikapathy/Soru Manakkum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ambikapathy/Soru Manakkum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ambikapathy/Vada Malare.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ambikapathy/Vada Malare.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ananan Oru Kovil/Ananan Oru Kovil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ananan Oru Kovil/Ananan Oru Kovil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ananan Oru Kovil/Ananan Oru Kovil #2.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ananan Oru Kovil/Ananan Oru Kovil #2.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ananan Oru Kovil/Kuguma Kolagal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ananan Oru Kovil/Kuguma Kolagal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ananan Oru Kovil/Maligai Mulai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ananan Oru Kovil/Maligai Mulai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ananan Oru Kovil/Nalu Pakkam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ananan Oru Kovil/Nalu Pakkam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Annai Illam/02. Aha Melanada.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Annai Illam/02. Aha Melanada.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Annai Illam/04. Nadaiya.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Annai Illam/04. Nadaiya.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Annai Illam/09. Madimeedhu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Annai Illam/09. Madimeedhu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Babu/02. Andha Kaalthil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Babu/02. Andha Kaalthil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Babu/03. Enna Sonna.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Babu/03. Enna Sonna.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Babu/05. Aadhi Mudhale.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Babu/05. Aadhi Mudhale.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Babu/06. Idho Endhan.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Babu/06. Idho Endhan.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Bagappirivinai/Odrumaiyil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Bagappirivinai/Odrumaiyil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Bagappirivinai/Thangathile.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Bagappirivinai/Thangathile.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Bagappirivinai/Therodum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Bagappirivinai/Therodum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Balepandiya/Adhi  Manidhan.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Balepandiya/Adhi  Manidhan.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Balepandiya/Athy Kai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Balepandiya/Athy Kai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Balepandiya/Naan Ena Sollivetain.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Balepandiya/Naan Ena Sollivetain.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Balepandiya/Neye Unakendru.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Balepandiya/Neye Unakendru.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Balepandiya/Valaninaithal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Balepandiya/Valaninaithal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Balepandiya/Yarai Enge.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Balepandiya/Yarai Enge.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Bharatha Vilas/01. Sakapodu Podu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Bharatha Vilas/01. Sakapodu Podu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Bharatha Vilas/02. Min Mini.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Bharatha Vilas/02. Min Mini.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Bharatha Vilas/03. Naarpadhu Vayadhil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Bharatha Vilas/03. Naarpadhu Vayadhil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Bharatha Vilas/04. India Naadu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Bharatha Vilas/04. India Naadu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Deepam/02. Andhapurathil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Deepam/02. Andhapurathil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Deepam/09. Raja Yuvaraja.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Deepam/09. Raja Yuvaraja.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Deivamagan/Anbulla Nanbare.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Deivamagan/Anbulla Nanbare.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Deivamagan/Deivame.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Deivamagan/Deivame.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Deivamagan/Kaathalikka.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Deivamagan/Kaathalikka.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Deivamagan/Kaathal Malar.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Deivamagan/Kaathal Malar.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Deivamagan/Kangal Pesuthamma.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Deivamagan/Kangal Pesuthamma.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Deivamagan/Keattathum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Deivamagan/Keattathum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Deivamagan/Kootathile.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Deivamagan/Kootathile.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Engal Thanga Raja/01. Samyilum Samy.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Engal Thanga Raja/01. Samyilum Samy.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Engal Thanga Raja/02. Kalyana Asai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Engal Thanga Raja/02. Kalyana Asai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Engal Thanga Raja/03. Muththangal Nooru.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Engal Thanga Raja/03. Muththangal Nooru.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Engal Thanga Raja/04. Karpaa Manamaa.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Engal Thanga Raja/05. Iravukum Pagalukkum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Engal Thanga Raja/06. Iraivaa Iraivaa.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Engal Thanga Raja/06. Iraivaa Iraivaa.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Engal Thanga Raja/07. Kayadha Kanagathe.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Engal Thanga Raja/07. Kayadha Kanagathe.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Enga Oor Raja/Athaiku Mesai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Enga Oor Raja/Athaiku Mesai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Enga Oor Raja/Ennadi Papa.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Enga Oor Raja/Parameshwary.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Enga Oor Raja/Parameshwary.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Enga Oor Raja/Yarai  Namby.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Enga Oor Raja/Yarai  Namby.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Irruver Ullam/Kannethire.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iru Malargal/Annamitta Kaigalukku.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iru Malargal/Annamitta Kaigalukku.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iru Malargal/Kadavul Thantha.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iru Malargal/Kadavul Thantha.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iru Malargal/Maharaja  Oru Maharani.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iru Malargal/Maharaja  Oru Maharani.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iru Malargal/Mannikka Vendugiren.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iru Malargal/Mannikka Vendugiren.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iru Malargal/Mathavi POn Mayilaal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iru Malargal/Mathavi POn Mayilaal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iru Malargal/Velli Mani.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iruuver Ullam/Paravaigal Palavitham.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iruuver Ullam/Paravaigal Palavitham.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iruvar Ullam/Azhagu Sirikindrathu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iruvar Ullam/Azhagu Sirikindrathu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iruvar Ullam/Eaen Aluthaai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iruvar Ullam/Eaen Aluthaai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iruvar Ullam/Idhaya Veenai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iruvar Ullam/Idhaya Veenai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iruvar Ullam/Kanne Kanne.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iruvar Ullam/Kanne Kanne.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iruvar Ullam/Nathi Enge.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iruvar Ullam/Nathi Enge.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Iruver Ullam/Puthi.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Iruver Ullam/Puthi.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Enn Uyir Tholy.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Iravum Pagalum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Karanan/Iravum Pagalum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Kangal Engey.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Karanan/Kangal Engey.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Kannuku  Kulam Yedu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Karanan/Kannuku  Kulam Yedu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Maharajan.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Karanan/Maharajan.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Malai Kodukum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Karanan/Malai Kodukum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Manjal  Mugam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Karanan/Manjal  Mugam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Maranathai Eni.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Karanan/Maranathai Eni.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Poi Vaa Magale.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Karanan/Poi Vaa Magale.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Karanan/Ulathil Nala Ullam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Karanan/Ulathil Nala Ullam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Kavarimaan/Angel.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Kavarimaan/Angel.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Kavarimaan/Brovo  Brama.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Kavarimaan/Brovo  Brama.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Kavarimaan/Poopole.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Kavarimaan/Poopole.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Kavarimaan/Sollavayale.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Kavarimaan/Sollavayale.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Kulamagal Radhai/Aruyire Manavare.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Kulamagal Radhai/Chandiranai Kanamal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Kulamagal Radhai/Iravakku Ayiram.mp3
@@ -8913,13 +7695,9 @@
 /home/kumaresan/music/mnt/Sivaji Hits/Kulamagal Radhai/Ulagam Ethiley.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Kulamagal Radhai/Unnai Solli Kutram.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Mahakavi Kalidas/01. Sendru Vaa.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Mahakavi Kalidas/01. Sendru Vaa.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Mahakavi Kalidas/02. Maanika Veenaiye.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Mahakavi Kalidas/02. Maanika Veenaiye.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Mahakavi Kalidas/03. Malarum Vaan.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Mahakavi Kalidas/03. Malarum Vaan.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Mahakavi Kalidas/04. Kallai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Mahakavi Kalidas/04. Kallai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Naan Vazhavaipean/Aagayam Melae.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Naan Vazhavaipean/Endanponnvannamae.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Naan Vazhavaipean/Ennodu Paadungal.mp3
@@ -8927,40 +7705,23 @@
 /home/kumaresan/music/mnt/Sivaji Hits/NanpetraSelvam/01. Valga Valgavae.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/NanpetraSelvam/02. Il Vazhvenile.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/NanpetraSelvam/03. Inbam Vandhu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/NanpetraSelvam/03. Inbam Vandhu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/NanpetraSelvam/04. Poova Manamum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/NanpetraSelvam/04. Poova Manamum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/NanpetraSelvam/05. Vaaldhalum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/NanpetraSelvam/05. Vaaldhalum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/NanpetraSelvam/06. Maatha Pitha.mp3
-/home/kumaresan/music/Music/Sivaji Hits/NanpetraSelvam/06. Maatha Pitha.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/NanpetraSelvam/07. Thirudadhe.mp3
-/home/kumaresan/music/Music/Sivaji Hits/NanpetraSelvam/07. Thirudadhe.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/NanpetraSelvam/08. Naan Petra Selvam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/NanpetraSelvam/08. Naan Petra Selvam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Navarathire/02. Sollavaa Kathai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Navarathire/02. Sollavaa Kathai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Navarathire/03. Idhudan Engal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Navarathire/03. Idhudan Engal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Navarathire/04. Andha Naal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Navarathire/04. Andha Naal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Navarathire/05. Pottadhu Molakudhadi.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Navarathire/05. Pottadhu Molakudhadi.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Navarathire/06. Rajadhi Raja.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Needhi/01. Maapilai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Needhi/01. Maapilai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Needhi/02. Engaladu Boomi.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Needhi/02. Engaladu Boomi.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Needhi/03. Ooduthu Paar.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Needhi/03. Ooduthu Paar.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Needhi/04. Naalai Mudhal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Needhi/04. Naalai Mudhal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Neela Vaanam/Mangala Mangaiyum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Neela Vaanam/Mangala Mangaiyum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Neela Vaanam/Oho Odum Ennangale.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Neela Vaanam/Oho Odum Ennangale.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Neela Vaanam/O... little flower.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Neela Vaanam/O... little flower.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thaamboolam/01. Alangaaram.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thaamboolam/02. Aandavan.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thaamboolam/03. Neethiyilae Oru.mp3
@@ -8969,88 +7730,47 @@
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thaamboolam/06. Idhu Veeru Ulagam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thaamboolam/07. Paaithane.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thambulam/Alakaram Neeye.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Nitchaya Thambulam/Alakaram Neeye.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thambulam/Andavan Padachain.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Nitchaya Thambulam/Andavan Padachain.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thambulam/Ithu Ver Ulagam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Nitchaya Thambulam/Ithu Ver Ulagam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thambulam/Malai Sudum Mana.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thambulam/Nethyeley Potu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Nitchaya Thambulam/Nethyeley Potu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thambulam/Padaithane.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Nitchaya Thambulam/Padaithane.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Nitchaya Thambulam/Pavadai Davany.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Nitchaya Thambulam/Pavadai Davany.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ooty Varai Uravu/Ange Malai Mayakkam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ooty Varai Uravu/Ange Malai Mayakkam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ooty Varai Uravu/Happy Indru Mudhal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ooty Varai Uravu/Happy Indru Mudhal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ooty Varai Uravu/Poo Malaiyil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ooty Varai Uravu/Poo Malaiyil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ooty Varai Uravu/Pudu Nadagathil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ooty Varai Uravu/Pudu Nadagathil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ooty Varai Uravu/Raja Raja Sri.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ooty Varai Uravu/Raja Raja Sri.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ooty Varai Uravu/Thedinen Vandhathu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ooty Varai Uravu/Thedinen Vandhathu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paalum Pazhamum/Aalayamaniyin.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paalum Pazhamum/Aalayamaniyin.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paalum Pazhamum/Ennai Yarendru.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paalum Pazhamum/Ennai Yarendru.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paalum Pazhamum/Indha Naadagam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paalum Pazhamum/Indha Naadagam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paalum Pazhamum/Kadhal Siragai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paalum Pazhamum/Kadhal Siragai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paalum Pazhamum/Naan Pesa.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paalum Pazhamum/Naan Pesa.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paalum Pazhamum/Naan Pesa (Sad).mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paalum Pazhamum/Naan Pesa (Sad).mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paalum Pazhamum/Paalum Pazhamum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paalum Pazhamum/Paalum Pazhamum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paalum Pazhamum/Ponnal Pogattum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paalum Pazhamum/Ponnal Pogattum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paalum Pazhamum/Thendral Varum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paalum Pazhamum/Thendral Varum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paar Magale Paar/Aval Parandhu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paar Magale Paar/Aval Parandhu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paar Magale Paar/Madhura Nagaril.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paar Magale Paar/Madhura Nagaril.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paar Magale Paar/Neerodum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paar Magale Paar/Neerodum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paar Magale Paar/Paar magale paar.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paar Magale Paar/Paar magale paar.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paasa Malar/Anbu Malar.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paasa Malar/Anbu Malar.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paasa Malar/Engalakkum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paasa Malar/Engalakkum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paasa Malar/Malargalai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paasa Malar/Malargalai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paasa Malar/Malargalaipol.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paasa Malar/Malargalaipol.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paasa Malar/Malarndhum Malaradha.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paasa Malar/Malarndhum Malaradha.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paasa Malar/Mayangugiral.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paasa Malar/Mayangugiral.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paasa Malar/Paatrondru.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paasa Malar/Paatrondru.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paasa Malar/Vaarayenthozhi.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paasa Malar/Vaarayenthozhi.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Paasa Malar/Yaar Yaar Aval.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Paasa Malar/Yaar Yaar Aval.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pachai Vilakku/Aval Mella Sirithal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pachai Vilakku/Aval Mella Sirithal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pachai Vilakku/Kanni Venduma.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pachai Vilakku/Kanni Venduma.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pachai Vilakku/Kelvi Piranthadhu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pachai Vilakku/Kelvi Piranthadhu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pachai Vilakku/Kuthu Vilakkeriya.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pachai Vilakku/Kuthu Vilakkeriya.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pachai Vilakku/Olimayamana.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pachai Vilakku/Olimayamana.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pachai Vilakku/Olimayamana (sad).mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pachai Vilakku/Olimayamana (sad).mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pachai Vilakku/Thoodhu Sella.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pachai Vilakku/Thoodhu Sella.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Padikkatha Maethai/01. Seevi Mudichu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Padikkatha Maethai/02. Orae Oru Oorilae.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Padikkatha Maethai/03. Ullathai Sollvaen.mp3
@@ -9060,21 +7780,14 @@
 /home/kumaresan/music/mnt/Sivaji Hits/Padikkatha Maethai/07. Padithaandinal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Padikkatha Maethai/08. Aadi Pilaithalum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Patakathy Bairavan/Devathai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Patakathy Bairavan/Devathai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Patakathy Bairavan/Engenge Selum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Patakathy Bairavan/Engenge Selum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Patakathy Bairavan/Nenjukulae.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Patakathy Bairavan/Nenjukulae.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Patakathy Bairavan/Varuvai Kanna.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pavamani  Poo/04. Maya Vetti.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pavamani Poo/Athaan Enna.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pavamani Poo/Athaan Enna.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pavamani Poo/01. Ellorum Kondaduvoom.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pavamani Poo/01. Ellorum Kondaduvoom.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pavamani Poo/02. Paliukum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pavamani Poo/02. Paliukum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pavamani Poo/03. Oviyam Kalindha.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Pavamani Poo/03. Oviyam Kalindha.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pesum Deivam/Alagu Deivam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pesum Deivam/Itaya Unjal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pesum Deivam/Naan Anupavadhu.mp3
@@ -9082,157 +7795,86 @@
 /home/kumaresan/music/mnt/Sivaji Hits/Pesum Deivam/Path Madam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Pesum Deivam/Pillai Selvame.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Piraptham/Ithu Margazhi.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Piraptham/Ithu Margazhi.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Piraptham/Nethu Paricha.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Piraptham/Nethu Paricha.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Piraptham/Sala Sala Kathottam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Piraptham/Santhanathil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Piraptham/Santhanathil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Piraptham/Sonthom Yepothum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Piraptham/Sonthom Yepothum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Piraptham/Thaalatu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Piraptham/Thaalatu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ponunjal/02. Agaya Panthal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ponunjal/02. Agaya Panthal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ponunjal/02. Agaya Panthalila.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ponunjal/02. Agaya Panthalila.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ponunjal/02. Inabathil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ponunjal/02. Inabathil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ponunjal/02. Muthusaram.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ponunjal/02. Muthusaram.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ponunjal/02. Nallakalam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ponunjal/02. Nallakalam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Ponunjal/02. Varuvan Mogana.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Ponunjal/02. Varuvan Mogana.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raja/26. Nee Vara.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raja/26. Nee Vara.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raja/27. Naan Uyiruku.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raja/27. Naan Uyiruku.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raja/28. Kalyana Ponnu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raja/29. Irandil Ondru.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raja/29. Irandil Ondru.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raja/30. Kangalile.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raja/30. Kangalile.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rajpart Rangadurai/01. Madhana Maligai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rajpart Rangadurai/01. Madhana Maligai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rajpart Rangadurai/02. Jinjinuku.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rajpart Rangadurai/03. Inculab.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rajpart Rangadurai/03. Inculab.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rajpart Rangadurai/04. Thirupur.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rajpart Rangadurai/04. Thirupur.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rajpart Rangadurai/05. Kayada Kanagathe.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rajpart Rangadurai/05. Kayada Kanagathe.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rajpart Rangadurai/06. Thali Ambal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rajpart Rangadurai/06. Thali Ambal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rajpart Rangadurai/07. Ammama.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rajpart Rangadurai/07. Ammama.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rajpart Rangadurai/08. Ammama #2.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rajpart Rangadurai/08. Ammama #2.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rajpart Rangadurai/09. Vandhen.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rajpart Rangadurai/09. Vandhen.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raman Ethanai Ramanadi/Ammadi Ponnukku.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raman Ethanai Ramanadi/Ammadi Ponnukku.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raman Ethanai Ramanadi/Ammadi Ponnuku.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raman Ethanai Ramanadi/Ammadi Ponnuku.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raman Ethanai Ramanadi/Chera Chola Pandiyar.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raman Ethanai Ramanadi/Chera Chola Pandiyar.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raman Ethanai Ramanadi/Chithtrai Matham.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raman Ethanai Ramanadi/Chithtrai Matham.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raman Ethanai Ramanadi/Nilavu Vanthathu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raman Ethanai Ramanadi/Nilavu Vanthathu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Raman Ethanai Ramanadi/Veera Sivaji.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Raman Ethanai Ramanadi/Veera Sivaji.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/01. Navaraythiri.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rattha Rhelagam/01. Navaraythiri.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/07. Thazhampoove.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rattha Rhelagam/07. Thazhampoove.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/08. Oru Kupayilay.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rattha Rhelagam/08. Oru Kupayilay.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/09. Budhan.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rattha Rhelagam/09. Budhan.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/10. Vaadai Katramma.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/11. Pani Padarntha.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/12. Anbu Nirainda.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rattha Rhelagam/12. Anbu Nirainda.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/13. Happy Birthday.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rattha Rhelagam/13. Happy Birthday.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/14. Pogaday Pogaday.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rattha Rhelagam/14. Pogaday Pogaday.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Rattha Rhelagam/15. Pasumai Niraintha.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Rattha Rhelagam/15. Pasumai Niraintha.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Santhi/Nenjathilenee.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Santhi/Nenjathilenee.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Santhi/Oorengum Thedinen.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Santhi/Oorengum Thedinen.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Santhi/Senthoor Murugan.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Santhi/Senthoor Murugan.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Santhi/Senthoor Murugan [P.Susheela].mp3
-/home/kumaresan/music/Music/Sivaji Hits/Santhi/Senthoor Murugan [P.Susheela].mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Santhi/Vaazhnthu Paarkkavendum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Santhi/Vaazhnthu Paarkkavendum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Santhi/Yaar Antha Nilavu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Santhi/Yaar Antha Nilavu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Savale Samali/01. Unnai Boomi.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Savale Samali/01. Unnai Boomi.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Savale Samali/02. Chitukurivikuena.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Savale Samali/02. Chitukurivikuena.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Savale Samali/03. Aanaikoru.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Savale Samali/03. Aanaikoru.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Savale Samali/04. Nilavai Parthu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Savale Samali/04. Nilavai Parthu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Shanthi/Avala Sonal.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Shanthi/Avala Sonal.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Shanthi/Enady Ithanai Vegam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Shanthi/Enady Ithanai Vegam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Shanthi/Lilli Lalli Jimmy.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Shanthi/Lilli Lalli Jimmy.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Shanthi/Ondra Irundha.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Shanthi/Ondra Irundha.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Shanthi/Vaa Vaa Enakkaagava.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Shanthi/Vaa Vaa Enakkaagava.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/sivaji/Annachi Veti.mp3
-/home/kumaresan/music/Music/Sivaji Hits/sivaji/Annachi Veti.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/sivaji/Annan Ennada.mp3
-/home/kumaresan/music/Music/Sivaji Hits/sivaji/Annan Ennada.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/sivaji/Idayam Irukindrathe.mp3
-/home/kumaresan/music/Music/Sivaji Hits/sivaji/Idayam Irukindrathe.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/sivaji/Track 6.mp3
-/home/kumaresan/music/Music/Sivaji Hits/sivaji/Track 6.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/sivaji/Ullathitkullae.mp3
-/home/kumaresan/music/Music/Sivaji Hits/sivaji/Ullathitkullae.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/sivaji/Vatta Vatta.mp3
-/home/kumaresan/music/Music/Sivaji Hits/sivaji/Vatta Vatta.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivakamiyin Selvan/01. Ullam Rendum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sivakamiyin Selvan/01. Ullam Rendum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivakamiyin Selvan/02. Mela Thalam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sivakamiyin Selvan/02. Mela Thalam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivakamiyin Selvan/03. Mela Thalam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sivakamiyin Selvan/03. Mela Thalam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivakamiyin Selvan/04. Ethanai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sivakamiyin Selvan/04. Ethanai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivakamiyin Selvan/05. Edharkum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sivakamiyin Selvan/05. Edharkum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivakamiyin Selvan/06. Enn Rajavin.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sivakamiyin Selvan/06. Enn Rajavin.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivakamiyin Selvan/07. Aadiku Pinne.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sivakamiyin Selvan/07. Aadiku Pinne.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivanthaman/02. Oru Raja.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivanthaman/03. Paarvai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivanthaman/04. Oru Naalilae.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivanthaman/05. Pattathu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sivanthaman/06. Muthamidum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sumathi En Sundhari/Aalayamagum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sumathi En Sundhari/Aalayamagum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sumathi En Sundhari/Kalyana Sandaiyile.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sumathi En Sundhari/Kalyana Sandaiyile.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sumathi En Sundhari/Or Aayiram Nadagam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sumathi En Sundhari/Or Aayiram Nadagam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sumathi En Sundhari/Oru Tharam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sumathi En Sundhari/Oru Tharam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sumathi En Sundhari/Pottu Vaitha.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sumathi En Sundhari/Pottu Vaitha.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Sumathi En Sundhari/Ye Pulla Chachayi.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Sumathi En Sundhari/Ye Pulla Chachayi.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Thooku Thooki/01. Kandaal Kolum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Thooku Thooki/02. Sundari.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Thooku Thooki/03. Abaaya Arivipu.mp3
@@ -9246,36 +7888,21 @@
 /home/kumaresan/music/mnt/Sivaji Hits/Uthaman/22. Padagu Padagu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Uthaman/25. Hari.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Uthama Puthiran/01. Yaaradi Nee.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Uthama Puthiran/01. Yaaradi Nee.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Uthama Puthiran/02. Mannulagellam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Uthama Puthiran/02. Mannulagellam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Uthama Puthiran/03. Mullai Malar.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Uthama Puthiran/03. Mullai Malar.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Uthama Puthiran/04. Parthirupaan.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Uthama Puthiran/04. Parthirupaan.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Uthama Puthiran/05. Anbae Amudhe.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Uthama Puthiran/05. Anbae Amudhe.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Uthama Puthiran/06. Unnazhagai.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Uthama Puthiran/06. Unnazhagai.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/01. Paatum Barathamum.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Vanangamudi/01. Paatum Barathamum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/02. Vaazhvinile.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Vanangamudi/02. Vaazhvinile.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/03. Gumukku Gumma.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Vanangamudi/03. Gumukku Gumma.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/04. Mogana.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Vanangamudi/04. Mogana.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/05. Aatchiyin.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Vanangamudi/05. Aatchiyin.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/06. Eraindhu.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Vanangamudi/06. Eraindhu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/07. Ennai Pol.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Vanangamudi/07. Ennai Pol.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/08. Siram Adhil.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Vanangamudi/08. Siram Adhil.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/09. Katazhagu.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vanangamudi/10. Vazhi Yogame.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Vanangamudi/10. Vazhi Yogame.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vasantha Maligai/Adae Appa.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vasantha Maligai/Irandu Manam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Vasantha Maligai/Kalai Magal.mp3
@@ -9288,7 +7915,6 @@
 /home/kumaresan/music/mnt/Sivaji Hits/Veera Pandi Kataboman/Athukule.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Veera Pandi Kataboman/Dukku Dukku.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Veera Pandi Kataboman/Inbam.mp3
-/home/kumaresan/music/Music/Sivaji Hits/Veera Pandi Kataboman/Inbam.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Veera Pandi Kataboman/Jekkamma.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Veera Pandi Kataboman/Karantha Palaiyum.mp3
 /home/kumaresan/music/mnt/Sivaji Hits/Veera Pandi Kataboman/Mattu Vandi.mp3
@@ -9304,29 +7930,18 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Sivakasi/Tamilmp3world.Com - Idhu Enna Idhu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Sivakasi/Tamilmp3world.Com - Vaada Vaada.mp3
 /home/kumaresan/music/mnt/Sixpence None the richer/Upped by Jolll/There She Goes.mp3
-/home/kumaresan/music/Music/Sixpence None the richer/Upped by Jolll/There She Goes.mp3
 /home/kumaresan/music/mnt/skid row/Unknown Album/skid_row_i_remeber_you.mp3
 /home/kumaresan/music/mnt/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Everyday People.mp3
-/home/kumaresan/music/Music/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Everyday People.mp3
 /home/kumaresan/music/mnt/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/223 - Dance To The Music.mp3
-/home/kumaresan/music/Music/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/223 - Dance To The Music.mp3
 /home/kumaresan/music/mnt/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/241 - Stand!.mp3
-/home/kumaresan/music/Music/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/241 - Stand!.mp3
 /home/kumaresan/music/mnt/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/247 - Hot Fun In The Summertime.mp3
-/home/kumaresan/music/Music/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/247 - Hot Fun In The Summertime.mp3
 /home/kumaresan/music/mnt/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Thank You (Falettinme Be Mice Elf Again).mp3
-/home/kumaresan/music/Music/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Thank You (Falettinme Be Mice Elf Again).mp3
 /home/kumaresan/music/mnt/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Family Affair.mp3
-/home/kumaresan/music/Music/Sly & The Family Stone/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Family Affair.mp3
 /home/kumaresan/music/mnt/SMASH MOUTH/ASTRO LOUNGE/THEN THE MORNING COMES.mp3
-/home/kumaresan/music/Music/SMASH MOUTH/ASTRO LOUNGE/THEN THE MORNING COMES.mp3
 /home/kumaresan/music/mnt/Smashmouth/Unknown Album/Walking on The Sun.mp3
-/home/kumaresan/music/Music/Smashmouth/Unknown Album/Walking on The Sun.mp3
 /home/kumaresan/music/mnt/Smashmouth/Shrek OST/2 - I'm A Believer.mp3
-/home/kumaresan/music/Music/Smashmouth/Shrek OST/2 - I'm A Believer.mp3
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Smoke DZA (Feat. Joey Bada$$) - Gotham Fcking City.m4a
 /home/kumaresan/music/mnt/Smokey Robinson & The Miracles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/50 - The Tracks Of My Tears.mp3
-/home/kumaresan/music/Music/Smokey Robinson & The Miracles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/50 - The Tracks Of My Tears.mp3
 /home/kumaresan/music/mnt/Songs/Devotional Songs/Supparapatham/01.mp3
 /home/kumaresan/music/mnt/Songs/Devotional Songs/Supparapatham/02.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Snehithiye/Tamilmp3world.Com - DevadaiVamsam.mp3
@@ -9336,7 +7951,6 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Snehithiye/Tamilmp3world.Com - Doora Desam.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Snehithiye/Tamilmp3world.Com - Kannukkulle Minnal.mp3
 /home/kumaresan/music/mnt/Soggy Bottom Boys With Tim Blake Nelson/O Brother, Where Art Thou/In The Jail House Now.mp3
-/home/kumaresan/music/Music/Soggy Bottom Boys With Tim Blake Nelson/O Brother, Where Art Thou/In The Jail House Now.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/SomethingSomethingUnakkumEnakkum/Tamilmp3world.Com - SomethingSomething.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/SomethingSomethingUnakkumEnakkum/Tamilmp3world.Com - PooparikkaNeeyum.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/SomethingSomethingUnakkumEnakkum/Tamilmp3world.Com - KiliyeKiliye.mp3
@@ -9371,13 +7985,9 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Star/Tamilmp3world.Com - ThomKaruvil.mp3
 /home/kumaresan/music/mnt/Best_of_Joey_Bada/Statik Selektah - Carry On ft. Joey Bada$$, Freddie Gibbs.m4a
 /home/kumaresan/music/mnt/Stevie Wonder/The Rolling Stone Magazines 500 Greatest Songs Of All Time/74 - Superstition.mp3
-/home/kumaresan/music/Music/Stevie Wonder/The Rolling Stone Magazines 500 Greatest Songs Of All Time/74 - Superstition.mp3
 /home/kumaresan/music/mnt/Stevie Wonder/The Rolling Stone Magazines 500 Greatest Songs Of All Time/281 - You Are The Sunshine Of My Life.mp3
-/home/kumaresan/music/Music/Stevie Wonder/The Rolling Stone Magazines 500 Greatest Songs Of All Time/281 - You Are The Sunshine Of My Life.mp3
 /home/kumaresan/music/mnt/Stevie Wonder/The Rolling Stone Magazines 500 Greatest Songs Of All Time/104 - Living For The City.mp3
-/home/kumaresan/music/Music/Stevie Wonder/The Rolling Stone Magazines 500 Greatest Songs Of All Time/104 - Living For The City.mp3
 /home/kumaresan/music/mnt/Stevie Wonder/The Rolling Stone Magazines 500 Greatest Songs Of All Time/261 - Higher Ground.mp3
-/home/kumaresan/music/Music/Stevie Wonder/The Rolling Stone Magazines 500 Greatest Songs Of All Time/261 - Higher Ground.mp3
 /home/kumaresan/music/mnt/Sting/Unknown Disc/1 - If I ever lose my faith in you.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Kanda Naal Muthal/Kanda Naal Mudhalai.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Sukkran/Tamilmp3world.Com - Sathikkadi.mp3
@@ -9692,7 +8302,6 @@
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Pudhupettai/Gangster's Marriage Party - Pul Pesum Poo Pesum.mp3
 /home/kumaresan/music/mnt/Television/The Rolling Stone Magazines 500 Greatest Songs Of All Time/372 - Marquee Moon.mp3
 /home/kumaresan/music/mnt/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/11 - My Generation.mp3
-/home/kumaresan/music/Music/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/11 - My Generation.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thambi/Tamilmp3world.Com - Sudu Nilavu.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thambi/Tamilmp3world.Com - En Kadhal.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thambi/Tamilmp3world.Com - Ennamaa.mp3
@@ -9707,80 +8316,44 @@
 /home/kumaresan/music/mnt/The Band/The Rolling Stone Magazines 500 Greatest Songs Of All Time/41 - The Weight.mp3
 /home/kumaresan/music/mnt/The Band/The Rolling Stone Magazines 500 Greatest Songs Of All Time/245 - The Night They Drove Old Dixie Down.mp3
 /home/kumaresan/music/mnt/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/209 - In My Room.mp3
-/home/kumaresan/music/Music/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/209 - In My Room.mp3
 /home/kumaresan/music/mnt/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/176 - Don't Worry Baby.mp3
-/home/kumaresan/music/Music/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/176 - Don't Worry Baby.mp3
 /home/kumaresan/music/mnt/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/71 - California Girls.mp3
-/home/kumaresan/music/Music/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/71 - California Girls.mp3
 /home/kumaresan/music/mnt/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/6 - Good Vibrations.mp3
-/home/kumaresan/music/Music/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/6 - Good Vibrations.mp3
 /home/kumaresan/music/mnt/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/25 - God Only Knows.mp3
-/home/kumaresan/music/Music/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/25 - God Only Knows.mp3
 /home/kumaresan/music/mnt/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/271 - Sloop John B.mp3
-/home/kumaresan/music/Music/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/271 - Sloop John B.mp3
 /home/kumaresan/music/mnt/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/211 - Caroline, No.mp3
-/home/kumaresan/music/Music/The Beach Boys/The Rolling Stone Magazines 500 Greatest Songs Of All Time/211 - Caroline, No.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/16 - I Want To Hold Your Hand.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/16 - I Want To Hold Your Hand.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/64 - She Loves You.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/64 - She Loves You.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/A Hard Days Night.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/A Hard Days Night.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/I Saw Her Standing There.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/I Saw Her Standing There.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/184 - Please Please Me.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/184 - Please Please Me.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/289 - Can't Buy Me Love.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/289 - Can't Buy Me Love.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/13 - Yesterday.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/13 - Yesterday.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/23 - In My Life.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/23 - In My Life.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/29 - Help.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/29 - Help.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/83 - Norwegian Wood (This Bird Has Flown).mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/83 - Norwegian Wood (This Bird Has Flown).mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Ticket To Ride.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Ticket To Ride.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Eleanor Rigby.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Eleanor Rigby.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/463 - Rain.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/463 - Rain.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/26 - A Day In The Life.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/26 - A Day In The Life.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/76 - Strawberry Fields Forever.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/76 - Strawberry Fields Forever.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/304 - With A Little Help From My Friends.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/304 - With A Little Help From My Friends.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/362 - All You Need Is Love.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/362 - All You Need Is Love.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/449 - Penny Lane.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/449 - Penny Lane.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/8 - Hey Jude.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/8 - Hey Jude.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/While My Guitar Gently Weeps.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/While My Guitar Gently Weeps.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/202 - Come Together.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/202 - Come Together.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/273 - Something.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/273 - Something.mp3
 /home/kumaresan/music/mnt/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/20 - Let It Be.mp3
-/home/kumaresan/music/Music/The Beatles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/20 - Let It Be.mp3
 /home/kumaresan/music/mnt/The Bee Gees/The Rolling Stone Magazines 500 Greatest Songs Of All Time/189 - Stayin Alive.mp3
-/home/kumaresan/music/Music/The Bee Gees/The Rolling Stone Magazines 500 Greatest Songs Of All Time/189 - Stayin Alive.mp3
 /home/kumaresan/music/mnt/The Bee Gees/The Rolling Stone Magazines 500 Greatest Songs Of All Time/366 - How Deep Is Your Love.mp3
-/home/kumaresan/music/Music/The Bee Gees/The Rolling Stone Magazines 500 Greatest Songs Of All Time/366 - How Deep Is Your Love.mp3
 /home/kumaresan/music/mnt/The Box Tops/The Rolling Stone Magazines 500 Greatest Songs Of All Time/363 - The Letter.mp3
 /home/kumaresan/music/mnt/The Brian Setzer Orchestra/Jumpin' East Of Java/8 - Caravan.mp3
 /home/kumaresan/music/mnt/The Byrds/The Rolling Stone Magazines 500 Greatest Songs Of All Time/79 - Mr Tambourine Man.mp3
-/home/kumaresan/music/Music/The Byrds/The Rolling Stone Magazines 500 Greatest Songs Of All Time/79 - Mr Tambourine Man.mp3
 /home/kumaresan/music/mnt/The Byrds/The Rolling Stone Magazines 500 Greatest Songs Of All Time/234 - I'll Feel A Whole Lot Better.mp3
-/home/kumaresan/music/Music/The Byrds/The Rolling Stone Magazines 500 Greatest Songs Of All Time/234 - I'll Feel A Whole Lot Better.mp3
 /home/kumaresan/music/mnt/The Byrds/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Eight Miles High.mp3
-/home/kumaresan/music/Music/The Byrds/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Eight Miles High.mp3
 /home/kumaresan/music/mnt/The Calling/Unknown Album/Wherever You Will Go.mp3
 /home/kumaresan/music/mnt/Carpenters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/We've Only Just Begun.mp3
-/home/kumaresan/music/Music/Carpenters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/We've Only Just Begun.mp3
 /home/kumaresan/music/mnt/The Chantels/The Rolling Stone Magazines 500 Greatest Songs Of All Time/195 - Maybe.mp3
 /home/kumaresan/music/mnt/The Chords/The Rolling Stone Magazines 500 Greatest Songs Of All Time/215 - Sh-Boom.mp3
 /home/kumaresan/music/mnt/The Clash/The Rolling Stone Magazines 500 Greatest Songs Of All Time/292. Train In Vain.mp3
@@ -9794,18 +8367,14 @@
 /home/kumaresan/music/mnt/The Cure/The Rolling Stone Magazines 500 Greatest Songs Of All Time/278 - Pictures Of You.mp3
 /home/kumaresan/music/mnt/The Dell-Vikings/The Rolling Stone Magazines 500 Greatest Songs Of All Time/441 - Come Go With Me.mp3
 /home/kumaresan/music/mnt/The Doors/The Rolling Stone Magazines 500 Greatest Songs Of All Time/35 - Light My Fire.mp3
-/home/kumaresan/music/Music/The Doors/The Rolling Stone Magazines 500 Greatest Songs Of All Time/35 - Light My Fire.mp3
 /home/kumaresan/music/mnt/The Doors/The Rolling Stone Magazines 500 Greatest Songs Of All Time/328 - The End.mp3
-/home/kumaresan/music/Music/The Doors/The Rolling Stone Magazines 500 Greatest Songs Of All Time/328 - The End.mp3
 /home/kumaresan/music/mnt/The Drifters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/252 - Money Honey.mp3
 /home/kumaresan/music/mnt/The Drifters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/193 - There Goes My Baby.mp3
 /home/kumaresan/music/mnt/The Drifters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/182 - Save The Last Dance For Me.mp3
 /home/kumaresan/music/mnt/The Drifters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/113 - Up On The Roof.mp3
 /home/kumaresan/music/mnt/The Drifters/The Rolling Stone Magazines 500 Greatest Songs Of All Time/487 - Under The Boardwalk.mp3
 /home/kumaresan/music/mnt/The Eagles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/494 - Desperado.mp3
-/home/kumaresan/music/Music/The Eagles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/494 - Desperado.mp3
 /home/kumaresan/music/mnt/The Eagles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/49 - Hotel California.mp3
-/home/kumaresan/music/Music/The Eagles/The Rolling Stone Magazines 500 Greatest Songs Of All Time/49 - Hotel California.mp3
 /home/kumaresan/music/mnt/The Everly Brothers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/207 - Bye Bye Love.mp3
 /home/kumaresan/music/mnt/The Everly Brothers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/311 - Wake Up Little Susie.mp3
 /home/kumaresan/music/mnt/The Everly Brothers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/All I Have To Do Is Dream.mp3
@@ -9821,21 +8390,14 @@
 /home/kumaresan/music/mnt/The Isley Brothers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/420 - It's Your Thing.mp3
 /home/kumaresan/music/mnt/The Isley Brothers/The Rolling Stone Magazines 500 Greatest Songs Of All Time/348 - That Lady.mp3
 /home/kumaresan/music/mnt/The Jackson 5/The Rolling Stone Magazines 500 Greatest Songs Of All Time/120. I Want You Back.mp3
-/home/kumaresan/music/Music/The Jackson 5/The Rolling Stone Magazines 500 Greatest Songs Of All Time/120. I Want You Back.mp3
 /home/kumaresan/music/mnt/The Jam/The Rolling Stone Magazines 500 Greatest Songs Of All Time/306 - That's Entertainment.mp3
 /home/kumaresan/music/mnt/The Jimi Hendrix Experience/The Rolling Stone Magazines 500 Greatest Songs Of All Time/198 - Hey Joe.mp3
-/home/kumaresan/music/Music/The Jimi Hendrix Experience/The Rolling Stone Magazines 500 Greatest Songs Of All Time/198 - Hey Joe.mp3
 /home/kumaresan/music/mnt/The Jimi Hendrix Experience/The Rolling Stone Magazines 500 Greatest Songs Of All Time/48 - All Along The Watchtower.mp3
-/home/kumaresan/music/Music/The Jimi Hendrix Experience/The Rolling Stone Magazines 500 Greatest Songs Of All Time/48 - All Along The Watchtower.mp3
 /home/kumaresan/music/mnt/The Jimi Hendrix Experience/The Rolling Stone Magazines 500 Greatest Songs Of All Time/101 - Voodoo Child (Slight Return).mp3
-/home/kumaresan/music/Music/The Jimi Hendrix Experience/The Rolling Stone Magazines 500 Greatest Songs Of All Time/101 - Voodoo Child (Slight Return).mp3
 /home/kumaresan/music/mnt/The Kingsmen/The Rolling Stone Magazines 500 Greatest Songs Of All Time/55 - Louie Louie.mp3
 /home/kumaresan/music/mnt/The Kinks/The Rolling Stone Magazines 500 Greatest Songs Of All Time/82 - 082 - the kinks - you really got me.mp3
-/home/kumaresan/music/Music/The Kinks/The Rolling Stone Magazines 500 Greatest Songs Of All Time/82 - 082 - the kinks - you really got me.mp3
 /home/kumaresan/music/mnt/The Kinks/The Rolling Stone Magazines 500 Greatest Songs Of All Time/42 - Waterloo Sunset.mp3
-/home/kumaresan/music/Music/The Kinks/The Rolling Stone Magazines 500 Greatest Songs Of All Time/42 - Waterloo Sunset.mp3
 /home/kumaresan/music/mnt/The Kinks/The Rolling Stone Magazines 500 Greatest Songs Of All Time/422 - Lola.mp3
-/home/kumaresan/music/Music/The Kinks/The Rolling Stone Magazines 500 Greatest Songs Of All Time/422 - Lola.mp3
 /home/kumaresan/music/mnt/The Lovin' Spoonful/The Rolling Stone Magazines 500 Greatest Songs Of All Time/216 - Belive In Magic.mp3
 /home/kumaresan/music/mnt/The Lovin' Spoonful/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Summer In The City.mp3
 /home/kumaresan/music/mnt/The Mamas & The Papas/The Rolling Stone Magazines 500 Greatest Songs Of All Time/89. California Dreamin'.mp3
@@ -9889,13 +8451,9 @@
 /home/kumaresan/music/mnt/The Temptations/The Rolling Stone Magazines 500 Greatest Songs Of All Time/168 - Papa Was A Rollin' Stone.mp3
 /home/kumaresan/music/mnt/The Troggs/The Rolling Stone Magazines 500 Greatest Songs Of All Time/257 - Wild Thing.mp3
 /home/kumaresan/music/mnt/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/371 - I Can't Explain.mp3
-/home/kumaresan/music/Music/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/371 - I Can't Explain.mp3
 /home/kumaresan/music/mnt/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/258 - I Can See For Miles.mp3
-/home/kumaresan/music/Music/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/258 - I Can See For Miles.mp3
 /home/kumaresan/music/mnt/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Wont Get Fooled Again.mp3
-/home/kumaresan/music/Music/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/Wont Get Fooled Again.mp3
 /home/kumaresan/music/mnt/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/340 - Baba O'riley.mp3
-/home/kumaresan/music/Music/The Who/The Rolling Stone Magazines 500 Greatest Songs Of All Time/340 - Baba O'riley.mp3
 /home/kumaresan/music/mnt/The Young Rascals/The Rolling Stone Magazines 500 Greatest Songs Of All Time/325 - Good Lovin'.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Thiruda Thiruda/Tamilmp3world.Com - Theme_Music.mp3
 /home/kumaresan/music/mnt/Thiruda Thiruda/Thiruda Thiruda/Theme Music.mp3
@@ -9938,7 +8496,6 @@
 /home/kumaresan/music/mnt/Ilaiyaraja Discography/Paasa Paravaigal/Paarvaigal - Muthil Mugam.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/3 - madaithiranthu_remix.mp3
 /home/kumaresan/music/mnt/Game of Thrones OST Season 3 The Bear and the Maiden Fair.mp3
-/home/kumaresan/music/Music/Game of Thrones OST Season 3 The Bear and the Maiden Fair.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Unnaale Unnaale/Tamilmp3world.Com - VaigaasiNilave.mp3
 /home/kumaresan/music/mnt/Bharathiyar Songs/Bharathiyar Paadalgal - Theertha Karaiyinile.mp3
 /home/kumaresan/music/mnt/Bharathiyar Songs/Bharathiyar Paadalgal - Varuvaai Varuvaai.mp3
@@ -9952,44 +8509,25 @@
 /home/kumaresan/music/mnt/ustad vilayat khan and ustad bismillah khan/uphaar/5 - uphaar.mp3
 /home/kumaresan/music/mnt/ustad vilayat khan and ustad bismillah khan/uphaar/6 - uphaar.mp3
 /home/kumaresan/music/mnt/Uyire/Unknown Album/thaiyyathaiyya(2).mp3
-/home/kumaresan/music/Music/Uyire/Unknown Album/thaiyyathaiyya(2).mp3
 /home/kumaresan/music/mnt/Uyire/Uyire/1 - Thaiyya Thaiyya (1).mp3
-/home/kumaresan/music/Music/Uyire/Uyire/1 - Thaiyya Thaiyya (1).mp3
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/Veera/Vaadi Vethalai - Mano & Chitra.mp3
 /home/kumaresan/music/mnt/Dil Se/03 - A.R Rehman - Dil Se Re [DJLUV].mp3
-/home/kumaresan/music/Music/Dil Se/03 - A.R Rehman - Dil Se Re [DJLUV].mp3
 /home/kumaresan/music/mnt/Dil Se/04 - Udit Narayan & Mahalakshmi - E Ajnabi [DJLUV].mp3
-/home/kumaresan/music/Music/Dil Se/04 - Udit Narayan & Mahalakshmi - E Ajnabi [DJLUV].mp3
 /home/kumaresan/music/mnt/Dil Se/06 - Sonu Nigam & Kavita Krishnamurthy - Satrangi Re [DJLUV].mp3
-/home/kumaresan/music/Music/Dil Se/06 - Sonu Nigam & Kavita Krishnamurthy - Satrangi Re [DJLUV].mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/01-Sattu Suttathada - Aalayamani.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/01-Sattu Suttathada - Aalayamani.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/02-Ponal pogattam - Paalum Pazhamum.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/02-Ponal pogattam - Paalum Pazhamum.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/03-Ennathan Nadakkum - Panathottam.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/03-Ennathan Nadakkum - Panathottam.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/04-Partah Pasumaram - Thiruvilayadal.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/04-Partah Pasumaram - Thiruvilayadal.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/05-Ponnai Virumbum - Aalayamani.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/05-Ponnai Virumbum - Aalayamani.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/06-Ulagam Piranthathu - Paasam.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/06-Ulagam Piranthathu - Paasam.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/07-Pallaku Vangaponen - Panakkara Kudumbam.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/07-Pallaku Vangaponen - Panakkara Kudumbam.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/08-Nenaipathallam - Nenjil Oe Alayam.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/08-Nenaipathallam - Nenjil Oe Alayam.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/09-Ullam Enbathu - Paartha Pasi Theerum.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/09-Ullam Enbathu - Paartha Pasi Theerum.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/10-Ullathil Nalla Ullam - Karnan.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/10-Ullathil Nalla Ullam - Karnan.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/11-Parama Sivan - Surya Kanthi.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/11-Parama Sivan - Surya Kanthi.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/12-Kadavul Manithanaga - Vaanambadi.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/12-Kadavul Manithanaga - Vaanambadi.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/13-Padaithane - Nitchaya Thamboolam.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/13-Padaithane - Nitchaya Thamboolam.mp3
 /home/kumaresan/music/mnt/Kannadhasan songs/14-Veeduvarai Uravu - Paathakanikkai.mp3
-/home/kumaresan/music/Music/Kannadhasan songs/14-Veeduvarai Uravu - Paathakanikkai.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Thimiru/TamilNapster.com_Thimiru_ManiMani.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/vts_01_chapter_02_1 - 0x80 - audio - ac3 - 6ch - 48khz - drc - delay 0ms.mp3
 /home/kumaresan/music/mnt/Various Artists/Once (Original Soundtrack)/01. Falling Slowly.mp3
@@ -10095,169 +8633,103 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/New Folder/Nannare_SMK.mp3
 /home/kumaresan/music/mnt/Mohan hits/adi aththaa athorama variya.mp3
 /home/kumaresan/music/mnt/Mohan hits/alakinil vilainthathu malaiyinil nanainthathu.mp3
-/home/kumaresan/music/Music/Mohan hits/alakinil vilainthathu malaiyinil nanainthathu.mp3
 /home/kumaresan/music/mnt/Mohan hits/asai manasukoru thaappa illai.mp3
-/home/kumaresan/music/Music/Mohan hits/asai manasukoru thaappa illai.mp3
 /home/kumaresan/music/mnt/Mohan hits/bhavana guru.mp3
-/home/kumaresan/music/Music/Mohan hits/bhavana guru.mp3
 /home/kumaresan/music/mnt/Mohan hits/eeramana rojave enai paarthu mudathe.mp3
-/home/kumaresan/music/Music/Mohan hits/eeramana rojave enai paarthu mudathe.mp3
 /home/kumaresan/music/mnt/Mohan hits/emma anthi mayakama.mp3
 /home/kumaresan/music/mnt/Mohan hits/enanga maapilai nalam thana.mp3
 /home/kumaresan/music/mnt/Mohan hits/goodsu vandiyile.mp3
-/home/kumaresan/music/Music/Mohan hits/goodsu vandiyile.mp3
 /home/kumaresan/music/mnt/Mohan hits/ilaiyanila polikirathu.mp3
-/home/kumaresan/music/Music/Mohan hits/ilaiyanila polikirathu.mp3
 /home/kumaresan/music/mnt/Mohan hits/isaimedaiyil intha velaiyil.mp3
 /home/kumaresan/music/mnt/Mohan hits/ithayam oru kovil - ilaiyaraja.mp3
-/home/kumaresan/music/Music/Mohan hits/ithayam oru kovil - ilaiyaraja.mp3
 /home/kumaresan/music/mnt/Mohan hits/ithayam oru kovil.mp3
-/home/kumaresan/music/Music/Mohan hits/ithayam oru kovil.mp3
 /home/kumaresan/music/mnt/Mohan hits/kai valikuthu kai valikuthu maama.mp3
-/home/kumaresan/music/Music/Mohan hits/kai valikuthu kai valikuthu maama.mp3
 /home/kumaresan/music/mnt/Mohan hits/kanane neevara paarthirunthen.mp3
-/home/kumaresan/music/Music/Mohan hits/kanane neevara paarthirunthen.mp3
 /home/kumaresan/music/mnt/Mohan hits/kannan vanthu paadukinran.mp3
-/home/kumaresan/music/Music/Mohan hits/kannan vanthu paadukinran.mp3
 /home/kumaresan/music/mnt/Mohan hits/kavithaipadu kujile kujile.mp3
-/home/kumaresan/music/Music/Mohan hits/kavithaipadu kujile kujile.mp3
 /home/kumaresan/music/mnt/Mohan hits/kilai illa marankalil nilal thedum-kaathal oruvalipathai payanam.mp3
-/home/kumaresan/music/Music/Mohan hits/kilai illa marankalil nilal thedum-kaathal oruvalipathai payanam.mp3
 /home/kumaresan/music/mnt/Mohan hits/koddunkadi keddi melam.mp3
-/home/kumaresan/music/Music/Mohan hits/koddunkadi keddi melam.mp3
 /home/kumaresan/music/mnt/Mohan hits/kokarako.mp3
 /home/kumaresan/music/mnt/Mohan hits/koodathile koyilpura yarai ingu.mp3
-/home/kumaresan/music/Music/Mohan hits/koodathile koyilpura yarai ingu.mp3
 /home/kumaresan/music/mnt/Mohan hits/kulal oothum kananukku.mp3
-/home/kumaresan/music/Music/Mohan hits/kulal oothum kananukku.mp3
 /home/kumaresan/music/mnt/Mohan hits/kulunka kulunka ilamai sirikuthu.mp3
-/home/kumaresan/music/Music/Mohan hits/kulunka kulunka ilamai sirikuthu.mp3
 /home/kumaresan/music/mnt/Mohan hits/kuththamma nellu kuththu.mp3
 /home/kumaresan/music/mnt/Mohan hits/machanai vachukadi munthana mudichilathan.mp3
-/home/kumaresan/music/Music/Mohan hits/machanai vachukadi munthana mudichilathan.mp3
 /home/kumaresan/music/mnt/Mohan hits/malai paruvathile iru vanna kuruviyadi.mp3
-/home/kumaresan/music/Music/Mohan hits/malai paruvathile iru vanna kuruviyadi.mp3
 /home/kumaresan/music/mnt/Mohan hits/malaiyiram veesum kathu -female.mp3
-/home/kumaresan/music/Music/Mohan hits/malaiyiram veesum kathu -female.mp3
 /home/kumaresan/music/mnt/Mohan hits/malaiyoram veesum kathu.mp3
-/home/kumaresan/music/Music/Mohan hits/malaiyoram veesum kathu.mp3
 /home/kumaresan/music/mnt/Mohan hits/mani osaikedu elunthu -female.mp3
 /home/kumaresan/music/mnt/Mohan hits/manramvantha thenraluku.mp3
-/home/kumaresan/music/Music/Mohan hits/manramvantha thenraluku.mp3
 /home/kumaresan/music/mnt/Mohan hits/mellai thaddi melathai nee koddu.mp3
-/home/kumaresan/music/Music/Mohan hits/mellai thaddi melathai nee koddu.mp3
 /home/kumaresan/music/mnt/Mohan hits/naan paadum mawnaraagam.mp3
-/home/kumaresan/music/Music/Mohan hits/naan paadum mawnaraagam.mp3
 /home/kumaresan/music/mnt/Mohan hits/nilave vaa selathe vaa.mp3
 /home/kumaresan/music/mnt/Mohan hits/nilavu thunkum neram -female.mp3
 /home/kumaresan/music/mnt/Mohan hits/nilavuthunkum neram ninaivu thunkidathu.mp3
 /home/kumaresan/music/mnt/Mohan hits/oh go megam vanthatho.mp3
-/home/kumaresan/music/Music/Mohan hits/oh go megam vanthatho.mp3
 /home/kumaresan/music/mnt/Mohan hits/oororama aathupakama thenanthoppu.mp3
 /home/kumaresan/music/mnt/Mohan hits/oorusanam thunkidichu.mp3
 /home/kumaresan/music/mnt/Mohan hits/paadavanthathor kaanam.mp3
 /home/kumaresan/music/mnt/Mohan hits/paadava un paadalai.mp3
-/home/kumaresan/music/Music/Mohan hits/paadava un paadalai.mp3
 /home/kumaresan/music/mnt/Mohan hits/paaddu thalaivan paadinaal.mp3
-/home/kumaresan/music/Music/Mohan hits/paaddu thalaivan paadinaal.mp3
 /home/kumaresan/music/mnt/Mohan hits/paadum vaanam padi.mp3
 /home/kumaresan/music/mnt/Mohan hits/paadunkal paaddu paadunkal.mp3
-/home/kumaresan/music/Music/Mohan hits/paadunkal paaddu paadunkal.mp3
 /home/kumaresan/music/mnt/Mohan hits/padipila cyro nadipila here.mp3
-/home/kumaresan/music/Music/Mohan hits/padipila cyro nadipila here.mp3
 /home/kumaresan/music/mnt/Mohan hits/panivilum iravu.mp3
-/home/kumaresan/music/Music/Mohan hits/panivilum iravu.mp3
 /home/kumaresan/music/mnt/Mohan hits/poongaththe theendathe.mp3
-/home/kumaresan/music/Music/Mohan hits/poongaththe theendathe.mp3
 /home/kumaresan/music/mnt/Mohan hits/puthiya poovithu poothathu.mp3
-/home/kumaresan/music/Music/Mohan hits/puthiya poovithu poothathu.mp3
 /home/kumaresan/music/mnt/Mohan hits/raagatheepam eththum neram puyal malaiyo.mp3
-/home/kumaresan/music/Music/Mohan hits/raagatheepam eththum neram puyal malaiyo.mp3
 /home/kumaresan/music/mnt/Mohan hits/ragavane ramana ragunatha.mp3
-/home/kumaresan/music/Music/Mohan hits/ragavane ramana ragunatha.mp3
 /home/kumaresan/music/mnt/Mohan hits/rajarasolan naan.mp3
-/home/kumaresan/music/Music/Mohan hits/rajarasolan naan.mp3
 /home/kumaresan/music/mnt/Mohan hits/saalai oram solai onru aadum.mp3
-/home/kumaresan/music/Music/Mohan hits/saalai oram solai onru aadum.mp3
 /home/kumaresan/music/mnt/Mohan hits/sakkara kaddikku.mp3
-/home/kumaresan/music/Music/Mohan hits/sakkara kaddikku.mp3
 /home/kumaresan/music/mnt/Mohan hits/seer kondu vaa ven megame.mp3
-/home/kumaresan/music/Music/Mohan hits/seer kondu vaa ven megame.mp3
 /home/kumaresan/music/mnt/Mohan hits/sinna sinna kanna sethi solum.mp3
-/home/kumaresan/music/Music/Mohan hits/sinna sinna kanna sethi solum.mp3
 /home/kumaresan/music/mnt/Mohan hits/sinna sinna vanna kujil.mp3
 /home/kumaresan/music/mnt/Mohan hits/sithirai maathathu nilavu varukuthu.mp3
 /home/kumaresan/music/mnt/Mohan hits/suthanthiratha vankupuddom.mp3
-/home/kumaresan/music/Music/Mohan hits/suthanthiratha vankupuddom.mp3
 /home/kumaresan/music/mnt/Mohan hits/thathedutha muthupilai yaro.mp3
 /home/kumaresan/music/mnt/Mohan hits/thedum kan paarvai thavikka.mp3
-/home/kumaresan/music/Music/Mohan hits/thedum kan paarvai thavikka.mp3
 /home/kumaresan/music/mnt/Mohan hits/thenralvanthu enai thodum.mp3
-/home/kumaresan/music/Music/Mohan hits/thenralvanthu enai thodum.mp3
 /home/kumaresan/music/mnt/Mohan hits/thevan kovil theepam onru -male.mp3
 /home/kumaresan/music/mnt/Mohan hits/thevan kovil theepam onru.mp3
-/home/kumaresan/music/Music/Mohan hits/thevan kovil theepam onru.mp3
 /home/kumaresan/music/mnt/Mohan hits/thil thil manathil.mp3
-/home/kumaresan/music/Music/Mohan hits/thil thil manathil.mp3
 /home/kumaresan/music/mnt/Mohan hits/thokai ilamayil aadivarukuthu.mp3
 /home/kumaresan/music/mnt/Mohan hits/vaada en veera kaali anan pera.mp3
-/home/kumaresan/music/Music/Mohan hits/vaada en veera kaali anan pera.mp3
 /home/kumaresan/music/mnt/Mohan hits/vaanuyarntha solaiyile.mp3
-/home/kumaresan/music/Music/Mohan hits/vaanuyarntha solaiyile.mp3
 /home/kumaresan/music/mnt/Mohan hits/vaa veliye ilam poonkujile.mp3
-/home/kumaresan/music/Music/Mohan hits/vaa veliye ilam poonkujile.mp3
 /home/kumaresan/music/mnt/Mohan hits/vaa vennila unaithane vaanam theduthe.mp3
 /home/kumaresan/music/mnt/Mohan hits/vachchalam neththi poddu.mp3
-/home/kumaresan/music/Music/Mohan hits/vachchalam neththi poddu.mp3
 /home/kumaresan/music/mnt/Mohan hits/vaikaraiyil vaikai karaiyil.mp3
-/home/kumaresan/music/Music/Mohan hits/vaikaraiyil vaikai karaiyil.mp3
 /home/kumaresan/music/mnt/Mohan hits/vilikal medaiyam.mp3
-/home/kumaresan/music/Music/Mohan hits/vilikal medaiyam.mp3
 /home/kumaresan/music/mnt/Mohan hits/yaar veeddu roja poo poothatho.mp3
 /home/kumaresan/music/mnt/MGR/NALLA PARA.mp3
 /home/kumaresan/music/mnt/Mohan hits/KOLLIMALAI.MP3
 /home/kumaresan/music/mnt/Mohan hits/NEDUNALAASAH.MP3
 /home/kumaresan/music/mnt/Mohan hits/EZHUTHUKIRAL.MP3
-/home/kumaresan/music/Music/Mohan hits/EZHUTHUKIRAL.MP3
 /home/kumaresan/music/mnt/Mohan hits/INDRU.MP3
 /home/kumaresan/music/mnt/Mohan hits/NEEOTTUKITTA.MP3
 /home/kumaresan/music/mnt/Mohan hits/KALAIMAGALE.MP3
 /home/kumaresan/music/mnt/Mohan hits/NILAVENNA.MP3
 /home/kumaresan/music/mnt/Mohan hits/EDHAYA.MP3
-/home/kumaresan/music/Music/Mohan hits/EDHAYA.MP3
 /home/kumaresan/music/mnt/Mohan hits/THANNEERIL.MP3
 /home/kumaresan/music/mnt/Mohan hits/L_O_V_E_LOVE.MP3
-/home/kumaresan/music/Music/Mohan hits/L_O_V_E_LOVE.MP3
 /home/kumaresan/music/mnt/Mohan hits/DEVADOSS.MP3
-/home/kumaresan/music/Music/Mohan hits/DEVADOSS.MP3
 /home/kumaresan/music/mnt/Mohan hits/VATTIMAICH.MP3
-/home/kumaresan/music/Music/Mohan hits/VATTIMAICH.MP3
 /home/kumaresan/music/mnt/Mohan hits/-Chinna Chinna.mp3
 /home/kumaresan/music/mnt/Mohan hits/-Engengu (M).mp3
-/home/kumaresan/music/Music/Mohan hits/-Engengu (M).mp3
 /home/kumaresan/music/mnt/Mohan hits/-Engengu.mp3
-/home/kumaresan/music/Music/Mohan hits/-Engengu.mp3
 /home/kumaresan/music/mnt/Mohan hits/ennodu paaddu paadunkal.mp3
-/home/kumaresan/music/Music/Mohan hits/ennodu paaddu paadunkal.mp3
 /home/kumaresan/music/mnt/Mohan hits/hey thenrale ini naalum padava.mp3
-/home/kumaresan/music/Music/Mohan hits/hey thenrale ini naalum padava.mp3
 /home/kumaresan/music/mnt/Mohan hits/-Ilamai Rathathil.mp3
-/home/kumaresan/music/Music/Mohan hits/-Ilamai Rathathil.mp3
 /home/kumaresan/music/mnt/Mohan hits/-Kannukkum.mp3
-/home/kumaresan/music/Music/Mohan hits/-Kannukkum.mp3
 /home/kumaresan/music/mnt/Mohan hits/mammu peru maari.mp3
-/home/kumaresan/music/Music/Mohan hits/mammu peru maari.mp3
 /home/kumaresan/music/mnt/Mohan hits/oravenum puthiya vaanil.mp3
 /home/kumaresan/music/mnt/Mohan hits/paadum nilave thean kavithai-female.mp3
 /home/kumaresan/music/mnt/Mohan hits/paruvame puthiya padal paadu.mp3
-/home/kumaresan/music/Music/Mohan hits/paruvame puthiya padal paadu.mp3
 /home/kumaresan/music/mnt/Mohan hits/sangeetha megam.mp3
-/home/kumaresan/music/Music/Mohan hits/sangeetha megam.mp3
 /home/kumaresan/music/mnt/Mohan hits/thene thenpandi meene -female.mp3
 /home/kumaresan/music/mnt/Mohan hits/thene thenpandi meene.mp3
-/home/kumaresan/music/Music/Mohan hits/thene thenpandi meene.mp3
 /home/kumaresan/music/mnt/Mohan hits/uthaya geetham paaduven.mp3
-/home/kumaresan/music/Music/Mohan hits/uthaya geetham paaduven.mp3
 /home/kumaresan/music/mnt/MGR/01 ACHCHAM ENPATHU.mp3
 /home/kumaresan/music/mnt/Seerkazhi Govindarajan/001 Aadi Adangum.mp3
 /home/kumaresan/music/mnt/Seerkazhi Govindarajan/002 Devankovil.mp3
@@ -10351,26 +8823,18 @@
 /home/kumaresan/music/mnt/MGR/15 UNNAI ARINTHAL.mp3
 /home/kumaresan/music/mnt/Mohan hits/VIZYIL.mp3
 /home/kumaresan/music/mnt/Mohan hits/CHINNAVALLE.mp3
-/home/kumaresan/music/Music/Mohan hits/CHINNAVALLE.mp3
 /home/kumaresan/music/mnt/Mohan hits/VILIYALA.mp3
 /home/kumaresan/music/mnt/Mohan hits/OH DEVAN.mp3
 /home/kumaresan/music/mnt/Mohan hits/HAPPY NEW YEAR.mp3
-/home/kumaresan/music/Music/Mohan hits/HAPPY NEW YEAR.mp3
 /home/kumaresan/music/mnt/Mohan hits/PONMANEA.mp3
-/home/kumaresan/music/Music/Mohan hits/PONMANEA.mp3
 /home/kumaresan/music/mnt/Mohan hits/ROJA     ONDRU.mp3
-/home/kumaresan/music/Music/Mohan hits/ROJA     ONDRU.mp3
 /home/kumaresan/music/mnt/Mohan hits/ABHIRAM.mp3
-/home/kumaresan/music/Music/Mohan hits/ABHIRAM.mp3
 /home/kumaresan/music/mnt/Mohan hits/sontham pathinaru undu.mp3
 /home/kumaresan/music/mnt/Mohan hits/THEETTKARAAI.mp3
-/home/kumaresan/music/Music/Mohan hits/THEETTKARAAI.mp3
 /home/kumaresan/music/mnt/Mohan hits/UZARIYA.mp3
 /home/kumaresan/music/mnt/Mohan hits/HEYILOVE.mp3
 /home/kumaresan/music/mnt/Mohan hits/UNNAI KAANU.mp3
-/home/kumaresan/music/Music/Mohan hits/UNNAI KAANU.mp3
 /home/kumaresan/music/mnt/Mohan hits/DEVAN THANTHA.mp3
-/home/kumaresan/music/Music/Mohan hits/DEVAN THANTHA.mp3
 /home/kumaresan/music/mnt/Mohan hits/THALATTU.mp3
 /home/kumaresan/music/mnt/tAMIL SONGS/Ilayaraja - Tamil Songs - Set 2/songs/Yedho Moham - Kozhi Koovuthu.mp3
 /home/kumaresan/music/mnt/Www.Sukravathanee.Tk/Neengal Ketavai/Adiyeh Manam.mp3
@@ -10401,9 +8865,7 @@
 /home/kumaresan/music/mnt/Songs/Devotional Songs/KJJ/KarppooraPriyaneNin.mp3
 /home/kumaresan/music/mnt/Yesudas/Manikantan (Vol.18)/01. Aanayaananan.mp3
 /home/kumaresan/music/mnt/Yogi-B And Natchatra/Vallavan/4 - Siva Siva (Feat. 'Prema').mp3
-/home/kumaresan/music/Music/Yogi-B And Natchatra/Vallavan/4 - Siva Siva (Feat. 'Prema').mp3
 /home/kumaresan/music/mnt/Yogi-B And Natchatra/Vallavan/6 - Vali Theduthe.mp3
-/home/kumaresan/music/Music/Yogi-B And Natchatra/Vallavan/6 - Vali Theduthe.mp3
 /home/kumaresan/music/mnt/Yuvanshankar Raja - Collection/Kanda Naal Muthal/Pushing It Hard.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Arinthum Ariyamalum/Tamilmp3world.Com - Sil Sil.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Film Name/Arinthum Ariyamalum/Tamilmp3world.Com - Yela Yela.mp3

@@ -30,6 +30,7 @@ listViewIconSize=0
 [Notification Messages]
 ShowPasteHugeTextWarning=false
 ShowPasteUnprintableWarning=false
+hinding_title_bar=false
 
 [Window]
 KeepOpen=false

@@ -3,6 +3,8 @@ android-tools-adb
 android-tools-fastboot
 aria2
 bat
+libnotify-bin
+notify-osd
 progress
 bleachbit
 build-essential
@@ -26,7 +28,6 @@ gparted
 graphviz
 highlight
 htop
-xh
 jq
 keepassxc
 kitty
@@ -41,7 +42,6 @@ libreadline-dev
 libsqlite3-dev
 libssl-dev
 linux-headers-generic
-linux-tools-generic
 lnav
 nmap
 openjdk-17-jdk
@@ -111,3 +111,4 @@ ffmpeg
 xserver-xorg-input-libinput
 xserver-xorg-input-mouse
 xserver-xorg-input-evdev
+vim

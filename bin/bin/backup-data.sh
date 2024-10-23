@@ -1,48 +1,52 @@
 #!/bin/bash
 
-SRC="$HOME"
-DEST="/media/data"
-REMOTECOPY=
-DRYRUN=
+HOST=$(hostname)
 
-echo ---------------------- syncing dumps --------------------------------
+# command line parsing fellows
+while getopts dr opt; do
+  case "$opt" in
+  d) DRYRUN="--dry-run" ;;
+  r) REVERSE=on ;;
+  \?) # unknown flag
+    echo >&2 \
+      "usage: $0 [-d] [-r]"
+    exit 1
+    ;;
+  esac
+done
+shift $(expr $OPTIND - 1)
 
-copy_one_way $REMOTECOPY $DRYRUN "$SRC"/dumps "$DEST"
+if [ "$REVERSE" ]; then
+  DEST="$HOME"
+  SRC="pi@thesanepi:/data/backups/${HOST}/"
+else
+  SRC="$HOME"
+  DEST="pi@thesanepi:/data/backups/${HOST}/"
 
-echo ---------------------- end syncing dumps ----------------------------
+  # get pkg list and store it in remote
+  sudo dpkg --get-selections | grep -v 'deinstall' >${SRC}/pkglist.txt
+  sudo apt-key exportall >${SRC}/pkgkeys.txt
+  mkdir -p ${SRC}/apt
+  sudo cp -avruf /etc/apt/ ${SRC}/apt
 
-echo ---------------------- syncing videos --------------------------------
-
-copy_one_way $REMOTECOPY $DRYRUN "$SRC"/videos "$DEST"
-
-echo ---------------------- end syncing videos ----------------------------
-
-echo ---------------------- syncing music --------------------------------
-
-mirror_one_way $REMOTECOPY $DRYRUN "$SRC"/music "$DEST"
-
-echo ---------------------- end syncing music ----------------------------
-
-echo ---------------------- syncing photos --------------------------------
-
-copy_one_way $REMOTECOPY $DRYRUN "$SRC"/photos "$DEST"
-
-echo ---------------------- end syncing photos ----------------------------
-
-echo ---------------------- syncing vboxes --------------------------------
-
-copy_one_way $REMOTECOPY $DRYRUN "$SRC"/vbox "$DEST"
-
-echo ---------------------- end syncing vboxes ----------------------------
-
-echo ---------------------- syncing dropbox --------------------------------
-
-mirror_one_way $REMOTECOPY $DRYRUN "$SRC"/Dropbox "$DEST"
-
-echo ---------------------- end dropbox ----------------------------
-
-if [ -f /media/truecrypt1 ]; then
-    echo Sneaking little hobbitses..
-    copy_one_way $REMOTECOPY $DRYRUN "$SRC"/.xmlback/po "/media/truecrypt1"
-    echo done!
 fi
+
+if [ "$DRYRUN" ]; then
+  DRYRUN="-d"
+fi
+
+command -v notify-send >/dev/null 2>&1 && NOTIFY=1
+
+[[ "$NOTIFY" ]] && notify-send -t critical "Starting backup!"
+
+echo ---------------------- syncing home folder --------------------------------
+
+if [ "$DRYRUN" ]; then
+  DRYRUN="-n"
+fi
+
+rsync -L --one-file-system --verbose --stats --recursive --itemize-changes --verbose --progress --perms --archive --delete --protect-args --exclude-from="${HOME}/bin/backup-excludes.txt" $DRYRUN "/home" "$DEST"
+
+echo ---------------------- end home folder ----------------------------
+
+[[ "$NOTIFY" ]] && notify-send -t critical "Backup done!"

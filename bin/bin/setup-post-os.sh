@@ -4,35 +4,36 @@ export BINPATH=${HOME}/dotfiles/bin/bin
 source ${BINPATH}/common-lib.sh
 
 echo "Here are things you might want to do: 
-    x copy stuff from old home folder
+    - apt-repo: postgres older versions
+    - install proj stuff: copy postgres db, android-sdk, krdc for a spin
     - OpensubtitlesDownloader.py
     - Setup wireguard/VPN
-    - apt-repo: postgres older versions
-    x awscli + eb setup
-    - bitwarden
-    - bluetooth devices connect
-    - copy ~/dumps/ ~/src ~/videos ~/photos/ ~/.local/bin/ ~/music etc from old
-    - disable klipper showing twice in systray: disable it in systray
-    - dotfile syncup
     - firefoxpwa
+    - whatsapp/TG
     - fuck off with grub
     - hibernate stuff
-    - homebrew install: xargs brew install < ~/bin/apps-brew.txt
-    - install proj stuff: copy postgres db
-    - install ufw, enable syncthing, ssh, samba + local network
-    - pipewire
-    - python install: pip3 install -r ~/bin/apps-pip.txt
-    - setup backup cron/system
-    - setup firefox dev + ublock
-    - setup google-drive-ocamlfuse + setup keepassxc
-    - setup local chromium
-    - setup neovim: checkhealth, fix startup errors
-    - syncthing setup + repos
+    - nvim shit
+    - pipewire/bluetooth devices connect
     - toolbox: android-studio
     - toolbox: webstorm, intellij apps
-    - touchpad not working
-    - whatsapp/TG
-    - yarn install: xargs yarn global install  < ~/bin/apps-yarn.txt
+    x bitwarden
+    x copy ~/dumps/ ~/src ~/videos ~/photos/ ~/.local/bin/ ~/music etc from old
+    x enable syncthing, ssh, samba + local network in ufw
+    x etckeeper init + store in repo
+    x install work repos
+    x python install: pip3 install -r ~/bin/apps-pip.txt
+    x setup backup cron/system
+    x setup local chromium+ gmeet
+    x setup rclone + setup keepassxc
+    x syncthing setup + repos
+    x install klipper showing twice in systray: disable it in systray
+    x copy stuff from old home folder
+    x setup neovim: checkhealth, fix startup errors
+    x awscli + eb setup
+    x dotfile syncup
+    x homebrew install: xargs brew install < ~/bin/apps-brew.txt
+    x touchpad not working
+    x yarn install: xargs yarn global install  < ~/bin/apps-yarn.txt
     x apt-repo: google-drive-ocamlfuse
     x apt-repo: keepassxc
     x apt-repo: librewolf

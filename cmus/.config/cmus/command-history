@@ -1,9 +1,9 @@
+update-cache 
 add ~/music/
 save
 q
 shell 
 set confirm_run=false
-update-cache 
 filter metal
 fset metal=genre="*ock"
 filter 

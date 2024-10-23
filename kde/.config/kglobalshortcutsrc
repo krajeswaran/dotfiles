@@ -73,13 +73,13 @@ _k_friendly_name=Custom Shortcuts Service
 
 [klipper]
 _k_friendly_name=Klipper
-clear-history=none,none,Clear Clipboard History
+clear-history=none,,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Meta+Ctrl+X,Automatic Action Popup Menu
-cycleNextAction=none,none,Next History Item
-cyclePrevAction=none,none,Previous History Item
-edit_clipboard=none,none,Edit Contents…
+cycleNextAction=none,,Next History Item
+cyclePrevAction=none,,Previous History Item
+edit_clipboard=none,,Edit Contents…
 repeat_action=Ctrl+Alt+R,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard
-show-barcode=none,none,Show Barcode…
+show-barcode=none,,Show Barcode…
 show-on-mouse-pos=none,Meta+V,Show Items at Mouse Position
 
 [kmix]
@@ -269,11 +269,11 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,none,Media volume down
-mediavolumeup=none,none,Media volume up
+mediavolumedown=none,,Media volume down
+mediavolumeup=none,,Media volume up
 nextmedia=none,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,none,Play media playback
+playmedia=none,,Play media playback
 playpausemedia=none,Media Play,Play/Pause media playback
 previousmedia=none,Media Previous,Media playback previous
 stopmedia=none,Media Stop,Stop media playback

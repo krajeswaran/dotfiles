@@ -37,7 +37,7 @@ LaunchCounts=2 services_kcm_style.desktop,1 services_fontinst.desktop,1 services
 pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconverter
 
 [PlasmaTransientsConfig]
-PreloadWeight=18
+PreloadWeight=2
 
 [PlasmaViews][Panel 2][Defaults]
 thickness=24

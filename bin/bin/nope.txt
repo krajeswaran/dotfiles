@@ -20,4 +20,6 @@ libgnome-games-support-common
 whoopsie
 unattended-upgrades
 libgnome-desktop*
+vim-tiny
+vim-common
 snapd

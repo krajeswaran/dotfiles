@@ -1,4 +1,8 @@
 scrcpy
+pgcli
+awsebcli
+ipython
+virtualenv
 gh
 hurl
 fzf
@@ -15,4 +19,5 @@ helix
 dust
 fzf
 awscli
-cw
+rclone
+cw #brew tap lucagrulla/tap

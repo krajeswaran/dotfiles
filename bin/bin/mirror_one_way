@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # command line parsing fellows
-while getopts dl opt
-do
-    case "$opt" in
-      d)  DRYRUN="--dry-run" ;;
-      \?)		# unknown flag
-      	  echo >&2 \
-	  "usage: $0 [-d] [-l]"
-	  exit 1;;
-    esac
+while getopts dl opt; do
+  case "$opt" in
+  d) DRYRUN="--dry-run" ;;
+  \?) # unknown flag
+    echo >&2 \
+      "usage: $0 [-d]"
+    exit 1
+    ;;
+  esac
 done
-shift `expr $OPTIND - 1`
+shift $(expr $OPTIND - 1)
 
-rsync -L --verbose --stats --recursive --itemize-changes --verbose --progress --archive --delete --protect-args $DRYRUN "$1" "$2" 
+rsync -L --one-file-system --perms --verbose --stats --recursive --itemize-changes --verbose --progress --archive --delete --protect-args $DRYRUN "$1" "$2"

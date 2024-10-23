@@ -1,6 +1,5 @@
 [Applications][@other]
 ShowInHistory=true
-ShowPopups=false
 
 [Applications][bleachbit-root]
 ShowPopups=false
@@ -62,6 +61,7 @@ WhenScreensMirrored=false
 PermanentPopups=false
 
 [Notifications]
+PopupPosition=TopRight
 PopupTimeout=3000
 
 [Services][networkmanagement]
