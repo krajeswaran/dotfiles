@@ -45,7 +45,7 @@ if [ "$DRYRUN" ]; then
   DRYRUN="-n"
 fi
 
-rsync -L --one-file-system --verbose --stats --recursive --itemize-changes --verbose --progress --perms --archive --delete --protect-args --exclude-from="${HOME}/bin/backup-excludes.txt" $DRYRUN "/home" "$DEST"
+rsync -L --one-file-system --stats --recursive --itemize-changes --progress --perms --archive --delete --protect-args --exclude-from="${HOME}/bin/backup-excludes.txt" $DRYRUN "/home" "$DEST"
 
 echo ---------------------- end home folder ----------------------------
 

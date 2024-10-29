@@ -6,16 +6,16 @@ source ${BINPATH}/common-lib.sh
 echo "Here are things you might want to do: 
     - apt-repo: postgres older versions
     - install proj stuff: copy postgres db, android-sdk, krdc for a spin
-    - OpensubtitlesDownloader.py
-    - Setup wireguard/VPN
-    - firefoxpwa
-    - whatsapp/TG
     - fuck off with grub
     - hibernate stuff
     - nvim shit
     - pipewire/bluetooth devices connect
     - toolbox: android-studio
     - toolbox: webstorm, intellij apps
+    x OpensubtitlesDownloader.py
+    x Setup wireguard/VPN
+    x firefoxpwa
+    x whatsapp/TG
     x bitwarden
     x copy ~/dumps/ ~/src ~/videos ~/photos/ ~/.local/bin/ ~/music etc from old
     x enable syncthing, ssh, samba + local network in ufw
