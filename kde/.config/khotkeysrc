@@ -208,7 +208,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_2_10Actions0]
-CommandURL=dolphin
+CommandURL=krusader
 Type=COMMAND_URL
 
 [Data_2_10Conditions]
@@ -515,7 +515,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_2_9Actions0]
-CommandURL=/opt/firefox-dev/firefox
+CommandURL=firefox-devedition
 Type=COMMAND_URL
 
 [Data_2_9Conditions]

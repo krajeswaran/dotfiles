@@ -48,7 +48,9 @@ openjdk-17-jdk
 openssh-server
 p7zip-full
 pandoc
-qpdfview
+okular
+okular-extra-backends
+foomatic-db
 krdc
 ripgrep
 libreoffice-writer
@@ -112,3 +114,4 @@ xserver-xorg-input-libinput
 xserver-xorg-input-mouse
 xserver-xorg-input-evdev
 vim
+kcolorchooser

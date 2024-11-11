@@ -37,7 +37,8 @@ fi
 
 command -v notify-send >/dev/null 2>&1 && NOTIFY=1
 
-[[ "$NOTIFY" ]] && notify-send -t critical "Starting backup!"
+[[ "$NOTIFY" ]] && notify-send -u critical "Starting backup!"
+echo '' >${HOME}/daily-backup.log
 
 echo ---------------------- syncing home folder --------------------------------
 
@@ -49,4 +50,4 @@ rsync -L --one-file-system --stats --recursive --itemize-changes --progress --pe
 
 echo ---------------------- end home folder ----------------------------
 
-[[ "$NOTIFY" ]] && notify-send -t critical "Backup done!"
+[[ "$NOTIFY" ]] && notify-send -u critical "Backup done!"

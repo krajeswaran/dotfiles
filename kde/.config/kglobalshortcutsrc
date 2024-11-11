@@ -278,20 +278,6 @@ playpausemedia=none,Media Play,Play/Pause media playback
 previousmedia=none,Media Previous,Media playback previous
 stopmedia=none,Media Stop,Stop media playback
 
-[org.kde.dolphin.desktop]
-_k_friendly_name=Dolphin
-_launch=none,Meta+E,Dolphin
-
-[org.kde.kcalc.desktop]
-_k_friendly_name=KCalc
-_launch=Launch (1),Launch (1),KCalc
-
-[org.kde.konsole.desktop]
-NewTab=none,none,Open a New Tab
-NewWindow=none,none,Open a New Window
-_k_friendly_name=Konsole
-_launch=none,none,Konsole
-
 [org.kde.krunner.desktop]
 RunClipboard=Meta+Shift+Space,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
@@ -384,17 +370,6 @@ kcm-lookandfeel=none,none,Global Theme
 kcm-users=none,none,Users
 powerdevilprofilesconfig=none,none,Energy Saving
 screenlocker=none,none,Screen Locking
-
-[wacomtablet]
-Map to fullscreen=Meta+Ctrl+F,Meta+Ctrl+F,Map to fullscreen
-Map to screen 1=Meta+Ctrl+1,Meta+Ctrl+1,Map to screen 1
-Map to screen 2=Meta+Ctrl+2,Meta+Ctrl+2,Map to screen 2
-Next Profile=Meta+Ctrl+N,Meta+Ctrl+N,Next profile
-Previous Profile=Meta+Ctrl+P,Meta+Ctrl+P,Previous Profile
-Toggle screen map selection=Meta+Ctrl+M,Meta+Ctrl+M,Toggle between all screens
-Toggle stylus mode=Meta+Ctrl+S,Meta+Ctrl+S,Toggle the Stylus Tool Relative/Absolute
-Toggle touch tool=Meta+Ctrl+T,Meta+Ctrl+T,Enable/Disable the Touch Tool
-_k_friendly_name=Wacom Tablet
 
 [yakuake]
 _k_friendly_name=Yakuake

@@ -6,10 +6,10 @@ source ${BINPATH}/common-lib.sh
 echo "Here are things you might want to do: 
     - apt-repo: postgres older versions
     - install proj stuff: copy postgres db, android-sdk, krdc for a spin
-    - fuck off with grub
+    x fuck off with grub
     - hibernate stuff
     - nvim shit
-    - pipewire/bluetooth devices connect
+    x pipewire/bluetooth devices connect
     - toolbox: android-studio
     - toolbox: webstorm, intellij apps
     x OpensubtitlesDownloader.py
