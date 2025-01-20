@@ -67,3 +67,4 @@ command -v lsd >/dev/null 2>&1 && alias ls="lsd"
 export PATH="/home/linuxbrew/.linuxbrew/opt/node@18/bin:$PATH"
 export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@18/lib"
 export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@18/include"
+export MOZ_USE_XINPUT2=1

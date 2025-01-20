@@ -1,5 +1,6 @@
 [Applications][@other]
 ShowInHistory=true
+ShowPopups=false
 
 [Applications][bleachbit-root]
 ShowPopups=false

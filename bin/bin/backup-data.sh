@@ -1,6 +1,7 @@
 #!/bin/bash
 
 HOST=$(hostname)
+export DISPLAY=:0
 
 # command line parsing fellows
 while getopts dr opt; do

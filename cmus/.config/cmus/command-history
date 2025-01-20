@@ -1,12 +1,23 @@
+set format_playlist_va= %-21%A%l %3n. %l %t (%a)%= %y %d %{?X!=0?%3X ?    }
+set format_playlist= %-21%a%l %2n. %t%= %y %d %{?X!=0?%3X ?    }
+set format_playlist= %-21%a%l %3n. %t%= %y %d %{?X!=0?%3X ?    }
+set format_playlist_va= %-21%A %3n. %l %t (%a)%= %y %d %{?X!=0?%3X ?    }
+set format_playlist= %-21%a %3n. %l %t%= %y %d %{?X!=0?%3X ?    }
+lo
+set continue=true
+set continue=false
+y
+q
+w
+add ap
+add ~/music/
 help
 fset helop
 fset
 help fset
 win-half-page-up
 update-cache 
-add ~/music/
 save
-q
 shell 
 set confirm_run=false
 filter metal

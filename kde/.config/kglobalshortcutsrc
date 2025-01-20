@@ -328,6 +328,7 @@ activate widget 57=none,none,Activate Icons-only Task Manager Widget
 activate widget 7=none,none,Activate System Tray Widget
 activate widget 73=none,none,Activate Digital Clock Widget
 activate widget 79=none,none,Activate Syncthing Widget
+activate widget 82=none,none,Activate Syncthing Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=none,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=none,Meta+Alt+P,Move keyboard focus between panels

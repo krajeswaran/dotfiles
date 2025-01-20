@@ -228,6 +228,8 @@ return {
               { event = "msg_show", find = "No more valid diagnostics to move to" },
               { event = "msg_show", find = "^%[nvim%-treesitter%]" },
               { event = "msg_show", find = "fewer lines$" },
+              { event = "msg_show", find = "^E486:" },
+              { event = "msg_show", find = "^/" },
               { event = "notify", find = "^Codeium*completion" },
               { event = "notify", find = "^codeium/codeium.log*" },
               { event = "notify", find = "All parsers are up%-to%-date" },

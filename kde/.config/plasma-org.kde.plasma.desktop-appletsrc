@@ -312,7 +312,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][13][Configuration]
-PreloadWeight=0
+PreloadWeight=30
 
 [Containments][7][Applets][14]
 immutability=1
@@ -361,7 +361,11 @@ immutability=1
 plugin=touchpad
 
 [Containments][7][Applets][32][Configuration]
-PreloadWeight=0
+PreloadWeight=5
+
+[Containments][7][Applets][32][Configuration][ConfigDialog]
+DialogHeight=570
+DialogWidth=760
 
 [Containments][7][Applets][55]
 immutability=1
@@ -442,7 +446,11 @@ plugin=martchus.syncthingplasmoid
 
 [Containments][7][Applets][82][Configuration]
 PreloadWeight=100
+passiveStates=
+preferIconsFromTheme=false
 selectedConfig=0
+showTabTexts=false
+size=25,25
 
 [Containments][7][ConfigDialog]
 DialogHeight=480

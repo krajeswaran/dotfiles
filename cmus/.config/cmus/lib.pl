@@ -133,6 +133,7 @@
 /home/kumaresan/music/mnt/Iron_Maiden_The_Trooper_HQ_.m4a
 /home/kumaresan/music/mnt/Iron Maiden - The Trooper (Official Video).m4a
 /home/kumaresan/music/mnt/Iron_Maiden_The_Wicker_Man.m4a
+/home/kumaresan/music/mnt/It's Raining. Listening Lofi in a cozy Soviet flat..mp3
 /home/kumaresan/music/mnt/I_Will_Survive.m4a
 /home/kumaresan/music/mnt/Jai Hanuman ｜ Navarasam - Thaikkudam Bridge - Live Sessions - Kappa TV [z6Myp7hpVUI].m4a
 /home/kumaresan/music/mnt/Jam by Thaikkudam Bridge - Music Mojo Kappa TV [EFie9C2PaM8].m4a
@@ -150,6 +151,8 @@
 /home/kumaresan/music/mnt/Kanye West - Good Morning.mp3
 /home/kumaresan/music/mnt/Karuppu_Vellai_Official_full_song_Vikram_Vedha.m4a
 /home/kumaresan/music/mnt/Kashmir_Led_Zeppelin.m4a
+/home/kumaresan/music/mnt/【Ｋａｔｙｕｓｈａ】(El pepo 69 original mix) LOFI REMIX.mp3
+/home/kumaresan/music/mnt/Katyusha (Катюша) lo-fi song cover [1 hour loop].mp3
 /home/kumaresan/music/mnt/Kavithai_Gundar_Emcee_jesz_Feat_Masta_k_vel_vel.m4a
 /home/kumaresan/music/mnt/Kerala Manninayi Lyric Video ｜ Comrade In America ( CIA ) ｜ Gopi Sundar ｜ Dulquer Salmaan [4I6WrjN_8-c].m4a
 /home/kumaresan/music/mnt/Khel Mandala - Thaikkudam Bridge - Music Mojo Season 3 - KappaTV [p3bvzKQsmm0].m4a
@@ -157,6 +160,9 @@
 /home/kumaresan/music/mnt/Khwaja - Thaikkudam Bridge - Music Mojo Season 3 - Kappa TV [C1DMPE21Mco].m4a
 /home/kumaresan/music/mnt/Kill Bill - Soundtrack - The Lonely Shepherd (Gheorghe Zamfir) [nsgHyzwmbnQ].m4a
 /home/kumaresan/music/mnt/Killer_Queen_Remastered_2011_.m4a
+/home/kumaresan/music/mnt/[ｌａｂｏｒｗａｖｅ]　ＬＥＮＩＮＧＲＡＤ　ＩＮ　ＬＯＶＥ.mp3
+/home/kumaresan/music/mnt/[ L A B O R W A V E ]  street politix.mp3
+/home/kumaresan/music/mnt/L A B O U R W A V E - Революционный марш.mp3
 /home/kumaresan/music/mnt/Lazy_Deep_Purple.ogg
 /home/kumaresan/music/mnt/Lean_on_Me.m4a
 /home/kumaresan/music/mnt/Led_Zeppein_Babe_im_gonna_leave_you.ogg
@@ -168,7 +174,11 @@
 /home/kumaresan/music/mnt/Led_Zeppelin_Rock_and_Roll_HQ.ogg
 /home/kumaresan/music/mnt/Led_Zeppelin_Stairway_To_Heaven_ᴴᴰ_Legendado_Tradução_PTBR_.m4a
 /home/kumaresan/music/mnt/Led_Zeppelin_Whole_Lotta_Love_Official_Music_Video_.m4a
+/home/kumaresan/music/mnt/L'Internationale but it's lofi hip hop.mp3
 /home/kumaresan/music/mnt/Livin_On_A_Prayer.m4a
+/home/kumaresan/music/mnt/Lofi Hip Hop Cultural Revolution Songs- The Internationale.mp3
+/home/kumaresan/music/mnt/Lofi Hip Hop Cultural Revolution Songs - 造反有理 It Is Right to Rebel.mp3
+/home/kumaresan/music/mnt/LoFi ParentiWaves LoFi Socialism.mp3
 /home/kumaresan/music/mnt/Lynyrd_Skynyrd_Free_Bird.ogg
 /home/kumaresan/music/mnt/Lyrics_Black_Sabbath_Heaven_And_Hell.m4a
 /home/kumaresan/music/mnt/Madai_thiranthu_Tamil_Rap.m4a
@@ -282,6 +292,7 @@
 /home/kumaresan/music/mnt/RATM - Mic Check [jG4Eur9hp6M].m4a
 /home/kumaresan/music/mnt/RATM - Vietnow [_1yjNRLCJBA].m4a
 /home/kumaresan/music/mnt/RATM - Wake Up [ahKvKhXeuZ8].m4a
+/home/kumaresan/music/mnt/Red Sun In The Sky - Lofi Remix.mp3
 /home/kumaresan/music/mnt/Runaway (Explicit)-Kanye West.m4a
 /home/kumaresan/music/mnt/Saalaikal (feat. Jordan Rudess) (Namah) [DVSm-w8bAzE].m4a
 /home/kumaresan/music/mnt/SAALAIKAL Feat JORDAN RUDESS ｜ Thaikkudam Bridge ｜ NAMAH [vje6rX4JeHY].m4a
@@ -567,6 +578,8 @@
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/SPB Hits/Thagidathadimi.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/SPB Hits/Vaasamilla.mp3
 /home/kumaresan/music/mnt/Songs/Tamil Movie Songs/By Singer/SPB Hits/Vasantham Aadi Vara.mp3
+/home/kumaresan/music/mnt/Soviet lofi beat to read theory to.mp3
+/home/kumaresan/music/mnt/Ｓｏｖｉｅｔｗａｖｅ｜ Ａｖｉａｍａｒｃｈ.mp3
 /home/kumaresan/music/mnt/SRI SASHTI.MP3
 /home/kumaresan/music/mnt/SRI SKANDA GURU.MP3
 /home/kumaresan/music/mnt/Stand_By_Me_Ben_E_King_1961.m4a
@@ -592,6 +605,7 @@
 /home/kumaresan/music/mnt/The_Beach_Boys_Don_t_Worry_Baby.m4a
 /home/kumaresan/music/mnt/The_Beach_Boys_Good_Vibrations.m4a
 /home/kumaresan/music/mnt/The_Beach_Boys_I_Get_Around.m4a
+/home/kumaresan/music/mnt/The Best of Bach [6JQm5aSjX6g].opus
 /home/kumaresan/music/mnt/The_Doors_Gloria_dirty_version_lyrics_.ogg
 /home/kumaresan/music/mnt/The_Doors_Love_Me_Two_Times.ogg
 /home/kumaresan/music/mnt/The_Doors_Riders_On_The_Storm_HQ_.ogg
@@ -604,6 +618,7 @@
 /home/kumaresan/music/mnt/The_Egles_New_Kid_In_Town.m4a
 /home/kumaresan/music/mnt/Theevandi - Thaikkudam Bridge - Official Music Video HD [qVeto9Et8dE].m4a
 /home/kumaresan/music/mnt/The Hobbit Soundtrack 18 Over Hill.mp3
+/home/kumaresan/music/mnt/The Internationale： Afrikaans (but it's lofi).mp3
 /home/kumaresan/music/mnt/The_Jimi_Hendrix_Experience_All_Along_The_Watchtower_Official_Audio_.m4a
 /home/kumaresan/music/mnt/The_Kinks_You_Really_Got_Me_Official_Audio_.m4a
 /home/kumaresan/music/mnt/Thekkini (feat. Chris Adler, Umayalpuram K Sivaraman) (Namah) [jp1LjdjFzqk].m4a
@@ -615,12 +630,17 @@
 /home/kumaresan/music/mnt/Top_Tracks_-_Opeth/Circle of the Tyrants (Celtic Frost Cover) - Opeth.m4a
 /home/kumaresan/music/mnt/Top_Tracks_-_Scorpions/Scorpions - Don't  believe her.m4a
 /home/kumaresan/music/mnt/Tribute to Johnson - Thaikkudam Bridge - Music Mojo Season 3 - KappaTV [IJ5eXS51s00].m4a
+/home/kumaresan/music/mnt/Ｔｒｉｂｕｔｅ　Ｔｏ　Ｓｏｖｉｅｔ　　Ｄｉｓｃｏ.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/Dire Straits - Walk Of Life-2.mp3
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/metalica - the unforgiven.mp3
 /home/kumaresan/music/mnt/Urumbu ｜ Navarasam - Thaikkudam Bridge - Live Sessions - Kappa TV [_BoR4YALKjk].m4a
+/home/kumaresan/music/mnt/USSR National Anthem but its lofi [xiDKVhdzDqKXxbA7RZFjJ4].m4a
+/home/kumaresan/music/mnt/USSR National Anthem Lofi.mp3
 /home/kumaresan/music/mnt/Vaaranam_Aayiram_Mundhinam_Video_Harris_Jayaraj_Suriya.ogg
 /home/kumaresan/music/mnt/Vaaranam Aayiram - Nenjukkul Peidhidum Video _ Harris Jayaraj _ Suriya.m4a
 /home/kumaresan/music/mnt/Vaaranam_Aayiram_Nenjukkul_Peidhidum_Video_Harris_Jayaraj_Suriya.ogg
+/home/kumaresan/music/mnt/[VAPORWAVE] ＂Communists - forward!＂ (2011) Russian music.mp3
+/home/kumaresan/music/mnt/(VAPORWAVE)Sailing the Seas Depends on the Helmsman- Chinese Communist Music.mp3
 /home/kumaresan/music/mnt/Vedalam - Aaluma Doluma Video _ Ajith _ Anirudh Ravichander.m4a
 /home/kumaresan/music/mnt/Viduthalai ｜ Navarasam - Thaikkudam Bridge - Live Sessions - Kappa TV [Jw2SwbOXgyc].m4a
 /home/kumaresan/music/mnt/Vikram_Vedha_Songs___Pogatha_Yennavittu_Song_with_Lyrics___R.Madhavan__Vijay_Sethupathi___Sam_C.S.m4a
@@ -638,6 +658,8 @@
 /home/kumaresan/music/mnt/Yogi_B_Natchatra_Kadhal_Yengge.m4a
 /home/kumaresan/music/mnt/Yogi_B_Natchatraz_Vaa_Vaa.m4a
 /home/kumaresan/music/mnt/You_Shook_Me_All_Night_Long.ogg
+/home/kumaresan/music/mnt/Маяк - Выше звезд.mp3
+/home/kumaresan/music/mnt/Подмосковные Вечера⧸Moscow Nights (Lo-Fi Piano).mp3
 /home/kumaresan/music/mnt/അപ്പൊഴേ പറഞ്ഞതാ... ൈതക്കുടം ബ്രിഡ്ജ്ജിലെ അച്ഛൻ എന്നാ എനർജിയാന്നേ Vanitha Film Awards 2019 Part 9 [nKM-0REXGT4].m4a
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/02. Solid rock.wma
 /home/kumaresan/music/mnt/Unknown Artist/Unknown Album/03. Expresso love.wma

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Bitwarden (AppImage)
-Exec=/opt/bitwarden/Bitwarden-2024.10.1-x86_64.AppImage %U
+Exec=/opt/bitwarden/bitwarden %U
 Terminal=false
 Type=Application
 Icon=bitwarden
@@ -11,4 +11,4 @@ MimeType=x-scheme-handler/bitwarden;
 Categories=Utility;
 X-AppImage-Integrate=
 X-Zap-Id=bitwarden
-TryExec=/opt/bitwarden/Bitwarden-2024.10.1-x86_64.AppImage
+TryExec=/opt/bitwarden/bitwarden

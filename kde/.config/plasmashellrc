@@ -17,13 +17,17 @@ eDP-1 HDMI-A-1 Width 2560x1080=567
 Height 1080=474
 Width 1920=700
 
+[FileDialogSize]
+2 screens: Height=643
+2 screens: Width=978
+
 [General]
 Number of Actions=0
 
 [KFileDialog Settings]
 Recent Files[$e]=Screenshot from 2020-10-01 19-35-46.png,file:$HOME/photos/Screenshot from 2020-10-01 19-35-46.png
 Recent URLs[$e]=file:$HOME/photos/
-detailViewIconSize=0
+detailViewIconSize=16
 listViewIconSize=0
 
 [KPropertiesDialog]
