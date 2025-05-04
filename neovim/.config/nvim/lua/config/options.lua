@@ -2,6 +2,10 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+local isEditor = function()
+  return os.getenv("TERMPURPOSE") == "editor"
+end
+
 -- Save undo history
 vim.opt.undofile = true
 vim.opt.undodir = os.getenv("HOME") .. "/" .. ".nvimundo"
@@ -27,6 +31,12 @@ vim.opt.showtabline = 0
 
 -- no Status column
 vim.opt.statuscolumn = ""
+if isEditor() then
+  vim.opt.signcolumn = "no"
+end
+
+-- root spec, move lsp to last
+vim.g.root_spec = { { ".git", "lua" }, "lsp", "cwd" }
 
 -- open last mark
 vim.cmd([[

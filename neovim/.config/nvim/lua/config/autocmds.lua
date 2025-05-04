@@ -15,6 +15,7 @@ elseif term == "editor" then
   vim.cmd([[
     colorscheme yin
     highlight EndOfBuffer guifg=#1c1c1c
+    set laststatus=0
     ]])
 else
   if term == "api" then

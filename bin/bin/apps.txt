@@ -115,3 +115,5 @@ xserver-xorg-input-mouse
 xserver-xorg-input-evdev
 vim
 kcolorchooser
+pcmanfm-qt
+imagemagick

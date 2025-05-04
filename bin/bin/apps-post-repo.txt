@@ -1,4 +1,5 @@
 firefox-devedition
 librewolf
 slack-desktop
-google-drive-ocamlfuse
+ungoogled-chrome
+rclone

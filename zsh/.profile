@@ -63,8 +63,8 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 command -v lsd >/dev/null 2>&1 && alias ls="lsd"
 
-# for node 18
-export PATH="/home/linuxbrew/.linuxbrew/opt/node@18/bin:$PATH"
-export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@18/lib"
-export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@18/include"
+# for node 22
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@22/bin:$PATH"
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/node@22/lib"
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/node@22/include"
 export MOZ_USE_XINPUT2=1

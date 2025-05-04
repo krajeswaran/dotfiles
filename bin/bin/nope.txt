@@ -22,3 +22,4 @@ unattended-upgrades
 libgnome-desktop*
 vim-tiny
 snapd
+nano

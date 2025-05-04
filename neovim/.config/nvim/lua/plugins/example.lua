@@ -13,15 +13,21 @@ return {
   -- disable trouble
   { "folke/trouble.nvim", enabled = false },
   { "akinsho/bufferline.nvim", enabled = false },
-  { "nvimdev/dashboard-nvim", enabled = false },
   { "folke/persistence.nvim", enabled = false },
-  { "dstein64/vim-startuptime", enabled = false },
   { "RRethy/vim-illuminate", enabled = false },
-  { "SmiteshP/nvim-navic", enabled = false },
   { "folke/flash.nvim", enabled = false },
-  { "ggandor/leap.nvim", enabled = false },
-  { "lukas-reineke/indent-blankline.nvim", enabled = false },
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      dashboard = { enabled = false },
+      indent = { enabled = false },
+      words = { enabled = false },
+      terminal = { enabled = true },
+      picker = { enabled = true },
+    },
+    keys = {},
+  },
 
   -- project mainily for yarn workspaces
   -- {
@@ -35,18 +41,18 @@ return {
   --   end,
   -- },
 
-  -- tsserver bullshit
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        ts_ls = {
-          enabled = false,
-          root_dir = require("lspconfig").util.root_pattern(".git"),
-        },
-      },
-    },
-  },
+  -- -- tsserver bullshit
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   opts = {
+  --     servers = {
+  --       ts_ls = {
+  --         enabled = false,
+  --         root_dir = require("lspconfig").util.root_pattern(".git"),
+  --       },
+  --     },
+  --   },
+  -- },
 
   -- themes
   { "pgdouyon/vim-yin-yang", enabled = isEditor() },
@@ -113,14 +119,13 @@ return {
     end,
   },
 
-  -- status line
+  -- -- status line
   {
     "nvim-lualine/lualine.nvim",
 
     event = "VeryLazy",
     opts = function()
       local icons = require("lazyvim.config").icons
-      local Util = require("lazyvim.util")
 
       return {
         options = {
@@ -149,31 +154,29 @@ return {
           lualine_x = {
             -- stylua: ignore
             { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 }, color = 'LineNr' },
+            -- stylua: ignore
             {
-              function()
-                return require("noice").api.status.command.get()
-              end,
-              cond = function()
-                return package.loaded["noice"] and require("noice").api.status.command.has()
-              end,
-              color = LazyVim.ui.fg("Statement"),
+              function() return require("noice").api.status.command.get() end,
+              cond = function() return package.loaded["noice"] and require("noice").api.status.command.has() end,
+              color = function() return { fg = Snacks.util.color("Statement") } end,
             },
             -- stylua: ignore
             {
               function() return require("noice").api.status.mode.get() end,
               cond = function() return package.loaded["noice"] and require("noice").api.status.mode.has() end,
-              color = LazyVim.ui.fg("Constant"),
+              color = function() return { fg = Snacks.util.color("Constant") } end,
             },
             -- stylua: ignore
             {
               function() return "  " .. require("dap").status() end,
-              cond = function () return package.loaded["dap"] and require("dap").status() ~= "" end,
-              color = LazyVim.ui.fg("Debug"),
+              cond = function() return package.loaded["dap"] and require("dap").status() ~= "" end,
+              color = function() return { fg = Snacks.util.color("Debug") } end,
             },
+            -- stylua: ignore
             {
               require("lazy.status").updates,
               cond = require("lazy.status").has_updates,
-              color = LazyVim.ui.fg("Special"),
+              color = function() return { fg = Snacks.util.color("Special") } end,
             },
             {
               "diff",
@@ -195,17 +198,6 @@ return {
       }
     end,
   },
-  -- override nvim-cmp and add cmp-emojiex
-  {
-    "hrsh7th/nvim-cmp",
-    dependencies = { "hrsh7th/cmp-emoji" },
-    --@param opts cmp.ConfigSchema
-    opts = function(_, opts)
-      local cmp = require("cmp")
-      opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
-    end,
-  },
-
   -- noice
   {
     "folke/noice.nvim",
@@ -247,51 +239,77 @@ return {
       },
     },
   },
-  -- undotree
-  { "simnalamburt/vim-mundo", cmd = "MundoToggle" },
 
-  -- change some telescope options and a keymap to browse plugin files
+  -- blink
   {
-    "nvim-telescope/telescope.nvim",
+    "saghen/blink.cmp",
+    dependencies = {
+      "moyiz/blink-emoji.nvim",
+      {
+        "Kaiser-Yang/blink-cmp-dictionary",
+        dependencies = { "nvim-lua/plenary.nvim" },
+      },
+    },
+    opts = {
+
+      -- experimental signature help support
+      -- signature = { enabled = true },
+      sources = {
+        -- adding any nvim-cmp sources here will enable them
+        -- with blink.compat
+        compat = {},
+        default = function()
+          if isEditor() then
+            return { "lsp", "path", "buffer", "dictionary", "emoji" }
+          else
+            return { "lsp", "path", "buffer", "snippets", "emoji" }
+          end
+        end,
+        cmdline = {},
+        providers = {
+          emoji = {
+            module = "blink-emoji",
+            name = "Emoji",
+            score_offset = 15, -- Tune by preference
+            opts = { insert = true }, -- Insert emoji (default) or complete its name
+          },
+          dictionary = {
+            module = "blink-cmp-dictionary",
+            name = "Dict",
+            -- Make sure this is at least 2.
+            -- 3 is recommended
+            min_keyword_length = 3,
+            opts = {
+              dictionary_files = { vim.fn.expand("/usr/share/dict/words") },
+              -- options for blink-cmp-dictionary
+            },
+          },
+        },
+      },
+
+      keymap = {
+        preset = "enter",
+        ["<Tab>"] = { "select_next", "fallback" },
+        ["<S-Tab>"] = { "select_prev", "fallback" },
+      },
+    },
+  },
+
+  -- fzf-lua override default mapping
+  {
+    "ibhagwan/fzf-lua",
     keys = {
-      -- add a keymap to browse plugin files
-      -- stylua: ignore
-      {
-        '<leader>n',
-        "<cmd>lua require('telescope.builtin').find_files({cwd='~/notes'})<CR>",
-        desc = "Search notes"
-      },
-      {
-        "<leader>C",
-        "[[:e $MYVIMRC <CR>]]",
-        desc = "Edit config",
-      },
-      {
-        "<leader>o",
-        "<cmd>Telescope find_files<cr>",
-        desc = "Project files",
-      },
-      { "<leader>p", "<cmd>Telescope oldfiles<cr>", desc = "Recent" },
-      {
-        "<leader>k",
-        "<cmd>lua require('telescope.builtin').help_tags()<CR>",
-        desc = "Search help tags",
-      },
-      {
-        "z=",
-        "<cmd>lua require('telescope.builtin').spell_suggest()<CR>",
-        desc = "Spelling suggestions",
-      },
-      -- {
-      --   "<leader><space>",
-      --   "<cmd>Telescope find_files<CR>",
-      --   desc = "Quick find files",
-      -- },
-      {
-        "<leader>/",
-        "<cmd>Telescope live_grep<CR>",
-        desc = "Quick find files",
-      },
+      { "<leader><space>", vim.NIL },
+    },
+  },
+
+  -- undotree
+  {
+    "jiaoshijie/undotree",
+    dependencies = "nvim-lua/plenary.nvim",
+    config = true,
+    keys = { -- load the plugin only when using it's keybinding:
+      { "<leader>z", "<cmd>lua require('undotree').toggle()<cr>", desc = "Undo tree" },
     },
   },
 
@@ -303,28 +321,19 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        "flake8",
-        "prettierd",
-        "eslint-lsp",
-        "autopep8",
-        "black",
         "fixjson",
-        "goimports",
+        "debugpy",
+        "js-debug-adapter",
+        "node-debug2-adapter",
+        "chrome-debug-adapter",
         "yamlfmt",
-        "actionlint",
-        "golangci-lint",
+        "ruff",
         "textlint",
-        "vale",
         "css-lsp",
-        "dockerfile-language-server",
-        "golangci-lint-langserver",
-        "gopls",
         "html-lsp",
         "json-lsp",
+        "yaml-language-server",
         "marksman",
-        "pyright",
-        "svelte-language-server",
-        "json-to-struct",
       },
     },
   },
@@ -349,29 +358,6 @@ return {
     },
   },
   {
-    "williamboman/mason-lspconfig.nvim",
-    lazy = true,
-    opts = {
-      handlers = {
-        function(server_name)
-          if server_name == "ts_ls" then
-            return
-          end
-        end,
-      },
-    },
-  },
-  {
-    "mxsdev/nvim-dap-vscode-js",
-    lazy = true,
-    opts = {
-      debugger_path = "~/.local/share/nvim/mason/packages/js-debug-adapter",
-      debugger_cmd = { "js-debug-adapter" },
-      adapters = { "pwa-node", "pwa-chrome" },
-    },
-    dependencies = { "mfussenegger/nvim-dap" },
-  },
-  {
     "folke/todo-comments.nvim",
     lazy = true,
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -388,19 +374,6 @@ return {
     "mfussenegger/nvim-dap",
     lazy = true,
     cmd = { "DapContinue", "DapLoadLaunchJSON" },
-    dependencies = {
-      {
-        "williamboman/mason.nvim",
-        opts = function(_, opts)
-          opts.ensure_installed = opts.ensure_installed or {}
-          table.insert(opts.ensure_installed, "js-debug-adapter")
-        end,
-      },
-      {
-        "microsoft/vscode-js-debug",
-        build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
-      },
-    },
     config = function()
       local dap = require("dap")
       dap.adapters["pwa-node"] = {
@@ -446,16 +419,19 @@ return {
             name = "Attach",
             processId = require("dap.utils").pick_process,
             skipFiles = { "<node_internals>/**", "node_modules/**" },
+            restart = true,
             sourceMaps = true,
-            cwd = "${workspaceFolder}/src",
-            protocol = "inspector",
-            localRoot = "${workspaceFolder}/src",
-            remoteRoot = "/home/kumaresan/src/tange-server/",
-            outFiles = { "${workspaceFolder}/dist/**/**/*", "!**/node_modules/**" },
-            resolveSourceMapLocations = {
-              "${workspaceFolder}/src/**",
-              "!**/node_modules/**",
-            },
+            webRoot = "${workspaceFolder}/src",
+            outDir = "${workspaceFolder}/dist",
+            -- cwd = "${workspaceFolder}/src",
+            -- protocol = "inspector",
+            -- localRoot = "${workspaceFolder}/src",
+            -- remoteRoot = "/home/kumaresan/src/tange-server/",
+            -- outFiles = { "${workspaceFolder}/dist/**/**/*", "!**/node_modules/**" },
+            -- resolveSourceMapLocations = {
+            --   "${workspaceFolder}/src/**",
+            --   "!**/node_modules/**",
+            -- },
           },
           {
             type = "pwa-chrome",
@@ -484,32 +460,28 @@ return {
     end,
   },
   -- {
-  --   "rest-nvim/rest.nvim",
-  --   ft = "http",
-  --   tag = "v1.2.1",
-  --   pin = true,
-  --   dependencies = { "luarocks.nvim" },
-  --   lazy = true,
-  --   config = function()
-  --     vim.keymap.set("n", "<Leader>ht", "<Plug>RestNvim<CR>", { desc = "Execute RestNvim" })
-  --   end,
+  --   "stevearc/overseer.nvim",
+  --   cmd = {
+  --     "OverseerRun",
+  --     "OverseerRunCmd",
+  --     "OverseerToggle",
+  --   },
   -- },
-  {
-    "pmizio/typescript-tools.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-    ft = { "typescript", "typescriptreact", "javascript", "javascriptreact", "angular", "svelte" },
-    opts = {},
-  },
+  -- {
+  --   "pmizio/typescript-tools.nvim",
+  --   dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+  --   ft = { "typescript", "typescriptreact", "javascript", "javascriptreact", "angular", "svelte" },
+  --   opts = {},
+  -- },
   {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        -- Also need to install @prettier/plugin-xml in project:
-        -- https://github.com/prettier/plugin-xml
-        javascript = { "prettierd" },
-        javascriptreact = { "prettierd" },
-        typescript = { "prettierd" },
-        typescriptreact = { "prettierd" },
+        lua = { "stylua" },
+        javascript = { "biome-check" },
+        javascriptreact = { "biome-check" },
+        typescript = { "biome-check" },
+        typescriptreact = { "biome-check" },
       },
     },
   },
@@ -521,7 +493,7 @@ return {
   --     "nvim-treesitter/nvim-treesitter",
   --   },
   -- },
-  { "samoshkin/vim-mergetool", cmd = "MergetoolStart" },
+  { "samoshkin/vim-mergetool", cmd = "MergetoolStart", lazy = false },
   {
     "folke/zen-mode.nvim",
     -- lazy = true,
@@ -573,21 +545,6 @@ return {
   },
 
   {
-    "echasnovski/mini.surround",
-    opts = {
-      mappings = {
-        add = "sa", -- Add surrounding in Normal and Visual modes
-        delete = "sd", -- Delete surrounding
-        find = "sf", -- Find surrounding (to the right)
-        find_left = "sF", -- Find surrounding (to the left)
-        highlight = "sh", -- Highlight surroundng
-        replace = "sr", -- Replace surroundng
-        update_n_lines = "sn", -- Update `n_lines`
-      },
-    },
-  },
-
-  {
     "krajeswaran/taskpaper.vim",
     lazy = true,
 
@@ -595,67 +552,4 @@ return {
     ft = { "markdown", "taskpaper" },
     cond = isEditor,
   },
-  {
-    "uga-rosa/cmp-dictionary",
-    cond = isEditor,
-    config = function()
-      require("cmp_dictionary").setup({
-        dic = {
-          ["*"] = { "/usr/share/dict/words" },
-          spelllang = { en = "/usr/share/hunspell/en_US.dic" },
-        },
-      })
-    end,
-  }, -- coding
-  -- Use <tab> for completion and snippets (supertab)
-  -- first: disable default <tab> and <s-tab> behavior in LuaSnip
-  {
-    "L3MON4D3/LuaSnip",
-    keys = function()
-      return {}
-    end,
-  },
-  -- then: setup supertab in cmp
-  -- {
-  --   "hrsh7th/nvim-cmp",
-  --   dependencies = {
-  --     "hrsh7th/cmp-emoji",
-  --   },
-  --   ---@param opts cmp.ConfigSchema
-  --   opts = function(_, opts)
-  --     local has_words_before = function()
-  --       unpack = unpack or table.unpack
-  --       local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  --       return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-  --     end
-  --
-  --     local luasnip = require("luasnip")
-  --     local cmp = require("cmp")
-  --
-  --     opts.mapping = vim.tbl_extend("force", opts.mapping, {
-  --       ["<Tab>"] = cmp.mapping(function(fallback)
-  --         if cmp.visible() then
-  --           cmp.select_next_item()
-  --           -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
-  --           -- this way you will only jump inside the snippet region
-  --         elseif luasnip.expand_or_jumpable() then
-  --           luasnip.expand_or_jump()
-  --         elseif has_words_before() then
-  --           cmp.complete()
-  --         else
-  --           fallback()
-  --         end
-  --       end, { "i", "s" }),
-  --       ["<S-Tab>"] = cmp.mapping(function(fallback)
-  --         if cmp.visible() then
-  --           cmp.select_prev_item()
-  --         elseif luasnip.jumpable(-1) then
-  --           luasnip.jump(-1)
-  --         else
-  --           fallback()
-  --         end
-  --       end, { "i", "s" }),
-  --     })
-  --   end,
-  -- },
 }
