@@ -50,7 +50,7 @@ xo() {
 }
 
 # replace caps with escape
-setxkbmap -option caps:escape
+#setxkbmap -option caps:escape
 
 # # asdf vm stuff
 # . $HOME/.asdf/asdf.sh

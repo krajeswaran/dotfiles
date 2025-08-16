@@ -119,11 +119,13 @@ enforcedecoEnabled=true
 flipswitchEnabled=true
 highlightwindowEnabled=true
 kdesnapassistEnabled=false
+krohnkiteEnabled=false
 kwin4_effect_frozenappEnabled=false
 kwin4_effect_maximizeEnabled=false
 kwin4_effect_scaleEnabled=true
 minimizeallEnabled=false
 overviewEnabled=true
+poloniumEnabled=false
 sheetEnabled=true
 snaphelperEnabled=true
 sticky-window-snappingEnabled=true
@@ -167,6 +169,28 @@ showOtherDesktopsWindows=true
 textColor=false
 transitionDuration=50
 
+[Script-krohnkite]
+dockOrderLeft=2
+dockOrderRight=1
+dockOrderTop=3
+floatSkipPagerWindows=true
+floatingClass=kitty kwrite
+ignoreClass=krunner,yakuake,spectacle,kded5,xwaylandvideobridge,plasmashell,ksplashqml,org.kde.plasmashell,org.kde.polkit-kde-authentication-agent-1,org.kde.kruler,kruler,kwin_wayland,ksmserver-logout-greeter, librewolf, Slack,kitty kwrite
+ignoreScreen=e-DP1
+notificationDuration=500
+screenGapBetween=3
+screenGapBottom=1
+screenGapLeft=3
+screenGapRight=3
+screenGapTop=1
+
+[Script-polonium]
+Borders=2
+EngineType=1
+FilterProcess=krunner, yakuake, kded, polkit, plasmashell, systemsettings, kwrite, Slack, librewolf
+KeepTiledBelow=false
+ResizeAmount=28
+
 [TabBox]
 ActivitiesMode=0
 ApplicationsMode=0
@@ -178,7 +202,6 @@ LayoutName=thumbnail_grid
 MinimizedMode=0
 MultiScreenMode=0
 ShowDesktopMode=0
-ShowTabBox=true
 SwitchingMode=0
 TouchBorderActivate=9
 TouchBorderAlternativeActivate=9
@@ -215,6 +238,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][4656e9c7-29d2-5198-aef7-e64495a298e9]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][588f3662-ec9c-5fda-92d8-f83690f94be0]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
+
 [Tiling][5b7a5ba4-43cc-5910-8e98-f358f9d54b43]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -235,6 +261,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][c52362da-eea2-53bc-9181-4f25fcca6e55]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][d0cf93c7-1313-58b2-8f66-b04b70d149be]
+tiles={"layoutDirection":"horizontal","tiles":[]}
 
 [TouchEdges]
 Bottom=None
@@ -259,7 +288,6 @@ ElectricBorderMaximize=true
 ElectricBorderTiling=true
 ElectricBorders=0
 FocusPolicy=ClickToFocus
-FocusStealingPreventionLevel=2
 GeometryTip=true
 HideUtilityWindowsForInactive=true
 InactiveTabsSkipTaskbar=false
@@ -267,7 +295,7 @@ MaximizeButtonLeftClickCommand=Maximize
 MaximizeButtonMiddleClickCommand=Maximize (horizontal only)
 MaximizeButtonRightClickCommand=Maximize (horizontal only)
 NextFocusPrefersMouse=false
-Placement=Smart
+Placement=Centered
 RollOverDesktops=true
 SeparateScreenFocus=true
 ShadeHover=false
@@ -277,7 +305,9 @@ TitlebarDoubleClickCommand=Maximize
 WindowSnapZone=10
 
 [Xwayland]
-Scale=1.25
+Scale=1.15
+XwaylandEavesdrops=All
+XwaylandEavesdropsMouse=true
 
 [org.kde.kdecoration2]
 BorderSize=Tiny
@@ -286,4 +316,5 @@ ButtonsOnLeft=
 ButtonsOnRight=IX
 CloseOnDoubleClickOnMenu=false
 ShowToolTips=false
+library=org.kde.kwin.aurorae
 theme=__aurorae__svg__Pixel-Grey

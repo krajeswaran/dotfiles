@@ -21,6 +21,9 @@ Seen=true
 [Applications][google-chrome]
 Seen=true
 
+[Applications][librewolf]
+Seen=true
+
 [Applications][org.bleachbit.BleachBit]
 ShowPopups=false
 

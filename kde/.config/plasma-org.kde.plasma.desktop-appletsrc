@@ -31,6 +31,7 @@ ItemGeometries-1536x960=
 ItemGeometries-1920x1080=
 ItemGeometries-1920x1200=
 ItemGeometries-2560x1080=
+ItemGeometries-2944x1242=
 ItemGeometriesHorizontal=
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
 formfactor=0
@@ -75,11 +76,12 @@ plugin=org.kde.plasma.lock_logout
 PreloadWeight=0
 
 [Containments][2][Applets][21][Configuration][ConfigDialog]
-DialogHeight=480
-DialogWidth=640
+DialogHeight=540
+DialogWidth=720
 
 [Containments][2][Applets][21][Configuration][General]
 show_lockScreen=false
+show_requestLogoutScreen=false
 show_requestShutDown=false
 show_suspendToRam=true
 
@@ -142,11 +144,13 @@ plugin=org.kde.plasma.icontasks
 PreloadWeight=0
 
 [Containments][2][Applets][66][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
+DialogHeight=540
+DialogWidth=720
 
 [Containments][2][Applets][66][Configuration][General]
-launchers=applications:librewolf.desktop,applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:chromium.desktop,applications:chrome-kjgfgldnnfoeklkmfkjfagphfepbbdan-Default.desktop,applications:firefox-devedition.desktop
+groupingAppIdBlacklist=com.github.iwalton3.jellyfin-media-player.desktop
+groupingLauncherUrlBlacklist=applications:com.github.iwalton3.jellyfin-media-player.desktop
+launchers=applications:librewolf.desktop,applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:chromium.desktop,applications:chrome-kjgfgldnnfoeklkmfkjfagphfepbbdan-Default.desktop,applications:firefox-dev.desktop
 maxStripes=1
 middleClickAction=Close
 showOnlyCurrentActivity=false
@@ -166,6 +170,7 @@ customDateFormat=ddd d\s
 dateFormat=custom
 enabledCalendarPlugins=/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/astronomicalevents.so,/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/holidaysevents.so
 firstDayOfWeek=1
+fontWeight=400
 selectedTimeZones=America/New_York,Local,Asia/Manila
 
 [Containments][2][Applets][73][Configuration][ConfigDialog]
@@ -184,12 +189,13 @@ AppletOrder=25;66;62;65;6;73;21
 
 [Containments][28]
 ItemGeometries-0x0=Applet-74:1440,128,208,80,0;Applet-81:1424,240,288,256,0;Applet-83:1376,528,400,240,0;
+ItemGeometries-1670x1043=Applet-74:1344,160,208,80,0;
 ItemGeometries-1920x1080=Applet-74:1440,128,208,80,0;Applet-78:1648,128,80,80,0;
-ItemGeometries-1920x1200=Applet-74:1456,144,208,80,0;Applet-81:1440,256,288,256,0;Applet-83:1376,528,400,400,0;
+ItemGeometries-1920x1200=Applet-74:1456,144,208,80,0;Applet-81:1440,256,288,256,0;
 ItemGeometries-2560x1080=Applet-74:1440,128,208,80,0;Applet-81:1424,240,288,256,0;Applet-83:1376,528,400,240,0;
 ItemGeometries-3840x2160=Applet-74:1440,128,208,80,0;
 ItemGeometries-640x480=Applet-74:1536,112,208,80,0;
-ItemGeometriesHorizontal=Applet-74:1456,144,208,80,0;Applet-81:1440,256,288,256,0;Applet-83:1376,528,400,400,0;
+ItemGeometriesHorizontal=Applet-74:1344,160,208,80,0;
 ItemGeometriesVertical=Applet-74:1440,128,208,80,0;
 activityId=eaf11a9b-32d8-4c20-9ebc-233e522ba4e2
 formfactor=0
@@ -204,7 +210,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][28][Applets][74][Configuration]
-PreloadWeight=72
+PreloadWeight=82
 popupHeight=500
 popupWidth=440
 
@@ -212,25 +218,11 @@ popupWidth=440
 customDateFormat=MMM d
 dateDisplayFormat=BelowTime
 dateFormat=custom
+fontWeight=400
 
 [Containments][28][Applets][74][Configuration][ConfigDialog]
 DialogHeight=600
 DialogWidth=800
-
-[Containments][28][Applets][81]
-immutability=1
-plugin=fokus
-
-[Containments][28][Applets][81][Configuration][ConfigDialog]
-DialogHeight=570
-DialogWidth=760
-
-[Containments][28][Applets][81][Configuration][General]
-autostart=true
-
-[Containments][28][Applets][83]
-immutability=1
-plugin=org.kde.plasma.mediacontroller
 
 [Containments][28][ConfigDialog]
 DialogHeight=570
@@ -241,7 +233,7 @@ PreloadWeight=0
 
 [Containments][28][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=362
+ToolBoxButtonX=400
 
 [Containments][28][Wallpaper][org.kde.color][General]
 Color=19,19,26
@@ -312,7 +304,7 @@ immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][7][Applets][13][Configuration]
-PreloadWeight=40
+PreloadWeight=100
 
 [Containments][7][Applets][14]
 immutability=1
@@ -326,7 +318,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=100
+PreloadWeight=68
 
 [Containments][7][Applets][15][Configuration][General]
 showPercentage=true
@@ -442,31 +434,31 @@ size=25,25
 
 [Containments][7][Applets][82]
 immutability=1
-plugin=martchus.syncthingplasmoid
+plugin=org.kde.plasma.cameraindicator
 
-[Containments][7][Applets][82][Configuration]
-PreloadWeight=100
-passiveStates=
-preferIconsFromTheme=false
+[Containments][7][Applets][83]
+immutability=1
+plugin=org.kde.plasma.brightness
+
+[Containments][7][Applets][83][Configuration]
+PreloadWeight=23
 selectedConfig=0
-showTabTexts=false
-size=25,25
 
 [Containments][7][ConfigDialog]
-DialogHeight=480
-DialogWidth=640
+DialogHeight=540
+DialogWidth=720
 
 [Containments][7][Configuration]
 PreloadWeight=0
 
 [Containments][7][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,touchpad,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.clipboard,martchus.syncthingplasmoid,org.kde.kscreen
-hiddenItems=touchpad,org.kde.plasma.keyboardlayout,ibus-ui-gtk3,KDE Daemon,Klipper,org.kde.kscreen
+extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.clipboard,martchus.syncthingplasmoid,org.kde.kscreen,org.kde.plasma.cameraindicator,org.kde.plasma.brightness
+hiddenItems=touchpad,org.kde.plasma.keyboardlayout,ibus-ui-gtk3,KDE Daemon,Klipper,org.kde.kscreen,org.kde.plasma.notifications,org.kde.plasma.brightness
 iconSpacing=1
-knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.kscreen,martchus.syncthingplasmoid
+knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.kscreen,martchus.syncthingplasmoid,org.kde.plasma.cameraindicator,org.kde.plasma.brightness
 scaleIconsToFit=true
 shownItems=org.kde.plasma.volume,Slack1,org.kde.plasma.clipboard,org.kde.plasma.bluetooth
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,5,desktop:/fw8ben.pdf,desktop:/signal-2020-01-14-190309.jpg,desktop:/ventoy-1.0.22-linux.tar.gz,desktop:/ATTACHMENT-001_13_01_-112937522.pdf,desktop:/ventoy-1.0.22,1,2,desktop:/android-studio-ide-193.6821437-linux.tar.gz,desktop:/firefox-82.0b9.tar.bz2
+itemsOnDisabledScreens=
 screenMapping=desktop:/68514038-2996-4312-9111-6513485f23c9.mobileprovision,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.653) 0005.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.821) 0033.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.904) 0035.png,2,desktop:/AML Compliance Program Training_07_2021.pptx,2,desktop:/gemh1ps(1).pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.571) 0027.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.529) 0026.png,2,desktop:/input.907455Z.csv,2,desktop:/gpay.mp4,2,desktop:/SBI-Branch-Master.xls,2,desktop:/splash screen.zip,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.237) 0019.png,2,desktop:/grant-laptop-order.pdf,2,desktop:/tang-payment-arch.pdf,2,desktop:/recent_promo_users.csv,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.779) 0032.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.570) 0003.png,2,desktop:/Resume_Karl_Marx_Lopez.pdf,2,desktop:/ghmh103.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.903) 0011.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.987) 0013.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.654) 0029.png,2,desktop:/Screenshot_1607802420.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.611) 0004.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.362) 0022.png,2,desktop:/dup_fones.txt,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.112) 0016.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:28.113) 0040.png,2,desktop:/tang-payment-arch.html,2,desktop:/0ad8eb10-057f-4361-82aa-086368dfb939.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.737) 0031.png,2,desktop:/custom-filtered-query_result_2020-10-15T15 15 29.680677Z.csv.csv,2,desktop:/JD - Software Engineer\\, Mobile apps.pdf,2,desktop:/chitta-4033.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.612) 0028.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:28.196) 0042.png,2,desktop:/app-universal-release-bitrise-signed.apk,2,desktop:/sigc.p12,2,desktop:/passport_kr.jpg,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:28.071) 0039.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.195) 0018.png,2,desktop:/dev.p12,2,desktop:/artem.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.988) 0037.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.404) 0023.png,2,desktop:/chitta4032,2,desktop:/chitta4031,2,desktop:/madhula_school_fee.pdf,2,desktop:/JD- Product Engineer API.docx,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.320) 0021.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.695) 0006.png,2,desktop:/2020 Business Plan Tang Group\\, Inc._TANG app(1).pdf,2,desktop:/recent_recharges_using_promos.csv,2,desktop:/key.json,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.945) 0012.png,2,desktop:/Remittance Payout Flow.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.279) 0020.png,2,desktop:/[External] Remittance Payouts API - v1.0.pdf,2,desktop:/Kumaresan--Passport page 1.jpg,2,desktop:/pc-api-9055317732463083684-227-43429a085002.json,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:28.029) 0038.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.696) 0030.png,2,desktop:/Kumaresan Passport--page 2.jpg,2,desktop:/2020 Business Plan Tang Group\\, Inc._TANG app.pdf,2,desktop:/jigar.pdf,2,desktop:/multiple_cards.csv,2,desktop:/MobilePivotFlowPrototype.zip,2,desktop:/chitta4031.pdf,2,desktop:/signal-2021-07-08-144413.jpeg,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.820) 0009.png,2,desktop:/chitta4032.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.778) 0008.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.946) 0036.png,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.070) 0015.png,2,desktop:/harsha.pdf,2,desktop:/gemh1ps.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.570) 0002.png,2,desktop:/JD-UED.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.862) 0010.png,2,desktop:/chitta-4033,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:25.318) 0001.png,2,desktop:/prem-resume.pdf,2,desktop:/2.ods,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.863) 0034.png,2,desktop:/aatukutti.pdf,2,desktop:/FD-258.pdf,2,desktop:/query_result_2021-01-02T09 28 17.907455Z.csv,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:26.736) 0007.png,2,desktop:/Updated Flow for Phone Numbers with Restrictions_.docx,2,desktop:/tangdev.developerprofile,2,desktop:/Products.csv,2,desktop:/20210305 Offer letter + employee agremeent TANG app Kumaresan Rajeswaran_vF signed RK.pdf,2,desktop:/Sabari Resume may_2021.pdf,2,desktop:/TWS1 User Manual_SkojaHlIr.pdf,2,desktop:/fb.mp4,2,desktop:/distri.p12,2,desktop:/gemh101.pdf,2,desktop:/20201224 KR Letter of employment.docx,2,desktop:/Sample APIs DOC-240920-1445 copy.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.487) 0025.png,2,desktop:/query_result_2021-05-07T10 36 22.481881Z.json,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:28.155) 0041.png,2,desktop:/verify-email-segment-flow.svg,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.028) 0014.png,2,desktop:/CBP_UXFlows_14Nov14.pdf,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.446) 0024.png,2,desktop:/tang-admin-master.zip,2,desktop:/ffc3dfd9055595cc.log,2,desktop:/ACHQ_StatusTrackingAPI_Merchants_v2.0.pdf,2,desktop:/MFAIndividualIdentityVerificationFormAffidavit.pdf,2,desktop:/pc-api-9055317732463083684-227-fe6a37b8fb79.json,2,desktop:/The.Expanse.S05E02.WEBRip.x264-ION10 (00:32:27.154) 0017.png,2,desktop:/multiple_cards_2.csv,2

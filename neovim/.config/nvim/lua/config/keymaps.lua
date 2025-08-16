@@ -26,3 +26,7 @@ end, { desc = "Search help tags" })
 vim.keymap.set("n", "z=", function()
   require("fzf-lua").spell_suggest()
 end, { desc = "Spelling suggestions" })
+
+vim.keymap.set("n", "<leader>e", function()
+  require("fyler").open()
+end, { desc = "Open Explorer" })

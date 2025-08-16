@@ -1,0 +1,1 @@
+export SAL_USE_VCLPLUGIN=kf5

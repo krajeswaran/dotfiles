@@ -1,9 +1,9 @@
 updateInfoAdded=true
 
 [ark.upd]
-ctime=1739822833
+ctime=1754942784
 done=add-hamburgermenu-to-toolbar
-mtime=1677536372
+mtime=1751362818
 
 [bismuth_new_logger.upd]
 ctime=1729144059
@@ -51,8 +51,8 @@ done=rename-leading-padding
 mtime=1677470375
 
 [filepicker.upd]
-ctime=1729143999
-mtime=1675588980
+ctime=1754942673
+mtime=1714822829
 
 [fonts_akregator.upd]
 ctime=1729144051
@@ -73,9 +73,9 @@ done=Plasma_Fonts_Kate
 mtime=1683632294
 
 [gtkconfig.upd]
-ctime=1729144043
+ctime=1754942744
 done=gtk_theme,dont_use_gtk_css_for_window_decorations,remove_deprecated_gtk4_option
-mtime=1683632190
+mtime=1743564957
 
 [gwenview.upd]
 ctime=1710232259
@@ -173,9 +173,9 @@ done=ksmserver_update_loginMode_value_default_enum
 mtime=1683632276
 
 [kwin.upd]
-ctime=1729144051
+ctime=1754942618
 done=replace-scalein-with-scale,port-minimizeanimation-effect-to-js,port-scale-effect-to-js,port-dimscreen-effect-to-js,auto-bordersize,animation-speed,desktop-grid-click-behavior,no-swap-encourage,make-translucency-effect-disabled-by-default,remove-flip-switch-effect,remove-cover-switch-effect,remove-cubeslide-effect,remove-xrender-backend,enable-scale-effect-by-default,overview-group-plugin-id,animation-speed-cleanup,replace-cascaded-zerocornered
-mtime=1683632228
+mtime=1751975107
 
 [kwinrules.upd]
 ctime=1729144051
@@ -196,6 +196,11 @@ mtime=1683632276
 ctime=1695616912
 mtime=1677382464
 
+[migrate-calendar-to-plugin-id.upd]
+ctime=1754942627
+done=migrate-calendar-plugins
+mtime=1751975292
+
 [okular.upd]
 ctime=1731141576
 done=annotation-toolbar,builtin-annotations
@@ -206,10 +211,45 @@ ctime=1664531949
 done=bismuth-old-conf-ui
 mtime=1643219624
 
+[plasma-systemmonitor.upd]
+ctime=1754942725
+done=migrate-calendar-plugins,memory-column
+mtime=1751975266
+
+[plasma6.0-remove-dpi-settings.upd]
+ctime=1754942627
+done=memory-column,plasma6.0-remove-dpi-settings
+mtime=1751975292
+
+[plasma6.0-remove-old-shortcuts.upd]
+ctime=1754942627
+done=plasma6.0-remove-dpi-settings,plasma6.0-remove-old-shortcuts
+mtime=1751975292
+
+[plasma6.3-update-clipboard-database-2-to-3.upd]
+ctime=1754942627
+done=plasma6.0-remove-old-shortcuts,plasma6.3-update-clipboard-database-2-to-3
+mtime=1751975292
+
 [plasmashell-5.27-use-panel-thickness-in-default-group.upd]
 ctime=1729144052
 done=plasmashell-5.27-use-panel-thickness-in-default-group
 mtime=1683632330
+
+[plasmashell-6.0-keep-custom-position-of-panels.upd]
+ctime=1754942627
+done=plasma6.3-update-clipboard-database-2-to-3,plasmashell-6.0-keep-custom-position-of-panels
+mtime=1751975292
+
+[plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels.upd]
+ctime=1754942627
+done=plasmashell-6.0-keep-custom-position-of-panels,plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels
+mtime=1751975292
+
+[spectacle.upd]
+ctime=1754942682
+done=plasmashell-6.0-keep-default-floating-setting-for-plasma-5-panels,24.02.0-video_format,24.02.0-keep_old_save_location,24.02.0-rename_settings,24.02.0-keep_old_filename_templates,24.05.2-change_placeholder_format
+mtime=1746554490
 
 [spectacle_clipboard.upd]
 ctime=1729144045

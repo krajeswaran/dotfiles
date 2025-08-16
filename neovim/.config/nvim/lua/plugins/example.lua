@@ -29,31 +29,6 @@ return {
     keys = {},
   },
 
-  -- project mainily for yarn workspaces
-  -- {
-  --   "ahmedkhalf/project.nvim",
-  --   lazy = true,
-  --   config = function()
-  --     require("project_nvim").setup({
-  --       patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json", "project.clj" },
-  --       ignore_lsp = { "tsserver", "eslint" },
-  --     })
-  --   end,
-  -- },
-
-  -- -- tsserver bullshit
-  -- {
-  --   "neovim/nvim-lspconfig",
-  --   opts = {
-  --     servers = {
-  --       ts_ls = {
-  --         enabled = false,
-  --         root_dir = require("lspconfig").util.root_pattern(".git"),
-  --       },
-  --     },
-  --   },
-  -- },
-
   -- themes
   { "pgdouyon/vim-yin-yang", enabled = isEditor() },
 
@@ -265,7 +240,7 @@ return {
             return { "lsp", "path", "buffer", "snippets", "emoji" }
           end
         end,
-        cmdline = {},
+        -- cmdline = {},
         providers = {
           emoji = {
             module = "blink-emoji",
@@ -544,6 +519,24 @@ return {
     end,
   },
 
+  {
+    "A7Lavinraj/fyler.nvim",
+    dependencies = { "echasnovski/mini.icons" },
+    branch = "stable",
+    -- lazy = "true",
+    opts = {
+      -- Changes explorer closing behaviour when a file get selected
+      close_on_select = false,
+      -- Changes explorer behaviour to hijack NETRW
+      default_explorer = true,
+      -- Changes Indentation marker properties
+      views = {
+        explorer = {
+          kind = "split_left_most",
+        },
+      },
+    },
+  },
   {
     "krajeswaran/taskpaper.vim",
     lazy = true,

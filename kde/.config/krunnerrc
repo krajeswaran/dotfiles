@@ -20,6 +20,7 @@ helprunnerEnabled=false
 katesessionsEnabled=false
 konsoleprofilesEnabled=false
 krunner_appstreamEnabled=false
+krunner_webshortcutsEnabled=false
 kwinEnabled=true
 locationsEnabled=true
 org.kde.activities2Enabled=false
@@ -32,6 +33,9 @@ servicesEnabled=true
 shellEnabled=true
 webshortcutsEnabled=false
 windowsEnabled=true
+
+[Plugins][Favorites]
+plugins=krunner_sessions,krunner_powerdevil,krunner_services,krunner_systemsettings
 
 [Runners][Dictionary]
 triggerWord=dict
