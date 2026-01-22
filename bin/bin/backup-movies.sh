@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if $(mountpoint -q /movies) && $(mountpoint -q /movies1) 
 then
