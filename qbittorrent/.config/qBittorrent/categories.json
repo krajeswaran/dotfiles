@@ -1,0 +1,8 @@
+{
+    "movies-radarr": {
+        "save_path": "/tv/dumps"
+    },
+    "tv-sonarr": {
+        "save_path": "/tv/tv-sonarr"
+    }
+}
