@@ -117,3 +117,4 @@ vim
 kcolorchooser
 pcmanfm-qt
 imagemagick
+trash-cli

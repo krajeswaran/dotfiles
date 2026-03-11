@@ -20,7 +20,7 @@ elseif term == "editor" then
 else
   if term == "api" then
     vim.cmd([[colorscheme tokyonight-night]])
-  else
+  elseif not vim.g.vscode then
     vim.cmd([[colorscheme tokyonight-storm]])
   end
 end
@@ -32,19 +32,19 @@ autocmd!
 set spelllang=en
 
 autocmd FileType markdown,text,taskpaper set autowriteall
-autocmd TextChanged,TextChangedI scratch.md silent write  
+autocmd TextChanged,TextChangedI scratch.md silent write
 
 autocmd BufRead,BufNewFile todo.md :ZenMode
 autocmd BufRead,BufNewFile todo.md set ft=taskpaper
 autocmd BufRead,BufNewFile todo.md set laststatus=0
 autocmd BufWritePost todo.md call timer_start(1000, {-> execute("echo ''", "")})
-autocmd TextChanged,TextChangedI todo.md silent write  
+autocmd TextChanged,TextChangedI todo.md silent write
 autocmd VimEnter todo.md  setlocal complete=k/~/notes/journal/**/*
 
-autocmd BufRead,BufNewFile todo.md set ft=taskpaper 
+autocmd BufRead,BufNewFile todo.md set ft=taskpaper
 autocmd BufRead,BufNewFile todo.md set statusline=
 autocmd BufWritePost */journal/** call timer_start(1000, {-> execute("echo ''", "")})
-autocmd TextChanged,TextChangedI */journal/** silent write  
+autocmd TextChanged,TextChangedI */journal/** silent write
 autocmd VimEnter */journal/**  setlocal complete=k/~/notes/journal/**/*
 augroup END
 ]])
@@ -52,7 +52,7 @@ augroup END
 _G.JournalMode = function()
   -- open journal file with date
   local fname =
-    vim.fn.resolve(os.getenv("HOME") .. "/notes/journal/" .. os.date("%Y") .. "/" .. os.date("%d%b") .. ".md")
+      vim.fn.resolve(os.getenv("HOME") .. "/notes/journal/" .. os.date("%Y") .. "/" .. os.date("%d%b") .. ".md")
   local skeleton = vim.fn.resolve(os.getenv("HOME") .. "/notes/journal/" .. "journal.skeleton")
   vim.api.nvim_command("e " .. fname)
   vim.api.nvim_command("0r " .. skeleton)
@@ -63,7 +63,7 @@ end
 _G.JournalDeserveMode = function()
   -- open journal file with date
   local fname =
-    vim.fn.resolve(os.getenv("HOME") .. "/notes/deserve/" .. os.date("%Y") .. "/" .. os.date("%d%b") .. ".md")
+      vim.fn.resolve(os.getenv("HOME") .. "/notes/deserve/" .. os.date("%Y") .. "/" .. os.date("%d%b") .. ".md")
   vim.api.nvim_command("e " .. fname)
   vim.api.nvim_command("set autowriteall")
   vim.api.nvim_command("set spell!")

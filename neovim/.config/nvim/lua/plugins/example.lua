@@ -11,26 +11,86 @@ end
 
 return {
   -- disable trouble
-  { "folke/trouble.nvim", enabled = false },
-  { "akinsho/bufferline.nvim", enabled = false },
-  { "folke/persistence.nvim", enabled = false },
-  { "RRethy/vim-illuminate", enabled = false },
-  { "folke/flash.nvim", enabled = false },
+  { "folke/trouble.nvim",          enabled = false },
+  { "akinsho/bufferline.nvim",     enabled = false },
+  { "folke/persistence.nvim",      enabled = false },
+  { "RRethy/vim-illuminate",       enabled = false },
+  { "folke/flash.nvim",            enabled = false },
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
   {
     "folke/snacks.nvim",
     opts = {
       dashboard = { enabled = false },
-      indent = { enabled = false },
+      indent = { enabled = true },
       words = { enabled = false },
       terminal = { enabled = true },
-      picker = { enabled = true },
+      explorer = {
+        enabled = true,
+        replace_netrw = true,
+      },
+      picker = {
+        enabled = true,
+        sources = {
+          explorer = {
+            actions = {
+              explorer_del = function(picker)
+                local _, res = pcall(function()
+                  return vim.fn.confirm("Do you want to put files into trash?", "&Yes\n&No\n&Cancel", 1, "Question")
+                end)
+                if res ~= 1 then
+                  return
+                end
+                for _, item in ipairs(picker:selected({ fallback = true })) do
+                  vim.fn.jobstart("trash " .. item.file, {
+                    detach = true,
+                    on_exit = function()
+                      picker:update()
+                    end,
+                  })
+                end
+              end,
+            },
+          },
+        },
+      },
     },
     keys = {},
   },
 
+  -- LSP
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        vtsls = {
+          root_dir = require("lspconfig.util").root_pattern(".git")
+          -- root_dir = function(fname)
+          --   local lsp = require("lspconfig.util")
+          --   local root = lsp.root_pattern(".git")
+          --   if root then
+          --     return root
+          --   end
+          -- end,
+        },
+      },
+      settings = {
+        html = {
+          format = {
+            templating = true,
+            wrapLineLength = 200,
+            wrapAttributes = "auto",
+          },
+          hover = {
+            documentation = true,
+            references = true,
+          },
+        },
+      },
+    },
+  },
+  --
   -- themes
-  { "pgdouyon/vim-yin-yang", enabled = isEditor() },
+  { "pgdouyon/vim-yin-yang",   enabled = isEditor() },
 
   -- git signs not in editor mode
   {
@@ -169,7 +229,7 @@ return {
             { "location", padding = { left = 0, right = 1 }, color = "LineNr" },
           },
         },
-        extensions = { "neo-tree", "lazy" },
+        extensions = { "lazy" },
       }
     end,
   },
@@ -197,17 +257,17 @@ return {
               { event = "msg_show", find = "fewer lines$" },
               { event = "msg_show", find = "^E486:" },
               { event = "msg_show", find = "^/" },
-              { event = "notify", find = "^Codeium*completion" },
-              { event = "notify", find = "^codeium/codeium.log*" },
-              { event = "notify", find = "All parsers are up%-to%-date" },
+              { event = "notify",   find = "^Codeium*completion" },
+              { event = "notify",   find = "^codeium/codeium.log*" },
+              { event = "notify",   find = "All parsers are up%-to%-date" },
               { event = "msg_show", find = "%d+ lines, %d+ bytes" },
               { event = "msg_show", find = "%d+L, %d+B" },
               { event = "msg_show", find = "^Hunk %d+ of %d" },
               { event = "msg_show", find = "%d+ change" },
               { event = "msg_show", find = "%d+ line" },
               { event = "msg_show", find = "%d+ more line" },
-              { event = "notify", find = "completion request failed" }, -- Codeium
-              { event = "notify", find = "No information available" }, -- Hover doc
+              { event = "notify",   find = "completion request failed" }, -- Codeium
+              { event = "notify",   find = "No information available" },  -- Hover doc
             },
           },
         },
@@ -242,10 +302,12 @@ return {
         end,
         -- cmdline = {},
         providers = {
+          -- defaults to `{ 'buffer' }`
+          lsp = { fallbacks = {} },
           emoji = {
             module = "blink-emoji",
             name = "Emoji",
-            score_offset = 15, -- Tune by preference
+            score_offset = 15,        -- Tune by preference
             opts = { insert = true }, -- Insert emoji (default) or complete its name
           },
           dictionary = {
@@ -267,14 +329,6 @@ return {
         ["<Tab>"] = { "select_next", "fallback" },
         ["<S-Tab>"] = { "select_prev", "fallback" },
       },
-    },
-  },
-
-  -- fzf-lua override default mapping
-  {
-    "ibhagwan/fzf-lua",
-    keys = {
-      { "<leader><space>", vim.NIL },
     },
   },
 
@@ -458,6 +512,15 @@ return {
         typescript = { "biome-check" },
         typescriptreact = { "biome-check" },
       },
+      -- Set default options
+      default_format_opts = {
+        lsp_format = "prefer",
+      },
+      -- format_on_save = {
+      --   -- These options will be passed to conform.format()
+      --   timeout_ms = 500,
+      --   lsp_format = "first",
+      -- },
     },
   },
   -- {
@@ -481,16 +544,16 @@ return {
         -- * an absolute number of cells when > 1
         -- * a percentage of the width / height of the editor when <= 1
         -- * a function that returns the width or the height
-        width = 75, -- width of the Zen window
-        height = 0.9, -- height of the Zen window
+        width = 75,               -- width of the Zen window
+        height = 0.9,             -- height of the Zen window
         options = {
-          signcolumn = "no", -- disable signcolumn
-          number = false, -- disable number column
+          signcolumn = "no",      -- disable signcolumn
+          number = false,         -- disable number column
           relativenumber = false, -- disable relative numbers
-          cursorline = false, -- disable cursorline
-          cursorcolumn = false, -- disable cursor column
-          foldcolumn = "0", -- disable fold column
-          list = false, -- disable whitespace characters
+          cursorline = false,     -- disable cursorline
+          cursorcolumn = false,   -- disable cursor column
+          foldcolumn = "0",       -- disable fold column
+          list = false,           -- disable whitespace characters
         },
       },
       plugins = {
@@ -498,11 +561,11 @@ return {
         -- comment the lines to not apply the options
         options = {
           enabled = true,
-          ruler = false, -- disables the ruler text in the cmd line area
+          ruler = false,   -- disables the ruler text in the cmd line area
           showcmd = false, -- disables the command in the last line of the screen
           -- you may turn on/off statusline in zen mode by setting 'laststatus'
           -- statusline will be shown only if 'laststatus' == 3
-          laststatus = 0, -- turn off the statusline in zen mode
+          laststatus = 0,               -- turn off the statusline in zen mode
         },
         gitsigns = { enabled = false }, -- disables git signs
       },
@@ -517,25 +580,6 @@ return {
       require("treesj").setup({ --[[ your config ]]
       })
     end,
-  },
-
-  {
-    "A7Lavinraj/fyler.nvim",
-    dependencies = { "echasnovski/mini.icons" },
-    branch = "stable",
-    -- lazy = "true",
-    opts = {
-      -- Changes explorer closing behaviour when a file get selected
-      close_on_select = false,
-      -- Changes explorer behaviour to hijack NETRW
-      default_explorer = true,
-      -- Changes Indentation marker properties
-      views = {
-        explorer = {
-          kind = "split_left_most",
-        },
-      },
-    },
   },
   {
     "krajeswaran/taskpaper.vim",

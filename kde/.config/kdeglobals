@@ -145,8 +145,8 @@ Size=48
 Size=32
 
 [DirSelect Dialog]
-DirSelectDialog Size=849,588
-History Items[$e]=file:$HOME/src/tangapp,file:$HOME/dumps,file:$HOME/photos,file:$HOME/dumps,file:$HOME/videos,file:$HOME/dumps,file:$HOME/videos/mnt/tv/Yellowjackets.S01.1080p.WEBRip.x265[eztv.re],file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
+DirSelectDialog Size=888,601
+History Items[$e]=file:$HOME/src/tangapp,file:$HOME/src/tangapp,file:$HOME/src/tangapp,file:$HOME/src/tangapp,file:$HOME/dumps,file:$HOME/photos,file:$HOME/dumps,file:$HOME/videos,file:$HOME/dumps,file:$HOME/videos/mnt/tv/Yellowjackets.S01.1080p.WEBRip.x265[eztv.re],file:$HOME/dumps/MateriaDark,file:$HOME/dumps/cherry-solid,file:$HOME/dumps/MoeDark,file:$HOME/dumps/Moe,file:$HOME/dumps
 Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x98\x00\x00\x02\xb9\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [Emoticons]
@@ -199,11 +199,11 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=true
-Sort by=Date
+Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=true
-Speedbar Width=89
+Speedbar Width=262
 View Style=Detail
 listViewIconSize=0
 

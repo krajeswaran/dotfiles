@@ -15,6 +15,9 @@ ShowBadges=false
 ShowInHistory=false
 ShowPopups=false
 
+[Applications][cursor]
+Seen=true
+
 [Applications][firefox]
 Seen=true
 

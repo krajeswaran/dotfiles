@@ -4,7 +4,7 @@
 
 -- change some telescope options and a keymap to browse plugin files
 vim.keymap.set("n", "<leader>n", function()
-  require("fzf-lua").files({ cwd = "~/notes" })
+  Snacks.picker.files({ cwd = "~/notes" })
 end, { desc = "Search notes" })
 
 vim.keymap.set("n", "<leader><space>", function()
@@ -12,21 +12,21 @@ vim.keymap.set("n", "<leader><space>", function()
 end, { desc = "Smart picker" })
 
 vim.keymap.set("n", "<leader>o", function()
-  require("fzf-lua").files()
+  Snacks.picker.files()
 end, { desc = "Project files" })
 
 vim.keymap.set("n", "<leader>p", function()
-  require("fzf-lua").oldfiles()
+  Snacks.picker.recent()
 end, { desc = "Old files" })
 
 vim.keymap.set("n", "<leader>k", function()
-  require("fzf-lua").helptags()
+  Snacks.picker.help()
 end, { desc = "Search help tags" })
 
 vim.keymap.set("n", "z=", function()
-  require("fzf-lua").spell_suggest()
+  Snacks.picker.spelling()
 end, { desc = "Spelling suggestions" })
 
 vim.keymap.set("n", "<leader>e", function()
-  require("fyler").open()
-end, { desc = "Open Explorer" })
+  Snacks.explorer()
+end, { desc = "Open parent directory" })

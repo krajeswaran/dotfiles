@@ -148,8 +148,8 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][2][Applets][66][Configuration][General]
-groupingAppIdBlacklist=com.github.iwalton3.jellyfin-media-player.desktop
-groupingLauncherUrlBlacklist=applications:com.github.iwalton3.jellyfin-media-player.desktop
+groupingAppIdBlacklist=com.github.iwalton3.jellyfin-media-player.desktop,kitty.desktop
+groupingLauncherUrlBlacklist=applications:kitty.desktop,applications:com.github.iwalton3.jellyfin-media-player.desktop
 launchers=applications:librewolf.desktop,applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:chromium.desktop,applications:chrome-kjgfgldnnfoeklkmfkjfagphfepbbdan-Default.desktop,applications:firefox-dev.desktop
 maxStripes=1
 middleClickAction=Close
@@ -210,7 +210,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][28][Applets][74][Configuration]
-PreloadWeight=82
+PreloadWeight=87
 popupHeight=500
 popupWidth=440
 
@@ -318,7 +318,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][7][Applets][15][Configuration]
-PreloadWeight=68
+PreloadWeight=100
 
 [Containments][7][Applets][15][Configuration][General]
 showPercentage=true
@@ -347,6 +347,9 @@ plugin=org.kde.plasma.networkmanagement
 
 [Containments][7][Applets][26][Configuration]
 PreloadWeight=100
+
+[Containments][7][Applets][26][Configuration][General]
+currentDetailsTab=details
 
 [Containments][7][Applets][32]
 immutability=1
@@ -413,12 +416,8 @@ PreloadWeight=42
 [Containments][7][Applets][76][Configuration]
 PreloadWeight=42
 
-[Containments][7][Applets][77]
-immutability=1
-plugin=org.kde.plasma.clipboard
-
 [Containments][7][Applets][77][Configuration]
-PreloadWeight=100
+PreloadWeight=42
 
 [Containments][7][Applets][79]
 immutability=1
@@ -441,8 +440,23 @@ immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][7][Applets][83][Configuration]
-PreloadWeight=23
+PreloadWeight=42
+
+[Containments][7][Applets][84]
+immutability=1
+plugin=org.kde.plasma.clipboard
+
+[Containments][7][Applets][84][Configuration]
+PreloadWeight=65
+
+[Containments][7][Applets][85][Configuration]
+PreloadWeight=100
+passiveStates=
+preferIconsFromTheme=false
 selectedConfig=0
+showDownloads=false
+showTabTexts=false
+size=25,25
 
 [Containments][7][ConfigDialog]
 DialogHeight=540
@@ -452,12 +466,12 @@ DialogWidth=720
 PreloadWeight=0
 
 [Containments][7][General]
-extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.battery,org.kde.plasma.clipboard,martchus.syncthingplasmoid,org.kde.kscreen,org.kde.plasma.cameraindicator,org.kde.plasma.brightness
+extraItems=org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.plasma.battery,martchus.syncthingplasmoid,org.kde.kscreen,org.kde.plasma.cameraindicator,org.kde.plasma.brightness,org.kde.plasma.clipboard
 hiddenItems=touchpad,org.kde.plasma.keyboardlayout,ibus-ui-gtk3,KDE Daemon,Klipper,org.kde.kscreen,org.kde.plasma.notifications,org.kde.plasma.brightness
 iconSpacing=1
 knownItems=org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.kupapplet,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.vault,org.kde.kscreen,martchus.syncthingplasmoid,org.kde.plasma.cameraindicator,org.kde.plasma.brightness
 scaleIconsToFit=true
-shownItems=org.kde.plasma.volume,Slack1,org.kde.plasma.clipboard,org.kde.plasma.bluetooth
+shownItems=org.kde.plasma.volume,Slack1,org.kde.plasma.bluetooth,org.kde.plasma.clipboard
 
 [ScreenMapping]
 itemsOnDisabledScreens=

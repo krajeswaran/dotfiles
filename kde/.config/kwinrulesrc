@@ -62,8 +62,8 @@ wmclass=firefox-aurora
 wmclassmatch=2
 
 [General]
-count=4
-rules=1,2,3,c99422bf-9d89-4631-b193-c761892e8a34
+count=5
+rules=1,2,3,c99422bf-9d89-4631-b193-c761892e8a34,ee24bd7e-1ba4-49e0-9bd6-77c9452fa7ee
 
 [ac2cbdff-e248-4238-a8b5-c129428b0486]
 Description=Application settings for
@@ -108,4 +108,11 @@ title=Android Emulator - emu:5554
 titlematch=1
 types=1
 wmclasscomplete=true
+wmclassmatch=1
+
+[ee24bd7e-1ba4-49e0-9bd6-77c9452fa7ee]
+Description=jf
+screen=1
+screenrule=2
+wmclass=com.github.iwalton3.jellyfin-media-player
 wmclassmatch=1

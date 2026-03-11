@@ -15,7 +15,7 @@ TapToClick=true
 TapToClick=true
 
 [Mouse]
-X11LibInputXAccelProfileFlat=false
+X11LibInputXAccelProfileFlat=true
 XLbInptAccelProfileFlat=false
 XLbInptMiddleEmulation=false
 XLbInptNaturalScroll=false

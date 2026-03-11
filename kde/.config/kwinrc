@@ -59,11 +59,19 @@ TouchBorderActivateClass=9
 [Effect-Zoom]
 InitialZoom=1
 
+[Effect-blur]
+NoiseStrength=11
+
 [Effect-desktopgrid]
 BorderActivate=9
 TabBox=false
 TabBoxAlternative=false
 TouchBorderActivate=9
+
+[Effect-diminactive]
+DimDesktop=true
+DimPanels=true
+Strength=20
 
 [Effect-presentwindows]
 BorderActivate=9
@@ -235,6 +243,12 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][27175eeb-e0e0-5b8b-95e4-40b9c28e7f0f]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][2cac8859-36ae-506b-afa1-d96cf234a737]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][3dec99a3-e8af-5118-b600-675b63fa7af2]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][4656e9c7-29d2-5198-aef7-e64495a298e9]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
@@ -242,6 +256,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
 
 [Tiling][5b7a5ba4-43cc-5910-8e98-f358f9d54b43]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][63fef758-5b42-5024-bfa5-7e74e0ab0a99]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][72ad67cf-b4bc-5fde-92c9-1ee123acd6a5]
@@ -295,7 +312,7 @@ MaximizeButtonLeftClickCommand=Maximize
 MaximizeButtonMiddleClickCommand=Maximize (horizontal only)
 MaximizeButtonRightClickCommand=Maximize (horizontal only)
 NextFocusPrefersMouse=false
-Placement=Centered
+Placement=UnderMouse
 RollOverDesktops=true
 SeparateScreenFocus=true
 ShadeHover=false

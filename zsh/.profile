@@ -49,6 +49,10 @@ xo() {
   xdg-open "$@" 2>/dev/null
 }
 
+playtube() {
+  mpv --no-audio-display --ytdl-format=bestaudio --term-playing-msg="Title: ${media-title}" "ytdl://:$*"
+}
+
 # replace caps with escape
 #setxkbmap -option caps:escape
 
@@ -62,6 +66,8 @@ xo() {
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 command -v lsd >/dev/null 2>&1 && alias ls="lsd"
+
+export PATH=$PATH:$HOME/.maestro/bin
 
 # for node 22
 export PATH="/home/linuxbrew/.linuxbrew/opt/node@22/bin:$PATH"

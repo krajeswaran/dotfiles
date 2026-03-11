@@ -36,7 +36,7 @@ if isEditor() then
 end
 
 -- root spec, move lsp to last
-vim.g.root_spec = { { ".git", "lua" }, "lsp", "cwd" }
+vim.g.root_spec = { { ".git", "lua" }, "cwd" }
 
 -- open last mark
 vim.cmd([[

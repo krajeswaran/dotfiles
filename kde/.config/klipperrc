@@ -5,10 +5,11 @@ StripWhiteSpace=false
 [General]
 AutoStart=true
 IgnoreImages=false
+IgnoreSelection=false
 MaxClipItems=30
 Number of Actions=0
 SyncClipboards=true
-Version=5.27.5
+Version=6.3.6
 
 [Notification Messages]
 StartAutomatically=true
