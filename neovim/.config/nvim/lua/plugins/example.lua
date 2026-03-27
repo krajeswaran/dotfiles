@@ -503,6 +503,15 @@ return {
   --   opts = {},
   -- },
   {
+    'stevearc/quicker.nvim',
+    ft = "qf",
+    ---@module "quicker"
+    ---@type quicker.SetupOptions
+    opts = {
+      wrap = true,
+    },
+  },
+  {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
