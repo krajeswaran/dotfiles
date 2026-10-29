@@ -1,6 +1,9 @@
 [$Version]
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,kwin.upd:overview-group-plugin-id,kwin.upd:animation-speed-cleanup,kwin.upd:replace-cascaded-zerocornered,bismuth_new_logger.upd:bismuth-new-logger
 
+[Activities][LastVirtualDesktop]
+eaf11a9b-32d8-4c20-9ebc-233e522ba4e2=180d68a3-26ea-4434-95d0-eeb68d341a49
+
 [Compositing]
 AllowTearing=false
 Backend=OpenGL
@@ -131,6 +134,7 @@ krohnkiteEnabled=false
 kwin4_effect_frozenappEnabled=false
 kwin4_effect_maximizeEnabled=false
 kwin4_effect_scaleEnabled=true
+macsimize6Enabled=true
 minimizeallEnabled=false
 overviewEnabled=true
 poloniumEnabled=false
@@ -191,6 +195,9 @@ screenGapBottom=1
 screenGapLeft=3
 screenGapRight=3
 screenGapTop=1
+
+[Script-macsimize6]
+enableIfOnlyOne=true
 
 [Script-polonium]
 Borders=2
@@ -279,6 +286,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][c52362da-eea2-53bc-9181-4f25fcca6e55]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][c9503c40-1364-5893-9aeb-bd390d7b5545]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][d0cf93c7-1313-58b2-8f66-b04b70d149be]
 tiles={"layoutDirection":"horizontal","tiles":[]}
 
@@ -327,11 +337,10 @@ XwaylandEavesdrops=All
 XwaylandEavesdropsMouse=true
 
 [org.kde.kdecoration2]
-BorderSize=Tiny
-BorderSizeAuto=false
+BorderSize=Normal
 ButtonsOnLeft=
-ButtonsOnRight=IX
+ButtonsOnRight=AX
 CloseOnDoubleClickOnMenu=false
 ShowToolTips=false
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__Pixel-Grey
+theme=__aurorae__svg__ActiveAccentFrame

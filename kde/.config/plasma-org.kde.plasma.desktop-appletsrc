@@ -148,9 +148,9 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][2][Applets][66][Configuration][General]
-groupingAppIdBlacklist=com.github.iwalton3.jellyfin-media-player.desktop,kitty.desktop
-groupingLauncherUrlBlacklist=applications:kitty.desktop,applications:com.github.iwalton3.jellyfin-media-player.desktop
-launchers=applications:librewolf.desktop,applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:chromium.desktop,applications:chrome-kjgfgldnnfoeklkmfkjfagphfepbbdan-Default.desktop,applications:firefox-dev.desktop
+groupingAppIdBlacklist=kitty.desktop,com.github.iwalton3.jellyfin-media-player.desktop
+groupingLauncherUrlBlacklist=applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:kitty.desktop
+launchers=applications:librewolf.desktop,applications:com.github.iwalton3.jellyfin-media-player.desktop,applications:chromium.desktop,applications:chrome-kjgfgldnnfoeklkmfkjfagphfepbbdan-Default.desktop,applications:firefox-devedition.desktop
 maxStripes=1
 middleClickAction=Close
 showOnlyCurrentActivity=false
@@ -435,19 +435,26 @@ size=25,25
 immutability=1
 plugin=org.kde.plasma.cameraindicator
 
+[Containments][7][Applets][82][Configuration]
+PreloadWeight=55
+
+[Containments][7][Applets][82][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][7][Applets][83]
 immutability=1
 plugin=org.kde.plasma.brightness
 
 [Containments][7][Applets][83][Configuration]
-PreloadWeight=42
+PreloadWeight=47
 
 [Containments][7][Applets][84]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][7][Applets][84][Configuration]
-PreloadWeight=65
+PreloadWeight=100
 
 [Containments][7][Applets][85][Configuration]
 PreloadWeight=100

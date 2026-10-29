@@ -353,8 +353,6 @@ return {
         "fixjson",
         "debugpy",
         "js-debug-adapter",
-        "node-debug2-adapter",
-        "chrome-debug-adapter",
         "yamlfmt",
         "ruff",
         "textlint",
@@ -520,6 +518,7 @@ return {
         javascriptreact = { "biome-check" },
         typescript = { "biome-check" },
         typescriptreact = { "biome-check" },
+        python = { "ruff" },
       },
       -- Set default options
       default_format_opts = {

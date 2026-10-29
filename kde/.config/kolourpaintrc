@@ -19,9 +19,9 @@ Color2=0,0,255
 
 [General Settings]
 Color Similarity=0
-Draw AntiAliased=false
+Draw AntiAliased=true
 First Time=false
-Last Document Size=1313,2048
+Last Document Size=2005,924
 More Effects - Last Effect=6
 Open Images in the Same Window=false
 Resize Scale - Last Keep Aspect=true
@@ -56,26 +56,26 @@ Maximum Color Depth=image/x-eps:32,image/x-portable-bitmap:1,image/x-portable-gr
 SaveInLossyMimeTypeDontAskAgain=false
 
 [Recent Files]
-File1[$e]=$HOME/dumps/1000056964_framed.png
-File10[$e]=$HOME/src/fx-predictor/output.png
-File2[$e]=$HOME/src/web/assets/images/security-image.png
-File3[$e]=$HOME/src/tangapp/mobile/ios/TANGapp/Images.xcassets/BootSplashLogo.imageset/bootsplash_logo.png
-File4[$e]=$HOME/src/tangapp/mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
-File5[$e]=$HOME/src/tangapp/mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png
-File6[$e]=$HOME/src/tangapp/mobile/android/app/src/main/res/drawable-hdpi/bootsplash_logo.png
-File7[$e]=$HOME/src/tangapp/mobile/android/app/src/main/res/drawable-xxhdpi/bootsplash_logo.png
-File8[$e]=$HOME/src/tangapp/mobile/android/app/src/main/res/drawable-xxhdpi/notification_icon.png
-File9[$e]=$HOME/src/fx-predictor/historical.png
-Name1[$e]=1000056964_framed.png
-Name10[$e]=output.png
-Name2[$e]=security-image.png
-Name3[$e]=bootsplash_logo.png
-Name4[$e]=ic_launcher.png
-Name5[$e]=ic_launcher_foreground.png
-Name6[$e]=bootsplash_logo.png
-Name7[$e]=bootsplash_logo.png
-Name8[$e]=notification_icon.png
-Name9[$e]=historical.png
+File1[$e]=$HOME/src/tangapp/mobile/android/app/src/main/res/drawable-hdpi/bootsplash_logo.png
+File10[$e]=$HOME/dumps/GMV Trend.svg
+File2[$e]=$HOME/src/tangapp/mobile/android/app/src/main/res/drawable-xxhdpi/bootsplash_logo.png
+File3[$e]=$HOME/src/tangapp/mobile/android/app/src/main/res/drawable-xxhdpi/notification_icon.png
+File4[$e]=$HOME/src/fx-predictor/historical.png
+File5[$e]=$HOME/src/fx-predictor/output.png
+File6[$e]=$HOME/src/tangapp/lib/assets/images/Exclusive.svg
+File7[$e]=$HOME/src/tangapp/lib/assets/images/Crown.svg
+File8[$e]=$HOME/src/tangapp/lib/assets/images/Membership.svg
+File9[$e]=$HOME/dumps/download
+Name1[$e]=bootsplash_logo.png
+Name10[$e]=GMV Trend.svg
+Name2[$e]=bootsplash_logo.png
+Name3[$e]=notification_icon.png
+Name4[$e]=historical.png
+Name5[$e]=output.png
+Name6[$e]=Exclusive.svg
+Name7[$e]=Crown.svg
+Name8[$e]=Membership.svg
+Name9[$e]=download
 
 [Save Preview Settings]
 Geometry=0,0,213,153
@@ -86,7 +86,7 @@ Font Family=Comfortaa
 Font Size=48
 
 [Tool Settings]
-Last Used Tool=8
+Last Used Tool=3
 Tool Widget Brush Col=0
 Tool Widget Brush Row=1
 Tool Widget Eraser Size Col=0
@@ -97,8 +97,8 @@ Tool Widget Line Width Col=0
 Tool Widget Line Width Row=2
 Tool Widget Opaque/Transparent Col=0
 Tool Widget Opaque/Transparent Row=1
-Tool Widget Spraycan Size Col=0
-Tool Widget Spraycan Size Row=1
+Tool Widget Spraycan Size Col=1
+Tool Widget Spraycan Size Row=0
 
 [Undo/Redo Settings]
 Max Limit=500

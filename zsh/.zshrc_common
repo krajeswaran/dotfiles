@@ -4,10 +4,6 @@ export AWS_CLI_AUTO_PROMPT=on
 alias ll="ls -larth"
 alias llm="ls -larth | less -R"
 alias rm='rm -i'
-alias revo="ssh thesaneone@thesanerevo"
-alias router="ssh root@192.168.1.1"
-alias box="ssh thesaneone@thesanebox"
-alias pi="ssh pi@thesanepi"
 alias diskusage="du -h -d 1"
 alias sshfs='sshfs -C -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3'
 # newly born hostname, child or project?
@@ -31,8 +27,6 @@ alias ls="ls --color"
 command -v lsd >/dev/null 2>&1 && alias ls="lsd" 
 alias vi="nvim" 
 command -v fdfind >/dev/null 2>&1 && alias fd="fdfind" 
-alias ebp='eb --profile=prod'
-alias awsp='aws --profile=prod'
 
 hvectoh264() {
     ffmpeg -xerror -hide_banner -threads 4 -i "$1"   -c:a copy -c:s copy -c:v libx264 "$2"

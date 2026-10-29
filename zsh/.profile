@@ -45,12 +45,20 @@ export CCACHE_COMPRESS=1
 #export LD_LIBRARY_PATH=${ANDROID_SDK_ROOT}/emulator/lib64:${ANDROID_SDK_ROOT}/emulator/lib64/qt/lib
 export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
 
+alias router="kitten ssh root@192.168.2.1"
+alias mac="kitten ssh kumaresan@192.168.2.3"
+alias pi="kitten ssh pi@thesanepi"
+
 xo() {
   xdg-open "$@" 2>/dev/null
 }
 
 playtube() {
-  mpv --no-audio-display --ytdl-format=bestaudio --term-playing-msg="Title: ${media-title}" "ytdl://:$*"
+  if [[ $1 == *playlist* ]]; then
+    mpv --shuffle --no-audio-display --no-video --ytdl-format=bestaudio --ytdl-raw-options="yes-playlist=" "$1"
+  else
+    mpv --no-audio-display --ytdl-format=bestaudio "ytdl://ytsearch:$*"
+  fi
 }
 
 # replace caps with escape
