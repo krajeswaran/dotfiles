@@ -1,0 +1,4 @@
+# Shared network for the services, like compose's default network.
+
+[Network]
+Driver=bridge

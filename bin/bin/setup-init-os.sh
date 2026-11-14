@@ -15,15 +15,15 @@ echo "---------------- Removing packages  -------------------------"
 proceed
 if [ $? -eq 0 ]; then
   for app in $(cat ${HOME}/dotfiles/bin/bin/nope.txt | sed 's/#.*//' | tr -d '[:blank:]'); do
-    sudo apt remove --purge $app
+    sudo dnf remove --purge $app
   done
 fi
 
 echo "---------------- Upgrading installed packages  -------------------------"
 proceed
 if [ $? -eq 0 ]; then
-  sudo apt update
-  sudo apt upgrade
+  sudo dnf update
+  sudo dnf upgrade
 fi
 
 echo "---------------- Installing os packages  -------------------------"
@@ -31,7 +31,7 @@ proceed
 if [ $? -eq 0 ]; then
   echo "list --------- " ${PACKAGES}
   for app in $(cat ${HOME}/dotfiles/bin/bin/apps.txt | sed 's/#.*//' | tr -d '[:blank:]'); do
-    sudo apt install -y $app
+    sudo dnf install -y $app
   done
 fi
 

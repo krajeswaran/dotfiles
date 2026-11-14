@@ -1,0 +1,21 @@
+# Converted from compose service "redis".
+
+[Unit]
+Description=redis container
+
+[Container]
+Image=docker.io/valkey/valkey:9@sha256:3add1a336a920ea54770a001ab6feb3da5fceea96a40373a3a2cd469b815f0b7
+ContainerName=redis
+Network=immich.network
+Volume=%h/redis:/data:Z
+User=1000
+Group=1000
+DropCapability=NET_RAW
+NoNewPrivileges=true
+HealthCmd=redis-cli ping | grep -q PONG || exit 1
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

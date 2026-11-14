@@ -1,0 +1,27 @@
+# Converted from compose service "immich-server".
+
+[Unit]
+Description=immich-server container
+Requires=redis.service
+After=redis.service
+Requires=database.service
+After=database.service
+
+[Container]
+Image=ghcr.io/immich-app/immich-server:v3.4.0
+ContainerName=immich_server
+Network=immich.network
+PublishPort=2283:2283
+Volume=/photos/:/data:Z
+Environment=TZ=Asia/Kolkata
+User=1000
+Group=1000
+Secret=db_password,type=env,target=DB_PASSWORD
+DropCapability=NET_RAW
+NoNewPrivileges=true
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

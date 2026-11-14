@@ -4,10 +4,10 @@ StripWhiteSpace=false
 
 [General]
 AutoStart=true
-IgnoreImages=false
-IgnoreSelection=false
 MaxClipItems=30
 Number of Actions=0
+SaveImages=true
+SaveSelection=true
 SyncClipboards=true
 Version=6.3.6
 

@@ -1,0 +1,21 @@
+# Converted from compose service "immich-machine-learning".
+
+[Unit]
+Description=immich-machine-learning container
+
+[Container]
+Image=ghcr.io/immich-app/immich-machine-learning:v3.4.0
+Network=immich.network
+ContainerName=immich-machine-learning
+Volume=%h/ml-model-cache:/cache:Z
+Environment=MACHINE_LEARNING_MODEL_REVISION=v2
+User=1000
+Group=1000
+DropCapability=NET_RAW
+NoNewPrivileges=true
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

@@ -4,11 +4,10 @@ awsebcli
 ipython
 virtualenv
 gh
-hurl
 fzf
 vale
 neovim
-node@18
+node@22
 python
 yarn
 git-delta
@@ -20,7 +19,5 @@ dust
 fzf
 awscli
 rclone
-kew
 yt-dlp
 pipx
-cw #brew tap lucagrulla/tap

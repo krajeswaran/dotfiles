@@ -12,12 +12,6 @@ titlematch=1
 types=1
 wmclasscomplete=true
 
-[10e78ba0-6e57-4ef0-af83-2de70281dd61]
-Description=virt-manager
-screenrule=2
-wmclass=virt-manager
-wmclassmatch=1
-
 [2]
 Description=FFDEV
 Enabled=false
@@ -44,31 +38,12 @@ windowrolematch[$d]
 wmclass=systemsettings
 wmclassmatch=1
 
-[3a6b977c-990b-42ba-bd63-5785f892b98d]
-Description=Application settings for
-clientmachine=localhost
-wmclassmatch=1
-
 [4]
-Description=FFDEV
-clientmachine=localhost
-size=1057,345
-sizerule=4
-title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
-types=1
 windowrole[$d]
 windowrolematch[$d]
-wmclass=firefox-aurora
-wmclassmatch=2
 
 [General]
-count=5
-rules=1,2,3,c99422bf-9d89-4631-b193-c761892e8a34,ee24bd7e-1ba4-49e0-9bd6-77c9452fa7ee
-
-[ac2cbdff-e248-4238-a8b5-c129428b0486]
-Description=Application settings for
-clientmachine=localhost
-wmclassmatch=1
+Order=1,2,3,c99422bf-9d89-4631-b193-c761892e8a34,ee24bd7e-1ba4-49e0-9bd6-77c9452fa7ee
 
 [c99422bf-9d89-4631-b193-c761892e8a34]
 Description=Copy of skip tiling
@@ -78,36 +53,6 @@ skippager=true
 skippagerrule=3
 title=KWin Rules Window Matching - KDE UserBase Wiki — Firefox Developer Edition
 wmclass=kwrite
-wmclassmatch=1
-
-[d0c185be-66ac-4708-ba21-3ac63deea812]
-Description=Window settings for systemsettings
-clientmachine=localhost
-screenrule=2
-title=Audio — System Settings
-types=33
-windowrole=mainwindow#1
-windowrolematch=1
-wmclass=systemsettings
-wmclassmatch=1
-
-[d95f4f25-1d28-4cd7-87a9-98301e19c760]
-Description=Application settings for systemsettings
-clientmachine=localhost
-screen=1
-screenrule=4
-wmclass=systemsettings
-wmclassmatch=1
-
-[de0bf556-c576-46cc-abb5-da4fb686ced6]
-Description=emu
-clientmachine=localhost
-screen=1
-screenrule=2
-title=Android Emulator - emu:5554
-titlematch=1
-types=1
-wmclasscomplete=true
 wmclassmatch=1
 
 [ee24bd7e-1ba4-49e0-9bd6-77c9452fa7ee]

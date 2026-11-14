@@ -1,0 +1,17 @@
+[Unit]
+Description=Prowlarr
+
+[Container]
+ContainerName=prowlarr
+Image=lscr.io/linuxserver/prowlarr:latest
+PublishPort=9696:9696
+Volume=%h/.config/prowlarr:/config:Z
+Environment=PUID=0
+Environment=PGID=0
+Environment=TZ=Asia/Kolkotta
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

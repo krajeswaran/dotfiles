@@ -379,7 +379,7 @@ return {
     opts = {
       ensure_installed = {
         "python",
-        "delve",
+        -- "delve",
         "js",
       },
     },
