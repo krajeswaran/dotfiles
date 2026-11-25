@@ -14,6 +14,10 @@ TapToClick=true
 [Libinput][2][14][ETPS/2 Elantech Touchpad]
 TapToClick=true
 
+[Libinput][6421][4133][XING WEI 2.4G USB USB Composite Device Mouse]
+PointerAcceleration=-0.600
+ScrollFactor=2
+
 [Mouse]
 X11LibInputXAccelProfileFlat=true
 XLbInptAccelProfileFlat=false
@@ -21,7 +25,6 @@ XLbInptMiddleEmulation=false
 XLbInptNaturalScroll=false
 XLbInptPointerAcceleration=1
 cursorSize=24
-cursorTheme=Adwaita
 
 [Tmp]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize

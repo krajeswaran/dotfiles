@@ -7,8 +7,11 @@ Description=immich-machine-learning container
 Image=ghcr.io/immich-app/immich-machine-learning:v3.4.0
 Network=immich.network
 ContainerName=immich-machine-learning
+PublishPort=3003:3003
 Volume=%h/ml-model-cache:/cache:Z
 Environment=MACHINE_LEARNING_MODEL_REVISION=v2
+UserNS=keep-id
+AddDevice=/dev/dri:/dev/dri
 User=1000
 Group=1000
 DropCapability=NET_RAW

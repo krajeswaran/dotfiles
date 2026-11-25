@@ -4,6 +4,7 @@ Comment=A drop-down terminal emulator based on KDE Konsole technology.
 DBusActivatable=true
 Exec=yakuake
 GenericName=Drop-down Terminal
+Hidden=true
 Icon=yakuake
 Name=Yakuake
 Terminal=false

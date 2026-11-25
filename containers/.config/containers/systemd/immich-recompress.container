@@ -1,0 +1,27 @@
+[Unit]
+Description=webapp immich-recompress container
+Wants=network-online.target
+After=network-online.target
+
+[Container]
+Image=ghcr.io/lukasganster/immich-recompress:latest
+ContainerName=immich-recompress
+PublishPort=5050:5050
+Volume=%h/immich-recompress:/data:Z
+Volume=%h/immich-recompress/backup/:/tmp/immich_recompress_backup:Z
+Volume=%h/immich-recompress/work/:/tmp/immich_recompress_ui:Z
+EnvironmentFile=%h/immich.env
+Environment=IMMICH_DB=/data/immich_recompress.db
+AddDevice=/dev/dri:/dev/dri
+NoNewPrivileges=true
+UserNS=keep-id
+User=1000
+Group=1000
+
+[Service]
+Restart=always
+TimeoutStartSec=900
+
+[Install]
+WantedBy=default.target
+

@@ -347,7 +347,7 @@ TitlebarDoubleClickCommand=Maximize
 WindowSnapZone=10
 
 [Xwayland]
-Scale=1
+Scale=1.5
 XwaylandEavesdrops=All
 XwaylandEavesdropsMouse=true
 
@@ -357,5 +357,3 @@ ButtonsOnLeft=
 ButtonsOnRight=AX
 CloseOnDoubleClickOnMenu=false
 ShowToolTips=false
-library=org.kde.kwin.aurorae.v2
-theme=__aurorae__svg__ActiveAccentFrame

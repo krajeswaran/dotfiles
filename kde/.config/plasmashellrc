@@ -40,19 +40,12 @@ pluginWhiteList=desktopsessions,services,places,PowerDevil,calculator,unitconver
 [PlasmaTransientsConfig]
 PreloadWeight[$d]
 
-[PlasmaViews][Panel 2]
-floating=0
-panelVisibility=0
+[PlasmaViews][Panel 114]
+floating=1
 shell=org.kde.plasma.desktop
 
-[PlasmaViews][Panel 2][Defaults]
-thickness=24
-
-[PlasmaViews][Panel 2][Horizontal2560]
-thickness=24
-
-[PlasmaViews][Panel 2][Horizontal5760]
-thickness=24
+[PlasmaViews][Panel 114][Defaults]
+thickness=50
 
 [PlasmaViews][Panel 37]
 floating=0

@@ -8,6 +8,7 @@ Image=docker.io/valkey/valkey:9@sha256:3add1a336a920ea54770a001ab6feb3da5fceea96
 ContainerName=redis
 Network=immich.network
 Volume=%h/redis:/data:Z
+UserNS=keep-id
 User=1000
 Group=1000
 DropCapability=NET_RAW

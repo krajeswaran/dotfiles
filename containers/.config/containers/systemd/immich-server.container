@@ -12,8 +12,12 @@ Image=ghcr.io/immich-app/immich-server:v3.4.0
 ContainerName=immich_server
 Network=immich.network
 PublishPort=2283:2283
-Volume=/photos/:/data:Z
+Volume=%h/immich:/data:Z
+Volume=/videos/tv/photos/library:/data/library:Z
+Volume=/videos/tv/photos/upload:/data/upload:Z
+Volume=/photos/:/library:Z
 Environment=TZ=Asia/Kolkata
+Environment=REDIS_HOSTNAME=redis
 User=1000
 Group=1000
 Secret=db_password,type=env,target=DB_PASSWORD
